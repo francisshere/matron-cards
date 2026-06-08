@@ -16,8 +16,11 @@ export default {
         muted: '#855264',
       },
       fontFamily: {
-        heading: ['Playfair Display', 'Inter', 'sans-serif'],
-        body: ['Inter', 'Plus Jakarta Sans', 'sans-serif'],
+        heading: ['Fredoka One', 'sans-serif'],
+        body: ['Fredoka', 'sans-serif'],
+      },
+      boxShadow: {
+        btn: '0 6px 4px #E97CA1',
       }
     },
   },
