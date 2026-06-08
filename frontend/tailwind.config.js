@@ -20,7 +20,7 @@ export default {
         body: ['Fredoka', 'sans-serif'],
       },
       boxShadow: {
-        btn: '0 6px 4px #E97CA1',
+        btn: '0px 6px 4px 0px rgba(233, 124, 161, 1)',
       }
     },
   },

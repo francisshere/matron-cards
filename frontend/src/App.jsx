@@ -27,19 +27,19 @@ export default function App() {
         {/* Header */}
         <header className="flex items-center justify-between mb-10">
           <button className="text-text hover:text-primary transition-colors p-2">
-            <X className="w-6 h-6 sm:w-8 sm:h-8" strokeWidth={3} />
+            <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
           </button>
           
-          <div className="flex-1 mx-4 sm:mx-8 relative h-6 sm:h-8 bg-card border-2 border-text/10 rounded-full overflow-hidden shadow-sm">
+          <div className="flex-1 mx-4 sm:mx-8 relative h-8 sm:h-10 bg-card border-2 border-text/10 rounded-full overflow-hidden shadow-sm">
             <div className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-mid rounded-full w-[22%]" />
-            <div className="absolute inset-0 flex items-center justify-center text-xs sm:text-sm font-heading font-bold text-text z-10">
+            <div className="absolute inset-0 flex items-center justify-center text-sm sm:text-base font-heading font-bold text-text z-10">
               11 of 50
             </div>
           </div>
           
           <div className="flex items-center space-x-2 drop-shadow-sm ml-4">
-            <img src={lampIcon} alt="Lamp" className="w-10 h-10 object-contain" />
-            <span className="font-heading text-mid text-2xl">5</span>
+            <img src={lampIcon} alt="Lamp" className="w-12 h-12 sm:w-14 sm:h-14 object-contain" />
+            <span className="font-heading text-mid text-3xl">5</span>
           </div>
         </header>
 
@@ -51,7 +51,7 @@ export default function App() {
 
         {/* Question Area */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start mb-8 relative">
-          <div className="w-48 h-48 sm:w-64 sm:h-64 shrink-0 relative mb-4 sm:mb-0 sm:mr-6 z-10">
+          <div className="w-56 h-56 sm:w-72 sm:h-72 shrink-0 relative mb-4 sm:mb-0 sm:mr-6 z-10">
             <img 
               src={avatarNurse} 
               alt="Snake Nurse Avatar" 
@@ -115,7 +115,7 @@ export default function App() {
       </div>
 
       {/* Fixed Bottom Action Bar */}
-      <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/10 p-6 sm:p-8 flex justify-center z-50">
+      <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/80 p-6 sm:p-8 flex justify-center z-50">
         <div className="w-full max-w-3xl flex justify-between items-center px-2 sm:px-6">
           <button 
             className="px-8 sm:px-14 py-4 sm:py-5 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading text-xl sm:text-2xl hover:bg-text/5 hover:border-text/40 transition-all shadow-btn active:translate-y-1 active:shadow-none"
