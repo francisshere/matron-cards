@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
-import snakeNurse from './assets/snake_nurse.png';
+import avatarNurse from './assets/avatar-main-no-bg.svg';
+import lampIcon from './assets/lamp-no-bg.svg';
 
 const questionData = {
   id: 1,
@@ -26,19 +27,19 @@ export default function App() {
         {/* Header */}
         <header className="flex items-center justify-between mb-10">
           <button className="text-text hover:text-primary transition-colors p-2">
-            <X className="w-6 h-6 sm:w-8 sm:h-8" strokeWidth={3} />
+            <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
           </button>
           
-          <div className="flex-1 mx-4 sm:mx-8 relative h-4 sm:h-5 bg-card border-2 border-text/10 rounded-full overflow-hidden">
+          <div className="flex-1 mx-4 sm:mx-8 relative h-8 sm:h-10 bg-card border-2 border-text/10 rounded-full overflow-hidden shadow-sm">
             <div className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-mid rounded-full w-[22%]" />
-            <div className="absolute inset-0 flex items-center justify-center text-[10px] sm:text-xs font-bold text-text z-10">
+            <div className="absolute inset-0 flex items-center justify-center text-sm sm:text-base font-body font-semibold text-text z-10">
               11 of 50
             </div>
           </div>
           
-          <div className="flex items-center space-x-1 drop-shadow-sm">
-            <span className="text-2xl">🧞</span>
-            <span className="font-extrabold text-mid text-xl">5</span>
+          <div className="flex items-center space-x-2 drop-shadow-sm ml-4">
+            <img src={lampIcon} alt="Lamp" className="w-12 h-12 sm:w-14 sm:h-14 object-contain" />
+            <span className="font-body font-bold text-mid text-3xl">5</span>
           </div>
         </header>
 
@@ -50,11 +51,11 @@ export default function App() {
 
         {/* Question Area */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start mb-8 relative">
-          <div className="w-32 h-32 sm:w-40 sm:h-40 shrink-0 relative mb-4 sm:mb-0 sm:mr-6 z-10">
+          <div className="w-56 h-56 sm:w-72 sm:h-72 shrink-0 relative mb-4 sm:mb-0 sm:mr-6 z-10">
             <img 
-              src={snakeNurse} 
-              alt="Snake Nurse" 
-              className="w-full h-full object-contain mix-blend-multiply drop-shadow-lg filter contrast-125"
+              src={avatarNurse} 
+              alt="Snake Nurse Avatar" 
+              className="w-full h-full object-contain drop-shadow-lg"
             />
           </div>
           
@@ -63,28 +64,47 @@ export default function App() {
             <div className="hidden sm:block absolute top-12 -left-[14px] w-6 h-6 bg-card border-l-4 border-b-4 border-text/60 transform rotate-45"></div>
             <div className="sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card border-t-4 border-l-4 border-text/60 rotate-45"></div>
             
-            <p className="text-text font-bold text-sm sm:text-base leading-relaxed">
+            <p className="text-text font-body font-semibold text-sm sm:text-base leading-relaxed">
               {questionData.question_stem}
             </p>
           </div>
         </div>
 
-        <hr className="border-t-2 border-text/20 w-full mb-8" />
+        {/* Answer Container */}
+        <div className="w-full border-t-2 border-b-2 border-text/80 py-3 sm:py-4 mb-8 min-h-[88px] sm:min-h-[104px] flex flex-col justify-center">
+          {selectedOption && (
+            <button
+              onClick={() => setSelectedOption(null)}
+              className="w-full p-4 sm:p-5 rounded-2xl text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-primary text-white scale-[1.02] sm:scale-100"
+            >
+              {questionData.options.find(o => o.id === selectedOption).text}
+            </button>
+          )}
+        </div>
 
         {/* Options */}
         <div className="space-y-4">
           {questionData.options.map((opt) => {
             const isSelected = selectedOption === opt.id;
+            
+            if (isSelected) {
+              return (
+                <div 
+                  key={opt.id}
+                  className="w-full rounded-2xl bg-[#D66B93]"
+                >
+                  <div className="p-4 sm:p-5 border-4 border-transparent opacity-0 pointer-events-none">
+                    <span className="font-body font-semibold text-base sm:text-lg block text-center">{opt.text}</span>
+                  </div>
+                </div>
+              );
+            }
+
             return (
               <button
                 key={opt.id}
                 onClick={() => setSelectedOption(opt.id)}
-                className={`w-full p-4 sm:p-5 rounded-2xl border-4 text-center font-bold text-sm sm:text-base transition-all duration-200
-                  ${isSelected 
-                    ? 'bg-primary border-primary text-white shadow-md transform scale-[1.02]' 
-                    : 'bg-card border-light text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5'
-                  }
-                `}
+                className="w-full p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5"
               >
                 {opt.text}
               </button>
@@ -95,19 +115,19 @@ export default function App() {
       </div>
 
       {/* Fixed Bottom Action Bar */}
-      <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/10 p-6 sm:p-8 flex justify-center z-50">
+      <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/80 p-6 sm:p-8 flex justify-center z-50">
         <div className="w-full max-w-3xl flex justify-between items-center px-2 sm:px-6">
           <button 
-            className="px-8 sm:px-14 py-4 sm:py-5 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-black text-lg sm:text-xl hover:bg-text/5 hover:border-text/40 transition-all shadow-[0_4px_0_rgba(0,0,0,0.1)] active:translate-y-1 active:shadow-none"
+            className="px-8 sm:px-14 py-4 sm:py-5 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-bold text-xl sm:text-2xl hover:bg-text/5 hover:border-text/40 transition-all shadow-[0px_6px_4px_0px_#E97CA1] active:translate-y-1 active:shadow-none"
           >
             SKIP
           </button>
           
           <button 
-            className={`px-8 sm:px-14 py-4 sm:py-5 rounded-full font-heading font-black text-lg sm:text-xl transition-all shadow-[0_4px_0_rgba(0,0,0,0.15)] active:translate-y-1 active:shadow-none
+            className={`px-8 sm:px-14 py-4 sm:py-5 rounded-full font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] active:translate-y-1 active:shadow-none
               ${selectedOption 
                 ? 'bg-primary text-white hover:bg-primary/90' 
-                : 'bg-light text-white/90 cursor-not-allowed shadow-[0_4px_0_rgba(0,0,0,0.05)]'
+                : 'bg-light text-white/90 cursor-not-allowed shadow-none opacity-80'
               }
             `}
           >
