@@ -7,12 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#FBF9F6',
-        'secondary': '#F3EDE4',
-        'main': '#2C3E35',
-        'warm': '#D98A6C',
-        'success': '#5F8575',
-        'warning': '#E2B659'
+        bg: '#FDF5F7',
+        card: '#FFFFFF',
+        light: '#F7C4D5',
+        mid: '#E97CA1',
+        primary: '#D42F6B',
+        text: '#4A1529',
+        muted: '#855264',
       },
       fontFamily: {
         heading: ['Playfair Display', 'Inter', 'sans-serif'],
