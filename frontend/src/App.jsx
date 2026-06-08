@@ -70,22 +70,41 @@ export default function App() {
           </div>
         </div>
 
-        <hr className="border-t-2 border-text/20 w-full mb-8" />
+        {/* Answer Container */}
+        <div className="w-full border-t-2 border-b-2 border-text/80 py-3 sm:py-4 mb-8 min-h-[88px] sm:min-h-[104px] flex flex-col justify-center">
+          {selectedOption && (
+            <button
+              onClick={() => setSelectedOption(null)}
+              className="w-full p-4 sm:p-5 rounded-2xl border-4 text-center font-heading text-base sm:text-lg transition-all duration-200 shadow-btn bg-primary border-primary text-white scale-[1.02] sm:scale-100"
+            >
+              {questionData.options.find(o => o.id === selectedOption).text}
+            </button>
+          )}
+        </div>
 
         {/* Options */}
         <div className="space-y-4">
           {questionData.options.map((opt) => {
             const isSelected = selectedOption === opt.id;
+            
+            if (isSelected) {
+              return (
+                <div 
+                  key={opt.id}
+                  className="w-full rounded-2xl bg-mid/70 shadow-inner"
+                >
+                  <div className="p-4 sm:p-5 border-4 border-transparent opacity-0 pointer-events-none">
+                    <span className="font-heading text-base sm:text-lg block text-center">{opt.text}</span>
+                  </div>
+                </div>
+              );
+            }
+
             return (
               <button
                 key={opt.id}
                 onClick={() => setSelectedOption(opt.id)}
-                className={`w-full p-4 sm:p-5 rounded-2xl border-4 text-center font-heading text-base sm:text-lg transition-all duration-200 shadow-btn
-                  ${isSelected 
-                    ? 'bg-primary border-primary text-white transform scale-[1.02]' 
-                    : 'bg-card border-light text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5'
-                  }
-                `}
+                className="w-full p-4 sm:p-5 rounded-2xl border-4 text-center font-heading text-base sm:text-lg transition-all duration-200 shadow-btn bg-card border-light text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5"
               >
                 {opt.text}
               </button>
