@@ -1,140 +1,120 @@
 import React, { useState } from 'react';
-import { Flame, CheckCircle, XCircle, ArrowRight, RotateCw, BookOpen } from 'lucide-react';
+import { X } from 'lucide-react';
+import snakeNurse from './assets/snake_nurse.png';
 
-const mockData = [
-  {
-    id: 1,
-    concept: "Nursing Process & Assessment",
-    question_stem: "A nurse is performing an initial admission assessment on a client admitted to the medical unit. Which of the following data points should the nurse categorize as subjective?",
-    options: {
-      A: "The client's blood pressure is 140/90 mmHg.",
-      B: "The client states, 'I feel a sharp, shooting pain in my lower back.'",
-      C: "The nurse notes 2+ pitting edema in the lower extremities.",
-      D: "The client's diagnostic report reveals a serum potassium level of 3.4 mEq/L."
-    },
-    correct_option: "B",
-    rationale: "Subjective data are information from the client's point of view (symptoms), including feelings, perceptions, and concerns obtained through interviews. Objective data are observable and measurable signs obtained through physical examination, laboratory results, and vital signs measurement."
-  },
-  {
-    id: 2,
-    concept: "Legal & Ethical Considerations",
-    question_stem: "A nurse administers an incorrect dose of an antihypertensive medication to a client, resulting in severe hypotension. The nurse immediately notifies the attending physician and documents the incident accurately in the chart. Which ethical principle did the nurse primarily demonstrate by reporting the error?",
-    options: {
-      A: "Autonomy",
-      B: "Beneficence",
-      C: "Veracity",
-      D: "Non-maleficence"
-    },
-    correct_option: "C",
-    rationale: "Veracity refers to the duty to tell the truth. By immediately reporting the medication error and documenting it truthfully and accurately without concealment, the nurse upholds professional honesty and transparency."
-  }
-];
+const questionData = {
+  id: 1,
+  course: "PNLE I",
+  topic: "Foundation of Professional Nursing Practice",
+  question_stem: "The nurse in-charge in labor and delivery unit administered a dose of terbutaline to a client without checking the client's pulse. The standard that would be used to determine if the nurse was negligent is:",
+  options: [
+    { id: 'A', text: "The physician's orders." },
+    { id: 'B', text: "The action of a clinical nurse specialist who is recognized expert in the field." },
+    { id: 'C', text: "The statement in the drug literature about administration of terbutaline." },
+    { id: 'D', text: "The actions of a reasonably prudent nurse with similar education and experience." }
+  ],
+  correct_option: "D"
+};
 
 export default function App() {
-  const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
-  const [showAnswer, setShowAnswer] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [streak, setStreak] = useState(12);
-
-  const currentQuestion = mockData[currentQuestionIdx];
-
-  const handleOptionClick = (key) => {
-    if (showAnswer) return;
-    setSelectedOption(key);
-    setShowAnswer(true);
-    if (key === currentQuestion.correct_option) {
-      setStreak(s => s + 1);
-    } else {
-      setStreak(0);
-    }
-  };
-
-  const nextQuestion = () => {
-    setShowAnswer(false);
-    setSelectedOption(null);
-    setCurrentQuestionIdx((prev) => (prev + 1) % mockData.length);
-  };
 
   return (
-    <div className="min-h-screen flex flex-col bg-primary font-body text-main p-6 sm:p-12">
-      
-      {/* Header */}
-      <header className="flex justify-between items-center max-w-4xl w-full mx-auto mb-12">
-        <div className="flex items-center space-x-3">
-          <BookOpen className="text-success w-8 h-8" />
-          <h1 className="text-2xl font-heading text-main">CozyCare <span className="font-light">Reviewer</span></h1>
-        </div>
-        <div className="flex items-center space-x-2 bg-secondary px-4 py-2 rounded-full shadow-sm">
-          <Flame className="text-warm w-5 h-5" />
-          <span className="font-semibold text-main">{streak} Day Streak</span>
-        </div>
-      </header>
-
-      {/* Main Review Area */}
-      <main className="flex-grow flex flex-col items-center w-full max-w-4xl mx-auto">
+    <div className="min-h-screen bg-bg flex justify-center">
+      <div className="w-full max-w-3xl flex flex-col pt-8 pb-32 px-6 sm:px-12 relative min-h-screen">
         
-        <div className="text-center mb-8">
-          <p className="text-sm uppercase tracking-widest text-success font-bold mb-2">Concept of the Day</p>
-          <h2 className="text-3xl font-heading">{currentQuestion.concept}</h2>
+        {/* Header */}
+        <header className="flex items-center justify-between mb-10">
+          <button className="text-text hover:text-primary transition-colors p-2">
+            <X className="w-6 h-6 sm:w-8 sm:h-8" strokeWidth={3} />
+          </button>
+          
+          <div className="flex-1 mx-4 sm:mx-8 relative h-4 sm:h-5 bg-card border-2 border-text/10 rounded-full overflow-hidden">
+            <div className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-mid rounded-full w-[22%]" />
+            <div className="absolute inset-0 flex items-center justify-center text-[10px] sm:text-xs font-bold text-text z-10">
+              11 of 50
+            </div>
+          </div>
+          
+          <div className="flex items-center space-x-1 drop-shadow-sm">
+            <span className="text-2xl">🧞</span>
+            <span className="font-extrabold text-mid text-xl">5</span>
+          </div>
+        </header>
+
+        {/* Title */}
+        <div className="mb-8 text-center sm:text-left">
+          <h2 className="text-muted font-bold tracking-wider text-sm mb-1 uppercase">{questionData.course}</h2>
+          <h1 className="text-2xl sm:text-3xl font-heading text-text font-black">{questionData.topic}</h1>
         </div>
 
-        {/* Flashcard Container */}
-        <div className="w-full max-w-2xl perspective-1000">
-          <div className={`relative w-full transition-transform duration-700 transform-style-3d ${showAnswer ? 'rotate-y-180' : ''}`}>
+        {/* Question Area */}
+        <div className="flex flex-col sm:flex-row items-center sm:items-start mb-8 relative">
+          <div className="w-32 h-32 sm:w-40 sm:h-40 shrink-0 relative mb-4 sm:mb-0 sm:mr-6 z-10">
+            <img 
+              src={snakeNurse} 
+              alt="Snake Nurse" 
+              className="w-full h-full object-contain mix-blend-multiply drop-shadow-lg filter contrast-125"
+            />
+          </div>
+          
+          <div className="bg-card border-4 border-text/60 rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0">
+            {/* Speech bubble tail */}
+            <div className="hidden sm:block absolute top-12 -left-[14px] w-6 h-6 bg-card border-l-4 border-b-4 border-text/60 transform rotate-45"></div>
+            <div className="sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card border-t-4 border-l-4 border-text/60 rotate-45"></div>
             
-            {/* Front of Card (Question) */}
-            <div className="w-full bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-secondary backface-hidden">
-              <p className="text-lg leading-relaxed mb-8">{currentQuestion.question_stem}</p>
-              <div className="space-y-4">
-                {Object.entries(currentQuestion.options).map(([key, value]) => (
-                  <button
-                    key={key}
-                    onClick={() => handleOptionClick(key)}
-                    className="w-full text-left p-4 rounded-xl border-2 border-secondary hover:border-warm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-warm bg-primary/30"
-                  >
-                    <span className="font-bold mr-4 text-warm">{key}</span>
-                    <span>{value}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Back of Card (Rationale) */}
-            <div className="absolute top-0 left-0 w-full h-full bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-secondary backface-hidden rotate-y-180 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center space-x-3 mb-6 border-b border-secondary pb-4">
-                  {selectedOption === currentQuestion.correct_option ? (
-                    <div className="flex items-center text-success space-x-2">
-                      <CheckCircle className="w-6 h-6" />
-                      <span className="font-bold text-xl font-heading">Correct!</span>
-                    </div>
-                  ) : (
-                    <div className="flex items-center text-warm space-x-2">
-                      <XCircle className="w-6 h-6" />
-                      <span className="font-bold text-xl font-heading">Not quite.</span>
-                    </div>
-                  )}
-                </div>
-                <h3 className="font-bold mb-2 uppercase tracking-wide text-sm text-main/60">Rationale</h3>
-                <p className="text-md leading-relaxed text-main">{currentQuestion.rationale}</p>
-              </div>
-
-              <div className="mt-8 flex justify-end">
-                <button 
-                  onClick={nextQuestion}
-                  className="flex items-center space-x-2 bg-success text-white px-6 py-3 rounded-full hover:bg-success/90 transition shadow-md font-semibold"
-                >
-                  <span>Next Concept</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
-
+            <p className="text-text font-bold text-sm sm:text-base leading-relaxed">
+              {questionData.question_stem}
+            </p>
           </div>
         </div>
 
-      </main>
+        <hr className="border-t-2 border-text/20 w-full mb-8" />
 
+        {/* Options */}
+        <div className="space-y-4">
+          {questionData.options.map((opt) => {
+            const isSelected = selectedOption === opt.id;
+            return (
+              <button
+                key={opt.id}
+                onClick={() => setSelectedOption(opt.id)}
+                className={`w-full p-4 sm:p-5 rounded-2xl border-4 text-center font-bold text-sm sm:text-base transition-all duration-200
+                  ${isSelected 
+                    ? 'bg-primary border-primary text-white shadow-md transform scale-[1.02]' 
+                    : 'bg-card border-light text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5'
+                  }
+                `}
+              >
+                {opt.text}
+              </button>
+            )
+          })}
+        </div>
+
+      </div>
+
+      {/* Fixed Bottom Action Bar */}
+      <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/10 p-6 sm:p-8 flex justify-center z-50">
+        <div className="w-full max-w-3xl flex justify-between items-center px-2 sm:px-6">
+          <button 
+            className="px-8 sm:px-14 py-4 sm:py-5 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-black text-lg sm:text-xl hover:bg-text/5 hover:border-text/40 transition-all shadow-[0_4px_0_rgba(0,0,0,0.1)] active:translate-y-1 active:shadow-none"
+          >
+            SKIP
+          </button>
+          
+          <button 
+            className={`px-8 sm:px-14 py-4 sm:py-5 rounded-full font-heading font-black text-lg sm:text-xl transition-all shadow-[0_4px_0_rgba(0,0,0,0.15)] active:translate-y-1 active:shadow-none
+              ${selectedOption 
+                ? 'bg-primary text-white hover:bg-primary/90' 
+                : 'bg-light text-white/90 cursor-not-allowed shadow-[0_4px_0_rgba(0,0,0,0.05)]'
+              }
+            `}
+          >
+            CHECK
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
