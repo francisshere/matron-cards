@@ -6,6 +6,44 @@ import avatarNurse from './assets/avatar-main-no-bg.svg';
 import explainIcon from './assets/explain.svg';
 import lampIcon from './assets/lamp-no-bg.svg';
 
+const playSound = (type) => {
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    
+    if (type === 'correct') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(523.25, ctx.currentTime);
+      osc.frequency.setValueAtTime(659.25, ctx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(783.99, ctx.currentTime + 0.2);
+      
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.5);
+      
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.5);
+    } else if (type === 'wrong') {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(150, ctx.currentTime); 
+      osc.frequency.exponentialRampToValueAtTime(80, ctx.currentTime + 0.3);
+      
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+      
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.3);
+    }
+  } catch(e) { console.error("Audio error", e) }
+};
+
 export default function App() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [gamemode, setGamemode] = useState(true);
@@ -58,14 +96,16 @@ export default function App() {
     if (!selectedOption || showRationale) return;
     
     if (selectedOption !== currentQuestion.correct_option) {
+      playSound('wrong');
       if (gamemode) {
         const newLives = lives - 1;
         setLives(newLives);
         if (newLives <= 0) {
-          setTimeout(() => setGameOver(true), 1500); // give a bit of time to read rationale before game over modal? or just let them read it first.
-          // Actually, let's let them read rationale, and trigger game over when they click Next.
+          setTimeout(() => setGameOver(true), 2000); 
         }
       }
+    } else {
+      playSound('correct');
     }
     setShowRationale(true);
   };
@@ -108,7 +148,7 @@ export default function App() {
   if (gameOver) {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full animate-bounce-pop">
           <img src={explainIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
           <p className="font-body text-text/80 mb-8 font-semibold">You ran out of lives (5 mistakes).</p>
@@ -121,7 +161,7 @@ export default function App() {
   if (quizFinished) {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full animate-bounce-pop">
           <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
           <p className="font-body text-text/80 mb-8 font-semibold">Great job finishing {questions.length} questions.</p>
@@ -174,17 +214,30 @@ export default function App() {
             <img 
               src={showRationale ? explainIcon : avatarNurse} 
               alt="Mascot Avatar" 
-              className="w-full h-full object-contain drop-shadow-lg transition-all duration-300"
+              className={`w-full h-full object-contain drop-shadow-lg transition-all duration-300 ${showRationale && selectedOption === currentQuestion.correct_option ? 'animate-bounce-pop' : ''}`}
             />
           </div>
           
-          <div className="bg-card border-4 border-text/60 rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0 min-h-[160px]">
+          <div className={`border-4 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50 animate-shake') : 'border-text/60 bg-card'} rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0 min-h-[160px] transition-colors duration-300`}>
             {/* Speech bubble tail */}
-            <div className="hidden sm:block absolute top-12 -left-[14px] w-6 h-6 bg-card border-l-4 border-b-4 border-text/60 transform rotate-45"></div>
-            <div className="sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card border-t-4 border-l-4 border-text/60 rotate-45"></div>
+            <div className={`hidden sm:block absolute top-12 -left-[14px] w-6 h-6 border-l-4 border-b-4 transform rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
+            <div className={`sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 border-t-4 border-l-4 rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
             
+            {showRationale && (
+              <div className={`mb-4 inline-block px-4 py-1.5 rounded-full text-sm sm:text-base font-bold uppercase tracking-widest shadow-sm animate-bounce-pop ${
+                  selectedOption === currentQuestion.correct_option ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+                }`}>
+                {selectedOption === currentQuestion.correct_option ? '🎉 CORRECT!' : '❌ INCORRECT'}
+              </div>
+            )}
+
             <p className="text-text font-body font-semibold text-sm sm:text-base leading-relaxed">
-              {showRationale ? currentQuestion.rationale : currentQuestion.question_stem}
+              {showRationale ? (
+                <span className="block mt-2">
+                  <span className="font-heading font-black text-lg text-text block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-2">Rationale</span>
+                  {currentQuestion.rationale}
+                </span>
+              ) : currentQuestion.question_stem}
             </p>
           </div>
         </div>
