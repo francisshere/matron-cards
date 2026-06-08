@@ -1,24 +1,135 @@
-import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Settings } from 'lucide-react';
+import allQuestions from './data/questions.json';
+
 import avatarNurse from './assets/avatar-main-no-bg.svg';
+import explainIcon from './assets/explain.svg';
 import lampIcon from './assets/lamp-no-bg.svg';
 
-const questionData = {
-  id: 1,
-  course: "PNLE I",
-  topic: "Foundation of Professional Nursing Practice",
-  question_stem: "The nurse in-charge in labor and delivery unit administered a dose of terbutaline to a client without checking the client's pulse. The standard that would be used to determine if the nurse was negligent is:",
-  options: [
-    { id: 'A', text: "The physician's orders." },
-    { id: 'B', text: "The action of a clinical nurse specialist who is recognized expert in the field." },
-    { id: 'C', text: "The statement in the drug literature about administration of terbutaline." },
-    { id: 'D', text: "The actions of a reasonably prudent nurse with similar education and experience." }
-  ],
-  correct_option: "D"
-};
-
 export default function App() {
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [gamemode, setGamemode] = useState(true);
+  const [questionCount, setQuestionCount] = useState(25);
+  const [customCount, setCustomCount] = useState("");
+  
+  // Quiz state
+  const [questions, setQuestions] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [lives, setLives] = useState(5);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [showRationale, setShowRationale] = useState(false);
+  const [gameOver, setGameOver] = useState(false);
+  const [quizFinished, setQuizFinished] = useState(false);
+
+  useEffect(() => {
+    startNewGame(25);
+  }, []);
+
+  const startNewGame = (count = questionCount) => {
+    let actualCount = count;
+    if (count === 'custom') {
+      actualCount = parseInt(customCount) > 0 ? parseInt(customCount) : 25;
+    }
+    const sliced = allQuestions.slice(0, actualCount);
+    setQuestions(sliced);
+    setCurrentIndex(0);
+    setLives(5);
+    setGameOver(false);
+    setQuizFinished(false);
+    setSelectedOption(null);
+    setShowRationale(false);
+  };
+
+  const handleApplySettings = () => {
+    let count = questionCount;
+    if (count === 'custom' && parseInt(customCount) > 0) {
+      count = Math.min(parseInt(customCount), allQuestions.length);
+    } else if (count === 'custom') {
+      count = 25; // fallback
+    }
+    setQuestionCount(count);
+    startNewGame(count);
+    setSettingsOpen(false);
+  };
+
+  const currentQuestion = questions[currentIndex] || null;
+
+  const handleCheck = () => {
+    if (!selectedOption || showRationale) return;
+    
+    if (selectedOption !== currentQuestion.correct_option) {
+      if (gamemode) {
+        const newLives = lives - 1;
+        setLives(newLives);
+        if (newLives <= 0) {
+          setTimeout(() => setGameOver(true), 1500); // give a bit of time to read rationale before game over modal? or just let them read it first.
+          // Actually, let's let them read rationale, and trigger game over when they click Next.
+        }
+      }
+    }
+    setShowRationale(true);
+  };
+
+  const handleNext = () => {
+    if (lives <= 0 && gamemode) {
+      setGameOver(true);
+      return;
+    }
+    if (currentIndex + 1 >= questions.length) {
+      setQuizFinished(true);
+    } else {
+      setCurrentIndex(currentIndex + 1);
+      setSelectedOption(null);
+      setShowRationale(false);
+    }
+  };
+
+  const handleSkip = () => {
+    if (showRationale) return;
+    if (gamemode) {
+      const newLives = lives - 1;
+      setLives(newLives);
+      if (newLives <= 0) {
+        setGameOver(true);
+        return;
+      }
+    }
+    if (currentIndex + 1 >= questions.length) {
+      setQuizFinished(true);
+    } else {
+      setCurrentIndex(currentIndex + 1);
+      setSelectedOption(null);
+      setShowRationale(false);
+    }
+  };
+
+  if (!currentQuestion) return <div className="min-h-screen bg-bg flex items-center justify-center font-heading text-xl">Loading...</div>;
+
+  if (gameOver) {
+    return (
+      <div className="min-h-screen bg-bg flex items-center justify-center p-6">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full">
+          <img src={explainIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
+          <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
+          <p className="font-body text-text/80 mb-8 font-semibold">You ran out of lives (5 mistakes).</p>
+          <button onClick={() => startNewGame()} className="w-full py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none">Try Again</button>
+        </div>
+      </div>
+    );
+  }
+
+  if (quizFinished) {
+    return (
+      <div className="min-h-screen bg-bg flex items-center justify-center p-6">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full">
+          <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
+          <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
+          <p className="font-body text-text/80 mb-8 font-semibold">Great job finishing {questions.length} questions.</p>
+          <button onClick={() => startNewGame()} className="w-full py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none">Review Again</button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-bg flex justify-center">
@@ -26,46 +137,54 @@ export default function App() {
         
         {/* Header */}
         <header className="flex items-center justify-between mb-10">
-          <button className="text-text hover:text-primary transition-colors p-2">
-            <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
-          </button>
+          <div className="flex items-center space-x-1 sm:space-x-2">
+            <button className="text-text hover:text-primary transition-colors p-2">
+              <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
+            </button>
+            <button onClick={() => setSettingsOpen(true)} className="text-text hover:text-primary transition-colors p-2">
+              <Settings className="w-7 h-7 sm:w-9 sm:h-9" strokeWidth={3} />
+            </button>
+          </div>
           
           <div className="flex-1 mx-4 sm:mx-8 relative h-8 sm:h-10 bg-card border-2 border-text/10 rounded-full overflow-hidden shadow-sm">
-            <div className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-mid rounded-full w-[22%]" />
+            <div 
+              className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-mid rounded-full transition-all duration-500" 
+              style={{ width: `${((currentIndex) / questions.length) * 100}%` }} 
+            />
             <div className="absolute inset-0 flex items-center justify-center text-sm sm:text-base font-body font-semibold text-text z-10">
-              11 of 50
+              {currentIndex + 1} of {questions.length}
             </div>
           </div>
           
-          <div className="flex items-center space-x-2 drop-shadow-sm ml-4">
-            <img src={lampIcon} alt="Lamp" className="w-12 h-12 sm:w-14 sm:h-14 object-contain" />
-            <span className="font-body font-bold text-mid text-3xl">5</span>
+          <div className={`flex items-center space-x-2 drop-shadow-sm ml-2 sm:ml-4 transition-opacity ${gamemode ? 'opacity-100' : 'opacity-0'}`}>
+            <img src={lampIcon} alt="Lamp" className="w-10 h-10 sm:w-14 sm:h-14 object-contain" />
+            <span className="font-body font-bold text-mid text-2xl sm:text-3xl">{lives}</span>
           </div>
         </header>
 
         {/* Title */}
         <div className="mb-8 text-center sm:text-left">
-          <h2 className="text-muted font-bold tracking-wider text-sm mb-1 uppercase">{questionData.course}</h2>
-          <h1 className="text-2xl sm:text-3xl font-heading text-text font-black">{questionData.topic}</h1>
+          <h2 className="text-muted font-bold tracking-wider text-sm mb-1 uppercase">{currentQuestion.course}</h2>
+          <h1 className="text-2xl sm:text-3xl font-heading text-text font-black">{currentQuestion.topic}</h1>
         </div>
 
         {/* Question Area */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start mb-8 relative">
           <div className="w-56 h-56 sm:w-72 sm:h-72 shrink-0 relative mb-4 sm:mb-0 sm:mr-6 z-10">
             <img 
-              src={avatarNurse} 
-              alt="Snake Nurse Avatar" 
-              className="w-full h-full object-contain drop-shadow-lg"
+              src={showRationale ? explainIcon : avatarNurse} 
+              alt="Mascot Avatar" 
+              className="w-full h-full object-contain drop-shadow-lg transition-all duration-300"
             />
           </div>
           
-          <div className="bg-card border-4 border-text/60 rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0">
+          <div className="bg-card border-4 border-text/60 rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0 min-h-[160px]">
             {/* Speech bubble tail */}
             <div className="hidden sm:block absolute top-12 -left-[14px] w-6 h-6 bg-card border-l-4 border-b-4 border-text/60 transform rotate-45"></div>
             <div className="sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card border-t-4 border-l-4 border-text/60 rotate-45"></div>
             
             <p className="text-text font-body font-semibold text-sm sm:text-base leading-relaxed">
-              {questionData.question_stem}
+              {showRationale ? currentQuestion.rationale : currentQuestion.question_stem}
             </p>
           </div>
         </div>
@@ -74,17 +193,17 @@ export default function App() {
         <div className="w-full border-t-2 border-b-2 border-text/80 py-3 sm:py-4 mb-8 min-h-[88px] sm:min-h-[104px] flex flex-col justify-center">
           {selectedOption && (
             <button
-              onClick={() => setSelectedOption(null)}
-              className="w-full p-4 sm:p-5 rounded-2xl text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-primary text-white scale-[1.02] sm:scale-100"
+              onClick={() => !showRationale && setSelectedOption(null)}
+              className={`w-full p-4 sm:p-5 rounded-2xl text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] text-white scale-[1.02] sm:scale-100 ${showRationale && selectedOption !== currentQuestion.correct_option ? 'bg-red-500' : 'bg-primary'}`}
             >
-              {questionData.options.find(o => o.id === selectedOption).text}
+              {currentQuestion.options.find(o => o.id === selectedOption)?.text}
             </button>
           )}
         </div>
 
         {/* Options */}
         <div className="space-y-4">
-          {questionData.options.map((opt) => {
+          {currentQuestion.options.map((opt) => {
             const isSelected = selectedOption === opt.id;
             
             if (isSelected) {
@@ -100,41 +219,118 @@ export default function App() {
               );
             }
 
+            let btnClass = "w-full p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5";
+            
+            if (showRationale && opt.id === currentQuestion.correct_option) {
+               btnClass = "w-full p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-[#D1FAE5] border-[#34D399] text-[#065F46]";
+            }
+
             return (
               <button
                 key={opt.id}
-                onClick={() => setSelectedOption(opt.id)}
-                className="w-full p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5"
+                onClick={() => !showRationale && setSelectedOption(opt.id)}
+                className={btnClass}
+                disabled={showRationale}
               >
                 {opt.text}
               </button>
             )
           })}
         </div>
-
       </div>
 
       {/* Fixed Bottom Action Bar */}
       <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/80 p-6 sm:p-8 flex justify-center z-50">
         <div className="w-full max-w-3xl flex justify-between items-center px-2 sm:px-6">
           <button 
-            className="px-8 sm:px-14 py-4 sm:py-5 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-bold text-xl sm:text-2xl hover:bg-text/5 hover:border-text/40 transition-all shadow-[0px_6px_4px_0px_#E97CA1] active:translate-y-1 active:shadow-none"
+            onClick={handleSkip}
+            disabled={showRationale}
+            className={`px-8 sm:px-14 py-4 sm:py-5 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] ${showRationale ? 'opacity-50 cursor-not-allowed shadow-none translate-y-1 border-text/10' : 'hover:bg-text/5 hover:border-text/40 active:translate-y-1 active:shadow-none'}`}
           >
             SKIP
           </button>
           
           <button 
+            onClick={showRationale ? handleNext : handleCheck}
+            disabled={!selectedOption && !showRationale}
             className={`px-8 sm:px-14 py-4 sm:py-5 rounded-full font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] active:translate-y-1 active:shadow-none
-              ${selectedOption 
+              ${(selectedOption || showRationale) 
                 ? 'bg-primary text-white hover:bg-primary/90' 
                 : 'bg-light text-white/90 cursor-not-allowed shadow-none opacity-80'
               }
             `}
           >
-            CHECK
+            {showRationale ? 'NEXT' : 'CHECK'}
           </button>
         </div>
       </div>
+
+      {/* Settings Modal */}
+      {settingsOpen && (
+        <div className="fixed inset-0 bg-text/50 z-[100] flex items-center justify-center p-4">
+          <div className="bg-card w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-xl">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-heading font-bold text-text">Review Settings</h2>
+              <button onClick={() => setSettingsOpen(false)} className="text-text hover:text-primary">
+                <X className="w-8 h-8" />
+              </button>
+            </div>
+            
+            <div className="space-y-6">
+              <div>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <span className="font-body font-semibold text-lg text-text">Lamp (Lives) Gamemode</span>
+                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${gamemode ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setGamemode(!gamemode)}>
+                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${gamemode ? 'translate-x-6' : 'translate-x-0'}`} />
+                  </div>
+                </label>
+                <p className="text-sm font-body text-text/60 mt-1 font-semibold">Lose a life for incorrect answers and skips.</p>
+              </div>
+
+              <div>
+                <span className="font-body font-semibold text-lg text-text block mb-3">Number of Questions</span>
+                <div className="grid grid-cols-2 gap-3 mb-3">
+                  {[25, 50, 75, 100].map(num => (
+                    <button 
+                      key={num}
+                      onClick={() => { setQuestionCount(num); setCustomCount(""); }}
+                      className={`py-3 rounded-xl font-heading text-lg border-2 transition-all ${questionCount === num ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
+                    >
+                      {num}
+                    </button>
+                  ))}
+                </div>
+                <div className="flex items-center space-x-3">
+                  <button 
+                    onClick={() => setQuestionCount('custom')}
+                    className={`flex-1 py-3 rounded-xl font-heading text-lg border-2 transition-all ${questionCount === 'custom' ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
+                  >
+                    Custom
+                  </button>
+                  {questionCount === 'custom' && (
+                    <input 
+                      type="number" 
+                      value={customCount}
+                      onChange={(e) => setCustomCount(e.target.value)}
+                      placeholder={`Max ${allQuestions.length}`}
+                      className="w-24 p-3 rounded-xl border-2 border-mid outline-none font-body text-center font-bold text-text bg-transparent"
+                      min="1"
+                      max={allQuestions.length}
+                    />
+                  )}
+                </div>
+              </div>
+
+              <button 
+                onClick={handleApplySettings}
+                className="w-full mt-4 py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none"
+              >
+                Apply & Restart
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
