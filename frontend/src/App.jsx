@@ -49,6 +49,7 @@ export default function App() {
   const [gamemode, setGamemode] = useState(true);
   const [questionCount, setQuestionCount] = useState(25);
   const [customCount, setCustomCount] = useState("");
+  const [randomize, setRandomize] = useState(false);
   
   // Quiz state
   const [questions, setQuestions] = useState([]);
@@ -60,15 +61,24 @@ export default function App() {
   const [quizFinished, setQuizFinished] = useState(false);
 
   useEffect(() => {
-    startNewGame(25);
+    startNewGame(25, false);
   }, []);
 
-  const startNewGame = (count = questionCount) => {
+  const startNewGame = (count = questionCount, isRandom = randomize) => {
     let actualCount = count;
     if (count === 'custom') {
       actualCount = parseInt(customCount) > 0 ? parseInt(customCount) : 25;
     }
-    const sliced = allQuestions.slice(0, actualCount);
+    
+    let sourceQuestions = [...allQuestions];
+    if (isRandom) {
+      for (let i = sourceQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sourceQuestions[i], sourceQuestions[j]] = [sourceQuestions[j], sourceQuestions[i]];
+      }
+    }
+    
+    const sliced = sourceQuestions.slice(0, actualCount);
     setQuestions(sliced);
     setCurrentIndex(0);
     setLives(5);
@@ -86,7 +96,7 @@ export default function App() {
       count = 25; // fallback
     }
     setQuestionCount(count);
-    startNewGame(count);
+    startNewGame(count, randomize);
     setSettingsOpen(false);
   };
 
@@ -338,6 +348,16 @@ export default function App() {
                   </div>
                 </label>
                 <p className="text-sm font-body text-text/60 mt-1 font-semibold">Lose a life for incorrect answers and skips.</p>
+              </div>
+
+              <div>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <span className="font-body font-semibold text-lg text-text">Randomize Questions</span>
+                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${randomize ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setRandomize(!randomize)}>
+                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${randomize ? 'translate-x-6' : 'translate-x-0'}`} />
+                  </div>
+                </label>
+                <p className="text-sm font-body text-text/60 mt-1 font-semibold">Shuffle the question order every time you start.</p>
               </div>
 
               <div>
