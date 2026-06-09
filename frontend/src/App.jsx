@@ -51,6 +51,12 @@ export default function App() {
   const [customCount, setCustomCount] = useState("");
   const [randomize, setRandomize] = useState(false);
   
+  const [tempGamemode, setTempGamemode] = useState(true);
+  const [tempQuestionCount, setTempQuestionCount] = useState(25);
+  const [tempCustomCount, setTempCustomCount] = useState("");
+  const [tempRandomize, setTempRandomize] = useState(false);
+  const [customError, setCustomError] = useState("");
+  
   // Quiz state
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -88,15 +94,31 @@ export default function App() {
     setShowRationale(false);
   };
 
+  const openSettings = () => {
+    setTempGamemode(gamemode);
+    setTempQuestionCount(questionCount);
+    setTempCustomCount(customCount);
+    setTempRandomize(randomize);
+    setCustomError("");
+    setSettingsOpen(true);
+  };
+
   const handleApplySettings = () => {
-    let count = questionCount;
-    if (count === 'custom' && parseInt(customCount) > 0) {
-      count = Math.min(parseInt(customCount), allQuestions.length);
-    } else if (count === 'custom') {
-      count = 25; // fallback
+    let count = tempQuestionCount;
+    if (count === 'custom') {
+      const parsed = Number(tempCustomCount);
+      if (!Number.isInteger(parsed) || parsed <= 0 || parsed > allQuestions.length) {
+        setCustomError("Invalid number.");
+        return;
+      }
+      count = parsed;
     }
-    setQuestionCount(count);
-    startNewGame(count, randomize);
+    
+    setQuestionCount(tempQuestionCount);
+    setCustomCount(tempCustomCount);
+    setGamemode(tempGamemode);
+    setRandomize(tempRandomize);
+    startNewGame(count, tempRandomize);
     setSettingsOpen(false);
   };
 
@@ -191,7 +213,7 @@ export default function App() {
             <button className="text-text hover:text-primary transition-colors p-2">
               <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
             </button>
-            <button onClick={() => setSettingsOpen(true)} className="text-text hover:text-primary transition-colors p-2">
+            <button onClick={openSettings} className="text-text hover:text-primary transition-colors p-2">
               <Settings className="w-7 h-7 sm:w-9 sm:h-9" strokeWidth={3} />
             </button>
           </div>
@@ -343,8 +365,8 @@ export default function App() {
               <div>
                 <label className="flex items-center justify-between cursor-pointer group">
                   <span className="font-body font-semibold text-lg text-text">Lamp (Lives) Gamemode</span>
-                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${gamemode ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setGamemode(!gamemode)}>
-                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${gamemode ? 'translate-x-6' : 'translate-x-0'}`} />
+                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${tempGamemode ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setTempGamemode(!tempGamemode)}>
+                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${tempGamemode ? 'translate-x-6' : 'translate-x-0'}`} />
                   </div>
                 </label>
                 <p className="text-sm font-body text-text/60 mt-1 font-semibold">Lose a life for incorrect answers and skips.</p>
@@ -353,8 +375,8 @@ export default function App() {
               <div>
                 <label className="flex items-center justify-between cursor-pointer group">
                   <span className="font-body font-semibold text-lg text-text">Randomize Questions</span>
-                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${randomize ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setRandomize(!randomize)}>
-                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${randomize ? 'translate-x-6' : 'translate-x-0'}`} />
+                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${tempRandomize ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setTempRandomize(!tempRandomize)}>
+                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${tempRandomize ? 'translate-x-6' : 'translate-x-0'}`} />
                   </div>
                 </label>
                 <p className="text-sm font-body text-text/60 mt-1 font-semibold">Shuffle the question order every time you start.</p>
@@ -366,8 +388,8 @@ export default function App() {
                   {[25, 50, 75, 100].map(num => (
                     <button 
                       key={num}
-                      onClick={() => { setQuestionCount(num); setCustomCount(""); }}
-                      className={`py-3 rounded-xl font-heading text-lg border-2 transition-all ${questionCount === num ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
+                      onClick={() => { setTempQuestionCount(num); setTempCustomCount(""); setCustomError(""); }}
+                      className={`py-3 rounded-xl font-heading text-lg border-2 transition-all ${tempQuestionCount === num ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
                     >
                       {num}
                     </button>
@@ -375,23 +397,26 @@ export default function App() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <button 
-                    onClick={() => setQuestionCount('custom')}
-                    className={`flex-1 py-3 rounded-xl font-heading text-lg border-2 transition-all ${questionCount === 'custom' ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
+                    onClick={() => { setTempQuestionCount('custom'); setCustomError(""); }}
+                    className={`flex-1 py-3 rounded-xl font-heading text-lg border-2 transition-all ${tempQuestionCount === 'custom' ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
                   >
                     Custom
                   </button>
-                  {questionCount === 'custom' && (
+                  {tempQuestionCount === 'custom' && (
                     <input 
                       type="number" 
-                      value={customCount}
-                      onChange={(e) => setCustomCount(e.target.value)}
+                      value={tempCustomCount}
+                      onChange={(e) => { setTempCustomCount(e.target.value); setCustomError(""); }}
                       placeholder={`Max ${allQuestions.length}`}
-                      className="w-24 p-3 rounded-xl border-2 border-mid outline-none font-body text-center font-bold text-text bg-transparent"
+                      className={`w-24 p-3 rounded-xl border-2 outline-none font-body text-center font-bold text-text bg-transparent ${customError ? 'border-red-500' : 'border-mid'}`}
                       min="1"
                       max={allQuestions.length}
                     />
                   )}
                 </div>
+                {customError && (
+                  <p className="text-red-500 text-sm font-semibold mt-2">{customError}</p>
+                )}
               </div>
 
               <button 
