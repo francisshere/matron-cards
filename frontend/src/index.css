@@ -18,8 +18,13 @@
   transform-style: preserve-3d;
 }
 .backface-hidden {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
 }
 .rotate-y-180 {
   transform: rotateY(180deg);
+}
+.rotate-x-180 {
+  transform: rotateX(180deg);
 }
