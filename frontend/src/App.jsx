@@ -6,11 +6,56 @@ import avatarNurse from './assets/avatar-main-no-bg.svg';
 import explainIcon from './assets/explain.svg';
 import lampIcon from './assets/lamp-no-bg.svg';
 
+const playSound = (type) => {
+  try {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContext) return;
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    
+    if (type === 'correct') {
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(523.25, ctx.currentTime);
+      osc.frequency.setValueAtTime(659.25, ctx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(783.99, ctx.currentTime + 0.2);
+      
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.5);
+      
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.5);
+    } else if (type === 'wrong') {
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(150, ctx.currentTime); 
+      osc.frequency.exponentialRampToValueAtTime(80, ctx.currentTime + 0.3);
+      
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+      
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 0.3);
+    }
+  } catch(e) { console.error("Audio error", e) }
+};
+
 export default function App() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [gamemode, setGamemode] = useState(true);
   const [questionCount, setQuestionCount] = useState(25);
   const [customCount, setCustomCount] = useState("");
+  const [randomize, setRandomize] = useState(false);
+  
+  const [tempGamemode, setTempGamemode] = useState(true);
+  const [tempQuestionCount, setTempQuestionCount] = useState(25);
+  const [tempCustomCount, setTempCustomCount] = useState("");
+  const [tempRandomize, setTempRandomize] = useState(false);
+  const [customError, setCustomError] = useState("");
   
   // Quiz state
   const [questions, setQuestions] = useState([]);
@@ -22,15 +67,24 @@ export default function App() {
   const [quizFinished, setQuizFinished] = useState(false);
 
   useEffect(() => {
-    startNewGame(25);
+    startNewGame(25, false);
   }, []);
 
-  const startNewGame = (count = questionCount) => {
+  const startNewGame = (count = questionCount, isRandom = randomize) => {
     let actualCount = count;
     if (count === 'custom') {
       actualCount = parseInt(customCount) > 0 ? parseInt(customCount) : 25;
     }
-    const sliced = allQuestions.slice(0, actualCount);
+    
+    let sourceQuestions = [...allQuestions];
+    if (isRandom) {
+      for (let i = sourceQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sourceQuestions[i], sourceQuestions[j]] = [sourceQuestions[j], sourceQuestions[i]];
+      }
+    }
+    
+    const sliced = sourceQuestions.slice(0, actualCount);
     setQuestions(sliced);
     setCurrentIndex(0);
     setLives(5);
@@ -40,15 +94,31 @@ export default function App() {
     setShowRationale(false);
   };
 
+  const openSettings = () => {
+    setTempGamemode(gamemode);
+    setTempQuestionCount(questionCount);
+    setTempCustomCount(customCount);
+    setTempRandomize(randomize);
+    setCustomError("");
+    setSettingsOpen(true);
+  };
+
   const handleApplySettings = () => {
-    let count = questionCount;
-    if (count === 'custom' && parseInt(customCount) > 0) {
-      count = Math.min(parseInt(customCount), allQuestions.length);
-    } else if (count === 'custom') {
-      count = 25; // fallback
+    let count = tempQuestionCount;
+    if (count === 'custom') {
+      const parsed = Number(tempCustomCount);
+      if (!Number.isInteger(parsed) || parsed <= 0 || parsed > allQuestions.length) {
+        setCustomError("Invalid number.");
+        return;
+      }
+      count = parsed;
     }
-    setQuestionCount(count);
-    startNewGame(count);
+    
+    setQuestionCount(tempQuestionCount);
+    setCustomCount(tempCustomCount);
+    setGamemode(tempGamemode);
+    setRandomize(tempRandomize);
+    startNewGame(count, tempRandomize);
     setSettingsOpen(false);
   };
 
@@ -58,14 +128,16 @@ export default function App() {
     if (!selectedOption || showRationale) return;
     
     if (selectedOption !== currentQuestion.correct_option) {
+      playSound('wrong');
       if (gamemode) {
         const newLives = lives - 1;
         setLives(newLives);
         if (newLives <= 0) {
-          setTimeout(() => setGameOver(true), 1500); // give a bit of time to read rationale before game over modal? or just let them read it first.
-          // Actually, let's let them read rationale, and trigger game over when they click Next.
+          setTimeout(() => setGameOver(true), 2000); 
         }
       }
+    } else {
+      playSound('correct');
     }
     setShowRationale(true);
   };
@@ -108,7 +180,7 @@ export default function App() {
   if (gameOver) {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full animate-bounce-pop">
           <img src={explainIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
           <p className="font-body text-text/80 mb-8 font-semibold">You ran out of lives (5 mistakes).</p>
@@ -121,7 +193,7 @@ export default function App() {
   if (quizFinished) {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full animate-bounce-pop">
           <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
           <p className="font-body text-text/80 mb-8 font-semibold">Great job finishing {questions.length} questions.</p>
@@ -141,7 +213,7 @@ export default function App() {
             <button className="text-text hover:text-primary transition-colors p-2">
               <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
             </button>
-            <button onClick={() => setSettingsOpen(true)} className="text-text hover:text-primary transition-colors p-2">
+            <button onClick={openSettings} className="text-text hover:text-primary transition-colors p-2">
               <Settings className="w-7 h-7 sm:w-9 sm:h-9" strokeWidth={3} />
             </button>
           </div>
@@ -174,17 +246,30 @@ export default function App() {
             <img 
               src={showRationale ? explainIcon : avatarNurse} 
               alt="Mascot Avatar" 
-              className="w-full h-full object-contain drop-shadow-lg transition-all duration-300"
+              className={`w-full h-full object-contain drop-shadow-lg transition-all duration-300 ${showRationale && selectedOption === currentQuestion.correct_option ? 'animate-bounce-pop' : ''}`}
             />
           </div>
           
-          <div className="bg-card border-4 border-text/60 rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0 min-h-[160px]">
+          <div className={`border-4 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50 animate-shake') : 'border-text/60 bg-card'} rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0 min-h-[160px] transition-colors duration-300`}>
             {/* Speech bubble tail */}
-            <div className="hidden sm:block absolute top-12 -left-[14px] w-6 h-6 bg-card border-l-4 border-b-4 border-text/60 transform rotate-45"></div>
-            <div className="sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card border-t-4 border-l-4 border-text/60 rotate-45"></div>
+            <div className={`hidden sm:block absolute top-12 -left-[14px] w-6 h-6 border-l-4 border-b-4 transform rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
+            <div className={`sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 border-t-4 border-l-4 rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
             
+            {showRationale && (
+              <div className={`mb-4 inline-block px-4 py-1.5 rounded-full text-sm sm:text-base font-bold uppercase tracking-widest shadow-sm animate-bounce-pop ${
+                  selectedOption === currentQuestion.correct_option ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+                }`}>
+                {selectedOption === currentQuestion.correct_option ? '🎉 CORRECT!' : '❌ INCORRECT'}
+              </div>
+            )}
+
             <p className="text-text font-body font-semibold text-sm sm:text-base leading-relaxed">
-              {showRationale ? currentQuestion.rationale : currentQuestion.question_stem}
+              {showRationale ? (
+                <span className="block mt-2">
+                  <span className="font-heading font-black text-lg text-text block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-2">Rationale</span>
+                  {currentQuestion.rationale}
+                </span>
+              ) : currentQuestion.question_stem}
             </p>
           </div>
         </div>
@@ -280,11 +365,21 @@ export default function App() {
               <div>
                 <label className="flex items-center justify-between cursor-pointer group">
                   <span className="font-body font-semibold text-lg text-text">Lamp (Lives) Gamemode</span>
-                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${gamemode ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setGamemode(!gamemode)}>
-                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${gamemode ? 'translate-x-6' : 'translate-x-0'}`} />
+                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${tempGamemode ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setTempGamemode(!tempGamemode)}>
+                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${tempGamemode ? 'translate-x-6' : 'translate-x-0'}`} />
                   </div>
                 </label>
                 <p className="text-sm font-body text-text/60 mt-1 font-semibold">Lose a life for incorrect answers and skips.</p>
+              </div>
+
+              <div>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <span className="font-body font-semibold text-lg text-text">Randomize Questions</span>
+                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${tempRandomize ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setTempRandomize(!tempRandomize)}>
+                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${tempRandomize ? 'translate-x-6' : 'translate-x-0'}`} />
+                  </div>
+                </label>
+                <p className="text-sm font-body text-text/60 mt-1 font-semibold">Shuffle the question order every time you start.</p>
               </div>
 
               <div>
@@ -293,8 +388,8 @@ export default function App() {
                   {[25, 50, 75, 100].map(num => (
                     <button 
                       key={num}
-                      onClick={() => { setQuestionCount(num); setCustomCount(""); }}
-                      className={`py-3 rounded-xl font-heading text-lg border-2 transition-all ${questionCount === num ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
+                      onClick={() => { setTempQuestionCount(num); setTempCustomCount(""); setCustomError(""); }}
+                      className={`py-3 rounded-xl font-heading text-lg border-2 transition-all ${tempQuestionCount === num ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
                     >
                       {num}
                     </button>
@@ -302,23 +397,26 @@ export default function App() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <button 
-                    onClick={() => setQuestionCount('custom')}
-                    className={`flex-1 py-3 rounded-xl font-heading text-lg border-2 transition-all ${questionCount === 'custom' ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
+                    onClick={() => { setTempQuestionCount('custom'); setCustomError(""); }}
+                    className={`flex-1 py-3 rounded-xl font-heading text-lg border-2 transition-all ${tempQuestionCount === 'custom' ? 'bg-mid text-white border-mid' : 'bg-transparent border-text/20 text-text/80 hover:border-mid/50'}`}
                   >
                     Custom
                   </button>
-                  {questionCount === 'custom' && (
+                  {tempQuestionCount === 'custom' && (
                     <input 
                       type="number" 
-                      value={customCount}
-                      onChange={(e) => setCustomCount(e.target.value)}
+                      value={tempCustomCount}
+                      onChange={(e) => { setTempCustomCount(e.target.value); setCustomError(""); }}
                       placeholder={`Max ${allQuestions.length}`}
-                      className="w-24 p-3 rounded-xl border-2 border-mid outline-none font-body text-center font-bold text-text bg-transparent"
+                      className={`w-24 p-3 rounded-xl border-2 outline-none font-body text-center font-bold text-text bg-transparent ${customError ? 'border-red-500' : 'border-mid'}`}
                       min="1"
                       max={allQuestions.length}
                     />
                   )}
                 </div>
+                {customError && (
+                  <p className="text-red-500 text-sm font-semibold mt-2">{customError}</p>
+                )}
               </div>
 
               <button 
