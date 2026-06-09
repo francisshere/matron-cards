@@ -62,16 +62,35 @@ export default function Home({ onStartQuiz }) {
             </div>
             
             <div 
-              className={`flex-1 w-full border-[4px] border-[#4A1529] bg-white rounded-3xl shadow-[0px_6px_0px_0px_#4A1529] cursor-pointer transition-all duration-300 hover:translate-y-1 hover:shadow-none min-h-[250px] flex flex-col overflow-hidden`}
+              className="flex-1 w-full perspective-1000 cursor-pointer min-h-[250px]"
               onClick={() => setShowRationale(!showRationale)}
             >
-              <div className="border-b-[4px] border-[#4A1529] py-4 bg-white text-center">
-                 <span className="text-2xl font-black text-[#4A1529]">{showRationale ? 'Rationale' : 'Review of the Day'}</span>
-              </div>
-              <div className="p-6 sm:p-8 flex-1 flex items-center justify-center">
-                <p className="text-[#4A1529] font-body font-bold text-base sm:text-xl text-center leading-relaxed">
-                  {showRationale ? dailyQuestion.rationale : dailyQuestion.question_stem}
-                </p>
+              <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${showRationale ? 'rotate-x-180' : ''}`}>
+                
+                {/* Front */}
+                <div className="relative z-20 w-full h-full border-[4px] border-[#4A1529] bg-white rounded-3xl shadow-[0px_6px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 active:translate-y-1 active:shadow-none min-h-[250px]">
+                  <div className="border-b-[4px] border-[#4A1529] py-4 bg-white text-center">
+                     <span className="text-2xl font-black text-[#4A1529]">Review of the Day</span>
+                  </div>
+                  <div className="p-6 sm:p-8 flex-1 flex items-center justify-center">
+                    <p className="text-[#4A1529] font-body font-bold text-base sm:text-xl text-center leading-relaxed">
+                      {dailyQuestion.question_stem}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Back */}
+                <div className="absolute z-10 inset-0 w-full h-full border-[4px] border-[#4A1529] bg-white rounded-3xl shadow-[0px_-6px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden rotate-x-180 transition-all duration-300 active:-translate-y-1 active:shadow-none">
+                  <div className="border-b-[4px] border-[#4A1529] py-4 bg-[#F7C4D5] text-center">
+                     <span className="text-2xl font-black text-[#4A1529]">Rationale</span>
+                  </div>
+                  <div className="p-6 sm:p-8 flex-1 flex items-center justify-center overflow-y-auto">
+                    <p className="text-[#4A1529] font-body font-bold text-base sm:text-xl text-center leading-relaxed">
+                      {dailyQuestion.rationale}
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
