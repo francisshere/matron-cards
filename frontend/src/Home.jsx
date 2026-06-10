@@ -21,41 +21,41 @@ export default function Home({ onStartQuiz }) {
       </div>
 
       {/* Sidebar Navigation */}
-      <aside className="hidden lg:flex w-64 fixed left-0 top-0 h-full bg-bg border-r-[4px] border-muted flex-col p-4 z-20">
-        <div className="flex items-center justify-start mb-8 mt-2 px-2">
+      <aside className="hidden lg:flex w-72 fixed left-0 top-0 h-full bg-bg border-r-[4px] border-muted flex-col p-6 z-20">
+        <div className="flex items-center justify-start mb-10 mt-2 px-2">
           <a href="#">
-            <img src={logo} alt="Matron Logo" className="w-48 h-auto hover:opacity-80 transition-opacity" />
+            <img src={logo} alt="Matron Logo" className="w-56 h-auto hover:opacity-80 transition-opacity" />
           </a>
         </div>
 
-        <nav className="flex flex-col space-y-1 flex-1 w-full">
+        <nav className="flex flex-col space-y-2 flex-1 w-full">
           {/* Active Item */}
-          <a href="#" className="flex items-center w-full py-2.5 px-3 rounded-2xl border-[2px] border-primary bg-primary/10 text-primary transition-colors group">
-            <div className="w-8 h-8 mr-3 flex items-center justify-center">
-              <img src={learnIcon} alt="Learn" className="w-6 h-6 group-hover:scale-110 transition-transform" />
+          <a href="#" className="flex items-center w-full py-3 px-5 rounded-2xl border-[2px] border-primary bg-primary/10 text-primary transition-colors group">
+            <div className="w-16 h-16 mr-4 flex items-center justify-center shrink-0">
+              <img src={learnIcon} alt="Learn" className="w-16 h-16 group-hover:scale-110 transition-transform" />
             </div>
-            <span className="font-black tracking-widest uppercase text-lg">Learn</span>
+            <span className="font-black tracking-widest uppercase text-xl">Learn</span>
           </a>
           
           {/* Inactive Item */}
-          <a href="#" className="flex items-center w-full py-2.5 px-3 rounded-2xl border-[2px] border-transparent hover:bg-primary/5 text-muted transition-colors group">
-            <div className="w-8 h-8 mr-3 flex items-center justify-center">
-              <img src={topicsIcon} alt="Topics" className="w-6 h-6 group-hover:scale-110 transition-transform" />
+          <a href="#" className="flex items-center w-full py-3 px-5 rounded-2xl border-[2px] border-transparent hover:bg-primary/5 text-muted transition-colors group">
+            <div className="w-16 h-16 mr-4 flex items-center justify-center shrink-0">
+              <img src={topicsIcon} alt="Topics" className="w-16 h-16 group-hover:scale-110 transition-transform" />
             </div>
-            <span className="font-black tracking-widest uppercase text-lg">Topics</span>
+            <span className="font-black tracking-widest uppercase text-xl">Topics</span>
           </a>
           
-          <a href="#" className="flex items-center w-full py-2.5 px-3 rounded-2xl border-[2px] border-transparent hover:bg-primary/5 text-muted transition-colors group">
-            <div className="w-8 h-8 mr-3 flex items-center justify-center">
-              <img src={profileIcon} alt="Profile" className="w-6 h-6 group-hover:scale-110 transition-transform" />
+          <a href="#" className="flex items-center w-full py-3 px-5 rounded-2xl border-[2px] border-transparent hover:bg-primary/5 text-muted transition-colors group">
+            <div className="w-16 h-16 mr-4 flex items-center justify-center shrink-0">
+              <img src={profileIcon} alt="Profile" className="w-16 h-16 group-hover:scale-110 transition-transform" />
             </div>
-            <span className="font-black tracking-widest uppercase text-lg">Profile</span>
+            <span className="font-black tracking-widest uppercase text-xl">Profile</span>
           </a>
         </nav>
       </aside>
 
       {/* Main Content Area */}
-      <main className="w-full lg:w-[calc(100%-16rem)] lg:ml-64 p-6 sm:p-12 flex justify-center">
+      <main className="w-full lg:w-[calc(100%-18rem)] lg:ml-72 p-6 sm:p-12 flex justify-center">
         <div className="w-full max-w-4xl flex flex-col">
 
         {/* Header */}
