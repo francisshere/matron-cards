@@ -5,7 +5,7 @@ import learnIcon from './assets/learn-icon.svg';
 import topicsIcon from './assets/topics-icon.svg';
 import profileIcon from './assets/profile-icon.svg';
 
-export default function Topics({ onViewChange }) {
+export default function Topics({ onViewChange, onStartQuiz }) {
   const [activeSet, setActiveSet] = useState(1);
   const [activeCategory, setActiveCategory] = useState('Sets');
   const [activeSubcategory, setActiveSubcategory] = useState('Set 1');
@@ -210,7 +210,7 @@ export default function Topics({ onViewChange }) {
                   <div className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] ${currentSetData.colorClass} bg-white ${currentSetData.textClass} font-black text-base sm:text-lg py-3 sm:py-0`}>
                     {item.count} ITEMS
                   </div>
-                  <button className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${currentSetData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${currentSetData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
+                  <button onClick={() => onStartQuiz && onStartQuiz(`PNLE ${item.subtitle}`)} className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${currentSetData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${currentSetData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
                     LEARN
                   </button>
                 </div>
