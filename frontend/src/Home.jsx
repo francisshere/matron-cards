@@ -8,7 +8,7 @@ import profileIcon from './assets/profile-icon.svg';
 import mascot from './assets/love.svg';
 import explainIcon from './assets/explain.svg';
 
-export default function Home({ onStartQuiz }) {
+export default function Home({ onStartQuiz, onViewChange }) {
   const [showRationale, setShowRationale] = useState(false);
   const dailyQuestion = allQuestions[0]; // Just use the first question for now
 
@@ -38,7 +38,7 @@ export default function Home({ onStartQuiz }) {
           </a>
 
           {/* Inactive Item */}
-          <a href="#" className="flex items-center w-full py-3 px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
+          <a href="#" onClick={(e) => { e.preventDefault(); onViewChange('topics'); }} className="flex items-center w-full py-3 px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
             <div className="w-12 h-12 mr-4 flex items-center justify-center shrink-0">
               <img src={topicsIcon} alt="Topics" className="w-12 h-12 group-hover:scale-110 transition-transform" />
             </div>
