@@ -107,11 +107,11 @@ export default function Topics({ onViewChange }) {
           {/* Filter Section */}
           <div className="mb-8">
             <h2 className="font-heading font-black text-3xl sm:text-4xl text-[#4A1529] mb-4">PNLE Library</h2>
-            
+
             <div className="flex flex-col gap-4">
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 items-center w-full">
                 {['Sets', 'Nursing', 'Practice Exams'].map(category => (
-                  <button 
+                  <button
                     key={category}
                     onClick={() => {
                       setActiveCategory(category);
@@ -124,20 +124,37 @@ export default function Topics({ onViewChange }) {
                         setActiveSubcategory('');
                       }
                     }}
-                    className={`px-6 py-2 rounded-xl border-[2px] font-body font-medium text-lg shadow-sm transition-all
-                      ${activeCategory === category 
-                        ? 'bg-[#F7C4D5] border-[#855264] text-[#4A1529]' 
+                    className={`px-6 py-2 rounded-xl border-[2px] font-body font-medium text-lg drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+                      ${activeCategory === category
+                        ? 'bg-[#F7C4D5] border-[#855264] text-[#4A1529]'
                         : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:opacity-90'}`}
                   >
                     {category}
                   </button>
                 ))}
+
+                {(activeCategory || activeSubcategory) && (
+                  <button
+                    onClick={() => {
+                      setActiveCategory(null);
+                      setActiveSubcategory('');
+                      setActiveSet(1);
+                    }}
+                    className="ml-auto px-4 py-2 rounded-xl font-body font-bold text-sm text-[#855264] hover:text-[#4A1529] hover:bg-[#F7C4D5] transition-all flex items-center gap-1"
+                    title="Remove Filter"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    Remove Filter
+                  </button>
+                )}
               </div>
 
               {activeCategory === 'Sets' && (
                 <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
                   {['Set 1', 'Set 2', 'Set 3'].map(sub => (
-                    <button 
+                    <button
                       key={sub}
                       onClick={() => {
                         setActiveSubcategory(sub);
@@ -145,9 +162,9 @@ export default function Topics({ onViewChange }) {
                         else if (sub === 'Set 2') setActiveSet(2);
                         // Add Set 3 logic if needed
                       }}
-                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm transition-all
-                        ${activeSubcategory === sub 
-                          ? 'bg-[#D42F6B] border-[#4A1529] text-white' 
+                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+                        ${activeSubcategory === sub
+                          ? 'bg-[#D42F6B] border-[#4A1529] text-white'
                           : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
                     >
                       {sub}
@@ -159,12 +176,12 @@ export default function Topics({ onViewChange }) {
               {activeCategory === 'Nursing' && (
                 <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
                   {['Foundation of Nursing', 'Maternal and Child Nursing', 'Community Health Nursing', 'Medical - Surgical Nursing'].map(sub => (
-                    <button 
+                    <button
                       key={sub}
                       onClick={() => setActiveSubcategory(sub)}
-                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm transition-all
-                        ${activeSubcategory === sub 
-                          ? 'bg-[#D42F6B] border-[#4A1529] text-white' 
+                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+                        ${activeSubcategory === sub
+                          ? 'bg-[#D42F6B] border-[#4A1529] text-white'
                           : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
                     >
                       {sub}
