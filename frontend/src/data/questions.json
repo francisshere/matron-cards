@@ -2598,5 +2598,2605 @@
     ],
     "correct_option": "C",
     "rationale": "Shifting dullness over the abdomen indicates ascites, an abnormal finding. The other options are normal abdominal findings."
+  },
+  {
+    "id": 101,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "May arrives at the health care clinic and tells the nurse that her last menstrual period was 9 weeks ago. She also tells the nurse that a home pregnancy test was positive but she began to have mild cramps and is now having moderate vaginal bleeding. During the physical examination of the client, the nurse notes that May has a dilated cervix. The nurse determines that May is experiencing which type of abortion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inevitable"
+      },
+      {
+        "id": "B",
+        "text": "Incomplete"
+      },
+      {
+        "id": "C",
+        "text": "Threatened"
+      },
+      {
+        "id": "D",
+        "text": "Septic"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "An inevitable abortion is termination of pregnancy that cannot be prevented. Moderate to severe bleeding with mild cramping and cervical dilation would be noted in this type of abortion."
+  },
+  {
+    "id": 102,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Reese is reviewing the record of a pregnant client for her first prenatal visit. Which of the following data, if noted on the client’s record, would alert the nurse that the client is at risk for a spontaneous abortion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Age 36 years"
+      },
+      {
+        "id": "B",
+        "text": "History of syphilis"
+      },
+      {
+        "id": "C",
+        "text": "History of genital herpes"
+      },
+      {
+        "id": "D",
+        "text": "History of diabetes mellitus"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Maternal infections such as syphilis, toxoplasmosis, and rubella are causes of spontaneous abortion."
+  },
+  {
+    "id": 103,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Hazel is preparing to care for a client who is newly admitted to the hospital with a possible diagnosis of ectopic pregnancy. Nurse Hazel develops a plan of care for the client and determines that which of the following nursing actions is the priority?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Monitoring weight"
+      },
+      {
+        "id": "B",
+        "text": "Assessing for edema"
+      },
+      {
+        "id": "C",
+        "text": "Monitoring apical pulse"
+      },
+      {
+        "id": "D",
+        "text": "Monitoring temperature"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Nursing care for the client with a possible ectopic pregnancy is focused on preventing or identifying hypovolemic shock and controlling pain. An elevated pulse rate is an indicator of shock."
+  },
+  {
+    "id": 104,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Oliver is teaching a diabetic pregnant client about nutrition and insulin needs during pregnancy. The nurse determines that the client understands dietary and insulin needs if the client states that the second half of pregnancy require:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Decreased caloric intake"
+      },
+      {
+        "id": "B",
+        "text": "Increased caloric intake"
+      },
+      {
+        "id": "C",
+        "text": "Decreased Insulin"
+      },
+      {
+        "id": "D",
+        "text": "Increase Insulin"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Glucose crosses the placenta, but insulin does not. High fetal demands for glucose, combined with the insulin resistance caused by hormonal changes in the last half of pregnancy can result in elevation of maternal blood glucose levels. This increases the mother’s demand for insulin and is referred to as the diabetogenic effect of pregnancy."
+  },
+  {
+    "id": 105,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Michelle is assessing a 24 year old client with a diagnosis of hydatidiform mole. She is aware that one of the following is unassociated with this condition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Excessive fetal activity."
+      },
+      {
+        "id": "B",
+        "text": "Larger than normal uterus for gestational age."
+      },
+      {
+        "id": "C",
+        "text": "Vaginal bleeding"
+      },
+      {
+        "id": "D",
+        "text": "Elevated levels of human chorionic gonadotropin."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The most common signs and symptoms of hydatidiform mole includes elevated levels of human chorionic gonadotropin, vaginal bleeding, larger than normal uterus for gestational age, failure to detect fetal heart activity even with sensitive instruments, excessive nausea and vomiting, and early development of pregnancy-induced hypertension. Fetal activity would not be noted."
+  },
+  {
+    "id": 106,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A pregnant client is receiving magnesium sulfate for severe pregnancy induced hypertension (PIH). The clinical findings that would warrant use of the antidote , calcium gluconate is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Urinary output 90 cc in 2 hours."
+      },
+      {
+        "id": "B",
+        "text": "Absent patellar reflexes."
+      },
+      {
+        "id": "C",
+        "text": "Rapid respiratory rate above 40/min."
+      },
+      {
+        "id": "D",
+        "text": "Rapid rise in blood pressure."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Absence of patellar reflexes is an indicator of hypermagnesemia, which requires administration of calcium gluconate."
+  },
+  {
+    "id": 107,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "During vaginal examination of Janah who is in labor, the presenting part is at station plus two. Nurse, correctly interprets it as:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presenting part is 2 cm above the plane of the ischial spines."
+      },
+      {
+        "id": "B",
+        "text": "Biparietal diameter is at the level of the ischial spines."
+      },
+      {
+        "id": "C",
+        "text": "Presenting part in 2 cm below the plane of the ischial spines."
+      },
+      {
+        "id": "D",
+        "text": "Biparietal diameter is 2 cm above the ischial spines."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Fetus at station plus two indicates that the presenting part is 2 cm below the plane of the ischial spines."
+  },
+  {
+    "id": 108,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A pregnant client is receiving oxytocin (Pitocin) for induction of labor. A condition that warrant the nurse in-charge to discontinue I.V. infusion of Pitocin is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contractions every 1 ½ minutes lasting 70-80 seconds."
+      },
+      {
+        "id": "B",
+        "text": "Maternal temperature 101.2"
+      },
+      {
+        "id": "C",
+        "text": "Early decelerations in the fetal heart rate."
+      },
+      {
+        "id": "D",
+        "text": "Fetal heart rate baseline 140-160 bpm."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Contractions every 1 ½ minutes lasting 70-80 seconds, is indicative of hyperstimulation of the uterus, which could result in injury to the mother and the fetus if Pitocin is not discontinued."
+  },
+  {
+    "id": 109,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Calcium gluconate is being administered to a client with pregnancy induced hypertension (PIH). A nursing action that must be initiated as the plan of care throughout injection of the drug is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ventilator assistance"
+      },
+      {
+        "id": "B",
+        "text": "CVP readings"
+      },
+      {
+        "id": "C",
+        "text": "EKG tracings"
+      },
+      {
+        "id": "D",
+        "text": "Continuous CPR"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "A potential side effect of calcium gluconate administration is cardiac arrest. Continuous monitoring of cardiac activity (EKG) throught administration of calcium gluconate is an essential part of care."
+  },
+  {
+    "id": 110,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A trial for vaginal delivery after an earlier caesareans, would likely to be given to a gravida, who had:",
+    "options": [
+      {
+        "id": "A",
+        "text": "First low transverse cesarean was for active herpes type 2 infections; vaginal culture at 39 weeks pregnancy was positive."
+      },
+      {
+        "id": "B",
+        "text": "First and second caesareans were for cephalopelvic disproportion."
+      },
+      {
+        "id": "C",
+        "text": "First caesarean through a classic incision as a result of severe fetal distress."
+      },
+      {
+        "id": "D",
+        "text": "First low transverse caesarean was for breech position. Fetus in this pregnancy is in a vertex presentation."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "This type of client has no obstetrical indication for a caesarean section as she did with her first caesarean delivery."
+  },
+  {
+    "id": 111,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Ryan is aware that the best initial approach when trying to take a crying toddler’s temperature is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Talk to the mother first and then to the toddler."
+      },
+      {
+        "id": "B",
+        "text": "Bring extra help so it can be done quickly."
+      },
+      {
+        "id": "C",
+        "text": "Encourage the mother to hold the child."
+      },
+      {
+        "id": "D",
+        "text": "Ignore the crying and screaming."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "When dealing with a crying toddler, the best approach is to talk to the mother and ignore the toddler first. This approach helps the toddler get used to the nurse before she attempts any procedures. It also gives the toddler an opportunity to see that the mother trusts the nurse."
+  },
+  {
+    "id": 112,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Baby Tina a 3 month old infant just had a cleft lip and palate repair. What should the nurse do to prevent trauma to operative site?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avoid touching the suture line, even when cleaning."
+      },
+      {
+        "id": "B",
+        "text": "Place the baby in prone position."
+      },
+      {
+        "id": "C",
+        "text": "Give the baby a pacifier."
+      },
+      {
+        "id": "D",
+        "text": "Place the infant’s arms in soft elbow restraints."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Soft restraints from the upper arm to the wrist prevent the infant from touching her lip but allow him to hold a favorite item such as a blanket. Because they could damage the operative site, such as objects as pacifiers, suction catheters, and small spoons shouldn’t be placed in a baby’s mouth after cleft repair. A baby in a prone position may rub her face on the sheets and traumatize the operative site. The suture line should be cleaned gently to prevent infection, which could interfere with healing and damage the cosmetic appearance of the repair."
+  },
+  {
+    "id": 113,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which action should nurse Marian include in the care plan for a 2 month old with heart failure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Feed the infant when he cries."
+      },
+      {
+        "id": "B",
+        "text": "Allow the infant to rest before feeding."
+      },
+      {
+        "id": "C",
+        "text": "Bathe the infant and administer medications before feeding."
+      },
+      {
+        "id": "D",
+        "text": "Weigh and bathe the infant before feeding."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Because feeding requires so much energy, an infant with heart failure should rest before feeding."
+  },
+  {
+    "id": 114,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Hazel is teaching a mother who plans to discontinue breast feeding after 5 months. The nurse should advise her to include which foods in her infant’s diet?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Skim milk and baby food."
+      },
+      {
+        "id": "B",
+        "text": "Whole milk and baby food."
+      },
+      {
+        "id": "C",
+        "text": "Iron-rich formula only."
+      },
+      {
+        "id": "D",
+        "text": "Iron-rich formula and baby food."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The infants at age 5 months should receive iron-rich formula and that they shouldn’t receive solid food, even baby food until age 6 months."
+  },
+  {
+    "id": 115,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Mommy Linda is playing with her infant, who is sitting securely alone on the floor of the clinic. The mother hides a toy behind her back and the infant looks for it. The nurse is aware that estimated age of the infant would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 months"
+      },
+      {
+        "id": "B",
+        "text": "4 months"
+      },
+      {
+        "id": "C",
+        "text": "8 months"
+      },
+      {
+        "id": "D",
+        "text": "10 months"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A 10 month old infant can sit alone and understands object permanence, so he would look for the hidden toy. At age 4 to 6 months, infants can’t sit securely alone. At age 8 months, infants can sit securely alone but cannot understand the permanence of objects."
+  },
+  {
+    "id": 116,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which of the following is the most prominent feature of public health nursing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It involves providing home care to sick people who are not confined in the hospital."
+      },
+      {
+        "id": "B",
+        "text": "Services are provided free of charge to people within the catchments area."
+      },
+      {
+        "id": "C",
+        "text": "The public health nurse functions as part of a team providing a public health nursing services."
+      },
+      {
+        "id": "D",
+        "text": "Public health nursing focuses on preventive, not curative, services."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The catchments area in PHN consists of a residential community, many of whom are well individuals who have greater need for preventive rather than curative services."
+  },
+  {
+    "id": 117,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "When the nurse determines whether resources were maximized in implementing Ligtas Tigdas, she is evaluating",
+    "options": [
+      {
+        "id": "A",
+        "text": "Effectiveness"
+      },
+      {
+        "id": "B",
+        "text": "Efficiency"
+      },
+      {
+        "id": "C",
+        "text": "Adequacy"
+      },
+      {
+        "id": "D",
+        "text": "Appropriateness"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Efficiency is determining whether the goals were attained at the least possible cost."
+  },
+  {
+    "id": 118,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Vangie is a new B.S.N. graduate. She wants to become a Public Health Nurse. Where should she apply?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Department of Health"
+      },
+      {
+        "id": "B",
+        "text": "Provincial Health Office"
+      },
+      {
+        "id": "C",
+        "text": "Regional Health Office"
+      },
+      {
+        "id": "D",
+        "text": "Rural Health Unit"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "R.A. 7160 devolved basic health services to local government units (LGU’s ). The public health nurse is an employee of the LGU."
+  },
+  {
+    "id": 119,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Tony is aware the Chairman of the Municipal Health Board is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mayor"
+      },
+      {
+        "id": "B",
+        "text": "Municipal Health Officer"
+      },
+      {
+        "id": "C",
+        "text": "Public Health Nurse"
+      },
+      {
+        "id": "D",
+        "text": "Any qualified physician"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The local executive serves as the chairman of the Municipal Health Board."
+  },
+  {
+    "id": 120,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Myra is the public health nurse in a municipality with a total population of about 20,000. There are 3 rural health midwives among the RHU personnel. How many more midwife items will the RHU need?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "The RHU does not need any more midwife item."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Each rural health midwife is given a population assignment of about 5,000."
+  },
+  {
+    "id": 121,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "According to Freeman and Heinrich, community health nursing is a developmental service. Which of the following best illustrates this statement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The community health nurse continuously develops himself personally and professionally."
+      },
+      {
+        "id": "B",
+        "text": "Health education and community organizing are necessary in providing community health services."
+      },
+      {
+        "id": "C",
+        "text": "Community health nursing is intended primarily for health promotion and prevention and treatment of disease."
+      },
+      {
+        "id": "D",
+        "text": "The goal of community health nursing is to provide nursing services to people in their own places of residence."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The community health nurse develops the health capability of people through health education and community organizing activities."
+  },
+  {
+    "id": 122,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Tina is aware that the disease declared through Presidential Proclamation No. 4 as a target for eradication in the Philippines is?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Poliomyelitis"
+      },
+      {
+        "id": "B",
+        "text": "Measles"
+      },
+      {
+        "id": "C",
+        "text": "Rabies"
+      },
+      {
+        "id": "D",
+        "text": "Neonatal tetanus"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Presidential Proclamation No. 4 is on the Ligtas Tigdas Program."
+  },
+  {
+    "id": 123,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "May knows that the step in community organizing that involves training of potential leaders in the community is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integration"
+      },
+      {
+        "id": "B",
+        "text": "Community organization"
+      },
+      {
+        "id": "C",
+        "text": "Community study"
+      },
+      {
+        "id": "D",
+        "text": "Core group formation"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "In core group formation, the nurse is able to transfer the technology of community organizing to the potential or informal community leaders through a training program."
+  },
+  {
+    "id": 124,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Beth a public health nurse takes an active role in community participation. What is the primary goal of community organizing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To educate the people regarding community health problems"
+      },
+      {
+        "id": "B",
+        "text": "To mobilize the people to resolve community health problems"
+      },
+      {
+        "id": "C",
+        "text": "To maximize the community’s resources in dealing with health problems."
+      },
+      {
+        "id": "D",
+        "text": "To maximize the community’s resources in dealing with health problems."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Community organizing is a developmental service, with the goal of developing the people’s self-reliance in dealing with community health problems. A, B and C are objectives of contributory objectives to this goal."
+  },
+  {
+    "id": 125,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Tertiary prevention is needed in which stage of the natural history of disease?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pre-pathogenesis"
+      },
+      {
+        "id": "B",
+        "text": "Pathogenesis"
+      },
+      {
+        "id": "C",
+        "text": "Prodromal"
+      },
+      {
+        "id": "D",
+        "text": "Terminal"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Tertiary prevention involves rehabilitation, prevention of permanent disability and disability limitation appropriate for convalescents, the disabled, complicated cases and the terminally ill (those in the terminal stage of a disease)."
+  },
+  {
+    "id": 126,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The nurse is caring for a primigravid client in the labor and delivery area. Which condition would place the client at risk for disseminated intravascular coagulation (DIC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intruaterine fetal death."
+      },
+      {
+        "id": "B",
+        "text": "Placenta accreta."
+      },
+      {
+        "id": "C",
+        "text": "Dysfunctional labor."
+      },
+      {
+        "id": "D",
+        "text": "Premature rupture of the membranes."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Intrauterine fetal death, abruptio placentae, septic shock, and amniotic fluid embolism may trigger normal clotting mechanisms; if clotting factors are depleted, DIC may occur. Placenta accreta, dysfunctional labor, and premature rupture of the membranes aren’t associated with DIC."
+  },
+  {
+    "id": 127,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A fullterm client is in labor. Nurse Betty is aware that the fetal heart rate would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "80 to 100 beats/minute"
+      },
+      {
+        "id": "B",
+        "text": "100 to 120 beats/minute"
+      },
+      {
+        "id": "C",
+        "text": "120 to 160 beats/minute"
+      },
+      {
+        "id": "D",
+        "text": "160 to 180 beats/minute"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "A rate of 120 to 160 beats/minute in the fetal heart appropriate for filling the heart with blood and pumping it out to the system."
+  },
+  {
+    "id": 128,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The skin in the diaper area of a 7 month old infant is excoriated and red. Nurse Hazel should instruct the mother to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Change the diaper more often."
+      },
+      {
+        "id": "B",
+        "text": "Apply talc powder with diaper changes."
+      },
+      {
+        "id": "C",
+        "text": "Wash the area vigorously with each diaper change."
+      },
+      {
+        "id": "D",
+        "text": "Decrease the infant’s fluid intake to decrease saturating diapers."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Decreasing the amount of time the skin comes contact with wet soiled diapers will help heal the irritation."
+  },
+  {
+    "id": 129,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Carla knows that the common cardiac anomalies in children with Down Syndrome (tri-somy 21) is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Atrial septal defect"
+      },
+      {
+        "id": "B",
+        "text": "Pulmonic stenosis"
+      },
+      {
+        "id": "C",
+        "text": "Ventricular septal defect"
+      },
+      {
+        "id": "D",
+        "text": "Endocardial cushion defect"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Endocardial cushion defects are seen most in children with Down syndrome, asplenia, or polysplenia."
+  },
+  {
+    "id": 130,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Malou was diagnosed with severe preeclampsia is now receiving I.V. magnesium sulfate. The adverse effects associated with magnesium sulfate is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia"
+      },
+      {
+        "id": "B",
+        "text": "Decreased urine output"
+      },
+      {
+        "id": "C",
+        "text": "Hyperreflexia"
+      },
+      {
+        "id": "D",
+        "text": "Increased respiratory rate"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Decreased urine output may occur in clients receiving I.V. magnesium and should be monitored closely to keep urine output at greater than 30 ml/hour, because magnesium is excreted through the kidneys and can easily accumulate to toxic levels."
+  },
+  {
+    "id": 131,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A 23 year old client is having her menstrual period every 2 weeks that last for 1 week. This type of menstrual pattern is bets defined by:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menorrhagia"
+      },
+      {
+        "id": "B",
+        "text": "Metrorrhagia"
+      },
+      {
+        "id": "C",
+        "text": "Dyspareunia"
+      },
+      {
+        "id": "D",
+        "text": "Amenorrhea"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Menorrhagia is an excessive menstrual period."
+  },
+  {
+    "id": 132,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Jannah is admitted to the labor and delivery unit. The critical laboratory result for this client would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Oxygen saturation"
+      },
+      {
+        "id": "B",
+        "text": "Iron binding capacity"
+      },
+      {
+        "id": "C",
+        "text": "Blood typing"
+      },
+      {
+        "id": "D",
+        "text": "Serum Calcium"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Blood type would be a critical value to have because the risk of blood loss is always a potential complication during the labor and delivery process. Approximately 40% of a woman’s cardiac output is delivered to the uterus, therefore, blood loss can occur quite rapidly in the event of uncontrolled bleeding."
+  },
+  {
+    "id": 133,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Gina is aware that the most common condition found during the second-trimester of pregnancy is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metabolic alkalosis"
+      },
+      {
+        "id": "B",
+        "text": "Respiratory acidosis"
+      },
+      {
+        "id": "C",
+        "text": "Mastitis"
+      },
+      {
+        "id": "D",
+        "text": "Physiologic anemia"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Hemoglobin values and hematocrit decrease during pregnancy as the increase in plasma volume exceeds the increase in red blood cell production."
+  },
+  {
+    "id": 134,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Lynette is working in the triage area of an emergency department. She sees that several pediatric clients arrive simultaneously. The client who needs to be treated first is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A crying 5 year old child with a laceration on his scalp."
+      },
+      {
+        "id": "B",
+        "text": "A 4 year old child with a barking coughs and flushed appearance."
+      },
+      {
+        "id": "C",
+        "text": "A 3 year old child with Down syndrome who is pale and asleep in his mother’s arms."
+      },
+      {
+        "id": "D",
+        "text": "A 2 year old infant with stridorous breath sounds, sitting up in his mother’s arms and drooling."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The infant with the airway emergency should be treated first, because of the risk of epiglottitis."
+  },
+  {
+    "id": 135,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Maureen in her third trimester arrives at the emergency room with painless vaginal bleeding. Which of the following conditions is suspected?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Placenta previa"
+      },
+      {
+        "id": "B",
+        "text": "Abruptio placentae"
+      },
+      {
+        "id": "C",
+        "text": "Premature labor"
+      },
+      {
+        "id": "D",
+        "text": "Sexually transmitted disease"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Placenta previa with painless vaginal bleeding."
+  },
+  {
+    "id": 136,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A young child named Richard is suspected of having pinworms. The community nurse collects a stool specimen to confirm the diagnosis. The nurse should schedule the collection of this specimen for:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Just before bedtime"
+      },
+      {
+        "id": "B",
+        "text": "After the child has been bathe"
+      },
+      {
+        "id": "C",
+        "text": "Any time during the day"
+      },
+      {
+        "id": "D",
+        "text": "Early in the morning"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Based on the nurse’s knowledge of microbiology, the specimen should be collected early in the morning. The rationale for this timing is that, because the female worm lays eggs at night around the perineal area, the first bowel movement of the day will yield the best results. The specific type of stool specimen used in the diagnosis of pinworms is called the tape test."
+  },
+  {
+    "id": 137,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "In doing a child’s admission assessment, Nurse Betty should be alert to note which signs or symptoms of chronic lead poisoning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Irritability and seizures"
+      },
+      {
+        "id": "B",
+        "text": "Dehydration and diarrhea"
+      },
+      {
+        "id": "C",
+        "text": "Bradycardia and hypotension"
+      },
+      {
+        "id": "D",
+        "text": "Petechiae and hematuria"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Lead poisoning primarily affects the CNS, causing increased intracranial pressure. This condition results in irritability and changes in level of consciousness, as well as seizure disorders, hyperactivity, and learning disabilities."
+  },
+  {
+    "id": 138,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "To evaluate a woman’s understanding about the use of diaphragm for family planning, Nurse Trish asks her to explain how she will use the appliance. Which response indicates a need for further health teaching?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“I should check the diaphragm carefully for holes every time I use it”"
+      },
+      {
+        "id": "B",
+        "text": "“I may need a different size of diaphragm if I gain or lose weight more than 20 pounds”"
+      },
+      {
+        "id": "C",
+        "text": "“The diaphragm must be left in place for atleast 6 hours after intercourse”"
+      },
+      {
+        "id": "D",
+        "text": "“I really need to use the diaphragm and jelly most during the middle of my menstrual cycle”."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The woman must understand that, although the “fertile” period is approximately mid-cycle, hormonal variations do occur and can result in early or late ovulation. To be effective, the diaphragm should be inserted before every intercourse."
+  },
+  {
+    "id": 139,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Hypoxia is a common complication of laryngotracheobronchitis. Nurse Oliver should frequently assess a child with laryngotracheobronchitis for:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Drooling"
+      },
+      {
+        "id": "B",
+        "text": "Muffled voice"
+      },
+      {
+        "id": "C",
+        "text": "Restlessness"
+      },
+      {
+        "id": "D",
+        "text": "Low-grade fever"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "In a child, restlessness is the earliest sign of hypoxia. Late signs of hypoxia in a child are associated with a change in color, such as pallor or cyanosis."
+  },
+  {
+    "id": 140,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "How should Nurse Michelle guide a child who is blind to walk to the playroom?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Without touching the child, talk continuously as the child walks down the hall."
+      },
+      {
+        "id": "B",
+        "text": "Walk one step ahead, with the child’s hand on the nurse’s elbow."
+      },
+      {
+        "id": "C",
+        "text": "Walk slightly behind, gently guiding the child forward."
+      },
+      {
+        "id": "D",
+        "text": "Walk next to the child, holding the child’s hand."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "This procedure is generally recommended to follow in guiding a person who is blind."
+  },
+  {
+    "id": 141,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "When assessing a newborn diagnosed with ductus arteriosus, Nurse Olivia should expect that the child most likely would have an:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Loud, machinery-like murmur."
+      },
+      {
+        "id": "B",
+        "text": "Bluish color to the lips."
+      },
+      {
+        "id": "C",
+        "text": "Decreased BP reading in the upper extremities"
+      },
+      {
+        "id": "D",
+        "text": "Increased BP reading in the upper extremities."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "A loud, machinery-like murmur is a characteristic finding associated with patent ductus arteriosus."
+  },
+  {
+    "id": 142,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The reason nurse May keeps the neonate in a neutral thermal environment is that when a newborn becomes too cool, the neonate requires:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Less oxygen, and the newborn’s metabolic rate increases."
+      },
+      {
+        "id": "B",
+        "text": "More oxygen, and the newborn’s metabolic rate decreases."
+      },
+      {
+        "id": "C",
+        "text": "More oxygen, and the newborn’s metabolic rate increases."
+      },
+      {
+        "id": "D",
+        "text": "Less oxygen, and the newborn’s metabolic rate decreases."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "When cold, the infant requires more oxygen and there is an increase in metabolic rate. Non-shievering thermogenesis is a complex process that increases the metabolic rate and rate of oxygen consumption, therefore, the newborn increase heat production."
+  },
+  {
+    "id": 143,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Before adding potassium to an infant’s I.V. line, Nurse Ron must be sure to assess whether this infant has:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stable blood pressure"
+      },
+      {
+        "id": "B",
+        "text": "Patant fontanelles"
+      },
+      {
+        "id": "C",
+        "text": "Moro’s reflex"
+      },
+      {
+        "id": "D",
+        "text": "Voided"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Before administering potassium I.V. to any client, the nurse must first check that the client’s kidneys are functioning and that the client is voiding. If the client is not voiding, the nurse should withhold the  potassium and notify the physician."
+  },
+  {
+    "id": 144,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Carla should know that the most common causative factor of dermatitis in infants and younger children is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Baby oil"
+      },
+      {
+        "id": "B",
+        "text": "Baby lotion"
+      },
+      {
+        "id": "C",
+        "text": "Laundry detergent"
+      },
+      {
+        "id": "D",
+        "text": "Powder with cornstarch"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Eczema or dermatitis is an allergic skin reaction caused by an offending allergen. The topical allergen that is the most common causative factor is laundry detergent."
+  },
+  {
+    "id": 145,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "During tube feeding, how far above an infant’s stomach should the nurse hold the syringe with formula?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 inches"
+      },
+      {
+        "id": "B",
+        "text": "12 inches"
+      },
+      {
+        "id": "C",
+        "text": "18 inches"
+      },
+      {
+        "id": "D",
+        "text": "24 inches"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "This distance allows for easy flow of the formula by gravity, but the flow will be slow enough not to overload the stomach too rapidly."
+  },
+  {
+    "id": 146,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "In a mothers’ class, Nurse Lhynnete discussed childhood diseases such as chicken pox. Which of the following statements about chicken pox is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The older one gets, the more susceptible he becomes to the complications of chicken pox."
+      },
+      {
+        "id": "B",
+        "text": "A single attack of chicken pox will prevent future episodes, including conditions such as shingles."
+      },
+      {
+        "id": "C",
+        "text": "To prevent an outbreak in the community, quarantine may be imposed by health authorities."
+      },
+      {
+        "id": "D",
+        "text": "Chicken pox vaccine is best given when there is an impending outbreak in the community."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Chicken pox is usually more severe in adults than in children. Complications, such as pneumonia, are higher in incidence in adults."
+  },
+  {
+    "id": 147,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Barangay Pinoy had an outbreak of German measles. To prevent congenital rubella, what is the BEST advice that you can give to women in the first trimester of pregnancy in the barangay Pinoy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Advice them on the signs of German measles."
+      },
+      {
+        "id": "B",
+        "text": "Avoid crowded places, such as markets and movie houses."
+      },
+      {
+        "id": "C",
+        "text": "Consult at the health center where rubella vaccine may be given."
+      },
+      {
+        "id": "D",
+        "text": "Consult a physician who may give them rubella immunoglobulin."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Rubella vaccine is made up of attenuated German measles viruses. This is contraindicated in pregnancy. Immune globulin, a specific prophylactic against German measles, may be given to pregnant women."
+  },
+  {
+    "id": 148,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Myrna a public health nurse knows that to determine possible sources of sexually transmitted infections, the BEST method that may be undertaken is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contact tracing"
+      },
+      {
+        "id": "B",
+        "text": "Community survey"
+      },
+      {
+        "id": "C",
+        "text": "Mass screening tests"
+      },
+      {
+        "id": "D",
+        "text": "Interview of suspects"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Contact tracing is the most practical and reliable method of finding possible sources of person-to-person transmitted infections, such as sexually transmitted diseases."
+  },
+  {
+    "id": 149,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A 33-year old female client came for consultation at the health center with the chief complaint of fever for a week. Accompanying symptoms were muscle pains and body malaise. A week after the start of fever, the client noted yellowish discoloration of his sclera. History showed that he waded in flood waters about 2 weeks before the onset of symptoms. Based on her history, which disease condition will you suspect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatitis A"
+      },
+      {
+        "id": "B",
+        "text": "Hepatitis B"
+      },
+      {
+        "id": "C",
+        "text": "Tetanus"
+      },
+      {
+        "id": "D",
+        "text": "Leptospirosis"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Leptospirosis is transmitted through contact with the skin or mucous membrane with water or moist soil contaminated with urine of infected animals, like rats."
+  },
+  {
+    "id": 150,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Mickey a 3-year old client was brought to the health center with the chief complaint of severe diarrhea and the passage of “rice water” stools. The client is most probably suffering from which condition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giardiasis"
+      },
+      {
+        "id": "B",
+        "text": "Cholera"
+      },
+      {
+        "id": "C",
+        "text": "Amebiasis"
+      },
+      {
+        "id": "D",
+        "text": "Dysentery"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Passage of profuse watery stools is the major symptom of cholera. Both amebic and bacillary dysentery are characterized by the presence of blood and/or mucus in the stools. Giardiasis is characterized by fat malabsorption and, therefore, steatorrhea."
+  },
+  {
+    "id": 151,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The most prevalent form of meningitis among children aged 2 months to 3 years is caused by which microorganism?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemophilus influenzae"
+      },
+      {
+        "id": "B",
+        "text": "Morbillivirus"
+      },
+      {
+        "id": "C",
+        "text": "Steptococcus pneumoniae"
+      },
+      {
+        "id": "D",
+        "text": "Neisseria meningitidis"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Hemophilus meningitis is unusual over the age of 5 years. In developing countries, the peak incidence is in children less than 6 months of age. Morbillivirus is the etiology of measles. Streptococcus pneumoniae and Neisseria meningitidis may cause meningitis, but age distribution is not specific in young children."
+  },
+  {
+    "id": 152,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The student nurse is aware that the pathognomonic sign of measles is Koplik’s spot and you may see Koplik’s spot by inspecting the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nasal mucosa"
+      },
+      {
+        "id": "B",
+        "text": "Buccal mucosa"
+      },
+      {
+        "id": "C",
+        "text": "Skin on the abdomen"
+      },
+      {
+        "id": "D",
+        "text": "Skin on neck"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Koplik’s spot may be seen on the mucosa of the mouth or the throat."
+  },
+  {
+    "id": 153,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Angel was diagnosed as having Dengue fever. You will say that there is slow capillary refill when the color of the nailbed that you pressed does not return within how many seconds?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 seconds"
+      },
+      {
+        "id": "B",
+        "text": "6 seconds"
+      },
+      {
+        "id": "C",
+        "text": "9 seconds"
+      },
+      {
+        "id": "D",
+        "text": "10 seconds"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Adequate blood supply to the area allows the return of the color of the nailbed within 3 seconds."
+  },
+  {
+    "id": 154,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "In Integrated Management of Childhood Illness, the nurse is aware that the severe conditions generally require urgent referral to a hospital. Which of the following severe conditions DOES NOT always require urgent referral to a hospital?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mastoiditis"
+      },
+      {
+        "id": "B",
+        "text": "Severe dehydration"
+      },
+      {
+        "id": "C",
+        "text": "Severe pneumonia"
+      },
+      {
+        "id": "D",
+        "text": "Severe febrile disease"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The order of priority in the management of severe dehydration is as follows: intravenous fluid therapy, referral to a facility where IV fluids can be initiated within 30 minutes, Oresol or nasogastric tube. When the foregoing measures are not possible or effective, then urgent referral to the hospital is done."
+  },
+  {
+    "id": 155,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Myrna a public health nurse will conduct outreach immunization in a barangay Masay with a population of about 1500. The estimated number of infants in the barangay would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "45 infants"
+      },
+      {
+        "id": "B",
+        "text": "50 infants"
+      },
+      {
+        "id": "C",
+        "text": "55 infants"
+      },
+      {
+        "id": "D",
+        "text": "65 infants"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "To estimate the number of infants, multiply total population by 3%."
+  },
+  {
+    "id": 156,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The community nurse is aware that the biological used in Expanded Program on Immunization (EPI) should NOT be stored in the freezer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPT"
+      },
+      {
+        "id": "B",
+        "text": "Oral polio vaccine"
+      },
+      {
+        "id": "C",
+        "text": "Measles vaccine"
+      },
+      {
+        "id": "D",
+        "text": "MMR"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "DPT is sensitive to freezing. The appropriate storage temperature of DPT is 2 to 8° C only. OPV and measles vaccine are highly sensitive to heat and require freezing. MMR is not an immunization in the Expanded Program on Immunization."
+  },
+  {
+    "id": 157,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "It is the most effective way of controlling schistosomiasis in an endemic area?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use of molluscicides"
+      },
+      {
+        "id": "B",
+        "text": "Building of foot bridges"
+      },
+      {
+        "id": "C",
+        "text": "Proper use of sanitary toilets"
+      },
+      {
+        "id": "D",
+        "text": "Use of protective footwear, such as rubber boots"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The ova of the parasite get out of the human body together with feces. Cutting the cycle at this stage is the most effective way of preventing the spread of the disease to susceptible hosts."
+  },
+  {
+    "id": 158,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Several clients is newly admitted and diagnosed with leprosy. Which of the following clients should be classified as a case of multibacillary leprosy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 skin lesions, negative slit skin smear"
+      },
+      {
+        "id": "B",
+        "text": "3 skin lesions, positive slit skin smear"
+      },
+      {
+        "id": "C",
+        "text": "5 skin lesions, negative slit skin smear"
+      },
+      {
+        "id": "D",
+        "text": "5 skin lesions, positive slit skin smear"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A multibacillary leprosy case is one who has a positive slit skin smear and at least 5 skin lesions."
+  },
+  {
+    "id": 159,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurses are aware that diagnosis of leprosy is highly dependent on recognition of symptoms. Which of the following is an early sign of leprosy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Macular lesions"
+      },
+      {
+        "id": "B",
+        "text": "Inability to close eyelids"
+      },
+      {
+        "id": "C",
+        "text": "Thickened painful nerves"
+      },
+      {
+        "id": "D",
+        "text": "Sinking of the nosebridge"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The lesion of leprosy is not macular. It is characterized by a change in skin color (either reddish or whitish) and loss of sensation, sweating and hair growth over the lesion. Inability to close the eyelids (lagophthalmos) and sinking of the nosebridge are late symptoms."
+  },
+  {
+    "id": 160,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Marie brought her 10 month old infant for consultation because of fever, started 4 days prior to consultation. In determining malaria risk, what will you do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perform a tourniquet test."
+      },
+      {
+        "id": "B",
+        "text": "Ask where the family resides."
+      },
+      {
+        "id": "C",
+        "text": "Get a specimen for blood smear."
+      },
+      {
+        "id": "D",
+        "text": "Ask if the fever is present everyday."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Because malaria is endemic, the first question to determine malaria risk is where the client’s family resides. If the area of residence is not a known endemic area, ask if the child had traveled within the past 6 months, where she was brought and whether she stayed overnight in that area."
+  },
+  {
+    "id": 161,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Susie brought her 4 years old daughter to the RHU because of cough and colds. Following the IMCI assessment guide, which of the following is a danger sign that indicates the need for urgent referral to a hospital?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inability to drink"
+      },
+      {
+        "id": "B",
+        "text": "High grade fever"
+      },
+      {
+        "id": "C",
+        "text": "Signs of severe dehydration"
+      },
+      {
+        "id": "D",
+        "text": "Cough for more than 30 days"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "A sick child aged 2 months to 5 years must be referred urgently to a hospital if he/she has one or more of the following signs: not able to feed or drink, vomits everything, convulsions, abnormally sleepy or difficult to awaken."
+  },
+  {
+    "id": 162,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Jimmy a 2-year old child revealed “baggy pants”. As a nurse, using the IMCI guidelines, how will you manage Jimmy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Refer the child urgently to a hospital for confinement."
+      },
+      {
+        "id": "B",
+        "text": "Coordinate with the social worker to enroll the child in a feeding program."
+      },
+      {
+        "id": "C",
+        "text": "Make a teaching plan for the mother, focusing on menu planning for her child."
+      },
+      {
+        "id": "D",
+        "text": "Assess and treat the child for health problems like infections and intestinal parasitism."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "“Baggy pants” is a sign of severe marasmus. The best management is urgent referral to a hospital."
+  },
+  {
+    "id": 163,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Gina is using Oresol in the management of diarrhea of her 3-year old child. She asked you what to do if her child vomits. As a nurse you will tell her to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bring the child to the nearest hospital for further assessment."
+      },
+      {
+        "id": "B",
+        "text": "Bring the child to the health center for intravenous fluid therapy."
+      },
+      {
+        "id": "C",
+        "text": "Bring the child to the health center for assessment by the physician."
+      },
+      {
+        "id": "D",
+        "text": "Let the child rest for 10 minutes then continue giving Oresol more slowly."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "If the child vomits persistently, that is, he vomits everything that he takes in, he has to be referred urgently to a hospital. Otherwise, vomiting is managed by letting the child rest for 10 minutes and then continuing with Oresol administration. Teach the mother to give Oresol more slowly."
+  },
+  {
+    "id": 164,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nikki a 5-month old infant was brought by his mother to the health center because of diarrhea for 4 to 5 times a day. Her skin goes back slowly after a skin pinch and her eyes are sunken. Using the IMCI guidelines, you will classify this infant in which category?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No signs of dehydration"
+      },
+      {
+        "id": "B",
+        "text": "Some dehydration"
+      },
+      {
+        "id": "C",
+        "text": "Severe dehydration"
+      },
+      {
+        "id": "D",
+        "text": "The data is insufficient."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Using the assessment guidelines of IMCI, a child (2 months to 5 years old) with diarrhea is classified as having SOME DEHYDRATION if he shows 2 or more of the following signs: restless or irritable, sunken eyes, the skin goes back slow after a skin pinch."
+  },
+  {
+    "id": 165,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Chris a 4-month old infant was brought by her mother to the health center because of cough. His respiratory rate is 42/minute. Using the Integrated Management of Child Illness (IMCI) guidelines of assessment, his breathing is considered as:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fast"
+      },
+      {
+        "id": "B",
+        "text": "Slow"
+      },
+      {
+        "id": "C",
+        "text": "Normal"
+      },
+      {
+        "id": "D",
+        "text": "Insignificant"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "In IMCI, a respiratory rate of 50/minute or more is fast breathing for an infant aged 2 to 12 months."
+  },
+  {
+    "id": 166,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Maylene had just received her 4th dose of tetanus toxoid. She is aware that her baby will have protection against tetanus for",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 year"
+      },
+      {
+        "id": "B",
+        "text": "3 years"
+      },
+      {
+        "id": "C",
+        "text": "5 years"
+      },
+      {
+        "id": "D",
+        "text": "Lifetime"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The baby will have passive natural immunity by placental transfer of antibodies. The mother will have active artificial immunity lasting for about 10 years. 5 doses will give the mother lifetime protection."
+  },
+  {
+    "id": 167,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Ron is aware that unused BCG should be discarded after how many hours of reconstitution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 hours"
+      },
+      {
+        "id": "B",
+        "text": "4 hours"
+      },
+      {
+        "id": "C",
+        "text": "8 hours"
+      },
+      {
+        "id": "D",
+        "text": "At the end of the day"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "While the unused portion of other biologicals in EPI may be given until the end of the day, only BCG is discarded 4 hours after reconstitution. This is why BCG immunization is scheduled only in the morning."
+  },
+  {
+    "id": 168,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The nurse explains to a breastfeeding mother that breast milk is sufficient for all of the baby’s nutrient needs only up to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 months"
+      },
+      {
+        "id": "B",
+        "text": "6 months"
+      },
+      {
+        "id": "C",
+        "text": "1 year"
+      },
+      {
+        "id": "D",
+        "text": "2 years"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "After 6 months, the baby’s nutrient needs, especially the baby’s iron requirement, can no longer be provided by mother’s milk alone."
+  },
+  {
+    "id": 169,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Ron is aware that the gestational age of a conceptus that is considered viable (able to live outside the womb) is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 weeks"
+      },
+      {
+        "id": "B",
+        "text": "12 weeks"
+      },
+      {
+        "id": "C",
+        "text": "24 weeks"
+      },
+      {
+        "id": "D",
+        "text": "32 weeks"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "At approximately 23 to 24 weeks’ gestation, the lungs are developed enough to sometimes maintain extrauterine life. The lungs are the most immature system during the gestation period. Medical care for premature labor begins much earlier (aggressively at 21 weeks’ gestation)"
+  },
+  {
+    "id": 170,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "When teaching parents of a neonate the proper position for the neonate’s sleep, the nurse Patricia stresses the importance of placing the neonate on his back to reduce the risk of which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aspiration"
+      },
+      {
+        "id": "B",
+        "text": "Sudden infant death syndrome (SIDS)"
+      },
+      {
+        "id": "C",
+        "text": "Suffocation"
+      },
+      {
+        "id": "D",
+        "text": "Gastroesophageal reflux (GER)"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Supine positioning is recommended to reduce the risk of SIDS in infancy. The risk of aspiration is slightly increased with the supine position. Suffocation would be less likely with an infant supine than prone and the position for GER requires the head of the bed to be elevated."
+  },
+  {
+    "id": 171,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which finding might be seen in baby James a neonate suspected of having an infection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flushed cheeks"
+      },
+      {
+        "id": "B",
+        "text": "Increased temperature"
+      },
+      {
+        "id": "C",
+        "text": "Decreased temperature"
+      },
+      {
+        "id": "D",
+        "text": "Increased activity level"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Temperature instability, especially when it results in a low temperature in the neonate, may be a sign of infection. The neonate’s color often changes with an infection process but generally becomes ashen or mottled. The neonate with an infection will usually show a decrease in activity level or lethargy."
+  },
+  {
+    "id": 172,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Baby Jenny who is small-for-gestation is at increased risk during the transitional period for which complication?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia probably due to chronic fetal hyposia"
+      },
+      {
+        "id": "B",
+        "text": "Hyperthermia due to decreased glycogen stores"
+      },
+      {
+        "id": "C",
+        "text": "Hyperglycemia due to decreased glycogen stores"
+      },
+      {
+        "id": "D",
+        "text": "Polycythemia probably due to chronic fetal hypoxia"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The small-for-gestation neonate is at risk for developing polycythemia during the transitional period in an attempt to decreasehypoxia. The neonates are also at increased risk for developing hypoglycemia and hypothermia due to decreased glycogen stores."
+  },
+  {
+    "id": 173,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Marjorie has just given birth at 42 weeks’ gestation. When the nurse assessing the neonate, which physical finding is expected?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sleepy, lethargic baby"
+      },
+      {
+        "id": "B",
+        "text": "Lanugo covering the body"
+      },
+      {
+        "id": "C",
+        "text": "Desquamation of the epidermis"
+      },
+      {
+        "id": "D",
+        "text": "Vernix caseosa covering the body"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Postdate fetuses lose the vernix caseosa, and the epidermis may become desquamated. These neonates are usually very alert. Lanugo is missing in the postdate neonate."
+  },
+  {
+    "id": 174,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "After reviewing the Myrna’s maternal history of magnesium sulfate during labor, which condition would nurse Richard anticipate as a potential problem in the neonate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hypoglycemia"
+      },
+      {
+        "id": "B",
+        "text": "Jitteriness"
+      },
+      {
+        "id": "C",
+        "text": "Respiratory depression"
+      },
+      {
+        "id": "D",
+        "text": "Tachycardia"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Magnesium sulfate crosses the placenta and adverse neonatal effects are respiratory depression, hypotonia, and bradycardia. The serum blood sugar isn’t affected by magnesium sulfate. The neonate would be floppy, not jittery."
+  },
+  {
+    "id": 175,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which symptom would indicate the Baby Alexandra was adapting appropriately to extra-uterine life without difficulty?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nasal flaring"
+      },
+      {
+        "id": "B",
+        "text": "Light audible grunting"
+      },
+      {
+        "id": "C",
+        "text": "Respiratory rate 40 to 60 breaths/minute"
+      },
+      {
+        "id": "D",
+        "text": "Respiratory rate 60 to 80 breaths/minute"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "A respiratory rate 40 to 60 breaths/minute is normal for a neonate during the transitional period. Nasal flaring, respiratory rate more than 60 breaths/minute, and audible grunting are signs of respiratory distress."
+  },
+  {
+    "id": 176,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "When teaching umbilical cord care for Jennifer a new mother, the nurse Jenny would include which information?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apply peroxide to the cord with each diaper change"
+      },
+      {
+        "id": "B",
+        "text": "Cover the cord with petroleum jelly after bathing"
+      },
+      {
+        "id": "C",
+        "text": "Keep the cord dry and open to air"
+      },
+      {
+        "id": "D",
+        "text": "Wash the cord with soap and water each day during a tub bath."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Keeping the cord dry and open to air helps reduce infection and hastens drying. Infants aren’t given tub bath but are sponged off until the cord falls off. Petroleum jelly prevents the cord from drying and encourages infection. Peroxide could be painful and isn’t recommended."
+  },
+  {
+    "id": 177,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse John is performing an assessment on a neonate. Which of the following findings is considered common in the healthy neonate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Simian crease"
+      },
+      {
+        "id": "B",
+        "text": "Conjunctival hemorrhage"
+      },
+      {
+        "id": "C",
+        "text": "Cystic hygroma"
+      },
+      {
+        "id": "D",
+        "text": "Bulging fontanelle"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Conjunctival hemorrhages are commonly seen in neonates secondary to the cranial pressure applied during the birth process. Bulging fontanelles are a sign of intracranial pressure. Simian creases are present in 40% of the neonates with trisomy 21. Cystic hygroma is a neck mass that can affect the airway."
+  },
+  {
+    "id": 178,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Dr. Esteves decides to artificially rupture the membranes of a mother who is on labor. Following this procedure, the nurse Hazel checks the fetal heart tones for which the following reasons?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To determine fetal well-being."
+      },
+      {
+        "id": "B",
+        "text": "To assess for prolapsed cord"
+      },
+      {
+        "id": "C",
+        "text": "To assess fetal position"
+      },
+      {
+        "id": "D",
+        "text": "To prepare for an imminent delivery."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "After a client has an amniotomy, the nurse should assure that the cord isn’t prolapsed and that the baby tolerated the procedure well. The most effective way to do this is to check the fetal heart rate. Fetal well-being is assessed via a nonstress test. Fetal position is determined by vaginal examination. Artificial rupture of membranes doesn’t indicate an imminent delivery."
+  },
+  {
+    "id": 179,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which of the following would be least likely to indicate anticipated bonding behaviors by new parents?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The parents’ willingness to touch and hold the new born."
+      },
+      {
+        "id": "B",
+        "text": "The parent’s expression of interest about the size of the new born."
+      },
+      {
+        "id": "C",
+        "text": "The parents’ indication that they want to see the newborn."
+      },
+      {
+        "id": "D",
+        "text": "The parents’ interactions with each other."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Parental interaction will provide the nurse with a good assessment of the stability of the family’s home life but it has no indication for parental bonding. Willingness to touch and hold the newborn, expressing interest about the newborn’s size, and indicating a desire to see the newborn are behaviors indicating parental bonding."
+  },
+  {
+    "id": 180,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Following a precipitous delivery, examination of the client’s vagina reveals a fourth-degree laceration. Which of the following would be contraindicated when caring for this client?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Applying cold to limit edema during the first 12 to 24 hours."
+      },
+      {
+        "id": "B",
+        "text": "Instructing the client to use two or more peripads to cushion the area."
+      },
+      {
+        "id": "C",
+        "text": "Instructing the client on the use of sitz baths if ordered."
+      },
+      {
+        "id": "D",
+        "text": "Instructing the client about the importance of perineal (kegel) exercises."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Using two or more peripads would do little to reduce the pain or promote perineal healing. Cold applications, sitz baths, and Kegel exercises are important measures when the client has a fourth-degree laceration."
+  },
+  {
+    "id": 181,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A pregnant woman accompanied by her husband, seeks admission to the labor and delivery area. She states that she’s in labor and says she attended the facility clinic for prenatal care. Which question should the nurse Oliver ask her first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“Do you have any chronic illnesses?”"
+      },
+      {
+        "id": "B",
+        "text": "“Do you have any allergies?”"
+      },
+      {
+        "id": "C",
+        "text": "“What is your expected due date?”"
+      },
+      {
+        "id": "D",
+        "text": "“Who will be with you during labor?”"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "When obtaining the history of a client who may be in labor, the nurse’s highest priority is to determine her current status, particularly her due date, gravidity, and parity. Gravidity and parity affect the duration of labor and the potential for labor complications. Later, the nurse should ask about chronic illnesses, allergies, and support persons."
+  },
+  {
+    "id": 182,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A neonate begins to gag and turns a dusky color. What should the nurse do first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calm the neonate."
+      },
+      {
+        "id": "B",
+        "text": "Notify the physician."
+      },
+      {
+        "id": "C",
+        "text": "Provide oxygen via face mask as ordered"
+      },
+      {
+        "id": "D",
+        "text": "Aspirate the neonate’s nose and mouth with a bulb syringe."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The nurse’s first action should be to clear the neonate’s airway with a bulb syringe. After the airway is clear and the neonate’s color improves, the nurse should comfort and calm the neonate. If the problem recurs or the neonate’s color doesn’t improve readily, the nurse should notify the physician. Administering oxygen when the airway isn’t clear would be ineffective."
+  },
+  {
+    "id": 183,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "When a client states that her “water broke,” which of the following actions would be inappropriate for the nurse to do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observing the pooling of straw-colored fluid."
+      },
+      {
+        "id": "B",
+        "text": "Checking vaginal discharge with nitrazine paper."
+      },
+      {
+        "id": "C",
+        "text": "Conducting a bedside ultrasound for an amniotic fluid index."
+      },
+      {
+        "id": "D",
+        "text": "Observing for flakes of vernix in the vaginal discharge."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "It isn’t within a nurse’s scope of practice to perform and interpret a bedside ultrasound under these conditions and without specialized training. Observing for pooling of straw-colored fluid, checking vaginal discharge with nitrazine paper, and observing for flakes of vernix are appropriate assessments for determining whether a client has ruptured membranes."
+  },
+  {
+    "id": 184,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "A baby girl is born 8 weeks premature. At birth, she has no spontaneous respirations but is successfully resuscitated. Within several hours she develops respiratory grunting, cyanosis, tachypnea, nasal flaring, and retractions. She’s diagnosed with respiratory distress syndrome, intubated, and placed on a ventilator. Which nursing action should be included in the baby’s plan of care to prevent retinopathy of prematurity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cover his eyes while receiving oxygen."
+      },
+      {
+        "id": "B",
+        "text": "Keep her body temperature low."
+      },
+      {
+        "id": "C",
+        "text": "Monitor partial pressure of oxygen (Pao2) levels."
+      },
+      {
+        "id": "D",
+        "text": "Humidify the oxygen."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Monitoring PaO2 levels and reducing the oxygen concentration to keep PaO2 within normal limits reduces the risk of retinopathy of prematurity in a premature infant receiving oxygen. Covering the infant’s eyes and humidifying the oxygen don’t reduce the risk of retinopathy of prematurity. Because cooling increases the risk of acidosis, the infant should be kept warm so that his respiratory distress isn’t aggravated."
+  },
+  {
+    "id": 185,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which of the following is normal newborn calorie intake?",
+    "options": [
+      {
+        "id": "A",
+        "text": "110 to 130 calories per kg."
+      },
+      {
+        "id": "B",
+        "text": "30 to 40 calories per lb of body weight."
+      },
+      {
+        "id": "C",
+        "text": "At least 2 ml per feeding"
+      },
+      {
+        "id": "D",
+        "text": "90 to 100 calories per kg"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Calories per kg is the accepted way of determined appropriate nutritional intake for a newborn. The recommended calorie requirement is 110 to 130 calories per kg of newborn body weight. This level will maintain a consistent blood glucose level and provide enough calories for continued growth and development."
+  },
+  {
+    "id": 186,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse John is knowledgeable that usually individual twins will grow appropriately and at the same rate as singletons until how many weeks?",
+    "options": [
+      {
+        "id": "A",
+        "text": "16 to 18 weeks"
+      },
+      {
+        "id": "B",
+        "text": "18 to 22 weeks"
+      },
+      {
+        "id": "C",
+        "text": "30 to 32 weeks"
+      },
+      {
+        "id": "D",
+        "text": "38 to 40 weeks"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Individual twins usually grow at the same rate as singletons until 30 to 32 weeks’ gestation, then twins don’t’ gain weight as rapidly as singletons of the same gestational age. The placenta can no longer keep pace with the nutritional requirements of both fetuses after 32 weeks, so there’s some growth retardation in twins if they remain in utero at 38 to 40 weeks."
+  },
+  {
+    "id": 187,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which of the following classifications applies to monozygotic twins for whom the cleavage of the fertilized ovum occurs more than 13 days after fertilization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "conjoined twins"
+      },
+      {
+        "id": "B",
+        "text": "diamniotic dichorionic twins"
+      },
+      {
+        "id": "C",
+        "text": "diamniotic monochorionic twin"
+      },
+      {
+        "id": "D",
+        "text": "monoamniotic monochorionic twins"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The type of placenta that develops in monozygotic twins depends on the time at which cleavage of the ovum occurs. Cleavage in conjoined twins occurs more than 13 days after fertilization. Cleavage that occurs less than 3 day after fertilization results in diamniotic dicchorionic twins. Cleavage that occurs between days 3 and 8 results in diamniotic monochorionic twins. Cleavage that occurs between days 8 to 13 result in monoamniotic monochorionic twins."
+  },
+  {
+    "id": 188,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Tyra experienced painless vaginal bleeding has just been diagnosed as having a placenta previa. Which of the following procedures is usually performed to diagnose placenta previa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amniocentesis"
+      },
+      {
+        "id": "B",
+        "text": "Digital or speculum examination"
+      },
+      {
+        "id": "C",
+        "text": "External fetal monitoring"
+      },
+      {
+        "id": "D",
+        "text": "Ultrasound"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Once the mother and the fetus are stabilized, ultrasound evaluation of the placenta should be done to determine the cause of the bleeding. Amniocentesis is contraindicated in placenta previa. A digital or speculum examination shouldn’t be done as this may lead to severe bleeding or hemorrhage. External fetal monitoring won’t detect a placenta previa, although it will detect fetal distress, which may result from blood loss or placenta separation."
+  },
+  {
+    "id": 189,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Nurse Arnold knows that the following changes in respiratory functioning during pregnancy is considered normal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increased tidal volume"
+      },
+      {
+        "id": "B",
+        "text": "Increased expiratory volume"
+      },
+      {
+        "id": "C",
+        "text": "Decreased inspiratory capacity"
+      },
+      {
+        "id": "D",
+        "text": "Decreased oxygen consumption"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "A pregnant client breathes deeper, which increases the tidal volume of gas moved in and out of the respiratory tract with each breath. The expiratory volume and residual volume decrease as the pregnancy progresses. The inspiratory capacity increases during pregnancy. The increased oxygen consumption in the pregnant client is 15% to 20% greater than in the nonpregnant state."
+  },
+  {
+    "id": 190,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Emily has gestational diabetes and it is usually managed by which of the following therapy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diet"
+      },
+      {
+        "id": "B",
+        "text": "Long-acting insulin"
+      },
+      {
+        "id": "C",
+        "text": "Oral hypoglycemic"
+      },
+      {
+        "id": "D",
+        "text": "Oral hypoglycemic drug and insulin"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Clients with gestational diabetes are usually managed by diet alone to control their glucose intolerance. Oral hypoglycemic drugs are contraindicated in pregnancy. Long-acting insulin usually isn’t needed for blood glucose control in the client with gestational diabetes."
+  },
+  {
+    "id": 191,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Magnesium sulfate is given to Jemma with preeclampsia to prevent which of the following condition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemorrhage"
+      },
+      {
+        "id": "B",
+        "text": "Hypertension"
+      },
+      {
+        "id": "C",
+        "text": "Hypomagnesemia"
+      },
+      {
+        "id": "D",
+        "text": "Seizure"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The anticonvulsant mechanism of magnesium is believes to depress seizure foci in the brain and peripheral neuromuscular blockade. Hypomagnesemia isn’t a complication of preeclampsia. Antihypertensive drug other than magnesium are preferred for sustained hypertension. Magnesium doesn’t help prevent hemorrhage in preeclamptic clients."
+  },
+  {
+    "id": 192,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Cammile with sickle cell anemia has an increased risk for having a sickle cell crisis during pregnancy. Aggressive management of a sickle cell crisis includes which of the following measures?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antihypertensive agents"
+      },
+      {
+        "id": "B",
+        "text": "Diuretic agents"
+      },
+      {
+        "id": "C",
+        "text": "I.V. fluids"
+      },
+      {
+        "id": "D",
+        "text": "Acetaminophen (Tylenol) for pain"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "A sickle cell crisis during pregnancy is usually managed by exchange transfusion oxygen, and L.V. Fluids. The client usually needs a stronger analgesic than acetaminophen to control the pain of a crisis. Antihypertensive drugs usually aren’t necessary. Diuretic wouldn’t be used unless fluid overload resulted."
+  },
+  {
+    "id": 193,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Which of the following drugs is the antidote for magnesium toxicity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calcium gluconate (Kalcinate)"
+      },
+      {
+        "id": "B",
+        "text": "Hydralazine (Apresoline)"
+      },
+      {
+        "id": "C",
+        "text": "Naloxone (Narcan)"
+      },
+      {
+        "id": "D",
+        "text": "Rho (D) immune globulin (RhoGAM)"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Calcium gluconate is the antidote for magnesium toxicity. Ten milliliters of 10% calcium gluconate is given L.V. push over 3 to 5 minutes. Hydralazine is given for sustained elevated blood pressure in preeclamptic clients. Rho (D) immune globulin is given to women with Rh-negative blood to prevent antibody formation from RH-positive conceptions. Naloxone is used to correct narcotic toxicity."
+  },
+  {
+    "id": 194,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Marlyn is screened for tuberculosis during her first prenatal visit. An intradermal injection of purified protein derivative (PPD) of the tuberculin bacilli is given. She is considered to have a positive test for which of the following results?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An indurated wheal under 10 mm in diameter appears in 6 to 12 hours."
+      },
+      {
+        "id": "B",
+        "text": "An indurated wheal over 10 mm in diameter appears in 48 to 72 hours."
+      },
+      {
+        "id": "C",
+        "text": "A flat circumcised area under 10 mm in diameter appears in 6 to 12 hours."
+      },
+      {
+        "id": "D",
+        "text": "A flat circumcised area over 10 mm in diameter appears in 48 to 72 hours."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "A positive PPD result would be an indurated wheal over 10 mm in diameter that appears in 48 to 72 hours. The area must be a raised wheal, not a flat circumcised area to be considered positive."
+  },
+  {
+    "id": 195,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Dianne, 24 year-old is 27 weeks’ pregnant arrives at her physician’s office with complaints of fever, nausea, vomiting, malaise, unilateral flank pain, and costovertebral angle tenderness. Which of the following diagnoses is most likely?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asymptomatic bacteriuria"
+      },
+      {
+        "id": "B",
+        "text": "Bacterial vaginosis"
+      },
+      {
+        "id": "C",
+        "text": "Pyelonephritis"
+      },
+      {
+        "id": "D",
+        "text": "Urinary tract infection (UTI)"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The symptoms indicate acute pyelonephritis, a serious condition in a pregnant client. UTI symptoms include dysuria, urgency, frequency, and suprapubic tenderness. Asymptomatic bacteriuria doesn’t cause symptoms. Bacterial vaginosis causes milky white vaginal discharge but no systemic symptoms."
+  },
+  {
+    "id": 196,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Rh isoimmunization in a pregnant client develops during which of the following conditions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rh-positive maternal blood crosses into fetal blood, stimulating fetal antibodies."
+      },
+      {
+        "id": "B",
+        "text": "Rh-positive fetal blood crosses into maternal blood, stimulating maternal antibodies."
+      },
+      {
+        "id": "C",
+        "text": "Rh-negative fetal blood crosses into maternal blood, stimulating maternal antibodies."
+      },
+      {
+        "id": "D",
+        "text": "Rh-negative maternal blood crosses into fetal blood, stimulating fetal antibodies."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Rh isoimmunization occurs when Rh-positive fetal blood cells cross into the maternal circulation and stimulate maternal antibody production. In subsequent pregnancies with Rh-positive fetuses, maternal antibodies may cross back into the fetal circulation and destroy the fetal blood cells."
+  },
+  {
+    "id": 197,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "To promote comfort during labor, the nurse John advises a client to assume certain positions and avoid others. Which position may cause maternal hypotension and fetal hypoxia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lateral position"
+      },
+      {
+        "id": "B",
+        "text": "Squatting position"
+      },
+      {
+        "id": "C",
+        "text": "Supine position"
+      },
+      {
+        "id": "D",
+        "text": "Standing position"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The supine position causes compression of the client’s aorta and inferior vena cava by the fetus. This, in turn, inhibits maternal circulation, leading to maternal hypotension and, ultimately, fetal hypoxia. The other positions promote comfort and aid labor progress. For instance, the lateral, or side-lying, position improves maternal and fetal circulation, enhances comfort, increases maternal relaxation, reduces muscle tension, and eliminates pressure points. The squatting position promotes comfort by taking advantage of gravity. The standing position also takes advantage of gravity and aligns the fetus with the pelvic angle."
+  },
+  {
+    "id": 198,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Celeste who used heroin during her pregnancy delivers a neonate. When assessing the neonate, the nurse Lhynnette expects to find:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lethargy 2 days after birth."
+      },
+      {
+        "id": "B",
+        "text": "Irritability and poor sucking."
+      },
+      {
+        "id": "C",
+        "text": "A flattened nose, small eyes, and thin lips."
+      },
+      {
+        "id": "D",
+        "text": "Congenital defects such as limb anomalies."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Neonates of heroin-addicted mothers are physically dependent on the drug and experience withdrawal when the drug is no longer supplied. Signs of heroin withdrawal include irritability, poor sucking, and restlessness. Lethargy isn’t associated with neonatal heroin addiction. A flattened nose, small eyes, and thin lips are seen in infants with fetal alcohol syndrome. Heroin use during pregnancy hasn’t been linked to specific congenital anomalies."
+  },
+  {
+    "id": 199,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "The uterus returns to the pelvic cavity in which of the following time frames?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7th to 9th day postpartum."
+      },
+      {
+        "id": "B",
+        "text": "2 weeks postpartum."
+      },
+      {
+        "id": "C",
+        "text": "End of 6th week postpartum."
+      },
+      {
+        "id": "D",
+        "text": "When the lochia changes to alba."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The normal involutional process returns the uterus to the pelvic cavity in 7 to 9 days. A significant involutional complication is the failure of the uterus to return to the pelvic cavity within the prescribed time period. This is known as subinvolution."
+  },
+  {
+    "id": 200,
+    "course": "PNLE",
+    "topic": "PNLE Community Health Nursing and Care of the Mother and Child",
+    "question_stem": "Maureen, a primigravida client, age 20, has just completed a difficult, forceps-assisted delivery of twins. Her labor was unusually long and required oxytocin (Pitocin) augmentation. The nurse who’s caring for her should stay alert for:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uterine inversion"
+      },
+      {
+        "id": "B",
+        "text": "Uterine atony"
+      },
+      {
+        "id": "C",
+        "text": "Uterine involution"
+      },
+      {
+        "id": "D",
+        "text": "Uterine discomfort"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Multiple fetuses, extended labor stimulation with oxytocin, and traumatic delivery commonly are associated with uterine atony, which may lead to postpartum hemorrhage. Uterine inversion may precede or follow delivery and commonly results from apparent excessive traction on the umbilical cord and attempts to deliver the placenta manually. Uterine involution and some uterine discomfort are normal after delivery."
   }
 ]
