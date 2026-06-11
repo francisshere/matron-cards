@@ -44,7 +44,7 @@ const playSound = (type) => {
   } catch(e) { console.error("Audio error", e) }
 };
 
-export default function Quiz({ onBack }) {
+export default function Quiz({ onBack, topicFilter }) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [gamemode, setGamemode] = useState(true);
   const [questionCount, setQuestionCount] = useState(25);
@@ -77,6 +77,13 @@ export default function Quiz({ onBack }) {
     }
     
     let sourceQuestions = [...allQuestions];
+    if (topicFilter) {
+      sourceQuestions = sourceQuestions.filter(q => q.topic === topicFilter);
+    }
+    
+    // Ensure actualCount doesn't exceed available questions
+    actualCount = Math.min(actualCount, sourceQuestions.length);
+
     if (isRandom) {
       for (let i = sourceQuestions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -107,7 +114,8 @@ export default function Quiz({ onBack }) {
     let count = tempQuestionCount;
     if (count === 'custom') {
       const parsed = Number(tempCustomCount);
-      if (!Number.isInteger(parsed) || parsed <= 0 || parsed > allQuestions.length) {
+      const maxCount = topicFilter ? allQuestions.filter(q => q.topic === topicFilter).length : allQuestions.length;
+      if (!Number.isInteger(parsed) || parsed <= 0 || parsed > maxCount) {
         setCustomError("Invalid number.");
         return;
       }
@@ -407,10 +415,10 @@ export default function Quiz({ onBack }) {
                       type="number" 
                       value={tempCustomCount}
                       onChange={(e) => { setTempCustomCount(e.target.value); setCustomError(""); }}
-                      placeholder={`Max ${allQuestions.length}`}
+                      placeholder={`Max ${topicFilter ? allQuestions.filter(q => q.topic === topicFilter).length : allQuestions.length}`}
                       className={`w-24 p-3 rounded-xl border-2 outline-none font-body text-center font-bold text-text bg-transparent ${customError ? 'border-red-500' : 'border-mid'}`}
                       min="1"
-                      max={allQuestions.length}
+                      max={topicFilter ? allQuestions.filter(q => q.topic === topicFilter).length : allQuestions.length}
                     />
                   )}
                 </div>

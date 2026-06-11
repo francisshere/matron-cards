@@ -128,7 +128,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                     100 ITEMS
                   </div>
                   <button
-                    onClick={onStartQuiz}
+                    onClick={() => onStartQuiz('PNLE Foundation of Professional Nursing Practice')}
                     className="flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center bg-[#4A1529] text-white font-heading font-black text-lg sm:text-xl hover:bg-[#3d1122] py-3 sm:py-0 transition-colors"
                   >
                     LEARN
@@ -139,15 +139,15 @@ export default function Home({ onStartQuiz, onViewChange }) {
               {/* Bottom card */}
               <div className="bg-[#E97CA1] border-[3px] border-[#D42F6B] rounded-2xl flex flex-col sm:flex-row overflow-hidden shadow-[0px_4px_0px_0px_#D42F6B] hover:translate-y-1 hover:shadow-none transition-all">
                 <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center">
-                  <h4 className="font-heading font-black text-lg sm:text-xl text-white mb-1">Philippine Nursing Licensure Exam 1</h4>
-                  <p className="font-body font-bold italic text-white/90 text-sm sm:text-base">Foundation of Professional Nursing Practice</p>
+                  <h4 className="font-heading font-black text-lg sm:text-xl text-white mb-1">Philippine Nursing Licensure Exam II</h4>
+                  <p className="font-body font-bold italic text-white/90 text-sm sm:text-base">Community Health Nursing and Care of the Mother and Child</p>
                 </div>
                 <div className="w-full sm:w-[160px] border-t-[3px] sm:border-t-0 sm:border-l-[3px] border-[#D42F6B] flex sm:flex-col">
                   <div className="flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] border-[#D42F6B] bg-[#E97CA1] text-[#D42F6B] font-black text-base sm:text-lg py-3 sm:py-0">
                     100 ITEMS
                   </div>
                   <button
-                    onClick={onStartQuiz}
+                    onClick={() => onStartQuiz('PNLE Community Health Nursing and Care of the Mother and Child')}
                     className="flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center bg-[#D42F6B] text-white font-heading font-black text-lg sm:text-xl hover:bg-[#b02456] py-3 sm:py-0 transition-colors"
                   >
                     LEARN
