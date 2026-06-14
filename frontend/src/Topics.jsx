@@ -35,11 +35,11 @@ export default function Topics({ onViewChange, onStartQuiz }) {
       bgClass: "bg-[#D42F6B]",
       hoverBgClass: "hover:bg-[#b02456]",
       items: [
-        { title: "Philippine Nursing Licensure Exam I", subtitle: "Nursing Practice", count: 50 },
-        { title: "Philippine Nursing Licensure Exam II", subtitle: "Nursing Practice", count: 50 },
-        { title: "Philippine Nursing Licensure Exam III", subtitle: "Nursing Practice", count: 50 },
-        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Nursing Practice", count: 50 },
-        { title: "Philippine Nursing Licensure Exam V", subtitle: "Nursing Practice", count: 50 }
+        { title: "Philippine Nursing Licensure Exam I", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam I - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam II", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam II - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam III", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam III - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam IV - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam V", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam V - Nursing Practice", count: 50 }
       ]
     }
   ];
@@ -212,7 +212,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                   <div className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] ${currentSetData.colorClass} bg-white ${currentSetData.textClass} font-black text-base sm:text-lg py-3 sm:py-0`}>
                     {item.count} ITEMS
                   </div>
-                  <button onClick={() => onStartQuiz && onStartQuiz(`PNLE ${item.subtitle}`)} className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${currentSetData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${currentSetData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
+                  <button onClick={() => onStartQuiz && onStartQuiz(item.topicKey || `PNLE ${item.subtitle}`)} className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${currentSetData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${currentSetData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
                     LEARN
                   </button>
                 </div>
