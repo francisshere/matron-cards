@@ -19498,5 +19498,5205 @@
     ],
     "correct_option": "D",
     "rationale": "The question asks about the immediate concern. The ABCs of community health care are always attending to people’s basic needs of food, shelter, and clothing"
+  },
+  {
+    "id": 801,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which element in the circular chain of infection can be eliminated by preserving skin integrity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Host"
+      },
+      {
+        "id": "B",
+        "text": "Reservoir"
+      },
+      {
+        "id": "C",
+        "text": "Mode of transmission"
+      },
+      {
+        "id": "D",
+        "text": "Portal of entry"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "In the circular chain of infection, pathogens must be able to leave their reservoir and be transmitted to a susceptible host through a portal of entry, such as broken skin."
+  },
+  {
+    "id": 802,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following will probably result in a break in sterile technique for respiratory isolation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Opening the patient’s window to the outside environment"
+      },
+      {
+        "id": "B",
+        "text": "Turning on the patient’s room ventilator"
+      },
+      {
+        "id": "C",
+        "text": "Opening the door of the patient’s room leading into the hospital corridor"
+      },
+      {
+        "id": "D",
+        "text": "Failing to wear gloves when administering a bed bath"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Respiratory isolation, like strict isolation, requires that the door to the door patient’s room remain closed. However, the patient’s room should be well ventilated, so opening the window or turning on the ventricular is desirable. The nurse does not need to wear gloves for respiratory isolation, but good hand washing is important for all types of isolation."
+  },
+  {
+    "id": 803,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following patients is at greater risk for contracting an infection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A patient with leukopenia"
+      },
+      {
+        "id": "B",
+        "text": "A patient receiving broad-spectrum antibiotics"
+      },
+      {
+        "id": "C",
+        "text": "A postoperative patient who has undergone orthopedic surgery"
+      },
+      {
+        "id": "D",
+        "text": "A newly diagnosed diabetic patient"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Leukopenia is a decreased number of leukocytes (white blood cells), which are important in resisting infection. None of the other situations would put the patient at risk for contracting an infection; taking broadspectrum antibiotics might actually reduce the infection risk."
+  },
+  {
+    "id": 804,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Effective hand washing requires the use of:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Soap or detergent to promote emulsification"
+      },
+      {
+        "id": "B",
+        "text": "Hot water to destroy bacteria"
+      },
+      {
+        "id": "C",
+        "text": "A disinfectant to increase surface tension"
+      },
+      {
+        "id": "D",
+        "text": "All of the above"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Soaps and detergents are used to help remove bacteria because of their ability to lower the surface tension of water and act as emulsifying agents. Hot water may lead to skin irritation or burns."
+  },
+  {
+    "id": 805,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "After routine patient contact, hand washing should last at least:",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 seconds"
+      },
+      {
+        "id": "B",
+        "text": "1 minute"
+      },
+      {
+        "id": "C",
+        "text": "2 minute"
+      },
+      {
+        "id": "D",
+        "text": "3 minutes"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Depending on the degree of exposure to pathogens, hand washing may last from 10 seconds to 4 minutes. After routine patient contact, hand washing for 30 seconds effectively minimizes the risk of pathogen transmission."
+  },
+  {
+    "id": 806,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following procedures always requires surgical asepsis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vaginal instillation of conjugated estrogen"
+      },
+      {
+        "id": "B",
+        "text": "Urinary catheterization"
+      },
+      {
+        "id": "C",
+        "text": "Nasogastric tube insertion"
+      },
+      {
+        "id": "D",
+        "text": "Colostomy irrigation"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The urinary system is normally free of microorganisms except at the urinary meatus. Any procedure that involves entering this system must use surgically aseptic measures to maintain a bacteria-free state."
+  },
+  {
+    "id": 807,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Sterile technique is used whenever:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Strict isolation is required"
+      },
+      {
+        "id": "B",
+        "text": "Terminal disinfection is performed"
+      },
+      {
+        "id": "C",
+        "text": "Invasive procedures are performed"
+      },
+      {
+        "id": "D",
+        "text": "Protective isolation is necessary"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "All invasive procedures, including surgery, catheter insertion, and administration of parenteral therapy, require sterile technique to maintain a sterile environment. All equipment must be sterile, and the nurse and the physician must wear sterile gloves and maintain surgical asepsis. In the operating room, the nurse and physician are required to wear sterile gowns, gloves, masks, hair covers, and shoe covers for all invasive procedures. Strict isolation requires the use of clean gloves, masks, gowns and equipment to prevent the transmission of highly communicable diseases by contact or by airborne routes. Terminal disinfection is the disinfection of all contaminated supplies and equipment after a patient has been discharged to prepare them for reuse by another patient. The purpose of protective (reverse) isolation is to prevent a person with seriously impaired resistance from coming into contact who potentially pathogenic organisms."
+  },
+  {
+    "id": 808,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following constitutes a break in sterile technique while preparing a sterile field for a dressing change?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Using sterile forceps, rather than sterile gloves, to handle a sterile item"
+      },
+      {
+        "id": "B",
+        "text": "Touching the outside wrapper of sterilized material without sterile gloves"
+      },
+      {
+        "id": "C",
+        "text": "Placing a sterile object on the edge of the sterile field"
+      },
+      {
+        "id": "D",
+        "text": "Pouring out a small amount of solution (15 to 30 ml) before pouring the solution into a sterile container"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The edges of a sterile field are considered contaminated. When sterile items are allowed to come in contact with the edges of the field, the sterile items also become contaminated."
+  },
+  {
+    "id": 809,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "A natural body defense that plays an active role in preventing infection is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yawning"
+      },
+      {
+        "id": "B",
+        "text": "Body hair"
+      },
+      {
+        "id": "C",
+        "text": "Hiccupping"
+      },
+      {
+        "id": "D",
+        "text": "Rapid eye movements"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Hair on or within body areas, such as the nose, traps and holds particles that contain microorganisms. Yawning and hiccupping do not prevent microorganisms from entering or leaving the body. Rapid eye movement marks the stage of sleep during which dreaming occurs."
+  },
+  {
+    "id": 810,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "All of the following statement are true about donning sterile gloves except:",
+    "options": [
+      {
+        "id": "A",
+        "text": "The first glove should be picked up by grasping the inside of the cuff."
+      },
+      {
+        "id": "B",
+        "text": "The second glove should be picked up by inserting the gloved fingers under the cuff outside the glove."
+      },
+      {
+        "id": "C",
+        "text": "The gloves should be adjusted by sliding the gloved fingers under the sterile cuff and pulling the glove over the wrist"
+      },
+      {
+        "id": "D",
+        "text": "The inside of the glove is considered sterile"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The inside of the glove is always considered to be clean, but not sterile."
+  },
+  {
+    "id": 811,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "When removing a contaminated gown, the nurse should be careful that the first thing she touches is the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Waist tie and neck tie at the back of the gown"
+      },
+      {
+        "id": "B",
+        "text": "Waist tie in front of the gown"
+      },
+      {
+        "id": "C",
+        "text": "Cuffs of the gown"
+      },
+      {
+        "id": "D",
+        "text": "Inside of the gown"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The back of the gown is considered clean, the front is contaminated. So, after removing gloves and washing hands, the nurse should untie the back of the gown; slowly move backward away from the gown, holding the inside of the gown and keeping the edges off the floor; turn and fold the gown inside out; discard it in a contaminated linen container; then wash her hands again."
+  },
+  {
+    "id": 812,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following nursing interventions is considered the most effective form or universal precautions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cap all used needles before removing them from their syringes"
+      },
+      {
+        "id": "B",
+        "text": "Discard all used uncapped needles and syringes in an impenetrable protective container"
+      },
+      {
+        "id": "C",
+        "text": "Wear gloves when administering IM injections"
+      },
+      {
+        "id": "D",
+        "text": "Follow enteric precautions"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "According to the Centers for Disease Control (CDC), blood-to-blood contact occurs most commonly when a health care worker attempts to cap a used needle. Therefore, used needles should never be recapped; instead they should be inserted in a specially designed puncture resistant, labeled container. Wearing gloves is not always necessary when administering an I.M. injection. Enteric precautions prevent the transfer of pathogens via feces."
+  },
+  {
+    "id": 813,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "All of the following measures are recommended to prevent pressure ulcers except:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Massaging the reddened are with lotion"
+      },
+      {
+        "id": "B",
+        "text": "Using a water or air mattress"
+      },
+      {
+        "id": "C",
+        "text": "Adhering to a schedule for positioning and turning"
+      },
+      {
+        "id": "D",
+        "text": "Providing meticulous skin care"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Nurses and other health care professionals previously believed that massaging a reddened area with lotion would promote venous return and reduce edema to the area. However, research has shown that massage only increases the likelihood of cellular ischemia and necrosis to the area."
+  },
+  {
+    "id": 814,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following blood tests should be performed before a blood transfusion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prothrombin and coagulation time"
+      },
+      {
+        "id": "B",
+        "text": "Blood typing and cross-matching"
+      },
+      {
+        "id": "C",
+        "text": "Bleeding and clotting time"
+      },
+      {
+        "id": "D",
+        "text": "Complete blood count (CBC) and electrolyte levels."
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Before a blood transfusion is performed, the blood of the donor and recipient must be checked for compatibility. This is done by blood typing (a test that determines a person’s blood type) and cross-matching (a procedure that determines the compatibility of the donor’s and recipient’s blood after the blood types has been matched). If the blood specimens are incompatible, hemolysis and antigen-antibody reactions will occur."
+  },
+  {
+    "id": 815,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The primary purpose of a platelet count is to evaluate the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Potential for clot formation"
+      },
+      {
+        "id": "B",
+        "text": "Potential for bleeding"
+      },
+      {
+        "id": "C",
+        "text": "Presence of an antigen-antibody response"
+      },
+      {
+        "id": "D",
+        "text": "Presence of cardiac enzymes"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Platelets are disk-shaped cells that are essential for blood coagulation. A platelet count determines the number of thrombocytes in blood available for promoting hemostasis and assisting with blood coagulation after injury. It also is used to evaluate the patient’s potential for bleeding; however, this is not its primary purpose. The normal count ranges from 150,000 to 350,000/mm3. A count of 100,000/mm3 or less indicates a potential for bleeding; count of less than 20,000/mm3 is associated with spontaneous bleeding."
+  },
+  {
+    "id": 816,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following white blood cell (WBC) counts clearly indicates leukocytosis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4,500/mm³"
+      },
+      {
+        "id": "B",
+        "text": "7,000/mm³"
+      },
+      {
+        "id": "C",
+        "text": "10,000/mm³"
+      },
+      {
+        "id": "D",
+        "text": "25,000/mm³"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Leukocytosis is any transient increase in the number of white blood cells (leukocytes) in the blood. Normal WBC counts range from 5,000 to 100,000/mm3. Thus, a count of 25,000/mm3 indicates leukocytosis."
+  },
+  {
+    "id": 817,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "After 5 days of diuretic therapy with 20mg of furosemide (Lasix) daily, a patient begins to exhibit fatigue, muscle cramping and muscle weakness. These symptoms probably indicate that the patient is experiencing:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hypokalemia"
+      },
+      {
+        "id": "B",
+        "text": "Hyperkalemia"
+      },
+      {
+        "id": "C",
+        "text": "Anorexia"
+      },
+      {
+        "id": "D",
+        "text": "Dysphagia"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Fatigue, muscle cramping, and muscle weaknesses are symptoms of hypokalemia (an inadequate potassium level), which is a potential side effect of diuretic therapy. The physician usually orders supplemental potassium to prevent hypokalemia in patients receiving diuretics. Anorexia is another symptom of hypokalemia. Dysphagia means difficulty swallowing."
+  },
+  {
+    "id": 818,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following statements about chest X-ray is false?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No contradictions exist for this test"
+      },
+      {
+        "id": "B",
+        "text": "Before the procedure, the patient should remove all jewelry, metallic objects, and buttons above the waist"
+      },
+      {
+        "id": "C",
+        "text": "A signed consent is not required"
+      },
+      {
+        "id": "D",
+        "text": "Eating, drinking, and medications are allowed before this test"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Pregnancy or suspected pregnancy is the only contraindication for a chest X-ray. However, if a chest X-ray is necessary, the patient can wear a lead apron to protect the pelvic region from radiation. Jewelry, metallic objects, and buttons would interfere with the X-ray and thus should not be worn above the waist. A signed consent is not required because a chest X-ray is not an invasive examination. Eating, drinking and medications are allowed because the X-ray is of the chest, not the abdominal region."
+  },
+  {
+    "id": 819,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The most appropriate time for the nurse to obtain a sputum specimen for culture is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Early in the morning"
+      },
+      {
+        "id": "B",
+        "text": "After the patient eats a light breakfast"
+      },
+      {
+        "id": "C",
+        "text": "After aerosol therapy"
+      },
+      {
+        "id": "D",
+        "text": "After chest physiotherapy"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Obtaining a sputum specimen early in this morning ensures an adequate supply of bacteria for culturing and decreases the risk of contamination from food or medication."
+  },
+  {
+    "id": 820,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "A patient with no known allergies is to receive penicillin every 6 hours. When administering the medication, the nurse observes a fine rash on the patient’s skin. The most appropriate nursing action would be to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Withhold the moderation and notify the physician"
+      },
+      {
+        "id": "B",
+        "text": "Administer the medication and notify the physician"
+      },
+      {
+        "id": "C",
+        "text": "Administer the medication with an antihistamine"
+      },
+      {
+        "id": "D",
+        "text": "Apply corn starch soaks to the rash"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Initial sensitivity to penicillin is commonly manifested by a skin rash, even in individuals who have not been allergic to it previously. Because of the danger of anaphylactic shock, he nurse should withhold the drug and notify the physician, who may choose to substitute another drug. Administering an antihistamine is a dependent nursing intervention that requires a written physician’s order. Although applying corn starch to the rash may relieve discomfort, it is not the nurse’s top priority in such a potentially life-threatening situation."
+  },
+  {
+    "id": 821,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "All of the following nursing interventions are correct when using the Ztrack method of drug injection except:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prepare the injection site with alcohol"
+      },
+      {
+        "id": "B",
+        "text": "Use a needle that’s a least 1” long"
+      },
+      {
+        "id": "C",
+        "text": "Aspirate for blood before injection"
+      },
+      {
+        "id": "D",
+        "text": "Rub the site vigorously after the injection to promote absorption"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The Z-track method is an I.M. injection technique in which the patient’s skin is pulled in such a way that the needle track is sealed off after the injection. This procedure seals medication deep into the muscle, thereby minimizing skin staining and irritation. Rubbing the injection site is contraindicated because it may cause the medication to extravasate into the skin."
+  },
+  {
+    "id": 822,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The correct method for determining the vastus lateralis site for I.M. injection is to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Locate the upper aspect of the upper outer quadrant of the buttock about 5 to 8 cm below the iliac crest"
+      },
+      {
+        "id": "B",
+        "text": "Palpate the lower edge of the acromion process and the midpoint lateral aspect of the arm"
+      },
+      {
+        "id": "C",
+        "text": "Palpate a 1” circular area anterior to the umbilicus"
+      },
+      {
+        "id": "D",
+        "text": "Divide the area between the greater femoral trochanter and the lateral femoral condyle into thirds, and select the middle third on the anterior of the thigh"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The vastus lateralis, a long, thick muscle that extends the full length of the thigh, is viewed by many clinicians as the site of choice for I.M. injections because it has relatively few major nerves and blood vessels. The middle third of the muscle is recommended as the injection site. The patient can be in a supine or sitting position for an injection into this site."
+  },
+  {
+    "id": 823,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The mid-deltoid injection site is seldom used for I.M. injections because it:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Can accommodate only 1 ml or less of medication"
+      },
+      {
+        "id": "B",
+        "text": "Bruises too easily"
+      },
+      {
+        "id": "C",
+        "text": "Can be used only when the patient is lying down"
+      },
+      {
+        "id": "D",
+        "text": "Does not readily parenteral medication"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The mid-deltoid injection site can accommodate only 1 ml or less of medication because of its size and location (on the deltoid muscle of the arm, close to the brachial artery and radial nerve)."
+  },
+  {
+    "id": 824,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The appropriate needle size for insulin injection is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "18G, 1 ½” long"
+      },
+      {
+        "id": "B",
+        "text": "22G, 1” long"
+      },
+      {
+        "id": "C",
+        "text": "22G, 1 ½” long"
+      },
+      {
+        "id": "D",
+        "text": "25G, 5/8” long"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A 25G, 5/8” needle is the recommended size for insulin injection because insulin is administered by the subcutaneous route. An 18G, 1 ½” needle is usually used for I.M. injections in children, typically in the vastus lateralis. A 22G, 1 ½” needle is usually used for adult I.M. injections, which are typically administered in the vastus lateralis or ventrogluteal site."
+  },
+  {
+    "id": 825,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The appropriate needle gauge for intradermal injection is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "20G"
+      },
+      {
+        "id": "B",
+        "text": "22G"
+      },
+      {
+        "id": "C",
+        "text": "25G"
+      },
+      {
+        "id": "D",
+        "text": "26G"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Because an intradermal injection does not penetrate deeply into the skin, a small-bore 25G needle is recommended. This type of injection is used primarily to administer antigens to evaluate reactions for allergy or sensitivity studies. A 20G needle is usually used for I.M. injections of oilbased medications; a 22G needle for I.M. injections; and a 25G needle, for I.M. injections; and a 25G needle, for subcutaneous insulin injections."
+  },
+  {
+    "id": 826,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Parenteral penicillin can be administered as an:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IM injection or an IV solution"
+      },
+      {
+        "id": "B",
+        "text": "IV or an intradermal injection"
+      },
+      {
+        "id": "C",
+        "text": "Intradermal or subcutaneous injection"
+      },
+      {
+        "id": "D",
+        "text": "IM or a subcutaneous injection"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Parenteral penicillin can be administered I.M. or added to a solution and given I.V. It cannot be administered subcutaneously or intradermally."
+  },
+  {
+    "id": 827,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The physician orders gr 10 of aspirin for a patient. The equivalent dose in milligrams is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.6 mg"
+      },
+      {
+        "id": "B",
+        "text": "10 mg"
+      },
+      {
+        "id": "C",
+        "text": "60 mg"
+      },
+      {
+        "id": "D",
+        "text": "600 mg"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "gr 10 x 60mg/gr 1 = 600 mg"
+  },
+  {
+    "id": 828,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The physician orders an IV solution of dextrose 5% in water at 100ml/hour. What would the flow rate be if the drop factor is 15 gtt = 1 ml?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 gtt/minute"
+      },
+      {
+        "id": "B",
+        "text": "13 gtt/minute"
+      },
+      {
+        "id": "C",
+        "text": "25 gtt/minute"
+      },
+      {
+        "id": "D",
+        "text": "50 gtt/minute"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "100ml/60 min X 15 gtt/ 1 ml = 25 gtt/minute"
+  },
+  {
+    "id": 829,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following is a sign or symptom of a hemolytic reaction to blood transfusion?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemoglobinuria"
+      },
+      {
+        "id": "B",
+        "text": "Chest pain"
+      },
+      {
+        "id": "C",
+        "text": "Urticaria"
+      },
+      {
+        "id": "D",
+        "text": "Distended neck veins"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Hemoglobinuria, the abnormal presence of hemoglobin in the urine, indicates a hemolytic reaction (incompatibility of the donor’s and recipient’s blood). In this reaction, antibodies in the recipient’s plasma combine rapidly with donor RBC’s; the cells are hemolyzed in either circulatory or reticuloendothelial system. Hemolysis occurs more rapidly in ABO incompatibilities than in Rh incompatibilities. Chest pain and urticaria may be symptoms of impending anaphylaxis. Distended neck veins are an indication of hypervolemia."
+  },
+  {
+    "id": 830,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following conditions may require fluid restriction?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fever"
+      },
+      {
+        "id": "B",
+        "text": "Chronic Obstructive Pulmonary Disease"
+      },
+      {
+        "id": "C",
+        "text": "Renal Failure"
+      },
+      {
+        "id": "D",
+        "text": "Dehydration"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "In real failure, the kidney loses their ability to effectively eliminate wastes and fluids. Because of this, limiting the patient’s intake of oral and I.V. fluids may be necessary. Fever, chronic obstructive pulmonary disease, and dehydration are conditions for which fluids should be encouraged."
+  },
+  {
+    "id": 831,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "All of the following are common signs and symptoms of phlebitis except:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pain or discomfort at the IV insertion site"
+      },
+      {
+        "id": "B",
+        "text": "Edema and warmth at the IV insertion site"
+      },
+      {
+        "id": "C",
+        "text": "A red streak exiting the IV insertion site"
+      },
+      {
+        "id": "D",
+        "text": "Frank bleeding at the insertion site"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Phlebitis, the inflammation of a vein, can be caused by chemical irritants (I.V. solutions or medications), mechanical irritants (the needle or catheter used during venipuncture or cannulation), or a localized allergic reaction to the needle or catheter. Signs and symptoms of phlebitis include pain or discomfort, edema and heat at the I.V. insertion site, and a red streak going up the arm or leg from the I.V. insertion site."
+  },
+  {
+    "id": 832,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The best way of determining whether a patient has learned to instill ear medication properly is for the nurse to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ask the patient if he/she has used ear drops before"
+      },
+      {
+        "id": "B",
+        "text": "Have the patient repeat the nurse’s instructions using her own words"
+      },
+      {
+        "id": "C",
+        "text": "Demonstrate the procedure to the patient and encourage to ask questions"
+      },
+      {
+        "id": "D",
+        "text": "Ask the patient to demonstrate the procedure"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Return demonstration provides the most certain evidence for evaluating the effectiveness of patient teaching."
+  },
+  {
+    "id": 833,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following types of medications can be administered via gastrostomy tube?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Any oral medications"
+      },
+      {
+        "id": "B",
+        "text": "Capsules whole contents are dissolve in water"
+      },
+      {
+        "id": "C",
+        "text": "Enteric-coated tablets that are thoroughly dissolved in water"
+      },
+      {
+        "id": "D",
+        "text": "Most tablets designed for oral use, except for extended-duration compounds"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Capsules, enteric-coated tablets, and most extended duration or sustained release products should not be dissolved for use in a gastrostomy tube. They are pharmaceutically manufactured in these forms for valid reasons, and altering them destroys their purpose. The nurse should seek an alternate physician’s order when an ordered medication is inappropriate for delivery by tube."
+  },
+  {
+    "id": 834,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "A patient who develops hives after receiving an antibiotic is exhibiting drug:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tolerance"
+      },
+      {
+        "id": "B",
+        "text": "Idiosyncrasy"
+      },
+      {
+        "id": "C",
+        "text": "Synergism"
+      },
+      {
+        "id": "D",
+        "text": "Allergy"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A drug-allergy is an adverse reaction resulting from an immunologic response following a previous sensitizing exposure to the drug. The reaction can range from a rash or hives to anaphylactic shock. Tolerance to a drug means that the patient experiences a decreasing physiologic response to repeated administration of the drug in the same dosage. Idiosyncrasy is an individual’s unique hypersensitivity to a drug, food, or other substance; it appears to be genetically determined. Synergism, is a drug interaction in which the sum of the drug’s combined effects is greater than that of their separate effects."
+  },
+  {
+    "id": 835,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "A patient has returned to his room after femoral arteriography. All of the following are appropriate nursing interventions except:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assess femoral, popliteal, and pedal pulses every 15 minutes for 2 hours"
+      },
+      {
+        "id": "B",
+        "text": "Check the pressure dressing for sanguineous drainage"
+      },
+      {
+        "id": "C",
+        "text": "Assess a vital signs every 15 minutes for 2 hours"
+      },
+      {
+        "id": "D",
+        "text": "Order a hemoglobin and hematocrit count 1 hour after the arteriography"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A hemoglobin and hematocrit count would be ordered by the physician if bleeding were suspected. The other answers are appropriate nursing interventions for a patient who has undergone femoral arteriography."
+  },
+  {
+    "id": 836,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The nurse explains to a patient that a cough:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Is a protective response to clear the respiratory tract of irritants"
+      },
+      {
+        "id": "B",
+        "text": "Is primarily a voluntary action"
+      },
+      {
+        "id": "C",
+        "text": "Is induced by the administration of an antitussive drug"
+      },
+      {
+        "id": "D",
+        "text": "Can be inhibited by “splinting” the abdomen"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Coughing, a protective response that clears the respiratory tract of irritants, usually is involuntary; however it can be voluntary, as when a patient is taught to perform coughing exercises. An antitussive drug inhibits coughing. Splinting the abdomen supports the abdominal muscles when a patient coughs."
+  },
+  {
+    "id": 837,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "An infected patient has chills and begins shivering. The best nursing intervention is to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apply iced alcohol sponges"
+      },
+      {
+        "id": "B",
+        "text": "Provide increased cool liquids"
+      },
+      {
+        "id": "C",
+        "text": "Provide additional bedclothes"
+      },
+      {
+        "id": "D",
+        "text": "Provide increased ventilation"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "In an infected patient, shivering results from the body’s attempt to increase heat production and the production of neutrophils and phagocytotic action through increased skeletal muscle tension and contractions. Initial vasoconstriction may cause skin to feel cold to the touch. Applying additional bed clothes helps to equalize the body temperature and stop the chills. Attempts to cool the body result in further shivering, increased metabloism, and thus increased heat production."
+  },
+  {
+    "id": 838,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "A clinical nurse specialist is a nurse who has:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Been certified by the National League for Nursing"
+      },
+      {
+        "id": "B",
+        "text": "Received credentials from the Philippine Nurses’ Association"
+      },
+      {
+        "id": "C",
+        "text": "Graduated from an associate degree program and is a registered professional nurse"
+      },
+      {
+        "id": "D",
+        "text": "Completed a master’s degree in the prescribed clinical area and is a registered professional nurse."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A clinical nurse specialist must have completed a master’s degree in a clinical specialty and be a registered professional nurse. The National League of Nursing accredits educational programs in nursing and provides a testing service to evaluate student nursing competence but it does not certify nurses. The American Nurses Association identifies requirements for certification and offers examinations for certification in many areas of nursing., such as medical surgical nursing. These certification (credentialing) demonstrates that the nurse has the knowledge and the ability to provide high quality nursing care in the area of her certification. A graduate of an associate degree program is not a clinical nurse specialist: however, she is prepared to provide bed side nursing with a high degree of knowledge and skill. She must successfully complete the licensing examination to become a registered professional nurse."
+  },
+  {
+    "id": 839,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The purpose of increasing urine acidity through dietary means is to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Decrease burning sensations"
+      },
+      {
+        "id": "B",
+        "text": "Change the urine’s color"
+      },
+      {
+        "id": "C",
+        "text": "Change the urine’s concentration"
+      },
+      {
+        "id": "D",
+        "text": "Inhibit the growth of microorganisms"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Microorganisms usually do not grow in an acidic environment."
+  },
+  {
+    "id": 840,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Clay colored stools indicate:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Upper GI bleeding"
+      },
+      {
+        "id": "B",
+        "text": "Impending constipation"
+      },
+      {
+        "id": "C",
+        "text": "An effect of medication"
+      },
+      {
+        "id": "D",
+        "text": "Bile obstruction"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Bile colors the stool brown. Any inflammation or obstruction that impairs bile flow will affect the stool pigment, yielding light, clay-colored stool. Upper GI bleeding results in black or tarry stool. Constipation is characterized by small, hard masses. Many medications and foods will discolor stool – for example, drugs containing iron turn stool black.; beets turn stool red."
+  },
+  {
+    "id": 841,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "In which step of the nursing process would the nurse ask a patient if the medication she administered relieved his pain?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assessment"
+      },
+      {
+        "id": "B",
+        "text": "Analysis"
+      },
+      {
+        "id": "C",
+        "text": "Planning"
+      },
+      {
+        "id": "D",
+        "text": "Evaluation"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "In the evaluation step of the nursing process, the nurse must decide whether the patient has achieved the expected outcome that was identified in the planning phase."
+  },
+  {
+    "id": 842,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "All of the following are good sources of vitamin A except:",
+    "options": [
+      {
+        "id": "A",
+        "text": "White potatoes"
+      },
+      {
+        "id": "B",
+        "text": "Carrots"
+      },
+      {
+        "id": "C",
+        "text": "Apricots"
+      },
+      {
+        "id": "D",
+        "text": "Egg yolks"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The main sources of vitamin A are yellow and green vegetables (such as carrots, sweet potatoes, squash, spinach, collard greens, broccoli, and cabbage) and yellow fruits (such as apricots, and cantaloupe). Animal sources include liver, kidneys, cream, butter, and egg yolks."
+  },
+  {
+    "id": 843,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Which of the following is a primary nursing intervention necessary for all patients with a Foley Catheter in place?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maintain the drainage tubing and collection bag level with the patient’s bladder"
+      },
+      {
+        "id": "B",
+        "text": "Irrigate the patient with 1% Neosporin solution three times a daily"
+      },
+      {
+        "id": "C",
+        "text": "Clamp the catheter for 1 hour every 4 hours to maintain the bladder’s elasticity"
+      },
+      {
+        "id": "D",
+        "text": "Maintain the drainage tubing and collection bag below bladder level to facilitate drainage by gravity"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Maintaing the drainage tubing and collection bag level with the patient’s bladder could result in reflux of urine into the kidney. Irrigating the bladder with Neosporin and clamping the catheter for 1 hour every 4 hours must be prescribed by a physician."
+  },
+  {
+    "id": 844,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The ELISA test is used to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Screen blood donors for antibodies to human immunodeficiency virus (HIV)"
+      },
+      {
+        "id": "B",
+        "text": "Test blood to be used for transfusion for HIV antibodies"
+      },
+      {
+        "id": "C",
+        "text": "Aid in diagnosing a patient with AIDS"
+      },
+      {
+        "id": "D",
+        "text": "All of the above"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The ELISA test of venous blood is used to assess blood and potential blood donors to human immunodeficiency virus (HIV). A positive ELISA test combined with various signs and symptoms helps to diagnose acquired immunodeficiency syndrome (AIDS)"
+  },
+  {
+    "id": 845,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "The two blood vessels most commonly used for TPN infusion are the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Subclavian and jugular veins"
+      },
+      {
+        "id": "B",
+        "text": "Brachial and subclavian veins"
+      },
+      {
+        "id": "C",
+        "text": "Femoral and subclavian veins"
+      },
+      {
+        "id": "D",
+        "text": "Brachial and femoral veins"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Tachypnea (an abnormally rapid rate of breathing) would indicate that the patient was still hypoxic (deficient in oxygen).The partial pressures of arterial oxygen and carbon dioxide listed are within the normal range. Eupnea refers to normal respiration."
+  },
+  {
+    "id": 846,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Effective skin disinfection before a surgical procedure includes which of the following methods?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Shaving the site on the day before surgery"
+      },
+      {
+        "id": "B",
+        "text": "Applying a topical antiseptic to the skin on the evening before surgery"
+      },
+      {
+        "id": "C",
+        "text": "Having the patient take a tub bath on the morning of surgery"
+      },
+      {
+        "id": "D",
+        "text": "Having the patient shower with an antiseptic soap on the evening v=before and the morning of surgery"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Studies have shown that showering with an antiseptic soap before surgery is the most effective method of removing microorganisms from the skin. Shaving the site of the intended surgery might cause breaks in the skin, thereby increasing the risk of infection; however, if indicated, shaving, should be done immediately before surgery, not the day before. A topical antiseptic would not remove microorganisms and would be beneficial only after proper cleaning and rinsing. Tub bathing might transfer organisms to another body site rather than rinse them away."
+  },
+  {
+    "id": 847,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "When transferring a patient from a bed to a chair, the nurse should use which muscles to avoid back injury?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abdominal muscles"
+      },
+      {
+        "id": "B",
+        "text": "Back muscles"
+      },
+      {
+        "id": "C",
+        "text": "Leg muscles"
+      },
+      {
+        "id": "D",
+        "text": "Upper arm muscles"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The leg muscles are the strongest muscles in the body and should bear the greatest stress when lifting. Muscles of the abdomen, back, and upper arms may be easily injured."
+  },
+  {
+    "id": 848,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Thrombophlebitis typically develops in patients with which of the following conditions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increases partial thromboplastin time"
+      },
+      {
+        "id": "B",
+        "text": "Acute pulsus paradoxus"
+      },
+      {
+        "id": "C",
+        "text": "An impaired or traumatized blood vessel wall"
+      },
+      {
+        "id": "D",
+        "text": "Chronic Obstructive Pulmonary Disease (COPD)"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The factors, known as Virchow’s triad, collectively predispose a patient to thromboplebitis; impaired venous return to the heart, blood hypercoagulability, and injury to a blood vessel wall. Increased partial thromboplastin time indicates a prolonged bleeding time during fibrin clot formation, commonly the result of anticoagulant (heparin) therapy. Arterial blood disorders (such as pulsus paradoxus) and lung diseases (such as COPD) do not necessarily impede venous return of injure vessel walls."
+  },
+  {
+    "id": 849,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "In a recumbent, immobilized patient, lung ventilation can become altered, leading to such respiratory complications as:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Respiratory acidosis, ateclectasis, and hypostatic pneumonia"
+      },
+      {
+        "id": "B",
+        "text": "Appneustic breathing, atypical pneumonia and respiratory alkalosis"
+      },
+      {
+        "id": "C",
+        "text": "Cheyne-Strokes respirations and spontaneous pneumothorax"
+      },
+      {
+        "id": "D",
+        "text": "Kussmail’s respirations and hypoventilation"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Because of restricted respiratory movement, a recumbent, immobilize patient is at particular risk for respiratory acidosis from poor gas exchange; atelectasis from reduced surfactant and accumulated mucus in the bronchioles, and hypostatic pneumonia from bacterial growth caused by stasis of mucus secretions."
+  },
+  {
+    "id": 850,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing",
+    "question_stem": "Immobility impairs bladder elimination, resulting in such disorders as",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increased urine acidity and relaxation of the perineal muscles, causing incontinence"
+      },
+      {
+        "id": "B",
+        "text": "Urine retention, bladder distention, and infection"
+      },
+      {
+        "id": "C",
+        "text": "Diuresis, natriuresis, and decreased urine specific gravity"
+      },
+      {
+        "id": "D",
+        "text": "Decreased calcium and phosphate levels in the urine"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The immobilized patient commonly suffers from urine retention caused by decreased muscle tone in the perineum. This leads to bladder distention and urine stagnation, which provide an excellent medium for bacterial growth leading to infection. Immobility also results in more alkaline urine with excessive amounts of calcium, sodium and phosphate, a gradual decrease in urine production, and an increased specific gravity."
+  },
+  {
+    "id": 851,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "For the client who is using oral contraceptives, the nurse informs the client about the need to take the pill at the same time each day to accomplish which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Decrease the incidence of nausea"
+      },
+      {
+        "id": "B",
+        "text": "Maintain hormonal levels"
+      },
+      {
+        "id": "C",
+        "text": "Reduce side effects"
+      },
+      {
+        "id": "D",
+        "text": "Prevent drug interactions"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Regular timely ingestion of oral contraceptives is necessary to maintain hormonal levels of the drugs to suppress the action of the hypothalamus and anterior pituitary leading to inappropriate secretion of FSH and LH. Therefore, follicles do not mature, ovulation is inhibited, and pregnancy is prevented. The estrogen content of the oral site contraceptive may cause the nausea, regardless of when the pill is taken. Side effects and drug interactions may occur with oral contraceptives regardless of the time the pill is taken."
+  },
+  {
+    "id": 852,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When teaching a client about contraception. Which of the following would the nurse include as the most effective method for preventing sexually transmitted infections?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Spermicides"
+      },
+      {
+        "id": "B",
+        "text": "Diaphragm"
+      },
+      {
+        "id": "C",
+        "text": "Condoms"
+      },
+      {
+        "id": "D",
+        "text": "Vasectomy"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Condoms, when used correctly and consistently, are the most effective contraceptive method or barrier against bacterial and viral sexually transmitted infections. Although spermicides kill sperm, they do not provide reliable protection against the spread of sexually transmitted infections, especially intracellular organisms such as HIV. Insertion and removal of the diaphragm along with the use of the spermicides may cause vaginal irritations, which could place the client at risk for infection transmission. Male sterilization eliminates spermatozoa from the ejaculate, but it does not eliminate bacterial and/or viral microorganisms that can cause sexually transmitted infections."
+  },
+  {
+    "id": 853,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When preparing a woman who is 2 days postpartum for discharge, recommendations for which of the following contraceptive methods would be avoided?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diaphragm"
+      },
+      {
+        "id": "B",
+        "text": "Female condom"
+      },
+      {
+        "id": "C",
+        "text": "Oral contraceptives"
+      },
+      {
+        "id": "D",
+        "text": "Rhythm method"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The diaphragm must be fitted individually to ensure effectiveness. Because of the changes to the reproductive structures during pregnancy and following delivery, the diaphragm must be refitted, usually at the 6 weeks’ examination following childbirth or after a weight loss of 15 lbs or more. In addition, for maximum effectiveness, spermicidal jelly should be placed in the dome and around the rim. However, spermicidal jelly should not be inserted into the vagina until involution is completed at approximately 6 weeks. Use of a female condom protects the reproductive system from the introduction of semen or spermicides into the vagina and may be used after childbirth. Oral contraceptives may be started within the first postpartum week to ensure suppression of ovulation. For the couple who has determined the female’s fertile period, using the rhythm method, avoidance of intercourse during this period, is safe and effective."
+  },
+  {
+    "id": 854,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "For which of the following clients would the nurse expect that an intrauterine device would not be recommended?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Woman over age 35"
+      },
+      {
+        "id": "B",
+        "text": "Nulliparous woman"
+      },
+      {
+        "id": "C",
+        "text": "Promiscuous young adult"
+      },
+      {
+        "id": "D",
+        "text": "Postpartum client"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "An IUD may increase the risk of pelvic inflammatory disease, especially in women with more than one sexual partner, because of the increased risk of sexually transmitted infections. An UID should not be used if the woman has an active or chronic pelvic infection, postpartum infection, endometrial hyperplasia or carcinoma, or uterine abnormalities. Age is not a factor in determining the risks associated with IUD use. Most IUD users are over the age of 30. Although there is a slightly higher risk for infertility in women who have never been pregnant, the IUD is an acceptable option as long as the risk-benefit ratio is discussed. IUDs may be inserted immediately after delivery, but this is not recommended because of the increased risk and rate of expulsion at this time."
+  },
+  {
+    "id": 855,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A client in her third trimester tells the nurse, “I’m constipated all the time!” Which of the following should the nurse recommend?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Daily enemas"
+      },
+      {
+        "id": "B",
+        "text": "Laxatives"
+      },
+      {
+        "id": "C",
+        "text": "Increased fiber intake"
+      },
+      {
+        "id": "D",
+        "text": "Decreased fluid intake"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "During the third trimester, the enlarging uterus places pressure on the intestines. This coupled with the effect of hormones on smooth muscle relaxation causes decreased intestinal motility (peristalsis). Increasing fiber in the diet will help fecal matter pass more quickly through the intestinal tract, thus decreasing the amount of water that is absorbed. As a result, stool is softer and easier to pass. Enemas could precipitate preterm labor and/or electrolyte loss and should be avoided. Laxatives may cause preterm labor by stimulating peristalsis and may interfere with the absorption of nutrients. Use for more than 1 week can also lead to laxative dependency. Liquid in the diet helps provide a semisolid, soft consistency to the stool. Eight to ten glasses of fluid per day are essential to maintain hydration and promote stool evacuation."
+  },
+  {
+    "id": 856,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Which of the following would the nurse use as the basis for the teaching plan when caring for a pregnant teenager concerned about gaining too much weight during pregnancy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 pounds per trimester"
+      },
+      {
+        "id": "B",
+        "text": "1 pound per week for 40 weeks"
+      },
+      {
+        "id": "C",
+        "text": "½ pound per week for 40 weeks"
+      },
+      {
+        "id": "D",
+        "text": "A total gain of 25 to 30 pounds"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "To ensure adequate fetal growth and development during the 40 weeks of a pregnancy, a total weight gain 25 to 30 pounds is recommended: 1.5 pounds in the first 10 weeks; 9 pounds by 30 weeks; and 27.5 pounds by 40 weeks. The pregnant woman should gain less weight in the first and second trimester than in the third. During the first trimester, the client should only gain 1.5 pounds in the first 10 weeks, not 1 pound per week. A weight gain of ½ pound per week would be 20 pounds for the total pregnancy, less than the recommended amount."
+  },
+  {
+    "id": 857,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The client tells the nurse that her last menstrual period started on January 14 and ended on January 20. Using Nagele’s rule, the nurse determines her EDD to be which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "September 27"
+      },
+      {
+        "id": "B",
+        "text": "October 21"
+      },
+      {
+        "id": "C",
+        "text": "November 7"
+      },
+      {
+        "id": "D",
+        "text": "December 27"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "To calculate the EDD by Nagele’s rule, add 7 days to the first day of the last menstrual period and count back 3 months, changing the year appropriately. To obtain a date of September 27, 7 days have been added to the last day of the LMP (rather than the first day of the LMP), plus 4 months (instead of 3 months) were counted back. To obtain the date of November 7, 7 days have been subtracted (instead of added) from the first day of LMP plus November indicates counting back 2 months (instead of 3 months) from January. To obtain the date of December 27, 7 days were added to the last day of the LMP (rather than the first day of the LMP) and December indicates counting back only 1 month (instead of 3 months) from January."
+  },
+  {
+    "id": 858,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When taking an obstetrical history on a pregnant client who states, “I had a son born at 38 weeks gestation, a daughter born at 30 weeks gestation and I lost a baby at about 8 weeks,” the nurse should record her obstetrical history as which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "G2 T2 P0 A0 L2"
+      },
+      {
+        "id": "B",
+        "text": "G3 T1 P1 A0 L2"
+      },
+      {
+        "id": "C",
+        "text": "G3 T2 P0 A0 L2"
+      },
+      {
+        "id": "D",
+        "text": "G4 T1 P1 A1 L2"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The client has been pregnant four times, including current pregnancy (G). Birth at 38 weeks’ gestation is considered full term (T), while birth form 20 weeks to 38 weeks is considered preterm (P). A spontaneous abortion occurred at 8 weeks (A). She has two living children (L)."
+  },
+  {
+    "id": 859,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When preparing to listen to the fetal heart rate at 12 weeks’ gestation, the nurse would use which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stethoscope placed midline at the umbilicus"
+      },
+      {
+        "id": "B",
+        "text": "Doppler placed midline at the suprapubic region"
+      },
+      {
+        "id": "C",
+        "text": "Fetoscope placed midway between the umbilicus and the xiphoid process"
+      },
+      {
+        "id": "D",
+        "text": "External electronic fetal monitor placed at the umbilicus"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "At 12 weeks gestation, the uterus rises out of the pelvis and is palpable above the symphysis pubis. The Doppler intensifies the sound of the fetal pulse rate so it is audible. The uterus has merely risen out of the pelvis into the abdominal cavity and is not at the level of the umbilicus. The fetal heart rate at this age is not audible with a stethoscope. The uterus at 12 weeks is just above the symphysis pubis in the abdominal cavity, not midway between the umbilicus and the xiphoid process. At 12 weeks the FHR would be difficult to auscultate with a fetoscope. Although the external electronic fetal monitor would project the FHR, the uterus has not risen to the umbilicus at 12 weeks."
+  },
+  {
+    "id": 860,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When developing a plan of care for a client newly diagnosed with gestational diabetes, which of the following instructions would be the priority?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dietary intake"
+      },
+      {
+        "id": "B",
+        "text": "Medication"
+      },
+      {
+        "id": "C",
+        "text": "Exercise"
+      },
+      {
+        "id": "D",
+        "text": "Glucose monitoring"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Although all of the choices are important in the management of diabetes, diet therapy is the mainstay of the treatment plan and should always be the priority. Women diagnosed with gestational diabetes generally need only diet therapy without medication to control their blood sugar levels. Exercise, is important for all pregnant women and especially for diabetic women, because it burns up glucose, thus decreasing blood sugar. However, dietary intake, not exercise, is the priority. All pregnant women with diabetes should have periodic monitoring of serum glucose. However, those with gestational diabetes generally do not need daily glucose monitoring. The standard of care recommends a fasting and 2- hour postprandial blood sugar level every 2 weeks."
+  },
+  {
+    "id": 861,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A client at 24 weeks gestation has gained 6 pounds in 4 weeks. Which of the following would be the priority when assessing the client?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glucosuria"
+      },
+      {
+        "id": "B",
+        "text": "Depression"
+      },
+      {
+        "id": "C",
+        "text": "Hand/face edema"
+      },
+      {
+        "id": "D",
+        "text": "Dietary intake"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "After 20 weeks’ gestation, when there is a rapid weight gain, preeclampsia should be suspected, which may be caused by fluid retention manifested by edema, especially of the hands and face. The three classic signs of preeclampsia are hypertension, edema, and proteinuria. Although urine is checked for glucose at each clinic visit, this is not the priority. Depression may cause either anorexia or excessive food intake, leading to excessive weight gain or loss. This is not, however, the priority consideration at this time. Weight gain thought to be caused by excessive food intake would require a 24-hour diet recall. However, excessive intake would not be the primary consideration for this client at this time."
+  },
+  {
+    "id": 862,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A client 12 weeks’ pregnant come to the emergency department with abdominal cramping and moderate vaginal bleeding. Speculum examination reveals 2 to 3 cms cervical dilation. The nurse would document these findings as which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Threatened abortion"
+      },
+      {
+        "id": "B",
+        "text": "Imminent abortion"
+      },
+      {
+        "id": "C",
+        "text": "Complete abortion"
+      },
+      {
+        "id": "D",
+        "text": "Missed abortion"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Cramping and vaginal bleeding coupled with cervical dilation signifies that termination of the pregnancy is inevitable and cannot be prevented. Thus, the nurse would document an imminent abortion. In a threatened abortion, cramping and vaginal bleeding are present, but there is no cervical dilation. The symptoms may subside or progress to abortion. In a complete abortion all the products of conception are expelled. A missed abortion is early fetal intrauterine death without expulsion of the products of conception."
+  },
+  {
+    "id": 863,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Which of the following would be the priority nursing diagnosis for a client with an ectopic pregnancy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risk for infection"
+      },
+      {
+        "id": "B",
+        "text": "Pain"
+      },
+      {
+        "id": "C",
+        "text": "Knowledge Deficit"
+      },
+      {
+        "id": "D",
+        "text": "Anticipatory Grieving"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "For the client with an ectopic pregnancy, lower abdominal pain, usually unilateral, is the primary symptom. Thus, pain is the priority. Although the potential for infection is always present, the risk is low in ectopic pregnancy because pathogenic microorganisms have not been introduced from external sources. The client may have a limited knowledge of the pathology and treatment of the condition and will most likely experience grieving, but this is not the priority at this time."
+  },
+  {
+    "id": 864,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Before assessing the postpartum client’s uterus for firmness and position in relation to the umbilicus and midline, which of the following should the nurse do first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assess the vital signs"
+      },
+      {
+        "id": "B",
+        "text": "Administer analgesia"
+      },
+      {
+        "id": "C",
+        "text": "Ambulate her in the hall"
+      },
+      {
+        "id": "D",
+        "text": "Assist her to urinate"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Before uterine assessment is performed, it is essential that the woman empty her bladder. A full bladder will interfere with the accuracy of the assessment by elevating the uterus and displacing to the side of the midline. Vital sign assessment is not necessary unless an abnormality in uterine assessment is identified. Uterine assessment should not cause acute pain that requires administration of analgesia. Ambulating the client is an essential component of postpartum care, but is not necessary prior to assessment of the uterus."
+  },
+  {
+    "id": 865,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Which of the following should the nurse do when a primipara who is lactating tells the nurse that she has sore nipples?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tell her to breast feed more frequently"
+      },
+      {
+        "id": "B",
+        "text": "Administer a narcotic before breast feeding"
+      },
+      {
+        "id": "C",
+        "text": "Encourage her to wear a nursing brassiere"
+      },
+      {
+        "id": "D",
+        "text": "Use soap and water to clean the nipples"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Feeding more frequently, about every 2 hours, will decrease the infant’s frantic, vigorous sucking from hunger and will decrease breast engorgement, soften the breast, and promote ease of correct latching-on for feeding. Narcotics administered prior to breast feeding are passed through the breast milk to the infant, causing excessive sleepiness. Nipple soreness is not severe enough to warrant narcotic analgesia. All postpartum clients, especially lactating mothers, should wear a supportive brassiere with wide cotton straps. This does not, however, prevent or reduce nipple soreness. Soaps are drying to the skin of the nipples and should not be used on the breasts of lactating mothers. Dry nipple skin predisposes to cracks and fissures, which can become sore and painful."
+  },
+  {
+    "id": 866,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The nurse assesses the vital signs of a client, 4 hours’ postpartum that are as follows: BP 90/60; temperature 100.4ºF; pulse 100 weak, thready; R 20 per minute. Which of the following should the nurse do first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Report the temperature to the physician"
+      },
+      {
+        "id": "B",
+        "text": "Recheck the blood pressure with another cuff"
+      },
+      {
+        "id": "C",
+        "text": "Assess the uterus for firmness and position"
+      },
+      {
+        "id": "D",
+        "text": "Determine the amount of lochia"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A weak, thready pulse elevated to 100 BPM may indicate impending hemorrhagic shock. An increased pulse is a compensatory mechanism of the body in response to decreased fluid volume. Thus, the nurse should check the amount of lochia present. Temperatures up to 100.48F in the first 24 hours after birth are related to the dehydrating effects of labor and are considered normal. Although rechecking the blood pressure may be a correct choice of action, it is not the first action that should be implemented in light of the other data. The data indicate a potential impending hemorrhage. Assessing the uterus for firmness and position in relation to the umbilicus and midline is important, but the nurse should check the extent of vaginal bleeding first. Then it would be appropriate to check the uterus, which may be a possible cause of the hemorrhage."
+  },
+  {
+    "id": 867,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The nurse assesses the postpartum vaginal discharge (lochia) on four clients. Which of the following assessments would warrant notification of the physician?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dark red discharge on a 2-day postpartum client"
+      },
+      {
+        "id": "B",
+        "text": "A pink to brownish discharge on a client who is 5 days postpartum"
+      },
+      {
+        "id": "C",
+        "text": "Almost colorless to creamy discharge on a client 2 weeks after delivery"
+      },
+      {
+        "id": "D",
+        "text": "A bright red discharge 5 days after delivery"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Any bright red vaginal discharge would be considered abnormal, but especially 5 days after delivery, when the lochia is typically pink to brownish. Lochia rubra, a dark red discharge, is present for 2 to 3 days after delivery. Bright red vaginal bleeding at this time suggests late postpartum hemorrhage, which occurs after the first 24 hours following delivery and is generally caused by retained placental fragments or bleeding disorders. Lochia rubra is the normal dark red discharge occurring in the first 2 to 3 days after delivery, containing epithelial cells, erythrocyes, leukocytes and decidua. Lochia serosa is a pink to brownish serosanguineous discharge occurring from 3 to 10 days after delivery that contains decidua, erythrocytes, leukocytes, cervical mucus, and microorganisms. Lochia alba is an almost colorless to yellowish discharge occurring from 10 days to 3 weeks after delivery and containing leukocytes, decidua, epithelial cells, fat, cervical mucus, cholesterol crystals, and bacteria."
+  },
+  {
+    "id": 868,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A postpartum client has a temperature of 101.4ºF, with a uterus that is tender when palpated, remains unusually large, and not descending as normally expected. Which of the following should the nurse assess next?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lochia"
+      },
+      {
+        "id": "B",
+        "text": "Breasts"
+      },
+      {
+        "id": "C",
+        "text": "Incision"
+      },
+      {
+        "id": "D",
+        "text": "Urine"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The data suggests an infection of the endometrial lining of the uterus. The lochia may be decreased or copious, dark brown in appearance, and foul smelling, providing further evidence of a possible infection. All the client’s data indicate a uterine problem, not a breast problem. Typically, transient fever, usually 101ºF, may be present with breast engorgement. Symptoms of mastitis include influenza-like manifestations. Localized infection of an episiotomy or C-section incision rarely causes systemic symptoms, and uterine involution would not be affected. The client data do not include dysuria, frequency, or urgency, symptoms of urinary tract infections, which would necessitate assessing the client’s urine."
+  },
+  {
+    "id": 869,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Which of the following is the priority focus of nursing practice with the current early postpartum discharge?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Promoting comfort and restoration of health"
+      },
+      {
+        "id": "B",
+        "text": "Exploring the emotional status of the family"
+      },
+      {
+        "id": "C",
+        "text": "Facilitating safe and effective self-and newborn care"
+      },
+      {
+        "id": "D",
+        "text": "Teaching about the importance of family planning"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Because of early postpartum discharge and limited time for teaching, the nurse’s priority is to facilitate the safe and effective care of the client and newborn. Although promoting comfort and restoration of health, exploring the family’s emotional status, and teaching about family planning are important in postpartum/newborn nursing care, they are not the priority focus in the limited time presented by early post-partum discharge."
+  },
+  {
+    "id": 870,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Which of the following actions would be least effective in maintaining a neutral thermal environment for the newborn?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Placing infant under radiant warmer after bathing"
+      },
+      {
+        "id": "B",
+        "text": "Covering the scale with a warmed blanket prior to weighing"
+      },
+      {
+        "id": "C",
+        "text": "Placing crib close to nursery window for family viewing"
+      },
+      {
+        "id": "D",
+        "text": "Covering the infant’s head with a knit stockinette"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Heat loss by radiation occurs when the infant’s crib is placed too near cold walls or windows. Thus placing the newborn’s crib close to the viewing window would be least effective. Body heat is lost through evaporation during bathing. Placing the infant under the radiant warmer after bathing will assist the infant to be rewarmed. Covering the scale with a warmed blanket prior to weighing prevents heat loss through conduction. A knit cap prevents heat loss from the head a large head, a large body surface area of the newborn’s body."
+  },
+  {
+    "id": 871,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A newborn who has an asymmetrical Moro reflex response should be further assessed for which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Talipes equinovarus"
+      },
+      {
+        "id": "B",
+        "text": "Fractured clavicle"
+      },
+      {
+        "id": "C",
+        "text": "Congenital hypothyroidism"
+      },
+      {
+        "id": "D",
+        "text": "Increased intracranial pressure"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "A fractured clavicle would prevent the normal Moro response of symmetrical sequential extension and abduction of the arms followed by flexion and adduction. In talipes equinovarus (clubfoot) the foot is turned medially, and in plantar flexion, with the heel elevated. The feet are not involved with the Moro reflex. Hypothyroiddism has no effect on the primitive reflexes. Absence of the Moror reflex is the most significant single indicator of central nervous system status, but it is not a sign of increased intracranial pressure."
+  },
+  {
+    "id": 872,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "During the first 4 hours after a male circumcision, assessing for which of the following is the priority?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infection"
+      },
+      {
+        "id": "B",
+        "text": "Hemorrhage"
+      },
+      {
+        "id": "C",
+        "text": "Discomfort"
+      },
+      {
+        "id": "D",
+        "text": "Dehydration"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Hemorrhage is a potential risk following any surgical procedure. Although the infant has been given vitamin K to facilitate clotting, the prophylactic dose is often not sufficient to prevent bleeding. Although infection is a possibility, signs will not appear within 4 hours after the surgical procedure. The primary discomfort of circumcision occurs during the surgical procedure, not afterward. Although feedings are withheld prior to the circumcision, the chances of dehydration are minimal."
+  },
+  {
+    "id": 873,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The mother asks the nurse. “What’s wrong with my son’s breasts? Why are they so enlarged?” Whish of the following would be the best response by the nurse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“The breast tissue is inflamed from the trauma experienced with birth”"
+      },
+      {
+        "id": "B",
+        "text": "“A decrease in material hormones present before birth causes enlargement,”"
+      },
+      {
+        "id": "C",
+        "text": "“You should discuss this with your doctor. It could be a malignancy”"
+      },
+      {
+        "id": "D",
+        "text": "“The tissue has hypertrophied while the baby was in the uterus”"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The presence of excessive estrogen and progesterone in the maternal fetal blood followed by prompt withdrawal at birth precipitates breast engorgement, which will spontaneously resolve in 4 to 5 days after birth. The trauma of the birth process does not cause inflammation of the newborn’s breast tissue. Newborns do not have breast malignancy. This reply by the nurse would cause the mother to have undue anxiety. Breast tissue does not hypertrophy in the fetus or newborns."
+  },
+  {
+    "id": 874,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Immediately after birth the nurse notes the following on a male newborn: respirations 78; apical hearth rate 160 BPM, nostril flaring; mild intercostal retractions; and grunting at the end of expiration. Which of the following should the nurse do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Call the assessment data to the physician’s attention"
+      },
+      {
+        "id": "B",
+        "text": "Start oxygen per nasal cannula at 2 L/min."
+      },
+      {
+        "id": "C",
+        "text": "Suction the infant’s mouth and nares"
+      },
+      {
+        "id": "D",
+        "text": "Recognize this as normal first period of reactivity"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The first 15 minutes to 1 hour after birth is the first period of reactivity involving respiratory and circulatory adaptation to extrauterine life. The data given reflect the normal changes during this time period. The infant’s assessment data reflect normal adaptation. Thus, the physician does not need to be notified and oxygen is not needed. The data do not indicate the presence of choking, gagging or coughing, which are signs of excessive secretions. Suctioning is not necessary."
+  },
+  {
+    "id": 875,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The nurse hears a mother telling a friend on the telephone about umbilical cord care. Which of the following statements by the mother indicates effective teaching?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“Daily soap and water cleansing is best”"
+      },
+      {
+        "id": "B",
+        "text": "‘Alcohol helps it dry and kills germs”"
+      },
+      {
+        "id": "C",
+        "text": "“An antibiotic ointment applied daily prevents infection”"
+      },
+      {
+        "id": "D",
+        "text": "“He can have a tub bath each day”"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Application of 70% isopropyl alcohol to the cord minimizes microorganisms (germicidal) and promotes drying. The cord should be kept dry until it falls off and the stump has healed. Antibiotic ointment should only be used to treat an infection, not as a prophylaxis. Infants should not be submerged in a tub of water until the cord falls off and the stump has completely healed."
+  },
+  {
+    "id": 876,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "newborn weighing 3000 grams and feeding every 4 hours needs 120 calories/kg of body weight every 24 hours for proper growth and development. How many ounces of 20 cal/oz formula should this newborn receive at each feeding to meet nutritional needs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 ounces"
+      },
+      {
+        "id": "B",
+        "text": "3 ounces"
+      },
+      {
+        "id": "C",
+        "text": "4 ounces"
+      },
+      {
+        "id": "D",
+        "text": "6 ounces"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "To determine the amount of formula needed, do the following mathematical calculation. 3 kg x 120 cal/kg per day = 360 calories/day feeding q 4 hours = 6 feedings per day = 60 calories per feeding: 60 calories per feeding; 60 calories per feeding with formula 20 cal/oz = 3 ounces per feeding. Based on the calculation. 2, 4 or 6 ounces are incorrect."
+  },
+  {
+    "id": 877,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The postterm neonate with meconium-stained amniotic fluid needs care designed to especially monitor for which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Respiratory problems"
+      },
+      {
+        "id": "B",
+        "text": "Gastrointestinal problems"
+      },
+      {
+        "id": "C",
+        "text": "Integumentary problems"
+      },
+      {
+        "id": "D",
+        "text": "Elimination problems"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Intrauterine anoxia may cause relaxation of the anal sphincter and emptying of meconium into the amniotic fluid. At birth some of the meconium fluid may be aspirated, causing mechanical obstruction or chemical pneumonitis. The infant is not at increased risk for gastrointestinal problems. Even though the skin is stained with meconium, it is noninfectious (sterile) and nonirritating. The postterm meconiumstained infant is not at additional risk for bowel or urinary problems."
+  },
+  {
+    "id": 878,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When measuring a client’s fundal height, which of the following techniques denotes the correct method of measurement used by the nurse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "From the xiphoid process to the umbilicus"
+      },
+      {
+        "id": "B",
+        "text": "From the symphysis pubis to the xiphoid process"
+      },
+      {
+        "id": "C",
+        "text": "From the symphysis pubis to the fundus"
+      },
+      {
+        "id": "D",
+        "text": "From the fundus to the umbilicus"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The nurse should use a nonelastic, flexible, paper measuring tape, placing the zero point on the superior border of the symphysis pubis and stretching the tape across the abdomen at the midline to the top of the fundus. The xiphoid and umbilicus are not appropriate landmarks to use when measuring the height of the fundus (McDonald’s measurement)."
+  },
+  {
+    "id": 879,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A client with severe preeclampsia is admitted with of BP 160/110, proteinuria, and severe pitting edema. Which of the following would be most important to include in the client’s plan of care?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Daily weights"
+      },
+      {
+        "id": "B",
+        "text": "Seizure precautions"
+      },
+      {
+        "id": "C",
+        "text": "Right lateral positioning"
+      },
+      {
+        "id": "D",
+        "text": "Stress reduction"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Women hospitalized with severe preeclampsia need decreased CNS stimulation to prevent a seizure. Seizure precautions provide environmental safety should a seizure occur. Because of edema, daily weight is important but not the priority. Preclampsia causes vasospasm and therefore can reduce utero-placental perfusion. The client should be placed on her left side to maximize blood flow, reduce blood pressure, and promote diuresis. Interventions to reduce stress and anxiety are very important to facilitate coping and a sense of control, but seizure precautions are the priority."
+  },
+  {
+    "id": 880,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A postpartum primipara asks the nurse, “When can we have sexual intercourse again?” Which of the following would be the nurse’s best response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“Anytime you both want to.”"
+      },
+      {
+        "id": "B",
+        "text": "“As soon as choose a contraceptive method.”"
+      },
+      {
+        "id": "C",
+        "text": "“When the discharge has stopped and the incision is healed.”"
+      },
+      {
+        "id": "D",
+        "text": "“After your 6 weeks examination.”"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Cessation of the lochial discharge signifies healing of the endometrium. Risk of hemorrhage and infection are minimal 3 weeks after a normal vaginal delivery. Telling the client anytime is inappropriate because this response does not provide the client with the specific information she is requesting. Choice of a contraceptive method is important, but not the specific criteria for safe resumption of sexual activity. Culturally, the 6- weeks’ examination has been used as the time frame for resuming sexual activity, but it may be resumed earlier."
+  },
+  {
+    "id": 881,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When preparing to administer the vitamin K injection to a neonate, the nurse would select which of the following sites as appropriate for the injection?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deltoid muscle"
+      },
+      {
+        "id": "B",
+        "text": "Anterior femoris muscle"
+      },
+      {
+        "id": "C",
+        "text": "Vastus lateralis muscle"
+      },
+      {
+        "id": "D",
+        "text": "Gluteus maximus muscle"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The middle third of the vastus lateralis is the preferred injection site for vitamin K administration because it is free of blood vessels and nerves and is large enough to absorb the medication. The deltoid muscle of a newborn is not large enough for a newborn IM injection. Injections into this muscle in a small child might cause damage to the radial nerve. The anterior femoris muscle is the next safest muscle to use in a newborn but is not the safest. Because of the proximity of the sciatic nerve, the gluteus maximus muscle should not be until the child has been walking 2 years."
+  },
+  {
+    "id": 882,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When performing a pelvic examination, the nurse observes a red swollen area on the right side of the vaginal orifice. The nurse would document this as enlargement of which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clitoris"
+      },
+      {
+        "id": "B",
+        "text": "Parotid gland"
+      },
+      {
+        "id": "C",
+        "text": "Skene’s gland"
+      },
+      {
+        "id": "D",
+        "text": "Bartholin’s gland"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Bartholin’s glands are the glands on either side of the vaginal orifice. The clitoris is female erectile tissue found in the perineal area above the urethra. The parotid glands are open into the mouth. Skene’s glands open into the posterior wall of the female urinary meatus."
+  },
+  {
+    "id": 883,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "To differentiate as a female, the hormonal stimulation of the embryo that must occur involves which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase in maternal estrogen secretion"
+      },
+      {
+        "id": "B",
+        "text": "Decrease in material androgen secretion"
+      },
+      {
+        "id": "C",
+        "text": "Secretion of androgen by the fetal gonad"
+      },
+      {
+        "id": "D",
+        "text": "Secretion of estrogen by the fetal gonad"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The fetal gonad must secrete estrogen for the embryo to differentiate as a female. An increase in maternal estrogen secretion does not effect differentiation of the embryo, and maternal estrogen secretion occurs in every pregnancy. Maternal androgen secretion remains the same as before pregnancy and does not effect differentiation. Secretion of androgen by the fetal gonad would produce a male fetus."
+  },
+  {
+    "id": 884,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A client at 8 weeks’ gestation calls complaining of slight nausea in the morning hours. Which of the following client interventions should the nurse question?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taking 1 teaspoon of bicarbonate of soda in an 8-ounce glass of water"
+      },
+      {
+        "id": "B",
+        "text": "Eating a few low-sodium crackers before getting out of bed"
+      },
+      {
+        "id": "C",
+        "text": "Avoiding the intake of liquids in the morning hours"
+      },
+      {
+        "id": "D",
+        "text": "Eating six small meals a day instead of thee large meals"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Using bicarbonate would increase the amount of sodium ingested, which can cause complications. Eating low-sodium crackers would be appropriate. Since liquids can increase nausea avoiding them in the morning hours when nausea is usually the strongest is appropriate. Eating six small meals a day would keep the stomach full, which often decrease nausea."
+  },
+  {
+    "id": 885,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The nurse documents positive ballottement in the client’s prenatal record. The nurse understands that this indicates which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palpable contractions on the abdomen"
+      },
+      {
+        "id": "B",
+        "text": "Passive movement of the unengaged fetus"
+      },
+      {
+        "id": "C",
+        "text": "Fetal kicking felt by the client"
+      },
+      {
+        "id": "D",
+        "text": "Enlargement and softening of the uterus"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Ballottement indicates passive movement of the unengaged fetus. Ballottement is not a contraction. Fetal kicking felt by the client represents quickening. Enlargement and softening of the uterus is known as Piskacek’s sign."
+  },
+  {
+    "id": 886,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "During a pelvic exam the nurse notes a purple-blue tinge of the cervix. The nurse documents this as which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Braxton-Hicks sign"
+      },
+      {
+        "id": "B",
+        "text": "Chadwick’s sign"
+      },
+      {
+        "id": "C",
+        "text": "Goodell’s sign"
+      },
+      {
+        "id": "D",
+        "text": "McDonald’s sign"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Chadwick’s sign refers to the purple-blue tinge of the cervix. Braxton Hicks contractions are painless contractions beginning around the 4th month. Goodell’s sign indicates softening of the cervix. Flexibility of the uterus against the cervix is known as McDonald’s sign."
+  },
+  {
+    "id": 887,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "During a prenatal class, the nurse explains the rationale for breathing techniques during preparation for labor based on the understanding that breathing techniques are most important in achieving which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eliminate pain and give the expectant parents something to do"
+      },
+      {
+        "id": "B",
+        "text": "Reduce the risk of fetal distress by increasing uteroplacental perfusion"
+      },
+      {
+        "id": "C",
+        "text": "Facilitate relaxation, possibly reducing the perception of pain"
+      },
+      {
+        "id": "D",
+        "text": "Eliminate pain so that less analgesia and anesthesia are needed"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Breathing techniques can raise the pain threshold and reduce the perception of pain. They also promote relaxation. Breathing techniques do not eliminate pain, but they can reduce it. Positioning, not breathing, increases uteroplacental perfusion."
+  },
+  {
+    "id": 888,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "After 4 hours of active labor, the nurse notes that the contractions of a primigravida client are not strong enough to dilate the cervix. Which of the following would the nurse anticipate doing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obtaining an order to begin IV oxytocin infusion"
+      },
+      {
+        "id": "B",
+        "text": "Administering a light sedative to allow the patient to rest for several hour"
+      },
+      {
+        "id": "C",
+        "text": "Preparing for a cesarean section for failure to progress"
+      },
+      {
+        "id": "D",
+        "text": "Increasing the encouragement to the patient when pushing begins"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The client’s labor is hypotonic. The nurse should call the physical and obtain an order for an infusion of oxytocin, which will assist the uterus to contact more forcefully in an attempt to dilate the cervix. Administering light sedative would be done for hypertonic uterine contractions. Preparing for cesarean section is unnecessary at this time. Oxytocin would increase the uterine contractions and hopefully progress labor before a cesarean would be necessary. It is too early to anticipate client pushing with contractions."
+  },
+  {
+    "id": 889,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A multigravida at 38 weeks’ gestation is admitted with painless, bright red bleeding and mild contractions every 7 to 10 minutes. Which of the following assessments should be avoided?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maternal vital sign"
+      },
+      {
+        "id": "B",
+        "text": "Fetal heart rate"
+      },
+      {
+        "id": "C",
+        "text": "Contraction monitoring"
+      },
+      {
+        "id": "D",
+        "text": "Cervical dilation"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The signs indicate placenta previa and vaginal exam to determine cervical dilation would not be done because it could cause hemorrhage. Assessing maternal vital signs can help determine maternal physiologic status. Fetal heart rate is important to assess fetal well-being and should be done. Monitoring the contractions will help evaluate the progress of labor."
+  },
+  {
+    "id": 890,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Which of the following would be the nurse’s most appropriate response to a client who asks why she must have a cesarean delivery if she has a complete placenta previa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“You will have to ask your physician when he returns.”"
+      },
+      {
+        "id": "B",
+        "text": "“You need a cesarean to prevent hemorrhage.”"
+      },
+      {
+        "id": "C",
+        "text": "“The placenta is covering most of your cervix.”"
+      },
+      {
+        "id": "D",
+        "text": "“The placenta is covering the opening of the uterus and blocking your baby.”"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A complete placenta previa occurs when the placenta covers the opening of the uterus, thus blocking the passageway for the baby. This response explains what a complete previa is and the reason the baby cannot come out except by cesarean delivery. Telling the client to ask the physician is a poor response and would increase the patient’s anxiety. Although a cesarean would help to prevent hemorrhage, the statement does not explain why the hemorrhage could occur. With a complete previa, the placenta is covering all the cervix, not just most of it."
+  },
+  {
+    "id": 891,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The nurse understands that the fetal head is in which of the following positions with a face presentation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Completely flexed"
+      },
+      {
+        "id": "B",
+        "text": "Completely extended"
+      },
+      {
+        "id": "C",
+        "text": "Partially extended"
+      },
+      {
+        "id": "D",
+        "text": "Partially flexed"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "With a face presentation, the head is completely extended. With a vertex presentation, the head is completely or partially flexed. With a brow (forehead) presentation, the head would be partially extended."
+  },
+  {
+    "id": 892,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "With a fetus in the left-anterior breech presentation, the nurse would expect the fetal heart rate would be most audible in which of the following areas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Above the maternal umbilicus and to the right of midline"
+      },
+      {
+        "id": "B",
+        "text": "In the lower-left maternal abdominal quadrant"
+      },
+      {
+        "id": "C",
+        "text": "In the lower-right maternal abdominal quadrant"
+      },
+      {
+        "id": "D",
+        "text": "Above the maternal umbilicus and to the left of midline"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "With this presentation, the fetal upper torso and back face the left upper maternal abdominal wall. The fetal heart rate would be most audible above the maternal umbilicus and to the left of the middle. The other positions would be incorrect."
+  },
+  {
+    "id": 893,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "The amniotic fluid of a client has a greenish tint. The nurse interprets this to be the result of which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lanugo"
+      },
+      {
+        "id": "B",
+        "text": "Hydramnio"
+      },
+      {
+        "id": "C",
+        "text": "Meconium"
+      },
+      {
+        "id": "D",
+        "text": "Vernix"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The greenish tint is due to the presence of meconium. Lanugo is the soft, downy hair on the shoulders and back of the fetus. Hydramnios represents excessive amniotic fluid. Vernix is the white, cheesy substance covering the fetus."
+  },
+  {
+    "id": 894,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A patient is in labor and has just been told she has a breech presentation. The nurse should be particularly alert for which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quickening"
+      },
+      {
+        "id": "B",
+        "text": "Ophthalmia neonatorum"
+      },
+      {
+        "id": "C",
+        "text": "Pica"
+      },
+      {
+        "id": "D",
+        "text": "Prolapsed umbilical cord"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "In a breech position, because of the space between the presenting part and the cervix, prolapse of the umbilical cord is common. Quickening is the woman’s first perception of fetal movement. Ophthalmia neonatorum usually results from maternal gonorrhea and is conjunctivitis. Pica refers to the oral intake of nonfood substances."
+  },
+  {
+    "id": 895,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When describing dizygotic twins to a couple, on which of the following would the nurse base the explanation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two ova fertilized by separate sperm"
+      },
+      {
+        "id": "B",
+        "text": "Sharing of a common placenta"
+      },
+      {
+        "id": "C",
+        "text": "Each ova with the same genotype"
+      },
+      {
+        "id": "D",
+        "text": "Sharing of a common chorion"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Dizygotic (fraternal) twins involve two ova fertilized by separate sperm. Monozygotic (identical) twins involve a common placenta, same genotype, and common chorion."
+  },
+  {
+    "id": 896,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "Which of the following refers to the single cell that reproduces itself after conception?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chromosome"
+      },
+      {
+        "id": "B",
+        "text": "Blastocyst"
+      },
+      {
+        "id": "C",
+        "text": "Zygote"
+      },
+      {
+        "id": "D",
+        "text": "Trophoblast"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The zygote is the single cell that reproduces itself after conception. The chromosome is the material that makes up the cell and is gained from each parent. Blastocyst and trophoblast are later terms for the embryo after zygote."
+  },
+  {
+    "id": 897,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "In the late 1950s, consumers and health care professionals began challenging the routine use of analgesics and anesthetics during childbirth. Which of the following was an outgrowth of this concept?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Labor, delivery, recovery, postpartum (LDRP)"
+      },
+      {
+        "id": "B",
+        "text": "Nurse-midwifery"
+      },
+      {
+        "id": "C",
+        "text": "Clinical nurse specialist"
+      },
+      {
+        "id": "D",
+        "text": "Prepared childbirth"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Prepared childbirth was the direct result of the 1950’s challenging of the routine use of analgesic and anesthetics during childbirth. The LDRP was a much later concept and was not a direct result of the challenging of routine use of analgesics and anesthetics during childbirth. Roles for nurse midwives and clinical nurse specialists did not develop from this challenge."
+  },
+  {
+    "id": 898,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "A client has a midpelvic contracture from a previous pelvic injury due to a motor vehicle accident as a teenager. The nurse is aware that this could prevent a fetus from passing through or around which structure during childbirth?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Symphysis pubis"
+      },
+      {
+        "id": "B",
+        "text": "Sacral promontory"
+      },
+      {
+        "id": "C",
+        "text": "Ischial spines"
+      },
+      {
+        "id": "D",
+        "text": "Pubic arch"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The ischial spines are located in the mid-pelvic region and could be narrowed due to the previous pelvic injury. The symphysis pubis, sacral promontory, and pubic arch are not part of the mid-pelvis."
+  },
+  {
+    "id": 899,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When teaching a group of adolescents about variations in the length of the menstrual cycle, the nurse understands that the underlying mechanism is due to variations in which of the following phases?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menstrual phase"
+      },
+      {
+        "id": "B",
+        "text": "Proliferative phase"
+      },
+      {
+        "id": "C",
+        "text": "Secretory phase"
+      },
+      {
+        "id": "D",
+        "text": "Ischemic phase"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Variations in the length of the menstrual cycle are due to variations in the proliferative phase. The menstrual, secretory and ischemic phases do not contribute to this variation."
+  },
+  {
+    "id": 900,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health",
+    "question_stem": "When teaching a group of adolescents about male hormone production, which of the following would the nurse include as being produced by the Leydig cells?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Follicle-stimulating hormone"
+      },
+      {
+        "id": "B",
+        "text": "Testosterone"
+      },
+      {
+        "id": "C",
+        "text": "Leuteinizing hormone"
+      },
+      {
+        "id": "D",
+        "text": "Gonadotropin releasing hormone"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Testosterone is produced by the Leyding cells in the seminiferous tubules. Follicle-stimulating hormone and leuteinzing hormone are released by the anterior pituitary gland. The hypothalamus is responsible for releasing gonadotropin-releasing hormone."
+  },
+  {
+    "id": 901,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Marco who was diagnosed with brain tumor was scheduled for craniotomy. In preventing the development of cerebral edema after surgery, the nurse should expect the use of:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diuretics"
+      },
+      {
+        "id": "B",
+        "text": "Antihypertensive"
+      },
+      {
+        "id": "C",
+        "text": "Steroids"
+      },
+      {
+        "id": "D",
+        "text": "Anticonvulsants"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Glucocorticoids (steroids) are used for their anti-inflammatory action, which decreases the development of edema."
+  },
+  {
+    "id": 902,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Halfway through the administration of blood, the female client complains of lumbar pain. After stopping the infusion Nurse Hazel should:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase the flow of normal saline"
+      },
+      {
+        "id": "B",
+        "text": "Assess the pain further"
+      },
+      {
+        "id": "C",
+        "text": "Notify the blood bank"
+      },
+      {
+        "id": "D",
+        "text": "Obtain vital signs."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The blood must be stopped at once, and then normal saline should be infused to keep the line patent and maintain blood volume."
+  },
+  {
+    "id": 903,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Maureen knows that the positive diagnosis for HIV infection is made based on which of the following:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A history of high risk sexual behaviors."
+      },
+      {
+        "id": "B",
+        "text": "Positive ELISA and western blot tests"
+      },
+      {
+        "id": "C",
+        "text": "Identification of an associated opportunistic infection"
+      },
+      {
+        "id": "D",
+        "text": "Evidence of extreme weight loss and high fever"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "These tests confirm the presence of HIV antibodies that occur in response to the presence of the human immunodeficiency virus (HIV)."
+  },
+  {
+    "id": 904,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Maureen is aware that a client who has been diagnosed with chronic renal failure recognizes an adequate amount of high-biologic-value protein when the food the client selected from the menu was:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Raw carrots"
+      },
+      {
+        "id": "B",
+        "text": "Apple juice"
+      },
+      {
+        "id": "C",
+        "text": "Whole wheat bread"
+      },
+      {
+        "id": "D",
+        "text": "Cottage cheese"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "One cup of cottage cheese contains approximately 225 calories, 27 g of protein, 9 g of fat, 30 mg cholesterol, and 6 g of carbohydrate. Proteins of high biologic value (HBV) contain optimal levels of amino acids essential for life."
+  },
+  {
+    "id": 905,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Kenneth who has diagnosed with uremic syndrome has the potential to develop complications. Which among the following complications should the nurse anticipates:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flapping hand tremors"
+      },
+      {
+        "id": "B",
+        "text": "An elevated hematocrit level"
+      },
+      {
+        "id": "C",
+        "text": "Hypotension"
+      },
+      {
+        "id": "D",
+        "text": "Hypokalemia"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Elevation of uremic waste products causes irritation of the nerves, resulting in flapping hand tremors."
+  },
+  {
+    "id": 906,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A client is admitted to the hospital with benign prostatic hyperplasia, the nurse most relevant assessment would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flank pain radiating in the groin"
+      },
+      {
+        "id": "B",
+        "text": "Distention of the lower abdomen"
+      },
+      {
+        "id": "C",
+        "text": "Perineal edema"
+      },
+      {
+        "id": "D",
+        "text": "Urethral discharge"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "This indicates that the bladder is distended with urine, therefore palpable."
+  },
+  {
+    "id": 907,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A client has undergone with penile implant. After 24 hrs of surgery, the client’s scrotum was edematous and painful. The nurse should:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assist the client with sitz bath"
+      },
+      {
+        "id": "B",
+        "text": "Apply war soaks in the scrotum"
+      },
+      {
+        "id": "C",
+        "text": "Elevate the scrotum using a soft support"
+      },
+      {
+        "id": "D",
+        "text": "Prepare for a possible incision and drainage."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Elevation increases lymphatic drainage, reducing edema and pain."
+  },
+  {
+    "id": 908,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse hazel receives emergency laboratory results for a client with chest pain and immediately informs the physician. An increased myoglobin level suggests which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Liver disease"
+      },
+      {
+        "id": "B",
+        "text": "Myocardial damage"
+      },
+      {
+        "id": "C",
+        "text": "Hypertension"
+      },
+      {
+        "id": "D",
+        "text": "Cancer"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Detection of myoglobin is a diagnostic tool to determine whether myocardial damage has occurred."
+  },
+  {
+    "id": 909,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Maureen would expect the a client with mitral stenosis would demonstrate symptoms associated with congestion in the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Right atrium"
+      },
+      {
+        "id": "B",
+        "text": "Superior vena cava"
+      },
+      {
+        "id": "C",
+        "text": "Aorta"
+      },
+      {
+        "id": "D",
+        "text": "Pulmonary"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "When mitral stenosis is present, the left atrium has difficulty emptying its contents into the left ventricle because there is no valve to prevent back ward flow into the pulmonary vein, the pulmonary circulation is under pressure."
+  },
+  {
+    "id": 910,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A client has been diagnosed with hypertension. The nurse priority nursing diagnosis would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ineffective health maintenance"
+      },
+      {
+        "id": "B",
+        "text": "Impaired skin integrity"
+      },
+      {
+        "id": "C",
+        "text": "Deficient fluid volume"
+      },
+      {
+        "id": "D",
+        "text": "Pain"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Managing hypertension is the priority for the client with hypertension. Clients with hypertension frequently do not experience pain, deficient volume, or impaired skin integrity. It is the asymptomatic nature of hypertension that makes it so difficult to treat."
+  },
+  {
+    "id": 911,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Hazel teaches the client with angina about common expected side effects of nitroglycerin including:",
+    "options": [
+      {
+        "id": "A",
+        "text": "high blood pressure"
+      },
+      {
+        "id": "B",
+        "text": "stomach cramps"
+      },
+      {
+        "id": "C",
+        "text": "headache"
+      },
+      {
+        "id": "D",
+        "text": "shortness of breath"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Because of its widespread vasodilating effects, nitroglycerin often produces side effects such as headache, hypotension and dizziness."
+  },
+  {
+    "id": 912,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "The following are lipid abnormalities. Which of the following is a risk factor for the development of atherosclerosis and PVD?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High levels of low density lipid (LDL) cholesterol"
+      },
+      {
+        "id": "B",
+        "text": "High levels of high density lipid (HDL) cholesterol"
+      },
+      {
+        "id": "C",
+        "text": "Low concentration triglycerides"
+      },
+      {
+        "id": "D",
+        "text": "Low levels of LDL cholesterol."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "An increased in LDL cholesterol concentration has been documented at risk factor for the development of atherosclerosis. LDL cholesterol is not broken down into the liver but is deposited into the wall of the blood vessels."
+  },
+  {
+    "id": 913,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Which of the following represents a significant risk immediately after surgery for repair of aortic aneurysm?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Potential wound infection"
+      },
+      {
+        "id": "B",
+        "text": "Potential ineffective coping"
+      },
+      {
+        "id": "C",
+        "text": "Potential electrolyte balance"
+      },
+      {
+        "id": "D",
+        "text": "Potential alteration in renal perfusion"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "There is a potential alteration in renal perfusion manifested by decreased urine output. The altered renal perfusion may be related to renal artery embolism, prolonged hypotension, or prolonged aortic cross-clamping during the surgery."
+  },
+  {
+    "id": 914,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Josie should instruct the client to eat which of the following foods to obtain the best supply of Vitamin B12?",
+    "options": [
+      {
+        "id": "A",
+        "text": "dairy products"
+      },
+      {
+        "id": "B",
+        "text": "vegetables"
+      },
+      {
+        "id": "C",
+        "text": "Grains"
+      },
+      {
+        "id": "D",
+        "text": "Broccoli"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Good source of vitamin B12 are dairy products and meats."
+  },
+  {
+    "id": 915,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Karen has been diagnosed with aplastic anemia. The nurse monitors for changes in which of the following physiologic functions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bowel function"
+      },
+      {
+        "id": "B",
+        "text": "Peripheral sensation"
+      },
+      {
+        "id": "C",
+        "text": "Bleeding tendencies"
+      },
+      {
+        "id": "D",
+        "text": "Intake and out put"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Aplastic anemia decreases the bone marrow production of RBC’s, white blood cells, and platelets. The client is at risk for bruising and bleeding tendencies."
+  },
+  {
+    "id": 916,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Lydia is scheduled for elective splenectomy. Before the clients goes to surgery, the nurse in charge final assessment would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "signed consent"
+      },
+      {
+        "id": "B",
+        "text": "vital signs"
+      },
+      {
+        "id": "C",
+        "text": "name band"
+      },
+      {
+        "id": "D",
+        "text": "empty bladder"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "An elective procedure is scheduled in advance so that all preparations can be completed ahead of time. The vital signs are the final check that must be completed before the client leaves the room so that continuity of care and assessment is provided for."
+  },
+  {
+    "id": 917,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "What is the peak age range in acquiring acute lymphocytic leukemia (ALL)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 to 12 years."
+      },
+      {
+        "id": "B",
+        "text": "20 to 30 years"
+      },
+      {
+        "id": "C",
+        "text": "40 to 50 years"
+      },
+      {
+        "id": "D",
+        "text": "60 60 70 years"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The peak incidence of Acute Lymphocytic Leukemia (ALL) is 4 years of age. It is uncommon after 15 years of age."
+  },
+  {
+    "id": 918,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Marie with acute lymphocytic leukemia suffers from nausea and headache. These clinical manifestations may indicate all of the following except",
+    "options": [
+      {
+        "id": "A",
+        "text": "effects of radiation"
+      },
+      {
+        "id": "B",
+        "text": "chemotherapy side effects"
+      },
+      {
+        "id": "C",
+        "text": "meningeal irritation"
+      },
+      {
+        "id": "D",
+        "text": "gastric distension"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Acute Lymphocytic Leukemia (ALL) does not cause gastric distention. It does invade the central nervous system, and clients experience headaches and vomiting from meningeal irritation."
+  },
+  {
+    "id": 919,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A client has been diagnosed with Disseminated Intravascular Coagulation (DIC). Which of the following is contraindicated with the client?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administering Heparin"
+      },
+      {
+        "id": "B",
+        "text": "Administering Coumadin"
+      },
+      {
+        "id": "C",
+        "text": "Treating the underlying cause"
+      },
+      {
+        "id": "D",
+        "text": "Replacing depleted blood products"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Marie with acute lymphocytic leukemia suffers from nausea and headache. These clinical manifestations may indicate all of the following except\neffects of radiation\nchemotherapy side effects\nmeningeal irritation\ngastric distension"
+  },
+  {
+    "id": 920,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Which of the following findings is the best indication that fluid replacement for the client with hypovolemic shock is adequate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Urine output greater than 30ml/hr"
+      },
+      {
+        "id": "B",
+        "text": "Respiratory rate of 21 breaths/minute"
+      },
+      {
+        "id": "C",
+        "text": "Diastolic blood pressure greater than 90 mmhg"
+      },
+      {
+        "id": "D",
+        "text": "Systolic blood pressure greater than 110 mmhg"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Urine output provides the most sensitive indication of the client’s response to therapy for hypovolemic shock. Urine output should be consistently greater than 30 to 35 mL/hr."
+  },
+  {
+    "id": 921,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Which of the following signs and symptoms would Nurse Maureen include in teaching plan as an early manifestation of laryngeal cancer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stomatitis"
+      },
+      {
+        "id": "B",
+        "text": "Airway obstruction"
+      },
+      {
+        "id": "C",
+        "text": "Hoarseness"
+      },
+      {
+        "id": "D",
+        "text": "Dysphagia"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Early warning signs of laryngeal cancer can vary depending on tumor location. Hoarseness lasting 2 weeks should be evaluated because it is one of the most common warning signs."
+  },
+  {
+    "id": 922,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Karina a client with myasthenia gravis is to receive immunosuppressive therapy. The nurse understands that this therapy is effective because it:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Promotes the removal of antibodies that impair the transmission of impulses"
+      },
+      {
+        "id": "B",
+        "text": "Stimulates the production of acetylcholine at the neuromuscular junction."
+      },
+      {
+        "id": "C",
+        "text": "Decreases the production of autoantibodies that attack the acetylcholine receptors."
+      },
+      {
+        "id": "D",
+        "text": "Inhibits the breakdown of acetylcholine at the neuromuscular junction."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Steroids decrease the body’s immune response thus decreasing the production of antibodies that attack the acetylcholine receptors at the neuromuscular junction"
+  },
+  {
+    "id": 923,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A female client is receiving IV Mannitol. An assessment specific to safe administration of the said drug is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vital signs q4h"
+      },
+      {
+        "id": "B",
+        "text": "Weighing daily"
+      },
+      {
+        "id": "C",
+        "text": "Urine output hourly"
+      },
+      {
+        "id": "D",
+        "text": "Level of consciousness q4h"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The osmotic diuretic mannitol is contraindicated in the presence of inadequate renal function or heart failure because it increases the intravascular volume that must be filtered and excreted by the kidney."
+  },
+  {
+    "id": 924,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Patricia a 20 year old college student with diabetes mellitus requests additional information about the advantages of using a pen like insulin delivery devices. The nurse explains that the advantages of these devices over syringes includes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accurate dose delivery"
+      },
+      {
+        "id": "B",
+        "text": "Shorter injection time"
+      },
+      {
+        "id": "C",
+        "text": "Lower cost with reusable insulin cartridges"
+      },
+      {
+        "id": "D",
+        "text": "Use of smaller gauge needle."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "These devices are more accurate because they are easily to used and have improved adherence in insulin regimens by young people because the medication can be administered discreetly."
+  },
+  {
+    "id": 925,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A male client’s left tibia is fractures in an automobile accident, and a cast is applied. To assess for damage to major blood vessels from the fracture tibia, the nurse in charge should monitor the client for:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Swelling of the left thigh"
+      },
+      {
+        "id": "B",
+        "text": "Increased skin temperature of the foot"
+      },
+      {
+        "id": "C",
+        "text": "Prolonged reperfusion of the toes after blanching"
+      },
+      {
+        "id": "D",
+        "text": "Increased blood pressure"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Damage to blood vessels may decrease the circulatory perfusion of the toes, this would indicate the lack of blood supply to the extremity."
+  },
+  {
+    "id": 926,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "After a long leg cast is removed, the male client should:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cleanse the leg by scrubbing with a brisk motion"
+      },
+      {
+        "id": "B",
+        "text": "Put leg through full range of motion twice daily"
+      },
+      {
+        "id": "C",
+        "text": "Report any discomfort or stiffness to the physician"
+      },
+      {
+        "id": "D",
+        "text": "Elevate the leg when sitting for long periods of time."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Elevation will help control the edema that usually occurs."
+  },
+  {
+    "id": 927,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "while performing a physical assessment of a male client with gout of the great toe, NurseVivian should assess for additional tophi (urate deposits) on the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Buttocks"
+      },
+      {
+        "id": "B",
+        "text": "Ears"
+      },
+      {
+        "id": "C",
+        "text": "Face"
+      },
+      {
+        "id": "D",
+        "text": "Abdomen"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Uric acid has a low solubility, it tends to precipitate and form deposits at various sites where blood flow is least active, including cartilaginous tissue such as the ears."
+  },
+  {
+    "id": 928,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Katrina would recognize that the demonstration of crutch walking with tripod gait was understood when the client places weight on the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palms of the hands and axillary regions"
+      },
+      {
+        "id": "B",
+        "text": "Palms of the hand"
+      },
+      {
+        "id": "C",
+        "text": "Axillary regions"
+      },
+      {
+        "id": "D",
+        "text": "Feet, which are set apart"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The palms should bear the client’s weight to avoid damage to the nerves in the axilla."
+  },
+  {
+    "id": 929,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Mang Jose with rheumatoid arthritis states, “the only time I am without pain is when I lie in bed perfectly still”. During the convalescent stage, the nurse in charge with Mang Jose should encourage:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Active joint flexion and extension"
+      },
+      {
+        "id": "B",
+        "text": "Continued immobility until pain subsides"
+      },
+      {
+        "id": "C",
+        "text": "Range of motion exercises twice daily"
+      },
+      {
+        "id": "D",
+        "text": "Flexion exercises three times daily"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Active exercises, alternating extension, flexion, abduction, and adduction, mobilize exudates in the joints relieves stiffness and pain."
+  },
+  {
+    "id": 930,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A male client has undergone spinal surgery, the nurse should:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observe the client’s bowel movement and voiding patterns"
+      },
+      {
+        "id": "B",
+        "text": "Log-roll the client to prone position"
+      },
+      {
+        "id": "C",
+        "text": "Assess the client’s feet for sensation and circulation"
+      },
+      {
+        "id": "D",
+        "text": "Encourage client to drink plenty of fluids"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Alteration in sensation and circulation indicates damage to the spinal cord, if these occurs notify physician immediately."
+  },
+  {
+    "id": 931,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "He has acute renal failure moves into the diuretic phase after one week of therapy. During this phase the client must be assessed for signs of developing:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hypovolemia"
+      },
+      {
+        "id": "B",
+        "text": "renal failure"
+      },
+      {
+        "id": "C",
+        "text": "metabolic acidosis"
+      },
+      {
+        "id": "D",
+        "text": "hyperkalemia"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "In the diuretic phase fluid retained during the oliguric phase is excreted and may reach 3 to 5 liters daily, hypovolemia may occur and fluids should be replaced."
+  },
+  {
+    "id": 932,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Judith obtains a specimen of clear nasal drainage from a client with a head injury. Which of the following tests differentiates mucus from cerebrospinal fluid (CSF)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Protein"
+      },
+      {
+        "id": "B",
+        "text": "Specific gravity"
+      },
+      {
+        "id": "C",
+        "text": "Glucose"
+      },
+      {
+        "id": "D",
+        "text": "Microorganism"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The constituents of CSF are similar to those of blood plasma. An examination for glucose content is done to determine whether a body fluid is a mucus or a CSF. A CSF normally contains glucose."
+  },
+  {
+    "id": 933,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A 22 year old client suffered from his first tonic-clonic seizure. Upon awakening the client asks the nurse, “What caused me to have a seizure? Which of the following would the nurse include in the primary cause of tonic clonic seizures in adults more the 20 years?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Electrolyte imbalance"
+      },
+      {
+        "id": "B",
+        "text": "Head trauma"
+      },
+      {
+        "id": "C",
+        "text": "Epilepsy"
+      },
+      {
+        "id": "D",
+        "text": "Congenital defect"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Trauma is one of the primary cause of brain damage and seizure activity in adults. Other common causes of seizure activity in adults include neoplasms, withdrawal from drugs and alcohol, and vascular disease."
+  },
+  {
+    "id": 934,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "What is the priority nursing assessment in the first 24 hours after admission of the client with thrombotic CVA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pupil size and papillary response"
+      },
+      {
+        "id": "B",
+        "text": "cholesterol level"
+      },
+      {
+        "id": "C",
+        "text": "Echocardiogram"
+      },
+      {
+        "id": "D",
+        "text": "Bowel sounds"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "It is crucial to monitor the pupil size and papillary response to indicate changes around the cranial nerves."
+  },
+  {
+    "id": 935,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Linda is preparing a client with multiple sclerosis for discharge from the hospital to home. Which of the following instruction is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“Practice using the mechanical aids that you will need when future disabilities arise”."
+      },
+      {
+        "id": "B",
+        "text": "“Follow good health habits to change the course of the disease”."
+      },
+      {
+        "id": "C",
+        "text": "“Keep active, use stress reduction strategies, and avoid fatigue."
+      },
+      {
+        "id": "D",
+        "text": "“You will need to accept the necessity for a quiet and inactive lifestyle”."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The nurse most positive approach is to encourage the client with multiple sclerosis to stay active, use stress reduction techniques and avoid fatigue because it is important to support the immune system while remaining active."
+  },
+  {
+    "id": 936,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "The nurse is aware the early indicator of hypoxia in the unconscious client is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cyanosis"
+      },
+      {
+        "id": "B",
+        "text": "Increased respirations"
+      },
+      {
+        "id": "C",
+        "text": "Hypertension"
+      },
+      {
+        "id": "D",
+        "text": "Restlessness"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Restlessness is an early indicator of hypoxia. The nurse should suspect hypoxia in unconscious client who suddenly becomes restless."
+  },
+  {
+    "id": 937,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A client is experiencing spinal shock. Nurse Myrna should expect the function of the bladder to be which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Normal"
+      },
+      {
+        "id": "B",
+        "text": "Atonic"
+      },
+      {
+        "id": "C",
+        "text": "Spastic"
+      },
+      {
+        "id": "D",
+        "text": "Uncontrolled"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "In spinal shock, the bladder becomes completely atonic and will continue to fill unless the client is catheterized."
+  },
+  {
+    "id": 938,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Which of the following stage the carcinogen is irreversible?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Progression stage"
+      },
+      {
+        "id": "B",
+        "text": "Initiation stage"
+      },
+      {
+        "id": "C",
+        "text": "Regression stage"
+      },
+      {
+        "id": "D",
+        "text": "Promotion stage"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Progression stage is the change of tumor from the preneoplastic state or low degree of malignancy to a fast growing tumor that cannot be reversed."
+  },
+  {
+    "id": 939,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Among the following components thorough pain assessment, which is the most significant?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Effect"
+      },
+      {
+        "id": "B",
+        "text": "Cause"
+      },
+      {
+        "id": "C",
+        "text": "Causing factors"
+      },
+      {
+        "id": "D",
+        "text": "Intensity"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The use of fragrant soap is very drying to skin hence causing the pruritus."
+  },
+  {
+    "id": 940,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A 65 year old female is experiencing flare up of pruritus. Which of the client’s action could aggravate the cause of flare ups?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sleeping in cool and humidified environment"
+      },
+      {
+        "id": "B",
+        "text": "Daily baths with fragrant soap"
+      },
+      {
+        "id": "C",
+        "text": "Using clothes made from 100% cotton"
+      },
+      {
+        "id": "D",
+        "text": "Increasing fluid intake"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The use of fragrant soap is very drying to skin hence causing the pruritus."
+  },
+  {
+    "id": 941,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Atropine sulfate (Atropine) is contraindicated in all but one of the following client?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A client with high blood"
+      },
+      {
+        "id": "B",
+        "text": "A client with bowel obstruction"
+      },
+      {
+        "id": "C",
+        "text": "A client with glaucoma"
+      },
+      {
+        "id": "D",
+        "text": "A client with U.T.I"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Atropine sulfate is contraindicated with glaucoma patients because it increases intraocular pressure."
+  },
+  {
+    "id": 942,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Among the following clients, which among them is high risk for potential hazards from the surgical experience?",
+    "options": [
+      {
+        "id": "A",
+        "text": "67-year-old client"
+      },
+      {
+        "id": "B",
+        "text": "49-year-old client"
+      },
+      {
+        "id": "C",
+        "text": "33-year-old client"
+      },
+      {
+        "id": "D",
+        "text": "15-year-old client"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "A 67 year old client is greater risk because the older adult client is more likely to have a less-effective immune system."
+  },
+  {
+    "id": 943,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Jon assesses vital signs on a client undergone epidural anesthesia. Which of the following would the nurse assess next?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Headache"
+      },
+      {
+        "id": "B",
+        "text": "Bladder distension"
+      },
+      {
+        "id": "C",
+        "text": "Dizziness"
+      },
+      {
+        "id": "D",
+        "text": "Ability to move legs"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The last area to return sensation is in the perineal area, and the nurse in charge should monitor the client for distended bladder."
+  },
+  {
+    "id": 944,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Katrina should anticipate that all of the following drugs may be used in the attempt to control the symptoms of Meniere’s disease except:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antiemetics"
+      },
+      {
+        "id": "B",
+        "text": "Diuretics"
+      },
+      {
+        "id": "C",
+        "text": "Antihistamines"
+      },
+      {
+        "id": "D",
+        "text": "Glucocorticoids"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Glucocorticoids play no significant role in disease treatment."
+  },
+  {
+    "id": 945,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Which of the following complications associated with tracheostomy tube?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increased cardiac output"
+      },
+      {
+        "id": "B",
+        "text": "Acute respiratory distress syndrome (ARDS)"
+      },
+      {
+        "id": "C",
+        "text": "Increased blood pressure"
+      },
+      {
+        "id": "D",
+        "text": "Damage to laryngeal nerves"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Tracheostomy tube has several potential complications including bleeding, infection and laryngeal nerve damage."
+  },
+  {
+    "id": 946,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Faith should recognize that fluid shift in an client with burn injury results from increase in the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Total volume of circulating whole blood"
+      },
+      {
+        "id": "B",
+        "text": "Total volume of intravascular plasma"
+      },
+      {
+        "id": "C",
+        "text": "Permeability of capillary walls"
+      },
+      {
+        "id": "D",
+        "text": "Permeability of kidney tubules"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "In burn, the capillaries and small vessels dilate, and cell damage cause the release of a histamine-like substance. The substance causes the capillary walls to become more permeable and significant quantities of fluid are lost."
+  },
+  {
+    "id": 947,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "An 83-year-old woman has several ecchymotic areas on her right arm. The bruises are probably caused by:",
+    "options": [
+      {
+        "id": "A",
+        "text": "increased capillary fragility and permeability"
+      },
+      {
+        "id": "B",
+        "text": "increased blood supply to the skin"
+      },
+      {
+        "id": "C",
+        "text": "self inflicted injury"
+      },
+      {
+        "id": "D",
+        "text": "elder abuse"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Aging process involves increased capillary fragility and permeability. Older adults have a decreased amount of subcutaneous fat and cause an increased incidence of bruise like lesions caused by collection of extravascular blood inloosely structured dermis."
+  },
+  {
+    "id": 948,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "Nurse Anna is aware that early adaptation of client with renal carcinoma is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nausea and vomiting"
+      },
+      {
+        "id": "B",
+        "text": "flank pain"
+      },
+      {
+        "id": "C",
+        "text": "weight gain"
+      },
+      {
+        "id": "D",
+        "text": "intermittent hematuria"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Intermittent pain is the classic sign of renal carcinoma. It is primarily due to capillary erosion by the cancerous growth."
+  },
+  {
+    "id": 949,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A male client with tuberculosis asks Nurse Brian how long the chemotherapy must be continued. Nurse Brian’s accurate reply would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 to 3 weeks"
+      },
+      {
+        "id": "B",
+        "text": "6 to 12 months"
+      },
+      {
+        "id": "C",
+        "text": "3 to 5 months"
+      },
+      {
+        "id": "D",
+        "text": "3 years and more"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Tubercle bacillus is a drug resistant organism and takes a long time to be eradicated. Usually a combination of three drugs is used for minimum of 6 months and at least six months beyond culture conversion."
+  },
+  {
+    "id": 950,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing",
+    "question_stem": "A client has undergone laryngectomy. The immediate nursing priority would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Keep trachea free of secretions"
+      },
+      {
+        "id": "B",
+        "text": "Monitor for signs of infection"
+      },
+      {
+        "id": "C",
+        "text": "Provide emotional support"
+      },
+      {
+        "id": "D",
+        "text": "Promote means of communication"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Patent airway is the most priority; therefore removal of secretions is necessary."
+  },
+  {
+    "id": 951,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Marco approached Nurse Trish asking for advice on how to deal with his alcohol addiction. Nurse Trish should tell the client that the only effective treatment for alcoholism is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Psychotherapy"
+      },
+      {
+        "id": "B",
+        "text": "Alcoholics anonymous (A.A.)"
+      },
+      {
+        "id": "C",
+        "text": "Total abstinence"
+      },
+      {
+        "id": "D",
+        "text": "Aversion Therapy"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Total abstinence is the only effective treatment for alcoholism"
+  },
+  {
+    "id": 952,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Hazel is caring for a male client who experience false sensory perceptions with no basis in reality. This perception is known as:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hallucinations"
+      },
+      {
+        "id": "B",
+        "text": "Delusions"
+      },
+      {
+        "id": "C",
+        "text": "Loose associations"
+      },
+      {
+        "id": "D",
+        "text": "Neologisms"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Hallucinations are visual, auditory, gustatory, tactile or olfactory perceptions that have no basis in reality."
+  },
+  {
+    "id": 953,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Monet is caring for a female client who has suicidal tendency. When accompanying the client to the restroom, Nurse Monet should…",
+    "options": [
+      {
+        "id": "A",
+        "text": "Give her privacy"
+      },
+      {
+        "id": "B",
+        "text": "Allow her to urinate"
+      },
+      {
+        "id": "C",
+        "text": "Open the window and allow her to get some fresh air"
+      },
+      {
+        "id": "D",
+        "text": "Observe her"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The Nurse has a responsibility to observe continuously the acutely suicidal client. The Nurse should watch for clues, such as communicating suicidal thoughts, and messages; hoarding medications and talking about death."
+  },
+  {
+    "id": 954,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Maureen is developing a plan of care for a female client with anorexia nervosa. Which action should the nurse include in the plan?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Provide privacy during meals"
+      },
+      {
+        "id": "B",
+        "text": "Set-up a strict eating plan for the client"
+      },
+      {
+        "id": "C",
+        "text": "Encourage client to exercise to reduce anxiety"
+      },
+      {
+        "id": "D",
+        "text": "Restrict visits with the family"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Establishing a consistent eating plan and monitoring client’s weight are important to this disorder."
+  },
+  {
+    "id": 955,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A client is experiencing anxiety attack. The most appropriate nursing intervention should include?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Turning on the television"
+      },
+      {
+        "id": "B",
+        "text": "Leaving the client alone"
+      },
+      {
+        "id": "C",
+        "text": "Staying with the client and speaking in short sentences"
+      },
+      {
+        "id": "D",
+        "text": "Ask the client to play with other clients"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Appropriate nursing interventions for an anxiety attack include using short sentences, staying with the client, decreasing stimuli, remaining calm and medicating as needed."
+  },
+  {
+    "id": 956,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A female client is admitted with a diagnosis of delusions of GRANDEUR. This diagnosis reflects a belief that one is: ",
+    "options": [
+      {
+        "id": "A",
+        "text": "Being Killed"
+      },
+      {
+        "id": "B",
+        "text": "Highly famous and important"
+      },
+      {
+        "id": "C",
+        "text": "Responsible for evil world"
+      },
+      {
+        "id": "D",
+        "text": "Connected to client unrelated to oneself"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Delusion of grandeur is a false belief that one is highly famous and important."
+  },
+  {
+    "id": 957,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A 20 year old client was diagnosed with dependent personality disorder. Which behavior is not likely to be evidence of ineffective individual coping?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recurrent self-destructive behavior"
+      },
+      {
+        "id": "B",
+        "text": "Avoiding relationship"
+      },
+      {
+        "id": "C",
+        "text": "Showing interest in solitary activities"
+      },
+      {
+        "id": "D",
+        "text": "Inability to make choices and decision without advise"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Individual with dependent personality disorder typically shows indecisiveness submissiveness and clinging behavior so that others will make decisions with them."
+  },
+  {
+    "id": 958,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A male client is diagnosed with schizotypal personality disorder. Which signs would this client exhibit during social situation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paranoid thoughts"
+      },
+      {
+        "id": "B",
+        "text": "Emotional affect"
+      },
+      {
+        "id": "C",
+        "text": "Independence need"
+      },
+      {
+        "id": "D",
+        "text": "Aggressive behavior"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Clients with schizotypal personality disorder experience excessive social anxiety that can lead to paranoid thoughts"
+  },
+  {
+    "id": 959,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Claire is caring for a client diagnosed with bulimia. The most appropriate initial goal for a client diagnosed with bulimia is?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encourage to avoid foods"
+      },
+      {
+        "id": "B",
+        "text": "Identify anxiety causing situations"
+      },
+      {
+        "id": "C",
+        "text": "Eat only three meals a day"
+      },
+      {
+        "id": "D",
+        "text": "Avoid shopping plenty of groceries"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Bulimia disorder generally is a maladaptive coping response to stress and underlying issues. The client should identify anxiety causing situation that stimulate the bulimic behavior and then learn new ways of coping with the anxiety."
+  },
+  {
+    "id": 960,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Tony was caring for a 41 year old female client. Which behavior by the client indicates adult cognitive development?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Generates new levels of awareness"
+      },
+      {
+        "id": "B",
+        "text": "Assumes responsibility for her actions"
+      },
+      {
+        "id": "C",
+        "text": "Has maximum ability to solve problems and learn new skills"
+      },
+      {
+        "id": "D",
+        "text": "Her perception are based on reality"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "An adult age 31 to 45 generates new level of awareness."
+  },
+  {
+    "id": 961,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A neuromuscular blocking agent is administered to a client before ECT therapy. The Nurse should carefully observe the client for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Respiratory difficulties"
+      },
+      {
+        "id": "B",
+        "text": "Nausea and vomiting"
+      },
+      {
+        "id": "C",
+        "text": "Dizziness"
+      },
+      {
+        "id": "D",
+        "text": "Seizures"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Neuromuscular Blocker, such as SUCCINYLCHOLINE (Anectine) produces respiratory depression because it inhibits contractions of respiratory muscles."
+  },
+  {
+    "id": 962,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A 75 year old client is admitted to the hospital with the diagnosis of dementia of the Alzheimer’s type and depression. The symptom that is unrelated to depression would be?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apathetic response to the environment"
+      },
+      {
+        "id": "B",
+        "text": "“I don’t know” answer to questions"
+      },
+      {
+        "id": "C",
+        "text": "Shallow of labile effect"
+      },
+      {
+        "id": "D",
+        "text": "Neglect of personal hygiene"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "With depression, there is little or no emotional involvement therefore little alteration in affect."
+  },
+  {
+    "id": 963,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Trish is working in a mental health facility; the nurse priority nursing intervention for a newly admitted client with bulimia nervosa would be to?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teach client to measure I & O"
+      },
+      {
+        "id": "B",
+        "text": "Involve client in planning daily meal"
+      },
+      {
+        "id": "C",
+        "text": "Observe client during meals"
+      },
+      {
+        "id": "D",
+        "text": "Monitor client continuously"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "These clients often hide food or force vomiting; therefore they must be carefully monitored."
+  },
+  {
+    "id": 964,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Patricia is aware that the major health complication associated with intractable anorexia nervosa would be?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardiac dysrhythmias resulting to cardiac arrest"
+      },
+      {
+        "id": "B",
+        "text": "Glucose intolerance resulting in protracted hypoglycemia"
+      },
+      {
+        "id": "C",
+        "text": "Endocrine imbalance causing cold amenorrhea"
+      },
+      {
+        "id": "D",
+        "text": "Decreased metabolism causing cold intolerance"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "These clients have severely depleted levels of sodium and potassium because of their starvation diet and energy expenditure, these electrolytes are necessary for cardiac functioning."
+  },
+  {
+    "id": 965,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Anna can minimize agitation in a disturbed client by?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increasing stimulation"
+      },
+      {
+        "id": "B",
+        "text": "limiting unnecessary interaction"
+      },
+      {
+        "id": "C",
+        "text": "increasing appropriate sensory perception"
+      },
+      {
+        "id": "D",
+        "text": "ensuring constant client and staff contact"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Limiting unnecessary interaction will decrease stimulation and agitation."
+  },
+  {
+    "id": 966,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A 39 year old mother with obsessive-compulsive disorder has become immobilized by her elaborate hand washing and walking rituals. Nurse Trish recognizes that the basis of O.C. disorder is often:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Problems with being too conscientious"
+      },
+      {
+        "id": "B",
+        "text": "Problems with anger and remorse"
+      },
+      {
+        "id": "C",
+        "text": "Feelings of guilt and inadequacy"
+      },
+      {
+        "id": "D",
+        "text": "Field of unworthiness and hopelessness"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Ritualistic behavior seen in this disorder is aimed IgG at controlling guilt and inadequacy by maintaining an absolute set pattern of behavior."
+  },
+  {
+    "id": 967,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Mario is complaining to other clients about not being allowed by staff to keep food in his room. Which of the following interventions would be most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Allowing a snack to be kept in his room"
+      },
+      {
+        "id": "B",
+        "text": "Reprimanding the client"
+      },
+      {
+        "id": "C",
+        "text": "Ignoring the clients behavior"
+      },
+      {
+        "id": "D",
+        "text": "Setting limits on the behavior"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The nurse needs to set limits in the client’s manipulative behavior to help the client control dysfunctional behavior. A consistent approach by the staff is necessary to decrease manipulation."
+  },
+  {
+    "id": 968,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Conney with borderline personality disorder who is to be discharge soon threatens to “do something” to herself if discharged. Which of the following actions by the nurse would be most important?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ask a family member to stay with the client at home temporarily"
+      },
+      {
+        "id": "B",
+        "text": "Discuss the meaning of the client’s statement with her"
+      },
+      {
+        "id": "C",
+        "text": "Request an immediate extension for the client"
+      },
+      {
+        "id": "D",
+        "text": "Ignore the clients statement because it’s a sign of manipulation"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Any suicidal statement must be assessed by the nurse. The nurse should discuss the client’s statement with her to determine its meaning in terms of suicide."
+  },
+  {
+    "id": 969,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Joey a client with antisocial personality disorder belches loudly. A staff member asks Joey, “Do you know why people find you repulsive?” this statement most likely would elicit which of the following client reaction?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Depensiveness"
+      },
+      {
+        "id": "B",
+        "text": "Embarrassment"
+      },
+      {
+        "id": "C",
+        "text": "Shame"
+      },
+      {
+        "id": "D",
+        "text": "Remorsefulness"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "When the staff member ask the client if he wonders why others find him repulsive, the client is likely to feel defensive because the question is belittling. The natural tendency is to counterattack the threat to self image."
+  },
+  {
+    "id": 970,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Which of the following approaches would be most appropriate to use with a client suffering from narcissistic personality disorder when discrepancies exist between what the client states and what actually exist?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rationalization"
+      },
+      {
+        "id": "B",
+        "text": "Supportive confrontation"
+      },
+      {
+        "id": "C",
+        "text": "Limit setting"
+      },
+      {
+        "id": "D",
+        "text": "Consistency"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The nurse would specifically use supportive confrontation with the client to point out discrepancies between what the client states and what actually exists to increase responsibility for self."
+  },
+  {
+    "id": 971,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Cely is experiencing alcohol withdrawal exhibits tremors, diaphoresis and hyperactivity. Blood pressure is 190/87 mmhg and pulse is 92 bpm. Which of the medications would the nurse expect to administer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Naloxone (Narcan)"
+      },
+      {
+        "id": "B",
+        "text": "Benzlropine (Cogentin)"
+      },
+      {
+        "id": "C",
+        "text": "Lorazepam (Ativan)"
+      },
+      {
+        "id": "D",
+        "text": "Haloperidol (Haldol)"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The nurse would most likely administer benzodiazepine, such as lorazepan (ativan) to the client who is experiencing symptom: The client’s experiences symptoms of withdrawal because of the rebound phenomenon when the sedation of the CNS from alcohol begins to decrease."
+  },
+  {
+    "id": 972,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Which of the following foods would the nurse Trish eliminate from the diet of a client in alcohol withdrawal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Milk"
+      },
+      {
+        "id": "B",
+        "text": "Orange Juice"
+      },
+      {
+        "id": "C",
+        "text": "Soda"
+      },
+      {
+        "id": "D",
+        "text": "Regular Coffee"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Regular coffee contains caffeine which acts as psychomotor stimulants and leads to feelings of anxiety and agitation. Serving coffee top the client may add to tremors or wakefulness."
+  },
+  {
+    "id": 973,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Which of the following would Nurse Hazel expect to assess for a client who is exhibiting late signs of heroin withdrawal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yawning & diaphoresis"
+      },
+      {
+        "id": "B",
+        "text": "Restlessness & Irritability"
+      },
+      {
+        "id": "C",
+        "text": "Constipation & steatorrhea"
+      },
+      {
+        "id": "D",
+        "text": "Vomiting and Diarrhea"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Vomiting and diarrhea are usually the late signs of heroin withdrawal, along with muscle spasm, fever, nausea, repetitive, abdominal cramps and backache."
+  },
+  {
+    "id": 974,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "To establish open and trusting relationship with a female client who has been hospitalized with severe anxiety, the nurse in charge should?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encourage the staff to have frequent interaction with the client"
+      },
+      {
+        "id": "B",
+        "text": "Share an activity with the client"
+      },
+      {
+        "id": "C",
+        "text": "Give client feedback about behavior"
+      },
+      {
+        "id": "D",
+        "text": "Respect client’s need for personal space"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Moving to a client’s personal space increases the feeling of threat, which increases anxiety."
+  },
+  {
+    "id": 975,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Monette recognizes that the focus of environmental (MILIEU) therapy is to:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manipulate the environment to bring about positive changes in behavior"
+      },
+      {
+        "id": "B",
+        "text": "Allow the client’s freedom to determine whether or not they will be involved in activities"
+      },
+      {
+        "id": "C",
+        "text": "Role play life events to meet individual needs"
+      },
+      {
+        "id": "D",
+        "text": "Use natural remedies rather than drugs to control behavior"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Environmental (MILIEU) therapy aims at having everything in the client’s surrounding area toward helping the client."
+  },
+  {
+    "id": 976,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Trish would expect a child with a diagnosis of reactive attachment disorder to: ",
+    "options": [
+      {
+        "id": "A",
+        "text": "Have more positive relation with the father than the mother"
+      },
+      {
+        "id": "B",
+        "text": "Cling to mother & cry on separation"
+      },
+      {
+        "id": "C",
+        "text": "Be able to develop only superficial relation with the others"
+      },
+      {
+        "id": "D",
+        "text": "Have been physically abuse"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Children who have experienced attachment difficulties with primary caregiver are not able to trust others and therefore relate superficially"
+  },
+  {
+    "id": 977,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "When teaching parents about childhood depression Nurse Trina should say?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It may appear acting out behavior"
+      },
+      {
+        "id": "B",
+        "text": "Does not respond to conventional treatment"
+      },
+      {
+        "id": "C",
+        "text": "Is short in duration & resolves easily"
+      },
+      {
+        "id": "D",
+        "text": "Looks almost identical to adult depression"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Children have difficulty verbally expressing their feelings, acting out behavior, such as temper tantrums, may indicate underlying depression."
+  },
+  {
+    "id": 978,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Perry is aware that language development in autistic child resembles:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Scanning speech"
+      },
+      {
+        "id": "B",
+        "text": "Speech lag"
+      },
+      {
+        "id": "C",
+        "text": "Shuttering"
+      },
+      {
+        "id": "D",
+        "text": "Echolalia"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The autistic child repeat sounds or words spoken by others."
+  },
+  {
+    "id": 979,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A 60 year old female client who lives alone tells the nurse at the community health center “I really don’t need anyone to talk to”. The TV is my best friend. The nurse recognizes that the client is using the defense mechanism known as?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Displacement"
+      },
+      {
+        "id": "B",
+        "text": "Projection"
+      },
+      {
+        "id": "C",
+        "text": "Sublimation"
+      },
+      {
+        "id": "D",
+        "text": "Denial"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The client statement is an example of the use of denial, a defense that blocks problem by unconscious refusing to admit they exist"
+  },
+  {
+    "id": 980,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "When working with a male client suffering phobia about black cats, Nurse Trish should anticipate that a problem for this client would be?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anxiety when discussing phobia"
+      },
+      {
+        "id": "B",
+        "text": "Anger toward the feared object"
+      },
+      {
+        "id": "C",
+        "text": "Denying that the phobia exist"
+      },
+      {
+        "id": "D",
+        "text": "Distortion of reality when completing daily routines"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Discussion of the feared object triggers an emotional response to the object."
+  },
+  {
+    "id": 981,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Linda is pacing the floor and appears extremely anxious. The duty nurse approaches in an attempt to alleviate Linda’s anxiety. The most therapeutic question by the nurse would be?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Would you like to watch TV?"
+      },
+      {
+        "id": "B",
+        "text": "Would you like me to talk with you?"
+      },
+      {
+        "id": "C",
+        "text": "Are you feeling upset now?"
+      },
+      {
+        "id": "D",
+        "text": "Ignore the client"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The nurse presence may provide the client with support & feeling of control."
+  },
+  {
+    "id": 982,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Penny is aware that the symptoms that distinguish post traumatic stress disorder from other anxiety disorder would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avoidance of situation & certain activities that resemble the stress"
+      },
+      {
+        "id": "B",
+        "text": "Depression and a blunted affect when discussing the traumatic situation"
+      },
+      {
+        "id": "C",
+        "text": "Lack of interest in family & others"
+      },
+      {
+        "id": "D",
+        "text": "Re-experiencing the trauma in dreams or flashback"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Experiencing the actual trauma in dreams or flashback is the major symptom that distinguishes post traumatic stress disorder from other anxiety disorder."
+  },
+  {
+    "id": 983,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Benjie is communicating with a male client with substance-induced persisting dementia; the client cannot remember facts and fills in the gaps with imaginary information. Nurse Benjie is aware that this is typical of?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flight of ideas"
+      },
+      {
+        "id": "B",
+        "text": "Associative looseness"
+      },
+      {
+        "id": "C",
+        "text": "Confabulation"
+      },
+      {
+        "id": "D",
+        "text": "Concretism"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Confabulation or the filling in of memory gaps with imaginary facts is a defense mechanism used by people experiencing memory deficits."
+  },
+  {
+    "id": 984,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Joey is aware that the signs & symptoms that would be most specific for diagnosis anorexia are?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Excessive weight loss, amenorrhea & abdominal distension"
+      },
+      {
+        "id": "B",
+        "text": "Slow pulse, 10% weight loss & alopecia"
+      },
+      {
+        "id": "C",
+        "text": "Compulsive behavior, excessive fears & nausea"
+      },
+      {
+        "id": "D",
+        "text": "Excessive activity, memory lapses & an increased pulse"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "These are the major signs of anorexia nervosa. Weight loss is excessive (15% of expected weight)"
+  },
+  {
+    "id": 985,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A characteristic that would suggest to Nurse Anne that an adolescent may have bulimia would be:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frequent regurgitation & re-swallowing of food"
+      },
+      {
+        "id": "B",
+        "text": "Previous history of gastritis"
+      },
+      {
+        "id": "C",
+        "text": "Badly stained teeth"
+      },
+      {
+        "id": "D",
+        "text": "Positive body image"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Dental enamel erosion occurs from repeated self-induced vomiting."
+  },
+  {
+    "id": 986,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Monette is aware that extremely depressed clients seem to do best in settings where they have:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Multiple stimuli"
+      },
+      {
+        "id": "B",
+        "text": "Routine Activities"
+      },
+      {
+        "id": "C",
+        "text": "Minimal decision making"
+      },
+      {
+        "id": "D",
+        "text": "Varied Activities"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Depression usually is both emotional & physical. A simple daily routine is the best, least stressful and least anxiety producing."
+  },
+  {
+    "id": 987,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "To further assess a client’s suicidal potential. Nurse Katrina should be especially alert to the client expression of:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frustration & fear of death"
+      },
+      {
+        "id": "B",
+        "text": "Anger & resentment"
+      },
+      {
+        "id": "C",
+        "text": "Anxiety & loneliness"
+      },
+      {
+        "id": "D",
+        "text": "Helplessness & hopelessness"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The expression of these feeling may indicate that this client is unable to continue the struggle of life."
+  },
+  {
+    "id": 988,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A nursing care plan for a male client with bipolar I disorder should include:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Providing a structured environment"
+      },
+      {
+        "id": "B",
+        "text": "Designing activities that will require the client to maintain contact with reality"
+      },
+      {
+        "id": "C",
+        "text": "Engaging the client in conversing about current affairs"
+      },
+      {
+        "id": "D",
+        "text": "Touching the client provide assurance"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Structure tends to decrease agitation and anxiety and to increase the client’s feeling of security."
+  },
+  {
+    "id": 989,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "When planning care for a female client using ritualistic behavior, Nurse Gina must recognize that the ritual:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Helps the client focus on the inability to deal with reality"
+      },
+      {
+        "id": "B",
+        "text": "Helps the client control the anxiety"
+      },
+      {
+        "id": "C",
+        "text": "Is under the client’s conscious control"
+      },
+      {
+        "id": "D",
+        "text": "Is used by the client primarily for secondary gains"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "The rituals used by a client with obsessive compulsive disorder help control the anxiety level by maintaining a set pattern of action."
+  },
+  {
+    "id": 990,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A 32 year old male graduate student, who has become increasingly withdrawn and neglectful of his work and personal hygiene, is brought to the psychiatric hospital by his parents. After detailed assessment, a diagnosis of schizophrenia is made. It is unlikely that the client will demonstrate:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Low self esteem"
+      },
+      {
+        "id": "B",
+        "text": "Concrete thinking"
+      },
+      {
+        "id": "C",
+        "text": "Effective self boundaries"
+      },
+      {
+        "id": "D",
+        "text": "Weak ego"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "A person with this disorder would not have adequate self-boundaries"
+  },
+  {
+    "id": 991,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A 23 year old client has been admitted with a diagnosis of schizophrenia says to the nurse “Yes, its march, March is little woman”. That’s literal you know”. These statement illustrate:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neologisms"
+      },
+      {
+        "id": "B",
+        "text": "Echolalia"
+      },
+      {
+        "id": "C",
+        "text": "Flight of ideas"
+      },
+      {
+        "id": "D",
+        "text": "Loosening of association"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Loose associations are thoughts that are presented without the logical connections usually necessary for the listening to interpret the message."
+  },
+  {
+    "id": 992,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A long term goal for a paranoid male client who has unjustifiably accused his wife of having many extramarital affairs would be to help the client develop:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insight into his behavior"
+      },
+      {
+        "id": "B",
+        "text": "Better self control"
+      },
+      {
+        "id": "C",
+        "text": "Feeling of self worth"
+      },
+      {
+        "id": "D",
+        "text": "Faith in his wife"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Helping the client to develop feeling of self worth would reduce the client’s need to use pathologic defenses."
+  },
+  {
+    "id": 993,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "A male client who is experiencing disordered thinking about food being poisoned is admitted to the mental health unit. The nurse uses which communication technique to encourage the client to eat dinner?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Focusing on self-disclosure of own food preference"
+      },
+      {
+        "id": "B",
+        "text": "Using open ended question and silence"
+      },
+      {
+        "id": "C",
+        "text": "Offering opinion about the need to eat"
+      },
+      {
+        "id": "D",
+        "text": "Verbalizing reasons that the client may not choose to eat"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Open ended questions and silence are strategies used to encourage clients to discuss their problem in descriptive manner."
+  },
+  {
+    "id": 994,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Nina is assigned to care for a client diagnosed with Catatonic Stupor. When Nurse Nina enters the client’s room, the client is found lying on the bed with a body pulled into a fetal position. Nurse Nina should?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ask the client direct questions to encourage talking"
+      },
+      {
+        "id": "B",
+        "text": "Rake the client into the dayroom to be with other clients"
+      },
+      {
+        "id": "C",
+        "text": "Sit beside the client in silence and occasionally ask open-ended question"
+      },
+      {
+        "id": "D",
+        "text": "Leave the client alone and continue with providing care to the other clients"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Clients who are withdrawn may be immobile and mute, and require consistent, repeated interventions. Communication with withdrawn clients requires much patience from the nurse. The nurse facilitates communication with the client by sitting in silence, asking open-ended question and pausing to provide opportunities for the client to respond."
+  },
+  {
+    "id": 995,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Tina is caring for a client with delirium and states that “look at the spiders on the wall”. What should the nurse respond to the client?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“You’re having hallucination, there are no spiders in this room at all”"
+      },
+      {
+        "id": "B",
+        "text": "“I can see the spiders on the wall, but they are not going to hurt you”"
+      },
+      {
+        "id": "C",
+        "text": "“Would you like me to kill the spiders”"
+      },
+      {
+        "id": "D",
+        "text": "“I know you are frightened, but I do not see spiders on the wall”"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "When hallucination is present, the nurse should reinforce reality with the client."
+  },
+  {
+    "id": 996,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Jonel is providing information to a community group about violence in the family. Which statement by a group member would indicate a need to provide additional information?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“Abuse occurs more in low-income families”"
+      },
+      {
+        "id": "B",
+        "text": "“Abuser Are often jealous or self-centered”"
+      },
+      {
+        "id": "C",
+        "text": "“Abuser use fear and intimidation”"
+      },
+      {
+        "id": "D",
+        "text": "“Abuser usually have poor self-esteem”"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Personal characteristics of abuser include low self-esteem, immaturity, dependence, insecurity and jealousy."
+  },
+  {
+    "id": 997,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "During electroconvulsive therapy (ECT) the client receives oxygen by mask via positive pressure ventilation. The nurse assisting with this procedure knows that positive pressure ventilation is necessary because?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anesthesia is administered during the procedure"
+      },
+      {
+        "id": "B",
+        "text": "Decrease oxygen to the brain increases confusion and disorientation"
+      },
+      {
+        "id": "C",
+        "text": "Grand mal seizure activity depresses respirations"
+      },
+      {
+        "id": "D",
+        "text": "Muscle relaxations given to prevent injury during seizure activity depress respirations."
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A short acting skeletal muscle relaxant such as succinylcholine (Anectine) is administered during this procedure to prevent injuries during seizure."
+  },
+  {
+    "id": 998,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "When planning the discharge of a client with chronic anxiety, Nurse Chris evaluates achievement of the discharge maintenance goals. Which goal would be most appropriately having been included in the plan of care requiring evaluation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The client eliminates all anxiety from daily situations"
+      },
+      {
+        "id": "B",
+        "text": "The client ignores feelings of anxiety"
+      },
+      {
+        "id": "C",
+        "text": "The client identifies anxiety producing situations"
+      },
+      {
+        "id": "D",
+        "text": "The client maintains contact with a crisis counselor"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Recognizing situations that produce anxiety allows the client to prepare to cope with anxiety or avoid specific stimulus."
+  },
+  {
+    "id": 999,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Nurse Tina is caring for a client with depression who has not responded to antidepressant medication. The nurse anticipates that what treatment procedure may be prescribed.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neuroleptic medication"
+      },
+      {
+        "id": "B",
+        "text": "Short term seclusion"
+      },
+      {
+        "id": "C",
+        "text": "Psychosurgery"
+      },
+      {
+        "id": "D",
+        "text": "Electroconvulsive therapy"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Electroconvulsive therapy is an effective treatment for depression that has not responded to medication"
+  },
+  {
+    "id": 1000,
+    "course": "PNLE",
+    "topic": "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing",
+    "question_stem": "Mario is admitted to the emergency room with drug-induced anxiety related to over ingestion of prescribed antipsychotic medication. The most important piece of information the nurse in charge should obtain initially is the:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Length of time on the med."
+      },
+      {
+        "id": "B",
+        "text": "Name of the ingested medication & the amount ingested"
+      },
+      {
+        "id": "C",
+        "text": "Reason for the suicide attempt"
+      },
+      {
+        "id": "D",
+        "text": "Name of the nearest relative & their phone number"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "In an emergency, lives saving facts are obtained first. The name and the amount of medication ingested are of outmost important in treating this potentially life threatening situation."
   }
 ]

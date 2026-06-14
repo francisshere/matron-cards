@@ -41,6 +41,20 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         { title: "Philippine Nursing Licensure Exam IV", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam IV - Nursing Practice", count: 50 },
         { title: "Philippine Nursing Licensure Exam V", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam V - Nursing Practice", count: 50 }
       ]
+    },
+    {
+      id: 3,
+      name: "SET 3",
+      colorClass: "border-[#4A1529]",
+      textClass: "text-[#4A1529]",
+      bgClass: "bg-[#4A1529]",
+      hoverBgClass: "hover:bg-[#3d1122]",
+      items: [
+        { title: "Philippine Nursing Licensure Exam I", subtitle: "Foundation of Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing", count: 50 },
+        { title: "Philippine Nursing Licensure Exam II", subtitle: "Maternal and Child Health", topicKey: "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health", count: 50 },
+        { title: "Philippine Nursing Licensure Exam III", subtitle: "Medical Surgical Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing", count: 50 },
+        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Psychiatric Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing", count: 50 }
+      ]
     }
   ];
 
@@ -162,7 +176,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         setActiveSubcategory(sub);
                         if (sub === 'Set 1') setActiveSet(1);
                         else if (sub === 'Set 2') setActiveSet(2);
-                        // Add Set 3 logic if needed
+                        else if (sub === 'Set 3') setActiveSet(3);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub

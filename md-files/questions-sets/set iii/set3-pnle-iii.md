@@ -271,7 +271,7 @@ Questions:
   },
   {
     "question_number": 27,
-    "while performing a physical assessment of a male client with gout of the great toe, NurseVivian should assess for additional tophi (urate deposits) on the:",
+    "question": "while performing a physical assessment of a male client with gout of the great toe, NurseVivian should assess for additional tophi (urate deposits) on the:",
     "options": [
       "Buttocks",
       "Ears",
