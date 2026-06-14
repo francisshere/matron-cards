@@ -213,7 +213,7 @@ export default function Quiz({ onBack, topicFilter }) {
 
   return (
     <div className="min-h-screen bg-bg flex justify-center">
-      <div className="w-full max-w-3xl flex flex-col pt-8 pb-32 px-6 sm:px-12 relative min-h-screen">
+      <div className="w-full lg:w-[60%] flex flex-col pt-8 pb-32 px-6 sm:px-12 relative min-h-screen">
         
         {/* Header */}
         <header className="flex items-center justify-between mb-10">
@@ -277,7 +277,12 @@ export default function Quiz({ onBack, topicFilter }) {
                   <span className="font-heading font-black text-lg text-text block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-2">Rationale</span>
                   {currentQuestion.rationale}
                 </span>
-              ) : currentQuestion.question_stem}
+              ) : (
+                <span className="block mt-2">
+                  <span className="font-heading font-black text-lg text-text block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-2">Question</span>
+                  {currentQuestion.question_stem}
+                </span>
+              )}
             </p>
           </div>
         </div>
@@ -295,7 +300,7 @@ export default function Quiz({ onBack, topicFilter }) {
         </div>
 
         {/* Options */}
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {currentQuestion.options.map((opt) => {
             const isSelected = selectedOption === opt.id;
             
@@ -303,7 +308,7 @@ export default function Quiz({ onBack, topicFilter }) {
               return (
                 <div 
                   key={opt.id}
-                  className="w-full rounded-2xl bg-[#D66B93]"
+                  className="w-full h-full min-h-[76px] rounded-2xl bg-[#D66B93] flex items-center justify-center"
                 >
                   <div className="p-4 sm:p-5 border-4 border-transparent opacity-0 pointer-events-none">
                     <span className="font-body font-semibold text-base sm:text-lg block text-center">{opt.text}</span>
@@ -312,10 +317,10 @@ export default function Quiz({ onBack, topicFilter }) {
               );
             }
 
-            let btnClass = "w-full p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5";
+            let btnClass = "w-full h-full min-h-[76px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5";
             
             if (showRationale && opt.id === currentQuestion.correct_option) {
-               btnClass = "w-full p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-[#D1FAE5] border-[#34D399] text-[#065F46]";
+               btnClass = "w-full h-full min-h-[76px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-[#D1FAE5] border-[#34D399] text-[#065F46]";
             }
 
             return (
@@ -334,7 +339,7 @@ export default function Quiz({ onBack, topicFilter }) {
 
       {/* Fixed Bottom Action Bar */}
       <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/80 p-6 sm:p-8 flex justify-center z-50">
-        <div className="w-full max-w-3xl flex justify-between items-center px-2 sm:px-6">
+        <div className="w-full lg:w-[60%] flex justify-between items-center px-2 sm:px-6">
           <button 
             onClick={handleSkip}
             disabled={showRationale}
