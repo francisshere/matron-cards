@@ -22,8 +22,9 @@ export default function Topics({ onViewChange, onStartQuiz }) {
       items: [
         { title: "Philippine Nursing Licensure Exam I", subtitle: "Foundation of Professional Nursing Practice", count: 100 },
         { title: "Philippine Nursing Licensure Exam II", subtitle: "Community Health Nursing and Care of the Mother and Child", count: 100 },
-        { title: "Philippine Nursing Licensure Exam III", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations Nursing Practice", count: 100 },
-        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations Nursing Practice", count: 100 }
+        { title: "Philippine Nursing Licensure Exam III", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations (Part 1)", count: 100 },
+        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations (Part 2)", count: 100 },
+        { title: "Philippine Nursing Licensure Exam V", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations (Part 3)", count: 100 }
       ]
     },
     {
