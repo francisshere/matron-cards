@@ -22,8 +22,9 @@ export default function Topics({ onViewChange, onStartQuiz }) {
       items: [
         { title: "Philippine Nursing Licensure Exam I", subtitle: "Foundation of Professional Nursing Practice", count: 100 },
         { title: "Philippine Nursing Licensure Exam II", subtitle: "Community Health Nursing and Care of the Mother and Child", count: 100 },
-        { title: "Philippine Nursing Licensure Exam III", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations Nursing Practice", count: 100 },
-        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations Nursing Practice", count: 100 }
+        { title: "Philippine Nursing Licensure Exam III", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations (Part 1)", count: 100 },
+        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations (Part 2)", count: 100 },
+        { title: "Philippine Nursing Licensure Exam V", subtitle: "Care of Clients with Physiologic and Psychosocial Alterations (Part 3)", count: 100 }
       ]
     },
     {
@@ -34,10 +35,25 @@ export default function Topics({ onViewChange, onStartQuiz }) {
       bgClass: "bg-[#D42F6B]",
       hoverBgClass: "hover:bg-[#b02456]",
       items: [
-        { title: "Philippine Nursing Licensure Exam I", subtitle: "Nursing Practice", count: 50 },
-        { title: "Philippine Nursing Licensure Exam II", subtitle: "Nursing Practice", count: 50 },
-        { title: "Philippine Nursing Licensure Exam III", subtitle: "Nursing Practice", count: 50 },
-        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Nursing Practice", count: 50 }
+        { title: "Philippine Nursing Licensure Exam I", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam I - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam II", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam II - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam III", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam III - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam IV - Nursing Practice", count: 50 },
+        { title: "Philippine Nursing Licensure Exam V", subtitle: "Nursing Practice", topicKey: "PNLE Philippine Nursing Licensure Exam V - Nursing Practice", count: 50 }
+      ]
+    },
+    {
+      id: 3,
+      name: "SET 3",
+      colorClass: "border-[#4A1529]",
+      textClass: "text-[#4A1529]",
+      bgClass: "bg-[#4A1529]",
+      hoverBgClass: "hover:bg-[#3d1122]",
+      items: [
+        { title: "Philippine Nursing Licensure Exam I", subtitle: "Foundation of Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam I - Foundation of Nursing", count: 50 },
+        { title: "Philippine Nursing Licensure Exam II", subtitle: "Maternal and Child Health", topicKey: "PNLE Philippine Nursing Licensure Exam II - Maternal and Child Health", count: 50 },
+        { title: "Philippine Nursing Licensure Exam III", subtitle: "Medical Surgical Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing", count: 50 },
+        { title: "Philippine Nursing Licensure Exam IV", subtitle: "Psychiatric Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing", count: 50 }
       ]
     }
   ];
@@ -160,7 +176,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         setActiveSubcategory(sub);
                         if (sub === 'Set 1') setActiveSet(1);
                         else if (sub === 'Set 2') setActiveSet(2);
-                        // Add Set 3 logic if needed
+                        else if (sub === 'Set 3') setActiveSet(3);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub
@@ -210,7 +226,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                   <div className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] ${currentSetData.colorClass} bg-white ${currentSetData.textClass} font-black text-base sm:text-lg py-3 sm:py-0`}>
                     {item.count} ITEMS
                   </div>
-                  <button onClick={() => onStartQuiz && onStartQuiz(`PNLE ${item.subtitle}`)} className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${currentSetData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${currentSetData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
+                  <button onClick={() => onStartQuiz && onStartQuiz(item.topicKey || `PNLE ${item.subtitle}`)} className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${currentSetData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${currentSetData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
                     LEARN
                   </button>
                 </div>

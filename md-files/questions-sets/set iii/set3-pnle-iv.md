@@ -4,7 +4,7 @@
 
 # FOLLOW STRICTLY THE FORMAT AND SEQUENCE OF THE QUESTIONS, ANSWERS, AND RATIONALE --- WORD PER WORD. THIS IS CRUCIAL. DO NOT CHANGE ANYTHING BASED ON ASSUMPTIONS.
 
-# Set 3 - PNLE IV - Psychiatric Nursing
+# Set 3 - Philippine Nursing Licensure Exam IV // Psychiatric Nursing
 
 Questions:
 ```json

@@ -4,7 +4,7 @@
 
 # FOLLOW STRICTLY THE FORMAT AND SEQUENCE OF THE QUESTIONS, ANSWERS, AND RATIONALE --- WORD PER WORD. THIS IS CRUCIAL. DO NOT CHANGE ANYTHING BASED ON ASSUMPTIONS.
 
-# Set 3 - PNLE III - Medical Surgical Nursing
+# Set 3 - Philippine Nursing Licensure Exam III // Medical Surgical Nursing
 
 Questions:
 ```json
@@ -271,7 +271,7 @@ Questions:
   },
   {
     "question_number": 27,
-    "while performing a physical assessment of a male client with gout of the great toe, NurseVivian should assess for additional tophi (urate deposits) on the:",
+    "question": "while performing a physical assessment of a male client with gout of the great toe, NurseVivian should assess for additional tophi (urate deposits) on the:",
     "options": [
       "Buttocks",
       "Ears",

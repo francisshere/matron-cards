@@ -4,7 +4,7 @@
 
 # FOLLOW STRICTLY THE FORMAT AND SEQUENCE OF THE QUESTIONS, ANSWERS, AND RATIONALE --- WORD PER WORD. THIS IS CRUCIAL. DO NOT CHANGE ANYTHING BASED ON ASSUMPTIONS.
 
-# Set 2 - PNLE IV - Nursing Practice
+# Set 2 - Philippine Nursing Licensure Exam IV // Nursing Practice
 
 Questions:
 ```json
@@ -236,8 +236,8 @@ Questions:
       "“This is only a problem for women.”",
       "“You are not at risk because of your small frame.”",
       "“You might think about having a bone density test,”",
-      "“Exercise is a good way to prevent this problem.”
-    ]"
+      "“Exercise is a good way to prevent this problem.”"
+    ]
   },
   {
     "question_number": 24,
