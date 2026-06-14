@@ -1,14 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
+import allQuestions from './data/questions.json';
 
 import logo from './assets/matron-logo.svg';
 import learnIcon from './assets/learn-icon.svg';
 import topicsIcon from './assets/topics-icon.svg';
 import profileIcon from './assets/profile-icon.svg';
 
+const HighlightText = ({ text, highlight }) => {
+  if (!highlight || !highlight.trim()) {
+    return <span>{text}</span>;
+  }
+  const regex = new RegExp(`(${highlight})`, 'gi');
+  const parts = text.split(regex);
+  return (
+    <span>
+      {parts.map((part, i) => 
+        regex.test(part) ? (
+          <mark key={i} className="bg-[#F7C4D5]/60 text-[#4A1529] font-bold rounded px-1">{part}</mark>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </span>
+  );
+};
+
 export default function Topics({ onViewChange, onStartQuiz }) {
   const [activeSet, setActiveSet] = useState(1);
   const [activeCategory, setActiveCategory] = useState('Sets');
   const [activeSubcategory, setActiveSubcategory] = useState('Set 1');
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Example data based on the images
   const sets = [
@@ -58,7 +79,49 @@ export default function Topics({ onViewChange, onStartQuiz }) {
     }
   ];
 
+  const filteredSets = useMemo(() => {
+    if (!searchQuery.trim()) return null;
+    const query = searchQuery.toLowerCase();
+
+    return sets.map(set => {
+      const filteredItems = set.items.map(item => {
+        let isMatch = false;
+        let matchedQuestions = [];
+
+        if (item.title.toLowerCase().includes(query) || item.subtitle.toLowerCase().includes(query)) {
+          isMatch = true;
+        }
+        
+        const topicKey = item.topicKey || `PNLE ${item.subtitle}`;
+        const topicQuestions = allQuestions.filter(q => q.topic === topicKey);
+        
+        topicQuestions.forEach(q => {
+          if (
+            q.question_stem.toLowerCase().includes(query) || 
+            q.options.some(opt => opt.text.toLowerCase().includes(query)) ||
+            q.rationale.toLowerCase().includes(query)
+          ) {
+            isMatch = true;
+            matchedQuestions.push(q);
+          }
+        });
+
+        if (isMatch) {
+          return { ...item, matchedQuestions };
+        }
+        return null;
+      }).filter(Boolean);
+
+      if (set.name.toLowerCase().includes(query)) {
+        return { ...set, items: set.items.map(i => ({ ...i, matchedQuestions: [] })) };
+      }
+
+      return { ...set, items: filteredItems };
+    }).filter(set => set.items.length > 0 || set.name.toLowerCase().includes(searchQuery.toLowerCase()));
+  }, [searchQuery, sets]);
+
   const currentSetData = sets.find(s => s.id === activeSet);
+  const displaySets = searchQuery.trim() ? filteredSets : (currentSetData ? [currentSetData] : []);
 
   return (
     <div className="min-h-screen bg-bg flex flex-col lg:flex-row text-text font-body">
@@ -115,13 +178,16 @@ export default function Topics({ onViewChange, onStartQuiz }) {
             </div>
             <input
               type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-[#F7C4D5]/50 focus:bg-[#F7C4D5]/20 border-none rounded-xl py-4 pl-12 pr-4 text-[#855264] placeholder-[#855264] text-lg font-body focus:outline-none focus:ring-2 focus:ring-[#D42F6B] transition-all shadow-sm"
               placeholder="Sets, topics, questions"
             />
           </div>
 
           {/* Filter Section */}
-          <div className="mb-8">
+          {!searchQuery.trim() && (
+            <div className="mb-8">
             <h2 className="font-heading font-black text-3xl sm:text-4xl text-[#4A1529] mb-4">PNLE Library</h2>
 
             <div className="flex flex-col gap-4">
@@ -207,28 +273,81 @@ export default function Topics({ onViewChange, onStartQuiz }) {
               )}
             </div>
           </div>
+          )}
 
-          {/* Set Header */}
-          <div className="flex items-center mb-6">
-            <span className="text-[#855264] font-body font-bold text-lg mr-4 tracking-wide">{currentSetData.name}</span>
-            <div className="flex-1 border-t border-[#855264] opacity-30"></div>
-          </div>
-
-          {/* Topic Cards */}
-          <div className="space-y-6 pb-10">
-            {currentSetData.items.map((item, index) => (
-              <div key={index} className={`bg-white border-[3px] ${currentSetData.colorClass} rounded-2xl flex flex-col sm:flex-row overflow-hidden shadow-[0px_4px_0px_0px] shadow-[${currentSetData.colorClass.replace('border-[', '').replace(']', '')}] hover:translate-y-1 hover:shadow-none transition-all`}>
-                <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center">
-                  <h4 className={`font-heading font-black text-lg sm:text-xl ${currentSetData.textClass} mb-1`}>{item.title}</h4>
-                  <p className="font-body font-bold italic text-[#855264] text-sm sm:text-base">{item.subtitle}</p>
+          {/* Topic Cards List */}
+          <div className="space-y-10 pb-10">
+            {displaySets.length === 0 && searchQuery.trim() && (
+              <div className="text-center py-10">
+                <p className="text-[#855264] font-body text-xl font-semibold">No results found for "{searchQuery}"</p>
+              </div>
+            )}
+            
+            {displaySets.map((setData, setIndex) => (
+              <div key={setData.id || setIndex}>
+                {/* Set Header */}
+                <div className="flex items-center mb-6">
+                  <span className="text-[#855264] font-body font-bold text-lg mr-4 tracking-wide">{setData.name}</span>
+                  <div className="flex-1 border-t border-[#855264] opacity-30"></div>
                 </div>
-                <div className={`w-full sm:w-[160px] border-t-[3px] sm:border-t-0 sm:border-l-[3px] ${currentSetData.colorClass} flex sm:flex-col`}>
-                  <div className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] ${currentSetData.colorClass} bg-white ${currentSetData.textClass} font-black text-base sm:text-lg py-3 sm:py-0`}>
-                    {item.count} ITEMS
-                  </div>
-                  <button onClick={() => onStartQuiz && onStartQuiz(item.topicKey || `PNLE ${item.subtitle}`)} className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${currentSetData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${currentSetData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
-                    LEARN
-                  </button>
+
+                {/* Topic Cards */}
+                <div className="space-y-6">
+                  {setData.items.map((item, index) => (
+                    <div key={index} className={`bg-white border-[3px] ${setData.colorClass} rounded-2xl flex flex-col overflow-hidden shadow-[0px_4px_0px_0px] shadow-[${setData.colorClass.replace('border-[', '').replace(']', '')}] hover:translate-y-1 hover:shadow-none transition-all`}>
+                      <div className="flex flex-col sm:flex-row w-full">
+                        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center">
+                          <h4 className={`font-heading font-black text-lg sm:text-xl ${setData.textClass} mb-1`}>
+                            <HighlightText text={item.title} highlight={searchQuery} />
+                          </h4>
+                          <p className="font-body font-bold italic text-[#855264] text-sm sm:text-base">
+                            <HighlightText text={item.subtitle} highlight={searchQuery} />
+                          </p>
+                        </div>
+                        <div className={`w-full sm:w-[160px] border-t-[3px] sm:border-t-0 sm:border-l-[3px] ${setData.colorClass} flex sm:flex-col shrink-0`}>
+                          <div className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] ${setData.colorClass} bg-white ${setData.textClass} font-black text-base sm:text-lg py-3 sm:py-0`}>
+                            {item.count} ITEMS
+                          </div>
+                          <button onClick={() => onStartQuiz && onStartQuiz(item.topicKey || `PNLE ${item.subtitle}`)} className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${setData.bgClass} text-white font-heading font-black text-lg sm:text-xl ${setData.hoverBgClass} py-3 sm:py-0 transition-colors`}>
+                            LEARN
+                          </button>
+                        </div>
+                      </div>
+                      
+                      {/* Matched Questions Sub-section */}
+                      {item.matchedQuestions && item.matchedQuestions.length > 0 && searchQuery.trim() && (
+                        <div className={`border-t-[3px] ${setData.colorClass} bg-[#F7C4D5]/10 p-4 sm:p-6`}>
+                          <p className={`font-body font-bold text-sm mb-3 ${setData.textClass} uppercase tracking-wider`}>Matched Questions ({item.matchedQuestions.length})</p>
+                          <div className="space-y-4">
+                            {item.matchedQuestions.slice(0, 3).map((q, qIndex) => (
+                              <div key={qIndex} className="bg-white p-4 rounded-xl border border-[#F7C4D5] shadow-sm">
+                                <p className="font-body text-[#855264] text-sm sm:text-base font-medium mb-2">
+                                  <span className="font-bold mr-2 text-[#D42F6B]">Q:</span>
+                                  <HighlightText text={q.question_stem} highlight={searchQuery} />
+                                </p>
+                                {q.options.some(opt => opt.text.toLowerCase().includes(searchQuery.toLowerCase())) && (
+                                  <div className="pl-6 border-l-2 border-[#F7C4D5] space-y-1 mt-2">
+                                    {q.options.map((opt, oIndex) => 
+                                      opt.text.toLowerCase().includes(searchQuery.toLowerCase()) ? (
+                                        <p key={oIndex} className="font-body text-xs sm:text-sm text-[#855264]">
+                                          • <HighlightText text={opt.text} highlight={searchQuery} />
+                                        </p>
+                                      ) : null
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                            {item.matchedQuestions.length > 3 && (
+                              <p className="font-body text-xs font-bold text-[#855264] text-center italic mt-2">
+                                + {item.matchedQuestions.length - 3} more matching questions
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
