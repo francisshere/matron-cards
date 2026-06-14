@@ -236,8 +236,8 @@ Questions:
       "“This is only a problem for women.”",
       "“You are not at risk because of your small frame.”",
       "“You might think about having a bone density test,”",
-      "“Exercise is a good way to prevent this problem.”
-    ]"
+      "“Exercise is a good way to prevent this problem.”"
+    ]
   },
   {
     "question_number": 24,
