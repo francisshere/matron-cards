@@ -122,6 +122,21 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         { title: "PNLE Medical Surgical Nursing Exam 3", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 3", count: 25 },
         { title: "PNLE Medical Surgical Nursing Exam 4", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 4", count: 25 }
       ]
+    },
+    {
+      id: 7,
+      name: "COMMUNITY HEALTH NURSING",
+      colorClass: "border-[#4A1529]",
+      textClass: "text-[#4A1529]",
+      bgClass: "bg-[#4A1529]",
+      hoverBgClass: "hover:bg-[#3d1122]",
+      items: [
+        { title: "PNLE Community Health Nursing Exam 1", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 1", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 2", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 2", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 3", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 3", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 4", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 4", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 5", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 5", count: 28 }
+      ]
     }
   ];
 
@@ -292,6 +307,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         else if (sub === 'Foundation of Nursing') setActiveSet(4);
                         else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
                         else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
+                        else if (sub === 'Community Health Nursing') setActiveSet(7);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub
@@ -314,6 +330,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         if (sub === 'Foundation of Nursing') setActiveSet(4);
                         else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
                         else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
+                        else if (sub === 'Community Health Nursing') setActiveSet(7);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub

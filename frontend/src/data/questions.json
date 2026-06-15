@@ -51860,5 +51860,3853 @@
     ],
     "correct_option": "B",
     "rationale": "For clients with increased intracranial pressure (ICP), the head of the bed is elevated to promote venous outflow. Trendelenburg’s position is contraindicated because it can raise ICP. Flat or neutral positioning is indicated when elevating the head of the bed would increase the risk of neck injury or airway obstruction. Sidelying isn’t specifically a therapeutic treatment for increased ICP."
+  },
+  {
+    "id": 2036,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which is the primary goal of community health nursing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To support and supplement the efforts of the medical profession in the promotion of health and prevention of illness"
+      },
+      {
+        "id": "B",
+        "text": "To enhance the capacity of individuals, families and communities to cope with their health needs"
+      },
+      {
+        "id": "C",
+        "text": "To increase the productivity of the people by providing them with services that will increase their level of health"
+      },
+      {
+        "id": "D",
+        "text": "To contribute to national development through promotion of family welfare, focusing particularly on mothers and children."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": ""
+  },
+  {
+    "id": 2037,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "CHN is a community-based practice. Which best explains this statement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The service is provided in the natural environment of people."
+      },
+      {
+        "id": "B",
+        "text": "The nurse has to conduct community diagnosis to determine nursing needs and problems."
+      },
+      {
+        "id": "C",
+        "text": "The services are based on the available resources within the community."
+      },
+      {
+        "id": "D",
+        "text": "Priority setting is based on the magnitude of the health problems identified."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": ""
+  },
+  {
+    "id": 2038,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Population-focused nursing practice requires which of the following processes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Community organizing"
+      },
+      {
+        "id": "B",
+        "text": "Nursing process"
+      },
+      {
+        "id": "C",
+        "text": "Community diagnosis"
+      },
+      {
+        "id": "D",
+        "text": "Epidemiologic process"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Population-focused nursing care means providing care based on the greater need of the majority of the population. The greater need is identified through community diagnosis."
+  },
+  {
+    "id": 2039,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "R.A. 1054 is also known as the Occupational Health Act. Aside from number of employees, what other factor must be considered in determining the occupational health privileges to which the workers will be entitled?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Type of occupation: agricultural, commercial, industrial"
+      },
+      {
+        "id": "B",
+        "text": "Location of the workplace in relation to health facilities"
+      },
+      {
+        "id": "C",
+        "text": "Classification of the business enterprise based on net profit"
+      },
+      {
+        "id": "D",
+        "text": "Sex and age composition of employees"
+      }
+    ],
+    "correct_option": "L",
+    "rationale": "Based on R.A. 1054, an occupational nurse must be employed when there are 30 to 100 employees and the workplace is more than 1 km. away from the nearest health center."
+  },
+  {
+    "id": 2040,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "A business firm must employ an occupational health nurse when it has at least how many employees?",
+    "options": [
+      {
+        "id": "A",
+        "text": "21"
+      },
+      {
+        "id": "B",
+        "text": "101"
+      },
+      {
+        "id": "C",
+        "text": "201"
+      },
+      {
+        "id": "D",
+        "text": "301"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Again, this is based on R.A. 1054."
+  },
+  {
+    "id": 2041,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "When the occupational health nurse employs ergonomic principles, she is performing which of her roles?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Health care provider"
+      },
+      {
+        "id": "B",
+        "text": "Health educator"
+      },
+      {
+        "id": "C",
+        "text": "Health care coordinator"
+      },
+      {
+        "id": "D",
+        "text": "Environmental manager"
+      }
+    ],
+    "correct_option": "E",
+    "rationale": "Ergonomics is improving efficiency of workers by improving the worker’s environment through appropriately designed furniture, for example."
+  },
+  {
+    "id": 2042,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "A garment factory does not have an occupational nurse. Who shall provide the occupational health needs of the factory workers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Occupational health nurse at the Provincial Health Office"
+      },
+      {
+        "id": "B",
+        "text": "Physician employed by the factory"
+      },
+      {
+        "id": "C",
+        "text": "Public health nurse of the RHU of their municipality"
+      },
+      {
+        "id": "D",
+        "text": "Rural sanitary inspector of the RHU of their municipality"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "You’re right! This question is based on R.A.1054."
+  },
+  {
+    "id": 2043,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "“Public health services are given free of charge.” Is this statement true or false?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The statement is true; it is the responsibility of government to provide basic services."
+      },
+      {
+        "id": "B",
+        "text": "The statement is false; people pay indirectly for public health services."
+      },
+      {
+        "id": "C",
+        "text": "The statement may be true or false, depending on the specific service required."
+      },
+      {
+        "id": "D",
+        "text": "The statement may be true or false, depending on policies of the government concerned."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "Community health services, including public health services, are pre-paid services, though taxation, for example."
+  },
+  {
+    "id": 2044,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "According to C.E.Winslow, which of the following is the goal of Public Health?",
+    "options": [
+      {
+        "id": "A",
+        "text": "For people to attain their birthrights of health and longevity"
+      },
+      {
+        "id": "B",
+        "text": "For promotion of health and prevention of disease"
+      },
+      {
+        "id": "C",
+        "text": "For people to have access to basic health services"
+      },
+      {
+        "id": "D",
+        "text": "For people to be organized in their health efforts"
+      }
+    ],
+    "correct_option": "F",
+    "rationale": "According to Winslow, all public health efforts are for people to realize their birthrights of health and longevity."
+  },
+  {
+    "id": 2045,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "We say that a Filipino has attained longevity when he is able to reach the average lifespan of Filipinos. What other statistic may be used to determine attainment of longevity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Age-specific mortality rate"
+      },
+      {
+        "id": "B",
+        "text": "Proportionate mortality rate"
+      },
+      {
+        "id": "C",
+        "text": "Swaroop’s index"
+      },
+      {
+        "id": "D",
+        "text": "Case fatality rate"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Swaroop’s index is the percentage of the deaths aged 50 years or older. Its inverse represents the percentage of untimely deaths (those who died younger than 50 years)."
+  },
+  {
+    "id": 2046,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which of the following is the most prominent feature of public health nursing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It involves providing home care to sick people who are not confined in the hospital."
+      },
+      {
+        "id": "B",
+        "text": "Services are provided free of charge to people within the catchment area."
+      },
+      {
+        "id": "C",
+        "text": "The public health nurse functions as part of a team providing a public health nursing services."
+      },
+      {
+        "id": "D",
+        "text": "Public health nursing focuses on preventive, not curative, services."
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "The catchment area in PHN consists of a residential community, many of whom are well individuals who have greater need for preventive rather than curative services."
+  },
+  {
+    "id": 2047,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "According to Margaret Shetland, the philosophy of public health nursing is based on which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Health and longevity as birthrights"
+      },
+      {
+        "id": "B",
+        "text": "The mandate of the state to protect the birthrights of its citizens"
+      },
+      {
+        "id": "C",
+        "text": "Public health nursing as a specialized field of nursing"
+      },
+      {
+        "id": "D",
+        "text": "The worth and dignity of man"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "This is a direct quote from Dr. Margaret Shetland’s statements on Public Health Nursing."
+  },
+  {
+    "id": 2048,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which of the following is the mission of the Department of Health?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Health for all Filipinos"
+      },
+      {
+        "id": "B",
+        "text": "Ensure the accessibility and quality of health care"
+      },
+      {
+        "id": "C",
+        "text": "Improve the general health status of the population"
+      },
+      {
+        "id": "D",
+        "text": "Health in the hands of the Filipino people by the year 2020"
+      }
+    ],
+    "correct_option": "E",
+    "rationale": ""
+  },
+  {
+    "id": 2049,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Region IV Hospital is classified as what level of facility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primary"
+      },
+      {
+        "id": "B",
+        "text": "Secondary"
+      },
+      {
+        "id": "C",
+        "text": "Intermediate"
+      },
+      {
+        "id": "D",
+        "text": "Tertiary"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "Regional hospitals are tertiary facilities because they serve as training hospitals for the region."
+  },
+  {
+    "id": 2050,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which is true of primary facilities?",
+    "options": [
+      {
+        "id": "A",
+        "text": "They are usually government-run."
+      },
+      {
+        "id": "B",
+        "text": "Their services are provided on an out-patient basis."
+      },
+      {
+        "id": "C",
+        "text": "They are training facilities for health professionals."
+      },
+      {
+        "id": "D",
+        "text": "A community hospital is an example of this level of health facilities."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "Primary facilities government and non-government facilities that provide basic out-patient services."
+  },
+  {
+    "id": 2051,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which is an example of the school nurse’s health care provider functions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Requesting for BCG from the RHU for school entrant immunization"
+      },
+      {
+        "id": "B",
+        "text": "Conducting random classroom inspection during a measles epidemic"
+      },
+      {
+        "id": "C",
+        "text": "Taking remedial action on an accident hazard in the school playground"
+      },
+      {
+        "id": "D",
+        "text": "Observing places in the school where pupils spend their free time"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Random classroom inspection is assessment of pupils/students and teachers for signs of a health problem prevalent in the community."
+  },
+  {
+    "id": 2052,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "When the nurse determines whether resources were maximized in implementing Ligtas Tigdas, she is evaluating",
+    "options": [
+      {
+        "id": "A",
+        "text": "Effectiveness"
+      },
+      {
+        "id": "B",
+        "text": "Efficiency"
+      },
+      {
+        "id": "C",
+        "text": "Adequacy"
+      },
+      {
+        "id": "D",
+        "text": "Appropriateness"
+      }
+    ],
+    "correct_option": "E",
+    "rationale": "Efficiency is determining whether the goals were attained at the least possible cost."
+  },
+  {
+    "id": 2053,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "You are a new B.S.N. graduate. You want to become a Public Health Nurse. Where will you apply?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Department of Health"
+      },
+      {
+        "id": "B",
+        "text": "Provincial Health Office"
+      },
+      {
+        "id": "C",
+        "text": "Regional Health Office"
+      },
+      {
+        "id": "D",
+        "text": "Rural Health Unit"
+      }
+    ],
+    "correct_option": "R",
+    "rationale": "R.A. 7160 devolved basic health services to local government units (LGU’s ). The public health nurse is an employee of the LGU."
+  },
+  {
+    "id": 2054,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "R.A. 7160 mandates devolution of basic services from the national government to local government units. Which of the following is the major goal of devolution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To strengthen local government units"
+      },
+      {
+        "id": "B",
+        "text": "To allow greater autonomy to local government units"
+      },
+      {
+        "id": "C",
+        "text": "To empower the people and promote their self-reliance"
+      },
+      {
+        "id": "D",
+        "text": "To make basic services more accessible to the people"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "People empowerment is the basic motivation behind devolution of basic services to LGU’s."
+  },
+  {
+    "id": 2055,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Who is the Chairman of the Municipal Health Board?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mayor"
+      },
+      {
+        "id": "B",
+        "text": "Municipal Health Officer"
+      },
+      {
+        "id": "C",
+        "text": "Public Health Nurse"
+      },
+      {
+        "id": "D",
+        "text": "Any qualified physician"
+      }
+    ],
+    "correct_option": "M",
+    "rationale": "The local executive serves as the chairman of the Municipal Health Board."
+  },
+  {
+    "id": 2056,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which level of health facility is the usual point of entry of a client into the health care delivery system?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primary"
+      },
+      {
+        "id": "B",
+        "text": "Secondary"
+      },
+      {
+        "id": "C",
+        "text": "Intermediate"
+      },
+      {
+        "id": "D",
+        "text": "Tertiary"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "The entry of a person into the health care delivery system is usually through a consultation in out-patient services."
+  },
+  {
+    "id": 2057,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "The public health nurse is the supervisor of rural health midwives. Which of the following is a supervisory function of the public health nurse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Referring cases or patients to the midwife"
+      },
+      {
+        "id": "B",
+        "text": "Providing technical guidance to the midwife"
+      },
+      {
+        "id": "C",
+        "text": "Providing nursing care to cases referred by the midwife"
+      },
+      {
+        "id": "D",
+        "text": "Formulating and implementing training programs for midwives"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "The nurse provides technical guidance to the midwife in the care of clients, particularly in the implementation of management guidelines, as in Integrated Management of Childhood Illness."
+  },
+  {
+    "id": 2058,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "One of the participants in a hilot training class asked you to whom she should refer a patient in labor who develops a complication. You will answer, to the",
+    "options": [
+      {
+        "id": "A",
+        "text": "Public Health Nurse"
+      },
+      {
+        "id": "B",
+        "text": "Rural Health Midwife"
+      },
+      {
+        "id": "C",
+        "text": "Municipal Health Officer"
+      },
+      {
+        "id": "D",
+        "text": "Any of these health professionals"
+      }
+    ],
+    "correct_option": "M",
+    "rationale": "A public health nurse and rural health midwife can provide care during normal childbirth. A physician should attend to a woman with a complication during labor."
+  },
+  {
+    "id": 2059,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "You are the public health nurse in a municipality with a total population of about 20,000. There are 3 rural health midwives among the RHU personnel. How many more midwife items will the RHU need?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "The RHU does not need any more midwife item."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Each rural health midwife is given a population assignment of about 5,000."
+  },
+  {
+    "id": 2060,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "if the RHU needs additional midwife items, you will submit the request for additional midwife items for approval to the",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rural Health Unit"
+      },
+      {
+        "id": "B",
+        "text": "District Health Office"
+      },
+      {
+        "id": "C",
+        "text": "Provincial Health Office"
+      },
+      {
+        "id": "D",
+        "text": "Municipal Health Board"
+      }
+    ],
+    "correct_option": "M",
+    "rationale": "As mandated by R.A. 7160, basic health services have been devolved from the national government to local government units."
+  },
+  {
+    "id": 2061,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "As an epidemiologist, the nurse is responsible for reporting cases of notifiable diseases. What law mandates reporting of cases of notifiable diseases?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Act 3573"
+      },
+      {
+        "id": "B",
+        "text": "R.A. 3753"
+      },
+      {
+        "id": "C",
+        "text": "R.A. 1054"
+      },
+      {
+        "id": "D",
+        "text": "R.A. 1082"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Act 3573, the Law on Reporting of Communicable Diseases, enacted in 1929, mandated the reporting of diseases listed in the law to the nearest health station."
+  },
+  {
+    "id": 2062,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "According to Freeman and Heinrich, community health nursing is a developmental service. Which of the following best illustrates this statement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The community health nurse continuously develops himself personally and professionally."
+      },
+      {
+        "id": "B",
+        "text": "Health education and community organizing are necessary in providing community health services."
+      },
+      {
+        "id": "C",
+        "text": "Community health nursing is intended primarily for health promotion and prevention and treatment of disease."
+      },
+      {
+        "id": "D",
+        "text": "The goal of community health nursing is to provide nursing services to people in their own places of residence."
+      }
+    ],
+    "correct_option": "H",
+    "rationale": "The community health nurse develops the health capability of people through health education and community organizing activities."
+  },
+  {
+    "id": 2063,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which disease was declared through Presidential Proclamation No. 4 as a target for eradication in the Philippines?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Poliomyelitis"
+      },
+      {
+        "id": "B",
+        "text": "Measles"
+      },
+      {
+        "id": "C",
+        "text": "Rabies"
+      },
+      {
+        "id": "D",
+        "text": "Neonatal tetanus"
+      }
+    ],
+    "correct_option": "M",
+    "rationale": "Presidential Proclamation No. 4 is on the Ligtas Tigdas Program."
+  },
+  {
+    "id": 2064,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "The public health nurse is responsible for presenting the municipal health statistics using graphs and tables. To compare the frequency of the leading causes of mortality in the municipality, which graph will you prepare?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Line"
+      },
+      {
+        "id": "B",
+        "text": "Bar"
+      },
+      {
+        "id": "C",
+        "text": "Pie"
+      },
+      {
+        "id": "D",
+        "text": "Scatter diagram"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "A bar graph is used to present comparison of values, a line graph for trends over time or age, a pie graph for population composition or distribution, and a scatter diagram for correlation of two variables."
+  },
+  {
+    "id": 2065,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 1",
+    "question_stem": "Which step in community organizing involves training of potential leaders in the community?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integration"
+      },
+      {
+        "id": "B",
+        "text": "Community organization"
+      },
+      {
+        "id": "C",
+        "text": "Community study"
+      },
+      {
+        "id": "D",
+        "text": "Core group formation"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "In core group formation, the nurse is able to transfer the technology of community organizing to the potential or informal community leaders through a training program."
+  },
+  {
+    "id": 2066,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "In which step are plans formulated for solving community problems?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mobilization"
+      },
+      {
+        "id": "B",
+        "text": "Community organization"
+      },
+      {
+        "id": "C",
+        "text": "Follow-up/extension"
+      },
+      {
+        "id": "D",
+        "text": "Core group formation"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Community organization is the step when community assemblies take place. During the community assembly, the people may opt to formalize the community organization and make plans for community action to resolve a community health problem."
+  },
+  {
+    "id": 2067,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The public health nurse takes an active role in community participation. What is the primary goal of community organizing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To educate the people regarding community health problems"
+      },
+      {
+        "id": "B",
+        "text": "To mobilize the people to resolve community health problems"
+      },
+      {
+        "id": "C",
+        "text": "To maximize the community’s resources in dealing with health problems"
+      },
+      {
+        "id": "D",
+        "text": "To maximize the community’s resources in dealing with health problems"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "Community organizing is a developmental service, with the goal of developing the people’s self-reliance in dealing with community health problems. A, B and C are objectives of contributory objectives to this goal."
+  },
+  {
+    "id": 2068,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "An indicator of success in community organizing is when people are able to",
+    "options": [
+      {
+        "id": "A",
+        "text": "Participate in community activities for the solution of a community problem"
+      },
+      {
+        "id": "B",
+        "text": "Implement activities for the solution of the community problem"
+      },
+      {
+        "id": "C",
+        "text": "Plan activities for the solution of the community problem"
+      },
+      {
+        "id": "D",
+        "text": "Identify the health problem as a common concern"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "Participation in community activities in resolving a community problem may be in any of the processes mentioned in the other choices."
+  },
+  {
+    "id": 2069,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Tertiary prevention is needed in which stage of the natural history of disease?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pre-pathogenesis"
+      },
+      {
+        "id": "B",
+        "text": "Pathogenesis"
+      },
+      {
+        "id": "C",
+        "text": "Prodromal"
+      },
+      {
+        "id": "D",
+        "text": "Terminal"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "Tertiary prevention involves rehabilitation, prevention of permanent disability and disability limitation appropriate for convalescents, the disabled, complicated cases and the terminally ill (those in the terminal stage of a disease)"
+  },
+  {
+    "id": 2070,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Isolation of a child with measles belongs to what level of prevention?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primary"
+      },
+      {
+        "id": "B",
+        "text": "Secondary"
+      },
+      {
+        "id": "C",
+        "text": "Intermediate"
+      },
+      {
+        "id": "D",
+        "text": "Tertiary"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "The purpose of isolating a client with a communicable disease is to protect those who are not sick (specific disease prevention)."
+  },
+  {
+    "id": 2071,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "On the other hand, Operation Timbang is _____ prevention.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primary"
+      },
+      {
+        "id": "B",
+        "text": "Secondary"
+      },
+      {
+        "id": "C",
+        "text": "Intermediate"
+      },
+      {
+        "id": "D",
+        "text": "Tertiary"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Operation Timbang is done to identify members of the susceptible population who are malnourished. Its purpose is early diagnosis and, subsequently, prompt treatment."
+  },
+  {
+    "id": 2072,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Which type of family-nurse contact will provide you with the best opportunity to observe family dynamics?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clinic consultation"
+      },
+      {
+        "id": "B",
+        "text": "Group conference"
+      },
+      {
+        "id": "C",
+        "text": "Home visit"
+      },
+      {
+        "id": "D",
+        "text": "Written communication"
+      }
+    ],
+    "correct_option": "H",
+    "rationale": "Dynamics of family relationships can best be observed in the family’s natural environment, which is the home."
+  },
+  {
+    "id": 2073,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The typology of family nursing problems is used in the statement of nursing diagnosis in the care of families. The youngest child of the de los Reyes family has been diagnosed as mentally retarded. This is classified as a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Health threat"
+      },
+      {
+        "id": "B",
+        "text": "Health deficit"
+      },
+      {
+        "id": "C",
+        "text": "Foreseeable crisis"
+      },
+      {
+        "id": "D",
+        "text": "Stress point"
+      }
+    ],
+    "correct_option": "H",
+    "rationale": "Failure of a family member to develop according to what is expected, as in mental retardation, is a health deficit."
+  },
+  {
+    "id": 2074,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The de los Reyes couple have a 6-year old child entering school for the first time. The de los Reyes family has a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Health threat"
+      },
+      {
+        "id": "B",
+        "text": "Health deficit"
+      },
+      {
+        "id": "C",
+        "text": "Foreseeable crisis"
+      },
+      {
+        "id": "D",
+        "text": "Stress point"
+      }
+    ],
+    "correct_option": "F",
+    "rationale": "Entry of the 6-year old into school is an anticipated period of unusual demand on the family."
+  },
+  {
+    "id": 2075,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Which of the following is an advantage of a home visit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It allows the nurse to provide nursing care to a greater number of people."
+      },
+      {
+        "id": "B",
+        "text": "It provides an opportunity to do first hand appraisal of the home situation."
+      },
+      {
+        "id": "C",
+        "text": "It allows sharing of experiences among people with similar health problems."
+      },
+      {
+        "id": "D",
+        "text": "It develops the family’s initiative in providing for health needs of its members."
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "Choice A is not correct since a home visit requires that the nurse spend so much time with the family. Choice C is an advantage of a group conference, while choice D is true of a clinic consultation."
+  },
+  {
+    "id": 2076,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Which is CONTRARY to the principles in planning a home visit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A home visit should have a purpose or objective."
+      },
+      {
+        "id": "B",
+        "text": "The plan should revolve around family health needs."
+      },
+      {
+        "id": "C",
+        "text": "A home visit should be conducted in the manner prescribed by the RHU."
+      },
+      {
+        "id": "D",
+        "text": "Planning of continuing care should involve a responsible family member."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The home visit plan should be flexible and practical, depending on factors, such as the family’s needs and the resources available to the nurse and the family."
+  },
+  {
+    "id": 2077,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The PHN bag is an important tool in providing nursing care during a home visit. The most important principle of bag technique states that it",
+    "options": [
+      {
+        "id": "A",
+        "text": "Should save time and effort."
+      },
+      {
+        "id": "B",
+        "text": "Should minimize if not totally prevent the spread of infection."
+      },
+      {
+        "id": "C",
+        "text": "Should not overshadow concern for the patient and his family."
+      },
+      {
+        "id": "D",
+        "text": "May be done in a variety of ways depending on the home situation, etc."
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Bag technique is performed before and after handling a client in the home to prevent transmission of infection to and from the client."
+  },
+  {
+    "id": 2078,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "To maintain the cleanliness of the bag and its contents, which of the following must the nurse do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wash his/her hands before and after providing nursing care to the family members."
+      },
+      {
+        "id": "B",
+        "text": "In the care of family members, as much as possible, use only articles taken from the bag."
+      },
+      {
+        "id": "C",
+        "text": "Put on an apron to protect her uniform and fold it with the right side out before putting it back into the bag."
+      },
+      {
+        "id": "D",
+        "text": "At the end of the visit, fold the lining on which the bag was placed, ensuring that the contaminated side is on the outside."
+      }
+    ],
+    "correct_option": "W",
+    "rationale": "Choice B goes against the idea of utilizing the family’s resources, which is encouraged in CHN. Choices C and D goes against the principle of asepsis of confining the contaminated surface of objects."
+  },
+  {
+    "id": 2079,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The public health nurse conducts a study on the factors contributing to the high mortality rate due to heart disease in the municipality where she works. Which branch of epidemiology does the nurse practice in this situation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descriptive"
+      },
+      {
+        "id": "B",
+        "text": "Analytical"
+      },
+      {
+        "id": "C",
+        "text": "Therapeutic"
+      },
+      {
+        "id": "D",
+        "text": "Evaluation"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Analytical epidemiology is the study of factors or determinants affecting the patterns of occurrence and distribution of disease in a community."
+  },
+  {
+    "id": 2080,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Which of the following is a function of epidemiology?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Identifying the disease condition based on manifestations presented by a client"
+      },
+      {
+        "id": "B",
+        "text": "Determining factors that contributed to the occurrence of pneumonia in a 3 year old"
+      },
+      {
+        "id": "C",
+        "text": "Determining the efficacy of the antibiotic used in the treatment of the 3 year old client with pneumonia"
+      },
+      {
+        "id": "D",
+        "text": "Evaluating the effectiveness of the implementation of the Integrated Management of Childhood Illness"
+      }
+    ],
+    "correct_option": "E",
+    "rationale": "Epidemiology is used in the assessment of a community or evaluation of interventions in community health practice."
+  },
+  {
+    "id": 2081,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Which of the following is an epidemiologic function of the nurse during an epidemic?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conducting assessment of suspected cases to detect the communicable disease"
+      },
+      {
+        "id": "B",
+        "text": "Monitoring the condition of the cases affected by the communicable disease"
+      },
+      {
+        "id": "C",
+        "text": "Participating in the investigation to determine the source of the epidemic"
+      },
+      {
+        "id": "D",
+        "text": "Teaching the community on preventive measures against the disease"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "Epidemiology is the study of patterns of occurrence and distribution of disease in the community, as well as the factors that affect disease patterns. The purpose of an epidemiologic investigation is to identify the source of an epidemic, i.e., what brought about the epidemic."
+  },
+  {
+    "id": 2082,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The primary purpose of conducting an epidemiologic investigation is to",
+    "options": [
+      {
+        "id": "A",
+        "text": "Delineate the etiology of the epidemic"
+      },
+      {
+        "id": "B",
+        "text": "Encourage cooperation and support of the community"
+      },
+      {
+        "id": "C",
+        "text": "Identify groups who are at risk of contracting the disease"
+      },
+      {
+        "id": "D",
+        "text": "Identify geographical location of cases of the disease in the community"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Delineating the etiology of an epidemic is identifying its source."
+  },
+  {
+    "id": 2083,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Which is a characteristic of person-to-person propagated epidemics?",
+    "options": [
+      {
+        "id": "A",
+        "text": "There are more cases of the disease than expected."
+      },
+      {
+        "id": "B",
+        "text": "The disease must necessarily be transmitted through a vector."
+      },
+      {
+        "id": "C",
+        "text": "The spread of the disease can be attributed to a common vehicle."
+      },
+      {
+        "id": "D",
+        "text": "There is a gradual build up of cases before the epidemic becomes easily noticeable."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "A gradual or insidious onset of the epidemic is usually observable in person-to-person propagated epidemics."
+  },
+  {
+    "id": 2084,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "In the investigation of an epidemic, you compare the present frequency of the disease with the usual frequency at this time of the year in this community. This is done during which stage of the investigation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Establishing the epidemic"
+      },
+      {
+        "id": "B",
+        "text": "Testing the hypothesis"
+      },
+      {
+        "id": "C",
+        "text": "Formulation of the hypothesis"
+      },
+      {
+        "id": "D",
+        "text": "Appraisal of facts"
+      }
+    ],
+    "correct_option": "E",
+    "rationale": "Establishing the epidemic is determining whether there is an epidemic or not. This is done by comparing the present number of cases with the usual number of cases of the disease at the same time of the year, as well as establishing the relatedness of the cases of the disease."
+  },
+  {
+    "id": 2085,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The number of cases of Dengue fever usually increases towards the end of the rainy season. This pattern of occurrence of Dengue fever is best described as",
+    "options": [
+      {
+        "id": "A",
+        "text": "Epidemic occurrence"
+      },
+      {
+        "id": "B",
+        "text": "Cyclical variation"
+      },
+      {
+        "id": "C",
+        "text": "Sporadic occurrence"
+      },
+      {
+        "id": "D",
+        "text": "Secular variation"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "A cyclical variation is a periodic fluctuation in the number of cases of a disease in the community."
+  },
+  {
+    "id": 2086,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "In the year 1980, the World Health Organization declared the Philippines, together with some other countries in the Western Pacific Region, “free” of which disease?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonic plague"
+      },
+      {
+        "id": "B",
+        "text": "Poliomyelitis"
+      },
+      {
+        "id": "C",
+        "text": "Small pox"
+      },
+      {
+        "id": "D",
+        "text": "Anthrax"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "The last documented case of Small pox was in 1977 at Somalia."
+  },
+  {
+    "id": 2087,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "In the census of the Philippines in 1995, there were about 35,299,000 males and about 34,968,000 females. What is the sex ratio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "99.06:100"
+      },
+      {
+        "id": "B",
+        "text": "100.94:100"
+      },
+      {
+        "id": "C",
+        "text": "50.23%"
+      },
+      {
+        "id": "D",
+        "text": "49.76%"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Sex ratio is the number of males for every 100 females in the population."
+  },
+  {
+    "id": 2088,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Primary health care is a total approach to community development. Which of the following is an indicator of success in the use of the primary health care approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Health services are provided free of charge to individuals and families."
+      },
+      {
+        "id": "B",
+        "text": "Local officials are empowered as the major decision makers in matters of health."
+      },
+      {
+        "id": "C",
+        "text": "Health workers are able to provide care based on identified health needs of the people."
+      },
+      {
+        "id": "D",
+        "text": "Health programs are sustained according to the level of development of the community."
+      }
+    ],
+    "correct_option": "H",
+    "rationale": "Primary health care is essential health care that can be sustained in all stages of development of the community."
+  },
+  {
+    "id": 2089,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Sputum examination is the major screening tool for pulmonary tuberculosis. Clients would sometimes get false negative results in this exam. This means that the test is not perfect in terms of which characteristic of a diagnostic examination?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Effectiveness"
+      },
+      {
+        "id": "B",
+        "text": "Efficacy"
+      },
+      {
+        "id": "C",
+        "text": "Specificity"
+      },
+      {
+        "id": "D",
+        "text": "Sensitivity"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Sensitivity is the capacity of a diagnostic examination to detect cases of the disease. If a test is 100% sensitive, all the cases tested will have a positive result, i.e., there will be no false negative results."
+  },
+  {
+    "id": 2090,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Use of appropriate technology requires knowledge of indigenous technology. Which medicinal herb is given for fever, headache and cough?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sambong"
+      },
+      {
+        "id": "B",
+        "text": "Tsaang gubat"
+      },
+      {
+        "id": "C",
+        "text": "Akapulko"
+      },
+      {
+        "id": "D",
+        "text": "Lagundi"
+      }
+    ],
+    "correct_option": "L",
+    "rationale": "Sambong is used as a diuretic. Tsaang gubat is used to relieve diarrhea. Akapulko is used for its antifungal property."
+  },
+  {
+    "id": 2091,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "What is the legal basis for Traditional and Alternative Medicine Act?",
+    "options": [
+      {
+        "id": "A",
+        "text": "R.A. 8423"
+      },
+      {
+        "id": "B",
+        "text": "R.A. 4823"
+      },
+      {
+        "id": "C",
+        "text": "R.A. 2483"
+      },
+      {
+        "id": "D",
+        "text": "R.A. 3482"
+      }
+    ],
+    "correct_option": "R",
+    "rationale": ""
+  },
+  {
+    "id": 2092,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "In traditional Chinese medicine, the yielding, negative and feminine force is termed",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yin"
+      },
+      {
+        "id": "B",
+        "text": "Yang"
+      },
+      {
+        "id": "C",
+        "text": "Qi"
+      },
+      {
+        "id": "D",
+        "text": "Chai"
+      }
+    ],
+    "correct_option": "Y",
+    "rationale": "Yang is the male dominating, positive and masculine force."
+  },
+  {
+    "id": 2093,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "What is the legal basis for Primary Health Care approach in the Philippines?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alma Ata Declaration on PHC"
+      },
+      {
+        "id": "B",
+        "text": "Letter of Instruction No. 949"
+      },
+      {
+        "id": "C",
+        "text": "Presidential Decree No. 147"
+      },
+      {
+        "id": "D",
+        "text": "Presidential Decree 996"
+      }
+    ],
+    "correct_option": "L",
+    "rationale": "Letter of Instruction 949 was issued by then President Ferdinand Marcos, directing the formerly called Ministry of Health, now the Department of Health, to utilize Primary Health Care approach in planning and implementing health programs."
+  },
+  {
+    "id": 2094,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "Which of the following demonstrates intersectoral linkages?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two-way referral system"
+      },
+      {
+        "id": "B",
+        "text": "Team approach"
+      },
+      {
+        "id": "C",
+        "text": "Endorsement done by a midwife to another midwife"
+      },
+      {
+        "id": "D",
+        "text": "Cooperation between the PHN and public school teacher"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Intersectoral linkages refer to working relationships between the health sector and other sectors involved in community development."
+  },
+  {
+    "id": 2095,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 2",
+    "question_stem": "The municipality assigned to you has a population of about 20,000. Estimate the number of 1-4 year old children who will be given Retinol capsule 200,000 I.U. every 6 months.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1,500"
+      },
+      {
+        "id": "B",
+        "text": "1,800"
+      },
+      {
+        "id": "C",
+        "text": "2,000"
+      },
+      {
+        "id": "D",
+        "text": "2,300"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Based on the Philippine population composition, to estimate the number of 1-4 year old children, multiply total population by 11.5%."
+  },
+  {
+    "id": 2096,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Estimate the number of pregnant women who will be given tetanus toxoid during an immunization outreach activity in a barangay with a population of about 1,500.",
+    "options": [
+      {
+        "id": "A",
+        "text": "265"
+      },
+      {
+        "id": "B",
+        "text": "300"
+      },
+      {
+        "id": "C",
+        "text": "375"
+      },
+      {
+        "id": "D",
+        "text": "400"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "To estimate the number of pregnant women, multiply the total population by 3.5%."
+  },
+  {
+    "id": 2097,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "To describe the sex composition of the population, which demographic tool may be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sex ratio"
+      },
+      {
+        "id": "B",
+        "text": "Sex proportion"
+      },
+      {
+        "id": "C",
+        "text": "Population pyramid"
+      },
+      {
+        "id": "D",
+        "text": "Any of these may be used."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Sex ratio and sex proportion are used to determine the sex composition of a population. A population pyramid is used to present the composition of a population by age and sex."
+  },
+  {
+    "id": 2098,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Which of the following is a natality rate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crude birth rate"
+      },
+      {
+        "id": "B",
+        "text": "Neonatal mortality rate"
+      },
+      {
+        "id": "C",
+        "text": "Infant mortality rate"
+      },
+      {
+        "id": "D",
+        "text": "General fertility rate"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Natality means birth. A natality rate is a birth rate."
+  },
+  {
+    "id": 2099,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "You are computing the crude death rate of your municipality, with a total population of about 18,000, for last year. There were 94 deaths. Among those who died, 20 died because of diseases of the heart and 32 were aged 50 years or older. What is the crude death rate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4.2/1,000"
+      },
+      {
+        "id": "B",
+        "text": "5.2/1,000"
+      },
+      {
+        "id": "C",
+        "text": "6.3/1,000"
+      },
+      {
+        "id": "D",
+        "text": "7.3/1,000"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "To compute crude death rate divide total number of deaths (94) by total population (18,000) and multiply by 1,000."
+  },
+  {
+    "id": 2100,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Knowing that malnutrition is a frequent community health problem, you decided to conduct nutritional assessment. What population is particularly susceptible to protein energy malnutrition (PEM)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pregnant women and the elderly"
+      },
+      {
+        "id": "B",
+        "text": "Under-5 year old children"
+      },
+      {
+        "id": "C",
+        "text": "1-4 year old children"
+      },
+      {
+        "id": "D",
+        "text": "School age children"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Preschoolers are the most susceptible to PEM because they have generally been weaned. Also, this is the population who, unable to feed themselves, are often the victims of poor intrafamilial food distribution."
+  },
+  {
+    "id": 2101,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Which statistic can give the most accurate reflection of the health status of a community?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-4 year old age-specific mortality rate"
+      },
+      {
+        "id": "B",
+        "text": "Infant mortality rate"
+      },
+      {
+        "id": "C",
+        "text": "Swaroop’s index"
+      },
+      {
+        "id": "D",
+        "text": "Crude death rate"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Swaroop’s index is the proportion of deaths aged 50 years and above. The higher the Swaroop’s index of a population, the greater the proportion of the deaths who were able to reach the age of at least 50 years, i.e., more people grew old before they died."
+  },
+  {
+    "id": 2102,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "In the past year, Barangay A had an average population of 1655. 46 babies were born in that year, 2 of whom died less than 4 weeks after they were born. There were 4 recorded stillbirths. What is the neonatal mortality rate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "27.8/1,000"
+      },
+      {
+        "id": "B",
+        "text": "43.5/1,000"
+      },
+      {
+        "id": "C",
+        "text": "86.9/1,000"
+      },
+      {
+        "id": "D",
+        "text": "130.4/1,000"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "To compute for neonatal mortality rate, divide the number of babies who died before reaching the age of 28 days by the total number of live births, then multiply by 1,000."
+  },
+  {
+    "id": 2103,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Which statistic best reflects the nutritional status of a population?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-4 year old age-specific mortality rate"
+      },
+      {
+        "id": "B",
+        "text": "Proportionate mortality rate"
+      },
+      {
+        "id": "C",
+        "text": "Infant mortality rate"
+      },
+      {
+        "id": "D",
+        "text": "Swaroop’s index"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Since preschoolers are the most susceptible to the effects of malnutrition, a population with poor nutritional status will most likely have a high 1-4 year old age-specific mortality rate, also known as child mortality rate."
+  },
+  {
+    "id": 2104,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "What numerator is used in computing general fertility rate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimated midyear population"
+      },
+      {
+        "id": "B",
+        "text": "Number of registered live births"
+      },
+      {
+        "id": "C",
+        "text": "Number of pregnancies in the year"
+      },
+      {
+        "id": "D",
+        "text": "Number of females of reproductive age"
+      }
+    ],
+    "correct_option": "N",
+    "rationale": "To compute for general or total fertility rate, divide the number of registered live births by the number of females of reproductive age (15-45 years), then multiply by 1,000."
+  },
+  {
+    "id": 2105,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "You will gather data for nutritional assessment of a purok. You will gather information only from families with members who belong to the target population for PEM. What method of data gathering is best for this purpose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Census"
+      },
+      {
+        "id": "B",
+        "text": "Survey"
+      },
+      {
+        "id": "C",
+        "text": "Record review"
+      },
+      {
+        "id": "D",
+        "text": "Review of civil registry"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "A survey, also called sample survey, is data gathering about a sample of the population."
+  },
+  {
+    "id": 2106,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "In the conduct of a census, the method of population assignment based on the actual physical location of the people is termed",
+    "options": [
+      {
+        "id": "A",
+        "text": "De jure"
+      },
+      {
+        "id": "B",
+        "text": "De locus"
+      },
+      {
+        "id": "C",
+        "text": "De facto"
+      },
+      {
+        "id": "D",
+        "text": "De novo"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "The other method of population assignment, de jure, is based on the usual place of residence of the people."
+  },
+  {
+    "id": 2107,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "The Field Health Services and Information System (FHSIS) is the recording and reporting system in public health care in the Philippines. The Monthly Field Health Service Activity Report is a form used in which of the components of the FHSIS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tally report"
+      },
+      {
+        "id": "B",
+        "text": "Output report"
+      },
+      {
+        "id": "C",
+        "text": "Target/client list"
+      },
+      {
+        "id": "D",
+        "text": "Individual health record"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "A tally report is prepared monthly or quarterly by the RHU personnel and transmitted to the Provincial Health Office."
+  },
+  {
+    "id": 2108,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "To monitor clients registered in long-term regimens, such as the Multi-Drug Therapy, which component will be most useful?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tally report"
+      },
+      {
+        "id": "B",
+        "text": "Output report"
+      },
+      {
+        "id": "C",
+        "text": "Target/client list"
+      },
+      {
+        "id": "D",
+        "text": "Individual health record"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "The MDT Client List is a record of clients enrolled in MDT and other relevant data, such as dates when clients collected their monthly supply of drugs."
+  },
+  {
+    "id": 2109,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Civil registries are important sources of data. Which law requires registration of births within 30 days from the occurrence of the birth?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P.D. 651"
+      },
+      {
+        "id": "B",
+        "text": "Act 3573"
+      },
+      {
+        "id": "C",
+        "text": "R.A. 3753"
+      },
+      {
+        "id": "D",
+        "text": "R.A. 3375"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "P.D. 651 amended R.A. 3753, requiring the registry of births within 30 days from their occurrence."
+  },
+  {
+    "id": 2110,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Which of the following professionals can sign the birth certificate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Public health nurse"
+      },
+      {
+        "id": "B",
+        "text": "Rural health midwife"
+      },
+      {
+        "id": "C",
+        "text": "Municipal health officer"
+      },
+      {
+        "id": "D",
+        "text": "Any of these health professionals"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "D. R.A. 3753 states that any birth attendant may sign the certificate of live birth."
+  },
+  {
+    "id": 2111,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Which criterion in priority setting of health problems is used only in community health care?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Modifiability of the problem"
+      },
+      {
+        "id": "B",
+        "text": "Nature of the problem presented"
+      },
+      {
+        "id": "C",
+        "text": "Magnitude of the health problem"
+      },
+      {
+        "id": "D",
+        "text": "Preventive potential of the health problem"
+      }
+    ],
+    "correct_option": "M",
+    "rationale": "Magnitude of the problem refers to the percentage of the population affected by a health problem. The other choices are criteria considered in both family and community health care."
+  },
+  {
+    "id": 2112,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "The Sentrong Sigla Movement has been launched to improve health service delivery. Which of the following is/are true of this movement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "This is a project spearheaded by local government units."
+      },
+      {
+        "id": "B",
+        "text": "It is a basis for increasing funding from local government units."
+      },
+      {
+        "id": "C",
+        "text": "It encourages health centers to focus on disease prevention and control."
+      },
+      {
+        "id": "D",
+        "text": "Its main strategy is certification of health centers able to comply with standards."
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "Sentrong Sigla Movement is a joint project of the DOH and local government units. Its main strategy is certification of health centers that are able to comply with standards set by the DOH."
+  },
+  {
+    "id": 2113,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Which of the following women should be considered as special targets for family planning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Those who have two children or more"
+      },
+      {
+        "id": "B",
+        "text": "Those with medical conditions such as anemia"
+      },
+      {
+        "id": "C",
+        "text": "Those younger than 20 years and older than 35 years"
+      },
+      {
+        "id": "D",
+        "text": "Those who just had a delivery within the past 15 months"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "The ideal birth spacing is at least two years. 15 months plus 9 months of pregnancy = 2 years."
+  },
+  {
+    "id": 2114,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Freedom of choice is one of the policies of the Family Planning Program of the Philippines. Which of the following illustrates this principle?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Information dissemination about the need for family planning"
+      },
+      {
+        "id": "B",
+        "text": "Support of research and development in family planning methods"
+      },
+      {
+        "id": "C",
+        "text": "Adequate information for couples regarding the different methods"
+      },
+      {
+        "id": "D",
+        "text": "Encouragement of couples to take family planning as a joint responsibility"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "To enable the couple to choose freely among different methods of family planning, they must be given full information regarding the different methods that are available to them, considering the availability of quality services that can support their choice."
+  },
+  {
+    "id": 2115,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "A woman, 6 months pregnant, came to the center for consultation. Which of the following substances is contraindicated?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tetanus toxoid"
+      },
+      {
+        "id": "B",
+        "text": "Retinol 200,000 IU"
+      },
+      {
+        "id": "C",
+        "text": "Ferrous sulfate 200 mg"
+      },
+      {
+        "id": "D",
+        "text": "Potassium iodate 200 mg. capsule"
+      }
+    ],
+    "correct_option": "R",
+    "rationale": "Retinol 200,000 IU is a form of megadose Vitamin A. This may have a teratogenic effect."
+  },
+  {
+    "id": 2116,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "During prenatal consultation, a client asked you if she can have her delivery at home. After history taking and physical examination, you advised her against a home delivery. Which of the following findings disqualifies her for a home delivery?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Her OB score is G5P3."
+      },
+      {
+        "id": "B",
+        "text": "She has some palmar pallor."
+      },
+      {
+        "id": "C",
+        "text": "Her blood pressure is 130/80."
+      },
+      {
+        "id": "D",
+        "text": "Her baby is in cephalic presentation."
+      }
+    ],
+    "correct_option": "H",
+    "rationale": "Only women with less than 5 pregnancies are qualified for a home delivery. It is also advisable for a primigravida to have delivery at a childbirth facility."
+  },
+  {
+    "id": 2117,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Inadequate intake by the pregnant woman of which vitamin may cause neural tube defects?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Niacin"
+      },
+      {
+        "id": "B",
+        "text": "Riboflavin"
+      },
+      {
+        "id": "C",
+        "text": "Folic acid"
+      },
+      {
+        "id": "D",
+        "text": "Thiamine"
+      }
+    ],
+    "correct_option": "F",
+    "rationale": "It is estimated that the incidence of neural tube defects can be reduced drastically if pregnant women have an adequate intake of folic acid."
+  },
+  {
+    "id": 2118,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "You are in a client’s home to attend to a delivery. Which of the following will you do first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Set up the sterile area."
+      },
+      {
+        "id": "B",
+        "text": "Put on a clean gown or apron."
+      },
+      {
+        "id": "C",
+        "text": "Cleanse the client’s vulva with soap and water."
+      },
+      {
+        "id": "D",
+        "text": "Note the interval, duration and intensity of labor contractions."
+      }
+    ],
+    "correct_option": "N",
+    "rationale": "Assessment of the woman should be done first to determine whether she is having true labor and, if so, what stage of labor she is in."
+  },
+  {
+    "id": 2119,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "In preparing a primigravida for breastfeeding, which of the following will you do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tell her that lactation begins within a day after delivery."
+      },
+      {
+        "id": "B",
+        "text": "Teach her nipple stretching exercises if her nipples are everted."
+      },
+      {
+        "id": "C",
+        "text": "Instruct her to wash her nipples before and after each breastfeeding."
+      },
+      {
+        "id": "D",
+        "text": "Explain to her that putting the baby to breast will lessen blood loss after delivery."
+      }
+    ],
+    "correct_option": "E",
+    "rationale": "Suckling of the nipple stimulates the release of oxytocin by the posterior pituitary gland, which causes uterine contraction. Lactation begins 1 to 3 days after delivery. Nipple stretching exercises are done when the nipples are flat or inverted. Frequent washing dries up the nipples, making them prone to the formation of fissures."
+  },
+  {
+    "id": 2120,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "A primigravida is instructed to offer her breast to the baby for the first time within 30 minutes after delivery. What is the purpose of offering the breast this early?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To initiate the occurrence of milk letdown"
+      },
+      {
+        "id": "B",
+        "text": "To stimulate milk production by the mammary acini"
+      },
+      {
+        "id": "C",
+        "text": "To make sure that the baby is able to get the colostrum"
+      },
+      {
+        "id": "D",
+        "text": "To allow the woman to practice breastfeeding in the presence of the health worker"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "Suckling of the nipple stimulates prolactin reflex (the release of prolactin by the anterior pituitary gland), which initiates lactation."
+  },
+  {
+    "id": 2121,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "In a mothers’ class, you discuss proper breastfeeding technique. Which is of these is a sign that the baby has “latched on” to the breast properly?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The baby takes shallow, rapid sucks."
+      },
+      {
+        "id": "B",
+        "text": "The mother does not feel nipple pain."
+      },
+      {
+        "id": "C",
+        "text": "The baby’s mouth is only partly open."
+      },
+      {
+        "id": "D",
+        "text": "Only the mother’s nipple is inside the baby’s mouth."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "When the baby has properly latched on to the breast, he takes deep, slow sucks; his mouth is wide open; and much of the areola is inside his mouth. And, you’re right! The mother does not feel nipple pain."
+  },
+  {
+    "id": 2122,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "You explain to a breastfeeding mother that breast milk is sufficient for all of the baby’s nutrient needs only up to ____.",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 months"
+      },
+      {
+        "id": "B",
+        "text": "6 months"
+      },
+      {
+        "id": "C",
+        "text": "1 year"
+      },
+      {
+        "id": "D",
+        "text": "2 years"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "After 6 months, the baby’s nutrient needs, especially the baby’s iron requirement, can no longer be provided by mother’s milk alone."
+  },
+  {
+    "id": 2123,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "What is given to a woman within a month after the delivery of a baby?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Malunggay capsule"
+      },
+      {
+        "id": "B",
+        "text": "Ferrous sulfate 100 mg. OD"
+      },
+      {
+        "id": "C",
+        "text": "Retinol 200,000 I.U., 1 capsule"
+      },
+      {
+        "id": "D",
+        "text": "Potassium iodate 200 mg, 1 capsule"
+      }
+    ],
+    "correct_option": "R",
+    "rationale": "A capsule of Retinol 200,000 IU is given within 1 month after delivery. Potassium iodate is given during pregnancy; malunggay capsule is not routinely administered after delivery; and ferrous sulfate is taken for two months after delivery."
+  },
+  {
+    "id": 2124,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Which biological used in Expanded Program on Immunization (EPI) is stored in the freezer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPT"
+      },
+      {
+        "id": "B",
+        "text": "Tetanus toxoid"
+      },
+      {
+        "id": "C",
+        "text": "Measles vaccine"
+      },
+      {
+        "id": "D",
+        "text": "Hepatitis B vaccine"
+      }
+    ],
+    "correct_option": "M",
+    "rationale": "Among the biologicals used in the Expanded Program on Immunization, measles vaccine and OPV are highly sensitive to heat, requiring storage in the freezer."
+  },
+  {
+    "id": 2125,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 3",
+    "question_stem": "Unused BCG should be discarded how many hours after reconstitution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "At the end of the day"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "While the unused portion of other biologicals in EPI may be given until the end of the day, only BCG is discarded 4 hours after reconstitution. This is why BCG immunization is scheduled only in the morning."
+  },
+  {
+    "id": 2126,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "In immunizing school entrants with BCG, you are not obliged to secure parental consent. This is because of which legal document?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P.D. 996"
+      },
+      {
+        "id": "B",
+        "text": "R.A. 7846"
+      },
+      {
+        "id": "C",
+        "text": "Presidential Proclamation No. 6"
+      },
+      {
+        "id": "D",
+        "text": "Presidential Proclamation No. 46"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "Presidential Decree 996, enacted in 1976, made immunization in the EPI compulsory for children under 8 years of age. Hepatitis B vaccination was made compulsory for the same age group by R.A. 7846."
+  },
+  {
+    "id": 2127,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Which immunization produces a permanent scar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPT"
+      },
+      {
+        "id": "B",
+        "text": "BCG"
+      },
+      {
+        "id": "C",
+        "text": "Measles vaccination"
+      },
+      {
+        "id": "D",
+        "text": "Hepatitis B vaccination"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "BCG causes the formation of a superficial abscess, which begins 2 weeks after immunization. The abscess heals without treatment, with the formation of a permanent scar."
+  },
+  {
+    "id": 2128,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A 4-week old baby was brought to the health center for his first immunization. Which can be given to him?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPT1"
+      },
+      {
+        "id": "B",
+        "text": "OPV1"
+      },
+      {
+        "id": "C",
+        "text": "Infant BCG"
+      },
+      {
+        "id": "D",
+        "text": "Hepatitis B vaccine 1"
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "Infant BCG may be given at birth. All the other immunizations mentioned can be given at 6 weeks of age."
+  },
+  {
+    "id": 2129,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "You will not give DPT 2 if the mother says that the infant had",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seizures a day after DPT 1."
+      },
+      {
+        "id": "B",
+        "text": "Fever for 3 days after DPT 1."
+      },
+      {
+        "id": "C",
+        "text": "Abscess formation after DPT 1."
+      },
+      {
+        "id": "D",
+        "text": "Local tenderness for 3 days after DPT 1."
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Seizures within 3 days after administration of DPT is an indication of hypersensitivity to pertussis vaccine, a component of DPT. This is considered a specific contraindication to subsequent doses of DPT."
+  },
+  {
+    "id": 2130,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A 2-month old infant was brought to the health center for immunization. During assessment, the infant’s temperature registered at 38.1°C. Which is the best course of action that you will take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Go on with the infant’s immunizations."
+      },
+      {
+        "id": "B",
+        "text": "Give Paracetamol and wait for his fever to subside."
+      },
+      {
+        "id": "C",
+        "text": "Refer the infant to the physician for further assessment."
+      },
+      {
+        "id": "D",
+        "text": "Advise the infant’s mother to bring him back for immunization when he is well."
+      }
+    ],
+    "correct_option": "G",
+    "rationale": "In the EPI, fever up to 38.5°C is not a contraindication to immunization. Mild acute respiratory tract infection, simple diarrhea and malnutrition are not contraindications either."
+  },
+  {
+    "id": 2131,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A pregnant woman had just received her 4th dose of tetanus toxoid. Subsequently, her baby will have protection against tetanus for how long?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 year"
+      },
+      {
+        "id": "B",
+        "text": "3 years"
+      },
+      {
+        "id": "C",
+        "text": "10 years"
+      },
+      {
+        "id": "D",
+        "text": "Lifetime"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "The baby will have passive natural immunity by placental transfer of antibodies. The mother will have active artificial immunity lasting for about 10 years. 5 doses will give the mother lifetime protection."
+  },
+  {
+    "id": 2132,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A 4-month old infant was brought to the health center because of cough. Her respiratory rate is 42/minute. Using the Integrated Management of Child Illness (IMCI) guidelines of assessment, her breathing is considered",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fast"
+      },
+      {
+        "id": "B",
+        "text": "Slow"
+      },
+      {
+        "id": "C",
+        "text": "Normal"
+      },
+      {
+        "id": "D",
+        "text": "Insignificant"
+      }
+    ],
+    "correct_option": "N",
+    "rationale": "In IMCI, a respiratory rate of 50/minute or more is fast breathing for an infant aged 2 to 12 months."
+  },
+  {
+    "id": 2133,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Which of the following signs will indicate that a young child is suffering from severe pneumonia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dyspnea"
+      },
+      {
+        "id": "B",
+        "text": "Wheezing"
+      },
+      {
+        "id": "C",
+        "text": "Fast breathing"
+      },
+      {
+        "id": "D",
+        "text": "Chest indrawing"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "In IMCI, chest indrawing is used as the positive sign of dyspnea, indicating severe pneumonia."
+  },
+  {
+    "id": 2134,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Using IMCI guidelines, you classify a child as having severe pneumonia. What is the best management for the child?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescribe an antibiotic."
+      },
+      {
+        "id": "B",
+        "text": "Refer him urgently to the hospital."
+      },
+      {
+        "id": "C",
+        "text": "Instruct the mother to increase fluid intake."
+      },
+      {
+        "id": "D",
+        "text": "Instruct the mother to continue breastfeeding."
+      }
+    ],
+    "correct_option": "R",
+    "rationale": "Severe pneumonia requires urgent referral to a hospital. Answers A, C and D are done for a client classified as having pneumonia."
+  },
+  {
+    "id": 2135,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A 5-month old infant was brought by his mother to the health center because of diarrhea occurring 4 to 5 times a day. His skin goes back slowly after a skin pinch and his eyes are sunken. Using the IMCI guidelines, you will classify this infant in which category?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No signs of dehydration"
+      },
+      {
+        "id": "B",
+        "text": "Some dehydration"
+      },
+      {
+        "id": "C",
+        "text": "Severe dehydration"
+      },
+      {
+        "id": "D",
+        "text": "The data is insufficient."
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Using the assessment guidelines of IMCI, a child (2 months to 5 years old) with diarrhea is classified as having SOME DEHYDRATION if he shows 2 or more of the following signs: restless or irritable, sunken eyes, the skin goes back slow after a skin pinch."
+  },
+  {
+    "id": 2136,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Based on assessment, you classified a 3-month old infant with the chief complaint of diarrhea in the category of SOME DEHYDRATION. Based on IMCI management guidelines, which of the following will you do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bring the infant to the nearest facility where IV fluids can be given."
+      },
+      {
+        "id": "B",
+        "text": "Supervise the mother in giving 200 to 400 ml. of Oresol in 4 hours."
+      },
+      {
+        "id": "C",
+        "text": "Give the infant’s mother instructions on home management."
+      },
+      {
+        "id": "D",
+        "text": "Keep the infant in your health center for close observation."
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "In the IMCI management guidelines, SOME DEHYDRATION is treated with the administration of Oresol within a period of 4 hours. The amount of Oresol is best computed on the basis of the child’s weight (75 ml/kg body weight). If the weight is unknown, the amount of Oresol is based on the child’s age."
+  },
+  {
+    "id": 2137,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A mother is using Oresol in the management of diarrhea of her 3-year old child. She asked you what to do if her child vomits. You will tell her to",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bring the child to the nearest hospital for further assessment."
+      },
+      {
+        "id": "B",
+        "text": "Bring the child to the health center for intravenous fluid therapy."
+      },
+      {
+        "id": "C",
+        "text": "Bring the child to the health center for assessment by the physician."
+      },
+      {
+        "id": "D",
+        "text": "Let the child rest for 10 minutes then continue giving Oresol more slowly."
+      }
+    ],
+    "correct_option": "L",
+    "rationale": "If the child vomits persistently, that is, he vomits everything that he takes in, he has to be referred urgently to a hospital. Otherwise, vomiting is managed by letting the child rest for 10 minutes and then continuing with Oresol administration. Teach the mother to give Oresol more slowly."
+  },
+  {
+    "id": 2138,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A 1 ½ year old child was classified as having 3rd degree protein energy malnutrition, kwashiorkor. Which of the following signs will be most apparent in this child?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Voracious appetite"
+      },
+      {
+        "id": "B",
+        "text": "Wasting"
+      },
+      {
+        "id": "C",
+        "text": "Apathy"
+      },
+      {
+        "id": "D",
+        "text": "Edema"
+      }
+    ],
+    "correct_option": "E",
+    "rationale": "Edema, a major sign of kwashiorkor, is caused by decreased colloidal osmotic pressure of the blood brought about by hypoalbuminemia. Decreased blood albumin level is due a protein-deficient diet."
+  },
+  {
+    "id": 2139,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Assessment of a 2-year old child revealed “baggy pants”. Using the IMCI guidelines, how will you manage this child?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Refer the child urgently to a hospital for confinement."
+      },
+      {
+        "id": "B",
+        "text": "Coordinate with the social worker to enroll the child in a feeding program."
+      },
+      {
+        "id": "C",
+        "text": "Make a teaching plan for the mother, focusing on menu planning for her child."
+      },
+      {
+        "id": "D",
+        "text": "Assess and treat the child for health problems like infections and intestinal parasitism."
+      }
+    ],
+    "correct_option": "R",
+    "rationale": "“Baggy pants” is a sign of severe marasmus. The best management is urgent referral to a hospital."
+  },
+  {
+    "id": 2140,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "During the physical examination of a young child, what is the earliest sign of xerophthalmia that you may observe?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Keratomalacia"
+      },
+      {
+        "id": "B",
+        "text": "Corneal opacity"
+      },
+      {
+        "id": "C",
+        "text": "Night blindness"
+      },
+      {
+        "id": "D",
+        "text": "Conjunctival xerosis"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "The earliest sign of Vitamin A deficiency (xerophthalmia) is night blindness. However, this is a functional change, which is not observable during physical examination.The earliest visible lesion is conjunctival xerosis or dullness of the conjunctiva due to inadequate tear production."
+  },
+  {
+    "id": 2141,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "To prevent xerophthalmia, young children are given Retinol capsule every 6 months. What is the dose given to preschoolers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10,000 IU"
+      },
+      {
+        "id": "B",
+        "text": "20,000 IU"
+      },
+      {
+        "id": "C",
+        "text": "100,000 IU"
+      },
+      {
+        "id": "D",
+        "text": "200,000 IU"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Preschoolers are given Retinol 200,000 IU every 6 months. 100,000 IU is given once to infants aged 6 to 12 months. The dose for pregnant women is 10,000 IU."
+  },
+  {
+    "id": 2142,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "The major sign of iron deficiency anemia is pallor. What part is best examined for pallor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palms"
+      },
+      {
+        "id": "B",
+        "text": "Nailbeds"
+      },
+      {
+        "id": "C",
+        "text": "Around the lips"
+      },
+      {
+        "id": "D",
+        "text": "Lower conjunctival sac"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "The anatomic characteristics of the palms allow a reliable and convenient basis for examination for pallor."
+  },
+  {
+    "id": 2143,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Food fortification is one of the strategies to prevent micronutrient deficiency conditions. R.A. 8976 mandates fortification of certain food items. Which of the following is among these food items?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sugar"
+      },
+      {
+        "id": "B",
+        "text": "Bread"
+      },
+      {
+        "id": "C",
+        "text": "Margarine"
+      },
+      {
+        "id": "D",
+        "text": "Filled milk"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "R.A. 8976 mandates fortification of rice, wheat flour, sugar and cooking oil with Vitamin A, iron and/or iodine."
+  },
+  {
+    "id": 2144,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "What is the best course of action when there is a measles epidemic in a nearby municipality?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Give measles vaccine to babies aged 6 to 8 months."
+      },
+      {
+        "id": "B",
+        "text": "Give babies aged 6 to 11 months one dose of 100,000 I.U. of Retinol"
+      },
+      {
+        "id": "C",
+        "text": "Instruct mothers to keep their babies at home to prevent disease transmission."
+      },
+      {
+        "id": "D",
+        "text": "Instruct mothers to feed their babies adequately to enhance their babies’ resistance."
+      }
+    ],
+    "correct_option": "G",
+    "rationale": "Ordinarily, measles vaccine is given at 9 months of age. During an impending epidemic, however, one dose may be given to babies aged 6 to 8 months. The mother is instructed that the baby needs another dose when the baby is 9 months old."
+  },
+  {
+    "id": 2145,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A mother brought her daughter, 4 years old, to the RHU because of cough and colds. Following the IMCI assessment guide, which of the following is a danger sign that indicates the need for urgent referral to a hospital?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inability to drink"
+      },
+      {
+        "id": "B",
+        "text": "High grade fever"
+      },
+      {
+        "id": "C",
+        "text": "Signs of severe dehydration"
+      },
+      {
+        "id": "D",
+        "text": "Cough for more than 30 days"
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "A sick child aged 2 months to 5 years must be referred urgently to a hospital if he/she has one or more of the following signs: not able to feed or drink, vomits everything, convulsions, abnormally sleepy or difficult to awaken."
+  },
+  {
+    "id": 2146,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Management of a child with measles includes the administration of which of the following?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gentian violet on mouth lesions"
+      },
+      {
+        "id": "B",
+        "text": "Antibiotics to prevent pneumonia"
+      },
+      {
+        "id": "C",
+        "text": "Tetracycline eye ointment for corneal opacity"
+      },
+      {
+        "id": "D",
+        "text": "Retinol capsule regardless of when the last dose was given"
+      }
+    ],
+    "correct_option": "R",
+    "rationale": "An infant 6 to 12 months classified as a case of measles is given Retinol 100,000 IU; a child is given 200,000 IU regardless of when the last dose was given."
+  },
+  {
+    "id": 2147,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "A mother brought her 10 month old infant for consultation because of fever, which started 4 days prior to consultation. To determine malaria risk, what will you do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Do a tourniquet test."
+      },
+      {
+        "id": "B",
+        "text": "Ask where the family resides."
+      },
+      {
+        "id": "C",
+        "text": "Get a specimen for blood smear."
+      },
+      {
+        "id": "D",
+        "text": "Ask if the fever is present everyday."
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Bleeding malaria is endemic, the first question to determine malaria risk is where the client’s family resides. If the area of residence is not a known endemic area, ask if the child had traveled within the past 6 months, where he/she was brought and whether he/she stayed overnight in that area."
+  },
+  {
+    "id": 2148,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "The following are strategies implemented by the Department of Health to prevent mosquito-borne diseases. Which of these is most effective in the control of Dengue fever?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stream seeding with larva-eating fish"
+      },
+      {
+        "id": "B",
+        "text": "Destroying breeding places of mosquitoes"
+      },
+      {
+        "id": "C",
+        "text": "Chemoprophylaxis of non-immune persons going to endemic areas"
+      },
+      {
+        "id": "D",
+        "text": "Teaching people in endemic areas to use chemically treated mosquito nets"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Aedes aegypti, the vector of Dengue fever, breeds in stagnant, clear water. Its feeding time is usually during the daytime. It has a cyclical pattern of occurrence, unlike malaria which is endemic in certain parts of the country."
+  },
+  {
+    "id": 2149,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Secondary prevention for malaria includes",
+    "options": [
+      {
+        "id": "A",
+        "text": "Planting of neem or eucalyptus trees"
+      },
+      {
+        "id": "B",
+        "text": "Residual spraying of insecticides at night"
+      },
+      {
+        "id": "C",
+        "text": "Determining whether a place is endemic or not"
+      },
+      {
+        "id": "D",
+        "text": "Growing larva-eating fish in mosquito breeding places"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "This is diagnostic and therefore secondary level prevention. The other choices are for primary prevention."
+  },
+  {
+    "id": 2150,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Scotch tape swab is done to check for which intestinal parasite?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ascaris"
+      },
+      {
+        "id": "B",
+        "text": "Pinworm"
+      },
+      {
+        "id": "C",
+        "text": "Hookworm"
+      },
+      {
+        "id": "D",
+        "text": "Schistosoma"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "Pinworm ova are deposited around the anal orifice."
+  },
+  {
+    "id": 2151,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Which of the following signs indicates the need for sputum examination for AFB?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hematemesis"
+      },
+      {
+        "id": "B",
+        "text": "Fever for 1 week"
+      },
+      {
+        "id": "C",
+        "text": "Cough for 3 weeks"
+      },
+      {
+        "id": "D",
+        "text": "Chest pain for 1 week"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "A client is considered a PTB suspect when he has cough for 2 weeks or more, plus one or more of the following signs: fever for 1 month or more; chest pain lasting for 2 weeks or more not attributed to other conditions; progressive, unexplained weight loss; night sweats; and hemoptysis."
+  },
+  {
+    "id": 2152,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Which clients are considered targets for DOTS Category I?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sputum negative cavitary cases"
+      },
+      {
+        "id": "B",
+        "text": "Clients returning after a default"
+      },
+      {
+        "id": "C",
+        "text": "Relapses and failures of previous PTB treatment regimens"
+      },
+      {
+        "id": "D",
+        "text": "Clients diagnosed for the first time through a positive sputum exam"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Category I is for new clients diagnosed by sputum examination and clients diagnosed to have a serious form of extrapulmonary tuberculosis, such as TB osteomyelitis."
+  },
+  {
+    "id": 2153,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "To improve compliance to treatment, what innovation is being implemented in DOTS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Having the health worker follow up the client at home"
+      },
+      {
+        "id": "B",
+        "text": "Having the health worker or a responsible family member monitor drug intake"
+      },
+      {
+        "id": "C",
+        "text": "Having the patient come to the health center every month to get his medications"
+      },
+      {
+        "id": "D",
+        "text": "Having a target list to check on whether the patient has collected his monthly supply of drugs"
+      }
+    ],
+    "correct_option": "H",
+    "rationale": "Directly Observed Treatment Short Course is so-called because a treatment partner, preferably a health worker accessible to the client, monitors the client’s compliance to the treatment."
+  },
+  {
+    "id": 2154,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Diagnosis of leprosy is highly dependent on recognition of symptoms. Which of the following is an early sign of leprosy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Macular lesions"
+      },
+      {
+        "id": "B",
+        "text": "Inability to close eyelids"
+      },
+      {
+        "id": "C",
+        "text": "Thickened painful nerves"
+      },
+      {
+        "id": "D",
+        "text": "Sinking of the nosebridge"
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "The lesion of leprosy is not macular. It is characterized by a change in skin color (either reddish or whitish) and loss of sensation, sweating and hair growth over the lesion. Inability to close the eyelids (lagophthalmos) and sinking of the nosebridge are late symptoms."
+  },
+  {
+    "id": 2155,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 4",
+    "question_stem": "Which of the following clients should be classified as a case of multibacillary leprosy?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 skin lesions, negative slit skin smear"
+      },
+      {
+        "id": "B",
+        "text": "3 skin lesions, positive slit skin smear"
+      },
+      {
+        "id": "C",
+        "text": "5 skin lesions, negative slit skin smear"
+      },
+      {
+        "id": "D",
+        "text": "5 skin lesions, positive slit skin smear"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "A multibacillary leprosy case is one who has a positive slit skin smear and at least 5 skin lesions."
+  },
+  {
+    "id": 2156,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "In the Philippines, which condition is the most frequent cause of death associated with schistosomiasis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Liver cancer"
+      },
+      {
+        "id": "B",
+        "text": "Liver cirrhosis"
+      },
+      {
+        "id": "C",
+        "text": "Bladder cancer"
+      },
+      {
+        "id": "D",
+        "text": "Intestinal perforation"
+      }
+    ],
+    "correct_option": "L",
+    "rationale": "The etiologic agent of schistosomiasis in the Philippines is Schistosoma japonicum, which affects the small intestine and the liver. Liver damage is a consequence of fibrotic reactions to schistosoma eggs in the liver."
+  },
+  {
+    "id": 2157,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "What is the most effective way of controlling schistosomiasis in an endemic area?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use of molluscicides"
+      },
+      {
+        "id": "B",
+        "text": "Building of foot bridges"
+      },
+      {
+        "id": "C",
+        "text": "Proper use of sanitary toilets"
+      },
+      {
+        "id": "D",
+        "text": "Use of protective footwear, such as rubber boots"
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "The ova of the parasite get out of the human body together with feces. Cutting the cycle at this stage is the most effective way of preventing the spread of the disease to susceptible hosts."
+  },
+  {
+    "id": 2158,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "When residents obtain water from an artesian well in the neighborhood, the level of this approved type of water facility is",
+    "options": [
+      {
+        "id": "A",
+        "text": "I"
+      },
+      {
+        "id": "B",
+        "text": "II"
+      },
+      {
+        "id": "C",
+        "text": "III"
+      },
+      {
+        "id": "D",
+        "text": "IV"
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "A communal faucet or water standpost is classified as Level II."
+  },
+  {
+    "id": 2159,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "For prevention of hepatitis A, you decided to conduct health education activities. Which of the following is IRRELEVANT?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use of sterile syringes and needles"
+      },
+      {
+        "id": "B",
+        "text": "Safe food preparation and food handling by vendors"
+      },
+      {
+        "id": "C",
+        "text": "Proper disposal of human excreta and personal hygiene"
+      },
+      {
+        "id": "D",
+        "text": "Immediate reporting of water pipe leaks and illegal water connections"
+      }
+    ],
+    "correct_option": "U",
+    "rationale": "Hepatitis A is transmitted through the fecal oral route. Hepatitis B is transmitted through infected body secretions like blood and semen."
+  },
+  {
+    "id": 2160,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Which biological used in Expanded Program on Immunization (EPI) should NOT be stored in the freezer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPT"
+      },
+      {
+        "id": "B",
+        "text": "Oral polio vaccine"
+      },
+      {
+        "id": "C",
+        "text": "Measles vaccine"
+      },
+      {
+        "id": "D",
+        "text": "MMR"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "DPT is sensitive to freezing. The appropriate storage temperature of DPT is 2 to 8° C only. OPV and measles vaccine are highly sensitive to heat and require freezing. MMR is not an immunization in the Expanded Program on Immunization."
+  },
+  {
+    "id": 2161,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "You will conduct outreach immunization in a barangay with a population of about 1500. Estimate the number of infants in the barangay.",
+    "options": [
+      {
+        "id": "A",
+        "text": "45"
+      },
+      {
+        "id": "B",
+        "text": "50"
+      },
+      {
+        "id": "C",
+        "text": "55"
+      },
+      {
+        "id": "D",
+        "text": "60"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "To estimate the number of infants, multiply total population by 3%."
+  },
+  {
+    "id": 2162,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "In Integrated Management of Childhood Illness, severe conditions generally require urgent referral to a hospital. Which of the following severe conditions DOES NOT always require urgent referral to a hospital?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mastoiditis"
+      },
+      {
+        "id": "B",
+        "text": "Severe dehydration"
+      },
+      {
+        "id": "C",
+        "text": "Severe pneumonia"
+      },
+      {
+        "id": "D",
+        "text": "Severe febrile disease"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "The order of priority in the management of severe dehydration is as follows: intravenous fluid therapy, referral to a facility where IV fluids can be initiated within 30 minutes, Oresol/nasogastric tube, Oresol/orem. When the foregoing measures are not possible or effective, tehn urgent referral to the hospital is done."
+  },
+  {
+    "id": 2163,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "A client was diagnosed as having Dengue fever. You will say that there is slow capillary refill when the color of the nailbed that you pressed does not return within how many seconds?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ],
+    "correct_option": "A",
+    "rationale": "Adequate blood supply to the area allows the return of the color of the nailbed within 3 seconds."
+  },
+  {
+    "id": 2164,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "A 3-year old child was brought by his mother to the health center because of fever of 4-day duration. The child had a positive tourniquet test result. In the absence of other signs, which is the most appropriate measure that the PHN may carry out to prevent Dengue shock syndrome?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insert an NGT and give fluids per NGT."
+      },
+      {
+        "id": "B",
+        "text": "Instruct the mother to give the child Oresol."
+      },
+      {
+        "id": "C",
+        "text": "Start the patient on intravenous fluids STAT."
+      },
+      {
+        "id": "D",
+        "text": "Refer the client to the physician for appropriate management."
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "Since the child does not manifest any other danger sign, maintenance of fluid balance and replacement of fluid loss may be done by giving the client Oresol."
+  },
+  {
+    "id": 2165,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "The pathognomonic sign of measles is Koplik’s spot. You may see Koplik’s spot by inspecting the _____.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nasal mucosa"
+      },
+      {
+        "id": "B",
+        "text": "Buccal mucosa"
+      },
+      {
+        "id": "C",
+        "text": "Skin on the abdomen"
+      },
+      {
+        "id": "D",
+        "text": "Skin on the antecubital surface"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Koplik’s spot may be seen on the mucosa of the mouth or the throat."
+  },
+  {
+    "id": 2166,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Among the following diseases, which is airborne?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Viral conjunctivitis"
+      },
+      {
+        "id": "B",
+        "text": "Acute poliomyelitis"
+      },
+      {
+        "id": "C",
+        "text": "Diphtheria"
+      },
+      {
+        "id": "D",
+        "text": "Measles"
+      }
+    ],
+    "correct_option": "M",
+    "rationale": "Viral conjunctivitis is transmitted by direct or indirect contact with discharges from infected eyes. Acute poliomyelitis is spread through the fecal-oral route and contact with throat secretions, whereas diphtheria is through direct and indirect contact with respiratory secretions."
+  },
+  {
+    "id": 2167,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Among children aged 2 months to 3 years, the most prevalent form of meningitis is caused by which microorganism?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemophilus influenzae"
+      },
+      {
+        "id": "B",
+        "text": "Morbillivirus"
+      },
+      {
+        "id": "C",
+        "text": "Steptococcus pneumoniae"
+      },
+      {
+        "id": "D",
+        "text": "Neisseria meningitidis"
+      }
+    ],
+    "correct_option": "H",
+    "rationale": "Hemophilus meningitis is unusual over the age of 5 years. In developing countries, the peak incidence is in children less than 6 months of age. Morbillivirus is the etiology of measles. Streptococcus pneumoniae and Neisseria meningitidis may cause meningitis, but age distribution is not specific in young children."
+  },
+  {
+    "id": 2168,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Human beings are the major reservoir of malaria. Which of the following strategies in malaria control is based on this fact?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stream seeding"
+      },
+      {
+        "id": "B",
+        "text": "Stream clearing"
+      },
+      {
+        "id": "C",
+        "text": "Destruction of breeding places"
+      },
+      {
+        "id": "D",
+        "text": "Zooprophylaxis"
+      }
+    ],
+    "correct_option": "Z",
+    "rationale": "Zooprophylaxis is done by putting animals like cattle or dogs close to windows or doorways just before nightfall. The Anopheles mosquito takes his blood meal from the animal and goes back to its breeding place, thereby preventing infection of humans."
+  },
+  {
+    "id": 2169,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "The use of larvivorous fish in malaria control is the basis for which strategy of malaria control?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stream seeding"
+      },
+      {
+        "id": "B",
+        "text": "Stream clearing"
+      },
+      {
+        "id": "C",
+        "text": "Destruction of breeding places"
+      },
+      {
+        "id": "D",
+        "text": "Zooprophylaxis"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "Stream seeding is done by putting tilapia fry in streams or other bodies of water identified as breeding places of the Anopheles mosquito"
+  },
+  {
+    "id": 2170,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Mosquito-borne diseases are prevented mostly with the use of mosquito control measures. Which of the following is NOT appropriate for malaria control?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use of chemically treated mosquito nets"
+      },
+      {
+        "id": "B",
+        "text": "Seeding of breeding places with larva-eating fish"
+      },
+      {
+        "id": "C",
+        "text": "Destruction of breeding places of the mosquito vector"
+      },
+      {
+        "id": "D",
+        "text": "Use of mosquito-repelling soaps, such as those with basil or citronella"
+      }
+    ],
+    "correct_option": "D",
+    "rationale": "Anopheles mosquitoes breed in slow-moving, clear water, such as mountain streams."
+  },
+  {
+    "id": 2171,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "A 4-year old client was brought to the health center with the chief complaint of severe diarrhea and the passage of “rice water” stools. The client is most probably suffering from which condition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giardiasis"
+      },
+      {
+        "id": "B",
+        "text": "Cholera"
+      },
+      {
+        "id": "C",
+        "text": "Amebiasis"
+      },
+      {
+        "id": "D",
+        "text": "Dysentery"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Passage of profuse watery stools is the major symptom of cholera. Both amebic and bacillary dysentery are characterized by the presence of blood and/or mucus in the stools. Giardiasis is characterized by fat malabsorption and, therefore, steatorrhea."
+  },
+  {
+    "id": 2172,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "In the Philippines, which specie of schistosoma is endemic in certain regions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S. mansoni"
+      },
+      {
+        "id": "B",
+        "text": "S. japonicum"
+      },
+      {
+        "id": "C",
+        "text": "S. malayensis"
+      },
+      {
+        "id": "D",
+        "text": "S. haematobium"
+      }
+    ],
+    "correct_option": "S",
+    "rationale": "S. mansoni is found mostly in Africa and South America; S. haematobium in Africa and the Middle East; and S. malayensis only in peninsular Malaysia."
+  },
+  {
+    "id": 2173,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "A 32-year old client came for consultation at the health center with the chief complaint of fever for a week. Accompanying symptoms were muscle pains and body malaise. A week after the start of fever, the client noted yellowish discoloration of his sclera. History showed that he waded in flood waters about 2 weeks before the onset of symptoms. Based on his history, which disease condition will you suspect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatitis A"
+      },
+      {
+        "id": "B",
+        "text": "Hepatitis B"
+      },
+      {
+        "id": "C",
+        "text": "Tetanus"
+      },
+      {
+        "id": "D",
+        "text": "Leptospirosis"
+      }
+    ],
+    "correct_option": "L",
+    "rationale": "Leptospirosis is transmitted through contact with the skin or mucous membrane with water or moist soil contaminated with urine of infected animals, like rats."
+  },
+  {
+    "id": 2174,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "MWSS provides water to Manila and other cities in Metro Manila. This is an example of which level of water facility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "I"
+      },
+      {
+        "id": "B",
+        "text": "II"
+      },
+      {
+        "id": "C",
+        "text": "III"
+      },
+      {
+        "id": "D",
+        "text": "IV"
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "Waterworks systems, such as MWSS, are classified as level III."
+  },
+  {
+    "id": 2175,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "You are the PHN in the city health center. A client underwent screening for AIDS using ELISA. His result was positive. What is the best course of action that you may take?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Get a thorough history of the client, focusing on the practice of high risk behaviors."
+      },
+      {
+        "id": "B",
+        "text": "Ask the client to be accompanied by a significant person before revealing the result."
+      },
+      {
+        "id": "C",
+        "text": "Refer the client to the physician since he is the best person to reveal the result to the client."
+      },
+      {
+        "id": "D",
+        "text": "Refer the client for a supplementary test, such as Western blot, since the ELISA result may be false."
+      }
+    ],
+    "correct_option": "R",
+    "rationale": "A client having a reactive ELISA result must undergo a more specific test, such as Western blot. A negative supplementary test result means that the ELISA result was false and that, most probably, the client is not infected."
+  },
+  {
+    "id": 2176,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Which is the BEST control measure for AIDS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Being faithful to a single sexual partner"
+      },
+      {
+        "id": "B",
+        "text": "Using a condom during each sexual contact"
+      },
+      {
+        "id": "C",
+        "text": "Avoiding sexual contact with commercial sex workers"
+      },
+      {
+        "id": "D",
+        "text": "Making sure that one’s sexual partner does not have signs of AIDS"
+      }
+    ],
+    "correct_option": "B",
+    "rationale": "Sexual fidelity rules out the possibility of getting the disease by sexual contact with another infected person. Transmission occurs mostly through sexual intercourse and exposure to blood or tissues."
+  },
+  {
+    "id": 2177,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "The most frequent causes of death among clients with AIDS are opportunistic diseases. Which of the following opportunistic infections is characterized by tonsillopharyngitis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Respiratory candidiasis"
+      },
+      {
+        "id": "B",
+        "text": "Infectious mononucleosis"
+      },
+      {
+        "id": "C",
+        "text": "Cytomegalovirus disease"
+      },
+      {
+        "id": "D",
+        "text": "Pneumocystis carinii pneumonia"
+      }
+    ],
+    "correct_option": "I",
+    "rationale": "Cytomegalovirus disease is an acute viral disease characterized by fever, sore throat and lymphadenopathy."
+  },
+  {
+    "id": 2178,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "To determine possible sources of sexually transmitted infections, which is the BEST method that may be undertaken by the public health nurse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contact tracing"
+      },
+      {
+        "id": "B",
+        "text": "Community survey"
+      },
+      {
+        "id": "C",
+        "text": "Mass screening tests"
+      },
+      {
+        "id": "D",
+        "text": "Interview of suspects"
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Contact tracing is the most practical and reliable method of finding possible sources of person-to-person transmitted infections, such as sexually transmitted diseases."
+  },
+  {
+    "id": 2179,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Antiretroviral agents, such as AZT, are used in the management of AIDS. Which of the following is NOT an action expected of these drugs.",
+    "options": [
+      {
+        "id": "A",
+        "text": "They prolong the life of the client with AIDS."
+      },
+      {
+        "id": "B",
+        "text": "They reduce the risk of opportunistic infections"
+      },
+      {
+        "id": "C",
+        "text": "They shorten the period of communicability of the disease."
+      },
+      {
+        "id": "D",
+        "text": "They are able to bring about a cure of the disease condition."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "There is no known treatment for AIDS. Antiretroviral agents reduce the risk of opportunistic infections and prolong life, but does not cure the underlying immunodeficiency."
+  },
+  {
+    "id": 2180,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "A barangay had an outbreak of German measles. To prevent congenital rubella, what is the BEST advice that you can give to women in the first trimester of pregnancy in the barangay?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Advice them on the signs of German measles."
+      },
+      {
+        "id": "B",
+        "text": "Avoid crowded places, such as markets and moviehouses."
+      },
+      {
+        "id": "C",
+        "text": "Consult at the health center where rubella vaccine may be given."
+      },
+      {
+        "id": "D",
+        "text": "Consult a physician who may give them rubella immunoglobulin."
+      }
+    ],
+    "correct_option": "C",
+    "rationale": "Rubella vaccine is made up of attenuated German measles viruses. This is contraindicated in pregnancy. Immune globulin, a specific prophylactic against German measles, may be given to pregnant women."
+  },
+  {
+    "id": 2181,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "You were invited to be the resource person in a training class for food handlers. Which of the following would you emphasize regarding prevention of staphylococcal food poisoning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "All cooking and eating utensils must be thoroughly washed."
+      },
+      {
+        "id": "B",
+        "text": "Food must be cooked properly to destroy staphylococcal microorganisms."
+      },
+      {
+        "id": "C",
+        "text": "Food handlers and food servers must have a negative stool examination result."
+      },
+      {
+        "id": "D",
+        "text": "Proper handwashing during food preparation is the best way of preventing the condition."
+      }
+    ],
+    "correct_option": "P",
+    "rationale": "Symptoms of this food poisoning are due to staphylococcal enterotoxin, not the microorganisms themselves. Contamination is by food handling by persons with staphylococcal skin or eye infections."
+  },
+  {
+    "id": 2182,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "In a mothers’ class, you discussed childhood diseases such as chicken pox. Which of the following statements about chicken pox is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The older one gets, the more susceptible he becomes to the complications of chicken pox."
+      },
+      {
+        "id": "B",
+        "text": "A single attack of chicken pox will prevent future episodes, including conditions such as shingles."
+      },
+      {
+        "id": "C",
+        "text": "To prevent an outbreak in the community, quarantine may be imposed by health authorities."
+      },
+      {
+        "id": "D",
+        "text": "Chicken pox vaccine is best given when there is an impending outbreak in the community."
+      }
+    ],
+    "correct_option": "T",
+    "rationale": "Chicken pox is usually more severe in adults than in children. Complications, such as pneumonia, are higher in incidence in adults."
+  },
+  {
+    "id": 2183,
+    "course": "Nursing",
+    "topic": "Community Health Nursing - PNLE Community Health Nursing Exam 5",
+    "question_stem": "Complications to infectious parotitis (mumps) may be serious in which type of clients?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pregnant women"
+      },
+      {
+        "id": "B",
+        "text": "Elderly clients"
+      },
+      {
+        "id": "C",
+        "text": "Young adult males"
+      },
+      {
+        "id": "D",
+        "text": "Young infants"
+      }
+    ],
+    "correct_option": "Y",
+    "rationale": "Epididymitis and orchitis are possible complications of mumps. In post-adolescent males, bilateral inflammation of the testes and epididymis may cause sterility."
   }
 ]
