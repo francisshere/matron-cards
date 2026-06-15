@@ -346,7 +346,7 @@ Answers and Rationale:
   },
   {
     "item_number": 17,
-    "answer": "Say "mama" or "dada" for the first time at 18 months of age.",
+    "answer": "Say \"mama\" or \"dada\" for the first time at 18 months of age.",
     "rationale": "A child should say “mama” or “dada” during 10 to 12 months of age. Options A, B and C are all normal assessments of language development of a child."
   },
   {

@@ -76,6 +76,67 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         { title: "Philippine Nursing Licensure Exam III", subtitle: "Medical Surgical Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam III - Medical Surgical Nursing", count: 50 },
         { title: "Philippine Nursing Licensure Exam IV", subtitle: "Psychiatric Nursing", topicKey: "PNLE Philippine Nursing Licensure Exam IV - Psychiatric Nursing", count: 50 }
       ]
+    },
+    {
+      id: 4,
+      name: "FOUNDATION OF NURSING",
+      colorClass: "border-[#4A1529]",
+      textClass: "text-[#4A1529]",
+      bgClass: "bg-[#4A1529]",
+      hoverBgClass: "hover:bg-[#3d1122]",
+      items: [
+        { title: "Practice Exam for History , Concepts , and Theories", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Practice Exam for History , Concepts , and Theories", count: 100 },
+        { title: "Practice Exam for Infection, Asepsis, Basic concept of Stress and Illness", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Practice Exam for Infection, Asepsis, Basic concept of Stress and Illness", count: 100 },
+        { title: "Practice Exam for Stress, Crisis, Crisis Intervention, Communication, Recording, Learning and Documentation", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Practice Exam for Stress, Crisis, Crisis Intervention, Communication, Recording, Learning and Documentation", count: 100 },
+        { title: "Practice Exam for Nursing Process, Physical and Health Assessment and Routine Procedures", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Practice Exam for Nursing Process, Physical and Health Assessment and Routine Procedures", count: 100 },
+        { title: "Practice Exam for Oxygenation and Nutrition", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Practice Exam for Oxygenation and Nutrition", count: 100 },
+        { title: "Fundamentals in Nursing Exam 1", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Fundamentals in Nursing Exam 1", count: 25 },
+        { title: "Fundamentals in Nursing Exam 2", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Fundamentals in Nursing Exam 2", count: 25 },
+        { title: "Fundamentals in Nursing Exam 3", subtitle: "Nursing - Foundations of Nursing", topicKey: "Foundations of Nursing - Fundamentals in Nursing Exam 3", count: 25 }
+      ]
+    },
+    {
+      id: 5,
+      name: "MATERNAL AND CHILD NURSING",
+      colorClass: "border-[#D42F6B]",
+      textClass: "text-[#D42F6B]",
+      bgClass: "bg-[#D42F6B]",
+      hoverBgClass: "hover:bg-[#b02456]",
+      items: [
+        { title: "PNLE Maternal and Child Health Nursing Exam 1", subtitle: "Nursing - Maternal and Child Nursing", topicKey: "Maternal and Child Health Nursing - PNLE Maternal and Child Health Nursing Exam 1", count: 25 },
+        { title: "PNLE Maternal and Child Health Nursing Exam 2", subtitle: "Nursing - Maternal and Child Nursing", topicKey: "Maternal and Child Health Nursing - PNLE Maternal and Child Health Nursing Exam 2", count: 25 },
+        { title: "PNLE Maternal and Child Health Nursing Exam 3", subtitle: "Nursing - Maternal and Child Nursing", topicKey: "Maternal and Child Health Nursing - PNLE Maternal and Child Health Nursing Exam 3", count: 100 },
+        { title: "Pediatric Nursing Exam", subtitle: "Nursing - Maternal and Child Nursing", topicKey: "Maternal and Child Health Nursing - Pediatric Nursing Exam", count: 60 }
+      ]
+    },
+    {
+      id: 6,
+      name: "MEDICAL - SURGICAL NURSING",
+      colorClass: "border-[#D42F6B]",
+      textClass: "text-[#D42F6B]",
+      bgClass: "bg-[#D42F6B]",
+      hoverBgClass: "hover:bg-[#b02456]",
+      items: [
+        { title: "PNLE Medical Surgical Nursing Exam 1", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 1", count: 100 },
+        { title: "PNLE Medical Surgical Nursing Exam 2", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 2", count: 100 },
+        { title: "PNLE Medical Surgical Nursing Exam 3", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 3", count: 25 },
+        { title: "PNLE Medical Surgical Nursing Exam 4", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 4", count: 25 }
+      ]
+    },
+    {
+      id: 7,
+      name: "COMMUNITY HEALTH NURSING",
+      colorClass: "border-[#4A1529]",
+      textClass: "text-[#4A1529]",
+      bgClass: "bg-[#4A1529]",
+      hoverBgClass: "hover:bg-[#3d1122]",
+      items: [
+        { title: "PNLE Community Health Nursing Exam 1", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 1", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 2", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 2", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 3", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 3", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 4", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 4", count: 30 },
+        { title: "PNLE Community Health Nursing Exam 5", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 5", count: 28 }
+      ]
     }
   ];
 
@@ -243,6 +304,10 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         if (sub === 'Set 1') setActiveSet(1);
                         else if (sub === 'Set 2') setActiveSet(2);
                         else if (sub === 'Set 3') setActiveSet(3);
+                        else if (sub === 'Foundation of Nursing') setActiveSet(4);
+                        else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
+                        else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
+                        else if (sub === 'Community Health Nursing') setActiveSet(7);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub
@@ -260,7 +325,13 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                   {['Foundation of Nursing', 'Maternal and Child Nursing', 'Community Health Nursing', 'Medical - Surgical Nursing'].map(sub => (
                     <button
                       key={sub}
-                      onClick={() => setActiveSubcategory(sub)}
+                      onClick={() => {
+                        setActiveSubcategory(sub);
+                        if (sub === 'Foundation of Nursing') setActiveSet(4);
+                        else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
+                        else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
+                        else if (sub === 'Community Health Nursing') setActiveSet(7);
+                      }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub
                           ? 'bg-[#D42F6B] border-[#4A1529] text-white'

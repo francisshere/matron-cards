@@ -8,6 +8,7 @@
 
 Questions:
 ```json
+[
   {
     "question_number": 1,
     "question": "After a cerebrovascular accident, a 75 yr old client is admitted to the health care facility. The client has left-sided weakness and an absent gag reflex. He’s incontinent and has a tarry stool. His blood pressure is 90/50 mm Hg, and his hemoglobin is 10 g/dl. Which of the following is a priority for this client?",
@@ -805,7 +806,7 @@ Questions:
       "9%",
       "18%",
       "27%",
-      "36%
+      "36%"
     ]
   },
   {
@@ -820,7 +821,7 @@ Questions:
   },
   {
     "question_number": 82,
-    "while in skilled nursing facility, a client contracted scabies, which is diagnosed the day after discharge. The client is living at her  daughter’s home with six other persons. During her visit to the clinic, she asks a staff nurse, “What should my family do?” the most accurate response from the nurse is:",
+    "question": "while in skilled nursing facility, a client contracted scabies, which is diagnosed the day after discharge. The client is living at her  daughter’s home with six other persons. During her visit to the clinic, she asks a staff nurse, “What should my family do?” the most accurate response from the nurse is:",
     "options": [
       "“All family members will need to be treated.”",
       "“If someone develops symptoms, tell him to see a physician right away.”",
@@ -830,7 +831,7 @@ Questions:
   },
   {
     "question_number": 83,
-    "newborn in an industrial accident, client who weighs 155 lb (70.3 kg) sustained full-thickness burns over 40% of his body. He’s in the burn unit receiving fluid resuscitation. Which observation shows that the fluid resuscitation is benefiting the client?",
+    "question": "newborn in an industrial accident, client who weighs 155 lb (70.3 kg) sustained full-thickness burns over 40% of his body. He’s in the burn unit receiving fluid resuscitation. Which observation shows that the fluid resuscitation is benefiting the client?",
     "options": [
       "A urine output consistently above 100 ml/hour.",
       "A weight gain of 4 lb (1.8 kg) in 24 hours.",
@@ -1008,6 +1009,7 @@ Questions:
       "side-lying"
     ]
   }
+]
 ```
 
 ```json
