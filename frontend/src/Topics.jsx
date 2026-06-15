@@ -108,6 +108,20 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         { title: "PNLE Maternal and Child Health Nursing Exam 3", subtitle: "Nursing - Maternal and Child Nursing", topicKey: "Maternal and Child Health Nursing - PNLE Maternal and Child Health Nursing Exam 3", count: 100 },
         { title: "Pediatric Nursing Exam", subtitle: "Nursing - Maternal and Child Nursing", topicKey: "Maternal and Child Health Nursing - Pediatric Nursing Exam", count: 60 }
       ]
+    },
+    {
+      id: 6,
+      name: "MEDICAL - SURGICAL NURSING",
+      colorClass: "border-[#D42F6B]",
+      textClass: "text-[#D42F6B]",
+      bgClass: "bg-[#D42F6B]",
+      hoverBgClass: "hover:bg-[#b02456]",
+      items: [
+        { title: "PNLE Medical Surgical Nursing Exam 1", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 1", count: 100 },
+        { title: "PNLE Medical Surgical Nursing Exam 2", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 2", count: 100 },
+        { title: "PNLE Medical Surgical Nursing Exam 3", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 3", count: 25 },
+        { title: "PNLE Medical Surgical Nursing Exam 4", subtitle: "Nursing - Medical - Surgical Nursing", topicKey: "Medical-Surgical Nursing - PNLE Medical Surgical Nursing Exam 4", count: 25 }
+      ]
     }
   ];
 
@@ -277,6 +291,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         else if (sub === 'Set 3') setActiveSet(3);
                         else if (sub === 'Foundation of Nursing') setActiveSet(4);
                         else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
+                        else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub
@@ -298,6 +313,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         setActiveSubcategory(sub);
                         if (sub === 'Foundation of Nursing') setActiveSet(4);
                         else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
+                        else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub
