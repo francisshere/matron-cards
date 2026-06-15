@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import allQuestions from './data/questions.json';
 
 import logo from './assets/matron-logo.svg';
@@ -10,7 +10,52 @@ import explainIcon from './assets/explain.svg';
 
 export default function Home({ onStartQuiz, onViewChange }) {
   const [showRationale, setShowRationale] = useState(false);
-  const dailyQuestion = allQuestions[0]; // Just use the first question for now
+
+  const { dailyQuestion, dailyTopics, answerText } = useMemo(() => {
+    // Determine the current day since epoch
+    const today = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+    
+    // Seeded random number generator
+    const seededRandom = (seed) => {
+      const x = Math.sin(seed++) * 10000;
+      return x - Math.floor(x);
+    };
+
+    // Pick a daily question
+    const qIndex = Math.floor(seededRandom(today) * allQuestions.length);
+    const dailyQuestion = allQuestions[qIndex];
+
+    const correctOpt = dailyQuestion.options.find(o => o.id === dailyQuestion.correct_option);
+    const answerText = correctOpt ? `${dailyQuestion.correct_option}. ${correctOpt.text}` : dailyQuestion.correct_option;
+
+    // Get unique topics and their counts
+    const topicsMap = {};
+    allQuestions.forEach(q => {
+      if (!topicsMap[q.topic]) {
+        const parts = q.topic.split(' - ');
+        topicsMap[q.topic] = {
+          title: parts.length > 1 ? parts.slice(1).join(' - ') : q.topic,
+          subtitle: q.course ? `${q.course} - ${parts[0]}` : parts[0],
+          topicKey: q.topic,
+          count: 0
+        };
+      }
+      topicsMap[q.topic].count++;
+    });
+    
+    const uniqueTopics = Object.values(topicsMap);
+    
+    // Pick 2 daily topics
+    const tIndex1 = Math.floor(seededRandom(today + 1) * uniqueTopics.length);
+    let tIndex2 = Math.floor(seededRandom(today + 2) * uniqueTopics.length);
+    if (tIndex1 === tIndex2 && uniqueTopics.length > 1) {
+      tIndex2 = (tIndex2 + 1) % uniqueTopics.length;
+    }
+
+    const dailyTopics = [uniqueTopics[tIndex1], uniqueTopics[tIndex2]].filter(Boolean);
+
+    return { dailyQuestion, dailyTopics, answerText };
+  }, []);
 
   return (
     <div className="min-h-screen bg-bg flex flex-col lg:flex-row text-text font-body">
@@ -68,9 +113,10 @@ export default function Home({ onStartQuiz, onViewChange }) {
             <div className="flex flex-col lg:flex-row items-center lg:items-start relative">
               <div className="w-32 h-32 sm:w-48 sm:h-48 shrink-0 relative mb-4 lg:mb-0 lg:mr-6 z-10">
                 <img
+                  key={showRationale ? 'explain' : 'mascot'}
                   src={showRationale ? explainIcon : mascot}
                   alt="Mascot Avatar"
-                  className={`w-full h-full object-contain drop-shadow-lg transition-all duration-500 ${showRationale ? 'animate-bounce-pop' : ''}`}
+                  className="w-full h-full object-contain drop-shadow-lg transition-all duration-500 animate-bounce-pop"
                 />
               </div>
 
@@ -85,7 +131,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                     <div className="border-b-[3px] border-[#4A1529] py-3 bg-white text-center">
                       <span className="text-xl font-black text-[#4A1529]">Review of the Day</span>
                     </div>
-                    <div className="p-4 sm:p-6 flex-1 flex items-center justify-center">
+                    <div className="p-4 sm:p-6 flex-1 flex flex-col items-center justify-center gap-4">
                       <p className="text-[#4A1529] font-body font-bold text-sm sm:text-base text-center leading-relaxed">
                         {dailyQuestion.question_stem}
                       </p>
@@ -94,12 +140,15 @@ export default function Home({ onStartQuiz, onViewChange }) {
 
                   {/* Back */}
                   <div className="absolute z-10 inset-0 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl shadow-[0px_-4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden rotate-x-180 transition-all duration-300 active:-translate-y-1 active:shadow-none">
-                    <div className="border-b-[3px] border-[#4A1529] py-3 bg-[#F7C4D5] text-center">
-                      <span className="text-xl font-black text-[#4A1529]">Rationale</span>
+                    <div className="border-b-[3px] border-[#4A1529] py-3 bg-[#F7C4D5] text-center shrink-0">
+                      <span className="text-xl font-black text-[#4A1529]">Answer and Rationale</span>
                     </div>
-                    <div className="p-4 sm:p-6 flex-1 flex items-center justify-center overflow-y-auto">
+                    <div className="p-4 sm:p-6 flex-1 flex flex-col items-center justify-start overflow-y-auto space-y-4">
+                      <div className="bg-[#4A1529] text-white px-4 py-2 rounded-xl font-bold text-sm sm:text-base text-center shadow-sm w-full shrink-0">
+                        {answerText}
+                      </div>
                       <p className="text-[#4A1529] font-body font-bold text-sm sm:text-base text-center leading-relaxed">
-                        {dailyQuestion.rationale}
+                        {dailyQuestion.rationale || "No rationale provided."}
                       </p>
                     </div>
                   </div>
@@ -117,43 +166,49 @@ export default function Home({ onStartQuiz, onViewChange }) {
             <h3 className="font-heading font-black text-xl sm:text-2xl mb-6 text-[#855264] tracking-wider">Learn something new...</h3>
             <div className="space-y-6">
 
-              {/* Top card */}
-              <div className="bg-white border-[3px] border-[#4A1529] rounded-2xl flex flex-col sm:flex-row overflow-hidden shadow-[0px_4px_0px_0px_#4A1529] hover:translate-y-1 hover:shadow-none transition-all">
-                <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center">
-                  <h4 className="font-heading font-black text-lg sm:text-xl text-[#4A1529] mb-1">Philippine Nursing Licensure Exam 1</h4>
-                  <p className="font-body font-bold italic text-[#855264] text-sm sm:text-base">Foundation of Professional Nursing Practice</p>
-                </div>
-                <div className="w-full sm:w-[160px] border-t-[3px] sm:border-t-0 sm:border-l-[3px] border-[#4A1529] flex sm:flex-col">
-                  <div className="flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] border-[#4A1529] bg-white text-[#4A1529] font-black text-base sm:text-lg py-3 sm:py-0">
-                    100 ITEMS
-                  </div>
-                  <button
-                    onClick={() => onStartQuiz('PNLE Foundation of Professional Nursing Practice')}
-                    className="flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center bg-[#4A1529] text-white font-heading font-black text-lg sm:text-xl hover:bg-[#3d1122] py-3 sm:py-0 transition-colors"
-                  >
-                    LEARN
-                  </button>
-                </div>
-              </div>
+              {dailyTopics.map((topic, index) => {
+                const isFirst = index === 0;
+                
+                // Set 1 Styling
+                const s1Bg = "bg-white";
+                const s1Border = "border-[#4A1529]";
+                const s1Text = "text-[#4A1529]";
+                const s1BtnBg = "bg-[#4A1529]";
+                const s1BtnHover = "hover:bg-[#3d1122]";
+                const s1BtnText = "text-white";
+                const s1CountText = "text-[#4A1529]";
+                const s1Shadow = "shadow-[0px_4px_0px_0px_#4A1529]";
+                
+                // Set 2 Styling
+                const s2Bg = "bg-[#E97CA1]";
+                const s2Border = "border-[#D42F6B]";
+                const s2Text = "text-white";
+                const s2BtnBg = "bg-[#D42F6B]";
+                const s2BtnHover = "hover:bg-[#b02456]";
+                const s2BtnText = "text-white";
+                const s2CountText = "text-[#D42F6B]";
+                const s2Shadow = "shadow-[0px_4px_0px_0px_#D42F6B]";
 
-              {/* Bottom card */}
-              <div className="bg-[#E97CA1] border-[3px] border-[#D42F6B] rounded-2xl flex flex-col sm:flex-row overflow-hidden shadow-[0px_4px_0px_0px_#D42F6B] hover:translate-y-1 hover:shadow-none transition-all">
-                <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center">
-                  <h4 className="font-heading font-black text-lg sm:text-xl text-white mb-1">Philippine Nursing Licensure Exam II</h4>
-                  <p className="font-body font-bold italic text-white/90 text-sm sm:text-base">Community Health Nursing and Care of the Mother and Child</p>
-                </div>
-                <div className="w-full sm:w-[160px] border-t-[3px] sm:border-t-0 sm:border-l-[3px] border-[#D42F6B] flex sm:flex-col">
-                  <div className="flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] border-[#D42F6B] bg-[#E97CA1] text-[#D42F6B] font-black text-base sm:text-lg py-3 sm:py-0">
-                    100 ITEMS
+                return (
+                  <div key={topic.topicKey} className={`${isFirst ? s1Bg : s2Bg} border-[3px] ${isFirst ? s1Border : s2Border} rounded-2xl flex flex-col sm:flex-row overflow-hidden ${isFirst ? s1Shadow : s2Shadow} hover:translate-y-1 hover:shadow-none transition-all`}>
+                    <div className="flex-1 p-4 sm:p-6 flex flex-col justify-center">
+                      <h4 className={`font-heading font-black text-lg sm:text-xl ${isFirst ? s1Text : s2Text} mb-1`}>{topic.title}</h4>
+                      <p className={`font-body font-bold italic ${isFirst ? 'text-[#855264]' : 'text-white/90'} text-sm sm:text-base`}>{topic.subtitle}</p>
+                    </div>
+                    <div className={`w-full sm:w-[160px] border-t-[3px] sm:border-t-0 sm:border-l-[3px] ${isFirst ? s1Border : s2Border} flex sm:flex-col`}>
+                      <div className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center border-r-[3px] sm:border-r-0 sm:border-b-[3px] ${isFirst ? s1Border : s2Border} ${isFirst ? s1Bg : s2Bg} ${isFirst ? s1CountText : s2CountText} font-black text-base sm:text-lg py-3 sm:py-0`}>
+                        {topic.count} ITEMS
+                      </div>
+                      <button
+                        onClick={() => onStartQuiz(topic.topicKey)}
+                        className={`flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center ${isFirst ? s1BtnBg : s2BtnBg} ${isFirst ? s1BtnText : s2BtnText} font-heading font-black text-lg sm:text-xl ${isFirst ? s1BtnHover : s2BtnHover} py-3 sm:py-0 transition-colors cursor-pointer`}
+                      >
+                        LEARN
+                      </button>
+                    </div>
                   </div>
-                  <button
-                    onClick={() => onStartQuiz('PNLE Community Health Nursing and Care of the Mother and Child')}
-                    className="flex-1 sm:flex-none sm:h-1/2 flex items-center justify-center bg-[#D42F6B] text-white font-heading font-black text-lg sm:text-xl hover:bg-[#b02456] py-3 sm:py-0 transition-colors"
-                  >
-                    LEARN
-                  </button>
-                </div>
-              </div>
+                );
+              })}
 
             </div>
           </div>
