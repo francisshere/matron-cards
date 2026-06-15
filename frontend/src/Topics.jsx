@@ -137,6 +137,18 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         { title: "PNLE Community Health Nursing Exam 4", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 4", count: 30 },
         { title: "PNLE Community Health Nursing Exam 5", subtitle: "Nursing - Community Health Nursing", topicKey: "Community Health Nursing - PNLE Community Health Nursing Exam 5", count: 28 }
       ]
+    },
+    {
+      id: 8,
+      name: "ALL TOPICS",
+      colorClass: "border-[#4A1529]",
+      textClass: "text-[#4A1529]",
+      bgClass: "bg-[#4A1529]",
+      hoverBgClass: "hover:bg-[#3d1122]",
+      items: [
+        { title: "Practice PNLE Exam 1", subtitle: "Nursing - All Topics", topicKey: "All Topics - Practice PNLE Exam 1", count: 100 },
+        { title: "Practice PNLE Exam 2", subtitle: "Nursing - All Topics", topicKey: "All Topics - Practice PNLE Exam 2", count: 150 }
+      ]
     }
   ];
 
@@ -263,6 +275,10 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         setActiveSet(1);
                       } else if (category === 'Nursing') {
                         setActiveSubcategory('Foundation of Nursing');
+                        setActiveSet(4);
+                      } else if (category === 'Practice Exams') {
+                        setActiveSubcategory('All Topics');
+                        setActiveSet(8);
                       } else {
                         setActiveSubcategory('');
                       }
@@ -331,6 +347,26 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                         else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
                         else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
                         else if (sub === 'Community Health Nursing') setActiveSet(7);
+                      }}
+                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+                        ${activeSubcategory === sub
+                          ? 'bg-[#D42F6B] border-[#4A1529] text-white'
+                          : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
+                    >
+                      {sub}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {activeCategory === 'Practice Exams' && (
+                <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
+                  {['All Topics'].map(sub => (
+                    <button
+                      key={sub}
+                      onClick={() => {
+                        setActiveSubcategory(sub);
+                        if (sub === 'All Topics') setActiveSet(8);
                       }}
                       className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                         ${activeSubcategory === sub
