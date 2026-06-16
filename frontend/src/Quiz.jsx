@@ -65,6 +65,7 @@ export default function Quiz({ onBack, topicFilter }) {
   const [showRationale, setShowRationale] = useState(false);
   const [gameOver, setGameOver] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
+  const [exitConfirmOpen, setExitConfirmOpen] = useState(false);
 
   useEffect(() => {
     startNewGame(25, false);
@@ -218,7 +219,7 @@ export default function Quiz({ onBack, topicFilter }) {
         {/* Header */}
         <header className="flex items-center justify-between mb-10">
           <div className="flex items-center space-x-1 sm:space-x-2">
-            <button onClick={onBack} className="text-text hover:text-primary transition-colors p-2">
+            <button onClick={() => setExitConfirmOpen(true)} className="text-text hover:text-primary transition-colors p-2">
               <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
             </button>
             <button onClick={openSettings} className="text-text hover:text-primary transition-colors p-2">
@@ -437,6 +438,30 @@ export default function Quiz({ onBack, topicFilter }) {
                 className="w-full mt-4 py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none"
               >
                 Apply & Restart
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Exit Confirmation Modal */}
+      {exitConfirmOpen && (
+        <div className="fixed inset-0 bg-text/50 z-[100] flex items-center justify-center p-4">
+          <div className="bg-card w-full max-w-sm rounded-3xl p-6 sm:p-8 shadow-xl text-center animate-bounce-pop">
+            <h2 className="text-3xl font-heading font-bold text-text mb-4">Wait!</h2>
+            <p className="font-body text-text/80 mb-8 font-semibold">Are you sure you want to quit? Your progress will be lost.</p>
+            <div className="flex flex-col space-y-3">
+              <button 
+                onClick={() => setExitConfirmOpen(false)}
+                className="w-full py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none uppercase tracking-wide"
+              >
+                Continue Reviewing
+              </button>
+              <button 
+                onClick={onBack}
+                className="w-full py-4 rounded-full font-heading font-bold text-red-500 hover:bg-red-50 transition-all uppercase tracking-wide"
+              >
+                End Quiz
               </button>
             </div>
           </div>
