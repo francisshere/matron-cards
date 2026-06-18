@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Settings } from 'lucide-react';
+import { X, Settings, ChevronUp, ChevronDown } from 'lucide-react';
 import allQuestions from './data/questions.json';
 
 import avatarNurse from './assets/avatar-main-no-bg.svg';
@@ -458,20 +458,43 @@ export default function Quiz({ onBack, topicFilter }) {
                 </label>
                 <p className="text-sm font-body text-text/60 mt-1 font-semibold">Set a timer for the entire quiz session.</p>
                 {tempTimeLimitEnabled && (
-                  <div className="mt-4 flex items-center justify-between space-x-2 bg-text/5 p-4 rounded-xl">
-                    <div className="flex flex-col items-center w-full">
-                      <span className="text-xs font-bold text-text/60 mb-1">HR</span>
-                      <input type="number" min="0" max="23" value={tempTimeLimitHours} onChange={e => setTempTimeLimitHours(Number(e.target.value))} className="w-full max-w-[60px] p-2 rounded-lg border-2 border-text/20 text-center font-bold outline-none focus:border-primary bg-card" />
+                  <div className="mt-4 flex flex-col items-center bg-card border-2 border-text/10 rounded-2xl p-6 shadow-sm">
+                    {/* Up Arrows */}
+                    <div className="flex justify-between w-full max-w-[280px] px-6 mb-3">
+                      <button onClick={() => setTempTimeLimitHours(h => (h + 1) % 24)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronUp className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitMinutes(m => (m + 1) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronUp className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitSeconds(s => (s + 1) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronUp className="w-8 h-8" strokeWidth={3} /></button>
                     </div>
-                    <span className="text-2xl font-bold text-text/50">:</span>
-                    <div className="flex flex-col items-center w-full">
-                      <span className="text-xs font-bold text-text/60 mb-1">MIN</span>
-                      <input type="number" min="0" max="59" value={tempTimeLimitMinutes} onChange={e => setTempTimeLimitMinutes(Number(e.target.value))} className="w-full max-w-[60px] p-2 rounded-lg border-2 border-text/20 text-center font-bold outline-none focus:border-primary bg-card" />
+
+                    {/* Time Inputs */}
+                    <div className="flex items-center justify-center space-x-1 w-full max-w-[280px]">
+                      <input 
+                        type="text" 
+                        value={tempTimeLimitHours.toString().padStart(2, '0')} 
+                        onChange={e => { const val = e.target.value.replace(/\D/g, ''); setTempTimeLimitHours(Math.min(23, Number(val))); }} 
+                        className="w-20 py-3 rounded-xl bg-text/5 text-center font-heading text-4xl sm:text-5xl font-black text-text outline-none focus:bg-text/10 focus:ring-4 focus:ring-primary/30 transition-all" 
+                      />
+                      <span className="text-4xl sm:text-5xl font-black text-text/40 pb-1">:</span>
+                      <input 
+                        type="text" 
+                        value={tempTimeLimitMinutes.toString().padStart(2, '0')} 
+                        onChange={e => { const val = e.target.value.replace(/\D/g, ''); setTempTimeLimitMinutes(Math.min(59, Number(val))); }} 
+                        className="w-20 py-3 rounded-xl bg-text/5 text-center font-heading text-4xl sm:text-5xl font-black text-text outline-none focus:bg-text/10 focus:ring-4 focus:ring-primary/30 transition-all" 
+                      />
+                      <span className="text-4xl sm:text-5xl font-black text-text/40 pb-1">:</span>
+                      <input 
+                        type="text" 
+                        value={tempTimeLimitSeconds.toString().padStart(2, '0')} 
+                        onChange={e => { const val = e.target.value.replace(/\D/g, ''); setTempTimeLimitSeconds(Math.min(59, Number(val))); }} 
+                        className="w-20 py-3 rounded-xl bg-text/5 text-center font-heading text-4xl sm:text-5xl font-black text-text outline-none focus:bg-text/10 focus:ring-4 focus:ring-primary/30 transition-all" 
+                      />
                     </div>
-                    <span className="text-2xl font-bold text-text/50">:</span>
-                    <div className="flex flex-col items-center w-full">
-                      <span className="text-xs font-bold text-text/60 mb-1">SEC</span>
-                      <input type="number" min="0" max="59" value={tempTimeLimitSeconds} onChange={e => setTempTimeLimitSeconds(Number(e.target.value))} className="w-full max-w-[60px] p-2 rounded-lg border-2 border-text/20 text-center font-bold outline-none focus:border-primary bg-card" />
+
+                    {/* Down Arrows */}
+                    <div className="flex justify-between w-full max-w-[280px] px-6 mt-3">
+                      <button onClick={() => setTempTimeLimitHours(h => (h - 1 + 24) % 24)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronDown className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitMinutes(m => (m - 1 + 60) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronDown className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitSeconds(s => (s - 1 + 60) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronDown className="w-8 h-8" strokeWidth={3} /></button>
                     </div>
                   </div>
                 )}
