@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Settings } from 'lucide-react';
+import { X, Settings, ChevronUp, ChevronDown } from 'lucide-react';
 import allQuestions from './data/questions.json';
 
 import avatarNurse from './assets/avatar-main-no-bg.svg';
@@ -50,11 +50,19 @@ export default function Quiz({ onBack, topicFilter }) {
   const [questionCount, setQuestionCount] = useState(25);
   const [customCount, setCustomCount] = useState("");
   const [randomize, setRandomize] = useState(false);
+  const [timeLimitEnabled, setTimeLimitEnabled] = useState(false);
+  const [timeLimitHours, setTimeLimitHours] = useState(0);
+  const [timeLimitMinutes, setTimeLimitMinutes] = useState(0);
+  const [timeLimitSeconds, setTimeLimitSeconds] = useState(0);
   
   const [tempGamemode, setTempGamemode] = useState(true);
   const [tempQuestionCount, setTempQuestionCount] = useState(25);
   const [tempCustomCount, setTempCustomCount] = useState("");
   const [tempRandomize, setTempRandomize] = useState(false);
+  const [tempTimeLimitEnabled, setTempTimeLimitEnabled] = useState(false);
+  const [tempTimeLimitHours, setTempTimeLimitHours] = useState(0);
+  const [tempTimeLimitMinutes, setTempTimeLimitMinutes] = useState(0);
+  const [tempTimeLimitSeconds, setTempTimeLimitSeconds] = useState(0);
   const [customError, setCustomError] = useState("");
   
   // Quiz state
@@ -66,12 +74,34 @@ export default function Quiz({ onBack, topicFilter }) {
   const [gameOver, setGameOver] = useState(false);
   const [quizFinished, setQuizFinished] = useState(false);
   const [exitConfirmOpen, setExitConfirmOpen] = useState(false);
+  
+  const [timeRemaining, setTimeRemaining] = useState(null);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+
+  useEffect(() => {
+    let timer;
+    if (timeRemaining !== null && timeRemaining > 0 && !gameOver && !quizFinished) {
+      timer = setInterval(() => {
+        setTimeRemaining(prev => prev - 1);
+      }, 1000);
+    } else if (timeRemaining === 0 && !gameOver && !quizFinished) {
+      setQuizFinished(true); // ran out of time
+    }
+    return () => clearInterval(timer);
+  }, [timeRemaining, gameOver, quizFinished]);
+
+  const formatTime = (seconds) => {
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
 
   useEffect(() => {
     startNewGame(25, false);
   }, []);
 
-  const startNewGame = (count = questionCount, isRandom = randomize) => {
+  const startNewGame = (count = questionCount, isRandom = randomize, tEnabled = timeLimitEnabled, tHours = timeLimitHours, tMins = timeLimitMinutes, tSecs = timeLimitSeconds) => {
     let actualCount = count;
     if (count === 'custom') {
       actualCount = parseInt(customCount) > 0 ? parseInt(customCount) : 25;
@@ -100,6 +130,12 @@ export default function Quiz({ onBack, topicFilter }) {
     setQuizFinished(false);
     setSelectedOption(null);
     setShowRationale(false);
+    setCorrectAnswers(0);
+    if (tEnabled) {
+      setTimeRemaining(tHours * 3600 + tMins * 60 + tSecs);
+    } else {
+      setTimeRemaining(null);
+    }
   };
 
   const openSettings = () => {
@@ -107,6 +143,10 @@ export default function Quiz({ onBack, topicFilter }) {
     setTempQuestionCount(questionCount);
     setTempCustomCount(customCount);
     setTempRandomize(randomize);
+    setTempTimeLimitEnabled(timeLimitEnabled);
+    setTempTimeLimitHours(timeLimitHours);
+    setTempTimeLimitMinutes(timeLimitMinutes);
+    setTempTimeLimitSeconds(timeLimitSeconds);
     setCustomError("");
     setSettingsOpen(true);
   };
@@ -127,7 +167,11 @@ export default function Quiz({ onBack, topicFilter }) {
     setCustomCount(tempCustomCount);
     setGamemode(tempGamemode);
     setRandomize(tempRandomize);
-    startNewGame(count, tempRandomize);
+    setTimeLimitEnabled(tempTimeLimitEnabled);
+    setTimeLimitHours(tempTimeLimitHours);
+    setTimeLimitMinutes(tempTimeLimitMinutes);
+    setTimeLimitSeconds(tempTimeLimitSeconds);
+    startNewGame(count, tempRandomize, tempTimeLimitEnabled, tempTimeLimitHours, tempTimeLimitMinutes, tempTimeLimitSeconds);
     setSettingsOpen(false);
   };
 
@@ -147,6 +191,7 @@ export default function Quiz({ onBack, topicFilter }) {
       }
     } else {
       playSound('correct');
+      setCorrectAnswers(prev => prev + 1);
     }
     setShowRationale(true);
   };
@@ -205,7 +250,8 @@ export default function Quiz({ onBack, topicFilter }) {
         <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full animate-bounce-pop">
           <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
-          <p className="font-body text-text/80 mb-8 font-semibold">Great job finishing {questions.length} questions.</p>
+          <p className="font-body text-text/80 mb-2 font-semibold">Great job finishing the quiz.</p>
+          <p className="font-body text-text mb-8 font-bold text-2xl tracking-wide">Accuracy: {Math.round((correctAnswers / questions.length) * 100) || 0}%</p>
           <button onClick={() => startNewGame()} className="w-full py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none">Review Again</button>
         </div>
       </div>
@@ -237,9 +283,16 @@ export default function Quiz({ onBack, topicFilter }) {
             </div>
           </div>
           
-          <div className={`flex items-center space-x-2 drop-shadow-sm ml-2 sm:ml-4 transition-opacity ${gamemode ? 'opacity-100' : 'opacity-0'}`}>
-            <img src={lampIcon} alt="Lamp" className="w-10 h-10 sm:w-14 sm:h-14 object-contain" />
-            <span className="font-body font-bold text-mid text-2xl sm:text-3xl">{lives}</span>
+          <div className="flex items-center space-x-3 sm:space-x-5 drop-shadow-sm ml-2 sm:ml-4">
+            {timeRemaining !== null && (
+              <div className={`font-heading font-black text-xl sm:text-2xl transition-colors ${timeRemaining < 60 ? 'text-red-500 animate-pulse' : 'text-text'}`}>
+                {formatTime(timeRemaining)}
+              </div>
+            )}
+            <div className={`flex items-center space-x-2 transition-opacity ${gamemode ? 'opacity-100' : 'opacity-0'}`}>
+              <img src={lampIcon} alt="Lamp" className="w-10 h-10 sm:w-14 sm:h-14 object-contain" />
+              <span className="font-body font-bold text-mid text-2xl sm:text-3xl">{lives}</span>
+            </div>
           </div>
         </header>
 
@@ -394,6 +447,57 @@ export default function Quiz({ onBack, topicFilter }) {
                   </div>
                 </label>
                 <p className="text-sm font-body text-text/60 mt-1 font-semibold">Shuffle the question order every time you start.</p>
+              </div>
+
+              <div>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <span className="font-body font-semibold text-lg text-text">Time Limit</span>
+                  <div className={`w-14 h-8 rounded-full p-1 transition-colors ${tempTimeLimitEnabled ? 'bg-primary' : 'bg-text/20'}`} onClick={() => setTempTimeLimitEnabled(!tempTimeLimitEnabled)}>
+                    <div className={`w-6 h-6 bg-white rounded-full transition-transform ${tempTimeLimitEnabled ? 'translate-x-6' : 'translate-x-0'}`} />
+                  </div>
+                </label>
+                <p className="text-sm font-body text-text/60 mt-1 font-semibold">Set a timer for the entire quiz session.</p>
+                {tempTimeLimitEnabled && (
+                  <div className="mt-4 flex flex-col items-center bg-card border-2 border-text/10 rounded-2xl p-6 shadow-sm">
+                    {/* Up Arrows */}
+                    <div className="flex justify-between w-full max-w-[280px] px-6 mb-3">
+                      <button onClick={() => setTempTimeLimitHours(h => (h + 1) % 24)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronUp className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitMinutes(m => (m + 1) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronUp className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitSeconds(s => (s + 1) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronUp className="w-8 h-8" strokeWidth={3} /></button>
+                    </div>
+
+                    {/* Time Inputs */}
+                    <div className="flex items-center justify-center space-x-1 w-full max-w-[280px]">
+                      <input 
+                        type="text" 
+                        value={tempTimeLimitHours.toString().padStart(2, '0')} 
+                        onChange={e => { const val = e.target.value.replace(/\D/g, ''); setTempTimeLimitHours(Math.min(23, Number(val))); }} 
+                        className="w-20 py-3 rounded-xl bg-text/5 text-center font-heading text-4xl sm:text-5xl font-black text-text outline-none focus:bg-text/10 focus:ring-4 focus:ring-primary/30 transition-all" 
+                      />
+                      <span className="text-4xl sm:text-5xl font-black text-text/40 pb-1">:</span>
+                      <input 
+                        type="text" 
+                        value={tempTimeLimitMinutes.toString().padStart(2, '0')} 
+                        onChange={e => { const val = e.target.value.replace(/\D/g, ''); setTempTimeLimitMinutes(Math.min(59, Number(val))); }} 
+                        className="w-20 py-3 rounded-xl bg-text/5 text-center font-heading text-4xl sm:text-5xl font-black text-text outline-none focus:bg-text/10 focus:ring-4 focus:ring-primary/30 transition-all" 
+                      />
+                      <span className="text-4xl sm:text-5xl font-black text-text/40 pb-1">:</span>
+                      <input 
+                        type="text" 
+                        value={tempTimeLimitSeconds.toString().padStart(2, '0')} 
+                        onChange={e => { const val = e.target.value.replace(/\D/g, ''); setTempTimeLimitSeconds(Math.min(59, Number(val))); }} 
+                        className="w-20 py-3 rounded-xl bg-text/5 text-center font-heading text-4xl sm:text-5xl font-black text-text outline-none focus:bg-text/10 focus:ring-4 focus:ring-primary/30 transition-all" 
+                      />
+                    </div>
+
+                    {/* Down Arrows */}
+                    <div className="flex justify-between w-full max-w-[280px] px-6 mt-3">
+                      <button onClick={() => setTempTimeLimitHours(h => (h - 1 + 24) % 24)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronDown className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitMinutes(m => (m - 1 + 60) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronDown className="w-8 h-8" strokeWidth={3} /></button>
+                      <button onClick={() => setTempTimeLimitSeconds(s => (s - 1 + 60) % 60)} className="p-2 text-text/40 hover:text-primary transition-colors hover:bg-text/5 rounded-full"><ChevronDown className="w-8 h-8" strokeWidth={3} /></button>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div>
