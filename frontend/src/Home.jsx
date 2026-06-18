@@ -129,13 +129,13 @@ export default function Home({ onStartQuiz, onViewChange }) {
               </div>
 
               <div
-                className="flex-1 w-full perspective-1000 cursor-pointer min-h-[180px]"
+                className="flex-1 w-full perspective-1000 cursor-pointer min-h-[180px] group transition-transform duration-300 hover:-translate-y-2 active:translate-y-1"
                 onClick={() => setShowRationale(!showRationale)}
               >
                 <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${showRationale ? 'rotate-x-180' : ''}`}>
 
                   {/* Front */}
-                  <div className="relative z-20 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl shadow-[0px_4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 active:translate-y-1 active:shadow-none min-h-[180px]">
+                  <div className="relative z-20 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl shadow-[0px_4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 min-h-[180px] group-hover:shadow-[0px_8px_0px_0px_#4A1529] group-active:shadow-none">
                     <div className="border-b-[3px] border-[#4A1529] py-3 bg-white text-center">
                       <span className="text-xl font-black text-[#4A1529]">Review of the Day</span>
                     </div>
@@ -147,7 +147,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                   </div>
 
                   {/* Back */}
-                  <div className="absolute z-10 inset-0 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl shadow-[0px_-4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden rotate-x-180 transition-all duration-300 active:-translate-y-1 active:shadow-none">
+                  <div className="absolute z-10 inset-0 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl shadow-[0px_-4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden rotate-x-180 transition-all duration-300 group-hover:shadow-[0px_-8px_0px_0px_#4A1529] group-active:shadow-none">
                     <div className="border-b-[3px] border-[#4A1529] py-3 bg-[#F7C4D5] text-center shrink-0">
                       <span className="text-xl font-black text-[#4A1529]">Answer and Rationale</span>
                     </div>
