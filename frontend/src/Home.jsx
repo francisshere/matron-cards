@@ -6,6 +6,7 @@ import learnIcon from './assets/learn-icon.svg';
 import topicsIcon from './assets/topics-icon.svg';
 import profileIcon from './assets/profile-icon.svg';
 import lampIcon from './assets/lamp-no-bg.svg';
+import tipsIcon from './assets/speech-bubble.svg';
 import mascot from './assets/love.svg';
 import explainIcon from './assets/explain.svg';
 
@@ -96,6 +97,13 @@ export default function Home({ onStartQuiz, onViewChange }) {
               <img src={lampIcon} alt="Mnemonics" className="w-12 h-12 group-hover:scale-110 transition-transform" />
             </div>
             <span className="font-black tracking-widest uppercase text-sm">Mnemonics</span>
+          </a>
+
+          <a href="#" className="flex items-center w-full py-3 px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
+            <div className="w-12 h-12 mr-4 flex items-center justify-center shrink-0">
+              <img src={tipsIcon} alt="Tips" className="w-12 h-12 group-hover:scale-110 transition-transform" />
+            </div>
+            <span className="font-black tracking-widest uppercase text-sm">Tips</span>
           </a>
 
           <a href="#" className="flex items-center w-full py-3 px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
