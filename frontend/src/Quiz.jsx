@@ -5,6 +5,7 @@ import allQuestions from './data/questions.json';
 import avatarNurse from './assets/avatar-main-no-bg.svg';
 import explainIcon from './assets/explain.svg';
 import lampIcon from './assets/lamp-no-bg.svg';
+import tiredIcon from './assets/tired.svg';
 
 const playSound = (type) => {
   try {
@@ -258,7 +259,7 @@ export default function Quiz({ onBack, topicFilter }) {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center p-6">
         <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
-          <img src={explainIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
+          <img src={tiredIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
           <p className="font-body text-text/80 mb-8 font-semibold">You ran out of lives (5 mistakes).</p>
           <button onClick={() => startNewGame()} className="w-full py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none">Try Again</button>
