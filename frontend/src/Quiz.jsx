@@ -40,6 +40,22 @@ const playSound = (type) => {
       
       osc.start(ctx.currentTime);
       osc.stop(ctx.currentTime + 0.3);
+    } else if (type === 'alarm') {
+      osc.type = 'square';
+      osc.frequency.setValueAtTime(600, ctx.currentTime);
+      osc.frequency.setValueAtTime(800, ctx.currentTime + 0.15);
+      osc.frequency.setValueAtTime(600, ctx.currentTime + 0.3);
+      osc.frequency.setValueAtTime(800, ctx.currentTime + 0.45);
+      osc.frequency.setValueAtTime(600, ctx.currentTime + 0.6);
+      osc.frequency.setValueAtTime(800, ctx.currentTime + 0.75);
+      osc.frequency.setValueAtTime(600, ctx.currentTime + 0.9);
+      
+      gain.gain.setValueAtTime(0, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.2, ctx.currentTime + 0.05);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 1.2);
+      
+      osc.start(ctx.currentTime);
+      osc.stop(ctx.currentTime + 1.2);
     }
   } catch(e) { console.error("Audio error", e) }
 };
@@ -85,10 +101,17 @@ export default function Quiz({ onBack, topicFilter }) {
         setTimeRemaining(prev => prev - 1);
       }, 1000);
     } else if (timeRemaining === 0 && !gameOver && !quizFinished) {
+      playSound('alarm');
       setQuizFinished(true); // ran out of time
     }
     return () => clearInterval(timer);
   }, [timeRemaining, gameOver, quizFinished]);
+
+  useEffect(() => {
+    if (gameOver) {
+      playSound('alarm');
+    }
+  }, [gameOver]);
 
   const formatTime = (seconds) => {
     const h = Math.floor(seconds / 3600);
