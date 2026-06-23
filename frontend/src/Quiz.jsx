@@ -257,7 +257,7 @@ export default function Quiz({ onBack, topicFilter }) {
   if (gameOver) {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full animate-bounce-pop">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
           <img src={explainIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
           <p className="font-body text-text/80 mb-8 font-semibold">You ran out of lives (5 mistakes).</p>
@@ -270,7 +270,7 @@ export default function Quiz({ onBack, topicFilter }) {
   if (quizFinished) {
     return (
       <div className="min-h-screen bg-bg flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-sm max-w-sm w-full animate-bounce-pop">
+        <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
           <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
           <p className="font-body text-text/80 mb-2 font-semibold">Great job finishing the quiz.</p>
