@@ -5,8 +5,6 @@ import logo from './assets/matron-logo.svg';
 import mascot from './assets/love.svg';
 import explainIcon from './assets/explain.svg';
 import Sidebar from './Sidebar';
-import mascot from './assets/love.svg';
-import explainIcon from './assets/explain.svg';
 
 export default function Home({ onStartQuiz, onViewChange }) {
   const [showRationale, setShowRationale] = useState(false);
