@@ -2,13 +2,9 @@ import React, { useState, useMemo } from 'react';
 import allQuestions from './data/questions.json';
 
 import logo from './assets/matron-logo.svg';
-import learnIcon from './assets/learn-icon.svg';
-import topicsIcon from './assets/topics-icon.svg';
-import profileIcon from './assets/profile-icon.svg';
-import lampIcon from './assets/lamp-no-bg.svg';
-import tipsIcon from './assets/speech-bubble.svg';
 import mascot from './assets/love.svg';
 import explainIcon from './assets/explain.svg';
+import Sidebar from './Sidebar';
 
 export default function Home({ onStartQuiz, onViewChange }) {
   const [showRationale, setShowRationale] = useState(false);
@@ -67,53 +63,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
         <img src={logo} alt="Matron Logo" className="w-40 h-auto" />
       </div>
 
-      {/* Navigation */}
-      <aside className="fixed bottom-0 left-0 w-full md:w-24 lg:w-64 md:top-0 h-20 md:h-full bg-bg border-t-[2px] md:border-t-0 md:border-r-[2px] border-muted flex flex-row md:flex-col p-2 md:p-4 z-50 justify-around md:justify-start">
-        <div className="hidden md:flex items-center justify-center mb-8 mt-2 px-2">
-          <a href="#">
-            <img src={logo} alt="Matron Logo" className="w-12 lg:w-48 h-auto object-contain hover:opacity-80 transition-opacity" />
-          </a>
-        </div>
-
-        <nav className="flex flex-row md:flex-col space-x-2 md:space-x-0 md:space-y-2 flex-1 w-full items-center justify-around md:justify-start">
-          {/* Active Item */}
-          <a href="#" className="flex items-center justify-center lg:justify-start md:w-full py-2 px-2 md:py-3 md:px-4 rounded-xl border-[2px] border-primary bg-primary/10 text-primary transition-colors group">
-            <div className="w-10 h-10 md:w-12 md:h-12 lg:mr-4 flex items-center justify-center shrink-0">
-              <img src={learnIcon} alt="Learn" className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform" />
-            </div>
-            <span className="hidden lg:block font-black tracking-widest uppercase text-sm">Learn</span>
-          </a>
-
-          {/* Inactive Item */}
-          <a href="#" onClick={(e) => { e.preventDefault(); onViewChange('topics'); }} className="flex items-center justify-center lg:justify-start md:w-full py-2 px-2 md:py-3 md:px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
-            <div className="w-10 h-10 md:w-12 md:h-12 lg:mr-4 flex items-center justify-center shrink-0">
-              <img src={topicsIcon} alt="Topics" className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform" />
-            </div>
-            <span className="hidden lg:block font-black tracking-widest uppercase text-sm">Topics</span>
-          </a>
-
-          <a href="#" className="flex items-center justify-center lg:justify-start md:w-full py-2 px-2 md:py-3 md:px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
-            <div className="w-10 h-10 md:w-12 md:h-12 lg:mr-4 flex items-center justify-center shrink-0">
-              <img src={lampIcon} alt="Mnemonics" className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform" />
-            </div>
-            <span className="hidden lg:block font-black tracking-widest uppercase text-sm">Mnemonics</span>
-          </a>
-
-          <a href="#" className="flex items-center justify-center lg:justify-start md:w-full py-2 px-2 md:py-3 md:px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
-            <div className="w-10 h-10 md:w-12 md:h-12 lg:mr-4 flex items-center justify-center shrink-0">
-              <img src={tipsIcon} alt="Tips" className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform" />
-            </div>
-            <span className="hidden lg:block font-black tracking-widest uppercase text-sm">Tips</span>
-          </a>
-
-          <a href="#" className="flex items-center justify-center lg:justify-start md:w-full py-2 px-2 md:py-3 md:px-4 rounded-xl border-[2px] border-transparent hover:border-muted hover:bg-primary/5 text-muted transition-colors group">
-            <div className="w-10 h-10 md:w-12 md:h-12 lg:mr-4 flex items-center justify-center shrink-0">
-              <img src={profileIcon} alt="Profile" className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform" />
-            </div>
-            <span className="hidden lg:block font-black tracking-widest uppercase text-sm">Profile</span>
-          </a>
-        </nav>
-      </aside>
+      <Sidebar activeView="home" onViewChange={onViewChange} />
 
       {/* Main Content Area */}
       <main className="w-full md:w-[calc(100%-6rem)] lg:w-[calc(100%-16rem)] md:ml-24 lg:ml-64 p-4 sm:p-8 pb-28 md:pb-8 flex justify-center">
