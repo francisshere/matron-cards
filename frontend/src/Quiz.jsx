@@ -349,7 +349,7 @@ export default function Quiz({ onBack, topicFilter }) {
               </div>
             )}
 
-            <p className="text-text font-body font-semibold text-sm sm:text-base leading-relaxed">
+            <p className="text-text font-body font-semibold text-base sm:text-lg md:text-xl leading-relaxed">
               {showRationale ? (
                 <span className="block mt-2">
                   <span className="font-heading font-black text-lg text-text block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-2">Rationale</span>
