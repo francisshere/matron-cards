@@ -98,7 +98,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                       <span className="text-xl font-black text-[#4A1529]">Review of the Day</span>
                     </div>
                     <div className="p-4 sm:p-6 flex-1 flex flex-col items-center justify-center gap-4">
-                      <p className="text-[#4A1529] font-body font-bold text-sm sm:text-base text-center leading-relaxed">
+                      <p className="text-[#4A1529] font-body font-bold text-base sm:text-lg md:text-xl text-center leading-relaxed">
                         {dailyQuestion.question_stem}
                       </p>
                     </div>
