@@ -10,6 +10,8 @@ export default function Home({ onStartQuiz, onViewChange }) {
   const [showRationale, setShowRationale] = useState(false);
   const [currentTryIndex, setCurrentTryIndex] = useState(0);
   const [tryFinished, setTryFinished] = useState(false);
+  const [selectedTryChoice, setSelectedTryChoice] = useState(null);
+  const [showTryFeedback, setShowTryFeedback] = useState(false);
 
   const { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions } = useMemo(() => {
     // Determine the current day since epoch
@@ -64,11 +66,20 @@ export default function Home({ onStartQuiz, onViewChange }) {
   }, []);
 
   const handleTryChoice = (choiceId) => {
-    if (currentTryIndex < tryQuestions.length - 1) {
-      setCurrentTryIndex(currentTryIndex + 1);
-    } else {
-      setTryFinished(true);
-    }
+    if (showTryFeedback) return;
+    
+    setSelectedTryChoice(choiceId);
+    setShowTryFeedback(true);
+
+    setTimeout(() => {
+      setShowTryFeedback(false);
+      setSelectedTryChoice(null);
+      if (currentTryIndex < tryQuestions.length - 1) {
+        setCurrentTryIndex(prev => prev + 1);
+      } else {
+        setTryFinished(true);
+      }
+    }, 1500);
   };
 
   return (
@@ -217,15 +228,35 @@ export default function Home({ onStartQuiz, onViewChange }) {
                     <p className="text-[#4A1529] font-body font-bold text-lg mb-6">{tryQuestions[currentTryIndex].question_stem}</p>
                     
                     <div className="space-y-3">
-                      {tryQuestions[currentTryIndex].options.map(opt => (
-                        <button
-                          key={opt.id}
-                          onClick={() => handleTryChoice(opt.id)}
-                          className="w-full text-left p-4 rounded-xl border-[2px] border-[#4A1529] hover:bg-[#F7C4D5] text-[#4A1529] font-bold transition-colors cursor-pointer"
-                        >
-                          {opt.text}
-                        </button>
-                      ))}
+                      {tryQuestions[currentTryIndex].options.map(opt => {
+                        const isSelected = selectedTryChoice === opt.id;
+                        const isCorrect = tryQuestions[currentTryIndex].correct_option === opt.id;
+                        
+                        let buttonClasses = "w-full text-left p-4 rounded-xl border-[2px] font-bold transition-colors ";
+                        
+                        if (showTryFeedback) {
+                          if (isCorrect) {
+                            buttonClasses += "bg-[#22c55e] border-[#16a34a] text-white";
+                          } else if (isSelected) {
+                            buttonClasses += "bg-[#ef4444] border-[#dc2626] text-white";
+                          } else {
+                            buttonClasses += "bg-white border-[#4A1529] text-[#4A1529] opacity-50 cursor-not-allowed";
+                          }
+                        } else {
+                          buttonClasses += "bg-white border-[#4A1529] hover:bg-[#F7C4D5] text-[#4A1529] cursor-pointer";
+                        }
+
+                        return (
+                          <button
+                            key={opt.id}
+                            onClick={() => handleTryChoice(opt.id)}
+                            disabled={showTryFeedback}
+                            className={buttonClasses}
+                          >
+                            {opt.text}
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
