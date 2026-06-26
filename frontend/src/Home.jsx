@@ -16,7 +16,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
   const { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions } = useMemo(() => {
     // Determine the current day since epoch
     const today = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
-    
+
     // Seeded random number generator
     const seededRandom = (seed) => {
       const x = Math.sin(seed++) * 10000;
@@ -44,9 +44,9 @@ export default function Home({ onStartQuiz, onViewChange }) {
       }
       topicsMap[q.topic].count++;
     });
-    
+
     const uniqueTopics = Object.values(topicsMap);
-    
+
     // Pick 2 daily topics
     const tIndex1 = Math.floor(seededRandom(today + 1) * uniqueTopics.length);
     let tIndex2 = Math.floor(seededRandom(today + 2) * uniqueTopics.length);
@@ -67,7 +67,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
 
   const handleTryChoice = (choiceId) => {
     if (showTryFeedback) return;
-    
+
     setSelectedTryChoice(choiceId);
     setShowTryFeedback(true);
 
@@ -161,7 +161,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
 
               {dailyTopics.map((topic, index) => {
                 const isFirst = index === 0;
-                
+
                 // Set 1 Styling
                 const s1Bg = "bg-white";
                 const s1Border = "border-[#4A1529]";
@@ -171,7 +171,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                 const s1BtnText = "text-white";
                 const s1CountText = "text-[#4A1529]";
                 const s1Shadow = "shadow-[0px_4px_0px_0px_#4A1529]";
-                
+
                 // Set 2 Styling
                 const s2Bg = "bg-[#E97CA1]";
                 const s2Border = "border-[#D42F6B]";
@@ -215,9 +215,8 @@ export default function Home({ onStartQuiz, onViewChange }) {
           {tryQuestions.length > 0 && (
             <div className="pb-10">
               <h3 className="font-heading font-black text-xl sm:text-2xl mb-6 text-[#855264] tracking-wider">Try some questions...</h3>
-              
-              <div className="mb-4 px-2">
-                <span className="text-sm font-bold text-[#855264] block mb-1">Learn questions</span>
+
+              <div className="mb-2 px-2 ">
                 <h4 className="text-xl font-black text-[#4A1529] uppercase">{tryTopic.title}</h4>
               </div>
 
@@ -226,14 +225,14 @@ export default function Home({ onStartQuiz, onViewChange }) {
                   <div className="p-4 sm:p-6">
                     <div className="font-bold text-[#855264] mb-4 text-sm sm:text-base">{currentTryIndex + 1} / {tryQuestions.length}</div>
                     <p className="text-[#4A1529] font-body font-bold text-lg mb-6">{tryQuestions[currentTryIndex].question_stem}</p>
-                    
+
                     <div className="space-y-3">
                       {tryQuestions[currentTryIndex].options.map(opt => {
                         const isSelected = selectedTryChoice === opt.id;
                         const isCorrect = tryQuestions[currentTryIndex].correct_option === opt.id;
-                        
+
                         let buttonClasses = "w-full text-left p-4 rounded-xl border-[2px] font-bold transition-colors ";
-                        
+
                         if (showTryFeedback) {
                           if (isCorrect) {
                             buttonClasses += "bg-[#22c55e] border-[#16a34a] text-white";
@@ -263,9 +262,9 @@ export default function Home({ onStartQuiz, onViewChange }) {
               ) : (
                 <div className="bg-[#4A1529] border-[3px] border-[#4A1529] rounded-2xl flex flex-col overflow-hidden shadow-[0px_4px_0px_0px_#4A1529] relative p-8 items-center justify-center min-h-[300px]">
                   <div className="absolute inset-0 opacity-20 flex items-center justify-center overflow-hidden pointer-events-none">
-                     <svg width="400" height="300" viewBox="0 0 400 300" className="text-[#855264] scale-150 transform-gpu">
-                       <path d="M100,250 C-20,150 50,50 150,150 C250,250 150,50 300,100 C450,150 350,300 400,200" fill="none" stroke="currentColor" strokeWidth="20" strokeLinecap="round" />
-                     </svg>
+                    <svg width="400" height="300" viewBox="0 0 400 300" className="text-[#855264] scale-150 transform-gpu">
+                      <path d="M100,250 C-20,150 50,50 150,150 C250,250 150,50 300,100 C450,150 350,300 400,200" fill="none" stroke="currentColor" strokeWidth="20" strokeLinecap="round" />
+                    </svg>
                   </div>
                   <h2 className="text-4xl sm:text-5xl font-black text-white mb-8 z-10 relative text-center leading-tight">Let's keep going!</h2>
                   <button
