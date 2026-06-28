@@ -122,7 +122,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                   {/* Front */}
                   <div className="relative z-20 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl shadow-[0px_4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 min-h-[180px] group-hover:shadow-[0px_8px_0px_0px_#4A1529] group-active:shadow-none">
                     <div className="border-b-[3px] border-[#4A1529] py-3 bg-white text-center">
-                      <span className="text-xl font-black text-[#4A1529]">Review of the Day</span>
+                      <span className="text-xl font-black text-[#4A1529]">Review Card of the Day</span>
                     </div>
                     <div className="p-4 sm:p-6 flex-1 flex flex-col items-center justify-center gap-4">
                       <p className="text-[#4A1529] font-body font-bold text-base sm:text-lg md:text-xl text-center leading-relaxed">
