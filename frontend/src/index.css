@@ -4,7 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-bg text-text font-body antialiased;
+    @apply bg-bg text-text font-body antialiased relative min-h-screen;
+  }
+  body::before {
+    content: "";
+    @apply fixed inset-0 -z-10 bg-no-repeat bg-cover bg-center pointer-events-none;
+    background-image: url('./assets/background.svg');
+    opacity: 0.4;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-bold;
