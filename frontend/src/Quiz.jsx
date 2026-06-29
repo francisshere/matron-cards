@@ -253,11 +253,11 @@ export default function Quiz({ onBack, topicFilter }) {
     }
   };
 
-  if (!currentQuestion) return <div className="min-h-screen bg-bg flex items-center justify-center font-heading text-xl">Loading...</div>;
+  if (!currentQuestion) return <div className="min-h-screen bg-transparent flex items-center justify-center font-heading text-xl">Loading...</div>;
 
   if (gameOver) {
     return (
-      <div className="min-h-screen bg-bg flex items-center justify-center p-6">
+      <div className="min-h-screen bg-transparent flex items-center justify-center p-6">
         <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
           <img src={tiredIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
@@ -270,7 +270,7 @@ export default function Quiz({ onBack, topicFilter }) {
 
   if (quizFinished) {
     return (
-      <div className="min-h-screen bg-bg flex items-center justify-center p-6">
+      <div className="min-h-screen bg-transparent flex items-center justify-center p-6">
         <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
           <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
@@ -283,7 +283,7 @@ export default function Quiz({ onBack, topicFilter }) {
   }
 
   return (
-    <div className="min-h-screen bg-bg flex justify-center">
+    <div className="min-h-screen bg-transparent flex justify-center">
       <div className="w-full lg:w-[60%] flex flex-col pt-8 pb-32 px-6 sm:px-12 relative min-h-screen">
         
         {/* Header */}

@@ -4,9 +4,22 @@
 
 @layer base {
   body {
-    @apply bg-bg text-text font-body antialiased;
+    @apply bg-bg text-text font-body antialiased relative min-h-screen;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  body::before {
+    content: "";
+    @apply fixed inset-0 -z-10 bg-no-repeat bg-cover bg-center pointer-events-none;
+    background-image: url('./assets/new-background.png');
+    opacity: 0.4;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading font-bold;
   }
 }
@@ -14,17 +27,21 @@
 .perspective-1000 {
   perspective: 1000px;
 }
+
 .transform-style-3d {
   transform-style: preserve-3d;
 }
+
 .backface-hidden {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
+
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
 .rotate-x-180 {
   transform: rotateX(180deg);
 }

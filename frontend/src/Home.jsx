@@ -83,7 +83,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
   };
 
   return (
-    <div className="min-h-screen bg-bg flex flex-col lg:flex-row text-text font-body">
+    <div className="min-h-screen bg-transparent flex flex-col lg:flex-row text-text font-body">
 
       {/* Mobile Header */}
       <div className="lg:hidden w-full p-6 border-b-[4px] border-[#855264] flex justify-center bg-bg shadow-sm z-20">
@@ -122,7 +122,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                   {/* Front */}
                   <div className="relative z-20 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl shadow-[0px_4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 min-h-[180px] group-hover:shadow-[0px_8px_0px_0px_#4A1529] group-active:shadow-none">
                     <div className="border-b-[3px] border-[#4A1529] py-3 bg-white text-center">
-                      <span className="text-xl font-black text-[#4A1529]">Review Card of the Day</span>
+                      <span className="text-xl font-black text-[#4A1529]">Review of the Day</span>
                     </div>
                     <div className="p-4 sm:p-6 flex-1 flex flex-col items-center justify-center gap-4">
                       <p className="text-[#4A1529] font-body font-bold text-base sm:text-lg md:text-xl text-center leading-relaxed">
@@ -152,11 +152,11 @@ export default function Home({ onStartQuiz, onViewChange }) {
           </div>
 
           {/* Divider */}
-          <div className="border-t-[3px] border-[#855264] my-6 sm:my-8 w-full"></div>
+          <div className="border-t-[3px] border-[#855264] my-6 sm:my-8 w-full drop-shadow-md"></div>
 
           {/* Course Cards */}
           <div className="pb-10">
-            <h3 className="font-heading font-black text-xl sm:text-2xl mb-6 text-[#855264] tracking-wider">Learn something new...</h3>
+            <h3 className="font-heading font-black text-xl sm:text-2xl mb-6 text-[#855264] tracking-wider drop-shadow-md">Learn something new...</h3>
             <div className="space-y-6">
 
               {dailyTopics.map((topic, index) => {
@@ -208,13 +208,13 @@ export default function Home({ onStartQuiz, onViewChange }) {
 
           {/* Divider */}
           {tryQuestions.length > 0 && (
-            <div className="border-t-[3px] border-[#855264] my-6 sm:my-8 w-full"></div>
+            <div className="border-t-[3px] border-[#855264] my-6 sm:my-8 w-full drop-shadow-md"></div>
           )}
 
           {/* New Section: Try some questions */}
           {tryQuestions.length > 0 && (
             <div className="pb-10">
-              <h3 className="font-heading font-black text-xl sm:text-2xl mb-6 text-[#855264] tracking-wider">Try some questions...</h3>
+              <h3 className="font-heading font-black text-xl sm:text-2xl mb-6 text-[#855264] tracking-wider drop-shadow-md">Try some questions...</h3>
 
               <div className="mb-2 px-2 ">
                 <h4 className="text-xl font-black text-[#4A1529] uppercase">{tryTopic.title}</h4>
