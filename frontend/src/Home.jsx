@@ -83,7 +83,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
   };
 
   return (
-    <div className="min-h-screen bg-bg flex flex-col lg:flex-row text-text font-body">
+    <div className="min-h-screen bg-transparent flex flex-col lg:flex-row text-text font-body">
 
       {/* Mobile Header */}
       <div className="lg:hidden w-full p-6 border-b-[4px] border-[#855264] flex justify-center bg-bg shadow-sm z-20">
