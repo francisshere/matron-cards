@@ -12,7 +12,7 @@ const HighlightText = ({ text, highlight }) => {
   const parts = text.split(regex);
   return (
     <span>
-      {parts.map((part, i) => 
+      {parts.map((part, i) =>
         regex.test(part) ? (
           <mark key={i} className="bg-[#F7C4D5]/60 text-[#4A1529] font-bold rounded px-1">{part}</mark>
         ) : (
@@ -162,13 +162,13 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         if (item.title.toLowerCase().includes(query) || item.subtitle.toLowerCase().includes(query)) {
           isMatch = true;
         }
-        
+
         const topicKey = item.topicKey || `PNLE ${item.subtitle}`;
         const topicQuestions = allQuestions.filter(q => q.topic === topicKey);
-        
+
         topicQuestions.forEach(q => {
           if (
-            q.question_stem.toLowerCase().includes(query) || 
+            q.question_stem.toLowerCase().includes(query) ||
             q.options.some(opt => opt.text.toLowerCase().includes(query)) ||
             q.rationale.toLowerCase().includes(query)
           ) {
@@ -219,7 +219,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-[#F7C4D5]/50 focus:bg-[#F7C4D5]/20 border-none rounded-xl py-4 pl-12 pr-4 text-[#855264] placeholder-[#855264] text-lg font-body focus:outline-none focus:ring-2 focus:ring-[#D42F6B] transition-all shadow-sm"
+              className="w-full bg-[#F7C4D5]/50 focus:bg-[#F7C4D5]/20 border-none rounded-xl py-4 pl-12 pr-4 text-[#855264] placeholder-[#855264] text-lg font-body focus:outline-none focus:ring-2 focus:ring-[#D42F6B] transition-all drop-shadow-md"
               placeholder="Sets, topics, questions"
             />
           </div>
@@ -227,125 +227,125 @@ export default function Topics({ onViewChange, onStartQuiz }) {
           {/* Filter Section */}
           {!searchQuery.trim() && (
             <div className="mb-8">
-            <h2 className="font-heading font-black text-3xl sm:text-4xl text-[#4A1529] mb-4">PNLE Library</h2>
+              <h2 className="font-heading font-black text-3xl sm:text-4xl text-[#4A1529] mb-4">PNLE Library</h2>
 
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-wrap gap-3 items-center w-full">
-                {['Sets', 'Nursing', 'Practice Exams'].map(category => (
-                  <button
-                    key={category}
-                    onClick={() => {
-                      setActiveCategory(category);
-                      if (category === 'Sets') {
-                        setActiveSubcategory('Set 1');
-                        setActiveSet(1);
-                      } else if (category === 'Nursing') {
-                        setActiveSubcategory('Foundation of Nursing');
-                        setActiveSet(4);
-                      } else if (category === 'Practice Exams') {
-                        setActiveSubcategory('All Topics');
-                        setActiveSet(8);
-                      } else {
-                        setActiveSubcategory('');
-                      }
-                    }}
-                    className={`px-6 py-2 rounded-xl border-[2px] font-body font-medium text-lg drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-wrap gap-3 items-center w-full">
+                  {['Sets', 'Nursing', 'Practice Exams'].map(category => (
+                    <button
+                      key={category}
+                      onClick={() => {
+                        setActiveCategory(category);
+                        if (category === 'Sets') {
+                          setActiveSubcategory('Set 1');
+                          setActiveSet(1);
+                        } else if (category === 'Nursing') {
+                          setActiveSubcategory('Foundation of Nursing');
+                          setActiveSet(4);
+                        } else if (category === 'Practice Exams') {
+                          setActiveSubcategory('All Topics');
+                          setActiveSet(8);
+                        } else {
+                          setActiveSubcategory('');
+                        }
+                      }}
+                      className={`px-6 py-2 rounded-xl border-[2px] font-body font-medium text-lg drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
                       ${activeCategory === category
-                        ? 'bg-[#F7C4D5] border-[#855264] text-[#4A1529]'
-                        : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:opacity-90'}`}
-                  >
-                    {category}
-                  </button>
-                ))}
+                          ? 'bg-[#F7C4D5] border-[#855264] text-[#4A1529]'
+                          : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:opacity-90'}`}
+                    >
+                      {category}
+                    </button>
+                  ))}
 
-                {(activeCategory || activeSubcategory) && (
-                  <button
-                    onClick={() => {
-                      setActiveCategory(null);
-                      setActiveSubcategory('');
-                      setActiveSet(1);
-                    }}
-                    className="ml-auto px-4 py-2 rounded-xl font-body font-bold text-sm text-[#855264] hover:text-[#4A1529] hover:bg-[#F7C4D5] transition-all flex items-center gap-1"
-                    title="Remove Filter"
-                  >
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    Remove Filter
-                  </button>
+                  {(activeCategory || activeSubcategory) && (
+                    <button
+                      onClick={() => {
+                        setActiveCategory(null);
+                        setActiveSubcategory('');
+                        setActiveSet(1);
+                      }}
+                      className="ml-auto px-4 py-2 rounded-xl font-body font-bold text-sm text-[#855264] hover:text-[#4A1529] hover:bg-[#F7C4D5] transition-all flex items-center gap-1"
+                      title="Remove Filter"
+                    >
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                      Remove Filter
+                    </button>
+                  )}
+                </div>
+
+                {activeCategory === 'Sets' && (
+                  <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
+                    {['Set 1', 'Set 2', 'Set 3'].map(sub => (
+                      <button
+                        key={sub}
+                        onClick={() => {
+                          setActiveSubcategory(sub);
+                          if (sub === 'Set 1') setActiveSet(1);
+                          else if (sub === 'Set 2') setActiveSet(2);
+                          else if (sub === 'Set 3') setActiveSet(3);
+                          else if (sub === 'Foundation of Nursing') setActiveSet(4);
+                          else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
+                          else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
+                          else if (sub === 'Community Health Nursing') setActiveSet(7);
+                        }}
+                        className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+                        ${activeSubcategory === sub
+                            ? 'bg-[#D42F6B] border-[#4A1529] text-white'
+                            : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
+                      >
+                        {sub}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {activeCategory === 'Nursing' && (
+                  <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
+                    {['Foundation of Nursing', 'Maternal and Child Nursing', 'Community Health Nursing', 'Medical - Surgical Nursing'].map(sub => (
+                      <button
+                        key={sub}
+                        onClick={() => {
+                          setActiveSubcategory(sub);
+                          if (sub === 'Foundation of Nursing') setActiveSet(4);
+                          else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
+                          else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
+                          else if (sub === 'Community Health Nursing') setActiveSet(7);
+                        }}
+                        className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+                        ${activeSubcategory === sub
+                            ? 'bg-[#D42F6B] border-[#4A1529] text-white'
+                            : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
+                      >
+                        {sub}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {activeCategory === 'Practice Exams' && (
+                  <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
+                    {['All Topics'].map(sub => (
+                      <button
+                        key={sub}
+                        onClick={() => {
+                          setActiveSubcategory(sub);
+                          if (sub === 'All Topics') setActiveSet(8);
+                        }}
+                        className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
+                        ${activeSubcategory === sub
+                            ? 'bg-[#D42F6B] border-[#4A1529] text-white'
+                            : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
+                      >
+                        {sub}
+                      </button>
+                    ))}
+                  </div>
                 )}
               </div>
-
-              {activeCategory === 'Sets' && (
-                <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
-                  {['Set 1', 'Set 2', 'Set 3'].map(sub => (
-                    <button
-                      key={sub}
-                      onClick={() => {
-                        setActiveSubcategory(sub);
-                        if (sub === 'Set 1') setActiveSet(1);
-                        else if (sub === 'Set 2') setActiveSet(2);
-                        else if (sub === 'Set 3') setActiveSet(3);
-                        else if (sub === 'Foundation of Nursing') setActiveSet(4);
-                        else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
-                        else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
-                        else if (sub === 'Community Health Nursing') setActiveSet(7);
-                      }}
-                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
-                        ${activeSubcategory === sub
-                          ? 'bg-[#D42F6B] border-[#4A1529] text-white'
-                          : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
-                    >
-                      {sub}
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {activeCategory === 'Nursing' && (
-                <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
-                  {['Foundation of Nursing', 'Maternal and Child Nursing', 'Community Health Nursing', 'Medical - Surgical Nursing'].map(sub => (
-                    <button
-                      key={sub}
-                      onClick={() => {
-                        setActiveSubcategory(sub);
-                        if (sub === 'Foundation of Nursing') setActiveSet(4);
-                        else if (sub === 'Maternal and Child Nursing') setActiveSet(5);
-                        else if (sub === 'Medical - Surgical Nursing') setActiveSet(6);
-                        else if (sub === 'Community Health Nursing') setActiveSet(7);
-                      }}
-                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
-                        ${activeSubcategory === sub
-                          ? 'bg-[#D42F6B] border-[#4A1529] text-white'
-                          : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
-                    >
-                      {sub}
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {activeCategory === 'Practice Exams' && (
-                <div className="flex flex-wrap gap-2 pl-2 border-l-[3px] border-[#D42F6B]">
-                  {['All Topics'].map(sub => (
-                    <button
-                      key={sub}
-                      onClick={() => {
-                        setActiveSubcategory(sub);
-                        if (sub === 'All Topics') setActiveSet(8);
-                      }}
-                      className={`px-4 py-1.5 rounded-lg border-[2px] font-body font-medium text-sm drop-shadow-[0_3px_2px_rgba(212,47,107,0.6)] transition-all
-                        ${activeSubcategory === sub
-                          ? 'bg-[#D42F6B] border-[#4A1529] text-white'
-                          : 'bg-[#F7C4D5] border-transparent text-[#855264] hover:bg-[#E97CA1] hover:text-white'}`}
-                    >
-                      {sub}
-                    </button>
-                  ))}
-                </div>
-              )}
             </div>
-          </div>
           )}
 
           {/* Topic Cards List */}
@@ -355,13 +355,13 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                 <p className="text-[#855264] font-body text-xl font-semibold">No results found for "{searchQuery}"</p>
               </div>
             )}
-            
+
             {displaySets.map((setData, setIndex) => (
               <div key={setData.id || setIndex}>
                 {/* Set Header */}
                 <div className="flex items-center mb-6">
                   <span className="text-[#855264] font-body font-bold text-lg mr-4 tracking-wide">{setData.name}</span>
-                  <div className="flex-1 border-t border-[#855264] opacity-30"></div>
+                  <div className="flex-1 border-t border-[#855264] opacity-30 drop-shadow-md"></div>
                 </div>
 
                 {/* Topic Cards */}
@@ -386,7 +386,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                           </button>
                         </div>
                       </div>
-                      
+
                       {/* Matched Questions Sub-section */}
                       {item.matchedQuestions && item.matchedQuestions.length > 0 && searchQuery.trim() && (
                         <div className={`border-t-[3px] ${setData.colorClass} bg-[#F7C4D5]/10 p-4 sm:p-6`}>
@@ -400,7 +400,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
                                 </p>
                                 {q.options.some(opt => opt.text.toLowerCase().includes(searchQuery.toLowerCase())) && (
                                   <div className="pl-6 border-l-2 border-[#F7C4D5] space-y-1 mt-2">
-                                    {q.options.map((opt, oIndex) => 
+                                    {q.options.map((opt, oIndex) =>
                                       opt.text.toLowerCase().includes(searchQuery.toLowerCase()) ? (
                                         <p key={oIndex} className="font-body text-xs sm:text-sm text-[#855264]">
                                           • <HighlightText text={opt.text} highlight={searchQuery} />
