@@ -47,10 +47,10 @@ export default function Mnemonics({ onViewChange }) {
             {cards.map((card, index) => (
               <div 
                 key={index} 
-                className="bg-white border-[3px] border-[#4A1529] rounded-xl sm:rounded-2xl p-6 flex flex-col items-center justify-center text-center shadow-[0px_6px_0px_0px_#4A1529] hover:translate-y-1 hover:shadow-none transition-all cursor-pointer min-h-[220px]"
+                className="group bg-white hover:bg-primary border-[3px] border-[#4A1529] rounded-xl sm:rounded-2xl p-6 flex flex-col items-center justify-center text-center shadow-[0px_6px_0px_0px_#4A1529] hover:shadow-[0px_8px_0px_0px_#4A1529] hover:-translate-y-2 hover:scale-105 transition-all duration-300 cursor-pointer min-h-[220px]"
               >
-                <img src={card.icon} alt={card.title} className="w-32 h-32 mb-6 object-contain" />
-                <h2 className="font-heading font-black text-xl sm:text-2xl text-black">
+                <img src={card.icon} alt={card.title} className="w-32 h-32 mb-6 object-contain group-hover:scale-125 transition-transform duration-300" />
+                <h2 className="font-heading font-black text-xl sm:text-2xl text-black group-hover:text-white transition-colors duration-300">
                   {card.title}
                 </h2>
               </div>
