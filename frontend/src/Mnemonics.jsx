@@ -34,10 +34,10 @@ export default function Mnemonics({ onViewChange }) {
           
           {/* Header Card */}
           <div className="bg-white border-[3px] border-[#4A1529] rounded-xl sm:rounded-2xl p-6 sm:p-10 mb-8 w-full max-w-3xl shadow-[0px_6px_0px_0px_#4A1529]">
-            <h1 className="font-heading font-black text-4xl sm:text-5xl text-black mb-4 uppercase tracking-wide">
+            <h1 className="font-heading font-black text-4xl sm:text-5xl text-text mb-4 uppercase tracking-wide">
               MNEMONICS
             </h1>
-            <p className="font-body text-sm sm:text-base text-black font-medium max-w-lg leading-relaxed">
+            <p className="font-body text-sm sm:text-base text-text font-medium max-w-lg leading-relaxed">
               Mnemonics that can help you understand topics quickly. Memorize and use these well!
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function Mnemonics({ onViewChange }) {
                 className="group bg-white hover:bg-primary border-[3px] border-[#4A1529] rounded-xl sm:rounded-2xl p-6 flex flex-col items-center justify-center text-center shadow-[0px_6px_0px_0px_#4A1529] hover:shadow-[0px_8px_0px_0px_#4A1529] hover:-translate-y-2 hover:scale-105 transition-all duration-300 cursor-pointer min-h-[220px]"
               >
                 <img src={card.icon} alt={card.title} className="w-32 h-32 mb-6 object-contain group-hover:scale-125 transition-transform duration-300" />
-                <h2 className="font-heading font-black text-xl sm:text-2xl text-black group-hover:text-white transition-colors duration-300">
+                <h2 className="font-heading font-black text-xl sm:text-2xl text-text group-hover:text-white transition-colors duration-300">
                   {card.title}
                 </h2>
               </div>
