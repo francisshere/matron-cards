@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Home from './Home';
 import Quiz from './Quiz';
 import Topics from './Topics';
+import Mnemonics from './Mnemonics';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -48,6 +49,7 @@ export default function App() {
       {currentView === 'home' && <Home onStartQuiz={handleStartQuiz} onViewChange={handleViewChange} />}
       {currentView === 'quiz' && <Quiz onBack={handleBack} topicFilter={quizTopic} />}
       {currentView === 'topics' && <Topics onViewChange={handleViewChange} onStartQuiz={handleStartQuiz} />}
+      {currentView === 'mnemonics' && <Mnemonics onViewChange={handleViewChange} />}
     </>
   );
 }
