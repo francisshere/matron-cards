@@ -8,6 +8,7 @@ import surgicalIcon from './assets/surgical.svg';
 import psychIcon from './assets/psych.svg';
 import pharmacologyIcon from './assets/pharmacology.svg';
 import communicableIcon from './assets/communicable.svg';
+import mnemonicsAvatar from './assets/mnemonics-avatar (1).svg';
 
 export default function Mnemonics({ onViewChange }) {
   const cards = [
@@ -33,13 +34,18 @@ export default function Mnemonics({ onViewChange }) {
         <div className="w-full max-w-4xl flex flex-col items-center">
           
           {/* Header Card */}
-          <div className="bg-white border-[3px] border-[#4A1529] rounded-xl sm:rounded-2xl p-6 sm:p-10 mb-8 w-full max-w-3xl shadow-[0px_6px_0px_0px_#4A1529]">
-            <h1 className="font-heading font-black text-4xl sm:text-5xl text-text mb-4 uppercase tracking-wide">
-              MNEMONICS
-            </h1>
-            <p className="font-body text-sm sm:text-base text-text font-medium max-w-lg leading-relaxed">
-              Mnemonics that can help you understand topics quickly. Memorize and use these well!
-            </p>
+          <div className="bg-white border-[3px] border-[#4A1529] rounded-xl sm:rounded-2xl p-6 sm:p-10 mb-8 w-full max-w-3xl shadow-[0px_6px_0px_0px_#4A1529] flex flex-col-reverse sm:flex-row items-center sm:justify-between gap-6 sm:gap-10">
+            <div className="flex-1 flex flex-col items-center sm:items-start">
+              <h1 className="font-heading font-black text-4xl sm:text-5xl text-text mb-4 uppercase tracking-wide text-center sm:text-left">
+                MNEMONICS
+              </h1>
+              <p className="font-body text-sm sm:text-base text-text font-medium max-w-lg leading-relaxed text-center sm:text-left">
+                Mnemonics that can help you understand topics quickly. Memorize and use these well!
+              </p>
+            </div>
+            <div className="w-56 h-56 sm:w-80 sm:h-80 flex-shrink-0">
+              <img src={mnemonicsAvatar} alt="Mnemonics Avatar" className="w-full h-full object-contain drop-shadow-md" />
+            </div>
           </div>
 
           {/* Grid of Cards */}
