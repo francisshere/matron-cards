@@ -12,7 +12,6 @@ export default function Sidebar({ activeView, onViewChange }) {
     { id: 'topics', label: 'Topics', icon: topicsIcon },
     { id: 'mnemonics', label: 'Mnemonics', icon: mnemonicsIcon },
     { id: 'tips', label: 'Tips', icon: tipsIcon },
-    { id: 'profile', label: 'Profile', icon: profileIcon },
   ];
 
   return (
