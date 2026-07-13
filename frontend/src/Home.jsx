@@ -98,7 +98,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
 
           {/* Header */}
           <div className="bg-[#D42F6B] rounded-2xl py-4 px-4 sm:px-6 mb-8 text-center border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529]">
-            <h2 className="font-heading font-black text-2xl sm:text-3xl text-[#F7C4D5] leading-tight">Philippine Nursing<br />Licensure Exam</h2>
+            <h2 className="font-heading font-black text-2xl sm:text-3xl text-[#F7C4D5] leading-tight">The character of the nurse is as important as<br />the knowledge she possesses.</h2>
           </div>
 
           {/* Feature Spotlight: Review of the Day */}
