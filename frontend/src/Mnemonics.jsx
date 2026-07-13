@@ -40,7 +40,7 @@ export default function Mnemonics({ onViewChange }) {
                 MNEMONICS
               </h1>
               <p className="font-body text-sm sm:text-base text-text font-medium max-w-lg leading-relaxed text-center sm:text-left">
-                Mnemonics that can help you understand topics quickly. Memorize and use these well!
+                Mnemonics that can help you understand topics quickly. Memorize and use these well for your review!
               </p>
             </div>
             <div className="w-32 h-32 sm:w-60 sm:h-60 flex-shrink-0">
