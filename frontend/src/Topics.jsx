@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import allQuestions from './data/questions.json';
 
 import logo from './assets/matron-logo.svg';
@@ -30,7 +30,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
   const [searchQuery, setSearchQuery] = useState('');
 
   // Example data based on the images
-  const sets = [
+  const sets = useMemo(() => [
     {
       id: 1,
       name: "SET 1",
@@ -148,7 +148,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         { title: "Practice PNLE Exam 2", subtitle: "Nursing - All Topics", topicKey: "All Topics - Practice PNLE Exam 2", count: 150 }
       ]
     }
-  ];
+  ], []);
 
   const filteredSets = useMemo(() => {
     if (!searchQuery.trim()) return null;

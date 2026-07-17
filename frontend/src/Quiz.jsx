@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { X, Settings, ChevronUp, ChevronDown } from 'lucide-react';
 import allQuestions from './data/questions.json';
 
@@ -103,7 +103,7 @@ export default function Quiz({ onBack, topicFilter }) {
       }, 1000);
     } else if (timeRemaining === 0 && !gameOver && !quizFinished) {
       playSound('alarm');
-      setQuizFinished(true); // ran out of time
+      setTimeout(() => setQuizFinished(true), 0); // ran out of time
     }
     return () => clearInterval(timer);
   }, [timeRemaining, gameOver, quizFinished]);
@@ -120,10 +120,6 @@ export default function Quiz({ onBack, topicFilter }) {
     const s = seconds % 60;
     return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
-
-  useEffect(() => {
-    startNewGame(25, false);
-  }, []);
 
   const startNewGame = (count = questionCount, isRandom = randomize, tEnabled = timeLimitEnabled, tHours = timeLimitHours, tMins = timeLimitMinutes, tSecs = timeLimitSeconds) => {
     let actualCount = count;
@@ -161,6 +157,14 @@ export default function Quiz({ onBack, topicFilter }) {
       setTimeRemaining(null);
     }
   };
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    startNewGame(25, false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+
 
   const openSettings = () => {
     setTempGamemode(gamemode);
