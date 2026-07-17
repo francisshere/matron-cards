@@ -1,4 +1,4 @@
-import React from 'react';
+
 import logo from './assets/matron-logo.svg';
 import Sidebar from './Sidebar';
 

@@ -1,8 +1,8 @@
-import React from 'react';
+
 import logo from './assets/matron-logo.svg';
 import learnIcon from './assets/learn-icon.svg';
 import topicsIcon from './assets/topics-icon.svg';
-import profileIcon from './assets/profile-icon.svg';
+
 import mnemonicsIcon from './assets/mnemonics-icon.svg';
 import tipsIcon from './assets/speech-bubble.svg';
 

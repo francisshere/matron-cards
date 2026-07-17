@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import allQuestions from './data/questions.json';
 
 import logo from './assets/matron-logo.svg';
@@ -13,13 +13,12 @@ export default function Home({ onStartQuiz, onViewChange }) {
   const [selectedTryChoice, setSelectedTryChoice] = useState(null);
   const [showTryFeedback, setShowTryFeedback] = useState(false);
 
-  const { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions } = useMemo(() => {
-    // Determine the current day since epoch
-    const today = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+  const [today] = useState(() => Math.floor(Date.now() / (1000 * 60 * 60 * 24)));
 
+  const { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions } = useMemo(() => {
     // Seeded random number generator
     const seededRandom = (seed) => {
-      const x = Math.sin(seed++) * 10000;
+      const x = Math.sin(seed + 1) * 10000;
       return x - Math.floor(x);
     };
 
@@ -63,7 +62,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
     const tryQuestions = tryQuestionsAll.slice(0, 5);
 
     return { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions };
-  }, []);
+  }, [today]);
 
   const handleTryChoice = (choiceId) => {
     if (showTryFeedback) return;
