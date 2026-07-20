@@ -5,6 +5,7 @@ import topicsIcon from './assets/topics-icon.svg';
 
 import mnemonicsIcon from './assets/mnemonics-icon.svg';
 import tipsIcon from './assets/speech-bubble.svg';
+import { motion } from 'framer-motion';
 
 export default function Sidebar({ activeView, onViewChange }) {
   const navItems = [
@@ -30,12 +31,20 @@ export default function Sidebar({ activeView, onViewChange }) {
               key={item.id}
               href="#" 
               onClick={(e) => { e.preventDefault(); onViewChange(item.id); }} 
-              className={`flex items-center justify-center lg:justify-start md:w-full py-2 px-2 md:py-3 md:px-4 rounded-xl border-[2px] transition-colors group ${isActive ? 'border-primary bg-primary/10 text-primary' : 'border-transparent hover:border-muted hover:bg-primary/5 text-muted'}`}
+              className={`relative flex items-center justify-center lg:justify-start md:w-full py-2 px-2 md:py-3 md:px-4 rounded-xl border-[2px] border-transparent transition-all duration-300 ease-in-out group ${isActive ? 'text-primary scale-110 md:scale-105 shadow-sm' : 'hover:border-muted hover:bg-primary/5 text-muted hover:scale-105 md:hover:scale-105'}`}
             >
-              <div className="w-10 h-10 md:w-12 md:h-12 lg:mr-4 flex items-center justify-center shrink-0">
-                <img src={item.icon} alt={item.label} className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform" />
+              {isActive && (
+                <motion.div
+                  layoutId="activeSidebarSelector"
+                  className="absolute inset-0 bg-primary/10 border-[2px] border-primary rounded-xl"
+                  initial={false}
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                />
+              )}
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 lg:mr-4 flex items-center justify-center shrink-0">
+                <img src={item.icon} alt={item.label} className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <span className="hidden lg:block font-black tracking-widest uppercase text-sm">{item.label}</span>
+              <span className={`relative z-10 hidden lg:block font-black tracking-widest uppercase text-sm transition-all duration-300 ${isActive ? 'opacity-100 translate-x-1' : 'opacity-80 group-hover:translate-x-1'}`}>{item.label}</span>
             </a>
           );
         })}
