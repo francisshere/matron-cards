@@ -227,7 +227,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
           {/* Filter Section */}
           {!searchQuery.trim() && (
             <div className="mb-8">
-              <h2 className="font-heading font-black text-3xl sm:text-4xl text-[#4A1529] mb-4">PNLE Library</h2>
+              <h2 className="font-heading font-black text-3xl sm:text-4xl text-[#4A1529] mb-4">Library</h2>
 
               <div className="flex flex-col gap-4">
                 <div className="flex flex-wrap gap-3 items-center w-full">
