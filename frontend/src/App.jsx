@@ -3,6 +3,7 @@ import Home from './Home';
 import Quiz from './Quiz';
 import Topics from './Topics';
 import Mnemonics from './Mnemonics';
+import Tips from './Tips';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -50,6 +51,7 @@ export default function App() {
       {currentView === 'quiz' && <Quiz onBack={handleBack} topicFilter={quizTopic} />}
       {currentView === 'topics' && <Topics onViewChange={handleViewChange} onStartQuiz={handleStartQuiz} />}
       {currentView === 'mnemonics' && <Mnemonics onViewChange={handleViewChange} />}
+      {currentView === 'tips' && <Tips onViewChange={handleViewChange} />}
     </>
   );
 }
