@@ -1,10 +1,8 @@
-import { useState, useMemo } from 'react';
-import allQuestions from './data/questions.json';
-
-import logo from './assets/matron-logo.svg';
+import { useState } from 'react';
 import mascot from './assets/love.svg';
 import explainIcon from './assets/explain.svg';
-import Sidebar from './Sidebar';
+import { useDailyContent } from './hooks/useDailyContent';
+import Layout from './components/Layout';
 
 export default function Home({ onStartQuiz, onViewChange }) {
   const [showRationale, setShowRationale] = useState(false);
@@ -13,56 +11,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
   const [selectedTryChoice, setSelectedTryChoice] = useState(null);
   const [showTryFeedback, setShowTryFeedback] = useState(false);
 
-  const [today] = useState(() => Math.floor(Date.now() / (1000 * 60 * 60 * 24)));
-
-  const { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions } = useMemo(() => {
-    // Seeded random number generator
-    const seededRandom = (seed) => {
-      const x = Math.sin(seed + 1) * 10000;
-      return x - Math.floor(x);
-    };
-
-    // Pick a daily question
-    const qIndex = Math.floor(seededRandom(today) * allQuestions.length);
-    const dailyQuestion = allQuestions[qIndex];
-
-    const correctOpt = dailyQuestion.options.find(o => o.id === dailyQuestion.correct_option);
-    const answerText = correctOpt ? `${dailyQuestion.correct_option}. ${correctOpt.text}` : dailyQuestion.correct_option;
-
-    // Get unique topics and their counts
-    const topicsMap = {};
-    allQuestions.forEach(q => {
-      if (!topicsMap[q.topic]) {
-        const parts = q.topic.split(' - ');
-        topicsMap[q.topic] = {
-          title: parts.length > 1 ? parts.slice(1).join(' - ') : q.topic,
-          subtitle: q.course ? `${q.course} - ${parts[0]}` : parts[0],
-          topicKey: q.topic,
-          count: 0
-        };
-      }
-      topicsMap[q.topic].count++;
-    });
-
-    const uniqueTopics = Object.values(topicsMap);
-
-    // Pick 2 daily topics
-    const tIndex1 = Math.floor(seededRandom(today + 1) * uniqueTopics.length);
-    let tIndex2 = Math.floor(seededRandom(today + 2) * uniqueTopics.length);
-    if (tIndex1 === tIndex2 && uniqueTopics.length > 1) {
-      tIndex2 = (tIndex2 + 1) % uniqueTopics.length;
-    }
-
-    const dailyTopics = [uniqueTopics[tIndex1], uniqueTopics[tIndex2]].filter(Boolean);
-
-    // Pick topic for "Try some questions"
-    let tryTopicIndex = Math.floor(seededRandom(today + 3) * uniqueTopics.length);
-    const tryTopic = uniqueTopics[tryTopicIndex];
-    const tryQuestionsAll = allQuestions.filter(q => q.topic === tryTopic.topicKey);
-    const tryQuestions = tryQuestionsAll.slice(0, 5);
-
-    return { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions };
-  }, [today]);
+  const { dailyQuestion, dailyTopics, answerText, tryTopic, tryQuestions } = useDailyContent();
 
   const handleTryChoice = (choiceId) => {
     if (showTryFeedback) return;
@@ -82,18 +31,8 @@ export default function Home({ onStartQuiz, onViewChange }) {
   };
 
   return (
-    <div className="min-h-screen bg-transparent flex flex-col lg:flex-row text-text font-body">
-
-      {/* Mobile Header */}
-      <div className="lg:hidden w-full p-6 border-b-[4px] border-[#855264] flex justify-center bg-bg shadow-sm z-20">
-        <img src={logo} alt="Matron Logo" className="w-40 h-auto" />
-      </div>
-
-      <Sidebar activeView="home" onViewChange={onViewChange} />
-
-      {/* Main Content Area */}
-      <main className="w-full md:w-[calc(100%-6rem)] lg:w-[calc(100%-16rem)] md:ml-24 lg:ml-64 p-4 sm:p-8 pb-28 md:pb-8 flex justify-center">
-        <div className="w-full max-w-3xl flex flex-col">
+    <Layout activeView="home" onViewChange={onViewChange}>
+      <div className="w-full max-w-3xl flex flex-col">
 
           {/* Header */}
           <div className="bg-[#D42F6B] rounded-2xl py-4 px-4 sm:px-6 mb-8 text-center border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529]">
@@ -278,7 +217,6 @@ export default function Home({ onStartQuiz, onViewChange }) {
           )}
 
         </div>
-      </main>
-    </div>
+    </Layout>
   );
 }
