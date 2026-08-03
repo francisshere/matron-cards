@@ -1,6 +1,4 @@
-
-import logo from './assets/matron-logo.svg';
-import Sidebar from './Sidebar';
+import Layout from './components/Layout';
 
 import fundamentalsIcon from './assets/fundamentals.svg';
 import maternalIcon from './assets/maternal.svg';
@@ -21,17 +19,8 @@ export default function Mnemonics({ onViewChange }) {
   ];
 
   return (
-    <div className="min-h-screen bg-transparent flex flex-col lg:flex-row text-text font-body">
-      {/* Mobile Header */}
-      <div className="lg:hidden w-full p-6 border-b-[4px] border-[#855264] flex justify-center bg-bg shadow-sm z-20">
-        <img src={logo} alt="Matron Logo" className="w-40 h-auto" />
-      </div>
-
-      <Sidebar activeView="mnemonics" onViewChange={onViewChange} />
-
-      {/* Main Content Area */}
-      <main className="w-full md:w-[calc(100%-6rem)] lg:w-[calc(100%-16rem)] md:ml-24 lg:ml-64 p-4 sm:p-8 pb-28 md:pb-8 flex justify-center">
-        <div className="w-full max-w-4xl flex flex-col items-center">
+    <Layout activeView="mnemonics" onViewChange={onViewChange}>
+      <div className="w-full max-w-4xl flex flex-col items-center">
 
           {/* Header Card */}
           <div className="bg-white border-[3px] border-[#4A1529] rounded-xl sm:rounded-2xl p-6 sm:p-10 mb-8 w-full max-w-3xl shadow-[0px_6px_0px_0px_#4A1529] flex flex-col-reverse sm:flex-row items-center sm:justify-between gap-6 sm:gap-10">
@@ -64,7 +53,6 @@ export default function Mnemonics({ onViewChange }) {
           </div>
 
         </div>
-      </main>
-    </div>
+    </Layout>
   );
 }
