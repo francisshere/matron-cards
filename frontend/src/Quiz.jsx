@@ -528,7 +528,7 @@ export default function Quiz({ onBack, topicFilter }) {
       {exitConfirmOpen && (
         <div className="fixed inset-0 bg-text/50 z-[100] flex items-center justify-center p-4">
           <div className="bg-card w-full max-w-sm rounded-3xl p-6 sm:p-8 shadow-xl text-center animate-bounce-pop">
-            <h2 className="text-3xl font-heading font-bold text-text mb-4">Wait!!</h2>
+            <h2 className="text-3xl font-heading font-bold text-text mb-4">Wait!</h2>
             <p className="font-body text-text/80 mb-8 font-semibold">Are you sure you want to quit? Your progress will be lost.</p>
             <div className="flex flex-col space-y-3">
               <button 
