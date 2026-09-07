@@ -209,7 +209,7 @@ export default function Quiz({ onBack, topicFilter }) {
 
   if (gameOver) {
     return (
-      <div className="min-h-screen bg-transparent flex items-center justify-center p-6">
+      <div className="h-screen h-[100dvh] bg-transparent flex items-center justify-center p-6">
         <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
           <img src={tiredIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
@@ -222,7 +222,7 @@ export default function Quiz({ onBack, topicFilter }) {
 
   if (quizFinished) {
     return (
-      <div className="min-h-screen bg-transparent flex items-center justify-center p-6">
+      <div className="h-screen h-[100dvh] bg-transparent flex items-center justify-center p-6">
         <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
           <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
           <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
@@ -235,52 +235,52 @@ export default function Quiz({ onBack, topicFilter }) {
   }
 
   return (
-    <div className="min-h-screen bg-transparent flex justify-center">
-      <div className="w-full lg:w-[60%] flex flex-col pt-8 pb-32 px-6 sm:px-12 relative min-h-screen">
-        
+    <div className="h-screen h-[100dvh] max-h-screen bg-transparent flex flex-col justify-between overflow-y-auto sm:overflow-hidden">
+      {/* Content wrapper */}
+      <div className="w-full lg:w-[65%] xl:w-[60%] mx-auto flex-1 min-h-0 flex flex-col justify-center px-6 sm:px-10 py-3 sm:py-5">
         {/* Header */}
-        <header className="flex items-center justify-between mb-10">
-          <div className="flex items-center space-x-1 sm:space-x-2">
-            <button onClick={() => setExitConfirmOpen(true)} className="text-text hover:text-primary transition-colors p-2">
-              <X className="w-8 h-8 sm:w-10 sm:h-10" strokeWidth={3} />
+        <header className="flex items-center justify-between mb-4 sm:mb-6">
+          <div className="flex items-center space-x-2">
+            <button onClick={() => setExitConfirmOpen(true)} className="text-text hover:text-primary transition-colors p-2 rounded-full hover:bg-text/5">
+              <X className="w-8 h-8 sm:w-9 sm:h-9" strokeWidth={2.5} />
             </button>
-            <button onClick={openSettings} className="text-text hover:text-primary transition-colors p-2">
-              <Settings className="w-7 h-7 sm:w-9 sm:h-9" strokeWidth={3} />
+            <button onClick={openSettings} className="text-text hover:text-primary transition-colors p-2 rounded-full hover:bg-text/5">
+              <Settings className="w-7 h-7 sm:w-8 sm:h-8" strokeWidth={2.5} />
             </button>
           </div>
           
-          <div className="flex-1 mx-4 sm:mx-8 relative h-8 sm:h-10 bg-card border-2 border-text/10 rounded-full overflow-hidden shadow-sm">
+          <div className="flex-1 mx-4 sm:mx-8 relative h-7 sm:h-8 bg-card border-2 border-text/10 rounded-full overflow-hidden shadow-sm">
             <div 
               className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-mid rounded-full transition-all duration-500" 
               style={{ width: `${((currentIndex) / questions.length) * 100}%` }} 
             />
-            <div className="absolute inset-0 flex items-center justify-center text-sm sm:text-base font-body font-semibold text-text z-10">
+            <div className="absolute inset-0 flex items-center justify-center text-sm sm:text-base font-body font-bold text-text z-10">
               {currentIndex + 1} of {questions.length}
             </div>
           </div>
           
-          <div className="flex items-center space-x-3 sm:space-x-5 drop-shadow-sm ml-2 sm:ml-4">
+          <div className="flex items-center space-x-3 sm:space-x-4 drop-shadow-sm ml-2">
             {timeRemaining !== null && (
               <div className={`font-heading font-black text-xl sm:text-2xl transition-colors ${timeRemaining < 60 ? 'text-red-500 animate-pulse' : 'text-text'}`}>
                 {formatTime(timeRemaining)}
               </div>
             )}
             <div className={`flex items-center space-x-2 transition-opacity ${gamemode ? 'opacity-100' : 'opacity-0'}`}>
-              <img src={lampIcon} alt="Lamp" className="w-10 h-10 sm:w-14 sm:h-14 object-contain" />
+              <img src={lampIcon} alt="Lamp" className="w-9 h-9 sm:w-11 sm:h-11 object-contain" />
               <span className="font-body font-bold text-mid text-2xl sm:text-3xl">{lives}</span>
             </div>
           </div>
         </header>
 
         {/* Title */}
-        <div className="mb-8 text-center sm:text-left">
-          <h2 className="text-muted font-bold tracking-wider text-sm mb-1 uppercase">{currentQuestion.course}</h2>
-          <h1 className="text-2xl sm:text-3xl font-heading text-text font-black">{currentQuestion.topic}</h1>
+        <div className="mb-3 sm:mb-4 text-left">
+          <h2 className="text-muted font-bold tracking-wider text-xs sm:text-sm mb-1 uppercase">{currentQuestion.course}</h2>
+          <h1 className="text-2xl sm:text-3xl font-heading text-text font-black leading-snug">{currentQuestion.topic}</h1>
         </div>
 
         {/* Question Area */}
-        <div className="flex flex-col sm:flex-row items-center sm:items-start mb-8 relative">
-          <div className="w-56 h-56 sm:w-72 sm:h-72 shrink-0 relative mb-4 sm:mb-0 sm:mr-6 z-10">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-7 mb-3 sm:mb-4 relative">
+          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 shrink-0 relative z-10 flex items-center justify-center">
             <img 
               src={showRationale ? explainIcon : avatarNurse} 
               alt="Mascot Avatar" 
@@ -288,49 +288,62 @@ export default function Quiz({ onBack, topicFilter }) {
             />
           </div>
           
-          <div className={`border-4 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50 animate-shake') : 'border-text/60 bg-card'} rounded-3xl p-6 sm:p-8 shadow-sm relative w-full z-0 min-h-[160px] transition-colors duration-300`}>
+          <div className={`border-4 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50 animate-shake') : 'border-text/60 bg-card'} rounded-3xl p-5 sm:p-6 shadow-sm relative flex-1 min-w-0 transition-colors duration-300`}>
             {/* Speech bubble tail */}
-            <div className={`hidden sm:block absolute top-12 -left-[14px] w-6 h-6 border-l-4 border-b-4 transform rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
+            <div className={`hidden sm:block absolute top-9 -left-[14px] w-6 h-6 border-l-4 border-b-4 transform rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
             <div className={`sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 border-t-4 border-l-4 rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
             
-            {showRationale && (
-              <div className={`mb-4 inline-block px-4 py-1.5 rounded-full text-sm sm:text-base font-bold uppercase tracking-widest shadow-sm animate-bounce-pop ${
-                  selectedOption === currentQuestion.correct_option ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
-                }`}>
-                {selectedOption === currentQuestion.correct_option ? '🎉 CORRECT!' : '❌ INCORRECT'}
+            {showRationale ? (
+              <div>
+                <div className="flex items-center gap-3 mb-3 pb-2 border-b-2 border-text/10">
+                  <span className={`inline-block px-4 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm animate-bounce-pop ${
+                    selectedOption === currentQuestion.correct_option ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+                  }`}>
+                    {selectedOption === currentQuestion.correct_option ? '🎉 CORRECT!' : '❌ INCORRECT'}
+                  </span>
+                  <span className="font-heading font-black text-sm sm:text-base text-text uppercase tracking-wide">Rationale</span>
+                </div>
+                <div className="text-text font-body font-semibold text-base sm:text-lg leading-relaxed max-h-40 overflow-y-auto pr-1">
+                  {currentQuestion.rationale}
+                </div>
+              </div>
+            ) : (
+              <div>
+                <span className="font-heading font-black text-sm sm:text-base text-text/70 block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-1.5">
+                  Question
+                </span>
+                <p className="text-text font-body font-semibold text-base sm:text-lg md:text-xl leading-relaxed">
+                  {currentQuestion.question_stem}
+                </p>
               </div>
             )}
-
-            <p className="text-text font-body font-semibold text-base sm:text-lg md:text-xl leading-relaxed">
-              {showRationale ? (
-                <span className="block mt-2">
-                  <span className="font-heading font-black text-lg text-text block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-2">Rationale</span>
-                  {currentQuestion.rationale}
-                </span>
-              ) : (
-                <span className="block mt-2">
-                  <span className="font-heading font-black text-lg text-text block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-2">Question</span>
-                  {currentQuestion.question_stem}
-                </span>
-              )}
-            </p>
           </div>
         </div>
 
-        {/* Answer Container */}
-        <div className="w-full border-t-2 border-b-2 border-text/80 py-3 sm:py-4 mb-8 min-h-[88px] sm:min-h-[104px] flex flex-col justify-center">
-          {selectedOption && (
+        {/* Answer Slot Container */}
+        <div className="w-full my-3 sm:my-4">
+          {selectedOption ? (
             <button
               onClick={() => !showRationale && setSelectedOption(null)}
-              className={`w-full p-4 sm:p-5 rounded-2xl text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] text-white scale-[1.02] sm:scale-100 ${showRationale && selectedOption !== currentQuestion.correct_option ? 'bg-red-500' : 'bg-primary'}`}
+              className={`w-full min-h-[62px] sm:min-h-[68px] p-4 sm:p-5 rounded-2xl text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] text-white flex items-center justify-center ${
+                showRationale 
+                  ? (selectedOption === currentQuestion.correct_option ? 'bg-green-600' : 'bg-red-500') 
+                  : 'bg-primary hover:bg-primary/95 cursor-pointer active:scale-[0.99]'
+              }`}
             >
-              {currentQuestion.options.find(o => o.id === selectedOption)?.text}
+              <span>{currentQuestion.options.find(o => o.id === selectedOption)?.text}</span>
             </button>
+          ) : (
+            <div className="w-full min-h-[62px] sm:min-h-[68px] border-2 border-dashed border-mid/40 rounded-2xl flex items-center justify-center bg-card/50 p-4 shadow-sm">
+              <span className="text-text/50 font-body text-base sm:text-lg font-medium tracking-wide">
+                Select an answer below
+              </span>
+            </div>
           )}
         </div>
 
         {/* Options */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 my-1">
           {currentQuestion.options.map((opt) => {
             const isSelected = selectedOption === opt.id;
             
@@ -338,19 +351,17 @@ export default function Quiz({ onBack, topicFilter }) {
               return (
                 <div 
                   key={opt.id}
-                  className="w-full h-full min-h-[76px] rounded-2xl bg-[#D66B93] flex items-center justify-center"
+                  className="w-full min-h-[62px] sm:min-h-[68px] rounded-2xl bg-mid/15 border-2 border-dashed border-mid/30 flex items-center justify-center p-4 opacity-50"
                 >
-                  <div className="p-4 sm:p-5 border-4 border-transparent opacity-0 pointer-events-none">
-                    <span className="font-body font-semibold text-base sm:text-lg block text-center">{opt.text}</span>
-                  </div>
+                  <span className="font-body font-semibold text-base sm:text-lg text-text/30 line-clamp-2 text-center select-none">{opt.text}</span>
                 </div>
               );
             }
 
-            let btnClass = "w-full h-full min-h-[76px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/80 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5";
+            let btnClass = "w-full min-h-[62px] sm:min-h-[68px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/85 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5 active:translate-y-0";
             
             if (showRationale && opt.id === currentQuestion.correct_option) {
-               btnClass = "w-full h-full min-h-[76px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-[#D1FAE5] border-[#34D399] text-[#065F46]";
+               btnClass = "w-full min-h-[62px] sm:min-h-[68px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-[#D1FAE5] border-[#34D399] text-[#065F46] font-bold";
             }
 
             return (
@@ -360,20 +371,24 @@ export default function Quiz({ onBack, topicFilter }) {
                 className={btnClass}
                 disabled={showRationale}
               >
-                {opt.text}
+                <span>{opt.text}</span>
               </button>
             )
           })}
         </div>
       </div>
 
-      {/* Fixed Bottom Action Bar */}
-      <div className="fixed bottom-0 left-0 w-full bg-bg/95 border-t-2 border-text/80 p-6 sm:p-8 flex justify-center z-50">
-        <div className="w-full lg:w-[60%] flex justify-between items-center px-2 sm:px-6">
+      {/* Bottom Action Bar */}
+      <footer className="shrink-0 w-full bg-bg/95 border-t-2 border-text/20 py-4 sm:py-5 px-6 sm:px-12 flex justify-center backdrop-blur-sm z-30">
+        <div className="w-full lg:w-[65%] xl:w-[60%] flex justify-between items-center px-2 sm:px-4">
           <button 
             onClick={handleSkip}
             disabled={showRationale}
-            className={`px-8 sm:px-14 py-4 sm:py-5 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] ${showRationale ? 'opacity-50 cursor-not-allowed shadow-none translate-y-1 border-text/10' : 'hover:bg-text/5 hover:border-text/40 active:translate-y-1 active:shadow-none'}`}
+            className={`px-8 sm:px-14 py-3.5 sm:py-4 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] ${
+              showRationale 
+                ? 'opacity-50 cursor-not-allowed shadow-none translate-y-1 border-text/10' 
+                : 'hover:bg-text/5 hover:border-text/40 active:translate-y-1 active:shadow-none'
+            }`}
           >
             SKIP
           </button>
@@ -381,7 +396,7 @@ export default function Quiz({ onBack, topicFilter }) {
           <button 
             onClick={showRationale ? handleNext : handleCheck}
             disabled={!selectedOption && !showRationale}
-            className={`px-8 sm:px-14 py-4 sm:py-5 rounded-full font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] active:translate-y-1 active:shadow-none
+            className={`px-8 sm:px-14 py-3.5 sm:py-4 rounded-full font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] active:translate-y-1 active:shadow-none
               ${(selectedOption || showRationale) 
                 ? 'bg-primary text-white hover:bg-primary/90' 
                 : 'bg-light text-white/90 cursor-not-allowed shadow-none opacity-80'
@@ -391,7 +406,7 @@ export default function Quiz({ onBack, topicFilter }) {
             {showRationale ? 'NEXT' : 'CHECK'}
           </button>
         </div>
-      </div>
+      </footer>
 
       {/* Settings Modal */}
       {settingsOpen && (
