@@ -214,7 +214,7 @@ export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
         </div>
 
         {/* Category Filter Chips */}
-        <div className="w-full mb-8 overflow-x-auto pb-2 scrollbar-thin">
+        <div className="w-full mb-8 overflow-x-auto pb-3.5 pt-1 scrollbar-thin">
           <div className="flex items-center gap-2.5 min-w-max">
             <button
               onClick={() => { setActiveCategory('all'); setViewMode('cards'); }}
