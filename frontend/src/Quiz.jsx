@@ -303,8 +303,8 @@ export default function Quiz({ onBack, topicFilter }) {
                   </span>
                   <span className="font-heading font-black text-sm sm:text-base text-text uppercase tracking-wide">Rationale</span>
                 </div>
-                <div className="text-text font-body font-semibold text-base sm:text-lg leading-relaxed max-h-40 overflow-y-auto pr-1">
-                  {currentQuestion.rationale}
+                <div className="text-text font-body font-semibold text-base sm:text-lg leading-relaxed max-h-40 overflow-y-auto pr-1 whitespace-pre-line">
+                  {currentQuestion.rationale || `The correct answer is (${currentQuestion.correct_option}) ${currentQuestion.options.find(o => o.id === currentQuestion.correct_option)?.text || ''}. (Note: No extended explanation was published for this item in the reference exam.)`}
                 </div>
               </div>
             ) : (
@@ -312,9 +312,11 @@ export default function Quiz({ onBack, topicFilter }) {
                 <span className="font-heading font-black text-sm sm:text-base text-text/70 block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-1.5">
                   Question
                 </span>
-                <p className="text-text font-body font-semibold text-base sm:text-lg md:text-xl leading-relaxed">
-                  {currentQuestion.question_stem}
-                </p>
+                <div className="max-h-36 sm:max-h-44 overflow-y-auto pr-1">
+                  <p className="text-text font-body font-semibold text-base sm:text-lg md:text-xl leading-relaxed whitespace-pre-line">
+                    {currentQuestion.question_stem}
+                  </p>
+                </div>
               </div>
             )}
           </div>
