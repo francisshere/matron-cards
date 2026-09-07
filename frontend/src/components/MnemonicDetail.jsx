@@ -191,22 +191,40 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
           {/* Acronym Visual Tiles */}
           <div className="mb-4">
             <div className="flex flex-wrap items-center gap-2 sm:gap-3 my-3">
-              {mnemonic.shortCode.split('').map((char, i) => (
-                <div 
-                  key={i} 
-                  className={`w-11 h-11 sm:w-14 sm:h-14 flex items-center justify-center font-heading font-black text-xl sm:text-3xl rounded-xl border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529] transition-transform hover:scale-105 select-none ${
-                    char === ' ' || char === '/' || char === '-'
-                      ? 'bg-transparent border-none shadow-none text-text w-6'
-                      : i % 3 === 0 
-                        ? 'bg-primary text-white' 
-                        : i % 3 === 1 
-                          ? 'bg-[#F7C4D5] text-text' 
-                          : 'bg-[#E97CA1] text-white'
-                  }`}
-                >
-                  {char}
-                </div>
-              ))}
+              {mnemonic.shortCode.includes(' ') || mnemonic.shortCode.includes('/')
+                ? mnemonic.shortCode.split(/\s+/).map((token, i) => (
+                    <div 
+                      key={i} 
+                      className={`min-h-[44px] sm:min-h-[56px] flex items-center justify-center font-heading font-black rounded-xl transition-transform hover:scale-105 select-none ${
+                        token === '/' || token === '-'
+                          ? 'bg-transparent border-none text-text text-xl sm:text-2xl px-1'
+                          : `px-3 sm:px-4 py-1.5 text-lg sm:text-2xl border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529] ${
+                              i % 3 === 0 
+                                ? 'bg-primary text-white' 
+                                : i % 3 === 1 
+                                  ? 'bg-[#F7C4D5] text-text' 
+                                  : 'bg-[#E97CA1] text-white'
+                            }`
+                      }`}
+                    >
+                      {token}
+                    </div>
+                  ))
+                : mnemonic.shortCode.split('').map((char, i) => (
+                    <div 
+                      key={i} 
+                      className={`w-11 h-11 sm:w-14 sm:h-14 flex items-center justify-center font-heading font-black text-xl sm:text-3xl rounded-xl border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529] transition-transform hover:scale-105 select-none ${
+                        i % 3 === 0 
+                          ? 'bg-primary text-white' 
+                          : i % 3 === 1 
+                            ? 'bg-[#F7C4D5] text-text' 
+                            : 'bg-[#E97CA1] text-white'
+                      }`}
+                    >
+                      {char}
+                    </div>
+                  ))
+              }
             </div>
             <h1 className="font-heading font-black text-2xl sm:text-4xl text-text mt-3">
               {mnemonic.title}
@@ -286,9 +304,19 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
                     isTestMode ? 'cursor-pointer hover:border-primary' : ''
                   }`}
                 >
-                  {/* Left Badge */}
+                  {/* Left Badge - Dynamically responsive to length */}
                   <div className="flex items-center gap-3 shrink-0">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary text-white border-[3px] border-[#4A1529] flex items-center justify-center font-heading font-black text-xl sm:text-2xl shadow-[0px_3px_0px_0px_#4A1529] group-hover:scale-105 transition-transform">
+                    <div 
+                      className={`rounded-xl bg-primary text-white border-[3px] border-[#4A1529] flex items-center justify-center font-heading font-black shadow-[0px_3px_0px_0px_#4A1529] group-hover:scale-105 transition-transform text-center select-none overflow-hidden box-border shrink-0 ${
+                        (item.letter || '').trim().length <= 1
+                          ? 'w-12 h-12 sm:w-14 sm:h-14 text-2xl sm:text-3xl'
+                          : (item.letter || '').trim().length === 2
+                            ? 'w-12 h-12 sm:w-14 sm:h-14 text-base sm:text-lg tracking-tight'
+                            : (item.letter || '').trim().length <= 4
+                              ? 'min-w-[3.25rem] sm:min-w-[3.75rem] h-12 sm:h-14 px-2 text-xs sm:text-sm tracking-tight'
+                              : 'min-w-[3.5rem] max-w-[130px] min-h-[3rem] sm:min-h-[3.5rem] px-2.5 py-1 text-xs sm:text-sm leading-tight whitespace-normal break-words'
+                      }`}
+                    >
                       {item.letter}
                     </div>
                   </div>

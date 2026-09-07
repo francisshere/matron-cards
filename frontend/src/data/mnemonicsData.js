@@ -104,10 +104,22 @@ export const mnemonicsList = [
         highlight: 'Both eyes'
       },
       {
-        letter: 'AD / AS / AU',
-        term: 'Auris Dextra / Sinistra / Uterque',
-        description: 'Auris = Ear (Acoustic). AD = Right Ear, AS = Left Ear, AU = Both Ears.',
-        highlight: 'Ears equivalent'
+        letter: 'AD',
+        term: 'Auris Dextra',
+        description: 'Right ear. "Auris" is the Latin root for acoustic / auditory (ear).',
+        highlight: 'Right ear'
+      },
+      {
+        letter: 'AS',
+        term: 'Auris Sinistra',
+        description: 'Left ear. Latin "sinistra" means left.',
+        highlight: 'Left ear'
+      },
+      {
+        letter: 'AU',
+        term: 'Auris Uterque',
+        description: 'Both ears (each ear). Uterque means "each of two" or both.',
+        highlight: 'Both ears'
       }
     ],
     clinicalContext: 'The Joint Commission (TJC) and ISMP place OD, OS, and OU on the "Do Not Use" list due to medication error potential with ears (AD, AS, AU). However, NCLEX candidates must still recognize and verify these abbreviations on medical charts and questions.',
@@ -734,38 +746,38 @@ export const mnemonicsList = [
     tags: ['Respiratory', 'Oxygenation', 'Emergency'],
     letters: [
       {
-        letter: 'R (Early)',
-        term: 'Restlessness',
+        letter: 'R',
+        term: 'Restlessness (Early Sign)',
         description: 'Agitation, apprehension, irritability, and unexplained anxiety caused by early cerebral oxygen deprivation.',
         highlight: 'Earliest indicator of hypoxia!'
       },
       {
-        letter: 'A (Early)',
-        term: 'Anxiety',
+        letter: 'A',
+        term: 'Anxiety (Early Sign)',
         description: 'Sense of impending doom, fidgeting, and altered mental status as sympathetic nervous system activates.',
         highlight: 'Sympathetic arousal'
       },
       {
-        letter: 'T (Early)',
-        term: 'Tachycardia / Tachypnea',
+        letter: 'T',
+        term: 'Tachycardia / Tachypnea (Early Sign)',
         description: 'Increased heart rate and respiratory rate as compensatory mechanisms to circulate oxygenated blood.',
         highlight: 'Compensatory vitals rise'
       },
       {
-        letter: 'B (Late)',
-        term: 'Bradycardia',
+        letter: 'B',
+        term: 'Bradycardia (Late Sign)',
         description: 'Heart rate slows down drastically as cardiac myocardium becomes exhausted and acidotic.',
         highlight: 'Ominous sign of arrest'
       },
       {
-        letter: 'E (Late)',
-        term: 'Extreme Restlessness to Stupor',
+        letter: 'E',
+        term: 'Extreme Restlessness to Stupor (Late Sign)',
         description: 'Progressing from severe agitation to confusion, lethargy, stupor, and unresponsiveness.',
         highlight: 'Profound neurological depression'
       },
       {
-        letter: 'D (Late)',
-        term: 'Dyspnea (Severe) & Cyanosis',
+        letter: 'D',
+        term: 'Dyspnea & Cyanosis (Late Sign)',
         description: 'Severe air hunger, accessory muscle retraction, and central cyanosis (blue lips, tongue, and mucous membranes).',
         highlight: 'Central cyanosis = Late!'
       }
@@ -1153,76 +1165,76 @@ export const mnemonicsList = [
     tags: ['Neurology', 'Anatomy', 'Cranial Nerves'],
     letters: [
       {
-        letter: 'I (S)',
-        term: 'Olfactory (Sensory)',
+        letter: 'I',
+        term: 'CN I: Olfactory',
         description: 'Smell identification (coffee, vanilla). Tested one nostril at a time.',
-        highlight: 'Smell'
+        highlight: 'Sensory (Smell)'
       },
       {
-        letter: 'II (S)',
-        term: 'Optic (Sensory)',
+        letter: 'II',
+        term: 'CN II: Optic',
         description: 'Visual acuity (Snellen chart) and visual fields (confrontation test).',
-        highlight: 'Vision'
+        highlight: 'Sensory (Vision)'
       },
       {
-        letter: 'III (M)',
-        term: 'Oculomotor (Motor)',
+        letter: 'III',
+        term: 'CN III: Oculomotor',
         description: 'Extraocular eye movements, pupil constriction, upper eyelid elevation.',
-        highlight: 'Pupil constriction & EOM'
+        highlight: 'Motor (Pupils & EOM)'
       },
       {
-        letter: 'IV (M)',
-        term: 'Trochlear (Motor)',
+        letter: 'IV',
+        term: 'CN IV: Trochlear',
         description: 'Down and inward eye movement (superior oblique muscle).',
-        highlight: 'Down & inward eye movement'
+        highlight: 'Motor (Down & In)'
       },
       {
-        letter: 'V (B)',
-        term: 'Trigeminal (Both)',
+        letter: 'V',
+        term: 'CN V: Trigeminal',
         description: 'Sensory: Corneal reflex, facial sensations. Motor: Mastication (chewing).',
-        highlight: 'Facial sensation & chewing'
+        highlight: 'Both (Chewing & Face)'
       },
       {
-        letter: 'VI (M)',
-        term: 'Abducens (Motor)',
+        letter: 'VI',
+        term: 'CN VI: Abducens',
         description: 'Lateral eye movement (lateral rectus muscle).',
-        highlight: 'Lateral eye gaze'
+        highlight: 'Motor (Lateral Gaze)'
       },
       {
-        letter: 'VII (B)',
-        term: 'Facial (Both)',
+        letter: 'VII',
+        term: 'CN VII: Facial',
         description: 'Motor: Facial expressions (smile, puff cheeks). Sensory: Taste anterior 2/3 tongue. Damaged in Bell palsy.',
-        highlight: 'Facial expressions & taste'
+        highlight: 'Both (Expressions & Taste)'
       },
       {
-        letter: 'VIII (S)',
-        term: 'Vestibulocochlear (Sensory)',
+        letter: 'VIII',
+        term: 'CN VIII: Vestibulocochlear',
         description: 'Acoustic / Hearing (whisper test) and balance / vestibular function.',
-        highlight: 'Hearing & equilibrium'
+        highlight: 'Sensory (Hearing & Balance)'
       },
       {
-        letter: 'IX (B)',
-        term: 'Glossopharyngeal (Both)',
+        letter: 'IX',
+        term: 'CN IX: Glossopharyngeal',
         description: 'Taste posterior 1/3 tongue, swallowing, gag reflex.',
-        highlight: 'Swallowing & gag reflex'
+        highlight: 'Both (Swallowing & Gag)'
       },
       {
-        letter: 'X (B)',
-        term: 'Vagus (Both)',
+        letter: 'X',
+        term: 'CN X: Vagus',
         description: 'Parasympathetic visceral function, vocal cords, palate elevation, gag reflex ("say ahh").',
-        highlight: 'Parasympathetic & uvula rise'
+        highlight: 'Both (Parasympathetic & Palate)'
       },
       {
-        letter: 'XI (M)',
-        term: 'Accessory / Spinal (Motor)',
+        letter: 'XI',
+        term: 'CN XI: Accessory (Spinal)',
         description: 'Trapezius and sternocleidomastoid strength (shoulder shrug, turning head against resistance).',
-        highlight: 'Shoulder shrug'
+        highlight: 'Motor (Shoulder Shrug)'
       },
       {
-        letter: 'XII (M)',
-        term: 'Hypoglossal (Motor)',
+        letter: 'XII',
+        term: 'CN XII: Hypoglossal',
         description: 'Tongue movement and speech articulation (stick out tongue midline).',
-        highlight: 'Tongue protrusion midline'
+        highlight: 'Motor (Tongue Midline)'
       }
     ],
     clinicalContext: 'Testing CN IX (Glossopharyngeal) and CN X (Vagus) together ensures a client has a protective gag and swallow reflex before initiating oral intake post-endoscopy or stroke.',
@@ -1388,50 +1400,50 @@ export const mnemonicsList = [
     tags: ['Substance Abuse', 'Alcoholism', 'Neurology'],
     letters: [
       {
-        letter: 'C (Wernicke)',
-        term: 'Confusion',
+        letter: 'C',
+        term: 'Confusion (Wernicke Encephalopathy)',
         description: 'Acute encephalopathy, disorientation, inattention, and altered mental status.',
         highlight: 'Acute encephalopathy'
       },
       {
-        letter: 'O (Wernicke)',
-        term: 'Ophthalmoplegia / Nystagmus',
+        letter: 'O',
+        term: 'Ophthalmoplegia / Nystagmus (Wernicke)',
         description: 'Paralysis of ocular muscles, double vision, nystagmus (involuntary eye twitches).',
         highlight: 'Eye movement paralysis'
       },
       {
-        letter: 'A (Wernicke)',
-        term: 'Ataxia',
+        letter: 'A',
+        term: 'Ataxia (Wernicke)',
         description: 'Impaired voluntary coordination, wide-based staggering gait, and severe balance loss.',
         highlight: 'Staggering cerebellar gait'
       },
       {
-        letter: 'T (Wernicke)',
-        term: 'Thiamine Deficiency',
+        letter: 'T',
+        term: 'Thiamine Deficiency (Wernicke)',
         description: 'Etiology: Chronic alcohol abuse blocks GI absorption and hepatic storage of Vitamin B1.',
         highlight: 'Vitamin B1 deficit'
       },
       {
-        letter: 'R (Korsakoff)',
-        term: 'Retrograde Amnesia',
+        letter: 'R',
+        term: 'Retrograde Amnesia (Korsakoff Psychosis)',
         description: 'Inability to recall previously established memories before the onset of the disease.',
         highlight: 'Loss of past memories'
       },
       {
-        letter: 'A (Korsakoff)',
-        term: 'Anterograde Amnesia',
+        letter: 'A',
+        term: 'Anterograde Amnesia (Korsakoff Psychosis)',
         description: 'Inability to form new long-term memories; information forgotten in seconds.',
         highlight: 'Cannot form new memories'
       },
       {
-        letter: 'C (Korsakoff)',
-        term: 'Confabulation',
+        letter: 'C',
+        term: 'Confabulation (Korsakoff Psychosis)',
         description: 'Making up fictional stories to fill in memory gaps, without intentional deception.',
         highlight: 'Unconscious fabrication'
       },
       {
-        letter: 'K (Korsakoff)',
-        term: 'Korsakoff Psychosis',
+        letter: 'K',
+        term: 'Korsakoff Psychosis (Chronic Syndrome)',
         description: 'Chronic, irreversible dementia resulting from untreated Wernicke encephalopathy.',
         highlight: 'Irreversible chronic dementia'
       }
@@ -1623,38 +1635,38 @@ export const mnemonicsList = [
     tags: ['Asthma', 'COPD', 'Respiratory Drugs'],
     letters: [
       {
-        letter: 'B (Broncho)',
-        term: 'Beta-2 Agonists (Albuterol)',
+        letter: 'B',
+        term: 'Beta-2 Agonists (Bronchodilator - BAM)',
         description: 'Fast-acting rescue bronchodilator (SABA) for acute bronchospasm. Causes tachycardia, tremor, and palpitations.',
         highlight: 'Rescue inhaler (Albuterol)'
       },
       {
-        letter: 'A (Broncho)',
-        term: 'Anticholinergics (Ipratropium)',
+        letter: 'A',
+        term: 'Anticholinergics (Bronchodilator - BAM)',
         description: 'Blocks acetylcholine-mediated bronchoconstriction and dries respiratory secretions.',
         highlight: 'Ipratropium / Tiotropium'
       },
       {
-        letter: 'M (Broncho)',
-        term: 'Methylxanthines (Theophylline)',
+        letter: 'M',
+        term: 'Methylxanthines (Bronchodilator - BAM)',
         description: 'Oral bronchodilator with narrow therapeutic index (10 - 20 mcg/mL). Toxicity causes seizures and fatal arrhythmias.',
         highlight: 'Theophylline (Range: 10-20)'
       },
       {
-        letter: 'S (Anti-inflam)',
-        term: 'Steroids (Fluticasone, Budesonide)',
+        letter: 'S',
+        term: 'Steroids (Anti-inflammatory - SLM)',
         description: 'Inhaled corticosteroids (ICS). Maintenance therapy, NEVER for acute attacks. Always rinse mouth to prevent oral candidiasis (thrush).',
         highlight: 'Rinse mouth after steroid!'
       },
       {
-        letter: 'L (Anti-inflam)',
-        term: 'Leukotriene Modifiers (Montelukast)',
+        letter: 'L',
+        term: 'Leukotriene Modifiers (Anti-inflammatory - SLM)',
         description: 'Oral maintenance drug taken daily in the evening to prevent asthma attacks and exercise-induced bronchoconstriction.',
         highlight: 'Daily oral maintenance'
       },
       {
-        letter: 'M (Anti-inflam)',
-        term: 'Mast Cell Stabilizers (Cromolyn)',
+        letter: 'M',
+        term: 'Mast Cell Stabilizers (Anti-inflammatory - SLM)',
         description: 'Inhibits release of histamine and inflammatory mediators from mast cells. Prophylactic use.',
         highlight: 'Cromolyn sodium prophylaxis'
       }
@@ -1751,26 +1763,26 @@ export const mnemonicsList = [
     tags: ['Infection Control', 'Pediatrics', 'Isolation Precautions'],
     letters: [
       {
-        letter: 'Stage 1',
-        term: 'Macules',
+        letter: '1',
+        term: 'Stage 1: Macules',
         description: 'Flat, red, pruritic spots appearing first on the trunk, scalp, and face, spreading centripetally to extremities.',
         highlight: 'Flat red lesions'
       },
       {
-        letter: 'Stage 2',
-        term: 'Papules',
+        letter: '2',
+        term: 'Stage 2: Papules',
         description: 'Raised, itchy red bumps developing within 12 to 24 hours of macular onset.',
         highlight: 'Raised bumps'
       },
       {
-        letter: 'Stage 3',
-        term: 'Vesicles ("Dewdrops on a Rose Petal")',
+        letter: '3',
+        term: 'Stage 3: Vesicles ("Dewdrops on a Rose Petal")',
         description: 'Clear, fluid-filled teardrop blisters surrounded by an erythematous base. Extremely fragile and infectious.',
         highlight: 'Fluid-filled teardrop blisters'
       },
       {
-        letter: 'Stage 4',
-        term: 'Crusts / Scabs',
+        letter: '4',
+        term: 'Stage 4: Crusts / Scabs',
         description: 'Vesicles rupture and dry into scabbed crusts. Once ALL lesions are completely crusted, the client is no longer contagious.',
         highlight: 'Crusted = No longer contagious'
       }
@@ -1804,20 +1816,20 @@ export const mnemonicsList = [
     tags: ['Infection Control', 'Isolation', 'PPE'],
     letters: [
       {
-        letter: 'Airborne (MTV)',
-        term: 'Measles, TB, Varicella',
+        letter: 'A',
+        term: 'Airborne Precautions (MTV)',
         description: 'Droplets < 5 microns stay suspended in air. Requires: Private Negative-Pressure Room (6-12 air changes/hr), door closed, N95 respirator mask for staff.',
         highlight: 'Negative pressure & N95'
       },
       {
-        letter: 'Droplet (SPIDERMAN)',
-        term: 'Sepsis, Pertussis, Influenza, Diphtheria, Epiglottitis, Rubella, Mumps, Adenovirus, Neisseria Meningitidis',
+        letter: 'D',
+        term: 'Droplet Precautions (SPIDERMAN)',
         description: 'Droplets > 5 microns travel up to 3-6 feet. Requires: Private room (or cohort), Surgical mask within 3 feet, eye protection/face shield during procedures.',
         highlight: 'Surgical mask within 3-6 ft'
       },
       {
-        letter: 'Contact (MRS WEE)',
-        term: 'MRSA, Respiratory (RSV), Skin (Scabies/Impetigo), Wound infections, Enteric (C. diff), Eye (Conjunctivitis)',
+        letter: 'C',
+        term: 'Contact Precautions (MRS WEE)',
         description: 'Direct or indirect contact with patient or environment. Requires: Gloves and Gown before entering, dedicated equipment (stethoscope/BP cuff).',
         highlight: 'Gloves, Gown, Dedicated equipment'
       }

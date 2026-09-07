@@ -346,7 +346,13 @@ export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
 
                         {/* Acronym Badge */}
                         <div className="my-2">
-                          <span className="inline-block px-3.5 py-1.5 bg-primary text-white font-heading font-black text-xl rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] group-hover:scale-105 transition-transform">
+                          <span className={`inline-block px-3.5 py-1.5 bg-primary text-white font-heading font-black rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] group-hover:scale-105 transition-transform max-w-full break-words ${
+                            m.shortCode.length > 15 
+                              ? 'text-sm sm:text-base' 
+                              : m.shortCode.length > 8 
+                                ? 'text-base sm:text-lg' 
+                                : 'text-xl'
+                          }`}>
                             {m.shortCode}
                           </span>
                         </div>
