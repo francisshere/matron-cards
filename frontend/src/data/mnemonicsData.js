@@ -3,7 +3,7 @@
 
 export const MNEMONICS_CATEGORIES = [
   { id: 'fundamentals', name: 'Fundamentals in Nursing', iconKey: 'fundamentals', count: 14 },
-  { id: 'maternal', name: 'Maternal & Child Nursing', iconKey: 'maternal', count: 6 },
+  { id: 'maternal', name: 'Maternal & Child Nursing', iconKey: 'maternal', count: 10 },
   { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 8 },
   { id: 'psych', name: 'Psychiatric Nursing', iconKey: 'psych', count: 5 },
   { id: 'pharmacology', name: 'Pharmacology Nursing', iconKey: 'pharmacology', count: 6 },
@@ -1322,6 +1322,246 @@ export const mnemonicsList = [
       ],
       correctIndex: 2,
       rationale: 'Unilateral calf swelling and tenderness represents the S in ACHES (Severe leg pain), signaling a probable Deep Vein Thrombosis (DVT). The client must avoid massaging the leg (which could dislodge an embolus) and seek emergency evaluation immediately.'
+    }
+  },
+  {
+    id: 'placenta-crossing-want-my-hot-dog',
+    shortCode: 'Want My Hot Dog',
+    title: 'Substances Crossing the Placental Barrier',
+    category: 'maternal',
+    categoryName: 'Maternal & Child Nursing',
+    summary: 'A high-yield maternal-fetal mnemonic detailing the essential physiological and pathological substances that cross the human placenta.',
+    memoryTip: '"Want My Hot Dog": Wastes, Antibodies, Nutrients, Teratogens, Microorganisms, Hormones/HIV, Drugs. Protect the fetus from hazardous crossings!',
+    highYield: true,
+    tags: ['Maternal-Fetal Physiology', 'Teratology', 'Placenta', 'Pharmacology in Pregnancy'],
+    letters: [
+      {
+        letter: 'W',
+        term: 'Wastes',
+        description: 'Fetal metabolic wastes (carbon dioxide, urea, uric acid, creatinine, conjugated bilirubin) diffuse down concentration gradients across placental syncytiotrophoblasts into maternal circulation for maternal elimination.',
+        highlight: 'CO2, urea, uric acid, creatinine'
+      },
+      {
+        letter: 'A',
+        term: 'Antibodies (Maternal IgG)',
+        description: 'Maternal Immunoglobulin G (IgG) is the ONLY antibody class that actively crosses the placenta via Fc receptor transport, granting the fetus passive immunity during the third trimester that persists for 3-6 months postpartum.',
+        highlight: 'Maternal IgG provides passive immunity'
+      },
+      {
+        letter: 'N',
+        term: 'Nutrients',
+        description: 'Glucose (via facilitated diffusion using GLUT transporters), essential amino acids, fatty acids, water, electrolytes, minerals, vitamins, and oxygen cross from maternal intervillous spaces into the umbilical vein.',
+        highlight: 'Glucose, amino acids, O2, & electrolytes'
+      },
+      {
+        letter: 'T',
+        term: 'Teratogens',
+        description: 'Chemical and environmental agents that cause structural, functional, or developmental anomalies (e.g., alcohol, ionizing radiation, ACE inhibitors, isotretinoin, thalidomide, lithium, valproic acid). Most destructive during organogenesis (weeks 3-8).',
+        highlight: 'Critical vulnerability in weeks 3 to 8'
+      },
+      {
+        letter: 'M',
+        term: 'Microorganisms (TORCH / Treponema)',
+        description: 'Pathogens that breach the chorionic villi barrier: Toxoplasmosis, Other (Syphilis, Parvovirus B19, Varicella), Rubella, Cytomegalovirus, and Herpes Simplex virus (TORCH complex), causing severe congenital malformations or fetal demise.',
+        highlight: 'TORCH complex & Treponema pallidum'
+      },
+      {
+        letter: 'H',
+        term: 'Hormones & HIV',
+        description: 'Maternal steroid hormones (estrogens, progesterone, synthetic progestins) and viral pathogens such as Human Immunodeficiency Virus (HIV). Antiretroviral therapy (ART) during pregnancy dramatically reduces perinatal transmission to < 1-2%.',
+        highlight: 'Steroids & perinatal HIV transmission'
+      },
+      {
+        letter: 'D',
+        term: 'Drugs (Prescription, OTC, Illicit)',
+        description: 'Lipophilic, un-ionized, low-molecular-weight substances (< 500 Da) readily cross: opioids (neonatal abstinence syndrome), benzodiazepines, warfarin (teratogenic; use heparin/LMWH instead!), cocaine, nicotine, and NSAIDs (premature ductus arteriosus closure).',
+        highlight: 'Warfarin, opioids, NSAIDs, cocaine'
+      }
+    ],
+    clinicalContext: 'Understanding placental permeability is a cornerstone of antenatal nursing. The placenta is not an impermeable barrier; most lipid-soluble, low-molecular-weight compounds diffuse easily. Nurses must advocate for medication safety by identifying teratogens, verifying maternal antibody titers (e.g., Rh(D) status and rubella immunity), and preventing perinatal pathogen transmission.',
+    nclexPearls: [
+      'IgG vs. IgM/IgA: Maternal IgG is the ONLY immunoglobulin that crosses the placenta. Fetal IgM or IgA detected in cord blood indicates active congenital intra-uterine infection!',
+      'Anticoagulation Choice: Heparin and low-molecular-weight heparin (enoxaparin) do NOT cross the placenta and are safe during pregnancy; Warfarin readily crosses and is strictly teratogenic.',
+      'Organogenesis Window: The embryo is most vulnerable to gross morphological teratogens during weeks 3 through 8 of gestation (the embryonic stage).'
+    ],
+    practiceQuestion: {
+      question: 'A client at 12 weeks gestation asks the nurse why she must transition from oral warfarin to daily subcutaneous enoxaparin to manage her mechanical heart valve during pregnancy. What is the nurse\'s best response?',
+      options: [
+        '"Warfarin is unable to maintain adequate anticoagulation with the increased blood volume of pregnancy."',
+        '"Warfarin readily crosses the placenta and causes severe congenital fetal malformations, whereas enoxaparin does not cross."',
+        '"Enoxaparin enhances the fetal liver\'s synthesis of vitamin K-dependent clotting factors for birth."',
+        '"Warfarin increases the risk of premature rupture of membranes and early precipitous labor."'
+      ],
+      correctIndex: 1,
+      rationale: 'Warfarin is a low-molecular-weight lipophilic drug that readily crosses the placental barrier ("D" in "Want My Hot Dog"), causing fetal warfarin syndrome (nasal hypoplasia, chondrodysplasia, CNS anomalies, and hemorrhage). Enoxaparin (low-molecular-weight heparin) consists of large polar molecules that cannot cross the placental barrier, making it safe for the developing fetus.'
+    }
+  },
+  {
+    id: 'preterm-infant-problems-tries',
+    shortCode: 'TRIES',
+    title: 'Anticipated Problems of the Preterm Infant',
+    category: 'maternal',
+    categoryName: 'Maternal & Child Nursing',
+    summary: 'A high-yield neonatal framework outlining the 5 major clinical vulnerabilities and organ immaturities confronting the premature newborn.',
+    memoryTip: '"TRIES" — The fragile preterm infant TRIES hard to survive: Temperature (cold stress), Resistance (infection), Immature liver (jaundice), Elimination (NEC), Sensory (ROP)!',
+    highYield: true,
+    tags: ['Neonatal Care', 'Prematurity', 'NICU', 'Pediatrics'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Temperature Regulation (Poor / Cold Stress)',
+        description: 'Preterm infants have scarce brown adipose tissue (BAT), thin permeable skin, lack of insulating subcutaneous fat, and high body-surface-area-to-mass ratio. Cold stress triggers pulmonary vasoconstriction, hypoxia, anaerobic metabolism, and severe hypoglycemia.',
+        highlight: 'Lack of brown fat & cold stress cascade'
+      },
+      {
+        letter: 'R',
+        term: 'Resistance to Infections (Poor / Neonatal Sepsis)',
+        description: 'Impaired transplacental IgG transfer (which occurs primarily in the third trimester), deficient phagocytosis, and invasive lines (umbilical catheters, endotracheal tubes) make the premature infant acutely susceptible to fulminant neonatal sepsis and meningitis.',
+        highlight: 'Low maternal IgG & high sepsis risk'
+      },
+      {
+        letter: 'I',
+        term: 'Immature Liver (Hyperbilirubinemia & Bleeding)',
+        description: 'Hepatic enzyme glucuronyl transferase deficiency leads to poor bilirubin conjugation and unconjugated hyperbilirubinemia (kernicterus risk). Inadequate glycogen storage causes hypoglycemia, and low prothrombin synthesis increases hemorrhagic disease risk.',
+        highlight: 'Hyperbilirubinemia, hypoglycemia, & bleeding'
+      },
+      {
+        letter: 'E',
+        term: 'Elimination Problems (Necrotizing Enterocolitis [NEC])',
+        description: 'Immature gastrointestinal motility, mucosal barrier weakness, and gut hypoxia make the infant highly vulnerable to Necrotizing Enterocolitis (NEC). Hallmark signs include abdominal distension, feeding intolerance, gastric residuals, and bloody stools.',
+        highlight: 'Necrotizing enterocolitis (NEC) & bilious residuals'
+      },
+      {
+        letter: 'S',
+        term: 'Sensory-Perceptual (Retinopathy of Prematurity [ROP])',
+        description: 'Incompletely vascularized retina exposed to high or fluctuating oxygen tensions develops abnormal neovascular proliferation and fibrous scarring, leading to retinal detachment (Retinopathy of Prematurity - ROP). Auditory deficits from ototoxic drugs are also common.',
+        highlight: 'Retinopathy of prematurity (ROP) & oxygen control'
+      }
+    ],
+    clinicalContext: 'Preterm infants (< 37 weeks gestation) require comprehensive multi-system neonatal intensive care. Clinical management focuses on maintaining a neutral thermal environment (incubators / radiant warmers), strict hand hygiene to prevent sepsis, phototherapy for physiological jaundice, trophic breast milk feedings to ward off NEC, and tight oxygen saturation targets (usually 90-95%) to protect retinal vessels.',
+    nclexPearls: [
+      'The Cold Stress Domino Effect: Hypothermia triggers peripheral vasoconstriction and tachypnea -> increased anaerobic glucose consumption -> rapid hypoglycemia and metabolic acidosis. Always keep the infant warm!',
+      'NEC Early Warning Sign: Increasing abdominal circumference, bilious (green) gastric residuals before feedings, lethargy, and gross or occult blood in the stool indicate NEC. Hold feeds immediately and notify the neonatologist.',
+      'Target Oxygen Saturation in ROP: Preterm infants on supplemental oxygen must have carefully titrated FiO2 to prevent hyperoxia-induced retinal vasospasm and irreversible blindness.'
+    ],
+    practiceQuestion: {
+      question: 'A nurse in the neonatal intensive care unit (NICU) is assessing a 29-week preterm newborn receiving enteral gavage feedings. Which assessment finding indicates a potential onset of necrotizing enterocolitis (NEC) and requires immediate nursing action?',
+      options: [
+        'Total serum bilirubin of 5.8 mg/dL with mild facial jaundice.',
+        'Persistent axillary temperature of 36.8°C (98.2°F) inside the servo-controlled isolette.',
+        'Abdominal distension with a 2.5 cm increase in girth and 4 mL of bilious green gastric aspirate.',
+        'Mild acrocyanosis of the bilateral feet during active crying.'
+      ],
+      correctIndex: 2,
+      rationale: 'The "E" in TRIES represents Elimination problems, specifically Necrotizing Enterocolitis (NEC). Hallmark clinical signs include abdominal distension with increasing girth, bilious (green-stained) gastric residuals, feeding intolerance, and occult or visible blood in the stool. The nurse must withhold feedings immediately, place a nasogastric tube to low intermittent suction, and notify the provider.'
+    }
+  },
+  {
+    id: 'iud-complications-pains',
+    shortCode: 'PAINS',
+    title: 'Intrauterine Device (IUD) Complications',
+    category: 'maternal',
+    categoryName: 'Maternal & Child Nursing',
+    summary: 'The essential 5-point patient education and clinical warning signs mnemonic for complications associated with Intrauterine Devices (IUDs).',
+    memoryTip: '"PAINS" — Period irregular, Abdominal pain/dyspareunia, Infection, Not feeling well (fever/chills), String missing. Any PAINS require urgent clinical evaluation!',
+    highYield: true,
+    tags: ['Family Planning', 'Contraception', 'Gynecology', 'Client Teaching'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Period (Menstrual: Late, Spotting, Heavy Bleeding)',
+        description: 'A missed or late menstrual period may signify unintended pregnancy or life-threatening ectopic pregnancy. Unusually heavy, prolonged bleeding or severe intermenstrual spotting can indicate IUD displacement, uterine perforation, or adenomyosis.',
+        highlight: 'Late period (ectopic risk) or heavy bleeding'
+      },
+      {
+        letter: 'A',
+        term: 'Abdominal Pain & Dyspareunia',
+        description: 'Severe, sharp, or persistent pelvic cramping, lower abdominal pain, or painful sexual intercourse (dyspareunia). Suggests uterine perforation during insertion, partial expulsion into the cervical canal, or developing pelvic inflammatory disease.',
+        highlight: 'Severe pelvic cramping or dyspareunia'
+      },
+      {
+        letter: 'I',
+        term: 'Infection (Abnormal Vaginal Discharge)',
+        description: 'Unusual, foul-smelling, purulent, or copious yellow-green vaginal discharge. Indicates pelvic inflammatory disease (PID) or endometritis (the highest risk of insertion-related infection occurs within the first 20 days post-placement).',
+        highlight: 'Purulent or foul-smelling discharge'
+      },
+      {
+        letter: 'N',
+        term: 'Not Feeling Well (Systemic Fever or Chills)',
+        description: 'Malaise, generalized myalgias, unexplained rigors, or temperature > 38°C (100.4°F). Signifies ascending pelvic infection, pelvic cellulitis, or systemic bacteremia requiring immediate antimicrobial therapy.',
+        highlight: 'Unexplained fever, chills, & malaise'
+      },
+      {
+        letter: 'S',
+        term: 'String Missing (Shortened or Lengthened)',
+        description: 'The client cannot palpate the IUD monofilament strings, or the strings feel significantly longer or shorter than baseline. Suggests partial expulsion into the vagina or silent perforation through the myometrium into the abdominal cavity.',
+        highlight: 'Missing, shortened, or elongated strings'
+      }
+    ],
+    clinicalContext: 'Intrauterine devices (copper [ParaGard] or levonorgestrel-releasing [Mirena/Kyleena]) provide superior long-acting reversible contraception. However, clients must be empowered with self-assessment skills—such as checking strings once a month after menses—and must recognize the "PAINS" warning signs that necessitate immediate clinical assessment and alternative barrier contraception.',
+    nclexPearls: [
+      'Monthly String Check: Instruct clients to check their IUD strings once monthly after every menstrual period with a clean finger inserted toward the external os.',
+      'Missing String Protocol: If strings cannot be located, instruct the client to use a backup barrier method (e.g., condoms) or abstain from sexual intercourse until an in-office exam and pelvic ultrasound confirm the device\'s location.',
+      'Ectopic Pregnancy Risk: While IUDs are over 99% effective, if conception does occur with an IUD in place, the relative likelihood of an ectopic pregnancy is significantly increased.'
+    ],
+    practiceQuestion: {
+      question: 'A 24-year-old client who had a levonorgestrel-releasing IUD inserted 2 weeks ago calls the triage nurse reporting inability to feel the IUD strings and mild lower abdominal cramping. What instruction is most appropriate for the nurse to provide?',
+      options: [
+        '"Perform warm vaginal douches twice daily until your follow-up appointment."',
+        '"Use a barrier contraceptive method like condoms and schedule an in-person evaluation."',
+        '"Take an over-the-counter NSAID and re-check for the strings in 4 weeks."',
+        '"Bear down firmly while sitting on the toilet to assist the strings in descending."'
+      ],
+      correctIndex: 1,
+      rationale: 'A missing string (the "S" in PAINS) suggests that the device may have been expelled unnoticed, displaced into the cervical canal, or perforated the uterine wall. The client must not rely on the IUD for contraception and should immediately use a barrier backup method (condoms) or abstain from intercourse until an office examination and pelvic ultrasound confirm intrauterine placement.'
+    }
+  },
+  {
+    id: 'dystocia-causes-3ps',
+    shortCode: "The 3 P's",
+    title: "Etiology of Dystocia: The 3 P's of Labor Dysfunction",
+    category: 'maternal',
+    categoryName: 'Maternal & Child Nursing',
+    summary: 'The core obstetric triad classifying the underlying biomechanical causes of difficult, prolonged, or obstructed labor (dystocia).',
+    memoryTip: '"The 3 P\'s of Labor Dystocia" — Power (uterine contractions & pushing), Passageway (maternal pelvis & birth canal), Passenger (fetal size, presentation, & lie).',
+    highYield: true,
+    tags: ['Intrapartum', 'Labor & Delivery', 'Obstetric Complications', 'Dystocia'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Power (Uterine Forces & Maternal Pushing)',
+        description: 'Primary powers: Ineffective, hypotonic, or hypertonic uterine contractions that fail to achieve progressive cervical effacement and dilation. Secondary powers: Ineffective maternal voluntary bearing-down efforts due to maternal exhaustion, regional epidural motor block, or analgesia.',
+        highlight: 'Hypotonic/hypertonic contractions & pushing effort'
+      },
+      {
+        letter: 'P',
+        term: 'Passageway (Maternal Pelvis & Birth Canal)',
+        description: 'Mechanical impedance caused by the bony pelvis (contracted pelvic inlet/outlet, android or platypelloid architecture) or maternal soft tissues (full distended urinary bladder, cervical edema, large uterine fibroids, or rigid perineal musculature).',
+        highlight: 'Pelvic architecture & full bladder obstruction'
+      },
+      {
+        letter: 'P',
+        term: 'Passenger (Fetal Size, Presentation, & Lie)',
+        description: 'Fetal factors impeding descent through the pelvic canal: Fetal macrosomia (> 4000-4500 g), malpresentation (breech, face, brow, transverse lie), malposition (persistent occiput posterior [OP] producing intense back labor), cephalopelvic disproportion (CPD), or multifetal gestation.',
+        highlight: 'Macrosomia, breech, occiput posterior, & CPD'
+      }
+    ],
+    clinicalContext: 'Labor dystocia (arrest of dilation or descent) is the leading indication for primary cesarean delivery. By systematically analyzing the 3 P\'s, labor nurses can pinpoint reversible causes and implement targeted interventions: augmenting "Power" with IV oxytocin or maternal repositioning, removing "Passageway" barriers (e.g., straight catheterization for bladder distension), and managing "Passenger" malpositions (hands-and-knees positioning for occiput posterior).',
+    nclexPearls: [
+      'Distended Bladder (Passageway): A full maternal bladder is the most frequent and easily correctable soft-tissue obstacle to fetal descent. The nurse should encourage voiding every 2 hours or perform straight catheterization if the bladder is palpated suprapubically.',
+      'Occiput Posterior (Passenger): Persistent occiput posterior (OP) causes severe, continuous lower back pain ("back labor"). The nurse should reposition the client into hands-and-knees (all-fours) or lateral Sims position and apply firm sacral counterpressure.',
+      'Hypotonic vs. Hypertonic Dysfunction (Power): Hypotonic contractions (infrequent, weak during active labor) are treated with amniotomy and IV oxytocin augmentation; hypertonic contractions (frequent, painful, uncoordinated during latent labor) are treated with therapeutic rest and analgesia.'
+    ],
+    practiceQuestion: {
+      question: 'A laboring primigravida at 5 cm dilation has made no cervical progress for 3 hours despite regular contractions. Upon abdominal palpation, the nurse notes a rounded, fluctuant mass protruding above the maternal symphysis pubis, and the fetal vertex remains at -1 station. What is the nurse\'s priority action?',
+      options: [
+        'Prepare the client for an immediate emergent cesarean delivery.',
+        'Assist the client to void or perform straight catheterization.',
+        'Increase the infusion rate of intravenous oxytocin.',
+        'Administer a prescribed subcutaneous dose of terbutaline.'
+      ],
+      correctIndex: 1,
+      rationale: 'A rounded, fluctuant suprapubic mass indicates a distended urinary bladder, which acts as a soft-tissue obstruction within the Passageway (one of the 3 P\'s of dystocia). A full bladder elevates the uterus and physically impedes fetal descent into the pelvis. Emptying the bladder clears the passageway and frequently allows labor progress to resume without medications or surgery.'
     }
   },
 
