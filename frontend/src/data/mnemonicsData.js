@@ -4,7 +4,7 @@
 export const MNEMONICS_CATEGORIES = [
   { id: 'fundamentals', name: 'Fundamentals in Nursing', iconKey: 'fundamentals', count: 14 },
   { id: 'maternal', name: 'Maternal & Child Nursing', iconKey: 'maternal', count: 10 },
-  { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 31 },
+  { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 67 },
   { id: 'psych', name: 'Psychiatric Nursing', iconKey: 'psych', count: 5 },
   { id: 'pharmacology', name: 'Pharmacology Nursing', iconKey: 'pharmacology', count: 6 },
   { id: 'communicable', name: 'Communicable Diseases', iconKey: 'communicable', count: 4 },
@@ -3612,6 +3612,2184 @@ export const mnemonicsList = [
       ],
       correctIndex: 1,
       rationale: 'In DKA management (KING UFC), when blood glucose drops to 200–250 mg/dL (or ~12 mmol/L, "G" in KING UFC), dextrose (5% Dextrose in 0.45% NS) must be added to the IV fluids while continuing the insulin infusion. This prevents rapid hypoglycemia and cerebral edema while providing enough circulating glucose so that insulin can continue clearing serum ketones and closing the metabolic acidosis anion gap. Stopping insulin prematurely allows ketoacidosis to rebound, and bicarbonate is reserved only for severe life-threatening acidosis (pH < 6.9).'
+    }
+  },
+  {
+    id: 'vfib-treatment-everybody-shock',
+    shortCode: 'V-FIB SHOCK',
+    title: 'Ventricular Fibrillation ACLS Protocol (Everybody Shock)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Emergency resuscitation sequence and pharmacology for pulseless Ventricular Fibrillation (V-Fib) and pulseless Ventricular Tachycardia (pVT).',
+    memoryTip: '“Shock, Shock, Shock, Everybody Shock, Little Shock, Big Shock, Momma Shock, Poppa Shock” — Shock (Defibrillate), Epinephrine, Lidocaine, Bretylium, MgSO4, Procainamide. Defibrillation and continuous high-quality CPR are king!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Critical Care', 'ACLS', 'Emergency Nursing', 'Dysrhythmias', 'Pharmacology'],
+    letters: [
+      {
+        letter: 'Shock',
+        term: 'Defibrillate (Immediate Unsynchronized Countershock)',
+        description: 'V-Fib is a shockable cardiac arrest rhythm! Deliver an immediate unsynchronized shock (120–200 J biphasic or 360 J monophasic); resume CPR immediately for 2 minutes without pausing for rhythm or pulse checks.',
+        highlight: 'Immediate unsynchronized defibrillation & resume CPR'
+      },
+      {
+        letter: 'E',
+        term: 'Everybody (Epinephrine)',
+        description: 'First-line vasopressor administered after the second shock during cardiac arrest; 1 mg IV/IO push repeated every 3 to 5 minutes to enhance coronary and cerebral perfusion pressure via alpha-1 adrenergic vasoconstriction.',
+        highlight: '1 mg IV push every 3-5 min after 2nd shock'
+      },
+      {
+        letter: 'L',
+        term: 'Little (Lidocaine)',
+        description: 'Primary alternative antiarrhythmic to amiodarone for shock-refractory V-Fib / pulseless V-Tach (1.0–1.5 mg/kg IV/IO initial bolus, then 0.5–0.75 mg/kg every 5–10 min; max 3 mg/kg). Suppresses ventricular automaticity by blocking voltage-gated sodium channels.',
+        highlight: '1-1.5 mg/kg IV alternative antiarrhythmic'
+      },
+      {
+        letter: 'B',
+        term: 'Big (Bretylium / Amiodarone)',
+        description: 'Historically Bretylium tosylate; in current standard ACLS guidelines, Amiodarone (300 mg IV/IO rapid bolus first dose, followed by 150 mg second dose if VF/pVT persists) is the primary Class III potassium-channel antiarrhythmic.',
+        highlight: 'Amiodarone 300 mg IV first dose (historically Bretylium)'
+      },
+      {
+        letter: 'M',
+        term: 'Momma (Magnesium Sulfate - MgSO4)',
+        description: 'Indicated specifically for polymorphic ventricular tachycardia (Torsades de Pointes) or suspected hypomagnesemia; administer 1 to 2 grams IV/IO diluted in 10 mL D5W given over 5 to 20 minutes (or rapid IV push in pulseless cardiac arrest).',
+        highlight: '1-2 g IV for Torsades de Pointes / hypomagnesemia'
+      },
+      {
+        letter: 'P',
+        term: 'Poppa (Procainamide)',
+        description: 'Class Ia antiarrhythmic used for stable wide-complex monomorphic ventricular tachycardias or refractory ventricular arrhythmias post-ROSC (20–50 mg/min IV infusion; stop if QRS widens >50% or hypotension occurs; avoid in prolonged QT).',
+        highlight: 'Class Ia antiarrhythmic for wide-complex tachydysrhythmias'
+      }
+    ],
+    clinicalContext: 'In Emergency, ICU, and Telemetry nursing, pulseless Ventricular Fibrillation produces instantaneous cessation of cardiac output and clinical death. The definitive life-saving intervention is immediate, unsynchronized electrical defibrillation paired with minimal interruptions in chest compressions. Synchronized cardioversion is strictly contraindicated for V-Fib because the machine cannot identify an R-wave on a fibrillating baseline and will fail to discharge.',
+    nclexPearls: [
+      '"V-Fib = D-Fib": Defibrillation is the definitive treatment for Ventricular Fibrillation and pulseless V-Tach. For every minute defibrillation is delayed, survival decreases by 7–10%.',
+      'Unsynchronized vs. Synchronized: Defibrillation is unsynchronized (used for chaotic rhythms without QRS complexes like VF and pulseless VT). Synchronized cardioversion is used for unstable tachyarrhythmias with pulses (atrial fibrillation, SVT, VT with a pulse) to avoid triggering the R-on-T phenomenon.',
+      'Immediate CPR after Shock: Immediately after delivering the shock, resume chest compressions for 2 minutes (5 cycles of 30:2); DO NOT pause to check pulse or rhythm immediately post-shock.'
+    ],
+    practiceQuestion: {
+      question: 'A telemetry nurse observes that a client who was admitted with an acute anterior wall myocardial infarction has abruptly lost consciousness. The cardiac monitor reveals chaotic, irregular, undulating baseline waves without identifiable P waves or QRS complexes. Assessment confirms the client is unresponsive, apneic, and pulseless. Which intervention is the nurse\'s immediate priority?',
+      options: [
+        'Deliver an immediate unsynchronized shock with the defibrillator and resume high-quality CPR.',
+        'Administer intravenous epinephrine 1 mg IV push over 1 minute.',
+        'Activate the synchronizer mode on the defibrillator and deliver a synchronized shock of 50 Joules.',
+        'Perform an immediate 12-lead electrocardiogram to document the dysrhythmia.'
+      ],
+      correctIndex: 0,
+      rationale: 'The monitor displays coarse Ventricular Fibrillation (V-Fib). The definitive, highest-priority intervention for pulseless V-Fib is immediate unsynchronized electrical defibrillation ("V-Fib = D-Fib", "Shock, Shock, Everybody Shock"). After shock delivery, CPR must be resumed immediately for 2 minutes before the next rhythm check. Synchronized cardioversion is contraindicated because the defibrillator requires a distinct QRS/R-wave to synchronize and will not fire on fibrillating rhythms. Epinephrine is administered after CPR is underway and after the second shock.'
+    }
+  },
+  {
+    id: 'sah-causes-bats',
+    shortCode: 'BATS',
+    title: 'Causes of Subarachnoid Hemorrhage (BATS)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The major predisposing and traumatic etiologies of life-threatening Subarachnoid Hemorrhage (SAH).',
+    memoryTip: 'BATS — Berry aneurysm (Circle of Willis), Arteriovenous malformation (AVM) / Adult polycystic kidney disease (APKD), Trauma (head impact), Stroke (hemorrhagic). Hallmark: "Worst headache of my life"!',
+    highYield: true,
+    tags: ['Neurological', 'Stroke', 'Emergency Nursing', 'Critical Care', 'Aneurysm', 'Head Trauma'],
+    letters: [
+      {
+        letter: 'B',
+        term: 'Berry Aneurysm (Saccular Aneurysm)',
+        description: 'The leading nontraumatic etiology of subarachnoid hemorrhage (~85% of spontaneous cases). Congenital focal wall muscular defect situated at bifurcations of the Circle of Willis (most commonly anterior communicating artery); rupture leads to sudden arterial extravasation into the subarachnoid space under systemic arterial pressure.',
+        highlight: 'Circle of Willis saccular aneurysm (85% of spontaneous SAH)'
+      },
+      {
+        letter: 'A',
+        term: 'Arteriovenous Malformation (AVM) / Adult Polycystic Kidney Disease (APKD)',
+        description: 'Congenital plexuses of direct arterial-to-venous fistulae lacking an intervening capillary bed that rupture under shear stress; also reflects the strong genetic link with Autosomal Dominant Polycystic Kidney Disease (ADPKD), where up to 10-15% of clients harbor intracranial berry aneurysms.',
+        highlight: 'Congenital vascular tangles & ADPKD aneurysm risk'
+      },
+      {
+        letter: 'T',
+        term: 'Trauma (Blunt or Penetrating Head Injury)',
+        description: 'The overall most frequent cause of subarachnoid hemorrhage across all patient demographics. Violent acceleration-deceleration forces or blunt cranial impact (assault with blunt object/bat, motor vehicle crashes, falls) shear superficial cortical and leptomeningeal bridging microvessels.',
+        highlight: 'Direct cranial trauma & acceleration-deceleration'
+      },
+      {
+        letter: 'S',
+        term: 'Stroke (Hemorrhagic Stroke / Bleed)',
+        description: 'Primary intracerebral hemorrhage (ICH) rupturing through the cerebral cortex into the subarachnoid cisterns, or secondary hemorrhagic conversion of an extensive ischemic cerebral infarction.',
+        highlight: 'Intracerebral hemorrhage extension or hemorrhagic conversion'
+      }
+    ],
+    clinicalContext: 'In Emergency and Neuro-ICU nursing, recognizing the clinical picture of SAH is critical. Clients present with an abrupt, explosive "thunderclap headache" ("worst headache of my life"), meningeal irritation (nuchal rigidity, photophobia, positive Kernig and Brudzinski signs), transient loss of consciousness, and vomiting. Nursing priorities include strict aneurysm precautions (quiet dark room, bed rest, stool softeners to prevent Valsalva), maintaining systolic BP < 140–160 mmHg, administering nimodipine to prevent cerebral vasospasm, and monitoring for hydrocephalus.',
+    nclexPearls: [
+      '"Worst Headache of My Life": A sudden, severe explosive thunderclap headache accompanied by nuchal rigidity is subarachnoid hemorrhage until proven otherwise.',
+      'Nimodipine & Cerebral Vasospasm: Calcium channel blocker (nimodipine 60 mg q4h for 21 days) is administered specifically to prevent delayed ischemic neurological deficits from cerebral vasospasm (peak risk 4–14 days post-rupture). If client is hypotensive (SBP < 90), hold and consult provider.',
+      'Aneurysm Precautions: Absolute bed rest in a quiet, darkened, private room; avoid all Valsalva maneuvers (prescribe docusate stool softeners, treat coughing/vomiting promptly, no rectal temperatures/enemas) to prevent fatal re-rupture.',
+      'ADPKD Genetic Screening: Clients with Autosomal Dominant Polycystic Kidney Disease have an increased risk of intracranial berry aneurysms; report any severe or new headache immediately!'
+    ],
+    practiceQuestion: {
+      question: 'A 42-year-old client with a history of autosomal dominant polycystic kidney disease (ADPKD) arrives in the emergency department reporting the sudden onset of an explosive, incapacitating headache that the client describes as "the worst headache of my entire life." On physical exam, the nurse notes severe nuchal rigidity and photophobia. Which diagnostic evaluation should the nurse prepare the client for first (BATS)?',
+      options: [
+        'Emergent non-contrast head computed tomography (CT)',
+        'Immediate lumbar puncture with opening pressure measurement',
+        'Magnetic resonance imaging (MRI) of the cervical spine with contrast',
+        '24-hour ambulatory blood pressure monitoring'
+      ],
+      correctIndex: 0,
+      rationale: 'The client presents with the classic triad of a ruptured intracranial berry aneurysm causing subarachnoid hemorrhage (SAH, "B" and "A" in BATS): sudden thunderclap headache ("worst headache of life"), nuchal rigidity, and underlying ADPKD (strongly associated with Circle of Willis berry aneurysms). The mandatory first-line diagnostic investigation is an emergent non-contrast head CT scan, which has >95% sensitivity for subarachnoid blood within the first 24 hours. A lumbar puncture (looking for xanthochromia) is performed only if the non-contrast CT is negative or equivocal, but never before CT due to the risk of brain herniation.'
+    }
+  },
+  {
+    id: 'shock-signs-symptoms-tv-sparc-cube',
+    shortCode: 'TV SPARC CUBE',
+    title: 'Clinical Signs & Symptoms of Shock (TV SPARC CUBE)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Comprehensive clinical manifestations of progressive circulatory collapse and systemic hypoperfusion.',
+    memoryTip: 'TV SPARC CUBE — Thirst, Vomiting, Sweating, Pulse weak, Anxious, Respirations rapid/shallow, Cool, Cyanotic, Unconscious, BP low (late!), Eyes blank.',
+    highYield: true,
+    tags: ['Emergency Nursing', 'Critical Care', 'Shock Syndromes', 'Assessment', 'Hemodynamics'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Thirst',
+        description: 'Intense, unquenchable thirst driven by hypothalamic osmoreceptor activation and thirst center stimulation in response to intravascular fluid depletion, decreased circulating blood volume, and hyperosmolarity.',
+        highlight: 'Osmoreceptor activation & intravascular depletion'
+      },
+      {
+        letter: 'V',
+        term: 'Vomiting & Nausea',
+        description: 'Sympathetic vasoconstriction shunts blood flow away from mesenteric and gastrointestinal capillary beds toward the heart and brain; gut ischemia and mucosal hypoperfusion cause paralytic ileus, severe nausea, and vomiting.',
+        highlight: 'Splanchnic vasoconstriction & mesenteric hypoperfusion'
+      },
+      {
+        letter: 'S',
+        term: 'Sweating (Diaphoresis)',
+        description: 'Profound sympathetic nervous system (SNS) hyperactivation triggers cholinergic and adrenergic stimulation of cutaneous eccrine glands, producing classic cold, clammy diaphoresis.',
+        highlight: 'Sympathetic hyperactivity & cold, clammy skin'
+      },
+      {
+        letter: 'P',
+        term: 'Pulse Weak (Rapid & Thready)',
+        description: 'Compensatory sinus tachycardia (>100 beats/min) coupled with markedly diminished stroke volume produces a weak, rapid, thready peripheral pulse as catecholamines strive to maintain cardiac output (CO = HR × SV).',
+        highlight: 'Tachycardia with diminished, thready pulse'
+      },
+      {
+        letter: 'A',
+        term: 'Anxious (Restlessness & Apprehension)',
+        description: 'Earliest and most sensitive clinical hallmark of shock! Early cerebral hypoperfusion and mild cellular arterial hypoxemia manifest initially as unexplained restlessness, agitation, anxiety, and subtle personality changes.',
+        highlight: 'Earliest indicator of shock & cerebral hypoxia'
+      },
+      {
+        letter: 'R',
+        term: 'Respirations Shallow & Rapid (Tachypnea)',
+        description: 'Compensatory tachypnea (>20–24 breaths/min) triggered by peripheral chemoreceptor stimulation sensing systemic lactic acidosis (from anaerobic cellular metabolism) to blow off carbon dioxide and provide respiratory compensation.',
+        highlight: 'Tachypnea compensating for lactic acidosis'
+      },
+      {
+        letter: 'C',
+        term: 'Cool Skin',
+        description: 'Alpha-1 adrenergic vasoconstriction clamps down on cutaneous arterioles, diverting blood from non-essential skin and subcutaneous tissues to central core organs, leaving extremities cold to the touch.',
+        highlight: 'Peripheral vasoconstriction shunting blood inward'
+      },
+      {
+        letter: 'C',
+        term: 'Cyanotic (Pallor & Mottling)',
+        description: 'Intense dermal capillary vasoconstriction, sluggish microvascular transit, and increased peripheral oxygen extraction cause pale, ashen, mottled, or dusky cyanotic skin with delayed capillary refill (>3 seconds).',
+        highlight: 'Delayed capillary refill (>3s) & mottling'
+      },
+      {
+        letter: 'U',
+        term: 'Unconscious (Lethargy to Coma)',
+        description: 'As compensatory vasoconstriction fails and mean arterial pressure plummets below the autoregulatory threshold (MAP < 60 mmHg), cerebral perfusion fails, resulting in progressive confusion, lethargy, obtundation, and coma.',
+        highlight: 'Decompensated cerebral hypoperfusion & coma'
+      },
+      {
+        letter: 'B',
+        term: 'BP Low (Hypotension - LATE SIGN!)',
+        description: 'Systolic blood pressure <90 mmHg or MAP <65 mmHg occurs only after compensatory mechanisms (tachycardia, vasoconstriction, RAAS) are completely exhausted. Never wait for hypotension to diagnose shock!',
+        highlight: 'Hypotension is a LATE, decompensated sign'
+      },
+      {
+        letter: 'E',
+        term: 'Eyes Blank (Dull Gaze & Dilated Pupils)',
+        description: 'Severe volume depletion and impaired brainstem perfusion produce sunken ocular orbits, a glassy/dull stare, and eventual pupillary dilation with sluggish light reflexes as cardiovascular collapse progresses.',
+        highlight: 'Sunken globes, glazed stare, & pupillary dilation'
+      }
+    ],
+    clinicalContext: 'In Emergency, ICU, and Medical-Surgical nursing, shock is defined as generalized cellular hypoxia and inadequate tissue perfusion. Recognizing the transition from compensatory shock (anxiety, tachycardia, tachypnea, normal BP) to progressive/decompensated shock (hypotension, oliguria, lactic acidosis) is critical. Timely fluid resuscitation, vasopressors, and treating the underlying etiology (hemorrhage, sepsis, cardiogenic pump failure) prevent irreversible end-organ failure.',
+    nclexPearls: [
+      'Earliest Sign of Shock: Restlessness, agitation, and subtle changes in level of consciousness are the earliest signs of systemic hypoperfusion. Hypotension is a LATE sign!',
+      'Mean Arterial Pressure (MAP) Target: Minimum MAP required to adequately perfuse vital organs (kidneys, brain) is ≥ 65 mmHg [MAP = (SBP + 2(DBP)) / 3].',
+      'Urine Output as Perfusion Indicator: Oliguria (< 0.5 mL/kg/hr or < 30 mL/hr) reflects compensatory renal vasoconstriction (RAAS activation); measuring strict hourly urine output via Foley catheter is a vital hemodynamic parameter.'
+    ],
+    practiceQuestion: {
+      question: 'A nurse on a medical-surgical unit is caring for a client with acute pancreatitis. During morning assessment, the nurse notes the client has become increasingly anxious and restless, the heart rate has increased from 82 to 118 beats/min, respiratory rate is 26 breaths/min and shallow, skin is cool and clammy, and blood pressure is 114/72 mmHg. How should the nurse interpret these findings (TV SPARC CUBE)?',
+      options: [
+        'The client is experiencing expected emotional anxiety related to hospitalization.',
+        'The client is in the early compensatory stage of hypovolemic shock.',
+        'The client has entered uncompensated irreversible multi-organ failure.',
+        'The client has developed Cushing\'s triad secondary to increased intracranial pressure.'
+      ],
+      correctIndex: 1,
+      rationale: 'The client exhibits the classic early compensatory signs of shock (TV SPARC CUBE): restlessness/anxiety (earliest sign of cerebral hypoperfusion), tachycardia (118 bpm), tachypnea (26 breaths/min), and cool, clammy skin from sympathetic vasoconstriction. In early compensatory shock, blood pressure remains within normal limits due to adrenergic compensatory mechanisms (catecholamine release and RAAS activation). Waiting for blood pressure to drop before recognizing shock allows progression to irreversible shock.'
+    }
+  },
+  {
+    id: 'shock-triad-hypo-tachy-tachy',
+    shortCode: 'HYPO TACHY TACHY',
+    title: 'Vital Sign Triad of Shock (Hypo Tachy Tachy)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic vital sign triad of systemic circulatory shock (Hypotension, Tachypnea, Tachycardia) and its vital NCLEX contrast with Cushing’s triad.',
+    memoryTip: 'HYPO TACHY TACHY (Shock) — HYPOtension, TACHYpnea, TACHYcardia. The exact clinical mirror-opposite of Cushing’s Triad for increased ICP (HYPER BRADY BRADY: HYPERtension, BRADYcardia, BRADYpnea)!',
+    highYield: true,
+    tags: ['Critical Care', 'Emergency Nursing', 'Shock Syndromes', 'Vital Signs', 'Neurological'],
+    letters: [
+      {
+        letter: 'HYPO',
+        term: 'HYPOtension (Decreased Blood Pressure)',
+        description: 'Critical reduction in effective circulating intravascular volume, decreased systemic vascular resistance (SVR in distributive shock), or pump failure leading to dropped mean arterial pressure (MAP < 65 mmHg) and systemic tissue hypoperfusion.',
+        highlight: 'MAP < 65 mmHg & systemic hypoperfusion'
+      },
+      {
+        letter: 'TACHY',
+        term: 'TACHYpnea (Rapid Respiratory Rate)',
+        description: 'Compensatory hyperventilation (>20–24 breaths/min) stimulated by peripheral and central chemoreceptors sensing accumulating lactic acid and metabolic acidosis from widespread anaerobic cellular respiration, blowing off CO2.',
+        highlight: 'Respiratory rate >20-24/min blowing off CO2'
+      },
+      {
+        letter: 'TACHY',
+        term: 'TACHYcardia (Elevated Heart Rate)',
+        description: 'Baroreceptor reflex and sympathetic catecholamine surge (epinephrine/norepinephrine) accelerating heart rate (>100 beats/min) in a vigorous attempt to maintain cardiac output (CO = HR × SV) despite reduced stroke volume.',
+        highlight: 'Heart rate >100 bpm maintaining cardiac output'
+      }
+    ],
+    clinicalContext: 'In Emergency and Medical-Surgical nursing, rapid vital sign pattern recognition differentiates acute hypovolemic/septic shock from neurological herniation (Cushing\'s triad). A client in shock presents with HYPO-TACHY-TACHY (low BP, fast breathing, fast pulse). Conversely, a client with elevated intracranial pressure (ICP) herniation presents with the exact physiological opposite: HYPER-BRADY-BRADY (widening pulse pressure / hypertension, slow bounding pulse, slow/irregular respirations).',
+    nclexPearls: [
+      'The Classic NCLEX Vital Signs Mirror: SHOCK = HYPO TACHY TACHY (Hypotension, Tachypnea, Tachycardia). CUSHING\'S TRIAD (Increased ICP) = HYPER BRADY BRADY (Hypertension with widened pulse pressure, Bradypnea, Bradycardia).',
+      'Neurogenic Shock Exception: Neurogenic shock (cervical/high thoracic spinal cord injury above T6) is the UNIQUE exception among shock states: it presents with Hypotension AND Bradycardia (due to total loss of sympathetic tone below the injury).',
+      'Septic Shock "Warm Shock": Early hyperdynamic septic shock may initially present with warm, flushed extremities and bounding pulses, but will still demonstrate tachycardia, tachypnea, and impending hypotension.'
+    ],
+    practiceQuestion: {
+      question: 'An emergency department nurse is triaging two unstable clients following a high-speed multi-vehicle collision. Client A presents with BP 82/50 mmHg, HR 128 beats/min, and RR 28 breaths/min. Client B presents with BP 192/78 mmHg, HR 44 beats/min, and RR 8 breaths/min with irregular pauses. How should the nurse interpret the vital sign patterns of these two clients (HYPO TACHY TACHY vs. HYPER BRADY BRADY)?',
+      options: [
+        'Client A exhibits Cushing\'s triad of increased intracranial pressure; Client B exhibits hypovolemic shock.',
+        'Client A exhibits systemic circulatory shock; Client B exhibits Cushing\'s triad of life-threatening increased intracranial pressure.',
+        'Both clients exhibit neurogenic shock secondary to high-level cervical spine injuries.',
+        'Both clients exhibit normal compensatory autonomic responses to emotional trauma.'
+      ],
+      correctIndex: 1,
+      rationale: 'Client A exhibits the classic vital sign triad of shock ("HYPO TACHY TACHY"): Hypotension (BP 82/50), Tachycardia (HR 128), and Tachypnea (RR 28), reflecting systemic hypoperfusion and compensatory catecholamine surge. Client B exhibits the classic Cushing\'s triad of increased intracranial pressure ("HYPER BRADY BRADY"): Hypertension with a widened pulse pressure (192/78, pulse pressure 114 mmHg), Bradycardia (HR 44), and Bradypnea with Cheyne-Stokes-like irregular respirations (RR 8), signaling impending brainstem herniation.'
+    }
+  },
+  {
+    id: 'heart-valves-blood-flow-tpma',
+    shortCode: 'TPMA',
+    title: 'Heart Valve Blood Flow Sequence (Try Pulling My Aorta)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The chronological pathway of unidirectional blood flow through the 4 cardiac valves from right-sided deoxygenated return to systemic arterial delivery.',
+    memoryTip: '“TRY PULLING MY AORTA” (TPMA) — Tricuspid → Pulmonary → Mitral → Aortic. Master the pathway of intracardiac blood flow and valve disease pathophysiology!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Hemodynamics', 'Cardiac Anatomy', 'Valvular Disorders', 'Pathophysiology'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Tricuspid Valve (Right Atrioventricular)',
+        description: 'First valve encountered by systemic venous blood; separates the right atrium from the right ventricle. Prevents backward regurgitation into the venae cavae during right ventricular systole (frequently colonized by Staphylococcus aureus in IV drug users with infective endocarditis).',
+        highlight: 'Right atrium to right ventricle; endocarditis target in IVDU'
+      },
+      {
+        letter: 'P',
+        term: 'Pulmonary Valve (Right Semilunar)',
+        description: 'Guards the outflow tract between the right ventricle and pulmonary trunk. Opens during ventricular systole to eject deoxygenated blood into the pulmonary arterial bed for alveolar oxygenation.',
+        highlight: 'Right ventricle to pulmonary artery'
+      },
+      {
+        letter: 'M',
+        term: 'Mitral Valve (Bicuspid / Left Atrioventricular)',
+        description: 'High-pressure dual-cusp valve separating the oxygenated left atrium from the left ventricle. Withstands the highest systolic mechanical pressures in the heart; stenosis causes backward hydrostatic congestion into pulmonary veins (crackles, orthopnea, dyspnea).',
+        highlight: 'Left atrium to left ventricle; backward pulmonary congestion'
+      },
+      {
+        letter: 'A',
+        term: 'Aorta (Aortic Valve / Left Semilunar)',
+        description: 'Outflow valve between the left ventricle and ascending systemic aorta. Opens during left ventricular systole to perfuse the coronary ostia and systemic circulation (severe stenosis produces SAD triad: Syncope, Angina, Dyspnea).',
+        highlight: 'Left ventricle to aorta & coronary perfusion'
+      }
+    ],
+    clinicalContext: 'In Cardiovascular and Medical-Surgical nursing, understanding the TPMA blood flow sequence is essential for tracing backward failure in valvular heart disease. Left-sided valve failure (Mitral and Aortic) produces backward congestion into the pulmonary vasculature, manifesting as pulmonary edema, dyspnea, orthopnea, and crackles. Right-sided valve failure (Tricuspid and Pulmonary) produces backward congestion into the systemic venous system, manifesting as jugular venous distention (JVD), hepatomegaly, ascites, and dependent peripheral edema.',
+    nclexPearls: [
+      'Backward Congestion Rule: Mitral and Aortic pathology (left heart) causes pulmonary congestion (crackles, hemoptysis, orthopnea); Tricuspid and Pulmonic pathology (right heart) causes systemic venous congestion (JVD, peripheral edema, hepatomegaly).',
+      'IV Drug Abuse Endocarditis: In infective endocarditis associated with IV drug use, the Tricuspid valve ("T" in TPMA) is by far the most commonly infected valve (most frequently caused by Staphylococcus aureus), which can shower septic emboli into the lungs causing pulmonary infarctions/abscesses.',
+      'S1 vs. S2 Valve Closure: Closure of the atrioventricular valves (Tricuspid and Mitral = "T & M") produces the S1 ("lub") sound; closure of the semilunar valves (Aortic and Pulmonic = "A & P") produces the S2 ("dub") sound.'
+    ],
+    practiceQuestion: {
+      question: 'A client with a long-standing history of severe mitral valve stenosis is admitted to the progressive cardiac care unit. When applying knowledge of the sequence of intracardiac blood flow (TPMA: "Try Pulling My Aorta"), which clinical assessment finding should the nurse prioritize as a direct complication of impaired forward flow through the mitral valve?',
+      options: [
+        'Bilateral lower extremity 3+ pitting edema and jugular venous distension',
+        'Tachypnea, bilateral basilar crackles, and orthopnea',
+        'Marked systolic ejection murmur radiating bilaterally to the carotid arteries',
+        'Splinter hemorrhages under the fingernails and Roth spots'
+      ],
+      correctIndex: 1,
+      rationale: 'According to the intracardiac flow pathway (TPMA: Tricuspid → Pulmonary → Mitral → Aortic), blood flows from the pulmonary veins into the left atrium and then through the Mitral valve into the left ventricle. Mitral stenosis creates a mechanical bottleneck, causing blood to back up upstream into the left atrium and pulmonary venous circulation. This increases pulmonary capillary hydrostatic pressure, leading to pulmonary congestion and edema hallmarked by tachypnea, orthopnea, dyspnea on exertion, and bibasilar crackles. Right-sided systemic venous congestion (JVD, peripheral edema) occurs downstream only if chronic pulmonary hypertension develops.'
+    }
+  },
+  {
+    id: 'femoral-hernia-in-females',
+    shortCode: 'FEM-FEM',
+    title: 'Femoral Hernia Clinical Characteristics (FEM in FEMales)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Anatomical borders, female predisposition, and the high surgical urgency of strangulation risk in femoral hernias.',
+    memoryTip: '“FEMoral hernias in FEMales” — FEMoral hernias are vastly more common in FEMales (wider female pelvis and pregnancy history). Highest risk of incarceration and bowel strangulation!',
+    highYield: true,
+    tags: ['Gastrointestinal', 'Surgical Nursing', 'Hernias', 'Emergency Nursing', 'Anatomy'],
+    letters: [
+      {
+        letter: 'FEM',
+        term: 'FEMoral Hernia (Anatomical Passage)',
+        description: 'Protrusion of intra-abdominal viscera (peritoneal fat or small intestine) through the narrow, rigid femoral ring into the femoral canal, emerging in the proximal medial thigh inferior to the inguinal ligament and medial to the femoral vein.',
+        highlight: 'Protrudes inferior to inguinal ligament into femoral canal'
+      },
+      {
+        letter: 'FEM',
+        term: 'FEMales (High Prevalence & High Strangulation Risk)',
+        description: 'Although inguinal hernias remain the most common hernia overall in both sexes, femoral hernias occur predominantly in adult females (female-to-male ratio approximately 4:1) due to broader pelvic diameter and parity-related tissue laxity. Has the highest strangulation rate (30-40%) among groin hernias.',
+        highlight: '4:1 female predominance & highest strangulation rate'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical, emergency, and surgical nursing, evaluating groin masses requires distinguishing femoral hernias (located below and lateral to the pubic tubercle, inferior to the inguinal ligament) from inguinal hernias (located above and medial to the pubic tubercle, superior to the inguinal ligament). Because the femoral canal has rigid, fibrous boundaries (lacunar ligament medially, femoral vein laterally, Cooper ligament posteriorly), femoral hernias have the highest rate of incarceration and strangulation (up to 30–40% at presentation), making watchful waiting inappropriate and necessitating urgent elective or emergent surgical repair.',
+    nclexPearls: [
+      'High Strangulation Risk: Femoral hernias have a tiny, rigid aperture bounded by fibrous ligaments. They carry the highest risk of bowel strangulation and incarceration of all groin hernias. Reducible or asymptomatic femoral hernias are NEVER managed with trusses or watchful waiting; prompt surgical repair (herniorrhaphy/hernioplasty) is indicated.',
+      'Signs of Strangulated Hernia: Sudden severe acute groin/thigh pain, irreducible bulge, redness/erythema over the swelling, high-pitched or absent bowel sounds, nausea, vomiting, and systemic fever/tachycardia indicating bowel ischemia and impending gangrene/peritonitis.',
+      'Anatomical Distinction: Inguinal hernia protrudes ABOVE the inguinal ligament (superior/medial to pubic tubercle); Femoral hernia protrudes BELOW the inguinal ligament (inferior/lateral to pubic tubercle, medial to the femoral vein).'
+    ],
+    practiceQuestion: {
+      question: 'A 72-year-old female client presents to the emergency department reporting acute severe lower right groin and upper thigh pain accompanied by nausea and abdominal distension. Assessment reveals a tender, non-reducible, erythematous mass situated inferior to the inguinal ligament and medial to the femoral pulsation. The nurse recognizes this presentation as an incarcerated femoral hernia (FEM in FEMales). Which action should the nurse take immediately?',
+      options: [
+        'Attempt vigorous manual reduction of the mass while the client is placed in the Trendelenburg position.',
+        'Apply an abdominal truss support belt and instruct the client to ambulate to stimulate flatus.',
+        'Maintain NPO status, establish IV access, and notify the surgical team immediately for emergent intervention.',
+        'Provide oral clear liquids and schedule an outpatient ultrasound examination for the following week.'
+      ],
+      correctIndex: 2,
+      rationale: 'Femoral hernias ("FEMoral hernias in FEMales") pass through the rigid femoral canal inferior to the inguinal ligament. Because of these unyielding fibrous borders, femoral hernias carry an exceptionally high risk of incarceration and strangulation leading to ischemic bowel necrosis. An acute, tender, erythematous, non-reducible mass indicates acute incarceration/strangulation, which is a surgical emergency. The nurse must keep the client NPO, start IV fluids, and immediately alert the surgical team. Manual forceful reduction is contraindicated because it risks reducing necrotic, perforated bowel back into the peritoneal cavity.'
+    }
+  },
+  {
+    id: 'croup-symptoms-triad-sss',
+    shortCode: 'SSS',
+    title: 'Croup Signs, Symptoms & Airway Triad (SSS)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic clinical triad and radiographic hallmark of acute laryngotracheobronchitis (viral croup).',
+    memoryTip: '“SSS” for Croup — Stridor (inspiratory), Subglottic swelling (Steeple sign on X-ray), Seal-bark cough. Keep the child calm and administer dexamethasone & racemic epinephrine!',
+    highYield: true,
+    tags: ['Respiratory', 'Pediatrics', 'Emergency Nursing', 'Airway Management', 'Infectious Disease'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Stridor (Inspiratory Stridor)',
+        description: 'High-pitched, harsh musical sound generated by rapid, turbulent airflow through a severely narrowed subglottic extrathoracic airway. Presence of inspiratory stridor at rest indicates moderate-to-severe airway compromise demanding emergent medical therapy.',
+        highlight: 'Inspiratory stridor at rest signals severe obstruction'
+      },
+      {
+        letter: 'S',
+        term: 'Subglottic Swelling (Steeple Sign)',
+        description: 'Viral invasion (primarily Human Parainfluenza virus type 1) provokes inflammatory mucosal edema within the rigid cricoid cartilage ring. Anteroposterior (AP) soft-tissue neck radiographs characteristically demonstrate tapering symmetric subglottic narrowing known as the "Steeple sign" (or pencil-point sign).',
+        highlight: 'Steeple sign on AP neck radiograph'
+      },
+      {
+        letter: 'S',
+        term: 'Seal-Bark Cough (Brassy / Barking Cough)',
+        description: 'Harsh, resonant, barking cough resembling the vocalization of a sea lion, accompanied by vocal cord edema and hoarseness. Classically strikes abruptly at night, often triggered by cool nighttime air or child agitation.',
+        highlight: 'Barking seal-like cough worsening at night'
+      }
+    ],
+    clinicalContext: 'In Emergency and Pediatric/Medical-Surgical nursing, viral croup (laryngotracheobronchitis) is the most common cause of acute upper airway obstruction in young children (aged 6 months to 3 years). Management hinges on keeping the child calm (avoiding invasive procedures or agitation that precipitously worsen airway edema and respiratory distress), administering systemic corticosteroids (oral Dexamethasone 0.15–0.6 mg/kg single dose), and utilizing nebulized racemic epinephrine for stridor at rest with a mandatory 2-to-4 hour observation period to monitor for rebound airway obstruction.',
+    nclexPearls: [
+      'Dexamethasone is First-Line: A single dose of oral (or IM/IV) dexamethasone is the mainstay of croup management, reducing mucosal edema, hospital admissions, and symptom duration.',
+      'Nebulized Racemic Epinephrine & Rebound Alert: Nebulized racemic epinephrine acts rapidly (within 10–30 minutes) via alpha-1 mucosal vasoconstriction to relieve severe subglottic edema and stridor at rest. The nurse MUST observe the child for at least 2 to 4 hours post-treatment because the medication\'s effect wanes and rebound bronchospasm and subglottic swelling can recur.',
+      'Agitation Worsens Stridor: Avoid distressing interventions (e.g., unnecessary blood draws, painful exams) because crying dramatically increases negative inspiratory pressure, pulling swollen mucosal walls inward and worsening airway obstruction. Allow the child to remain on the parent\'s lap.',
+      'Croup vs. Epiglottitis: Croup has a barking seal cough, subglottic swelling ("steeple sign"), and viral prodrome; Epiglottitis is a medical emergency with high fever, toxic appearance, absence of cough, drooling, dysphagia, and tripod positioning with an enlarged epiglottis ("thumbprint sign").'
+    ],
+    practiceQuestion: {
+      question: 'A 2-year-old child is brought to the emergency department with a 2-day history of low-grade fever, hoarseness, and a loud seal-bark cough that worsened during the night. On physical examination, the child is irritable and exhibits audible inspiratory stridor at rest with mild intercostal retractions. An AP neck radiograph shows subglottic narrowing ("steeple sign"). Which nursing intervention should be implemented first (SSS)?',
+      options: [
+        'Perform immediate endotracheal intubation using a cuffed pediatric tube.',
+        'Administer prescribed nebulized racemic epinephrine and oral dexamethasone while keeping the child on the parent\'s lap.',
+        'Insert an intravenous catheter to draw blood cultures and administer broad-spectrum IV antibiotics.',
+        'Place a tongue blade in the child\'s mouth to thoroughly visualize the posterior oropharynx.'
+      ],
+      correctIndex: 1,
+      rationale: 'The child exhibits classic moderate-to-severe viral croup ("SSS": Inspiratory Stridor at rest, Subglottic swelling / steeple sign, Seal-bark cough). First-line medical therapy consists of oral or parenteral Dexamethasone (to reduce subglottic inflammation) and nebulized racemic epinephrine (for rapid alpha-1 vasoconstriction to relieve acute stridor at rest). Keeping the child calm in the caregiver\'s lap prevents agitation, which worsens subglottic collapse. Inserting a tongue blade is contraindicated (especially if differentiating from epiglottitis due to risk of laryngospasm), intubation is reserved only for respiratory exhaustion/arrest, and antibiotics are ineffective for viral croup.'
+    }
+  },
+  {
+    id: 'pneumonia-risk-factors-inspiration',
+    shortCode: 'INSPIRATION',
+    title: 'Pneumonia Predisposing Risk Factors (INSPIRATION)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Comprehensive clinical risk factors and host defense impairments predisposing clients to hospital-acquired, community-acquired, and aspiration pneumonia.',
+    memoryTip: 'INSPIRATION — Immunosuppression, Neoplasia, Secretion retention, Pulmonary edema, Impaired alveolar macrophages, RTI (prior viral), Antibiotics/cytotoxics, Tracheal instrumentation, IV drug abuse, Other (debility/immobility), Neurologic impaired cough reflex.',
+    highYield: true,
+    tags: ['Respiratory', 'Infectious Disease', 'Pneumonia', 'Aspiration Precautions', 'Critical Care', 'Prevention'],
+    letters: [
+      {
+        letter: 'I',
+        term: 'Immunosuppression',
+        description: 'Impaired humoral or cell-mediated immunity from HIV/AIDS, solid organ transplantation, biologic therapies, or prolonged systemic corticosteroid use, leaving alveoli vulnerable to opportunistic and bacterial pathogens.',
+        highlight: 'Compromised cell-mediated & humoral defenses'
+      },
+      {
+        letter: 'N',
+        term: 'Neoplasia (Lung & Hematologic Cancers)',
+        description: 'Bronchogenic carcinoma obstructing tracheobronchial lumens and causing distal post-obstructive atelectasis and pneumonia; leukemias and lymphomas causing profound neutropenia and functional leukocyte defects.',
+        highlight: 'Endobronchial tumor obstruction & neutropenia'
+      },
+      {
+        letter: 'S',
+        term: 'Secretion Retention (COPD & Post-Op Splinting)',
+        description: 'Ineffective mucus clearance seen in COPD, cystic fibrosis, bronchiectasis, and postoperative surgical patients who shallowly hypoventilate and splint due to thoracic or upper abdominal surgical pain.',
+        highlight: 'Mucus plugging & post-op hypoventilation/splinting'
+      },
+      {
+        letter: 'P',
+        term: 'Pulmonary Oedema',
+        description: 'Excessive alveolar fluid accumulation from congestive heart failure (CHF) or acute respiratory distress syndrome (ARDS) that inactivates surfactant, impairs ciliary action, and serves as an ideal microbial culture medium.',
+        highlight: 'Alveolar fluid transudate promoting bacterial growth'
+      },
+      {
+        letter: 'I',
+        term: 'Impaired Alveolar Macrophages',
+        description: 'Inactivation of lower respiratory phagocytes and mucociliary clearance caused by cigarette smoking, chronic alcohol use disorder, toxic chemical inhalation, and exposure to hyperoxic inspired oxygen fractions.',
+        highlight: 'Smoking, alcohol, & toxic macrophage suppression'
+      },
+      {
+        letter: 'R',
+        term: 'RTI (Prior Respiratory Tract Infection)',
+        description: 'Recent viral upper or lower respiratory infections (especially Influenza A/B, RSV, or Parainfluenza) that strip protective bronchial ciliated epithelium, predisposing to devastating secondary bacterial superinfections.',
+        highlight: 'Post-influenza secondary bacterial superinfection'
+      },
+      {
+        letter: 'A',
+        term: 'Antibiotics & Cytotoxics',
+        description: 'Prolonged broad-spectrum antibiotic therapy eliminating normal competitive commensal oral flora and selecting for multidrug-resistant nosocomial pathogens (MRSA, Pseudomonas); cytotoxic chemotherapy inducing nadir myelosuppression.',
+        highlight: 'MDR pathogen selection & cytotoxic neutropenia'
+      },
+      {
+        letter: 'T',
+        term: 'Tracheal Instrumentation (VAP & Tracheostomy)',
+        description: 'Endotracheal intubation (Ventilator-Associated Pneumonia / VAP), tracheostomies, and bronchoscopy that bypass the upper airway\'s protective humidification and glottic filtration mechanisms.',
+        highlight: 'Endotracheal tubes bypassing upper airway defenses'
+      },
+      {
+        letter: 'I',
+        term: 'IV Drug Abuse',
+        description: 'Intravenous injection of illicit substances causing transient bacteremia and tricuspid valve infective endocarditis with septic embolization to the pulmonary capillary beds, causing bilateral multifocal cavitary pneumonias.',
+        highlight: 'Septic pulmonary emboli from right-sided endocarditis'
+      },
+      {
+        letter: 'O',
+        term: 'Other Debilities (Immobility & Advanced Age)',
+        description: 'Advanced age (≥65 years), chronic bedridden immobility, protein-calorie malnutrition, and generalized physical frailty reducing vital capacity and thoracic muscular compliance.',
+        highlight: 'Advanced age, malnutrition, & chronic immobility'
+      },
+      {
+        letter: 'N',
+        term: 'Neurologic Impairment of Cough Reflex',
+        description: 'Depression of protective gag and cough reflexes resulting from acute ischemic stroke, traumatic brain injury, sedation, anesthesia, or neuromuscular junction disorders (Myasthenia Gravis, ALS), leading to silent or massive aspiration pneumonia.',
+        highlight: 'Stroke, impaired gag reflex, & aspiration risk'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical and ICU nursing, pneumonia remains a primary cause of nosocomial morbidity, sepsis, and mortality. Nurses implement targeted preventive bundles: VAP bundles (head of bed elevated 30–45°, daily sedation vacations, subglottic secretion suctioning, chlorhexidine oral hygiene), post-op pulmonary hygiene (incentive spirometry 10 times/hr while awake, early ambulation, splinted coughing), and aspiration precautions (swallow screening post-stroke, thickened liquids, upright positioning for meals).',
+    nclexPearls: [
+      'Ventilator-Associated Pneumonia (VAP) Bundle: Keep head of bed (HOB) elevated 30° to 45°, perform daily spontaneous awakening/breathing trials, provide regular oral hygiene with chlorhexidine, use subglottic suction endotracheal tubes, and initiate peptic ulcer and DVT prophylaxis.',
+      'Post-Viral Bacterial Pneumonia: In a client recovering from influenza who suddenly develops high spiking fevers, pleuritic chest pain, productive purulent sputum, and new infiltrates, suspect secondary bacterial superinfection (often Staphylococcus aureus or Streptococcus pneumoniae).',
+      'Aspiration Pneumonia Prevention: Stroke clients must remain NPO until formal speech therapy swallow evaluation; feed sitting upright at 90°, position food on the unaffected side of the mouth, check for pocketing, avoid drinking through straws, and maintain upright posture for 30–60 minutes after meals.'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical nurse is caring for a 74-year-old client who was admitted following an acute left hemispheric ischemic stroke. The client has right-sided hemiplegia, expressive aphasia, and a history of chronic obstructive pulmonary disease (COPD). Which nursing intervention is the most critical priority to prevent hospital-acquired pneumonia (INSPIRATION)?',
+      options: [
+        'Keep the client strictly NPO until a formal bedside swallow evaluation is completed by speech therapy.',
+        'Encourage the client to drink thin liquids through an angled straw to prevent neck hyperextension.',
+        'Position the client completely flat in the supine position during assisted meal times.',
+        'Administer prophylactic broad-spectrum IV antibiotics around the clock for the duration of hospitalization.'
+      ],
+      correctIndex: 0,
+      rationale: 'The client possesses multiple high-risk predisposing factors for pneumonia (INSPIRATION: Neurologic impairment of cough reflex/swallow post-stroke, Secretion retention from COPD, and advanced age). In acute stroke clients, silent aspiration of oral secretions or dietary intake is the leading cause of aspiration pneumonia. Maintaining strict NPO status until a dysphagia screening / swallow evaluation is performed by a speech-language pathologist is the vital priority. Thin liquids through straws increase aspiration risk, feeding should always occur at 90° upright (never flat), and prophylactic antibiotics are not indicated without active infection and promote resistant superinfections.'
+    }
+  },
+  {
+    id: 'pneumothorax-signs-symptoms-p-thorax',
+    shortCode: 'P-THORAX',
+    title: 'Pneumothorax Signs & Symptoms (P-THORAX)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Clinical signs, physical examination findings, and diagnostic hallmarks of simple and tension pneumothorax.',
+    memoryTip: 'P-THORAX — Pleuritic pain, Trachea deviation (contralateral in tension), Hyper-resonance, Onset sudden, Reduced breath sounds, Absent fremitus, X-ray shows collapse.',
+    highYield: true,
+    tags: ['Respiratory', 'Critical Care', 'Chest Trauma', 'Emergency Nursing', 'Chest Tubes'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Pleuritic Pain',
+        description: 'Sharp, localized, knife-like chest pain that intensifies dramatically with deep inspiration, coughing, or thoracic movement, corresponding to parietal pleural irritation and acute pleural separation.',
+        highlight: 'Sharp unilateral pain worsening with inspiration'
+      },
+      {
+        letter: 'T',
+        term: 'Trachea Deviation (Late Sign of Tension Pneumothorax)',
+        description: 'Critical sign of life-threatening tension pneumothorax! Escalating positive pressure in the affected pleural space forces the mediastinum, heart, and trachea to shift toward the UNAFFECTED (contralateral) side, compressing the superior vena cava and causing obstructive shock.',
+        highlight: 'Trachea shifts away from affected side in tension'
+      },
+      {
+        letter: 'H',
+        term: 'Hyper-Resonance on Percussion',
+        description: 'Percussion over the affected hemithorax yields a loud, drum-like, hyper-resonant pitch due to free air trapped within the pleural space (in sharp contrast to the dull thud heard in hemothorax or pleural effusion).',
+        highlight: 'Hyper-resonant, drum-like percussion note'
+      },
+      {
+        letter: 'O',
+        term: 'Onset Sudden',
+        description: 'Abrupt emergence of acute dyspnea, tachypnea (>24 breaths/min), tachycardia, and intense apprehension, frequently occurring spontaneously in tall, thin young individuals (ruptured apical subpleural blebs) or post-trauma.',
+        highlight: 'Sudden tachypnea, dyspnea, & tachycardia'
+      },
+      {
+        letter: 'R',
+        term: 'Reduced Breath Sounds (& Dyspnea)',
+        description: 'Markedly diminished or totally absent vesicular breath sounds on auscultation over the affected lung field because underlying pulmonary parenchyma has collapsed away from the chest wall.',
+        highlight: 'Diminished or absent breath sounds on affected side'
+      },
+      {
+        letter: 'A',
+        term: 'Absent Tactile Fremitus',
+        description: 'Palpation of vocal fremitus (asking the client to repeat "ninety-nine") reveals absent or markedly reduced tactile vibrations over the affected hemithorax because air is an inefficient acoustic conductor compared to consolidated lung.',
+        highlight: 'Abolished tactile fremitus over air cushion'
+      },
+      {
+        letter: 'X',
+        term: 'X-ray Shows Collapse',
+        description: 'Upright chest radiography reveals a distinct visceral pleural line with complete absence of peripheral bronchovascular lung markings, lung consolidation at the hilum, and potential mediastinal shift.',
+        highlight: 'Sharp visceral pleural line & absent lung markings'
+      }
+    ],
+    clinicalContext: 'In Emergency, Trauma, ICU, and Medical-Surgical nursing, differentiating between a simple pneumothorax and a life-threatening Tension Pneumothorax is a critical NCLEX competency. A tension pneumothorax functions as a one-way "flutter-valve" trapping air under pressure with every breath. Signs of tension pneumothorax (severe hypotension, tracheal deviation to the unaffected side, distended neck veins / JVD, cyanosis) require immediate needle thoracostomy decompression (large-bore 14–16 gauge needle at 2nd ICS MCL or 4th/5th ICS anterior axillary line) before waiting for a chest X-ray, followed immediately by chest tube thoracostomy with water-seal drainage.',
+    nclexPearls: [
+      'Tension Pneumothorax is a CLINICAL Emergency: Do NOT send the patient for a chest X-ray if tension pneumothorax is suspected (hypotension, JVD, tracheal deviation). Immediate needle decompression takes priority over imaging!',
+      'Tracheal Deviation Direction: Trachea deviates AWAY from the affected side in tension pneumothorax (pushed by high pressure); in massive atelectasis, it pulls TOWARD the affected side (pulled by negative volume loss).',
+      'Chest Tube Water-Seal Chamber: Intermittent tidaling (rise with inspiration, fall with expiration in spontaneous breathing) is normal; continuous bubbling in the water-seal chamber indicates an air leak in the system or persistent lung pleural leak.'
+    ],
+    practiceQuestion: {
+      question: 'A client who sustained blunt thoracic trauma in a motor vehicle collision suddenly develops acute respiratory distress, severe cyanosis, and tachycardia of 138 beats/min. Upon assessment, the nurse notes absent breath sounds over the right hemithorax, hyper-resonance to percussion, distended neck veins (JVD), blood pressure of 78/46 mmHg, and visible tracheal deviation to the left. Which intervention should the nurse anticipate immediately (P-THORAX)?',
+      options: [
+        'Transport the client immediately to radiology for a portable stat chest radiograph.',
+        'Assist with immediate emergency needle thoracostomy decompression in the right chest.',
+        'Administer an intravenous bolus of furosemide 40 mg to treat suspected heart failure.',
+        'Apply high-flow oxygen via a non-rebreather mask and reassess vital signs in 15 minutes.'
+      ],
+      correctIndex: 1,
+      rationale: 'The client exhibits the classic signs of a right-sided Tension Pneumothorax (P-THORAX: absent breath sounds, hyper-resonance, sudden severe dyspnea, JVD, hemodynamic collapse with hypotension, and tracheal deviation to the contralateral left side). Tension pneumothorax is an immediate life-threatening medical emergency causing severe obstructive shock due to compression of the vena cava. Immediate emergency needle thoracostomy decompression (inserting a large-bore needle into the right pleural space) must be performed immediately to relieve the pressure; waiting for a chest radiograph or reassessing will result in cardiac arrest.'
+    }
+  },
+  {
+    id: 'respiratory-depression-drugs-stop',
+    shortCode: 'STOP BREATHING',
+    title: 'Drugs Inducing Respiratory Depression (STOP Breathing)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Pharmacological classes and high-risk antimicrobial agents capable of inducing central or neuromuscular respiratory depression and apnea.',
+    memoryTip: '“STOP breathing” — Sedatives & hypnotics, Trimethoprim (toxic interactions), Opiates, Polymyxins (neuromuscular blockade apnea). Always have reversal agents (Naloxone, Flumazenil) and ambu-bag at bedside!',
+    highYield: true,
+    tags: ['Pharmacology', 'Respiratory', 'Critical Care', 'Emergency Nursing', 'Patient Safety'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Sedatives & Hypnotics (Benzodiazepines, Barbiturates, Propofol)',
+        description: 'Potentiate central inhibitory GABA-A receptors, depressing the reticular activating system and blunting brainstem chemoreceptor sensitivity to rising arterial PaCO2. Flumazenil is the specific reversal agent for benzodiazepines.',
+        highlight: 'GABA agonists blunting CO2 drive; reversed by Flumazenil'
+      },
+      {
+        letter: 'T',
+        term: 'Trimethoprim (Toxic Synergies & Metabolic Vulnerabilities)',
+        description: 'Trimethoprim-sulfamethoxazole (TMP-SMX) and related synergistic agents can precipitate hyperkalemia, metabolic acidosis, drug-induced aseptic meningitis, or profound lethargy in renal failure that exacerbates ventilatory depression.',
+        highlight: 'Synergistic toxicities & metabolic depressants in renal impairment'
+      },
+      {
+        letter: 'O',
+        term: 'Opiates (Opioids: Morphine, Fentanyl, Hydromorphone)',
+        description: 'Direct agonists at brainstem mu-opioid receptors that inhibit the respiratory rhythm generator in the pre-Bötzinger complex, producing dose-dependent bradypnea (<10/min), decreased tidal volume, and apnea. Promptly reversed by Naloxone (Narcan).',
+        highlight: 'Mu-opioid agonists blunting respiratory drive; reversed by Naloxone'
+      },
+      {
+        letter: 'P',
+        term: 'Polymyxins (Colistin & Polymyxin B)',
+        description: 'Cationic polypeptide antibiotics for multidrug-resistant Gram-negative bacteria; can cause severe dose-dependent non-depolarizing neuromuscular blockade by inhibiting presynaptic acetylcholine release, triggering prolonged diaphragmatic paralysis and apnea.',
+        highlight: 'Neuromuscular blockade causing acute respiratory paralysis'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical, Post-Anesthesia Care (PACU), and Critical Care nursing, opioid and sedative-induced respiratory depression (OSIRD) is a catastrophic preventable cause of hospital cardiac arrest. Nurses must monitor continuous pulse oximetry, capnography (EtCO2 provides the earliest indication of hypoventilation before pulse oximetry desaturation), sedation scores (e.g., POSS: Pasero Opioid-Induced Sedation Scale), and maintain immediate availability of bag-valve-mask (BVM) equipment and specific reversal agents (Naloxone for opioids, Flumazenil for benzodiazepines).',
+    nclexPearls: [
+      'Sedation Precedes Respiratory Depression: On the Pasero Opioid-Induced Sedation Scale (POSS), excessive somnolence (Score 3: frequently drowsy, drifts off during conversation; Score 4: somnolent, minimal or no response) precedes respiratory arrest. If a client is unarousable or breathing <8–10 breaths/min, stop the infusion, stimulate the client, and prepare Naloxone.',
+      'Naloxone (Narcan) Half-Life Alert: Naloxone has a shorter half-life (30–90 minutes) than most opioids (e.g., morphine, methadone, extended-release oxycodone). The nurse MUST anticipate that the client may re-sedate and slip back into respiratory depression as Naloxone wears off; continue serial monitoring and prepare for repeat doses or an infusion.',
+      'Polymyxin / Aminoglycoside Neuromuscular Blockade: Antimicrobial classes such as polymyxins (colistin) and aminoglycosides (gentamicin) can induce non-depolarizing neuromuscular blockade and acute apnea; caution in clients with Myasthenia Gravis or post-anesthesia!'
+    ],
+    practiceQuestion: {
+      question: 'A postoperative surgical client receiving patient-controlled analgesia (PCA) with IV hydromorphone is found difficult to arouse, with a respiratory rate of 7 breaths/min and shallow chest excursion. Pulse oximetry reads 84% on room air. The nurse immediately stimulates the client, administers oxygen via bag-valve mask, and administers IV naloxone. Following initial clinical awakening and normalization of breathing, which nursing intervention is essential (STOP breathing)?',
+      options: [
+        'Discharge the client to the unmonitored surgical floor since the overdose is resolved.',
+        'Restart the hydromorphone PCA at half the previous basal infusion rate.',
+        'Closely monitor respiratory rate and sedation status continuously for at least 2 hours because naloxone\'s duration of action is shorter than hydromorphone.',
+        'Administer an immediate dose of intravenous flumazenil to prevent opioid recurrence.'
+      ],
+      correctIndex: 2,
+      rationale: 'Naloxone is a competitive opioid antagonist with a relatively short elimination half-life of approximately 30 to 90 minutes, whereas hydromorphone and other opioids have considerably longer durations of action. When naloxone is metabolized and cleared from opioid receptors, residual circulating opioid will rebind to receptors, precipitating recurrent respiratory depression and somnolence ("O" in STOP breathing). Continuous close respiratory monitoring and preparedness to administer repeat doses of naloxone are vital. Flumazenil is a benzodiazepine antagonist, not an opioid antagonist.'
+    }
+  },
+  {
+    id: 'trauma-care-complications-trauma',
+    shortCode: 'TRAUMA',
+    title: 'Complications in Trauma Nursing Care (TRAUMA)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Multisystem complications and priority clinical vulnerabilities in major trauma resuscitation and recovery.',
+    memoryTip: 'TRAUMA — Thromboembolism/Tissue perfusion altered, Respiration altered (ARDS/pulmonary contusion), Anxiety & pain, Urinary elimination altered (AKI/rhabdomyolysis), Mobility impaired, Alterations in skin integrity/sensory-perceptual (infections/pressure ulcers).',
+    highYield: true,
+    tags: ['Trauma', 'Emergency Nursing', 'Critical Care', 'Complications', 'Assessment'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Thromboembolism & Tissue Perfusion, Altered',
+        description: 'Profound risk of deep vein thrombosis (DVT) and pulmonary embolism (PE) from Virchow\'s triad; hemorrhagic hypovolemic shock requiring massive transfusion protocol (MTP); and limb compartment syndrome requiring emergent fasciotomy.',
+        highlight: 'DVT/PE, hemorrhagic shock, & compartment syndrome'
+      },
+      {
+        letter: 'R',
+        term: 'Respiration, Altered (ARDS, Pulmonary Contusion, Flail Chest)',
+        description: 'Blunt chest injury leading to delayed pulmonary contusions (worsening hypoxia over 24-48 hours), flail chest with paradoxical breathing, and systemic inflammatory response syndrome (SIRS) evolving into Acute Respiratory Distress Syndrome (ARDS) or Fat Embolism Syndrome (FES).',
+        highlight: 'Pulmonary contusion, ARDS, & Fat Embolism Syndrome'
+      },
+      {
+        letter: 'A',
+        term: 'Anxiety Related to Pain & Prognosis',
+        description: 'Excruciating acute pain, fear of permanent disability, loss of autonomy, acute stress disorder, post-traumatic stress disorder (PTSD), and hyperactive ICU delirium requiring multimodal analgesia and trauma-informed psychosocial support.',
+        highlight: 'Pain crisis, PTSD, & acute stress management'
+      },
+      {
+        letter: 'U',
+        term: 'Urinary Elimination, Altered (AKI & Rhabdomyolysis)',
+        description: 'Prolonged renal hypoperfusion causing acute tubular necrosis (ATN); severe crush injuries causing myocyte breakdown and massive myoglobin release (rhabdomyolysis presenting with tea-colored urine, high CK, and hyperkalemia; requires aggressive IV fluids for urine output 200-300 mL/hr).',
+        highlight: 'Rhabdomyolysis, tea-colored urine, & acute kidney injury'
+      },
+      {
+        letter: 'M',
+        term: 'Mobility Impaired',
+        description: 'Severe physical immobilization from pelvic disruptions, spinal cord precautions, halo vests, external fixators, or skeletal traction; dramatically elevates risks for atelectasis, deep venous stasis, and deconditioning.',
+        highlight: 'Pelvic/spinal trauma & skeletal traction immobility'
+      },
+      {
+        letter: 'A',
+        term: 'Alterations in Sensory-Perceptual Functions & Skin Integrity (Infections)',
+        description: 'Breaches of the skin barrier from open compound fractures, degloving wounds, burn trauma, and invasive lines; high incidence of hospital-acquired pressure injuries, surgical site sepsis, and necrotizing soft-tissue infections.',
+        highlight: 'Open fracture osteomyelitis, pressure injuries, & sepsis'
+      }
+    ],
+    clinicalContext: 'In Emergency, Trauma, and ICU Medical-Surgical nursing, trauma care is divided into primary survey (ABCDE resuscitation) and secondary/tertiary survey (detecting and managing systemic complications). Trauma-induced complications account for the majority of deaths occurring days to weeks post-injury (the late peak of trimodal trauma mortality: sepsis, ARDS, and multiple organ dysfunction syndrome [MODS]).',
+    nclexPearls: [
+      'Fat Embolism Syndrome (FES) Triad: Occurs 24–72 hours following long-bone (femur/tibia) or pelvic fractures: (1) Respiratory distress/hypoxemia, (2) Neurological changes (confusion, restlessness), and (3) Petechial rash over the chest, neck, and axilla (pathognomonic sign!).',
+      'Rhabdomyolysis in Crush Injuries: Look for dark, tea-colored urine, elevated serum creatine kinase (CK > 10,000 U/L), and hyperkalemia. Treatment priority is aggressive IV crystalloid fluid resuscitation (target urine output 200–300 mL/hr) to flush toxic myoglobin through the renal tubules.',
+      'Compartment Syndrome: Hallmark is pain out of proportion to injury that is unrelieved by opioids and exacerbated by passive stretching; check the 6 P\'s (Pain, Pressure, Paresthesia, Pallor, Paralysis, Pulselessness). Paresthesia and pain on passive stretch are earliest; pulselessness is late.'
+    ],
+    practiceQuestion: {
+      question: 'A 28-year-old client who sustained closed bilateral femur fractures in a motorcycle collision 36 hours ago becomes abruptly restless and confused. Vital signs reveal BP 138/84 mmHg, HR 124 beats/min, RR 32 breaths/min, and SpO2 88% on room air. Assessment reveals petechial hemorrhages across the client\'s anterior chest wall and axillary folds. Which post-trauma complication should the nurse identify immediately (TRAUMA)?',
+      options: [
+        'Acute compartment syndrome of the lower extremities',
+        'Deep vein thrombosis with massive pulmonary embolism',
+        'Fat embolism syndrome (FES)',
+        'Acute neurogenic shock from undiagnosed spinal cord injury'
+      ],
+      correctIndex: 2,
+      rationale: 'The client exhibits the pathognomonic triad of Fat Embolism Syndrome (FES, "R" in TRAUMA for altered respiration): (1) acute respiratory distress with hypoxemia and tachypnea, (2) neurocognitive changes (restlessness, confusion), and (3) a petechial rash across the anterior chest and axillae, occurring 24 to 72 hours after long-bone (femur) fractures. FES occurs when fat globules from disrupted bone marrow enter the venous circulation and lodge in pulmonary and cerebral microvessels. Immediate management includes high-flow oxygen, fluid resuscitation, and notifying the provider for ICU transfer.'
+    }
+  },
+  {
+    id: 'tia-assessment-three-ts',
+    shortCode: '3 Ts',
+    title: 'Transient Ischemic Attack Assessment Hallmarks (3 Ts)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Key focal neurological warning signs of Transient Ischemic Attack (TIA) indicating impending stroke risk.',
+    memoryTip: '3 Ts for TIA — Temporary unilateral visual impairment (amaurosis fugax), Transient paralysis (one-sided), Tinnitus & vertigo. A TIA is a medical emergency — a warning stroke!',
+    highYield: true,
+    tags: ['Neurological', 'Stroke', 'Emergency Nursing', 'Assessment', 'Cardiovascular'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Temporary Unilateral Visual Impairment (Amaurosis Fugax)',
+        description: 'Sudden, painless, transient loss of vision in one eye, classically described as a dark curtain or shade descending over the visual field. Caused by retinal microemboli originating from ulcerated plaque in the ipsilateral internal carotid artery.',
+        highlight: 'Amaurosis fugax ("shade descending over one eye")'
+      },
+      {
+        letter: 'T',
+        term: 'Transient Paralysis (One-Sided / Unilateral Hemiparesis)',
+        description: 'Sudden reversible motor weakness, facial droop, or heavy numbness involving one side of the body (contralateral cerebral hemisphere ischemia); typically resolves in under an hour (definitionally <24 hours without infarction), carrying high short-term risk of completed stroke.',
+        highlight: 'Reversible unilateral hemiparesis or facial droop'
+      },
+      {
+        letter: 'T',
+        term: 'Tinnitus & Vertigo (Vertebrobasilar Symptoms)',
+        description: 'Subjective ringing/buzzing in the ears, true spinning vertigo, dysequilibrium, ataxia, diplopia (double vision), or dysarthria resulting from transient microvascular ischemia within the posterior vertebrobasilar circulation.',
+        highlight: 'Tinnitus, vertigo, ataxia, & posterior circulation ischemia'
+      }
+    ],
+    clinicalContext: 'In Emergency and Medical-Surgical nursing, a Transient Ischemic Attack (TIA) is not a benign event; it is a major medical warning sign of impending completed cerebral infarction. Up to 10–15% of patients with a TIA experience a full stroke within 90 days, with half occurring within the first 48 hours. Emergency workup includes neuroimaging (MRI/CT), carotid artery duplex ultrasound (evaluating for >70% internal carotid stenosis requiring carotid endarterectomy [CEA]), echocardiography / Holter monitoring (evaluating for atrial fibrillation / cardiac thrombus), and immediate antiplatelet therapy (aspirin + clopidogrel).',
+    nclexPearls: [
+      'TIA is a Stroke Warning: Never dismiss a TIA because symptoms resolved. Full diagnostic evaluation (ABCD2 score) and prevention strategies must be initiated immediately.',
+      'Amaurosis Fugax = Carotid Artery Disease: Painless, temporary monocular vision loss ("curtain descending") strongly indicates high-grade ipsilateral internal carotid artery stenosis shedding microemboli into the retinal circulation; prepare for carotid duplex ultrasonography.',
+      'Post-Carotid Endarterectomy (CEA) Nursing Priority: Following CEA to prevent recurrent TIA/stroke, monitor closely for neck hematoma / tracheal compression (stridor, neck swelling, respiratory distress — requires emergency bedside stitch removal), cranial nerve injuries (facial symmetry, tongue deviation [CN XII], swallowing [CN IX/X]), and strictly control blood pressure to prevent cerebral hyperperfusion syndrome.'
+    ],
+    practiceQuestion: {
+      question: 'A 66-year-old client reports to the clinic after experiencing an episode where vision in the right eye abruptly went dark for 10 minutes, describing it as "a black curtain being drawn over my right eye." The client also noted temporary left hand and arm numbness that completely resolved within 30 minutes. How should the medical-surgical nurse interpret these symptoms (3 Ts)?',
+      options: [
+        'Benign ocular migraine that requires reassurance and follow-up in 6 months.',
+        'Transient ischemic attack (TIA) indicating high-grade carotid stenosis and high impending stroke risk.',
+        'Early closed-angle glaucoma requiring emergency topical pilocarpine eye drops.',
+        'Normal age-related vitreous detachment without systemic neurological significance.'
+      ],
+      correctIndex: 1,
+      rationale: 'The client experienced Amaurosis fugax ("Temporary unilateral visual impairment") and contralateral upper extremity numbness ("Transient paralysis"), which are two of the classic "3 Ts" of a Transient Ischemic Attack (TIA). Amaurosis fugax is caused by microemboli temporarily occluding the ophthalmic artery, classically originating from atherosclerotic plaque in the ipsilateral internal carotid artery. A TIA is a serious medical emergency signaling high risk for completed ischemic stroke within 48 to 72 hours, mandating immediate neurovascular evaluation, carotid imaging, and secondary antiplatelet prevention.'
+    }
+  },
+  {
+    id: 'traction-nursing-care-plan',
+    shortCode: 'TRACTION',
+    title: 'Traction Nursing Care & Management (TRACTION)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Comprehensive nursing interventions for clients in skin or skeletal traction (Buck\'s, Russell\'s, balanced suspension).',
+    memoryTip: 'TRACTION — Trapeze bar overhead, Requires free-hanging weights & alignment, Analgesia for pain/spasms, Circulation (pulses/color), Temperature (warmth), Infection prevention (pin care), Output (bowel/bladder), Nutrition & hydration.',
+    highYield: true,
+    tags: ['Musculoskeletal', 'Orthopedics', 'Surgical Nursing', 'Immobility', 'Neurovascular'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Trapeze Bar Overhead',
+        description: 'Install an overhead trapeze bar to empower the client to raise and lower their upper body independently, facilitating bedpan placement, repositioning, linens changes, and preserving upper-extremity muscle strength.',
+        highlight: 'Trapeze bar for self-repositioning & bedpan use'
+      },
+      {
+        letter: 'R',
+        term: 'Requires Free-Hanging Weights & Body Alignment',
+        description: 'Traction weights must ALWAYS hang freely without touching the floor, bedframe, or being obstructed by blankets. Maintain the client\'s body in straight alignment along the axis of pull; never remove or adjust skeletal traction weights without a physician prescription.',
+        highlight: 'Weights must hang freely; maintain straight alignment'
+      },
+      {
+        letter: 'A',
+        term: 'Analgesia for Pain & Muscle Spasms',
+        description: 'Administer prescribed analgesics and antispasmodics (e.g., muscle relaxants like cyclobenzaprine) PRN to relieve agonizing skeletal muscle spasms around the fracture. Unrelieved pain unresponsive to opioids warrants immediate evaluation for compartment syndrome.',
+        highlight: 'Analgesia & antispasmodics for fracture muscle spasms'
+      },
+      {
+        letter: 'C',
+        term: 'Circulation (Check Pulses, Color & Capillary Refill)',
+        description: 'Conduct serial neurovascular checks (6 P\'s: pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia) on the affected extremity every 1 to 2 hours; evaluate distal pulses, skin color, and capillary refill (<3 seconds).',
+        highlight: 'Neurovascular 6 P\'s & distal pulse checks'
+      },
+      {
+        letter: 'T',
+        term: 'Temperature (Check Extremity Warmth)',
+        description: 'Palpate the affected extremity compared bilaterally with the uninjured limb; a persistently cool or cold extremity indicates arterial compromise or excessive constrictive wrapping.',
+        highlight: 'Extremity warmth compared bilaterally'
+      },
+      {
+        letter: 'I',
+        term: 'Infection Prevention (Pin Site Care)',
+        description: 'In skeletal traction, inspect transfixing Steinmann pins and Kirschner wires daily for purulent exudate, skin tenting, or erythema; perform sterile pin site cleaning using prescribed antiseptic (chlorhexidine or sterile saline) with separate swabs per pin to prevent osteomyelitis.',
+        highlight: 'Sterile pin site care to prevent osteomyelitis'
+      },
+      {
+        letter: 'O',
+        term: 'Output (Monitor Urinary & Bowel Elimination)',
+        description: 'Prolonged supine immobility predisposes to urinary stasis, renal calculi, and severe constipation/fecal impaction; maintain strict intake and output records, encourage high fluid intake (2–3 L/day), and provide routine stool softeners.',
+        highlight: 'Monitor I&O, prevent constipation & urinary stasis'
+      },
+      {
+        letter: 'N',
+        term: 'Nutrition (Adjust for Immobility Demands)',
+        description: 'Provide a high-protein diet enriched with vitamins C and D, calcium, and zinc to promote osteogenesis and soft-tissue healing; incorporate high dietary fiber to counteract immobility-induced constipation.',
+        highlight: 'High protein, calcium, vitamins & dietary fiber'
+      }
+    ],
+    clinicalContext: 'In Orthopedic and Medical-Surgical nursing, skin traction (e.g., Buck\'s traction, used preoperatively for hip fractures to reduce muscle spasms with 5–8 lbs weight) versus skeletal traction (e.g., balanced suspension with 25–40 lbs directly applied to bone for femur fractures) are fundamental concepts. Nurses must protect the line of pull, verify free-hanging weights, prevent foot drop with supportive devices, and execute sterile pin care to prevent deep bone infection (osteomyelitis).',
+    nclexPearls: [
+      'Golden Rule of Traction Weights: Weights must ALWAYS hang freely! They should never rest on the floor, bed, or be bumped. If weights are resting on the floor, first gently reposition the client higher in bed to re-establish free suspension (do not manually remove or release the weights!).',
+      'Never Remove Weights in Skeletal Traction: Weights in skeletal traction should NEVER be removed by the nurse without a written medical order; sudden release of traction triggers agonizing muscle spasm, bone displacement, and internal hemorrhage.',
+      'Muscle Spasms vs. Compartment Syndrome: Intermittent muscle spasms are common and treated with repositioning and muscle relaxants; severe, unrelenting pain unresponsive to opioids or accompanied by paresthesia indicates emergent compartment syndrome.'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical nurse is caring for a client with a comminuted fracture of the right femur who is placed in balanced suspension skeletal traction. During the morning assessment, the nurse discovers that the traction weights are resting on the floor and the client has slid down toward the foot of the bed. Which action should the nurse take first (TRACTION)?',
+      options: [
+        'Remove the weights completely and notify the orthopedic surgeon.',
+        'With the help of an assistant, gently pull the client toward the head of the bed to restore the weights to a free-hanging position.',
+        'Increase the amount of weight on the pulley system to overcome the friction of the bed.',
+        'Release the skeletal pins and allow the client to rest flat in bed.'
+      ],
+      correctIndex: 1,
+      rationale: 'Traction weights must hang freely at all times to maintain continuous, prescribed mechanical tension and bone alignment ("R" in TRACTION: Requires free-hanging weights & alignment). When a client slides toward the foot of the bed, the weights touch the floor, eliminating traction force and permitting muscle spasms and bone displacement. The nurse, with assistance, should gently lift and reposition the client toward the head of the bed (maintaining proper body alignment with the line of pull) so the weights hang freely again. Weights in skeletal traction should NEVER be removed or altered without a physician\'s prescription.'
+    }
+  },
+  {
+    id: 'tef-assessment-three-cs',
+    shortCode: '3Cs TEF',
+    title: 'Tracheoesophageal Fistula Assessment Triad (3Cs)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic hallmark clinical triad (Coughing, Choking, Cyanosis) and excessive salivation indicating Esophageal Atresia and Tracheoesophageal Fistula (EA/TEF).',
+    memoryTip: '“3Cs of TEF” — Coughing, Choking, Cyanosis (triggered during the infant’s first feeding). Immediate intervention: STOP feeding, suction airway, maintain NPO!',
+    highYield: true,
+    tags: ['Pediatrics', 'Surgical Nursing', 'Airway Management', 'Congenital Anomalies', 'Gastrointestinal'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Coughing',
+        description: 'Inhaled milk, formula, or pooled secretions enter the respiratory tree through the abnormal fistulous connection between the esophagus and trachea, stimulating violent paroxysmal coughing reflexes.',
+        highlight: 'Paroxysmal coughing as feeds enter tracheal fistula'
+      },
+      {
+        letter: 'C',
+        term: 'Choking',
+        description: 'Fluid accumulates rapidly within the blind proximal esophageal pouch and overflows retrograde into the larynx and pharynx, causing acute laryngeal obstruction, gasping, and airway choking.',
+        highlight: 'Fluid overflow from blind pouch causing airway choking'
+      },
+      {
+        letter: 'C',
+        term: 'Cyanosis',
+        description: 'Aspiration of feeding fluids and acidic gastric juices into the tracheobronchial tree provokes severe laryngospasm, ventilation-perfusion mismatch, and acute hypoxemic arterial desaturation presenting as central cyanosis.',
+        highlight: 'Central cyanosis from acute aspiration and laryngospasm'
+      }
+    ],
+    clinicalContext: 'In Neonatal, Pediatric, and Medical-Surgical nursing, Esophageal Atresia (EA) with Tracheoesophageal Fistula (TEF, most commonly Type C where the proximal esophagus ends in a blind pouch and the distal esophagus connects to the trachea) is a surgical emergency. The newborn often presents prior to feeding with excessive, frothy white bubbles of saliva and mucus at the nose and mouth that return despite suctioning. At the very first feed, the infant displays the hallmark "3Cs" (Coughing, Choking, Cyanosis). Immediate nursing actions: STOP the feeding instantly, maintain strict NPO, place on low continuous suction in the upper esophageal blind pouch (Replogle tube), elevate the head of the bed 30–45° (to prevent acid reflux into the trachea), and prepare for emergency surgical repair.',
+    nclexPearls: [
+      'First Feeding Priority: If a newborn coughs, chokes, or turns blue during an initial feeding, STOP FEEDING IMMEDIATELY! This is the most heavily tested NCLEX action for suspected TEF.',
+      'Excessive Frothy Salivation: Excessive, persistent drooling and frothy mucus in a newborn is the cardinal early warning sign of esophageal atresia before feeding is even attempted.',
+      'Positioning & Aspiration Prevention: Position the infant with the head of bed elevated at least 30° to 45°; this gravity position minimizes reflux of acidic gastric contents up through the distal fistula into the lungs, preventing severe chemical pneumonitis.',
+      'Blind Pouch Decompression: A double-lumen Replogle catheter is placed into the upper blind esophageal pouch and connected to continuous low suction (30–40 mmHg) to continuously aspirate pooled oral secretions.'
+    ],
+    practiceQuestion: {
+      question: 'A nurse is administering the first oral feeding of sterile water to a newborn infant. After the infant takes approximately 5 mL, the nurse observes sudden violent coughing, choking, and central cyanosis around the lips and face. Frothy mucus bubbles out of the infant\'s mouth and nose. What is the nurse\'s immediate priority action (3Cs)?',
+      options: [
+        'Continue the feeding slowly to assess if the infant can clear the airway spontaneously.',
+        'Immediately stop the feeding, suction the infant\'s mouth and pharynx, and notify the healthcare provider.',
+        'Administer blow-by oxygen and place the infant in a flat supine position.',
+        'Attempt to pass a large-bore nasogastric tube into the stomach for gavage feeding.'
+      ],
+      correctIndex: 1,
+      rationale: 'The newborn exhibits the classic "3Cs" of Tracheoesophageal Fistula with Esophageal Atresia (Coughing, Choking, Cyanosis), along with excessive frothy oral secretions. The nurse\'s immediate priority is to stop the feeding instantly, suction the oral secretions and upper airway to restore patency, keep the infant strictly NPO, elevate the head of the bed to prevent gastric reflux into the lungs, and notify the physician immediately. Attempting to continue feeding risks fatal pulmonary aspiration and chemical pneumonitis.'
+    }
+  },
+  {
+    id: 'sprain-strain-management-rice',
+    shortCode: 'RICE',
+    title: 'Acute Musculoskeletal Soft-Tissue Injury Management (RICE)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The standard acute conservative protocol for ligamentous sprains, muscular strains, and soft-tissue trauma during the first 24 to 48 hours.',
+    memoryTip: 'RICE — Rest, Ice (20–30 min on, never on bare skin), Compression (distal to proximal wrap), Elevation (above heart level). Minimize edema, pain, and secondary hypoxic tissue injury!',
+    highYield: true,
+    tags: ['Musculoskeletal', 'Orthopedics', 'Emergency Nursing', 'Sports Medicine', 'Trauma'],
+    letters: [
+      {
+        letter: 'R',
+        term: 'Rest',
+        description: 'Immobilize and protect the injured joint or limb immediately, ceasing all weight-bearing and physical exertion to prevent extension of torn ligamentous fibers or microvascular injury.',
+        highlight: 'Stop weight-bearing & immobilize joint'
+      },
+      {
+        letter: 'I',
+        term: 'Ice (Cryotherapy for First 24–48 Hours)',
+        description: 'Apply cold packs or crushed ice wrapped in a damp towel for 20 to 30 minutes every 2 to 3 hours during the initial 24 to 48 hours. Cold induces local vasoconstriction to limit hematoma expansion, decreases tissue metabolic demand, and numbs nerve endings (never apply bare ice directly to skin).',
+        highlight: 'Ice 20-30 min q2-3h during first 24-48 hr (no heat!)'
+      },
+      {
+        letter: 'C',
+        term: 'Compression (Elastic Bandage Wrap)',
+        description: 'Apply an elastic compression wrap (ACE bandage) starting distally and wrapping spirally toward proximal with uniform pressure to facilitate venous return and tamponade interstitial fluid extravasation; monitor distal pulse, color, warmth, and sensation.',
+        highlight: 'Wrap distal to proximal; verify neurovascular status'
+      },
+      {
+        letter: 'E',
+        term: 'Elevation (Above Heart Level)',
+        description: 'Elevate the injured limb on pillows above the level of the right atrium for the first 24 to 48 hours to utilize gravity to facilitate venous drainage, reduce capillary hydrostatic pressure, and minimize dependent edema and throbbing pain.',
+        highlight: 'Elevate above heart level to drain edema'
+      }
+    ],
+    clinicalContext: 'In Emergency and Medical-Surgical ambulatory nursing, acute soft-tissue injuries (ligament sprains, tendon/muscle strains) represent the most frequent orthopedic complaints. Heat application is strictly contraindicated during the acute inflammatory phase (first 24–48 hours) as it induces vasodilation and worsens swelling; moist heat is indicated only after 48 hours to promote tissue healing and hematoma resorption.',
+    nclexPearls: [
+      'Cold vs. Heat Timing: Cold (Ice) for the first 24–48 hours to cause vasoconstriction and limit edema/bleeding; Heat only AFTER 48 hours to promote vasodilation, relax muscle spasms, and accelerate tissue repair. Applying heat immediately post-injury worsens swelling and pain!',
+      'Compression Wrap Technique: Always wrap from distal to proximal (e.g., toes to mid-calf) to encourage venous return; wrapping proximal to distal traps blood in the extremity. Loosen the wrap immediately if the client experiences numbness, tingling, cool pale toes, or delayed capillary refill (>3s).',
+      'Sprain vs. Strain: Sprain = injury to a Ligament (connects bone to bone, e.g., ankle inversion ATFL sprain). Strain = injury to a Tendon or Muscle (connects muscle to bone, e.g., hamstring strain).'
+    ],
+    practiceQuestion: {
+      question: 'An adult client presents to an urgent care clinic 2 hours after twisting their right ankle while playing basketball. The nurse observes localized lateral malleolar swelling, ecchymosis, and pain with weight-bearing. Radiographs show no bone fracture. When educating the client on home care using the RICE protocol, which instruction is most appropriate?',
+      options: [
+        'Apply a warm heating pad for 30 minutes three times daily to relax the ankle ligaments.',
+        'Apply an ice pack wrapped in a cloth for 20 to 30 minutes every 2 to 3 hours for the first 24 to 48 hours.',
+        'Wrap the elastic bandage tightly starting from the upper calf down toward the toes.',
+        'Keep the injured ankle resting on the floor in a dependent position to improve arterial circulation.'
+      ],
+      correctIndex: 1,
+      rationale: 'The RICE protocol (Rest, Ice, Compression, Elevation) is the evidence-based standard for acute ligamentous sprains during the initial 24 to 48 hours. Ice application induces vasoconstriction, limiting capillary leakage, swelling, and localized pain. Cold should be applied for 20–30 minutes at a time with a protective cloth barrier (never direct ice on bare skin). Heat is strictly contraindicated during the acute phase (first 48 hours) as it increases blood flow and worsens edema. Compression wraps must be applied from distal to proximal (toes to calf), and the extremity should be elevated above heart level, not placed in a dependent position.'
+    }
+  },
+  {
+    id: 'postoperative-complications-four-ws',
+    shortCode: '4 W\'s',
+    title: 'Postoperative Complications & Fever Timeline (4 W\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic chronological timeline of postoperative fever etiologies and systemic complications from Day 1 through Day 7+.',
+    memoryTip: '“4 W’s” of Postoperative Fever & Complications — Wind (Days 1–2: Atelectasis), Water (Day 3: UTI), Wound (Days 5–7: Surgical Site Infection), Walk (Day 7+: DVT/PE/Thrombophlebitis).',
+    highYield: true,
+    tags: ['Surgical Nursing', 'Postoperative Care', 'Infection Control', 'Assessment', 'Prevention'],
+    letters: [
+      {
+        letter: 'W',
+        term: 'Wind (Post-Op Days 1–2: Pulmonary / Atelectasis & Pneumonia)',
+        description: 'The most common cause of early postoperative fever within the first 24 to 48 hours. Shallow hypoventilation due to anesthesia and incisional pain leads to alveolar collapse (atelectasis); prevented and treated with early ambulation, incentive spirometry (10 breaths/hr awake), and splinted deep breathing.',
+        highlight: 'Days 1-2: Atelectasis; treated with incentive spirometry & ambulation'
+      },
+      {
+        letter: 'W',
+        term: 'Water (Post-Op Day 3: Urinary Tract Infection / CAUTI)',
+        description: 'Fever emerging around post-op Day 3 is most commonly a Catheter-Associated Urinary Tract Infection (CAUTI) resulting from prolonged indwelling Foley catheterization; prevented by removing Foley catheters within 24 to 48 hours post-op and monitoring for dysuria, urgency, and cloudiness.',
+        highlight: 'Day 3: UTI/CAUTI; prevent by prompt catheter removal'
+      },
+      {
+        letter: 'W',
+        term: 'Wound (Post-Op Days 5–7: Surgical Site Infection & Dehiscence)',
+        description: 'Fever developing around post-op Days 5 to 7 typically indicates a Surgical Site Infection (SSI), deep wound abscess, or fascial dehiscence; assessed for erythema, localized heat, edema, induration, purulent discharge, and incisional separation.',
+        highlight: 'Days 5-7: Surgical site infection & wound dehiscence'
+      },
+      {
+        letter: 'W',
+        term: 'Walk (Post-Op Day 7+: Deep Vein Thrombosis & Thrombophlebitis)',
+        description: 'Late postoperative fever occurring around Day 7 and beyond is classically linked to venous thromboembolism (VTE: DVT and life-threatening Pulmonary Embolism) from prolonged bed rest and hypercoagulability; prevented by early frequent ambulation, sequential compression devices (SCDs), and prophylactic subcutaneous low-molecular-weight heparin (enoxaparin).',
+        highlight: 'Day 7+: DVT, thrombophlebitis, & PE from immobility'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical and Post-Surgical nursing, evaluating postoperative fever requires chronological clinical thinking. A low-grade fever on post-op Day 1 almost never indicates a surgical site infection; it is almost universally atelectasis. Ordering the 4 W\'s directs the nurse\'s physical assessment and diagnostic focus: lung auscultation on Days 1–2, urine assessment on Day 3, surgical wound inspection on Days 5–7, and bilateral calf/chest evaluation on Day 7+.',
+    nclexPearls: [
+      'Day 1–2 Fever is "WIND": If a client spikes a temperature of 100.4°F (38.0°C) on post-op Day 1, the immediate nursing intervention is incentive spirometry, deep breathing/coughing, and early ambulation, NOT broad-spectrum antibiotics!',
+      'CAUTI Prevention: Remove indwelling urinary catheters as early as possible, ideally within 24 to 48 hours postoperatively. Routine catheter irrigation does not prevent infection; maintain a closed drainage system below bladder level.',
+      'Wound Dehiscence vs. Evisceration: If surgical wound edges separate (dehiscence) with protrusion of internal organs (evisceration), the nurse must immediately place the client in low Fowler\'s with knees bent, cover protruding organs with sterile gauze soaked in warm normal saline, keep NPO, and notify the surgeon stat. Never attempt to push organs back!'
+    ],
+    practiceQuestion: {
+      question: 'A client who underwent an open abdominal exploratory laparotomy 24 hours ago develops a temperature of 100.8°F (38.2°C), heart rate of 94 beats/min, and respiratory rate of 22 breaths/min. The surgical incision is clean, dry, and intact with no erythema. Auscultation reveals diminished breath sounds with fine crackles at the bilateral lung bases. Based on the chronological postoperative complications timeline (4 W\'s), which nursing action is the priority?',
+      options: [
+        'Collect blood and urine cultures and administer empiric intravenous vancomycin.',
+        'Instruct and assist the client to use the incentive spirometer 10 times every hour while awake and ambulate in the hallway.',
+        'Obtain an immediate Doppler ultrasound of the lower extremities to evaluate for deep vein thrombosis.',
+        'Remove the surgical dressing and probe the incision for a deep fascial wound infection.'
+      ],
+      correctIndex: 1,
+      rationale: 'On postoperative Day 1 to 2, the primary cause of postoperative fever is "WIND" (atelectasis resulting from shallow breathing and anesthetic effects). Normal physiological incisional healing occurs without infection on Day 1. The priority nursing interventions for atelectasis are aggressive pulmonary hygiene: coaching the client in incentive spirometry (10 breaths/hour while awake), splinted deep breathing/coughing exercises, and early ambulation. Wound infections ("Wound") do not typically manifest until post-op Days 5–7, and urinary tract infections ("Water") occur around Day 3.'
+    }
+  },
+  {
+    id: 'mi-treatment-mona',
+    shortCode: 'MONA',
+    title: 'Myocardial Infarction Treatment (MONA)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic gold-standard acute emergency pharmacotherapy protocol for suspected Acute Coronary Syndrome and Acute Myocardial Infarction.',
+    memoryTip: 'MONA — Monitor / Morphine, Oxygen, Nitroglycerin, Aspirin. Remember clinical priority: Oxygen first if hypoxic (SpO2 < 90%), chewable Aspirin immediately, sublingual Nitroglycerin, and IV Morphine for unrelieved ischemic pain!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Emergency Nursing', 'Pharmacology', 'Myocardial Infarction', 'Critical Care'],
+    letters: [
+      {
+        letter: 'M',
+        term: 'Monitor / Morphine Sulfate',
+        description: 'Continuous 12-lead ECG monitoring for lethal dysrhythmias (ventricular fibrillation/tachycardia, ST-elevation). Morphine Sulfate (2–4 mg IV slow push) is indicated for persistent ischemic chest pain refractory to nitroglycerin; provides arterial and venous vasodilation to reduce myocardial preload, afterload, and myocardial oxygen consumption while curbing sympathetic anxiety.',
+        highlight: 'Continuous ECG rhythm monitoring & IV morphine for refractory chest pain'
+      },
+      {
+        letter: 'O',
+        term: 'Oxygen',
+        description: 'Administer supplemental oxygen via nasal cannula (2–4 L/min) only if hypoxemic (SpO2 < 90% or PaO2 < 60 mmHg) or exhibiting respiratory distress. Routine high-flow hyperoxic oxygenation in non-hypoxemic clients is contraindicated due to coronary vasoconstriction and increased systemic vascular resistance.',
+        highlight: 'Titrate to SpO2 ≥ 90%; avoid hyperoxia in normoxic clients'
+      },
+      {
+        letter: 'N',
+        term: 'Nitroglycerin (Sublingual / IV)',
+        description: 'Administer 0.4 mg sublingually every 5 minutes up to 3 doses for ischemic pain. Relaxes vascular smooth muscle to dilate coronary collateral vessels and peripheral capacitance veins (reducing cardiac preload and ventricular wall tension). Contraindicated if systolic blood pressure < 90 mmHg, heart rate < 50 or > 100 bpm, right ventricular infarction, or recent phosphodiesterase-5 inhibitor use (sildenafil, tadalafil).',
+        highlight: '0.4 mg SL q5min x 3 doses; hold if SBP < 90 or PDE-5 inhibitor use'
+      },
+      {
+        letter: 'A',
+        term: 'Aspirin (162–325 mg Chewed)',
+        description: 'Immediate administration of non-enteric coated chewable aspirin (162 to 325 mg) at the first onset of suspected acute coronary syndrome. Irreversibly acetylates platelet cyclooxygenase-1 (COX-1), inhibiting thromboxane A2 synthesis to halt further intracoronary platelet aggregation and clot propagation.',
+        highlight: 'Chew 162–325 mg non-enteric coated aspirin immediately'
+      }
+    ],
+    clinicalContext: 'In Emergency and Cardiovascular nursing, acute myocardial infarction (AMI) results from plaque rupture with acute thrombotic occlusion of a coronary artery. The MONA protocol (often administered in the clinical sequence of O-A-N-M: Oxygen if hypoxic, chewable Aspirin, sublingual Nitroglycerin, and IV Morphine for breakthrough pain) remains the cornerstone of initial medical stabilization while rapidly mobilizing the cardiac catheterization laboratory for primary percutaneous coronary intervention (PCI door-to-balloon goal < 90 minutes). Vital sign monitoring before every dose of nitroglycerin or morphine is mandatory.',
+    nclexPearls: [
+      'Aspirin Chewing: The NCLEX frequently emphasizes that aspirin must be CHEWED (not swallowed whole) to ensure rapid buccal and gastric absorption within minutes.',
+      'Nitroglycerin Contraindications: Never administer nitroglycerin if systolic BP is < 90 mmHg, if right ventricular infarction is suspected (preload-dependent; nitroglycerin can cause profound cardiovascular collapse), or if PDE-5 inhibitors (sildenafil within 24 hours, tadalafil within 48 hours) were ingested.',
+      'Oxygen Restriction: NCLEX guidelines (AHA/ACC) dictate supplemental oxygen ONLY for clients with SpO2 < 90%, dyspnea, or signs of heart failure. Unrestricted high-flow oxygen in normoxic patients causes coronary vasoconstriction and increases free-radical reperfusion injury.',
+      'Morphine Effects: Morphine lowers preload and cardiac workload; monitor respiratory rate (< 12 breaths/min indicates respiratory depression requiring naloxone) and blood pressure.'
+    ],
+    practiceQuestion: {
+      question: 'A 58-year-old client is admitted to the emergency department with severe, crushing substernal chest pressure radiating to the left jaw and diaphoresis. Vital signs are BP 102/68 mmHg, HR 88 bpm, RR 18 breaths/min, and SpO2 96% on room air. The 12-lead ECG reveals ST-segment elevation in leads V1–V4. According to initial acute MI management protocols (MONA), which initial action should the nurse take first?',
+      options: [
+        'Initiate high-flow oxygen at 10 L/min via a non-rebreather mask.',
+        'Instruct the client to thoroughly chew 325 mg of non-enteric coated aspirin.',
+        'Administer 4 mg of intravenous morphine sulfate over 1 minute.',
+        'Begin an intravenous infusion of unfractionated heparin bolus.'
+      ],
+      correctIndex: 1,
+      rationale: 'Immediate chewable aspirin (162–325 mg) is the most critical initial pharmacologic intervention to arrest thrombus formation and platelet aggregation. Because the client\'s SpO2 is 96% on room air without respiratory distress, supplemental oxygen is NOT indicated (hyperoxia causes coronary vasoconstriction). Morphine is reserved for pain refractory to sublingual nitroglycerin, and anticoagulation occurs secondary to immediate antiplatelet therapy.'
+    }
+  },
+  {
+    id: 'mi-management-boomar',
+    shortCode: 'BOOMAR',
+    title: 'Basic Myocardial Infarction Management (BOOMAR)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'A comprehensive acute nursing management sequence for acute coronary syndrome to stabilize cardiac workload, relieve ischemia, and preserve myocardium.',
+    memoryTip: 'BOOMAR — Bed rest, Oxygen (if SpO2 < 90%), Opiate (Morphine), Monitoring (ECG & vitals), Anticoagulation (Heparin), Reduce clot size (PCI or Fibrinolytics). Blast the clot and rest the heart!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Emergency Nursing', 'Critical Care', 'Myocardial Infarction', 'Pharmacology'],
+    letters: [
+      {
+        letter: 'B',
+        term: 'Bed Rest',
+        description: 'Enforce strict bed rest in a semi-Fowler position for the first 12 to 24 hours. Minimizes physical exertion, lowers systemic oxygen demand, reduces myocardial workload, and limits expansion of the infarcted myocardial tissue.',
+        highlight: 'Strict bed rest to minimize myocardial oxygen consumption'
+      },
+      {
+        letter: 'O',
+        term: 'Oxygen',
+        description: 'Administer supplemental oxygen via nasal cannula if oxygen saturation drops below 90%, if the client is tachypneic, or if signs of heart failure/pulmonary edema emerge, safeguarding ischemic penumbra myocardium.',
+        highlight: 'Administer supplemental O2 if SpO2 < 90% or in distress'
+      },
+      {
+        letter: 'O',
+        term: 'Opiate (Morphine Sulfate)',
+        description: 'Administer intravenous morphine sulfate for ischemic chest pain unrelieved by nitroglycerin. Morphine acts as a potent venous vasodilator, reducing preload and afterload while alleviating autonomic sympathetic surges of tachycardia and hypertension.',
+        highlight: 'IV morphine for unrelieved pain; reduces preload & anxiety'
+      },
+      {
+        letter: 'M',
+        term: 'Monitoring (Continuous Cardiac & Hemodynamics)',
+        description: 'Continuous 12-lead continuous cardiac telemetry monitoring for life-threatening dysrhythmias (ventricular tachycardia, ventricular fibrillation, heart blocks), serial 12-lead ECGs, hourly vital signs, and strict intake/output to detect cardiogenic shock.',
+        highlight: 'Continuous ECG telemetry & frequent hemodynamic monitoring'
+      },
+      {
+        letter: 'A',
+        term: 'Anticoagulation (Heparin / Enoxaparin)',
+        description: 'Initiate systemic anticoagulation with intravenous unfractionated heparin (titrated to aPTT 1.5–2.5 times control) or low-molecular-weight heparin (enoxaparin) in conjunction with dual antiplatelet therapy to prevent recurrent intracoronary thrombosis.',
+        highlight: 'IV heparin or LMWH to inhibit thrombus propagation'
+      },
+      {
+        letter: 'R',
+        term: 'Reduce Clot Size (Reperfusion: PCI or Fibrinolytics)',
+        description: 'Emergent myocardial reperfusion therapy to reopen the occluded coronary vessel. Percutaneous Coronary Intervention (PCI) with stent placement is preferred (door-to-balloon time < 90 minutes). If PCI is unavailable within 120 minutes, administer intravenous thrombolytic/fibrinolytic therapy (e.g., alteplase, tenecteplase) within 30 minutes of arrival (door-to-needle time < 30 minutes) provided no contraindications exist.',
+        highlight: 'Primary PCI (door-to-balloon < 90 min) or fibrinolytics (door-to-needle < 30 min)'
+      }
+    ],
+    clinicalContext: 'In Acute Care and Medical-Surgical telemetry units, managing a myocardial infarction goes beyond immediate nitrates and aspirin; BOOMAR encompasses the holistic acute care pathway. The leading cause of death in the pre-hospital and early hospital phase of acute MI is lethal ventricular dysrhythmia (VF/pulseless VT), underscoring the absolute necessity of continuous cardiac monitoring. Reperfusion (reducing clot size via PCI or thrombolysis) must be achieved rapidly to salvage myocardial muscle (Time is Muscle!).',
+    nclexPearls: [
+      'Time is Muscle Reperfusion Goals: PCI door-to-balloon time must be < 90 minutes. Fibrinolytic door-to-needle time must be < 30 minutes.',
+      'Bed Rest Rule: Physical exertion and straining (Valsalva maneuver) drastically spike myocardial oxygen consumption and stimulate vagal bradycardia; administer routine stool softeners (docusate) to prevent straining.',
+      'Thrombolytic Absolute Contraindications: Prior intracranial hemorrhage, known structural cerebral vascular lesion, ischemic stroke within 3 months, active internal bleeding, or suspected aortic dissection.',
+      'Reperfusion Dysrhythmias: Following successful coronary reperfusion (PCI or fibrinolytics), accelerated idioventricular rhythm (AIVR) or ventricular ectopy frequently appears; this is often a benign indicator of restored tissue perfusion, but close monitoring is vital.'
+    ],
+    practiceQuestion: {
+      question: 'A client diagnosed with an acute ST-segment elevation myocardial infarction (STEMI) has arrived at a rural hospital that lacks cardiac catheterization capabilities. The closest PCI center is 3 hours away. Following bed rest, monitoring, and initial medical stabilization (BOOMAR), the physician prescribes IV tenecteplase (TNK-tPA) to reduce clot size. Which assessment finding represents an absolute contraindication to this therapy?',
+      options: [
+        'Blood pressure reading of 152/94 mmHg.',
+        'History of an ischemic stroke 2 months ago.',
+        'Total cholesterol level of 280 mg/dL.',
+        'Presence of bilateral 1+ ankle edema.'
+      ],
+      correctIndex: 1,
+      rationale: 'A history of an ischemic stroke within the preceding 3 months is an absolute contraindication to thrombolytic/fibrinolytic therapy due to the devastating risk of catastrophic intracranial hemorrhage. Other absolute contraindications include any prior intracranial hemorrhage, active internal bleeding, known intracranial neoplasm/AVM, and suspected aortic dissection. Severe uncontrolled hypertension (>180/110 mmHg) is a relative contraindication, but 152/94 mmHg does not preclude therapy.'
+    }
+  },
+  {
+    id: 'melanoma-characteristics-abcd',
+    shortCode: 'ABCD',
+    title: 'Melanoma Characteristics (ABCD)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The four fundamental clinical visual criteria used by nurses and clients to distinguish benign pigmented nevi from malignant cutaneous melanoma.',
+    memoryTip: 'ABCD — Asymmetry (one half doesn\'t match the other), Border (irregular, notched, blurry edges), Color (variegated shades of brown, black, red, blue), Diameter (greater than 6 mm / pencil eraser size). Catch melanoma early!',
+    highYield: true,
+    tags: ['Integumentary', 'Oncology', 'Dermatology', 'Cancer Screening', 'Assessment'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Asymmetry',
+        description: 'When an imaginary line is drawn through the center of the pigmented skin lesion, the two halves do not match in size, shape, or contour (unlike benign symmetrical round or oval moles).',
+        highlight: 'Non-matching, asymmetrical halves'
+      },
+      {
+        letter: 'B',
+        term: 'Border Irregularity',
+        description: 'The perimeter of the lesion is irregular, notched, scalloped, ragged, or poorly defined, blurring into the surrounding normal epidermis without a crisp, circumscribed border.',
+        highlight: 'Scalloped, notched, ragged, or blurry borders'
+      },
+      {
+        letter: 'C',
+        term: 'Color Variation',
+        description: 'The color is not uniform across the lesion; exhibits variegated pigmentation including shades of tan, dark brown, jet black, or suspicious depigmented patches of red, white, or blue.',
+        highlight: 'Variegated pigmentation (black, brown, red, white, blue)'
+      },
+      {
+        letter: 'D',
+        term: 'Diameter (> 6 mm)',
+        description: 'The lesion has a diameter larger than 6 millimeters (approximately 1/4 inch, corresponding to the size of a standard pencil eraser), although early melanomas can occasionally be smaller.',
+        highlight: 'Diameter > 6 mm (size of standard pencil eraser)'
+      }
+    ],
+    clinicalContext: 'In Dermatology, Oncology, and Medical-Surgical outpatient assessment, malignant melanoma represents the most aggressive and lethal form of cutaneous neoplasm due to its propensity for early vertical invasion and hematogenous/lymphatic metastasis. Educating clients on routine self-skin examinations (monthly full-body inspections using mirrors) using the ABCD criteria promotes early detection and excisional biopsy at the radial growth phase, which drastically improves 5-year survival rates compared to deeply invasive vertical lesions.',
+    nclexPearls: [
+      'Melanoma Risk Factors: Fair skin, light hair (blonde/red), blue/green eyes, multiple dysplastic nevi (>50), personal or family history of skin cancer, and severe blistering sunburns during childhood or adolescence.',
+      'Sun Safety Education: Avoid direct sun exposure during peak UV intensity hours (10:00 AM to 4:00 PM). Apply broad-spectrum water-resistant sunscreen with SPF ≥ 30 at least 15–30 minutes prior to outdoor exposure, and reapply every 2 hours (or immediately after swimming or heavy diaphoresis). Wear tight-weave protective clothing and wide-brimmed hats.',
+      'Biopsy Confirmation: Any suspicious pigmented lesion meeting ABCD criteria should undergo full-thickness excisional biopsy (with 1–2 mm clear margins), NOT superficial shave biopsy, to accurately determine tumor Breslow depth and staging.'
+    ],
+    practiceQuestion: {
+      question: 'During a routine physical examination of a 42-year-old client with fair skin and freckles, the nurse inspects a pigmented lesion on the client\'s upper back. Which characteristic of the lesion is most indicative of malignant melanoma based on the ABCD criteria?',
+      options: [
+        'Uniform golden-tan coloration with a circular, sharply demarcated 3 mm border.',
+        'Asymmetrical 8 mm plaque with notched, irregular edges and mixed black, dark brown, and bluish hues.',
+        'Smooth, raised flesh-colored 4 mm papule that has remained static for 15 years.',
+        'Clusters of pinpoint, non-blanching petechiae scattered across the lower extremities.'
+      ],
+      correctIndex: 1,
+      rationale: 'Option 2 demonstrates all major hallmarks of the ABCD melanoma criteria: Asymmetry (asymmetrical shape), Border irregularity (notched, ragged edges), Color variation (variegated black, brown, and blue pigmentation), and Diameter > 6 mm (8 mm size). Such findings warrant immediate referral for full-thickness excisional biopsy. Uniform 3 mm lesions and stable flesh-colored papules are benign.'
+    }
+  },
+  {
+    id: 'hypoglycemia-signs-dire',
+    shortCode: 'DIRE',
+    title: 'Hypoglycemia Signs & Symptoms (DIRE)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The cardinal adrenergic and neuroglycopenic manifestations of acute hypoglycemia (blood glucose < 70 mg/dL).',
+    memoryTip: 'DIRE — Diaphoresis (cool & clammy), Increased pulse (tachycardia & palpitations), Restless (anxiety, shakiness, tremors), Extra hungry (polyphagia). Cold and clammy, give some candy!',
+    highYield: true,
+    tags: ['Endocrine', 'Diabetes', 'Emergency Nursing', 'Hypoglycemia', 'Pharmacology'],
+    letters: [
+      {
+        letter: 'D',
+        term: 'Diaphoresis (Profuse Sweating)',
+        description: 'Activation of the sympathetic nervous system triggers sudden, profuse cold sweats, cool pale skin, and piloerection ("Cold and clammy, need some candy").',
+        highlight: 'Cold, clammy diaphoresis from sympathetic surge'
+      },
+      {
+        letter: 'I',
+        term: 'Increased Pulse (Tachycardia & Palpitations)',
+        description: 'Epinephrine and norepinephrine release from the adrenal medulla stimulates cardiac beta-1 adrenergic receptors, provoking rapid heart rate (tachycardia), pounding heart palpitations, and mild systolic hypertension.',
+        highlight: 'Tachycardia & palpitations mediated by epinephrine release'
+      },
+      {
+        letter: 'R',
+        term: 'Restless (Tremors, Anxiety & Agitation)',
+        description: 'Adrenergic stimulation produces acute restlessness, internal nervousness, extreme anxiety, hand tremors, and shakiness; progresses rapidly to neuroglycopenic confusion, slurred speech, lethargy, and seizure if untreated.',
+        highlight: 'Tremors, agitation, nervousness, and cognitive confusion'
+      },
+      {
+        letter: 'E',
+        term: 'Extra Hungry (Intense Polyphagia)',
+        description: 'Hypothalamic glucoreceptors detect precipitous drops in intracellular cerebral glucose and aggressively trigger the hunger center, causing sudden insatiable food cravings, hunger pangs, and nausea.',
+        highlight: 'Sudden ravenous hunger / polyphagia from hypothalamic cues'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical and Emergency nursing, acute hypoglycemia (blood glucose < 70 mg/dL / 3.9 mmol/L) is a rapid metabolic emergency that can result in irreversible brain injury or death within minutes because neurons depend on continuous glucose supply without storage reserves. Symptoms begin with autonomic/adrenergic warning signs (DIRE: Diaphoresis, Increased pulse, Restlessness/tremors, Extra hunger). In conscious clients, immediately implement the Rule of 15: administer 15 grams of fast-acting simple carbohydrates, wait 15 minutes, recheck blood glucose, and repeat if still < 70 mg/dL.',
+    nclexPearls: [
+      'Rule of 15 Protocol: Give 15 g of rapid-acting simple sugar (4 oz [1/2 cup] of fruit juice or regular soda, 3–4 glucose tablets, or 1 tablespoon of honey/sugar). Never give high-fat sweets like chocolate bars or ice cream, because fat delays gastric emptying and carbohydrate absorption!',
+      'Unconscious Hypoglycemic Client: Never administer oral fluids or food to a somnolent or unconscious client due to fatal aspiration risk! If IV access is available, administer 25–50 mL of 50% Dextrose in water (D50W) IV push. If no IV access, administer 1 mg Glucagon IM or SubQ (turn client on side to prevent aspiration from post-glucagon vomiting).',
+      'Beta-Blocker Masking Alert: Beta-adrenergic blockers (e.g., metoprolol, propranolol) block sympathetic beta-receptors and MASK the key adrenergic warning signs of hypoglycemia (tachycardia, palpitations, tremors). DIAPHORESIS is the ONLY sympathetic warning sign that remains unmasked by beta-blockers!',
+      'Mnemonic Classic: "Cold and clammy, give some candy; warm and dry, sugar high (hyperglycemia)."'
+    ],
+    practiceQuestion: {
+      question: 'A nurse is caring for a client with type 1 diabetes mellitus who is also taking metoprolol for hypertension. Two hours after receiving morning regular insulin, the client appears pale and diaphoretic. Point-of-care capillary blood glucose is 52 mg/dL. The client is awake, alert, and oriented. Which action should the nurse take first (DIRE)?',
+      options: [
+        'Administer 1 mg of glucagon intramuscularly into the deltoid.',
+        'Provide 4 ounces (120 mL) of unsweetened orange juice orally.',
+        'Give 2 chocolate candy bars from the client\'s personal snack stash.',
+        'Administer 50 mL of 50% Dextrose (D50W) via IV push immediately.'
+      ],
+      correctIndex: 1,
+      rationale: 'The client is symptomatic with acute hypoglycemia (< 70 mg/dL) but remains conscious, alert, and capable of swallowing safely. According to the "Rule of 15," the nurse should immediately provide 15 grams of fast-acting simple carbohydrate, such as 4 ounces (120 mL) of fruit juice or regular soda. High-fat treats like chocolate bars should be avoided because fat delays gastric absorption of carbohydrates. Glucagon and IV D50W are reserved for clients who are unconscious, unresponsive, or unable to swallow. Notably, because the client is taking a beta-blocker (metoprolol), tachycardia and tremors were masked, leaving diaphoresis as the primary warning indicator.'
+    }
+  },
+  {
+    id: 'hypertension-complications-four-cs',
+    shortCode: '4 C\'s',
+    title: 'Complications of Hypertension (4 C\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The four primary target-organ damage complications resulting from chronic, uncontrolled systemic hypertension.',
+    memoryTip: '4 C\'s of Hypertension — CAD (Coronary Artery Disease), CHF (Congestive Heart Failure), CRF (Chronic Renal Failure), CVA (Cerebrovascular Accident / Stroke). Protect the heart, kidneys, and brain!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Hypertension', 'Renal', 'Neurological', 'Target Organ Damage'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'CAD (Coronary Artery Disease)',
+        description: 'Chronic shear stress damages vascular endothelium, accelerating coronary atherosclerosis, plaque formation, angina pectoris, and acute myocardial infarction.',
+        highlight: 'Endothelial shear stress accelerates coronary atherosclerosis & MI'
+      },
+      {
+        letter: 'C',
+        term: 'CHF (Congestive Heart Failure)',
+        description: 'Sustained elevation of systemic vascular resistance (afterload) forces left ventricular concentric hypertrophy; over time, the myocardium decompensates, dilates, and leads to systolic/diastolic heart failure.',
+        highlight: 'Elevated afterload causes left ventricular hypertrophy & heart failure'
+      },
+      {
+        letter: 'C',
+        term: 'CRF (Chronic Renal Failure / CKD)',
+        description: 'Arteriolar nephrosclerosis and microvascular hyalinization in the glomerular capillary beds cause progressive glomerulosclerosis, proteinuria/microalbuminuria, elevated serum creatinine, and end-stage renal disease.',
+        highlight: 'Arteriolar nephrosclerosis, proteinuria, & progressive renal failure'
+      },
+      {
+        letter: 'C',
+        term: 'CVA (Cerebrovascular Accident / Stroke)',
+        description: 'High arterial pressures rupture microaneurysms (Charcot-Bouchard) causing intracranial hemorrhagic stroke, or promote cerebral thromboembolism leading to acute ischemic infarction (brain attack).',
+        highlight: 'Ischemic brain attack & hemorrhagic stroke from vascular rupture'
+      }
+    ],
+    clinicalContext: 'In Cardiovascular and Medical-Surgical nursing, hypertension is aptly coined "the silent killer" because clients are often asymptomatic until irreversible end-organ damage manifests. The 4 C\'s represent target organ damage (TOD). Nursing care focuses on routine blood pressure screening, pharmacotherapy compliance (ACE inhibitors, ARBs, CCBs, thiazide diuretics), lifestyle modifications (DASH diet, sodium restriction < 2,300 mg/day, regular aerobic exercise), and monitoring renal labs (BUN, creatinine, eGFR, urine albumin) and fundoscopic retinal changes.',
+    nclexPearls: [
+      'Target Organ Damage (TOD): The 4 C\'s are the classic target organs tested on the NCLEX: Heart (CAD, CHF), Kidneys (CRF/nephrosclerosis), and Brain (CVA/stroke). Retinopathy (cotton wool spots, papilledema) is the 4th major organ system frequently paired with these.',
+      'DASH Diet & Sodium: Dietary Approaches to Stop Hypertension (DASH) emphasizes high potassium, magnesium, calcium, and fiber with strict sodium restriction (< 1,500 to 2,300 mg/day).',
+      'Hypertensive Crisis Priority: Hypertensive urgency/emergency is defined as BP > 180/120 mmHg. In hypertensive emergency, there is acute target organ damage (e.g., encephalopathy, chest pain, acute kidney injury). The goal is to lower mean arterial pressure (MAP) by no more than 20–25% over the first hour using IV titratable vasodilators (nitroprusside, labetalol) to prevent ischemic cerebral and renal hypoperfusion.'
+    ],
+    practiceQuestion: {
+      question: 'A 62-year-old client with a 15-year history of poorly controlled primary hypertension presents to the medical clinic. Which laboratory assessment finding best demonstrates target-organ damage directly linked to chronic hypertension (4 C\'s)?',
+      options: [
+        'Serum potassium of 4.2 mEq/L (4.2 mmol/L).',
+        'Presence of microalbuminuria with serum creatinine of 2.1 mg/dL (185.6 µmol/L).',
+        'Fasting blood glucose of 98 mg/dL (5.4 mmol/L).',
+        'Serum sodium of 138 mEq/L (138 mmol/L).'
+      ],
+      correctIndex: 1,
+      rationale: 'Elevated serum creatinine (normal 0.6–1.2 mg/dL) and persistent microalbuminuria are definitive markers of nephrosclerosis and Chronic Renal Failure ("CRF" in the 4 C\'s of hypertension complications). Sustained high systemic pressures cause vascular hyalinization and glomerulosclerosis within renal arterioles, reducing glomerular filtration and permitting protein leakage. Normal potassium, sodium, and fasting glucose do not reflect hypertensive target organ damage.'
+    }
+  },
+  {
+    id: 'hypertension-care-plan-itired',
+    shortCode: 'I-TIRED',
+    title: 'Hypertension Nursing Care Plan & Monitoring (I-TIRED)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Essential clinical assessment, monitoring parameters, and bedside nursing interventions for clients undergoing antihypertensive management.',
+    memoryTip: 'I-TIRED — Intake & output, Take blood pressure, Ischemia attack (TIAs), Respiration & pulse, Electrolytes, Daily weight. Stay energized when managing hypertensive clients!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Hypertension', 'Nursing Care Plan', 'Assessment', 'Electrolytes'],
+    letters: [
+      {
+        letter: 'I',
+        term: 'Intake and Output (Urine Output)',
+        description: 'Measure strict fluid intake and urinary output every shift; oliguria (< 30 mL/hr or < 0.5 mL/kg/hr) signals decreased renal perfusion, secondary target organ damage, or acute kidney injury.',
+        highlight: 'Strict I&O; alert if urine output < 30 mL/hr'
+      },
+      {
+        letter: 'T',
+        term: 'Take Blood Pressure (Correct Technique)',
+        description: 'Obtain serial bilateral seated blood pressures using an appropriately sized cuff (bladder encircles 80% of arm); check orthostatic vital signs (lying, sitting, standing) to detect drug-induced orthostatic hypotension.',
+        highlight: 'Appropriately sized cuff & orthostatic blood pressure checks'
+      },
+      {
+        letter: 'I',
+        term: 'Ischemia Attack, Transient (Watch for TIAs)',
+        description: 'Conduct serial neurological assessments watching for signs of transient ischemic attacks (TIAs) or completed stroke: sudden unilateral facial droop, arm drift, slurred speech, visual changes, or intense occipital headaches.',
+        highlight: 'Monitor for focal neuro deficits, facial droop, & TIAs'
+      },
+      {
+        letter: 'R',
+        term: 'Respiration & Pulse (Cardiopulmonary Status)',
+        description: 'Auscultate apical pulse for rate/rhythm (detecting tachycardia or beta-blocker bradycardia < 60 bpm) and lung fields for bilateral bibasilar crackles, dyspnea, and tachypnea indicating hypertensive left-sided heart failure.',
+        highlight: 'Auscultate lung crackles & apical heart rate'
+      },
+      {
+        letter: 'E',
+        term: 'Electrolytes (Potassium, Sodium, Renal Panels)',
+        description: 'Routinely check serum electrolytes, especially potassium (K+). Thiazides and loop diuretics deplete potassium (hypokalemia < 3.5 mEq/L), whereas ACE inhibitors, ARBs, and potassium-sparing diuretics risk hyperkalemia (> 5.0 mEq/L).',
+        highlight: 'Monitor potassium levels for diuretic & ACE-inhibitor therapy'
+      },
+      {
+        letter: 'D',
+        term: 'Daily Weight',
+        description: 'Weigh client daily at the same time each morning, using the same scale, in similar clothing after voiding; a weight gain of > 2–3 lbs (1–1.4 kg) in a day or > 5 lbs in a week signals fluid retention.',
+        highlight: 'Daily morning weight; track fluid retention (> 2-3 lbs/day)'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical units and ambulatory clinics, creating an evidence-based nursing care plan for hypertension requires disciplined multidimensional tracking. Hypertensive therapy combines lifestyle modification with polypharmacy (diuretics, beta-blockers, ACE inhibitors, calcium channel blockers). Bedside nurses must be alert to common pharmacological adverse effects—such as profound orthostatic hypotension from vasodilators, reflex tachycardia, severe hypokalemia from loop/thiazide diuretics leading to cardiac dysrhythmias, and renal impairment.',
+    nclexPearls: [
+      'Proper BP Measurement Rules: Rest for 5 minutes before reading, arm supported at heart level, feet flat on the floor (uncrossed). A cuff that is too small/narrow yields a FALSELY HIGH reading; a cuff that is too large/wide yields a FALSELY LOW reading.',
+      'Electrolyte Alerts: Potassium monitoring is high yield. Loop diuretics (furosemide) and thiazides cause hypokalemia (muscle cramps, U-waves, dysrhythmias). Spironolactone, lisinopril, and losartan cause hyperkalemia (peaked T-waves, muscle weakness).',
+      'Orthostatic Hypotension Safety: Defined as a drop in SBP ≥ 20 mmHg or DBP ≥ 10 mmHg within 2–3 minutes of standing. Instruct clients to change positions slowly, dangle legs on bedside for 1–2 minutes before standing, and avoid hot showers.'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical nurse is preparing morning medications for a client admitted with essential hypertension. The client is prescribed daily oral furosemide 40 mg and lisinopril 10 mg. When implementing the nursing care plan (I-TIRED), which finding requires the nurse to hold the medications and notify the healthcare provider immediately?',
+      options: [
+        'Blood pressure 138/84 mmHg and heart rate 74 bpm.',
+        'Serum potassium level of 3.0 mEq/L (3.0 mmol/L).',
+        'Urine output of 45 mL/hr over the previous 8 hours.',
+        'Morning weight has decreased by 1.5 lbs compared to yesterday.'
+      ],
+      correctIndex: 1,
+      rationale: 'A serum potassium of 3.0 mEq/L indicates significant hypokalemia (normal 3.5–5.0 mEq/L). Administering furosemide (a potent potassium-wasting loop diuretic) will further deplete potassium ("E" in I-TIRED: Electrolytes), provoking life-threatening cardiac dysrhythmias (ventricular ectopy, flattened T-waves, prominent U-waves). The nurse must hold the diuretic and seek provider orders for potassium replacement. BP 138/84 is an acceptable therapeutic response, urine output > 30 mL/hr is adequate, and 1.5 lbs weight loss reflects desired diuretic effect.'
+    }
+  },
+  {
+    id: 'portal-hypertension-features-abcde',
+    shortCode: 'ABCDE (Portal HTN)',
+    title: 'Portal Hypertension Clinical Features (ABCDE)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The cardinal clinical manifestations and portosystemic collateral signs of portal hypertension secondary to hepatic cirrhosis.',
+    memoryTip: 'ABCDE of Portal Hypertension — Ascites, Bleeding (esophageal varices / piles), Caput medusae, Diminished liver (cirrhotic shrunken liver), Enlarged spleen (splenomegaly & thrombocytopenia).',
+    highYield: true,
+    tags: ['Gastrointestinal', 'Hepatic', 'Cirrhosis', 'Portal Hypertension', 'Critical Care'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Ascites',
+        description: 'Massive accumulation of protein-rich serous fluid within the peritoneal cavity caused by increased hydrostatic pressure in hepatic sinusoids and hypoalbuminemia (decreased oncotic pressure); predisposes to spontaneous bacterial peritonitis (SBP).',
+        highlight: 'Peritoneal fluid accumulation & shifting dullness'
+      },
+      {
+        letter: 'B',
+        term: 'Bleeding (Hematemesis & Piles / Hemorrhoids)',
+        description: 'High portal pressures dilate collateral veins at portosystemic anastomoses, producing fragile esophageal varices (manifesting as catastrophic upper GI bleeding and hematemesis) and anorectal varices / internal hemorrhoids ("piles").',
+        highlight: 'Ruptured esophageal varices (hematemesis) & anorectal piles'
+      },
+      {
+        letter: 'C',
+        term: 'Caput Medusae',
+        description: 'Engorged, tortuous, radiating collateral veins visible around the umbilicus caused by recanalization of the embryonic umbilical vein shunting blood into the superficial epigastric veins.',
+        highlight: 'Prominent superficial peri-umbilical collateral veins'
+      },
+      {
+        letter: 'D',
+        term: 'Diminished Liver (Small, Shrunken, Micronodular Liver)',
+        description: 'In end-stage cirrhosis, widespread hepatocyte necrosis, extensive collagen deposition, and fibrous scar tissue contraction transform the liver from initially hepatomegalic to a small, hard, shrunken, and nodular organ.',
+        highlight: 'Shrunken, fibrotic, micronodular cirrhotic liver'
+      },
+      {
+        letter: 'E',
+        term: 'Enlarged Spleen (Splenomegaly & Hypersplenism)',
+        description: 'Retrograde venous congestion back into the splenic vein enlarges the spleen, causing hypersplenism which sequesters and destroys circulating blood elements, resulting in profound thrombocytopenia (high bleeding risk), leukopenia, and anemia.',
+        highlight: 'Splenomegaly & hypersplenism-induced thrombocytopenia'
+      }
+    ],
+    clinicalContext: 'In Hepatic and Medical-Surgical nursing, portal hypertension is the central pathophysiological hemodynamic consequence of cirrhosis (resistance to portal blood flow > 10–12 mmHg). The development of portosystemic collaterals creates high-risk fragile esophageal varices. Rupture of esophageal varices is a life-threatening medical emergency requiring immediate airway protection, IV octreotide or vasopressin, endoscopic variceal band ligation (EVL), and blood product resuscitation. Beta-blockers (non-selective like propranolol or nadolol) are administered for primary and secondary prophylaxis to lower portal venous pressure.',
+    nclexPearls: [
+      'Esophageal Variceal Bleeding Priority: Acute hematemesis from ruptured varices requires immediate airway protection (suction at bedside, prepare for endotracheal intubation), two large-bore IVs, IV octreotide (somatostatin analog that causes selective splanchnic vasoconstriction), and packed RBCs. Avoid NG tube insertion without direct physician authorization due to risk of traumatizing varices.',
+      'Balloon Tamponade Tube (Sengstaken-Blakemore): If used for refractory variceal bleeding, keep a pair of SCISSORS at the bedside at all times! If the gastric balloon deflates or ruptures, the esophageal balloon can migrate upward into the oropharynx and cause acute airway occlusion—cut all lumens immediately to relieve airway obstruction.',
+      'Hypersplenism & Thrombocytopenia: Platelet counts are frequently < 50,000–100,000/µL due to splenic sequestration; maintain bleeding precautions (soft toothbrush, electric razor, avoid IM injections).'
+    ],
+    practiceQuestion: {
+      question: 'A client with end-stage cirrhosis and portal hypertension is admitted to the intensive care unit with acute, massive hematemesis. Vital signs are BP 86/50 mmHg, HR 128 beats/min, and RR 26 breaths/min. A Sengstaken-Blakemore balloon tamponade tube is inserted to control bleeding from ruptured esophageal varices. Which safety measure is mandatory for the nurse to maintain at the bedside (ABCDE)?',
+      options: [
+        'A sterile tracheostomy tray and obturator.',
+        'A pair of blunt-tipped surgical scissors.',
+        'A 50 mL syringe filled with sterile water.',
+        'An extra rubber tourniquet and blood transfer set.'
+      ],
+      correctIndex: 1,
+      rationale: 'A pair of scissors must be kept taped to the head of the bed at all times for any client with a Sengstaken-Blakemore or Minnesota balloon tamponade tube. If the gastric balloon deflates, the esophageal balloon can migrate upward into the oropharynx, occluding the trachea and precipitating acute airway asphyxiation. The nurse must immediately cut all tube lumens with scissors to rapidly deflate both balloons and extract the tube to clear the airway. Bleeding from esophageal varices is the most lethal manifestation of portal hypertension ("B" in ABCDE: Bleeding).'
+    }
+  },
+  {
+    id: 'diabetes-signs-three-ps',
+    shortCode: '3P\'s',
+    title: 'Cardinal Signs of Diabetes Mellitus (3P\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic clinical triad of hyperglycemia (Polydipsia, Polyphagia, Polyuria) heralding diabetes mellitus onset or severe glycemic decompensation.',
+    memoryTip: '3P\'s of Diabetes — Polydipsia (excessive thirst), Polyphagia (excessive hunger), Polyuria (excessive urination). When sugar is high, the 3P\'s apply!',
+    highYield: true,
+    tags: ['Endocrine', 'Diabetes', 'Assessment', 'Hyperglycemia', 'Metabolic'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Polydipsia (Excessive Thirst)',
+        description: 'Profound intracellular dehydration and hyperosmolality stimulate osmoreceptors in the hypothalamus, triggering an intense, unquenchable thirst sensation to drive compulsive fluid intake.',
+        highlight: 'Intense unquenchable thirst from cellular dehydration'
+      },
+      {
+        letter: 'P',
+        term: 'Polyphagia (Excessive Hunger)',
+        description: 'Absolute or relative insulin deficiency prevents glucose from entering skeletal muscle and adipose cells; despite high circulating serum glucose, cellular starvation triggers ravenous appetite and weight loss.',
+        highlight: 'Ravenous hunger despite high blood sugar due to cellular starvation'
+      },
+      {
+        letter: 'P',
+        term: 'Polyuria (Excessive Urination / Frequency)',
+        description: 'Serum glucose levels exceeding the renal threshold (~180 mg/dL / 10 mmol/L) spill into the renal tubules, exerting high osmotic pull (osmotic diuresis) that drags massive volumes of water and electrolytes into the urine.',
+        highlight: 'Osmotic diuresis spilling water & glucose into urine'
+      }
+    ],
+    clinicalContext: 'In Endocrine and Medical-Surgical nursing, the 3P\'s represent the cardinal clinical triad of new-onset Type 1 Diabetes or decompensated Type 2 Diabetes. Osmotic diuresis (polyuria) triggers profound volume contraction, electrolyte depletion (potassium, sodium, magnesium), and hypovolemia, resulting in compensatory polydipsia. Without insulin, cells cannot utilize glucose, triggering lipolysis and gluconeogenesis, producing weight loss and ravenous hunger (polyphagia). If left untreated in Type 1 diabetes, this progresses rapidly to Diabetic Ketoacidosis (DKA) with Kussmaul respirations, fruity acetone breath, and metabolic acidosis.',
+    nclexPearls: [
+      'Renal Threshold for Glucose: The kidneys begin to spill glucose into the urine (glycosuria) when blood glucose exceeds approximately 180 mg/dL (10 mmol/L), initiating the osmotic diuresis responsible for polyuria.',
+      'Polyphagia Difference: Polyphagia is classically seen in Type 1 Diabetes Mellitus due to absolute lack of insulin causing severe cellular starvation; it is less prominent in established Type 2 diabetes.',
+      'Diagnostic Criteria for Diabetes: (1) Fasting plasma glucose ≥ 126 mg/dL (7.0 mmol/L) on 2 occasions; (2) Random plasma glucose ≥ 200 mg/dL (11.1 mmol/L) WITH classic 3P symptoms; (3) HbA1c ≥ 6.5%; (4) 2-hour 75 g oral glucose tolerance test (OGTT) ≥ 200 mg/dL.'
+    ],
+    practiceQuestion: {
+      question: 'An adolescent client accompanied by their parent presents to the clinic with an unintentional 10 lb weight loss over the past 3 weeks. The parent reports that the adolescent is constantly drinking large glasses of water, waking up multiple times every night to urinate, and eating unusually large meals. Point-of-care blood glucose is 340 mg/dL (18.9 mmol/L). Which physiological mechanism explains the client\'s polyuria (3P\'s)?',
+      options: [
+        'Hypothalamic suppression of antidiuretic hormone (ADH) secretion.',
+        'Hyperglycemia exceeding the renal threshold, exerting osmotic diuresis in the renal tubules.',
+        'Decreased glomerular filtration rate resulting in acute tubular necrosis.',
+        'Elevated serum aldosterone causing excessive urinary sodium excretion.'
+      ],
+      correctIndex: 1,
+      rationale: 'When serum blood glucose exceeds the tubular transport maximum / renal threshold (~180 mg/dL), the proximal renal tubules cannot reabsorb the excess glucose. The unabsorbed glucose remaining in the renal tubule filtrate acts as an osmotic agent, drawing water down its concentration gradient and preventing tubular water reabsorption. This process (osmotic diuresis) causes massive urinary fluid loss (polyuria), which leads to dehydration and intense compensatory thirst (polydipsia). The lack of insulin prevents glucose uptake into tissue cells, triggering cellular starvation and ravenous appetite (polyphagia).'
+    }
+  },
+  {
+    id: 'cushings-syndrome-symptoms-three-ss',
+    shortCode: '3S\'s',
+    title: 'Cushing\'s Syndrome Symptoms (3S\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The three cardinal adrenal cortex hormone elevations (Glucocorticoids, Mineralocorticoids, Androgens) that drive the clinical manifestations of Cushing\'s syndrome.',
+    memoryTip: '3S\'s of Cushing\'s Syndrome — Sugar (Hyperglycemia), Salt (Hypernatremia & fluid retention), Sex (Excess Androgens, hirsutism, virilization). Everything is elevated in Cushing\'s (Cushing = Cushion / More)! Contrast with Addison\'s (Need to ADD hormones / deficient).',
+    highYield: true,
+    tags: ['Endocrine', 'Adrenal Gland', 'Cushing Syndrome', 'Assessment', 'Hormones'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Sugar (Hyperglycemia & Glucocorticoid Excess)',
+        description: 'Excess cortisol promotes hepatic gluconeogenesis and peripheral insulin resistance, resulting in elevated blood glucose levels (steroid-induced diabetes). Accelerates truncal protein catabolism, resulting in muscle wasting, thin extremities, purple abdominal striae, delayed wound healing, and central obesity (buffalo hump, moon facies).',
+        highlight: 'Hyperglycemia, truncal obesity, thin extremities, & purple striae'
+      },
+      {
+        letter: 'S',
+        term: 'Salt (Hypernatremia & Mineralocorticoid Excess)',
+        description: 'High levels of cortisol exert cross-reactivity on aldosterone receptors, triggering excessive renal sodium and water retention alongside potassium and hydrogen excretion. Manifests as hypernatremia, severe fluid volume overload, secondary hypertension, and hypokalemia.',
+        highlight: 'Hypernatremia, hypertension, fluid retention, & hypokalemia'
+      },
+      {
+        letter: 'S',
+        term: 'Sex (Excess Androgen Secretion)',
+        description: 'Adrenal cortex hypersecretion of androgens (DHEA/testosterone) leads to prominent virilization in females, manifesting as facial hirsutism, clitoromegaly, severe cystic acne, deepening voice, male-pattern balding, and menstrual irregularities (oligomenorrhea/amenorrhea); libido changes in males.',
+        highlight: 'Hirsutism, virilization, acne, & menstrual irregularities'
+      }
+    ],
+    clinicalContext: 'In Endocrine and Medical-Surgical nursing, Cushing\'s syndrome (hypercortisolemia) stems either from exogenous glucocorticoid administration (most common) or endogenous hypersecretion (ACTH-secreting pituitary adenoma [Cushing\'s disease], adrenal adenoma/carcinoma, or ectopic ACTH from small cell lung cancer). Nursing management focuses on fluid balance, infection prevention (cortisol suppresses leukocytes and masks fever), bone protection (osteoporosis and pathological fractures from calcium leaching), blood glucose monitoring, and psychological support for altered body image.',
+    nclexPearls: [
+      'Cushing\'s vs. Addison\'s Lab Mirror: Cushing\'s has HIGH Sugar (hyperglycemia), HIGH Salt (hypernatremia), LOW Potassium (hypokalemia), and HIGH BP. Addison\'s (adrenal insufficiency) has LOW Sugar (hypoglycemia), LOW Salt (hyponatremia), HIGH Potassium (hyperkalemia), and LOW BP (hypotension/vascular collapse).',
+      'Infection Masking Alert: Cortisol blunts inflammatory reactions; a mild temperature elevation (e.g., 99.5°F / 37.5°C) or slight redness can herald overwhelming systemic sepsis in a client with Cushing\'s.',
+      'Post-Adrenalectomy Care: Bilateral adrenalectomy creates sudden surgical Addison\'s crisis; administer lifelong replacement glucocorticoids (hydrocortisone) and mineralocorticoids (fludrocortisone). Doses must be doubled or tripled during physical stress or illness ("stress dosing").'
+    ],
+    practiceQuestion: {
+      question: 'A 45-year-old female client is evaluated for Cushing\'s syndrome. Which combination of clinical assessment findings and laboratory results directly reflects the "3S\'s" (Sugar, Salt, Sex) of adrenal cortex hyperfunction?',
+      options: [
+        'Hypoglycemia, hyponatremia with hyperkalemia, and loss of secondary sex characteristics.',
+        'Fasting blood glucose 168 mg/dL, serum sodium 149 mEq/L with hypokalemia, and facial hirsutism.',
+        'Blood pressure 88/56 mmHg, hyperkalemia, and bronzed hyperpigmentation of skin creases.',
+        'Serum calcium 12.5 mg/dL, hypophosphatemia, and bilateral carpopedal spasms.'
+      ],
+      correctIndex: 1,
+      rationale: 'Cushing\'s syndrome involves excess secretion of the 3 adrenal cortex steroids ("3S\'s"): (1) Sugar: elevated cortisol causes gluconeogenesis and hyperglycemia (168 mg/dL); (2) Salt: mineralocorticoid action triggers sodium retention (hypernatremia 149 mEq/L), fluid overload, and potassium wasting (hypokalemia); and (3) Sex: androgen excess causes virilization, hirsutism, acne, and menstrual disruption in females. Options 1 and 3 describe Addison\'s disease (hypoadrenalism), and option 4 describes hyperparathyroidism.'
+    }
+  },
+  {
+    id: 'coma-causes-aeiou-tips',
+    shortCode: 'A-E-I-O-U TIPS',
+    title: 'Reversible Causes of Coma & Altered Mental Status (A-E-I-O-U TIPS)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The definitive clinical assessment checklist for identifying underlying reversible etiologies of coma and acute altered mental status.',
+    memoryTip: 'A-E-I-O-U TIPS — Alcohol/Acidosis, Epilepsy/Electrolytes/Endocrine, Insulin (Hypoglycemia), Overdose/Oxygen, Uremia, Trauma/Temperature, Infection, Psychogenic, Stroke/Space-occupying lesions.',
+    highYield: true,
+    tags: ['Neurological', 'Emergency Nursing', 'Critical Care', 'Coma', 'Altered Mental Status'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Alcohol & Acidosis (Metabolic / DKA)',
+        description: 'Acute ethanol intoxication causing central nervous system depression; severe metabolic acidosis (diabetic ketoacidosis [DKA], lactic acidosis, toxic ingestion) exhausting cerebral buffering capacity.',
+        highlight: 'Ethanol intoxication & metabolic/DKA acidosis'
+      },
+      {
+        letter: 'E',
+        term: 'Epilepsy, Electrolytes & Endocrine',
+        description: 'Non-convulsive status epilepticus or post-ictal states; critical electrolyte derangements (severe hyponatremia < 120 mEq/L, hypercalcemia); endocrine crises (myxedema coma, thyroid storm, Addisonian crisis).',
+        highlight: 'Seizures, post-ictal state, severe hyponatremia, & endocrine crisis'
+      },
+      {
+        letter: 'I',
+        term: 'Insulin (Hypoglycemic Shock / Crisis)',
+        description: 'Severe, profound neuroglycopenic hypoglycemia (blood glucose < 50 mg/dL / 2.8 mmol/L) depriving neurons of primary metabolic substrate; reversible immediately with IV dextrose (D50W).',
+        highlight: 'Neuroglycopenic hypoglycemia; rapid reversal with IV D50W'
+      },
+      {
+        letter: 'O',
+        term: 'Overdose (Poisoning) & Oxygen Deficit (Hypoxia)',
+        description: 'Accidental or intentional ingestion of opioids, benzodiazepines, barbiturates, tricyclic antidepressants, carbon monoxide, or cyanide; acute hypoxemic anoxia (PaO2 < 50 mmHg / respiratory arrest).',
+        highlight: 'Opioid/sedative toxidromes & acute cerebral anoxia'
+      },
+      {
+        letter: 'U',
+        term: 'Uremia & Renal Failure',
+        description: 'End-stage renal disease with accumulation of neurotoxic uremic metabolites (BUN > 100 mg/dL), leading to uremic encephalopathy, asterixis, and progressive coma treatable with emergent hemodialysis.',
+        highlight: 'Uremic encephalopathy from elevated nitrogenous wastes'
+      },
+      {
+        letter: 'T',
+        term: 'Trauma & Temperature Extremes',
+        description: 'Traumatic brain injury (epidural/subdural hematoma, cerebral contusion, diffuse axonal injury); extreme hypothermia (< 30°C / 86°F) or severe hyperthermia / heat stroke (> 40°C / 104°F) disrupting cellular enzymatic function.',
+        highlight: 'TBI, intracranial hematomas, hypothermia, & heat stroke'
+      },
+      {
+        letter: 'I',
+        term: 'Infection (Sepsis & Central Nervous System)',
+        description: 'Direct CNS infections (bacterial/viral meningitis, encephalitis, brain abscess) or severe systemic sepsis / septic shock with encephalopathy causing profound cerebral hypoperfusion.',
+        highlight: 'Meningitis, encephalitis, & septic encephalopathy'
+      },
+      {
+        letter: 'P',
+        term: 'Psychogenic ("Hysterical Coma" / Catatonia)',
+        description: 'Non-organic psychiatric unresponsiveness, severe conversion disorder, or malignant catatonia; differentiated by active eyelid resistance to opening, normal pupillary light reflexes, and caloric testing.',
+        highlight: 'Conversion disorder & catatonia; intact brainstem reflexes'
+      },
+      {
+        letter: 'S',
+        term: 'Stroke & Space-Occupying Cranial Lesions',
+        description: 'Acute massive ischemic stroke (basilar artery occlusion), intracerebral hemorrhage, expanding neoplasms, or brain herniation compressing the ascending reticular activating system (ARAS).',
+        highlight: 'Acute stroke, intracranial hemorrhage, & ARAS brainstem compression'
+      }
+    ],
+    clinicalContext: 'In Emergency, Trauma, and ICU nursing, a comatose or unresponsive patient requires rapid, methodical diagnostic evaluation to uncover rapidly reversible life threats. The initial nursing priority follows ABCs with immediate cervical spine immobilization if trauma is suspected, point-of-care capillary blood glucose (to exclude hypoglycemia), 12-lead ECG, pupil assessment, Glasgow Coma Scale (GCS), and administration of the classic "coma cocktail" when indicated (Dextrose, Oxygen, Naloxone for suspected opioid toxidrome, and Thiamine before dextrose in malnourished/alcoholic clients to prevent Wernicke encephalopathy).',
+    nclexPearls: [
+      'Glasgow Coma Scale (GCS) Rule: GCS scores range from 3 (deep coma/brain death) to 15 (fully oriented). NCLEX rule: "GCS less than 8, intubate!" Clients with GCS ≤ 8 cannot protect their airway and require immediate endotracheal intubation.',
+      'Thiamine Before Dextrose: In chronic alcoholism or malnourished clients presenting in coma, ALWAYS administer IV Thiamine (vitamin B1) BEFORE or concurrently with IV Dextrose. Infusing glucose without thiamine precipitates acute, irreversible WERNICKE ENCEPHALOPATHY (confusion, ataxia, ophthalmoplegia).',
+      'Hypoglycemia First: Point-of-care capillary blood glucose must be tested immediately at the bedside before ordering brain CT scans or lumbar punctures.'
+    ],
+    practiceQuestion: {
+      question: 'An unkempt adult client with a history of alcohol use disorder is brought to the emergency department unconscious by EMS. Glasgow Coma Scale is 6. Point-of-care capillary blood glucose reveals 38 mg/dL (2.1 mmol/L). The nurse prepares to administer 50 mL of 50% Dextrose (D50W) intravenously. Which medication must the nurse administer prior to or concurrently with the dextrose infusion (A-E-I-O-U TIPS)?',
+      options: [
+        '100 mg of IV Thiamine (Vitamin B1).',
+        '2 mg of IV Naloxone.',
+        '0.5 mg of IV Flumazenil.',
+        '10 units of Regular Insulin SubQ.'
+      ],
+      correctIndex: 0,
+      rationale: 'In chronic alcoholism and malnourished comatose clients ("A" in A-E-I-O-U TIPS), thiamine stores are depleted. Administering an IV glucose load (D50W) drives rapid intracellular glycolysis, consuming remaining thiamine pyrophosphate cofactors and precipitating acute, devastating Wernicke encephalopathy (and Korsakoff psychosis). The nurse must administer 100 mg of IV thiamine before or alongside IV dextrose. Naloxone is for opioid overdose, and flumazenil carries high risk of uncalibrated refractory seizures in poly-substance overdoses.'
+    }
+  },
+  {
+    id: 'coma-exclusion-causes-midas',
+    shortCode: 'MIDAS',
+    title: 'Coma: Critical Conditions to Exclude (MIDAS)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The five highest-priority, immediately fatal or treatable neurological and metabolic conditions that must be systematically excluded in any comatose client.',
+    memoryTip: 'MIDAS Touch for Coma — Meningitis, Intoxication, Diabetes (hypo/hyperglycemia), Air (hypoxia / hypercapnic respiratory failure), Subdural / Subarachnoid hemorrhage. Exclude these first!',
+    highYield: true,
+    tags: ['Neurological', 'Emergency Nursing', 'Critical Care', 'Differential Diagnosis', 'Coma'],
+    letters: [
+      {
+        letter: 'M',
+        term: 'Meningitis (Central Nervous System Infection)',
+        description: 'Life-threatening bacterial meningitis or encephalitis; assess for fever, nuchal rigidity, Kernig and Brudzinski signs, purpuric rash (Neisseria meningitidis); requires immediate blood cultures, empiric IV broad-spectrum antibiotics, and lumbar puncture.',
+        highlight: 'Bacterial meningitis, nuchal rigidity, & prompt IV antibiotics'
+      },
+      {
+        letter: 'I',
+        term: 'Intoxication (Toxidromes & Poisoning)',
+        description: 'Exogenous chemical or pharmacological poisoning (opioids, sedatives, toxic alcohols, carbon monoxide); assess pin-point pupils (opioids), respiratory depression, and administer targeted antidotes (naloxone, activated charcoal, hyperbaric oxygen).',
+        highlight: 'Opioid/toxin overdose; assess pupil constriction & give naloxone'
+      },
+      {
+        letter: 'D',
+        term: 'Diabetes (Hypoglycemia / DKA / HHS)',
+        description: 'Severe metabolic glycemic crises: profound neuroglycopenic hypoglycemia (< 50 mg/dL), severe Diabetic Ketoacidosis (DKA with acidosis and Kussmaul breathing), or Hyperosmolar Hyperglycemic State (HHS with serum glucose > 600 mg/dL and profound dehydration).',
+        highlight: 'Hypoglycemia, DKA ketoacidosis, & hyperosmolar state (HHS)'
+      },
+      {
+        letter: 'A',
+        term: 'Air (Acute Respiratory Failure / Hypoxia & Hypercapnia)',
+        description: 'Critical failure of ventilation or oxygenation: severe hypoxemia (PaO2 < 50 mmHg) causing cerebral anoxia, or severe carbon dioxide narcosis (PaCO2 > 70–80 mmHg / respiratory acidosis) blunting central consciousness.',
+        highlight: 'Severe cerebral hypoxemia & CO2 narcosis respiratory failure'
+      },
+      {
+        letter: 'S',
+        term: 'Subdural / Subarachnoid Hemorrhage (Intracranial Bleeds)',
+        description: 'Intracranial hemorrhage: rupture of berry aneurysms causing subarachnoid hemorrhage ("worst headache of life"), or bridging vein rupture producing acute subdural hematoma with midline brain shift; confirmed via non-contrast head CT.',
+        highlight: 'Subarachnoid bleed ("worst headache") & acute subdural hematoma'
+      }
+    ],
+    clinicalContext: 'In Emergency and Trauma nursing, when encountering an unconscious client with an unknown medical history, the MIDAS framework focuses on rapid bedside rule-outs. Failure to exclude hypoglycemia or acute hypoxia within minutes causes irreversible neuronal death. Similarly, missing bacterial meningitis delays life-saving antibiotics, and missing an expanding subdural hematoma leads to fatal brainstem herniation. Bedside point-of-care testing (glucose, pulse oximetry/ABG) and non-contrast head CT represent the primary frontline diagnostic sequence.',
+    nclexPearls: [
+      'Subarachnoid Hemorrhage (SAH) Key Descriptor: NCLEX vignettes consistently describe aneurysmal SAH as "the worst headache of my life" (thunderclap headache) followed by abrupt loss of consciousness and meningismus.',
+      'CO2 Narcosis in COPD: Giving uncontrolled high-flow oxygen to an end-stage COPD client with chronic hypercapnic respiratory failure can blunt their hypoxic drive, leading to acute CO2 narcosis ("Air" in MIDAS: lethargy, somnolence, and coma).',
+      'Rapid Diagnostic Sequence: (1) Airway/Oxygenation; (2) Bedside blood glucose; (3) Pupil/Neuro exam; (4) Non-contrast head CT (rule out blood before lumbar puncture!).'
+    ],
+    practiceQuestion: {
+      question: 'A 34-year-old client is brought to the emergency department in an unresponsive state. Family reports the client screamed, "This is the worst headache of my entire life!" before collapsing unconscious. The client has nuchal rigidity, a blood pressure of 190/105 mmHg, and pupil sluggishness. Based on the MIDAS framework for coma exclusion, which diagnostic investigation is the immediate priority?',
+      options: [
+        'Immediate lumbar puncture to evaluate cerebrospinal fluid for protein.',
+        'Non-contrast computed tomography (CT) of the head to evaluate for subarachnoid hemorrhage.',
+        'Comprehensive urine toxicology screen for synthetic opioid ingestion.',
+        'Electroencephalogram (EEG) to assess for subclinical status epilepticus.'
+      ],
+      correctIndex: 1,
+      rationale: 'A sudden "worst headache of my life" (thunderclap headache) followed by abrupt collapse and meningeal signs (nuchal rigidity) is the classic pathognomonic presentation of an intracranial aneurysm rupture causing Subarachnoid Hemorrhage ("S" in MIDAS). The immediate priority is an emergent non-contrast head CT scan to detect extravasated intracranial blood. A lumbar puncture should NEVER be performed prior to a head CT in a client with suspected intracranial hemorrhage or elevated ICP due to the risk of brainstem herniation through the foramen magnum.'
+    }
+  },
+  {
+    id: 'cleft-lip-care-plan-postop',
+    shortCode: 'CLEFT LIP',
+    title: 'Cleft Lip Postoperative Nursing Care Plan (CLEFT LIP)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Comprehensive postoperative nursing management and suture-line protection protocols following cheiloplasty (surgical cleft lip repair).',
+    memoryTip: 'CLEFT LIP — Crying minimize, Logan bow, Elbow restraints, Feed with Brecht feeder, Teach feeding & 2 months repair age, Liquid sterile water rinse, Impaired feeding (no sucking/pacifiers), Position never on abdomen (supine/side-lying). Protect the suture line at all costs!',
+    highYield: true,
+    tags: ['Pediatrics', 'Surgical Nursing', 'Cleft Lip', 'Postoperative Care', 'Airway Management'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Crying, Minimize',
+        description: 'Prevent prolonged, vigorous crying because crying places direct mechanical tension on the fresh cheiloplasty suture line, increasing risk of dehiscence, scar formation, and bleeding; anticipate infant needs, offer rocking, soothing, and adequate analgesia.',
+        highlight: 'Minimize crying to prevent suture line tension & dehiscence'
+      },
+      {
+        letter: 'L',
+        term: 'Logan Bow (or Facial Splint)',
+        description: 'Maintain the Logan bow—a metallic wire splint arched over the upper lip and taped securely to both cheeks—to relieve lateral mechanical stress on the newly repaired labial suture line.',
+        highlight: 'Logan bow / protective wire splint to relieve suture tension'
+      },
+      {
+        letter: 'E',
+        term: 'Elbow Restraints (No-No Restraints)',
+        description: 'Apply bilateral soft elbow restraints (e.g., padded tongue-blade or velcro immobilizers) to prevent the infant from bending their elbows and scratching, picking, or traumatizing the facial suture line.',
+        highlight: 'Bilateral elbow restraints; remove periodically for ROM & skin checks'
+      },
+      {
+        letter: 'F',
+        term: 'Feed with Brecht Feeder (or Rubber-Tipped Syringe)',
+        description: 'Administer feeds using a specialized Brecht feeder, rubber-tipped medicine dropper, or wide-based nipple placed into the side of the mouth; deliver formula slowly while avoiding direct contact with the suture repair.',
+        highlight: 'Specialized feeder or rubber-tipped syringe to side of mouth'
+      },
+      {
+        letter: 'T',
+        term: 'Teach Feeding Techniques & Two Months Average Repair Age',
+        description: 'Educate caregivers on feeding protocols; cheiloplasty is typically performed around 2 to 3 months of age (following the "Rule of 10s": 10 weeks old, 10 lbs weight, hemoglobin 10 g/dL).',
+        highlight: 'Caregiver education & repair at 2-3 months ("Rule of 10s")'
+      },
+      {
+        letter: 'L',
+        term: 'Liquid (Sterile Water) Rinse After Feeding',
+        description: 'Cleanse the suture line gently with sterile water or prescribed dilute hydrogen peroxide/saline solution using a sterile cotton-tipped applicator after every feeding to prevent milk crusting and crust-associated infection.',
+        highlight: 'Gently cleanse suture line with sterile water after each feed'
+      },
+      {
+        letter: 'I',
+        term: 'Impaired Feeding (Strictly No Sucking / Pacifiers)',
+        description: 'Vigorous sucking creates negative intraoral pressure that ruptures delicate lip sutures; pacifiers, hard nipples, thumbs, straws, tongue depressors, and thermometers are strictly forbidden in the oral cavity.',
+        highlight: 'No sucking, pacifiers, straws, or hard nipples!'
+      },
+      {
+        letter: 'P',
+        term: 'Position — NEVER on Abdomen',
+        description: 'Position the infant exclusively on their back (supine) or slightly side-lying (with operative side up); placing the infant in a prone (abdomen) position is strictly contraindicated because rubbing the face against bed sheets disrupts the repair.',
+        highlight: 'Supine positioning; NEVER prone on abdomen!'
+      }
+    ],
+    clinicalContext: 'In Pediatric and Medical-Surgical reconstructive nursing, cheiloplasty (cleft lip repair) transforms facial aesthetics, speech development, and feeding efficiency. Postoperative care revolves entirely around one paramount goal: PROTECTING THE SUTURE LINE. Tension from crying, rubbing against bedding, sucking on nipples/pacifiers, or manual picking by the infant can tear sutures, cause severe infection, or ruin cosmetic symmetry. Restraints must be removed every 1 to 2 hours one at a time for neurovascular/skin assessments and gentle range of motion.',
+    nclexPearls: [
+      'Positioning Rule of Cleft Lip vs. Cleft Palate: Cleft LIP repair = NEVER Prone (place in supine or upright infant seat to prevent rubbing the lip on the mattress). Cleft PALATE repair = Prone or side-lying IS permitted (facilitates drainage of pooled oral secretions and blood to prevent airway obstruction).',
+      'Elbow Restraint Nursing Care: Restraints must be checked every 15–30 minutes and removed every 1–2 hours (one arm at a time) to assess skin integrity, check circulation, and perform passive range of motion.',
+      'Rule of 10s for Surgical Timing: Cleft lip repair occurs when the infant reaches at least 10 weeks of age, 10 pounds (4.5 kg) in weight, and a hemoglobin of 10 g/dL.'
+    ],
+    practiceQuestion: {
+      question: 'A nurse is providing postoperative care to a 10-week-old infant who underwent a unilateral cheiloplasty (cleft lip repair) 4 hours ago. Which nursing action is essential to prevent disruption of the surgical site (CLEFT LIP)?',
+      options: [
+        'Place the infant in the prone position to facilitate drainage of oral secretions.',
+        'Offer a standard silicone pacifier whenever the infant becomes irritable.',
+        'Maintain bilateral soft elbow restraints and position the infant supine.',
+        'Feed the infant using a standard firm infant formula bottle nipple.'
+      ],
+      correctIndex: 2,
+      rationale: 'Protecting the cheiloplasty suture line is the highest nursing priority. Bilateral soft elbow restraints ("E" in CLEFT LIP) prevent the infant from bending the arms and scratching or picking at the delicate facial sutures. The infant must be positioned supine or in an infant seat ("P": never on abdomen) to prevent rubbing the face and mouth against the bed linens. Prone positioning, pacifiers, and standard bottle nipples generate friction or negative intraoral suction pressure that tears newly repaired tissues, leading to dehiscence and permanent scarring.'
+    }
+  },
+  {
+    id: 'blood-glucose-rhyme-cold-hot',
+    shortCode: 'Cold & Clammy / Hot & Dry',
+    title: 'Blood Glucose Rhyme: Symptom Implication',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The fundamental clinical rule of thumb to rapidly differentiate acute hypoglycemia from severe hyperglycemia based on cutaneous temperature and moisture.',
+    memoryTip: '“Cold and clammy . . . give hard candy” (Hypoglycemia < 70 mg/dL: Sympathetic diaphoresis and vasoconstriction; give 15 g simple carbs). “Hot and dry . . . glucose is high” (Hyperglycemia / DKA / HHS: Dehydration, vasodilation, and osmotic diuresis; give IV regular insulin & normal saline)!',
+    highYield: true,
+    tags: ['Endocrine', 'Diabetes', 'Assessment', 'Hypoglycemia', 'Hyperglycemia', 'Emergency Nursing'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Cold and Clammy (Hypoglycemia: Glucose < 70 mg/dL)',
+        description: 'Sympathetic catecholamine surge (epinephrine) causes peripheral cutaneous vasoconstriction and profuse diaphoresis, making skin feel cold, pale, and clammy. Immediate clinical implication: "Give hard candy" / 15 grams of fast-acting simple carbohydrates (Rule of 15) to prevent neuroglycopenic seizure and coma.',
+        highlight: 'Cold, pale, diaphoretic skin = Hypoglycemia; give 15 g fast carbs'
+      },
+      {
+        letter: 'H',
+        term: 'Hot and Dry (Hyperglycemia / DKA / HHS)',
+        description: 'Profound osmotic diuresis pulls massive intracellular and intravascular fluid into the urine, resulting in severe dehydration, loss of skin turgor, dry mucous membranes, flushed skin, and Kussmaul respirations. Immediate clinical implication: "Glucose is high" — initiate aggressive IV isotonic crystalloid fluid resuscitation (0.9% Normal Saline) and intravenous regular insulin infusion.',
+        highlight: 'Warm, flushed, dry skin = Hyperglycemia; give IV fluids & regular insulin'
+      }
+    ],
+    clinicalContext: 'In Emergency and Medical-Surgical nursing, when a client with diabetes exhibits altered behavior, confusion, or weakness, touching the client\'s skin provides an instant clinical clue before laboratory or point-of-care verification. If the skin is cool and diaphoretic, assume hypoglycemia until proven otherwise and act rapidly—hypoglycemia can cause irreversible brain necrosis within minutes. If the skin is warm, flushed, and dry, consider DKA or HHS, which develops over hours to days with massive volume depletion.',
+    nclexPearls: [
+      'The Rule of 15: For a conscious hypoglycemic client with cold, clammy skin: administer 15 grams of simple sugar (4 oz fruit juice, 4 oz regular soda, 3–4 glucose tablets, or 5–6 hard candies), wait 15 minutes, recheck capillary glucose, and repeat if still < 70 mg/dL.',
+      'When in Doubt, Treat Hypoglycemia First: If an unconscious client with diabetes is found and blood glucose cannot be checked immediately, treat for HYPOGLYCEMIA first with IV 50% Dextrose (D50W) or IM Glucagon. Hypoglycemia kills brain cells in minutes, whereas transiently elevating blood glucose in a hyperglycemic client will not cause immediate mortality.',
+      'Fluid First in DKA/HHS: In the hot, dry hyperglycemic client (DKA/HHS), the priority intervention BEFORE or alongside insulin is massive IV fluid rehydration with 0.9% Normal Saline (1–1.5 L in hour 1) to restore intravascular volume and renal perfusion.'
+    ],
+    practiceQuestion: {
+      question: 'A home health nurse visits an adult client with Type 2 Diabetes Mellitus. The client appears confused, irritable, and tremulous. On physical examination, the client\'s skin is pale, cold, and noticeably clammy. Vital signs reveal BP 118/74 mmHg, HR 108 beats/min, and RR 18 breaths/min. Based on the classic blood glucose assessment rhyme, which action should the nurse implement immediately?',
+      options: [
+        'Administer 10 units of subcutaneous regular insulin.',
+        'Provide 4 ounces (120 mL) of regular fruit juice or 5 hard candies orally.',
+        'Encourage the client to drink a 16-ounce bottle of plain water to promote hydration.',
+        'Assist the client to ambulate briskly to stimulate circulation.'
+      ],
+      correctIndex: 1,
+      rationale: 'The client\'s cool, pale, and clammy skin, along with tachycardia, tremor, and confusion, is the hallmark presentation of acute hypoglycemia ("Cold and clammy . . . give hard candy"). The immediate priority is the Rule of 15: provide 15 grams of fast-acting simple carbohydrates (such as 4 oz of fruit juice, regular soda, or 5–6 hard candies) to raise blood glucose rapidly. Administering insulin would cause fatal brainstem death, while plain water does not provide glucose.'
+    }
+  },
+  {
+    id: 'neurovascular-occlusion-six-ps',
+    shortCode: '6 P\'s',
+    title: 'Neurovascular Occlusion & Compartment Syndrome (6 P\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The cardinal clinical signs of acute arterial occlusion and acute compartment syndrome, evaluated sequentially to prevent irreversible limb necrosis.',
+    memoryTip: '6 P\'s of Neurovascular Compromise — Pain (early & out of proportion), Paresthesia (early numbness/tingling), Pallor (pale/delayed cap refill), Poikilothermia (cool/cold extremity), Pulselessness (late), Paralysis (late/muscle necrosis). Paresthesia & Pain on passive stretch are EARLIEST; Pulselessness & Paralysis are LATE!',
+    highYield: true,
+    tags: ['Musculoskeletal', 'Orthopedics', 'Cardiovascular', 'Compartment Syndrome', 'Neurovascular'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Pain (Early & Out of Proportion)',
+        description: 'Severe, persistent, unrelenting ischemic pain that is disproportionate to the underlying injury and entirely unrelieved by escalating doses of opioid analgesia; characteristically exacerbated by passive stretching of the distal muscles.',
+        highlight: 'Pain out of proportion & severe pain on passive stretch'
+      },
+      {
+        letter: 'P',
+        term: 'Paresthesia (Early Sensory Deficit)',
+        description: 'Pins-and-needles sensation, tingling, numbness, or loss of two-point discrimination along sensory nerve distributions distal to the occlusion or pressure zone; occurs early because sensory nerves are extremely vulnerable to microvascular hypoxia.',
+        highlight: 'Tingling, burning, or numbness distal to the injury'
+      },
+      {
+        letter: 'P',
+        term: 'Pallor (Pale Skin & Delayed Capillary Refill)',
+        description: 'Skin distal to the occlusion appears pale, mottled, or cyanotic with delayed capillary refill (> 3 seconds), indicating compromised microvascular perfusion and arterial insufficiency.',
+        highlight: 'Pale, mottled skin & delayed capillary refill (> 3s)'
+      },
+      {
+        letter: 'P',
+        term: 'Poikilothermia (Temperature Adjustment to Environment / Coldness)',
+        description: 'The affected extremity loses the ability to thermoregulate due to interrupted arterial blood delivery, becoming poikilothermic (cool or icy cold to touch compared bilaterally to the uninjured limb).',
+        highlight: 'Limb feels cold/cool compared to contralateral side'
+      },
+      {
+        letter: 'P',
+        term: 'Pulselessness (Late Finding)',
+        description: 'Diminution or complete absence of distal arterial pulses (evaluated by manual palpation and continuous-wave Doppler ultrasound); a critical late finding indicating profound arterial occlusion.',
+        highlight: 'Diminished or absent distal pulse; critical LATE sign'
+      },
+      {
+        letter: 'P',
+        term: 'Paralysis (Late Finding / Neuromuscular Death)',
+        description: 'Inability to actively dorsiflex, plantarflex, or move distal digits; signals irreversible motor nerve ischemia and muscle necrosis requiring emergent fasciotomy or embolectomy.',
+        highlight: 'Motor weakness or complete inability to move digits'
+      }
+    ],
+    clinicalContext: 'In Orthopedic, Trauma, and Post-Surgical nursing, acute neurovascular occlusion arises either from intraluminal arterial obstruction (acute arterial embolus/thrombus) or extraluminal tissue compression (acute compartment syndrome from tight casts, circumferential burns, crushing trauma, or bleeding into closed fascial compartments). Normal intracompartmental pressure is 0–8 mmHg; pressures > 30 mmHg cause capillary collapse and muscle infarction within 4–6 hours. If compartment syndrome is suspected: loosen constricting dressings/casts, keep extremity AT HEART LEVEL (never elevate above heart, as elevation reduces arterial perfusion pressure!), and notify the orthopedic surgeon immediately for emergent bedside fasciotomy.',
+    nclexPearls: [
+      'Earliest vs. Latest Signs: PARESTHESIA (numbness/tingling) and PAIN on passive stretching are the EARLIEST indicators of acute compartment syndrome. PULSELESSNESS and PARALYSIS are ominous LATE signs indicating that irreversible neuromuscular infarction has already occurred.',
+      'Do NOT Elevate and Do NOT Apply Ice: In suspected compartment syndrome, NEVER elevate the limb above the heart (elevation further compromises arterial inflow), and NEVER apply ice/cold packs (cold induces vasoconstriction and worsens microvascular ischemia). Maintain the limb at heart level.',
+      'Bivalving Casts: The immediate bedside nursing intervention for increasing compartment pressure under a cast is to cut/bivalve the plaster or fiberglass cast and loosen the underlying cotton padding.'
+    ],
+    practiceQuestion: {
+      question: 'A client who sustained a closed comminuted tibial fracture 12 hours ago has a fiberglass leg cast applied. The client reports intense, burning calf pain rated 10/10 that is unresponsive to prescribed intravenous hydromorphone. When the nurse gently dorsiflexes the client\'s foot, the client screams in excruciating pain. Dorsalis pedis pulse is 2+ and capillary refill is 2 seconds. Which action should the nurse take first (6 P\'s)?',
+      options: [
+        'Elevate the leg on two pillows above the level of the heart to reduce edema.',
+        'Apply an ice bag directly over the cast to soothe localized swelling.',
+        'Bivalve the cast, keep the extremity at heart level, and notify the orthopedic surgeon immediately.',
+        'Reassure the client that severe pain is expected and administer an additional opioid dose.'
+      ],
+      correctIndex: 2,
+      rationale: 'Pain out of proportion to the injury that is unrelieved by opioids and excruciatingly exacerbated by passive stretch of the digits/foot is the pathognomonic earliest sign of Acute Compartment Syndrome ("Pain" in the 6 P\'s). Intact pulses (2+) and normal capillary refill do NOT rule out compartment syndrome because pulselessness is an ominous, late sign. The nurse\'s immediate priority is to relieve external pressure (bivalving the cast), maintain the limb AT heart level (elevating above heart reduces arterial perfusion pressure, and ice induces vasoconstriction, both worsening ischemia), and notify the surgeon immediately for emergent fasciotomy.'
+    }
+  },
+  {
+    id: 'appendicitis-assessment-pains',
+    shortCode: 'PAINS (Appendicitis)',
+    title: 'Appendicitis Assessment Hallmarks (PAINS)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The cardinal clinical presentation, laboratory findings, and diagnostic physical assessment signs of acute appendicitis.',
+    memoryTip: 'PAINS of Appendicitis — Pain (migrates from periumbilical to RLQ at McBurney’s point), Anorexia (loss of appetite), Increased temp & WBCs (leukocytosis 15,000–20,000 with left shift), Nausea & vomiting, Signs (McBurney’s point tenderness, Rovsing, Psoas, Obturator, Rebound tenderness).',
+    highYield: true,
+    tags: ['Gastrointestinal', 'Abdominal Pain', 'Emergency Nursing', 'Surgical Nursing', 'Appendicitis'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Pain (Periumbilical Migrating to Right Lower Quadrant)',
+        description: 'Pain begins as dull, visceral, poorly localized ache around the umbilicus (periumbilical), then migrates within 12 to 24 hours to become sharp, constant, localized somatic pain in the Right Lower Quadrant (RLQ) at McBurney\'s point.',
+        highlight: 'Dull periumbilical pain migrating to sharp localized RLQ pain'
+      },
+      {
+        letter: 'A',
+        term: 'Anorexia (Loss of Appetite)',
+        description: 'Universal and prominent early symptom; clients exhibit complete loss of appetite and aversion to food before the onset of nausea and abdominal pain (a client who is hungry or requests food rarely has acute appendicitis).',
+        highlight: 'Early universal loss of appetite / refusal of food'
+      },
+      {
+        letter: 'I',
+        term: 'Increased Temperature & WBC (15,000–20,000 /µL)',
+        description: 'Low-grade fever (100.4°F–101°F / 38°C–38.3°C) accompanied by prominent leukocytosis (WBC count 15,000 to 20,000 /µL) with a "left shift" (elevated immature band neutrophils indicating acute acute bacterial inflammation).',
+        highlight: 'Low-grade fever & leukocytosis (15,000–20,000 WBC) with left shift'
+      },
+      {
+        letter: 'N',
+        term: 'Nausea & Vomiting',
+        description: 'Nausea and non-bilious vomiting follow chronologically AFTER the onset of abdominal pain and anorexia (if vomiting occurs before the pain, gastroenteritis or small bowel obstruction is more likely).',
+        highlight: 'Nausea and vomiting appearing chronologically AFTER pain'
+      },
+      {
+        letter: 'S',
+        term: 'Signs (McBurney’s, Psoas, Rovsing, Obturator, Rebound)',
+        description: 'Classic physical examination signs: (1) McBurney\'s point tenderness (located midway between the umbilicus and anterior superior iliac spine); (2) Rovsing sign (deep palpation of LLQ elicits pain in RLQ); (3) Psoas sign (RLQ pain with right hip hyperextension); (4) Obturator sign (RLQ pain with internal rotation of flexed right hip); (5) Blumberg sign / Rebound tenderness.',
+        highlight: 'McBurney tenderness, Rovsing, Psoas, Obturator, & Rebound tenderness'
+      }
+    ],
+    clinicalContext: 'In Emergency and General Surgical nursing, acute appendicitis is the most common cause of acute abdomen requiring emergency laparoscopy. Obstruction of the appendiceal lumen (by a fecalith, lymphoid hyperplasia, or foreign body) leads to mucus accumulation, intraluminal distention, ischemia, and bacterial overgrowth. Strict preoperative nursing care: keep strictly NPO, establish IV access for isotonic crystalloids, avoid administering laxatives/enemas (which increase bowel peristalsis and trigger perforation), and NEVER apply heat to the abdomen (heat causes vasodilation and accelerates rupture and generalized peritonitis!).',
+    nclexPearls: [
+      'Sudden Relief of Pain Alert: If a client with acute appendicitis abruptly reports that their excruciating abdominal pain has suddenly vanished or dramatically improved, suspect ACUTE RUPTURE / PERFORATION of the appendix! This is a medical-surgical catastrophe—intraluminal decompression provides temporary pain relief before life-threatening peritonitis, rigid board-like abdomen, high fever, and septic shock rapidly ensue.',
+      'NO Heat, NO Enemas, NO Laxatives: Applying a heating pad to the abdomen or giving enemas/laxatives is strictly contraindicated because it drastically increases the risk of appendiceal rupture and widespread fecal peritonitis.',
+      'Pain Sequence: Anorexia -> Periumbilical Pain -> Nausea/Vomiting -> RLQ Pain migration.'
+    ],
+    practiceQuestion: {
+      question: 'A 22-year-old client with suspected acute appendicitis is waiting for surgical consultation. The client has been crying from severe, constant right lower quadrant pain rated 9/10 with localized guarding at McBurney\'s point. Thirty minutes later, the client suddenly smiles and tells the nurse, "I feel so much better now, the pain has completely gone away!" What should the nurse suspect immediately (PAINS)?',
+      options: [
+        'The appendix has spontaneously decompressed and healed without complication.',
+        'The client\'s appendix has ruptured, requiring immediate preparation for emergency laparotomy.',
+        'The client is experiencing the pain-relieving effect of IV hydration.',
+        'The inflammation has resolved and the client may be discharged home.'
+      ],
+      correctIndex: 1,
+      rationale: 'Sudden, abrupt cessation of pain in acute appendicitis is the classic NCLEX hallmark of appendiceal rupture/perforation. Intraluminal pressure drops as the inflamed appendix bursts, providing temporary relief of somatic peritoneal stretch. However, spilled fecal contents and bacterial toxins rapidly ignite generalized peritonitis, presenting shortly thereafter with high fever, board-like abdominal rigidity, rebound tenderness, and septic shock. The nurse must immediately notify the surgeon, maintain strict NPO, initiate IV antibiotics, and prepare for emergent surgical exploration.'
+    }
+  },
+  {
+    id: 'angina-precipitating-factors-four-es',
+    shortCode: '4E\'s',
+    title: 'Precipitating Factors of Angina Pectoris (4E\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The four primary physiological and environmental triggers that precipitate acute episodes of stable angina pectoris by increasing myocardial oxygen demand.',
+    memoryTip: '4E\'s of Angina — Eating (heavy meals shunt blood to GI tract), Emotion (stress/anger releases catecholamines), Exertion (exercise spikes heart rate & workload), Extreme temperatures (cold causes peripheral vasoconstriction, heat causes vasodilation & tachycardia).',
+    highYield: true,
+    tags: ['Cardiovascular', 'Angina', 'Coronary Artery Disease', 'Patient Education', 'Pharmacology'],
+    letters: [
+      {
+        letter: 'E',
+        term: 'Eating (Heavy or Large Meals)',
+        description: 'Consuming large, heavy meals shunts a substantial portion of circulating blood flow to the mesenteric/gastrointestinal circulation (splanchnic steal) for digestion, transiently reducing coronary arterial perfusion while increasing metabolic cardiac output.',
+        highlight: 'Heavy meals shunt blood to gut (splanchnic steal) & raise cardiac workload'
+      },
+      {
+        letter: 'E',
+        term: 'Emotion (Stress, Anger & Anxiety)',
+        description: 'Intense emotional states, psychological stress, fear, or anxiety stimulate the sympathetic nervous system, causing sudden surges of circulating catecholamines (epinephrine and norepinephrine) that drive tachycardia, hypertension, and increased myocardial wall stress.',
+        highlight: 'Sympathetic catecholamine surge triggers tachycardia & hypertension'
+      },
+      {
+        letter: 'E',
+        term: 'Exertion (Physical Exercise & Straining)',
+        description: 'Strenuous physical activity, stair climbing, rapid walking, lifting heavy objects, or isometric straining (Valsalva) drastically increases heart rate, stroke volume, and afterload, exceeding the fixed oxygen delivery capacity of stenosed coronary arteries.',
+        highlight: 'Exercise & isometric exertion exceed coronary blood flow capacity'
+      },
+      {
+        letter: 'E',
+        term: 'Extreme Temperatures (Hot or Cold Weather)',
+        description: 'Exposure to cold weather stimulates systemic peripheral vasoconstriction to conserve heat, spiking systemic vascular resistance (afterload) and myocardial oxygen demand. Intense heat causes peripheral vasodilation, pooling, compensatory tachycardia, and dehydration.',
+        highlight: 'Cold causes vasoconstriction & high afterload; heat causes tachycardia'
+      }
+    ],
+    clinicalContext: 'In Cardiovascular and Medical-Surgical nursing, stable angina pectoris occurs when atherosclerotic plaque (> 70% coronary luminal stenosis) prevents coronary blood flow from meeting increases in myocardial oxygen demand (MVO2). The 4E\'s serve as the clinical cornerstone for patient discharge teaching and secondary prevention. Clients are educated to pace physical activities, avoid sudden cold air exposure (wearing a scarf/mask over the mouth in winter), avoid large heavy meals, practice stress-reduction techniques, and take prophylactic sublingual nitroglycerin 5 to 10 minutes prior to engaging in planned physical exertion or stressful activities.',
+    nclexPearls: [
+      'Prophylactic Nitroglycerin: Instruct clients with stable angina to take one dose of sublingual nitroglycerin 5 to 10 minutes BEFORE undertaking known precipitating activities (e.g., climbing stairs, sexual intercourse, walking in cold weather).',
+      'Sublingual Nitroglycerin Storage: Keep tablets in their original dark, airtight amber glass container; avoid heat, moisture, and light. Discard and replace the bottle every 6 months once opened (tablets should produce a slight tingling or burning sensation under the tongue when fresh and active).',
+      'Cold Weather Warning: In cold weather, instruct clients to wrap a scarf over the nose and mouth to warm incoming air; breathing freezing air triggers reflex coronary vasospasm.',
+      'Stable vs. Unstable Angina: Stable angina is predictable, provoked by the 4E\'s, and relieved by rest or sublingual nitroglycerin within 5 minutes. Unstable angina occurs at REST, increases in frequency/intensity, and is a medical emergency representing Acute Coronary Syndrome.'
+    ],
+    practiceQuestion: {
+      question: 'A 64-year-old client with chronic stable angina is being discharged home following medical stabilization. The nurse conducts comprehensive education regarding lifestyle modifications and triggers (4E\'s). Which client statement indicates the need for further education?',
+      options: [
+        'I will take a sublingual nitroglycerin tablet 5 to 10 minutes before I walk up the steep hill near my home.',
+        'When it is freezing cold outside, I will wrap a warm scarf around my nose and mouth before shoveling the driveway.',
+        'I will eat smaller, more frequent meals throughout the day instead of large, heavy dinners.',
+        'If I experience chest pain at rest that is not relieved after one nitroglycerin tablet, I will call 911 immediately.'
+      ],
+      correctIndex: 1,
+      rationale: 'A client with coronary artery disease and stable angina should NEVER shovel snow in freezing cold weather! Shoveling snow combines two potent triggers from the 4E\'s simultaneously: intense isometric upper-body physical exertion ("Exertion") and freezing cold exposure ("Extreme Temperatures"). Cold weather causes reflex peripheral vasoconstriction and coronary artery spasm, drastically increasing myocardial afterload and oxygen demand, which frequently precipitates acute myocardial infarction. The other statements demonstrate correct understanding of prophylactic nitroglycerin, small meals, and emergency protocols.'
+    }
+  },
+  {
+    id: 'acid-base-balance-rome',
+    shortCode: 'ROME',
+    title: 'Acid-Base Interpretation (ROME)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The gold-standard method for rapidly analyzing arterial blood gas (ABG) values: Respiratory Opposite, Metabolic Equal.',
+    memoryTip: 'ROME — Respiratory Opposite (pH and PaCO2 move in opposite directions: high pH + low PaCO2 = Respiratory Alkalosis; low pH + high PaCO2 = Respiratory Acidosis), Metabolic Equal (pH and HCO3 move in the same/equal direction: high pH + high HCO3 = Metabolic Alkalosis; low pH + low HCO3 = Metabolic Acidosis).',
+    highYield: true,
+    tags: ['Acid-Base Balance', 'ABGs', 'Respiratory', 'Renal', 'Laboratory Values', 'Critical Care'],
+    letters: [
+      {
+        letter: 'R',
+        term: 'Respiratory',
+        description: 'Represents the pulmonary component of acid-base regulation, governed by PaCO2 (normal: 35–45 mm Hg). Carbon dioxide dissolves in blood to form carbonic acid; hypoventilation retains PaCO2, while hyperventilation blows off PaCO2.',
+        highlight: 'Pulmonary control via PaCO2 (35–45 mm Hg); carbon dioxide acts as volatile acid'
+      },
+      {
+        letter: 'O',
+        term: 'Opposite Directions',
+        description: 'In respiratory acid-base imbalances, the arrows for pH and PaCO2 move in OPPOSITE directions: If pH is elevated (↑ > 7.45) and PaCO2 is decreased (↓ < 35 mm Hg), it is Respiratory Alkalosis. If pH is decreased (↓ < 7.35) and PaCO2 is elevated (↑ > 45 mm Hg), it is Respiratory Acidosis.',
+        highlight: 'pH ↑ and PaCO2 ↓ = Respiratory Alkalosis; pH ↓ and PaCO2 ↑ = Respiratory Acidosis'
+      },
+      {
+        letter: 'M',
+        term: 'Metabolic',
+        description: 'Represents the renal/systemic component of acid-base balance, governed by serum bicarbonate (HCO3-, normal: 22–26 mEq/L). The kidneys regulate bicarbonate reabsorption and hydrogen ion excretion, responding over hours to days.',
+        highlight: 'Renal regulation via HCO3 (22–26 mEq/L); primary chemical buffer in systemic circulation'
+      },
+      {
+        letter: 'E',
+        term: 'Equal (Same) Direction',
+        description: 'In metabolic acid-base imbalances, the arrows for pH and HCO3 move in the SAME (equal) direction: If pH is elevated (↑ > 7.45) and HCO3 is elevated (↑ > 26 mEq/L), it is Metabolic Alkalosis. If pH is decreased (↓ < 7.35) and HCO3 is decreased (↓ < 22 mEq/L), it is Metabolic Acidosis.',
+        highlight: 'pH ↑ and HCO3 ↑ = Metabolic Alkalosis; pH ↓ and HCO3 ↓ = Metabolic Acidosis'
+      }
+    ],
+    clinicalContext: 'Arterial blood gas (ABG) analysis is a critical diagnostic skill tested extensively on the NCLEX and required in intensive care, emergency, and med-surg nursing. Standard reference ranges are: pH 7.35–7.45, PaCO2 35–45 mm Hg, and HCO3- 22–26 mEq/L. The ROME mnemonic provides a fast 3-step interpretation algorithm: Step 1: Examine pH to establish Acidosis (< 7.35) or Alkalosis (> 7.45). Step 2: Examine PaCO2 and HCO3- to determine which parameter moved in the direction matching the primary disturbance. Step 3: Determine compensation (Uncompensated = pH abnormal, one parameter abnormal; Partially compensated = all three abnormal; Fully compensated = pH returned to normal range with both PaCO2 and HCO3 abnormal).',
+    nclexPearls: [
+      'Classic Causes of Respiratory Acidosis (Hypoventilation): COPD exacerbation, opioid or sedative overdose, atelectasis, pneumothorax, flail chest, severe pneumonia, Guillain-Barré syndrome, and myasthenia gravis (retaining CO2).',
+      'Classic Causes of Respiratory Alkalosis (Hyperventilation): Panic attacks/anxiety, hyperventilation syndrome, early hypoxemia, pulmonary embolism, fever, high altitude, and mechanical ventilator over-ventilation (blowing off CO2).',
+      'Classic Causes of Metabolic Acidosis: Diabetic ketoacidosis (DKA), severe diarrhea (loss of base/bicarbonate "below the belt"), renal failure (uremia), lactic acidosis/shock, salicylate overdose, and starvation.',
+      'Classic Causes of Metabolic Alkalosis: Prolonged vomiting or nasogastric suctioning (loss of hydrochloric acid "above the belt"), excessive antacid/bicarbonate ingestion, hypokalemia, and loop/thiazide diuretic therapy.',
+      'Allen Test Before Radial Arterial Puncture: Always perform the modified Allen test to verify collateral ulnar circulation before drawing radial ABGs. Compress radial and ulnar arteries, client makes a fist until hand blanches, release ulnar artery; color should return within 5–7 seconds (positive test = safe to proceed).'
+    ],
+    practiceQuestion: {
+      question: 'A client admitted with acute exacerbation of chronic obstructive pulmonary disease (COPD) has the following arterial blood gas (ABG) results: pH 7.31, PaCO2 58 mm Hg, HCO3 24 mEq/L, and PaO2 62 mm Hg. Using the ROME framework, how does the nurse interpret these findings?',
+      options: [
+        'Uncompensated respiratory acidosis',
+        'Partially compensated metabolic acidosis',
+        'Uncompensated respiratory alkalosis',
+        'Fully compensated metabolic alkalosis'
+      ],
+      correctIndex: 0,
+      rationale: 'Using the ROME method: Step 1: The pH of 7.31 is low (< 7.35), indicating acidosis. Step 2: The PaCO2 of 58 mm Hg is elevated (> 45 mm Hg). Since pH is low (↓) and PaCO2 is high (↑), the arrows move in OPPOSITE directions, confirming a RESPIRATORY etiology (Respiratory Opposite = Respiratory Acidosis). Step 3: The HCO3 is 24 mEq/L, which remains within the normal reference range (22–26 mEq/L), indicating that the kidneys have not yet retained bicarbonate to compensate. Because the pH is abnormal and the HCO3 is normal, this represents uncompensated respiratory acidosis, typical of acute hypoventilation in COPD.'
+    }
+  },
+  {
+    id: 'hypocalcemia-signs-symptoms-cats',
+    shortCode: 'CATS (Hypocalcemia)',
+    title: 'Hypocalcemia Signs and Symptoms (CATS)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The definitive clinical manifestation checklist for low serum calcium levels: Convulsions, Arrhythmias, Tetany, Spasms and stridor.',
+    memoryTip: 'CATS for Hypocalcemia — C: Convulsions (seizures from neuronal excitability), A: Arrhythmias (prolonged ST/QT interval, risk of Torsades), T: Tetany (hyperactive DTRs, numbness/tingling, Trousseau\'s & Chvostek\'s signs), S: Spasms and stridor (life-threatening laryngospasm post-thyroidectomy).',
+    highYield: true,
+    tags: ['Electrolytes', 'Hypocalcemia', 'Endocrine', 'Thyroidectomy', 'Neurology', 'Critical Care'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Convulsions (Seizures)',
+        description: 'Decreased extracellular calcium increases neuronal cell membrane permeability to sodium ions, lowering depolarization thresholds and triggering spontaneous, repetitive nerve discharges that manifest as generalized tonic-clonic seizures.',
+        highlight: 'Neuronal hyper-reactivity lowers seizure threshold; initiate seizure precautions'
+      },
+      {
+        letter: 'A',
+        term: 'Arrhythmias (Cardiac Dysrhythmias & Prolonged QT)',
+        description: 'Calcium is essential for cardiac phase 2 plateau action potential. Hypocalcemia prolongs the ST segment and corrected QT interval (QTc), significantly heightening the risk of polymorphic ventricular tachycardia (Torsades de Pointes) and cardiac arrest.',
+        highlight: 'Prolonged ST segment & prolonged QT interval on ECG; risk of Torsades de Pointes'
+      },
+      {
+        letter: 'T',
+        term: 'Tetany & Neuromuscular Irritability',
+        description: 'Profound neuromuscular excitability characterized by paresthesias (numbness and tingling around mouth and extremities), painful muscle cramping, hyperactive deep tendon reflexes (DTRs 3+ to 4+), positive Trousseau\'s sign (carpopedal spasm with BP cuff), and positive Chvostek\'s sign (facial twitching).',
+        highlight: 'Paresthesias, hyperactive DTRs, positive Trousseau\'s & Chvostek\'s signs'
+      },
+      {
+        letter: 'S',
+        term: 'Spasms and Stridor (Laryngeal Spasm)',
+        description: 'Severe, life-threatening involuntary contracture of laryngeal muscles causing acute upper airway obstruction, vocal cord spasms, inspiratory stridor, and respiratory arrest. Often seen 24–48 hours post-thyroidectomy due to accidental trauma or parathyroid removal.',
+        highlight: 'Laryngospasm with inspiratory stridor; emergency tracheostomy tray at bedside'
+      }
+    ],
+    clinicalContext: 'Normal serum total calcium is 8.5–10.5 mg/dL (ionized: 4.5–5.6 mg/dL). Calcium exerts a membrane-stabilizing "sedative" effect on excitable tissues; thus, when calcium is LOW, nerves and muscles become EXTREMELY EXCITABLE (hyperreflexia, tetany, seizures). Common etiologies include hypoparathyroidism, accidental excision of parathyroid glands during thyroidectomy or neck dissection, acute pancreatitis (calcium saponification), chronic kidney disease (impaired vitamin D activation), vitamin D deficiency, and massive blood transfusions (citrate preservative chelates ionized calcium).',
+    nclexPearls: [
+      'Post-Thyroidectomy Bedside Emergency Equipment: Always keep a tracheostomy tray, suction setup, oxygen delivery equipment, and IV Calcium Gluconate at the bedside 24–48 hours after thyroidectomy or parathyroidectomy.',
+      'Two Classic Physical Assessment Signs: (1) Trousseau\'s Sign: Inflate a sphygmomanometer cuff above systolic blood pressure for 3 minutes; carpal spasm (adduction of thumb, flexion of wrist and MCP joints) occurs. (2) Chvostek\'s Sign: Lightly tap the facial nerve (CN VII) approximately 2 cm anterior to the earlobe; unilateral twitching of facial muscles/lip confirms neuromuscular excitability.',
+      'Administration of IV Calcium Gluconate: Infuse slowly via IV piggyback; rapid IV push can cause severe bradycardia, hypotension, and cardiac arrest. Always place the client on a cardiac monitor during infusion.',
+      'Calcium and Phosphorus Inverse Relationship: Serum calcium and phosphorus have a reciprocal relationship (Ca × PO4). As serum calcium drops, serum phosphorus rises (e.g., in hypoparathyroidism and chronic renal failure).'
+    ],
+    practiceQuestion: {
+      question: 'A nurse is caring for a client 24 hours following a total thyroidectomy. The client reports progressive tingling in the fingers and numbness around the mouth. When assessing the client, the nurse notes light twitching of the lip upon tapping the cheek anterior to the ear. Which immediate action should the nurse prepare for?',
+      options: [
+        'Administer IV calcium gluconate under continuous cardiac monitoring',
+        'Administer 100 mg of oral potassium chloride with orange juice',
+        'Instruct the client to hyperventilate into a paper bag to raise carbon dioxide levels',
+        'Administer oral calcitonin to prevent skeletal calcium resorption'
+      ],
+      correctIndex: 0,
+      rationale: 'The client is exhibiting circumoral paresthesias and a positive Chvostek\'s sign, which are hallmark indicators of acute hypocalcemia (serum Ca < 8.5 mg/dL) resulting from inadvertent parathyroid gland damage or devascularization during the thyroidectomy. Without immediate intervention, acute hypocalcemia rapidly progresses to painful tetany, seizures (Convulsions), cardiac arrhythmias, and life-threatening laryngospasm with stridor (CATS mnemonic). The emergency treatment of choice is intravenous calcium gluconate, administered slowly under continuous ECG telemetry to monitor for bradycardia and dysrhythmias. Paper bag breathing would cause respiratory alkalosis, further decreasing ionized calcium binding, worsening symptoms.'
+    }
+  },
+  {
+    id: 'hypernatremia-signs-fried-salt',
+    shortCode: 'FRIED / SALT',
+    title: 'Hypernatremia Signs & Symptoms (FRIED / SALT)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Key neurological and hyperosmolar signs of high serum sodium: FRIED (Fever, Restless, Increased BP, Edema, Decreased urine) and SALT (Skin, Agitation, Low-grade fever, Thirst).',
+    memoryTip: 'When sodium is high, your cells are "FRIED" — F: Fever & flushed skin, R: Restless & irritable, I: Increased fluid retention & BP, E: Edema (peripheral/pitting), D: Decreased urine output & dry mouth. Alternative mnemonic: SALT (Skin flushed, Agitation, Low-grade fever, Thirst).',
+    highYield: true,
+    tags: ['Electrolytes', 'Hypernatremia', 'Fluids and Electrolytes', 'Neurology', 'Endocrine', 'Diabetes Insipidus'],
+    letters: [
+      {
+        letter: 'F',
+        term: 'Fever (Low-Grade) & Flushed Skin',
+        description: 'Severe cellular dehydration impairs cutaneous capillary microcirculation and hypothalamic thermoregulatory sweat production, resulting in warm, flushed, hyperemic skin and low-grade pyrexia.',
+        highlight: 'Warm, flushed skin and low-grade pyrexia due to impaired sweat evaporative cooling'
+      },
+      {
+        letter: 'R',
+        term: 'Restless & Irritable (Neurological Impairment)',
+        description: 'High extracellular sodium draws water out of cerebral neurons via osmotic gradient, causing brain cell shrinkage. This leads to neuromuscular irritability, restlessness, agitation, confusion, lethargy, hallucinations, and, if severe, seizures and coma.',
+        highlight: 'Intracellular brain cell shrinkage causes agitation, restlessness, and seizure risk'
+      },
+      {
+        letter: 'I',
+        term: 'Increased Fluid Retention & Elevated Blood Pressure',
+        description: 'Hypertonicity stimulates hypothalamic thirst centers and posterior pituitary secretion of antidiuretic hormone (ADH), prompting vascular fluid expansion, hypervolemia, bounding peripheral pulses, and arterial hypertension.',
+        highlight: 'Compensatory ADH and thirst drive intravascular expansion with hypertension'
+      },
+      {
+        letter: 'E',
+        term: 'Edema (Peripheral & Pitting Edema)',
+        description: 'Expansion of total extracellular fluid volume produces dependent pitting edema in the lower extremities, sacral edema in bedbound clients, pulmonary vascular congestion, and rapid daily weight gain.',
+        highlight: 'Dependent pitting peripheral edema and acute weight gain from fluid shift'
+      },
+      {
+        letter: 'D',
+        term: 'Decreased Urinary Output & Dry Mouth',
+        description: 'Maximal renal water conservation under ADH release yields oliguria (< 30 mL/hr) with elevated urine specific gravity (> 1.030), severely dry, sticky oral mucous membranes, and a swollen, dry, furrowed tongue.',
+        highlight: 'Oliguria with high urine specific gravity (> 1.030) and dry, sticky oral mucosa'
+      }
+    ],
+    clinicalContext: 'Normal serum sodium is 135–145 mEq/L. Hypernatremia is defined as serum sodium > 145 mEq/L and represents a hyperosmolar condition ("water deficit relative to sodium solute"). Common causes include inadequate fluid intake (unconscious, elderly, or infant patients unable to access water), excess fluid loss (Diabetes Insipidus with absent ADH, osmotic diuresis in DKA/HHS, severe watery diarrhea, extensive burns), and excess sodium gain (hypertonic 3% saline infusions, sodium bicarbonate boluses). The primary defense mechanism against hypernatremia is thirst; patients with intact thirst and water access rarely develop hypernatremia.',
+    nclexPearls: [
+      'Slow Correction Rule (Cerebral Edema Warning): Never correct hypernatremia too quickly! Rapid lowering of serum sodium with hypotonic IV fluids (0.45% normal saline or D5W) causes water to rush into chronically dehydrated cerebral cells, triggering cerebral edema, brain herniation, and death. Target reduction rate: ≤ 0.5 to 1 mEq/L per hour (maximum 10–12 mEq/L in 24 hours).',
+      'Alternative SALT Mnemonic: S = Skin flushed, A = Agitation/confusion, L = Low-grade fever, T = Thirst (intense, unquenchable polydipsia with swollen red tongue).',
+      'Diabetes Insipidus Connection: DI causes massive polyuria (> 4–20 L/day) of dilute urine (specific gravity < 1.005) leading rapidly to severe dehydration, hypernatremia, and hypovolemic shock. Managed with desmopressin (DDAVP) and free water replacement.',
+      'Seizure Precautions: Due to cerebral dehydration and shifting osmolarity, clients with severe hypernatremia (Na > 155 mEq/L) must be placed on strict seizure precautions (padded bed rails, working suction, oxygen at bedside).'
+    ],
+    practiceQuestion: {
+      question: 'A 78-year-old bedbound client with severe dementia is admitted from an assisted living facility with acute lethargy. Laboratory results reveal serum sodium 158 mEq/L, serum osmolality 325 mOsm/kg, and urine specific gravity 1.035. The provider prescribes an IV infusion of 0.45% sodium chloride. Which clinical consideration is most essential for the nurse to monitor during this fluid therapy?',
+      options: [
+        'Rapid sodium reduction should exceed 2 mEq/L per hour to restore alertness quickly.',
+        'Serum sodium must be lowered gradually to prevent acute cerebral edema and neurological deterioration.',
+        'The client must be fluid-restricted to 500 mL per day to prevent circulatory volume overload.',
+        'Potassium supplements must be withheld because hypernatremia causes severe secondary hyperkalemia.'
+      ],
+      correctIndex: 1,
+      rationale: 'In hypernatremia (Na > 145 mEq/L), brain cells synthesize idiogenic osmoles to protect intracellular volume against osmotic shrinkage. If plasma sodium is corrected too rapidly with hypotonic IV fluids (such as 0.45% NaCl or D5W), free water rushes down the osmotic gradient into the brain cells faster than the osmoles can dissipate, leading to acute intracellular swelling, cerebral edema, seizures, herniation, and permanent brain damage. Therefore, the standard of care is gradual correction at a rate of 0.5 to 1 mEq/L/hr (no more than 10–12 mEq/L over 24 hours). The nurse continuously monitors neurological status, Glascow Coma Scale, and hourly I&O.'
+    }
+  },
+  {
+    id: 'hyperkalemia-causes-machine',
+    shortCode: 'MACHINE',
+    title: 'Causes of Hyperkalemia (The MACHINE)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The comprehensive clinical etiologies of elevated serum potassium: Medications, Acidosis, Cellular destruction, Hypoaldosteronism/Hemolysis, Intake, Nephrons, and impaired Excretion.',
+    memoryTip: 'The Hyperkalemia "MACHINE" pumps up potassium — M: Medications (ACE inhibitors, ARBs, NSAIDs, spironolactone), A: Acidosis (H+ enters cells, K+ shifts out), C: Cellular destruction (burns, crush injury, tumor lysis), H: Hypoaldosteronism (Addison\'s) & Hemolysis, I: Intake (excess IV K+ or salt substitutes), N: Nephrons (renal failure/AKI/CKD), E: Excretion (impaired urinary clearance).',
+    highYield: true,
+    tags: ['Electrolytes', 'Hyperkalemia', 'Cardiovascular', 'Renal', 'Pharmacology', 'Critical Care'],
+    letters: [
+      {
+        letter: 'M',
+        term: 'Medications (ACEi, ARBs, NSAIDs, K+-Sparing Diuretics)',
+        description: 'Pharmacologic agents that hinder potassium clearance: ACE inhibitors (lisinopril), Angiotensin Receptor Blockers (losartan), Potassium-sparing diuretics (spironolactone, triamterene), NSAIDs (decrease renal blood flow/renin), and calcineurin inhibitors (cyclosporine).',
+        highlight: 'ACE inhibitors, ARBs, NSAIDs, and spironolactone block renal K+ elimination'
+      },
+      {
+        letter: 'A',
+        term: 'Acidosis (Metabolic & Respiratory)',
+        description: 'In systemic acidemic states (high extracellular H+ concentration), excess hydrogen ions shift into intracellular fluid to be buffered by intracellular proteins. To maintain electrochemical neutrality, potassium ions exit cells into the intravascular space, driving up serum K+ (for every 0.1 decrease in pH, K+ rises by ~0.6 mEq/L).',
+        highlight: 'H+/K+ cellular exchange: H+ moves into cells, forcing K+ out into plasma'
+      },
+      {
+        letter: 'C',
+        term: 'Cellular Destruction (Burns, Trauma, Lysis)',
+        description: 'Since 98% of total body potassium resides inside cells (140 mEq/L intracellular vs. 4 mEq/L extracellular), massive cytolysis from major thermal burns, crush injuries, rhabdomyolysis, and tumor lysis syndrome spills massive quantities of intracellular potassium directly into systemic circulation.',
+        highlight: 'Massive cytolysis from burns, trauma, or tumor lysis spills intracellular K+'
+      },
+      {
+        letter: 'H',
+        term: 'Hypoaldosteronism & Hemolysis',
+        description: 'Aldosterone promotes distal renal tubular sodium reabsorption and potassium excretion; lack of aldosterone (Addison\'s disease, adrenal crisis) causes potassium retention. Hemolysis—either pathological in vivo or in vitro laboratory artifact from traumatic venipuncture/small-gauge needles—releases red blood cell potassium into serum.',
+        highlight: 'Addison\'s disease lacks aldosterone to excrete K+; hemolysis lyses RBCs'
+      },
+      {
+        letter: 'I',
+        term: 'Intake (Excessive Dietary or IV Potassium)',
+        description: 'Rapid or excessive parenteral potassium administration (NEVER give IV push!) or high dietary intake via potassium-based salt substitutes, potassium supplements, and dried fruits in clients with compromised renal reserve.',
+        highlight: 'Salt substitutes and rapid IV infusions; NEVER administer potassium IV push!'
+      },
+      {
+        letter: 'N',
+        term: 'Nephrons & Renal Failure (AKI / CKD / ESRD)',
+        description: 'The kidneys excrete over 90% of ingested daily potassium. Glomerulotubular dysfunction in acute kidney injury (oliguric phase) or end-stage renal disease disables tubular secretion, making kidney failure the single most frequent cause of clinical hyperkalemia.',
+        highlight: 'Kidney failure (AKI / ESRD) disables the primary 90% excretion route'
+      },
+      {
+        letter: 'E',
+        term: 'Excretion Impaired',
+        description: 'Pathological conditions with drastically decreased glomerular filtration rate, severe hypovolemia, urinary tract obstruction, or tubular resistance to mineralocorticoids prevent normal distal nephron fluid flow and potassium excretion.',
+        highlight: 'Reduced distal tubular flow and low GFR eliminate urinary potassium clearance'
+      }
+    ],
+    clinicalContext: 'Normal serum potassium is 3.5–5.0 mEq/L. Hyperkalemia (serum potassium > 5.0 mEq/L, critical > 6.0 mEq/L) is the most lethal electrolyte abnormality in clinical nursing practice because potassium determines the resting cardiac membrane potential. Elevated potassium causes myocardial hyperexcitability progressing to refractory ventricular fibrillation or asystole. Progression on 12-lead ECG: Tall, narrow, peaked T waves -> Prolonged PR interval and flattened/lost P waves -> Widened QRS complex -> Sine wave pattern -> Ventricular fibrillation or asystole.',
+    nclexPearls: [
+      'Emergency Hyperkalemia Treatment Protocol (Stabilize, Shift, Remove): (1) STABILIZE cardiac membranes: IV Calcium Gluconate (protects myocardium immediately; does NOT lower K+). (2) SHIFT K+ into cells: Regular Insulin 10 units IV + Dextrose 50% (D50) IV bolus, inhaled nebulized Albuterol (high-dose 10–20 mg), and IV Sodium Bicarbonate (if acidotic). (3) REMOVE K+ from body: Loop diuretics (furosemide), Sodium Polystyrene Sulfonate (Kayexalate) or Patiromer via GI tract, and Emergent Hemodialysis (most definitive).',
+      'NEVER Give Potassium IV Push: Potassium chloride (KCl) is a High-Alert medication. Giving K+ IV push or rapid bolus causes instant cardiac arrest! Maximum peripheral IV infusion rate is 10 mEq/hr; maximum central line rate is 20 mEq/hr under continuous telemetry.',
+      'Pseudohyperkalemia (Hemolyzed Specimen): If an asymptomatic client with normal ECG suddenly has a reported K+ of 6.2 mEq/L, check the lab report for "specimen hemolyzed" (caused by prolonged tourniquet time, fist clenching, or small needle gauge) and re-draw before giving aggressive interventions.',
+      'Dietary Warnings with Renal Disease: Clients with CKD/ESRD must strictly avoid high-potassium foods (bananas, oranges, potatoes, tomatoes, avocados, spinach) and potassium chloride-based salt substitutes.'
+    ],
+    practiceQuestion: {
+      question: 'A client with end-stage renal disease (ESRD) missed two hemodialysis sessions. The client arrives at the emergency department with profound muscle weakness and palpitations. The telemetry monitor shows tall, peaked T waves and widening of the QRS complex. Serum potassium is 7.2 mEq/L. Which medication should the nurse prepare to administer FIRST?',
+      options: [
+        'Sodium polystyrene sulfonate (Kayexalate) 30 g orally',
+        'Intravenous calcium gluconate 10% over 2 to 3 minutes',
+        'Regular insulin 10 units IV with 50 mL of 50% dextrose (D50)',
+        'Nebulized albuterol 20 mg over 15 minutes'
+      ],
+      correctIndex: 1,
+      rationale: 'With a serum potassium of 7.2 mEq/L and ECG manifestations of widening QRS complexes and tall peaked T waves, the client is at imminent risk of developing a sine-wave pattern, ventricular fibrillation, or asystolic cardiac arrest. The immediate first-line priority is intravenous Calcium Gluconate. Calcium antagonizes potassium-induced membrane excitability, normalizing myocardial threshold potentials and stabilizing the cardiac cell membrane within 1 to 3 minutes, preventing fatal arrhythmias. Note that calcium gluconate does NOT reduce serum potassium levels; therefore, once the myocardium is stabilized, the nurse immediately administers treatments to shift potassium intracellularly (IV Regular Insulin + D50) and remove potassium from the body (Kayexalate or emergent hemodialysis).'
     }
   },
 
