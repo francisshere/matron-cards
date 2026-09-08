@@ -2,7 +2,7 @@
 // Categorized across the 6 major nursing domains based on standard NCLEX clinical preparation.
 
 export const MNEMONICS_CATEGORIES = [
-  { id: 'fundamentals', name: 'Fundamentals in Nursing', iconKey: 'fundamentals', count: 6 },
+  { id: 'fundamentals', name: 'Fundamentals in Nursing', iconKey: 'fundamentals', count: 14 },
   { id: 'maternal', name: 'Maternal & Child Nursing', iconKey: 'maternal', count: 6 },
   { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 8 },
   { id: 'psych', name: 'Psychiatric Nursing', iconKey: 'psych', count: 5 },
@@ -381,6 +381,600 @@ export const mnemonicsList = [
       ],
       correctIndex: 1,
       rationale: 'For oral opioid analgesics, peak absorption and onset typically occur around 45 to 60 minutes; nursing standards dictate pain reassessment within 60 minutes for oral routes (and 15-30 minutes for IV medications).'
+    }
+  },
+  {
+    id: 'rlq-pain-appendicitis',
+    shortCode: 'APPENDICITIS',
+    title: 'RLQ Pain Differential Diagnosis',
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'A comprehensive clinical framework to systematically evaluate and differentiate the numerous causes of acute right lower quadrant abdominal pain.',
+    memoryTip: '"APPENDICITIS" — Think beyond the appendix! Rule out gynecologic emergencies (ectopic, torsion), bowel pathology, and stones before surgery.',
+    highYield: true,
+    tags: ['Abdominal Assessment', 'Triage', 'Differential Diagnosis', 'GI Emergencies'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Appendicitis / Abscess',
+        description: "Acute inflammation of the vermiform appendix or localized intra-abdominal/psoas abscess. Manifests with periumbilical pain shifting to McBurney's point, low-grade fever, and anorexia.",
+        highlight: "McBurney's point tenderness"
+      },
+      {
+        letter: 'P',
+        term: 'PID / Period (Mittelschmerz)',
+        description: 'Pelvic Inflammatory Disease (cervical motion tenderness, purulent discharge) or mid-cycle ovulatory pain (Mittelschmerz) / dysmenorrhea.',
+        highlight: 'Pelvic inflammatory disease or ovulatory pain'
+      },
+      {
+        letter: 'P',
+        term: 'Pancreatitis',
+        description: 'Although typically epigastric radiating to the back, inflammatory exudate can track down the right paracolic gutter and mimic acute right lower quadrant pathology.',
+        highlight: 'Referred tracking or atypical presentation'
+      },
+      {
+        letter: 'E',
+        term: 'Ectopic Pregnancy / Endometriosis',
+        description: 'Life-threatening ruptured tubal pregnancy in women of childbearing age (positive hCG, sudden unilateral pelvic pain, syncopal hypotension) or chronic cyclic endometriosis implants.',
+        highlight: 'Mandatory STAT urine hCG in childbearing age'
+      },
+      {
+        letter: 'N',
+        term: 'Neoplasia',
+        description: 'Cecal adenocarcinoma, appendiceal carcinoid tumors, or lymphoma presenting with subacute or localized RLQ masses, bowel obstruction, and microcytic anemia.',
+        highlight: 'Cecal / colonic tumors or masses'
+      },
+      {
+        letter: 'D',
+        term: 'Diverticulitis',
+        description: "Right-sided colonic diverticulitis (more prevalent in Asian populations) or Meckel's diverticulitis presenting with localized peritoneal irritation mimicking appendicitis.",
+        highlight: "Cecal or Meckel's diverticulitis"
+      },
+      {
+        letter: 'I',
+        term: 'Intussusception',
+        description: 'Telescoping of a proximal bowel segment into an adjacent distal segment. Classic pediatric presentation includes colicky abdominal pain, "currant jelly" stools, and a sausage-shaped mass.',
+        highlight: 'Sausage-shaped mass & currant jelly stool'
+      },
+      {
+        letter: 'C',
+        term: "Crohn's Disease / Cyst (Ovarian)",
+        description: 'Terminal ileitis exacerbation with transmural inflammation and skip lesions, or ruptured/hemorrhagic ovarian follicular or corpus luteum cyst.',
+        highlight: 'Terminal ileitis or ruptured ovarian cyst'
+      },
+      {
+        letter: 'I',
+        term: 'IBD (Inflammatory Bowel Disease)',
+        description: "Inflammatory bowel exacerbation, particularly Crohn's disease affecting the ileocecal region, resulting in diarrhea, fistulae, cramping, and weight loss.",
+        highlight: 'Terminal ileum involvement & fistulae'
+      },
+      {
+        letter: 'T',
+        term: 'Torsion (Ovary / Testicle)',
+        description: 'Ovarian torsion (twisting of the ovary on its ligamentous pedicle causing arterial compromise) or referred pain from right testicular torsion.',
+        highlight: 'Surgical emergency: ischemia & infarction'
+      },
+      {
+        letter: 'I',
+        term: 'Irritable Bowel Syndrome (IBS)',
+        description: 'Functional bowel disorder characterized by chronic abdominal discomfort, cramping, bloating, and altered bowel habits (IBS-C, IBS-D, or mixed) relieved by defecation.',
+        highlight: 'Diagnosis of exclusion; normal labs/imaging'
+      },
+      {
+        letter: 'S',
+        term: 'Stones (Renal / Ureteral Calculi)',
+        description: 'Nephrolithiasis / urolithiasis with acute ureteral colic. Severe sharp flank pain radiating into the right groin/labia/testicles accompanied by hematuria, nausea, and costovertebral tenderness.',
+        highlight: 'Flank-to-groin radiation & hematuria'
+      }
+    ],
+    clinicalContext: 'On the NCLEX and in clinical triage, evaluating acute RLQ pain requires differentiating surgical emergencies from self-limiting medical conditions. In any female of childbearing age with acute lower abdominal pain, pregnancy status (STAT hCG) must be verified immediately to exclude ruptured ectopic pregnancy before radiology or surgical intervention.',
+    nclexPearls: [
+      'Appendicitis Rupture Warning: Sudden, complete cessation of acute pain in a client with appendicitis is an ominous indicator of appendiceal perforation, leading to diffuse peritonitis and septic shock.',
+      'Heat Application Contraindication: Never apply a heating pad, warm blanket, or enema to a client with undiagnosed RLQ pain, as heat increases blood flow, inflammation, and the risk of appendiceal rupture.',
+      "Peritoneal Signs: Assess for Rovsing's sign (palpation of LLQ causes pain in RLQ), Psoas sign (pain on right hip extension), and Obturator sign (pain on internal rotation of flexed right hip)."
+    ],
+    practiceQuestion: {
+      question: 'A 22-year-old female client presents to the emergency department reporting acute, sharp right lower quadrant abdominal pain rated 9/10, nausea, and dizziness. Which diagnostic order should the nurse prioritize first?',
+      options: [
+        'Urine pregnancy test (human chorionic gonadotropin - hCG)',
+        'Abdominal ultrasound for appendiceal diameter',
+        'Intravenous administration of hydromorphone 1 mg',
+        'Stool sample for occult blood and fecal calprotectin'
+      ],
+      correctIndex: 0,
+      rationale: 'In any female client of childbearing age presenting with acute lower abdominal pain, ruling out a ruptured ectopic pregnancy via a STAT urine or serum hCG test is the first priority. Ruptured ectopic pregnancy is a life-threatening hemorrhagic emergency requiring immediate gynecologic surgical intervention.'
+    }
+  },
+  {
+    id: 'resuscitation-steps-abcde',
+    shortCode: 'ABCDE',
+    title: 'Basic Steps of Resuscitation & Primary Survey',
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'The universal, sequential clinical protocol for conducting a rapid primary assessment, identifying immediate life threats, and stabilizing emergency resuscitation clients.',
+    memoryTip: '"Airway, Breathing, Circulation, Drugs, Environment" — Systematically address life-threatening priorities from oxygen delivery to systemic stability.',
+    highYield: true,
+    tags: ['Emergency Resuscitation', 'NCLEX Priority', 'Primary Survey', 'Life Support'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Airway (with Cervical Spine Protection)',
+        description: 'Verify patency. Check for tongue obstruction, secretions, blood, vomit, or foreign bodies. Suction airway, open using modified jaw-thrust if trauma/c-spine injury suspected, and secure with oral/nasal airway or endotracheal intubation.',
+        highlight: 'Patency & cervical spine stabilization'
+      },
+      {
+        letter: 'B',
+        term: 'Breathing & Ventilation',
+        description: 'Assess respiratory rate, depth, chest symmetry, bilateral breath sounds, work of breathing, and SpO2. Provide high-flow 100% O2 via non-rebreather mask or bag-valve-mask (BVM) ventilatory support. Decompress tension pneumothorax if indicated.',
+        highlight: 'Adequate gas exchange & chest expansion'
+      },
+      {
+        letter: 'C',
+        term: 'Circulation & Hemorrhage Control',
+        description: 'Assess central pulses (carotid/femoral for rate and quality), skin temperature/capillary refill, blood pressure, and heart rhythm. Control active external hemorrhage with direct pressure. Establish 2 large-bore peripheral IV lines (16-18 gauge) or intraosseous (IO) access.',
+        highlight: 'Pulse, hemorrhage control, & 2 large-bore IVs'
+      },
+      {
+        letter: 'D',
+        term: 'Drugs & Neurological Disability',
+        description: 'Administer emergency resuscitation pharmacotherapy (e.g., epinephrine, amiodarone, naloxone, atropine, 50% dextrose). Simultaneously evaluate neurological status using Glasgow Coma Scale (GCS) or AVPU scale and pupillary reflexes (PERRLA).',
+        highlight: 'Emergency ACLS medications & GCS/pupils'
+      },
+      {
+        letter: 'E',
+        term: 'Environment & Exposure Control',
+        description: 'Completely expose the client to inspect for occult injuries, bleeding, rashes, or trauma while vigorously preventing hypothermia. Apply warm blankets, warm IV fluids, and maintain ambient room warmth to avoid the lethal triad of trauma.',
+        highlight: 'Full exposure while preventing hypothermia'
+      }
+    ],
+    clinicalContext: 'On the NCLEX, prioritizing emergency stabilization follows the ABCDE primary survey when a client has a palpable pulse. However, in pulseless cardiac arrest, the American Heart Association (AHA) mandates transitioning immediately to CAB (Chest Compressions, Airway, Breathing) to maintain vital coronary and cerebral perfusion.',
+    nclexPearls: [
+      'Pulse Present vs. Absent: If a client is unresponsive with NO palpable pulse, immediately initiate CAB (chest compressions first!). If a pulse is present, systematically follow ABCDE.',
+      'Cervical Spine Protection: In all trauma clients, use the modified jaw-thrust technique to open the airway; never use the head-tilt/chin-lift maneuver until the cervical spine has been radiologically cleared.',
+      'The Lethal Triad: In trauma resuscitation, hypothermia disrupts coagulation enzymes; keeping the client warm (E: Environment) is vital to prevent coagulopathy and irreversible acidosis.'
+    ],
+    practiceQuestion: {
+      question: 'A trauma client arrives in the emergency department following a high-speed vehicular collision. The client is unresponsive, has loud gurgling respirations at 8 breaths/min, a palpable rapid carotid pulse, and severe facial trauma. What is the nurse\'s immediate priority action?',
+      options: [
+        'Perform a jaw-thrust maneuver and suction the oral airway.',
+        'Begin closed chest compressions at a rate of 100 to 120 per minute.',
+        'Infuse 2 liters of warmed 0.9% normal saline through a large-bore IV.',
+        'Log-roll the client to inspect the posterior thoracic spine for wounds.'
+      ],
+      correctIndex: 0,
+      rationale: 'Because the client has a palpable pulse, the primary survey sequence is ABCDE. Gurgling respirations indicate fluid/blood obstructing the upper airway. The nurse must immediately stabilize the cervical spine using the jaw-thrust maneuver and clear the obstruction via gentle suctioning before addressing breathing, circulation, or posterior exposure.'
+    }
+  },
+  {
+    id: 'malignant-hyperthermia-treatment',
+    shortCode: 'SOME HOT DUDE',
+    title: 'Malignant Hyperthermia (MH) Emergency Treatment',
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'The life-saving emergency protocol to halt the hypermetabolic calcium cascade triggered by volatile anesthetics and depolarizing muscle relaxants.',
+    memoryTip: '"Some Hot Dude Better Give Iced Fluids Fast!" — Stop triggers, 100% O2, Dantrolene, Bicarbonate, Glucose/Insulin, Iced fluids, Fluid/Furosemide, Fast tachycardia control!',
+    highYield: true,
+    tags: ['Perioperative', 'Pharmacology', 'Emergency Protocol', 'Anesthesia Complication'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Stop Triggering Agents ("Some")',
+        description: 'Immediately discontinue all volatile inhalational anesthetics (sevoflurane, desflurane, isoflurane) and depolarizing neuromuscular blockers (succinylcholine). Notify surgeon to halt procedure and call the Malignant Hyperthermia hotline.',
+        highlight: 'Halt volatile gases & succinylcholine immediately'
+      },
+      {
+        letter: 'H',
+        term: 'Hyperventilate / 100% Oxygen ("Hot")',
+        description: 'Hyperventilate the client with 100% oxygen at high flows (10-15 L/min or 2-3 times minute ventilation) to wash out volatile agents and eliminate massive carbon dioxide buildup caused by extreme hypermetabolism.',
+        highlight: '100% FiO2 high-flow hyperventilation'
+      },
+      {
+        letter: 'D',
+        term: 'Dantrolene (2.5 mg/kg) ("Dude")',
+        description: 'Administer IV Dantrolene sodium STAT (initial dose 2.5 mg/kg IV push, repeating every 5-10 minutes up to 10 mg/kg until symptoms subside). Dantrolene is the ONLY specific antidote; it binds to ryanodine receptors (RYR1) to block sarcoplasmic calcium release.',
+        highlight: 'Specific antidote: 2.5 mg/kg IV push STAT'
+      },
+      {
+        letter: 'B',
+        term: 'Bicarbonate ("Better")',
+        description: 'Administer sodium bicarbonate (1-2 mEq/kg IV) guided by arterial blood gas (ABG) results to correct life-threatening mixed metabolic and respiratory acidosis.',
+        highlight: 'Sodium bicarbonate for profound acidosis'
+      },
+      {
+        letter: 'G',
+        term: 'Glucose and Insulin ("Give")',
+        description: 'Administer 10 units regular insulin IV with 50 mL of 50% Dextrose (D50W) to shift extracellular potassium back into cells, combating lethal hyperkalemia resulting from massive skeletal muscle rhabdomyolysis.',
+        highlight: 'Regular insulin + D50W to shift potassium'
+      },
+      {
+        letter: 'I',
+        term: 'IV Fluids and Cooling Blanket ("Iced")',
+        description: 'Infuse cold iced 0.9% normal saline IV (1000 mL every 10 min up to 3000 mL) and apply hypothermia cooling blankets, ice packs to the axillae, groin, and neck, and cold stomach/bladder lavages. Cease cooling when core temp reaches 38°C (100.4°F) to avoid hypothermia overshoot.',
+        highlight: 'Cold iced saline IV & active body cooling'
+      },
+      {
+        letter: 'F',
+        term: 'Fluid Output & Furosemide ("Fluids")',
+        description: 'Place an indwelling urinary catheter to monitor hourly urine output (goal > 1-2 mL/kg/hr). Administer furosemide or mannitol to maintain brisk diuresis and flush out myoglobin, preventing acute tubular necrosis and renal failure.',
+        highlight: 'Urinary output goal > 1-2 mL/kg/hr & diuresis'
+      },
+      {
+        letter: 'F',
+        term: 'Fast Heart / Tachycardia Management ("Fast!")',
+        description: 'Continuously monitor for refractory sinus tachycardia, ventricular arrhythmias, and temperature spikes up to 43°C (109.4°F). Treat dysrhythmias with amiodarone, beta-blockers, or lidocaine. NEVER administer calcium channel blockers with dantrolene!',
+        highlight: 'Avoid calcium channel blockers with dantrolene!'
+      }
+    ],
+    clinicalContext: 'Malignant hyperthermia is an autosomal dominant pharmacogenetic crisis involving skeletal muscle ryanodine receptors (RYR1). Triggered by inhalational anesthetics and succinylcholine, uncontrolled calcium flooding produces severe muscle rigidity (often masseter jaw spasm), explosive metabolic acidosis, hyperkalemia, and late dramatic hyperthermia.',
+    nclexPearls: [
+      'Earliest Sign: Rising end-tidal carbon dioxide (ETCO2 / PETCO2) unresponsive to hyperventilation, along with masseter muscle spasm and unexplained sinus tachycardia, is the earliest clinical sign; high fever is a LATE sign!',
+      'Dantrolene Reconstitution: Each 20 mg vial of dantrolene must be reconstituted with 60 mL of sterile water for injection WITHOUT bacteriostatic preservatives.',
+      'Lethal Drug Interaction: NEVER administer calcium channel blockers (e.g., verapamil, diltiazem) in malignant hyperthermia when giving dantrolene, as this combination can trigger catastrophic hyperkalemic cardiac arrest.'
+    ],
+    practiceQuestion: {
+      question: 'During general anesthesia for an exploratory laparotomy, the nurse anesthetist notes an abrupt rise in end-tidal CO2 from 35 to 70 mmHg, generalized muscle rigidity, and sinus tachycardia of 145 beats/min. Which action must the circulating nurse take immediately?',
+      options: [
+        'Apply warming blankets to maintain normothermia during surgery.',
+        'Administer intravenous diltiazem to control the rapid heart rate.',
+        'Retrieve the emergency malignant hyperthermia cart and prepare IV dantrolene sodium.',
+        'Draw blood for a repeat complete blood count and coagulation profile.'
+      ],
+      correctIndex: 2,
+      rationale: 'The rapid elevation of end-tidal CO2, muscle rigidity, and tachycardia are hallmark signs of Malignant Hyperthermia (MH). The circulating nurse must immediately alert the surgical team, call for the MH crisis cart, and prepare IV dantrolene sodium (2.5 mg/kg). Calcium channel blockers such as diltiazem are contraindicated with dantrolene due to risk of fatal hyperkalemia.'
+    }
+  },
+  {
+    id: 'afib-causes-the-atrial-fibs',
+    shortCode: 'THE ATRIAL FIBS',
+    title: 'Causes of New-Onset Atrial Fibrillation',
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'A structured diagnostic checklist to investigate and identify reversible triggers, underlying structural abnormalities, and secondary etiologies of new-onset atrial fibrillation.',
+    memoryTip: '"THE ATRIAL FIBS" — Thyroid, Hypothermia, Embolism, Alcohol, Trauma, Recent surgery, Ischemia, Atrial enlargement, Lone, Fever/anemia, Infarct, Bad valves, Stimulants.',
+    highYield: true,
+    tags: ['Cardiovascular', 'ECG Assessment', 'Dysrhythmias', 'Etiology'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Thyroid (Hyperthyroidism / Thyrotoxicosis)',
+        description: 'Elevated circulating thyroid hormones (free T3 and T4) increase beta-adrenergic receptor sensitivity in atrial myocytes, frequently precipitating rapid supraventricular tachyarrhythmias and afib.',
+        highlight: 'Hyperthyroidism & elevated T3/T4'
+      },
+      {
+        letter: 'H',
+        term: 'Hypothermia',
+        description: 'Core body temperature dropping below 32°C (89.6°F) increases myocardial irritability, slowing intra-atrial conduction and triggering atrial fibrillation or classic Osborn (J) waves.',
+        highlight: 'Core body temperature < 32°C'
+      },
+      {
+        letter: 'E',
+        term: 'Embolism (Pulmonary Embolism - PE)',
+        description: 'Acute pulmonary thromboembolism obstructs pulmonary vasculature, acutely increasing right ventricular afterload and right atrial stretch, provoking atrial ectopy and flutter/fibrillation.',
+        highlight: 'Acute right heart strain & atrial dilation'
+      },
+      {
+        letter: 'A',
+        term: 'Alcohol ("Holiday Heart Syndrome")',
+        description: 'Binge drinking or acute alcohol withdrawal triggers adrenergic surges, dehydration, and transient electrolyte shifts, inducing paroxysmal atrial fibrillation in healthy individuals.',
+        highlight: '"Holiday Heart" binge drinking & withdrawal'
+      },
+      {
+        letter: 'T',
+        term: 'Trauma (Cardiac Contusion)',
+        description: 'Blunt thoracic trauma (e.g., steering wheel impact in motor vehicle collision) causing myocardial contusion, edema, and localized inflammation of atrial conduction pathways.',
+        highlight: 'Myocardial contusion from blunt chest injury'
+      },
+      {
+        letter: 'R',
+        term: 'Recent Surgery (Post-CABG / Thoracotomy)',
+        description: 'Atrial fibrillation occurs in 30-50% of clients after cardiac surgery (peaking on postoperative days 2-4) due to pericardial inflammation, autonomic imbalance, and fluid shifts.',
+        highlight: 'Post-op cardiac/thoracic surgery (peaks days 2-4)'
+      },
+      {
+        letter: 'I',
+        term: 'Ischemia (Coronary Artery Disease / Angina)',
+        description: 'Compromised coronary perfusion depriving atrial tissue and the sinoatrial/atrioventricular nodal arteries of oxygenated blood, predisposing to electrical instability.',
+        highlight: 'Coronary artery disease & hypoperfusion'
+      },
+      {
+        letter: 'A',
+        term: 'Atrial Enlargement / Dilation',
+        description: 'Structural remodeling from chronic hypertension, congestive heart failure, or cardiomyopathy stretches atrial fibers, creating multiple re-entrant electrical wavelets.',
+        highlight: 'Chronic atrial stretching & remodeling'
+      },
+      {
+        letter: 'L',
+        term: 'Lone or Idiopathic',
+        description: 'Atrial fibrillation occurring in clients under age 60 without clinical, echocardiographic, or hypertensive evidence of cardiopulmonary disease.',
+        highlight: 'Absence of structural heart disease'
+      },
+      {
+        letter: 'F',
+        term: 'Fever, Anemia, High-Output States',
+        description: 'Hyperdynamic circulatory states (severe sepsis, pyrexia, thyrotoxicosis, profound anemia) increase cardiac workload, metabolic demands, and sympathetic tone.',
+        highlight: 'Hyperdynamic high-output demands'
+      },
+      {
+        letter: 'I',
+        term: 'Infarct (Acute Myocardial Infarction)',
+        description: 'Acute ST-elevation or non-ST-elevation myocardial infarction, particularly involving right coronary or left circumflex branches supplying the sinus node.',
+        highlight: 'Acute coronary syndrome involving atrial blood supply'
+      },
+      {
+        letter: 'B',
+        term: 'Bad Valves (Mitral Valve Disease)',
+        description: 'Rheumatic mitral stenosis or severe mitral regurgitation increases left atrial pressure and causes massive atrial dilation, predisposing to mural thrombi and chronic afib.',
+        highlight: 'Mitral stenosis / regurgitation & thrombus risk'
+      },
+      {
+        letter: 'S',
+        term: 'Stimulants (Cocaine, Caffeine, Theophylline)',
+        description: 'Sympathomimetic agents (cocaine, methamphetamine, theophylline, energy drinks, high-dose amphetamines) trigger excessive catecholamine release and atrial irritability.',
+        highlight: 'Sympathomimetics & catecholamine surges'
+      }
+    ],
+    clinicalContext: 'Atrial fibrillation features disorganized, rapid atrial electrical activity (350-600 bpm) with an irregularly irregular ventricular response and absent P waves. The loss of atrial systole ("atrial kick") reduces cardiac output by 20-30%, while blood stasis in the left atrial appendage creates a high risk of thromboembolic stroke. Management focuses on rate control (beta-blockers, diltiazem), rhythm conversion, and systemic anticoagulation.',
+    nclexPearls: [
+      'The 48-Hour Anticoagulation Rule: If atrial fibrillation has lasted longer than 48 hours (or of unknown duration), elective cardioversion must be preceded by at least 3-4 weeks of therapeutic anticoagulation (or transesophageal echocardiogram [TEE] to rule out left atrial appendage clot) to prevent embolic stroke!',
+      'Pulse Deficit Assessment: Detect a pulse deficit by simultaneously auscultating the apical pulse and palpating the radial pulse for a full 60 seconds; unperfused contractions create a lower radial count.',
+      'Rate vs. Rhythm Control: For stable clients with rapid ventricular response (RVR), initial medical management focuses on ventricular rate control (< 100-110 bpm) before attempting rhythm conversion.'
+    ],
+    practiceQuestion: {
+      question: 'A 58-year-old client with no prior cardiac history is admitted to the medical unit with sudden palpitations, fatigue, and an irregularly irregular pulse of 132 bpm. An ECG confirms new-onset atrial fibrillation. Which laboratory evaluation should the nurse anticipate to investigate a reversible endocrine etiology?',
+      options: [
+        'Serum amylase and lipase levels',
+        'Serum thyroid-stimulating hormone (TSH) and free thyroxine (free T4)',
+        'Erythrocyte sedimentation rate (ESR) and C-reactive protein (CRP)',
+        'Serum troponin I and creatine kinase-MB every 8 hours'
+      ],
+      correctIndex: 1,
+      rationale: 'Checking serum TSH and free T4 (Thyroid in THE ATRIAL FIBS) is a standard diagnostic priority in new-onset atrial fibrillation because occult hyperthyroidism or thyrotoxicosis is a frequent, treatable, and reversible underlying trigger for supraventricular tachyarrhythmias.'
+    }
+  },
+  {
+    id: 'stool-assessment-acct',
+    shortCode: 'ACCT',
+    title: 'Stool Assessment & Elimination Evaluation',
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'The foundational 4-point clinical assessment framework for systematically observing, evaluating, and documenting bowel elimination patterns and fecal characteristics.',
+    memoryTip: '"ACCT" — Always Account for Bowel Movements: Amount, Color, Consistency, Timing!',
+    highYield: true,
+    tags: ['Bowel Elimination', 'Gastrointestinal', 'Assessment', 'Documentation'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Amount',
+        description: 'Quantify bowel output objectively (small, moderate, large, or weight in grams for strict pediatric/infant intake and output monitoring, ostomy management, or severe diarrhea).',
+        highlight: 'Volume estimation or precise gram weight'
+      },
+      {
+        letter: 'C',
+        term: 'Color',
+        description: 'Observe fecal pigmentation: Normal brown (stercobilin / bile); Clay / pale white (biliary tract obstruction / absence of bile); Black tarry / melena (upper GI bleed, bismuth, oral iron); Bright red / hematochezia (lower GI bleed, hemorrhoids); Yellow greasy / steatorrhea (malabsorption, cystic fibrosis, chronic pancreatitis).',
+        highlight: 'Brown, black tarry, clay-colored, red, or yellow'
+      },
+      {
+        letter: 'C',
+        term: 'Consistency',
+        description: 'Characterize stool form using the Bristol Stool Form Scale: Type 1-2 (hard lumps/nuts; indicates severe constipation/slow transit); Type 3-4 (smooth, sausage-shaped; normal healthy stool); Type 5-7 (soft blobs, mushy, or liquid watery diarrhea; indicates hypermotility, infection, or malabsorption).',
+        highlight: 'Bristol Stool Form Scale (Type 1 to 7)'
+      },
+      {
+        letter: 'T',
+        term: 'Timing',
+        description: 'Assess frequency, regularity, relationship to meals (gastrocolic reflex), and duration since last bowel movement. Vital for detecting postoperative paralytic ileus, bowel obstruction, or C. difficile infection.',
+        highlight: 'Frequency, last movement, & relation to meals'
+      }
+    ],
+    clinicalContext: 'Bowel assessment is a primary fundamental nursing responsibility. Subtle changes in stool amount, color, consistency, and timing can serve as early warning signs of life-threatening complications such as gastrointestinal hemorrhage, bowel obstruction, biliary atresia in neonates, and hospital-acquired Clostridioides difficile colitis.',
+    nclexPearls: [
+      'Upper vs. Lower GI Bleed: Melena (black, tarry, foul-smelling stool) typically reflects bleeding of ≥ 50-100 mL from the upper GI tract (esophagus, stomach, duodenum); hematochezia (bright red blood) indicates lower bowel bleeding or massive brisk upper bleed.',
+      'Acholic (Clay-Colored) Stool: Clay-colored stool indicates lack of bile pigment (urobilin/stercobilin) entering the duodenum due to common bile duct obstruction (gallstones, pancreatic cancer, or biliary atresia).',
+      'C. Difficile Hand Hygiene: When dealing with infectious watery diarrhea suspected or confirmed as Clostridioides difficile, the nurse MUST wash hands with soap and water; alcohol-based hand gels do not kill spores!'
+    ],
+    practiceQuestion: {
+      question: 'A postoperative client who underwent open common bile duct exploration passes stool that appears pale, clay-colored, and chalky. What physiological mechanism explains this assessment finding?',
+      options: [
+        'Digestive degradation of blood pigments from an upper gastrointestinal bleed.',
+        'Absence of bile pigments reaching the intestinal tract due to biliary duct obstruction.',
+        'Rapid small-bowel transit time causing poor fat and carbohydrate absorption.',
+        'Normal temporary discoloration caused by oral prophylactic broad-spectrum antibiotics.'
+      ],
+      correctIndex: 1,
+      rationale: 'Normal brown stool pigmentation is produced by stercobilin (derived from bilirubin excreted in bile). When bile flow is blocked or obstructed from entering the duodenum, stercobilin cannot form, causing stools to appear pale, chalky, or clay-colored (acholic).'
+    }
+  },
+  {
+    id: 'manipulation-nursing-plan-3cs',
+    shortCode: "The 3 C's",
+    title: "Manipulation Nursing Plan: The 3 C's",
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'A core behavioral management framework to address and diffuse manipulative behaviors by fostering Cooperation, Compromise, and Collaboration.',
+    memoryTip: 'Promote the "3 C\'s" — Cooperation, Compromise, Collaboration. Set clear limits while channeling clients toward constructive partnership!',
+    highYield: true,
+    tags: ['Behavioral Management', 'Communication', 'Therapeutic Relationship', 'Limit Setting'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Cooperation',
+        description: 'Foster mutual cooperation by establishing clear, non-negotiable unit rules and consistent boundaries across all shifts. Prevent staff splitting by ensuring all team members adhere strictly to the unified plan of care.',
+        highlight: 'Consistent unit rules & staff cohesion'
+      },
+      {
+        letter: 'C',
+        term: 'Compromise',
+        description: 'Teach adaptive negotiation and realistic compromise within established safety parameters. Reinforce that therapeutic relationships require give-and-take rather than demanding or coercive tactics to achieve one-sided demands.',
+        highlight: 'Healthy negotiation within safe boundaries'
+      },
+      {
+        letter: 'C',
+        term: 'Collaboration',
+        description: 'Actively involve the client in formulating their therapeutic goals, schedules, and treatment plan. Providing legitimate choices gives the client a healthy sense of control and autonomy, reducing the urge to manipulate.',
+        highlight: 'Joint goal setting & shared decision-making'
+      }
+    ],
+    clinicalContext: 'Manipulative behaviors frequently occur when clients experience severe anxiety, loss of control, personality disorders (e.g., borderline or antisocial), or substance use disorders. The primary nursing interventions include setting firm, clear, non-punitive limits, avoiding power struggles, and maintaining continuous team communication to prevent "splitting". Promoting the 3 C\'s transforms destructive behavioral patterns into therapeutic cooperation.',
+    nclexPearls: [
+      'Firm Limit Setting: When establishing boundaries, state rules calmly and matter-of-factly without anger, moralizing, or entering debates.',
+      'Staff Splitting Prevention: Conduct regular shift huddles so all staff members enforce the exact same behavioral boundaries 24/7.',
+      'Positive Reinforcement: Directly praise and reinforce instances where the client utilizes open, honest communication rather than manipulative schemes.'
+    ],
+    practiceQuestion: {
+      question: 'A hospitalized client with a history of manipulative behavior approaches the evening nurse and says, "The day nurse promised I could stay up 2 hours past curfew because I\'ve been good, but the charge nurse is being cruel. You\'re the only nurse who understands me, so please let me stay up tonight." What is the nurse\'s best response?',
+      options: [
+        '"I will grant you 1 extra hour tonight if you promise not to tell the charge nurse."',
+        '"The unit curfew is 10:00 PM for all clients. We can collaborate on scheduling your free time for tomorrow afternoon."',
+        '"Why are you always trying to cause conflicts between the day and evening staff?"',
+        '"You must go to your room immediately, or your privileges will be revoked tomorrow."'
+      ],
+      correctIndex: 1,
+      rationale: 'The nurse must maintain consistent, objective boundaries to prevent staff splitting while offering collaboration within acceptable unit parameters (the 3 C\'s: Cooperation, Compromise, Collaboration). Stating the rule calmly and offering a collaborative plan channels the client toward direct, adaptive behaviors without confrontation or appeasement.'
+    }
+  },
+  {
+    id: 'pain-history-older-saab',
+    shortCode: 'OLDER SAAB',
+    title: 'Comprehensive Pain History Checklist',
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'A thorough 9-point clinical mnemonic checklist for systematically obtaining an in-depth pain history and characterizing discomfort.',
+    memoryTip: '"OLDER SAAB" — Onset, Location, Description, Exacerbating, Radiation, Severity, Associated symptoms, Alleviating, Before. Don\'t let pain go unassessed!',
+    highYield: true,
+    tags: ['Pain Assessment', 'Health History', 'Symptom Analysis', 'Vital Signs'],
+    letters: [
+      {
+        letter: 'O',
+        term: 'Onset',
+        description: 'When did the pain first begin? Was the onset abrupt and sudden (suggesting acute vascular event, rupture, or infarction) or insidious and gradual (suggesting chronic inflammation or progressive disease)?',
+        highlight: 'Start time & sudden vs. gradual'
+      },
+      {
+        letter: 'L',
+        term: 'Location',
+        description: 'Where is the pain situated anatomically? Ask the client to point with one finger to the exact focal point. Differentiate well-localized somatic pain from diffuse visceral pain.',
+        highlight: 'Exact anatomical site & localization'
+      },
+      {
+        letter: 'D',
+        term: 'Description (What Does It Feel Like)',
+        description: 'Quality and character of the pain in the client\'s own words: sharp, stabbing, burning (neuropathic), aching, throbbing (vascular), cramping, or crushing (ischemic).',
+        highlight: 'Sensory quality (burning, sharp, dull)'
+      },
+      {
+        letter: 'E',
+        term: 'Exacerbating Factors',
+        description: 'What actions, movements, or conditions aggravate the pain? Inquire about deep inspiration (pleuritic), eating/meals (GI ulcer vs cholecystitis), physical activity, or coughing.',
+        highlight: 'Triggers, motion, respiration, & meals'
+      },
+      {
+        letter: 'R',
+        term: 'Radiation',
+        description: 'Does the pain radiate or travel anywhere else? Classic examples include cardiac pain radiating to jaw/left arm, renal colic radiating to groin, or sciatica radiating down the leg.',
+        highlight: 'Referral path & dermatomal pattern'
+      },
+      {
+        letter: 'S',
+        term: 'Severity',
+        description: 'Quantify intensity using an evidence-based scale: Numeric Rating Scale (0-10), Wong-Baker FACES, or FLACC scale for nonverbal or pediatric clients at rest and during movement.',
+        highlight: 'Validated scale rating (0 to 10)'
+      },
+      {
+        letter: 'A',
+        term: 'Associated Symptoms',
+        description: 'What other symptoms accompany the pain episode? Check for autonomic signs like nausea, vomiting, diaphoresis, dizziness, shortness of breath, palpitations, or pallor.',
+        highlight: 'Nausea, diaphoresis, dyspnea, pallor'
+      },
+      {
+        letter: 'A',
+        term: 'Alleviating Factors',
+        description: 'What interventions reduce or eliminate the pain? Note pharmacological relief (analgesics, antacids) and non-pharmacological methods (repositioning, rest, heat, cold, elevation).',
+        highlight: 'Relief methods & effective interventions'
+      },
+      {
+        letter: 'B',
+        term: 'Before (Ever Experienced This Before)',
+        description: 'Has the client ever experienced identical or similar pain in the past? If yes, what was the established medical diagnosis, and what therapies proved most effective?',
+        highlight: 'Previous episodes & recurrence history'
+      }
+    ],
+    clinicalContext: 'Pain is recognized as the "fifth vital sign" and is fundamentally subjective. A thorough pain history using OLDER SAAB enables the nurse to systematically investigate acute visceral or ischemic emergencies versus chronic neuropathic and musculoskeletal conditions, facilitating rapid, targeted clinical decision-making.',
+    nclexPearls: [
+      'Self-Report Priority: The client\'s self-report is always the most reliable indicator of pain intensity, even when physiological vital signs appear completely normal.',
+      'Reassessment Standard: Always reassess pain within 15-30 minutes after IV analgesic administration and within 45-60 minutes after oral analgesic administration.',
+      '"Before" Red Flag: A symptom that is "new, different, or more severe than ever experienced before" requires immediate provider notification to rule out acute life threats.'
+    ],
+    practiceQuestion: {
+      question: 'A 60-year-old client reports severe mid-epigastric discomfort. When the nurse asks, "Have you ever experienced pain like this in the past?", which component of the comprehensive pain history is being assessed?',
+      options: [
+        'Associated symptoms',
+        'Before (prior experience)',
+        'Exacerbating factors',
+        'Description of sensory quality'
+      ],
+      correctIndex: 1,
+      rationale: 'Asking whether the client has ever had this discomfort before assesses the "B" (Before) dimension of the OLDER SAAB checklist. Establishing whether pain is recurrent or unprecedented helps differentiate chronic recurrent disorders from emergent, acute pathological events.'
+    }
+  },
+  {
+    id: 'pain-management-abcde',
+    shortCode: 'ABCDE',
+    title: 'Core Principles of Pain Management',
+    category: 'fundamentals',
+    categoryName: 'Fundamentals in Nursing',
+    summary: 'A client-centered ethical and clinical framework directing the nurse\'s approach to pain assessment, advocacy, and collaborative management.',
+    memoryTip: '"ABCDE" — Ask, Believe, Choices, Deliver, Empower. Pain is what the client says it is; build therapeutic trust through timely intervention!',
+    highYield: true,
+    tags: ['Pain Management', 'Client Advocacy', 'Nursing Ethics', 'Therapeutic Communication'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Ask About the Pain',
+        description: 'Routinely and systematically screen for pain using standardized, validated assessment tools during initial intake, with routine vital signs, and following any procedure.',
+        highlight: 'Systematic, routine screening'
+      },
+      {
+        letter: 'B',
+        term: 'Believe the Client',
+        description: 'Always believe the client and family reports of pain and what relieves it. Absence of objective signs (e.g., normal vitals in chronic pain) does not invalidate subjective pain reports.',
+        highlight: 'Client report is the gold standard'
+      },
+      {
+        letter: 'C',
+        term: 'Choices (Inform Options)',
+        description: 'Educate clients regarding all available pain relief choices, including multimodal pharmacotherapy (opioids, NSAIDs, acetaminophen) and non-pharmacologic interventions (heat/cold, repositioning, distraction).',
+        highlight: 'Multimodal choices & client preferences'
+      },
+      {
+        letter: 'D',
+        term: 'Deliver Interventions Timely',
+        description: 'Deliver pain management interventions safely, coordinate care promptly, and administer medications when promised. Timely intervention builds trust and prevents severe breakthrough pain.',
+        highlight: 'Prompt delivery & trust building'
+      },
+      {
+        letter: 'E',
+        term: 'Empower & Enable Client Control',
+        description: 'Empower and enable clients and families to take active control of their pain management, including education on patient-controlled analgesia (PCA) and setting personal comfort goals.',
+        highlight: 'PCA education & client empowerment'
+      }
+    ],
+    clinicalContext: 'Pain management is a fundamental ethical and clinical nursing obligation. Overcoming personal biases, recognizing physiological habituation to chronic pain, preventing undertreatment, and fostering trust through prompt, coordinated delivery of analgesics are high-frequency NCLEX concepts.',
+    nclexPearls: [
+      'Vital Signs Adaptation: In chronic persistent pain, autonomic signs (tachycardia, hypertension) habituate and return to baseline. Never withhold analgesics because vital signs appear normal.',
+      'PCA Safety Rule: Only the CLIENT is permitted to push the button on a Patient-Controlled Analgesia (PCA) device. Family members or staff pushing the button ("PCA by proxy") is dangerous and contraindicated.',
+      'Preemptive Administration: Administer prescribed analgesics 30-45 minutes before painful activities (e.g., physical therapy, wound dressing changes) to ensure peak comfort.'
+    ],
+    practiceQuestion: {
+      question: 'A client with chronic sickle cell vaso-occlusive crisis reports pain rated 9/10 while calmly reading a magazine. Vital signs show blood pressure 124/76 mmHg and pulse 72 bpm. Guided by the ABCDE pain management framework, what is the nurse\'s priority action?',
+      options: [
+        'Withhold the prescribed opioid analgesic because the client does not exhibit autonomic signs of severe distress.',
+        'Believe the client\'s self-report and administer the prescribed analgesic promptly.',
+        'Encourage the client to continue reading since distraction appears sufficient.',
+        'Instruct the client that medication is reserved for when pain disrupts normal activity.'
+      ],
+      correctIndex: 1,
+      rationale: 'Under the ABCDE pain management framework, the nurse must Believe (B) the client\'s self-report. Pain is subjective; clients with chronic pain or recurrent crises adapt physiologically (normal vital signs) and develop behavioral coping strategies (such as reading). Pain must be treated according to the reported rating.'
     }
   },
 
