@@ -4,7 +4,7 @@
 export const MNEMONICS_CATEGORIES = [
   { id: 'fundamentals', name: 'Fundamentals in Nursing', iconKey: 'fundamentals', count: 14 },
   { id: 'maternal', name: 'Maternal & Child Nursing', iconKey: 'maternal', count: 10 },
-  { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 8 },
+  { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 31 },
   { id: 'psych', name: 'Psychiatric Nursing', iconKey: 'psych', count: 5 },
   { id: 'pharmacology', name: 'Pharmacology Nursing', iconKey: 'pharmacology', count: 6 },
   { id: 'communicable', name: 'Communicable Diseases', iconKey: 'communicable', count: 4 },
@@ -2086,6 +2086,1532 @@ export const mnemonicsList = [
       ],
       correctIndex: 1,
       rationale: 'Topical pharyngeal anesthesia temporarily abolishes the protective gag and swallowing reflexes mediated by cranial nerves IX (Glossopharyngeal) and X (Vagus). The nurse must verify return of the gag reflex prior to administering oral fluids to prevent pulmonary aspiration.'
+    }
+  },
+  {
+    id: 'body-systems-mr-dice-runs',
+    shortCode: 'MR DICE RUNS',
+    title: 'Human Body Systems: Complete Organ Overview',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'A foundational 10-system anatomy and medical-surgical framework organizing the major human organ systems for systematic head-to-toe clinical assessment.',
+    memoryTip: '"MR DICE RUNS" — Muscle, Respiratory, Digestive, Integumentary, Circulatory, Endocrine, Reproductive, Urinary, Nervous, Skeletal. Roll the dice on comprehensive systemic assessment!',
+    highYield: true,
+    tags: ['Anatomy & Physiology', 'Comprehensive Assessment', 'Organ Systems', 'Head-to-Toe'],
+    letters: [
+      {
+        letter: 'M',
+        term: 'Muscular System',
+        description: 'Facilitates voluntary body movement, biomechanical stability, posture maintenance, and thermogenesis. Encompasses skeletal, smooth, and cardiac muscular tissues.',
+        highlight: 'Movement, posture, & thermogenesis'
+      },
+      {
+        letter: 'R',
+        term: 'Respiratory System',
+        description: 'Facilitates pulmonary ventilation, external alveolar gas exchange (oxygen uptake and carbon dioxide release), systemic acid-base balance, and vocal phonation.',
+        highlight: 'Alveolar gas exchange & acid-base regulation'
+      },
+      {
+        letter: 'D',
+        term: 'Digestive System',
+        description: 'Performs mechanical processing, chemical enzymatic hydrolysis, nutrient and water absorption, and elimination of solid alimentary waste products.',
+        highlight: 'Hydrolysis, absorption, & solid elimination'
+      },
+      {
+        letter: 'I',
+        term: 'Integumentary System',
+        description: 'The body\'s primary physical, chemical, and biological barrier against environmental pathogens, ultraviolet radiation, and water loss; mediates perspirative cooling and Vitamin D synthesis.',
+        highlight: 'Barrier defense, thermoregulation, & Vitamin D'
+      },
+      {
+        letter: 'C',
+        term: 'Circulatory System',
+        description: 'Cardiovascular distribution network (heart, arterial tree, capillary beds, and venous capacitance) providing systemic tissue perfusion, oxygen transport, and metabolic clearance.',
+        highlight: 'Tissue perfusion & hemodynamic transport'
+      },
+      {
+        letter: 'E',
+        term: 'Endocrine System',
+        description: 'Glandular regulatory axis (hypothalamus, pituitary, thyroid, adrenals, islets of Langerhans, gonads) secreting circulating hormones to coordinate cellular metabolism and homeostasis.',
+        highlight: 'Hormonal regulation & homeostasis'
+      },
+      {
+        letter: 'R',
+        term: 'Reproductive System',
+        description: 'Gonads, gametogenic pathways, and accessory organs producing haploid gametes (ova and spermatozoa), sex hormones, and supporting fetal gestation and parturition.',
+        highlight: 'Gamete generation, sex steroids, & gestation'
+      },
+      {
+        letter: 'U',
+        term: 'Urinary System',
+        description: 'Renal, ureteral, and vesical apparatus filtering blood plasma to regulate fluid volume, electrolytes, acid-base equilibrium, blood pressure, and excretion of nitrogenous wastes.',
+        highlight: 'Plasma ultrafiltration & fluid-electrolyte balance'
+      },
+      {
+        letter: 'N',
+        term: 'Nervous System',
+        description: 'Central and peripheral neural structures (encephalon, spinal cord, cranial/peripheral nerves) coordinating rapid sensory transduction, cognitive processing, and autonomic motor impulses.',
+        highlight: 'Neural integration & bioelectrical signaling'
+      },
+      {
+        letter: 'S',
+        term: 'Skeletal System',
+        description: 'Osteoarticular framework of 206 bones, cartilaginous plates, and ligamentous capsules providing structural leverage, vital visceral protection, mineral storage, and hematopoiesis.',
+        highlight: 'Structural support & marrow hematopoiesis'
+      }
+    ],
+    clinicalContext: 'In Medical & Surgical nursing, conducting a comprehensive Review of Systems (ROS) requires a methodical checklist. Pathological insults (such as sepsis, septic shock, or multiple organ dysfunction syndrome [MODS]) trigger sequential system failures. Recognizing how body systems interrelate enables nurses to intervene before irreversible decompensation occurs.',
+    nclexPearls: [
+      'Priority System Triad: On NCLEX clinical prioritization, the ABC systems—Circulatory (C), Respiratory (R), and Nervous (N)—always take precedence over other body systems.',
+      'Cross-System Pathology: Renal (Urinary) failure causes secondary Circulatory failure (fluid overload and left ventricular hypertrophy), Skeletal failure (renal osteodystrophy and calcium-phosphate imbalances), and Endocrine failure (erythropoietin deficiency and anemia).',
+      'Systemic Compensation: In metabolic acidosis (Digestive/Urinary), the Respiratory system immediately compensates via deep, rapid breathing (Kussmaul respirations) to blow off carbon dioxide.'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical nurse is admitting a client with end-stage renal disease (ESRD). The client has a hemoglobin of 7.9 g/dL, blood pressure of 172/98 mmHg, and generalized severe pruritus with excoriations. Which body systems are directly exhibiting clinical manifestations of this disease process?',
+      options: [
+        'Circulatory, Endocrine, and Integumentary systems',
+        'Muscular, Skeletal, and Reproductive systems only',
+        'Respiratory and Digestive systems only',
+        'Nervous and Muscular systems only'
+      ],
+      correctIndex: 0,
+      rationale: 'End-stage renal disease directly impacts multiple interrelated body systems: the Endocrine system (impaired erythropoietin production leading to severe normocytic anemia), the Circulatory system (sodium and fluid retention causing hypertension and volume overload), and the Integumentary system (uremic toxin accumulation causing pruritus and uremic frost).'
+    }
+  },
+  {
+    id: 'cholelithiasis-risk-four-fs',
+    shortCode: "The 4 F's",
+    title: "Cholelithiasis Risk Factors: The 4 F's of Gallstones",
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic clinical epidemiological profile characterizing individuals at high risk for cholesterol gallstone formation (cholelithiasis).',
+    memoryTip: '"The 4 F\'s of Gallstones" — Fat, Forty, Female, Fertile. Estrogen increases biliary cholesterol secretion, while obesity supersaturates bile!',
+    highYield: true,
+    tags: ['Gastrointestinal', 'Hepatobiliary', 'Risk Assessment', 'Surgical Prep'],
+    letters: [
+      {
+        letter: 'F',
+        term: 'Fat (Obesity / BMI ≥ 30)',
+        description: 'Adiposity and metabolic syndrome accelerate hepatic cholesterol synthesis and biliary secretion, supersaturating bile. High cholesterol-to-phospholipid ratios lead to microcrystal precipitation and gallstone formation.',
+        highlight: 'Obesity & cholesterol-supersaturated bile'
+      },
+      {
+        letter: 'F',
+        term: 'Forty (Age ≥ 40 Years)',
+        description: 'Risk increases with advancing age due to diminished hepatic conversion of cholesterol into bile acids, reduced gallbladder contractile responsiveness to cholecystokinin (CCK), and prolonged lithogenic exposure.',
+        highlight: 'Age ≥ 40 & decreased gallbladder motility'
+      },
+      {
+        letter: 'F',
+        term: 'Female (Female Gender)',
+        description: 'Biological females experience more than double the incidence of cholelithiasis compared to males. Estrogen stimulates hepatic lipoprotein receptors, significantly increasing cholesterol secretion into bile.',
+        highlight: 'Estrogen elevates biliary cholesterol'
+      },
+      {
+        letter: 'F',
+        term: 'Fertile (Multiparity / Estrogen Exposure)',
+        description: 'Multiparity, pregnancy, oral contraceptive pills (OCPs), and hormone replacement therapy (HRT) elevate circulating progesterone and estrogen levels. Progesterone suppresses gallbladder emptying, promoting prolonged biliary stasis.',
+        highlight: 'Multiparity, pregnancy, & oral contraceptives'
+      }
+    ],
+    clinicalContext: 'Cholelithiasis affects up to 20% of adults. Symptomatic gallstones cause acute biliary colic—sudden, severe right upper quadrant (RUQ) or epigastric pain radiating to the right infrascapular region or shoulder, typically precipitated by high-fat meals. Complete cystic duct obstruction produces acute cholecystitis with fever, leukocytosis, and positive Murphy\'s sign.',
+    nclexPearls: [
+      'Postprandial Biliary Colic: Biliary colic typically peaks 30 minutes to 2 hours following fatty meals because ingested lipids trigger cholecystokinin (CCK) release, causing the gallbladder to contract forcefully against an obstructed cystic duct.',
+      "Murphy's Sign: Inspiratory arrest elicited upon deep palpation of the right upper quadrant beneath the costal margin is pathognomonic for acute cholecystitis.",
+      'Post-Cholecystectomy Dietary Teaching: Clients must follow a low-fat diet for 4 to 6 weeks postoperatively, gradually reintroducing healthy fats as the liver and common bile duct adapt to continuous bile drainage.'
+    ],
+    practiceQuestion: {
+      question: 'A 42-year-old multiparous female with a BMI of 33 kg/m² presents to the emergency department with severe, colicky right upper quadrant abdominal pain radiating to her right shoulder after eating fried chicken. Which diagnostic evaluation should the nurse prepare the client for first?',
+      options: [
+        'Colonoscopy with biopsy',
+        'Abdominal ultrasound of the right upper quadrant',
+        'Barium swallow study',
+        'Serum cardiac troponin and 12-lead ECG'
+      ],
+      correctIndex: 1,
+      rationale: 'The client presents with the classic "4 F\'s" profile for cholelithiasis (Female, Forty, Fertile, Fat). Right upper quadrant pain radiating to the right scapula triggered by fatty food intake is classic for acute biliary colic/cholecystitis. A right upper quadrant abdominal ultrasound is the gold standard, non-invasive initial imaging modality to visualize gallstones and gallbladder wall thickening.'
+    }
+  },
+  {
+    id: 'minor-bleeding-signs-beep',
+    shortCode: 'BEEP',
+    title: 'Signs of Minor Bleeding & Thrombocytopenia',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'A vital bedside nursing assessment mnemonic to quickly detect early, subtle signs of mucocutaneous bleeding in clients on anticoagulants or with thrombocytopenia.',
+    memoryTip: '"BEEP" — Bleeding gums, Ecchymoses, Epistaxis, Petechiae. Sound the alarm on minor bleeds before they become major hemorrhagic shocks!',
+    highYield: true,
+    tags: ['Hematology', 'Anticoagulation Safety', 'Medication Safety', 'Bleeding Precautions'],
+    letters: [
+      {
+        letter: 'B',
+        term: 'Bleeding Gums (Gingival Hemorrhage)',
+        description: 'Spontaneous oozing or bleeding after oral hygiene. Indicates impaired primary hemostasis and capillary fragility. Instruct the client to use soft-bristled toothbrushes, avoid flossing, and avoid alcohol-containing mouthwashes.',
+        highlight: 'Gingival bleeding & soft-bristle toothbrush'
+      },
+      {
+        letter: 'E',
+        term: 'Ecchymoses (Bruises)',
+        description: 'Large subcutaneous extravasations of blood (> 1 cm) occurring spontaneously or after minor bumping. Routinely inspect dependent extremities, pressure points, and venipuncture sites for expanding hematomas.',
+        highlight: 'Spontaneous subcutaneous bruising'
+      },
+      {
+        letter: 'E',
+        term: 'Epistaxis (Nosebleed)',
+        description: 'Unilateral or bilateral bleeding from the nasal Kiesselbach plexus. Position client sitting upright, leaning forward (never tilt backward to avoid swallowing blood and aspiration), and apply steady compression for 10-15 minutes.',
+        highlight: 'Anterior nasal bleeding; lean forward'
+      },
+      {
+        letter: 'P',
+        term: 'Petechiae (Tiny Purplish Spots)',
+        description: 'Pinpoint, non-blanching red or purplish macules (1-3 mm) resulting from intradermal capillary extravasation. Classic hallmark of severe thrombocytopenia (platelets < 50,000/mcL).',
+        highlight: 'Pinpoint non-blanching intradermal macules'
+      }
+    ],
+    clinicalContext: 'Clients receiving systemic anticoagulants (heparin, enoxaparin, warfarin, DOACs), antiplatelet therapy, or undergoing chemotherapy with bone marrow suppression are at high risk of hemorrhagic complications. Prompt identification of superficial "BEEP" signs prevents occult evolution into fatal gastrointestinal, retroperitoneal, or intracranial bleeding.',
+    nclexPearls: [
+      'Platelet Thresholds: Normal platelets are 150,000-400,000/mcL. Bleeding precautions are initiated when platelets drop < 50,000/mcL; spontaneous, life-threatening intracranial or GI bleeding risk surges when platelets fall < 10,000-20,000/mcL.',
+      'Bleeding Precautions Checklist: Electric razors only, soft toothbrush, avoid intramuscular injections, avoid rectal temperatures/enemas, gentle nose blowing, and apply prolonged pressure (≥ 5 min) after venipuncture.',
+      'Petechiae Assessment: Always apply digital or glass slide pressure (diascopy); petechiae do NOT blanch, distinguishing them from allergic erythema or telangiectasias.'
+    ],
+    practiceQuestion: {
+      question: 'A client with severe aplastic anemia receiving packed red blood cells has a morning platelet count of 22,000/mcL. During the head-to-toe assessment, the nurse discovers multiple pinpoint, non-blanching purple macules on the lower legs and bleeding gingiva. What is the priority nursing action?',
+      options: [
+        'Advise the client to use a firm toothbrush to stimulate healthy gum healing.',
+        'Institute strict bleeding precautions and immediately notify the healthcare provider.',
+        'Administer a prescribed dose of oral aspirin for generalized discomfort.',
+        'Apply tight elastic compression stockings over the lower leg macules.'
+      ],
+      correctIndex: 1,
+      rationale: 'Petechiae and bleeding gums are classic superficial signs of minor bleeding (BEEP) signifying severe thrombocytopenia (< 50,000/mcL). The nurse must initiate strict bleeding precautions (soft toothbrush, electric razor, avoid IM injections, prevent falls) and alert the provider to anticipate an immediate platelet transfusion and evaluate for internal hemorrhage.'
+    }
+  },
+  {
+    id: 'sickle-cell-crisis-hopia',
+    shortCode: 'HOPIA',
+    title: 'Sickle Cell Disease: Vaso-Occlusive Crisis Management',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The 5-step prioritized clinical protocol to reverse sickling, relieve ischemic pain, treat precipitating triggers, and protect clients with sickle cell anemia.',
+    memoryTip: '"HOPIA" — Hydration, Oxygenation, Pain, Infection, Avoid high places. Reverse sickle aggregation and restore capillary microcirculation!',
+    highYield: true,
+    tags: ['Hematology', 'Sickle Cell Crisis', 'Pain Management', 'Vaso-Occlusive Crisis'],
+    letters: [
+      {
+        letter: 'H',
+        term: 'Hydration (Aggressive IV & Oral Fluids)',
+        description: 'Vigorous intravenous fluid infusion (hypotonic solutions like 0.45% normal saline at 1.5-2 times maintenance) dilutes blood viscosity, corrects cellular hemoconcentration, and mobilizes rigid sickled erythrocytes out of occluded microvessels.',
+        highlight: 'High-rate IV fluids reduce blood viscosity'
+      },
+      {
+        letter: 'O',
+        term: 'Oxygenation (Supplemental O2 Delivery)',
+        description: 'Administer supplemental oxygen to correct hypoxemia. Hypoxemia causes deoxygenated hemoglobin S (HbS) to polymerize into rigid crescent sickles; oxygenation halts the cycle of sickling and tissue ischemia.',
+        highlight: 'Prevents further HbS polymerization'
+      },
+      {
+        letter: 'P',
+        term: 'Pain Relief (Scheduled IV Opioids)',
+        description: 'Severe ischemic vaso-occlusive pain requires aggressive, round-the-clock or patient-controlled analgesia (PCA) with IV opioids (morphine or hydromorphone). Avoid meperidine (Demerol) due to normeperidine neurotoxicity and seizures!',
+        highlight: 'Scheduled IV opioids; avoid meperidine!'
+      },
+      {
+        letter: 'I',
+        term: 'Infection Prevention & Treatment',
+        description: 'Functional asplenia (caused by repetitive splenic infarctions) leaves clients highly vulnerable to encapsulated organisms (Streptococcus pneumoniae, Haemophilus influenzae). Promptly obtain blood cultures and administer broad-spectrum IV antibiotics for any fever.',
+        highlight: 'Prompt antibiotics & pneumococcal vaccines'
+      },
+      {
+        letter: 'A',
+        term: 'Avoid High Places & Cold (Triggers)',
+        description: 'Educate clients to avoid high altitudes (hypobaric hypoxia), unpressurized flights, cold temperatures (which trigger peripheral vasoconstriction and stasis), extreme physical exhaustion, and dehydration.',
+        highlight: 'Avoid high altitudes, cold exposure, & dehydration'
+      }
+    ],
+    clinicalContext: 'Sickle cell disease is an autosomal recessive hemoglobinopathy where mutated beta-globin (HbS) polymerizes under low oxygen tension, dehydration, acidosis, or cold, transforming flexible RBCs into rigid sickles that occlude capillaries. This causes excruciating ischemic pain, acute chest syndrome, stroke, and organ infarction.',
+    nclexPearls: [
+      'NCLEX Priority Order: On the NCLEX, the priority interventions for sickle cell crisis are often summarized as Hydration, Oxygenation, and Pain control (HOP), with aggressive IV hydration and oxygen being the physiological steps to stop further sickling!',
+      'Meperidine Contraindication: Never administer Meperidine (Demerol) for sickle cell pain crises! Repetitive dosing leads to accumulation of the toxic metabolite normeperidine, which causes CNS irritability, tremors, and grand mal seizures.',
+      'Fever is a Medical Emergency: Because of functional asplenia, any temperature ≥ 38.3°C (101°F) in a sickle cell client is an emergency requiring STAT blood cultures and immediate IV antibiotics (ceftriaxone).'
+    ],
+    practiceQuestion: {
+      question: 'A 19-year-old client with sickle cell anemia is admitted to the medical-surgical unit in an acute vaso-occlusive crisis, rating pain in the bilateral legs and back as 10/10. The client has an oral temperature of 38.6°C (101.5°F), pulse of 112 bpm, and SpO2 of 89% on room air. Which provider prescription should the nurse implement first?',
+      options: [
+        'Administer prescribed oral acetaminophen 650 mg for the fever.',
+        'Apply supplemental oxygen via nasal cannula at 3 L/min and start intravenous 0.45% normal saline at 175 mL/hr.',
+        'Administer intramuscular meperidine 75 mg every 3 hours as needed for severe pain.',
+        'Provide passive range-of-motion exercises to the bilateral lower extremities.'
+      ],
+      correctIndex: 1,
+      rationale: 'In a sickle cell vaso-occlusive crisis, hypoxia and dehydration trigger sickle polymerization and capillary obstruction. Implementing Oxygenation (O) to correct hypoxemia (SpO2 89%) and Hydration (H) to decrease blood viscosity and mobilize sickled cells are the physiological priorities (H and O in HOPIA). Meperidine is strictly contraindicated due to normeperidine-induced seizure risk.'
+    }
+  },
+  {
+    id: 'mgso4-toxicity-burp',
+    shortCode: 'BURP',
+    title: 'Magnesium Sulfate (MgSO4) Toxicity Signs',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'A critical bedside safety mnemonic to rapidly recognize life-threatening hypermagnesemia and neuromuscular depression during intravenous magnesium sulfate infusion.',
+    memoryTip: '"BURP" — Blood pressure decrease, Urine output decrease, Respiratory rate decrease, Patellar reflex absent. Have Calcium Gluconate at the bedside!',
+    highYield: true,
+    tags: ['Pharmacology', 'Critical Care', 'Electrolyte Imbalances', 'Emergency Antidote'],
+    letters: [
+      {
+        letter: 'B',
+        term: 'Blood Pressure Decrease (Hypotension)',
+        description: 'Magnesium causes generalized systemic vasodilation and vascular smooth muscle relaxation, leading to progressive hypotension, cutaneous flushing, and bradyarrhythmias.',
+        highlight: 'Hypotension & peripheral vasodilation'
+      },
+      {
+        letter: 'U',
+        term: 'Urine Output Decrease (< 30 mL/hr)',
+        description: 'Magnesium is excreted exclusively by the kidneys. Oliguria (< 30 mL/hr or < 100 mL/4 hr) causes rapid, toxic accumulation of serum magnesium in the bloodstream.',
+        highlight: 'Oliguria (< 30 mL/hr) triggers toxic buildup'
+      },
+      {
+        letter: 'R',
+        term: 'Respiratory Rate Decrease (< 12 breaths/min)',
+        description: 'Hypermagnesemia inhibits acetylcholine release at the neuromuscular junction, progressively depressing central respiratory drive and diaphragm contraction. Bradypnea (< 12/min) is a late emergency!',
+        highlight: 'Bradypnea (< 12/min) & respiratory arrest'
+      },
+      {
+        letter: 'P',
+        term: 'Patellar Reflex Absent (Loss of DTRs)',
+        description: 'Deep tendon reflexes (DTRs) are the EARLIEST clinical sign of toxicity. Diminished or absent patellar/biceps reflexes (0 rating) occur before respiratory depression and signal imminent toxicity.',
+        highlight: 'Loss of DTRs is the EARLIEST sign'
+      }
+    ],
+    clinicalContext: 'Magnesium sulfate is utilized in medical-surgical and critical care settings for refractory hypomagnesemia, life-threatening ventricular dysrhythmias (specifically Torsades de Pointes), severe acute asthma exacerbations, and neuroprotection/eclampsia seizure prophylaxis. Normal serum magnesium is 1.5–2.5 mEq/L (therapeutic level 4–7 mEq/L). Levels > 8–10 mEq/L cause loss of DTRs, and > 12–15 mEq/L trigger respiratory arrest and complete heart block.',
+    nclexPearls: [
+      'Immediate Antidote: The specific pharmacological antidote is Calcium Gluconate 10% (10 mL / 1 gram administered IV slow push over 3–5 minutes). It must always be kept readily accessible at the client\'s bedside!',
+      'Earliest Clinical Indicator: The loss of deep tendon reflexes (patellar reflex) ALWAYS precedes respiratory depression. If DTRs are absent, immediately stop the infusion!',
+      'Nursing Action for Toxicity: 1) Stop the magnesium infusion immediately; 2) Administer 100% O2; 3) Administer IV Calcium Gluconate; 4) Notify the healthcare provider.'
+    ],
+    practiceQuestion: {
+      question: 'A client receiving a continuous intravenous infusion of magnesium sulfate for refractory ventricular dysrhythmias has a respiratory rate of 10 breaths/min, blood pressure of 88/54 mmHg, and absent bilateral patellar reflexes. Which nursing intervention is the highest priority?',
+      options: [
+        'Slow the infusion rate by 50% and re-evaluate in 30 minutes.',
+        'Immediately stop the magnesium sulfate infusion and prepare IV calcium gluconate.',
+        'Encourage the client to take deep breaths and cough vigorously.',
+        'Administer an intravenous bolus of 500 mL normal saline.'
+      ],
+      correctIndex: 1,
+      rationale: 'The client exhibits classic signs of magnesium toxicity (BURP: Bradypnea < 12/min, Hypotension, Absent patellar reflexes). The nurse\'s immediate priority is to stop the magnesium infusion to prevent complete respiratory arrest and administer the specific antidote, intravenous calcium gluconate (10% solution).'
+    }
+  },
+  {
+    id: 'chf-management-d-mad-dog',
+    shortCode: 'D MAD DOG',
+    title: 'Congestive Heart Failure (CHF) Acute Management',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'A classic acute heart failure and pulmonary edema pharmacotherapeutic protocol to optimize cardiac inotropy, decrease preload/afterload, and restore oxygenation.',
+    memoryTip: '"D MAD DOG" — Digoxin, Morphine, Aminophylline, Dopamine, Diuretics, O2, Gasses (ABGs). Tame acute heart failure decompensation!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Heart Failure', 'Pharmacology', 'Acute Pulmonary Edema'],
+    letters: [
+      {
+        letter: 'D',
+        term: 'Digoxin (Inotropic Support)',
+        description: 'Positive inotrope and negative chronotrope that inhibits myocardial Na+/K+ ATPase, increasing cardiac contractility and stroke volume while slowing ventricular rate in comorbid atrial fibrillation.',
+        highlight: 'Increases contractility & slows AV conduction'
+      },
+      {
+        letter: 'M',
+        term: 'Morphine Sulfate',
+        description: 'Provides venous vasodilation to reduce preload and pooling in pulmonary capillary beds, decreases systemic vascular resistance (afterload), and reduces client anxiety and work of breathing.',
+        highlight: 'Venodilation, reduces preload, & eases dyspnea'
+      },
+      {
+        letter: 'A',
+        term: 'Aminophylline (Bronchodilator)',
+        description: 'Relaxes bronchial smooth muscle to relieve bronchospasm and wheezing associated with "cardiac asthma" and pulmonary vascular congestion.',
+        highlight: 'Bronchodilation for cardiac asthma wheezing'
+      },
+      {
+        letter: 'D',
+        term: 'Dopamine (Inotropic / Vasopressor Support)',
+        description: 'Adrenergic agonist enhancing myocardial contractility, increasing mean arterial pressure, and at renal/inotropic doses improving renal blood flow and glomerular filtration.',
+        highlight: 'Inotropic & renal perfusion support'
+      },
+      {
+        letter: 'D',
+        term: 'Diuretics (Loop Diuretics / Furosemide)',
+        description: 'Potent IV loop diuretics (furosemide/bumetanide) promoting rapid venous dilation within 5 minutes followed by profound diuresis to purge fluid overload and pulmonary congestion.',
+        highlight: 'Furosemide rapid venodilation & diuresis'
+      },
+      {
+        letter: 'O',
+        term: 'O2 (High-Flow Supplemental Oxygen)',
+        description: 'Administer high-flow supplemental oxygen via non-rebreather mask or CPAP/BiPAP to maintain SpO2 > 90-95% and drive fluid out of the alveoli through positive intrathoracic pressure.',
+        highlight: 'High-flow O2 & CPAP alveolar recruitment'
+      },
+      {
+        letter: 'G',
+        term: 'Gasses (Arterial Blood Gas [ABG] Monitoring)',
+        description: 'Serial ABG analysis to evaluate severe hypoxemia (PaO2), acute respiratory acidosis from carbon dioxide retention (PaCO2), and lactic metabolic acidosis from tissue hypoperfusion.',
+        highlight: 'Monitor PaO2, PaCO2, & metabolic acidosis'
+      }
+    ],
+    clinicalContext: 'Acute decompensated heart failure (ADHF) frequently manifests as acute cardiogenic pulmonary edema: severe dyspnea, orthopnea, crackles throughout lung fields, pink frothy sputum, and peripheral edema. Interventions aim to unload the failing heart by decreasing circulating volume (diuretics), reducing preload (morphine, nitrates), supporting pump contractility (inotropes), and restoring alveolar gas exchange.',
+    nclexPearls: [
+      'High-Fowler Position First: Place the client in high-Fowler position with legs dangling over the edge of the bed immediately; gravity promotes peripheral venous pooling and reduces venous return (preload) to the overwhelmed heart.',
+      'Digoxin Toxicity Warning: Hypokalemia (common with loop diuretics like furosemide) drastically potentiates digoxin toxicity! Always verify potassium levels and apical pulse (hold if HR < 60 bpm).',
+      'Daily Weights Gold Standard: Daily morning weight after first void is the most sensitive and accurate indicator of fluid status. Instruct the client to report weight gains > 2-3 lbs in 1 day or > 5 lbs in 1 week.'
+    ],
+    practiceQuestion: {
+      question: 'A client with severe left-sided heart failure is admitted with acute pulmonary edema, manifesting as tachypnea, diffuse bilateral inspiratory crackles, and productive pink frothy sputum. What should the nurse do first?',
+      options: [
+        'Place the client in high-Fowler position with the legs dependent.',
+        'Administer oral potassium chloride 40 mEq.',
+        'Encourage the client to lie flat on the left side to optimize cardiac output.',
+        'Perform a 24-hour urine collection for creatinine clearance.'
+      ],
+      correctIndex: 0,
+      rationale: 'In acute cardiogenic pulmonary edema, the immediate priority is to place the client in high-Fowler position with legs dangling (dependent). This reduces venous return to the right heart, lowers preload, pools blood in the lower extremities, and maximizes thoracic expansion for immediate dyspnea relief before initiating IV pharmacotherapy (D MAD DOG).'
+    }
+  },
+  {
+    id: 'increased-icp-cushings-triad',
+    shortCode: 'HYPERBRADYBRADY',
+    title: 'Increased ICP: Cushing\'s Triad Warning',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The ominous, life-threatening physiological triad signifying severe intracranial hypertension and imminent brainstem herniation.',
+    memoryTip: '"HYPER-BRADY-BRADY" — Hypertension with widened pulse pressure, Bradycardia, Bradypnea. The opposite of shock; indicates impending brainstem herniation!',
+    highYield: true,
+    tags: ['Neurology', 'Critical Care', 'Intracranial Pressure', 'Emergency Response'],
+    letters: [
+      {
+        letter: 'HYPER',
+        term: 'Hypertension (with Widened Pulse Pressure)',
+        description: 'Profound elevation in systolic blood pressure while diastolic blood pressure remains normal or drops, resulting in a marked widening of the pulse pressure (e.g., from 120/80 to 200/60 mmHg).',
+        highlight: 'Severe systolic rise & widened pulse pressure'
+      },
+      {
+        letter: 'BRADY',
+        term: 'Bradycardia (Bounding Pulse)',
+        description: 'Reflex parasympathetic vagal stimulation triggered by high-pressure baroreceptors in the carotid sinuses and aortic arch in response to massive systolic arterial hypertension.',
+        highlight: 'Reflex baroreceptor vagal slowing of heart rate'
+      },
+      {
+        letter: 'BRADY',
+        term: 'Bradypnea (Irregular / Cheyne-Stokes)',
+        description: 'Slow, irregular, or agonal respirations (Cheyne-Stokes breathing) caused by direct compression of the respiratory control centers in the pons and medulla oblongata.',
+        highlight: 'Respiratory center brainstem compression'
+      }
+    ],
+    clinicalContext: 'Cushing\'s triad is a LATE and grave neurological sign of critically elevated intracranial pressure (normal ICP is 5–15 mmHg; pathological > 20 mmHg). It indicates that compensatory intracranial mechanisms (Monro-Kellie doctrine) are exhausted and the brain is undergoing transtentorial or foramen magnum herniation. Contrast with hypovolemic shock (hypotension, tachycardia, tachypnea).',
+    nclexPearls: [
+      'Cushing\'s Triad vs. Shock: Cushing\'s triad features HIGH systolic BP, SLOW pulse, and SLOW respirations. Shock features LOW BP, FAST pulse, and FAST respirations!',
+      'Earliest Sign of Elevated ICP: A subtle change in the Level of Consciousness (LOC)—such as restlessness, confusion, irritability, or lethargy—is ALWAYS the earliest sign; Cushing\'s triad is a very LATE sign!',
+      'Emergency Interventions: Elevate the head of the bed (HOB) to 30 degrees with head and neck in neutral midline alignment, avoid hip flexion, administer osmotic diuretics (Mannitol or hypertonic 3% saline), and avoid clustering nursing cares.'
+    ],
+    practiceQuestion: {
+      question: 'A client with a traumatic brain injury who had a baseline blood pressure of 124/76 mmHg and heart rate of 84 bpm now has a blood pressure of 188/62 mmHg, heart rate of 48 bpm, and slow, irregular respirations of 8 breaths/min. What does the nurse determine these changes signify?',
+      options: [
+        'Hypovolemic shock resulting from internal hemorrhage.',
+        'Imminent brainstem herniation secondary to severe increased intracranial pressure.',
+        'Normal autonomic response to emerging from general anesthesia.',
+        'Progression to septic shock from an intracranial catheter infection.'
+      ],
+      correctIndex: 1,
+      rationale: 'The triad of marked systolic hypertension with widened pulse pressure (188/62 mmHg), bradycardia (48 bpm), and bradypnea/irregular respirations (8 breaths/min) represents Cushing\'s triad (HYPERBRADYBRADY). This is an ominous late sign of severe intracranial hypertension signaling impending tentorial or cerebellar tonsillar brainstem herniation.'
+    }
+  },
+  {
+    id: 'splenomegaly-causes-3ms',
+    shortCode: "The 3 M's",
+    title: 'Causes of Massive Splenomegaly: The 3 M\'s',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'A high-yield hematology and infectious disease diagnostic framework identifying the premier causes of massive splenomegaly (spleen extending > 8 cm below costal margin or crossing the umbilicus).',
+    memoryTip: '"The 3 M\'s of Huge Spleen" — Myelofibrosis, Malaria, Myelogenous leukemia. Enormous splenic enlargement demands careful abdominal protection against rupture!',
+    highYield: true,
+    tags: ['Hematology', 'Oncology', 'Infectious Disease', 'Splenomegaly'],
+    letters: [
+      {
+        letter: 'M',
+        term: 'Myelofibrosis (Primary Myelofibrosis)',
+        description: 'A myeloproliferative neoplasm characterized by progressive bone marrow fibrosis and failure. The spleen undergoes massive extramedullary hematopoiesis (blood cell production outside the marrow), expanding markedly into the pelvis.',
+        highlight: 'Extramedullary hematopoiesis & bone marrow scarring'
+      },
+      {
+        letter: 'M',
+        term: 'Malaria (Chronic / Hyperreactive Malarial Splenomegaly)',
+        description: 'Plasmodium protozoal infection (especially chronic P. falciparum or P. vivax) triggering chronic reticuloendothelial clearance of parasitized red blood cells, excessive immunoglobulin production, and colossal splenic hypertrophy.',
+        highlight: 'Parasitized RBC clearance & reticuloendothelial hypertrophy'
+      },
+      {
+        letter: 'M',
+        term: 'Myelogenous Leukemia (Chronic Myelogenous Leukemia - CML)',
+        description: 'Malignant clonal expansion of myeloid lineage cells driven by the BCR-ABL1 Philadelphia chromosome translocation. Massive leukemic cell infiltration and sequestration dramatically engorge the splenic parenchyma.',
+        highlight: 'Philadelphia chromosome & leukemic infiltration'
+      }
+    ],
+    clinicalContext: 'Massive splenomegaly (spleen weight > 1000 g or extending across the midline/into the pelvis) creates severe abdominal fullness, early satiety from gastric compression, left upper quadrant (LUQ) pain, and hypersplenism (pancytopenia from cellular sequestration). Splenic rupture from minor trauma or vigorous palpation is a surgical emergency producing fatal hemoperitoneum.',
+    nclexPearls: [
+      'Palpation Precaution: NEVER vigorously palpate an enlarged spleen! Deep palpation can rupture the tense splenic capsule, causing catastrophic internal hemorrhage.',
+      'Spleen Assessment: An enlarged spleen expands downward and toward the right iliac fossa (toward the umbilicus), with a palpable notch on its anterior border. Dullness to percussion over Traube\'s space is a classic physical finding.',
+      'Post-Splenectomy Infection Risk: If splenectomy is performed for massive enlargement, clients have lifelong susceptibility to encapsulated organisms (Streptococcus pneumoniae, Neisseria meningitidis, Haemophilus influenzae); pneumococcal and meningococcal vaccinations are mandatory.'
+    ],
+    practiceQuestion: {
+      question: 'A client with newly diagnosed chronic myelogenous leukemia (CML) reports feeling full after eating small amounts of food and dull left upper quadrant discomfort. The nurse notes the spleen is palpable 9 cm below the left costal margin. Which nursing precaution is most critical?',
+      options: [
+        'Encourage deep, vigorous abdominal massage to relieve gas pain.',
+        'Instruct the client to avoid contact sports and heavy lifting, and avoid repeated deep palpation.',
+        'Place the client on a high-protein, high-residue diet with daily enemas.',
+        'Maintain the client on absolute bed rest in Trendelenburg position.'
+      ],
+      correctIndex: 1,
+      rationale: 'Massive splenomegaly (the 3 M\'s: Myelofibrosis, Malaria, Myelogenous leukemia) stretches the splenic capsule and dramatically increases the risk of life-threatening splenic rupture and fatal intra-abdominal hemorrhage. The nurse must instruct the client to avoid contact sports, abdominal trauma, or strenuous activities, and healthcare personnel must strictly avoid vigorous or repeated deep abdominal palpation.'
+    }
+  },
+  {
+    id: 'scarlet-fever-signs-six-ss',
+    shortCode: 'Six "S"',
+    title: 'Scarlet Fever: Clinical Manifestations (The Six S\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic 6-point clinical presentation of Scarlet Fever (Scarlatina) caused by erythrogenic exotoxin-producing Streptococcus pyogenes.',
+    memoryTip: '"Six S\'s of Scarlet Fever" — Streptococci, Sore throat, Swollen tonsils, Strawberry tongue, Sandpaper rash, Sudamina vesicles. Complete the full 10-day penicillin course to prevent rheumatic fever!',
+    highYield: true,
+    tags: ['Infectious Disease', 'Pediatrics', 'Integumentary', 'Antibiotic Therapy'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Streptococci Causal Organism',
+        description: 'Etiological agent is Group A Beta-Hemolytic Streptococcus (GABS / Streptococcus pyogenes) producing pyrogenic (erythrogenic) exotoxins (A, B, or C) in an immunologically non-immune host.',
+        highlight: 'Group A Beta-Hemolytic Streptococcus (GABS)'
+      },
+      {
+        letter: 'S',
+        term: 'Sore Throat (Pharyngitis)',
+        description: 'Sudden onset of severe pharyngitis with odynophagia (painful swallowing), accompanied by high fever, chills, malaise, headache, and anterior cervical lymphadenopathy.',
+        highlight: 'Severe pharyngitis & painful swallowing'
+      },
+      {
+        letter: 'S',
+        term: 'Swollen Tonsils (Exudative Tonsillitis)',
+        description: 'Tonsils and pharyngeal mucosa appear beefy red, edematous, and dotted with confluent yellow-white exudates. Petechiae may dot the soft palate.',
+        highlight: 'Beefy red tonsils with purulent exudates'
+      },
+      {
+        letter: 'S',
+        term: 'Strawberry Tongue',
+        description: 'Initial white strawberry tongue (thick white coating with prominent hyperplastic red fungiform papillae on days 1-2) sheds by day 4-5 to reveal a bright, raw, beefy red strawberry tongue.',
+        highlight: 'White coating sheds to beefy red papillae'
+      },
+      {
+        letter: 'S',
+        term: 'Sandpaper Rash (Miliary Exanthem)',
+        description: 'Finely punctate, erythematous maculopapular rash that blanches and feels rough like fine sandpaper. Accentuated in skin folds as transverse red lines (Pastia\'s lines); spares the perioral area (circumoral pallor).',
+        highlight: 'Rough sandpaper texture & Pastia lines'
+      },
+      {
+        letter: 'S',
+        term: 'Sudamina Vesicles & Desquamation',
+        description: 'Minute vesicular miliary eruptions (sudamina) over hands, feet, and abdomen, followed by characteristic fine sheet-like peeling and desquamation of fingers, toes, and palms 1-3 weeks later.',
+        highlight: 'Vesicles followed by palmar/plantar peeling'
+      }
+    ],
+    clinicalContext: 'Scarlet fever typically follows streptococcal pharyngitis. Complications include post-streptococcal glomerulonephritis and acute rheumatic fever (carditis, Sydenham chorea, migratory polyarthritis). Standard treatment is oral penicillin V or amoxicillin for a full 10 days (or macrolides/cephalosporins if penicillin-allergic).',
+    nclexPearls: [
+      'Droplet Precautions: The client must be placed on Droplet Precautions until 24 hours of effective antimicrobial therapy (penicillin) has been administered.',
+      'Complete Antibiotic Course: Emphasize the crucial importance of completing the full 10-day course of prescribed antibiotics even if symptoms rapidly resolve, to prevent autoimmune acute rheumatic fever and permanent valvular damage.',
+      'Circumoral Pallor & Pastia Lines: The flushed cheeks contrast with a pale ring around the mouth (circumoral pallor), and linear petechial streaks in the antecubital and axillary skin folds (Pastia\'s sign) are diagnostic hallmarks.'
+    ],
+    practiceQuestion: {
+      question: 'A 7-year-old child is diagnosed with scarlet fever following a rapid streptococcal throat swab. The nurse assesses a rough erythematous rash resembling sandpaper, circumoral pallor, and a swollen, beefy red tongue with prominent papillae. What education is most critical for the nurse to reinforce with the parents?',
+      options: [
+        'Apply topical hydrocortisone cream to prevent desquamation of the fingers.',
+        'Continue the prescribed oral antibiotic for the full 10-day duration even if the rash and fever disappear.',
+        'Keep the child home from school for at least 3 weeks until all skin peeling has resolved.',
+        'Provide aspirin every 4 hours as needed to control fever and sore throat discomfort.'
+      ],
+      correctIndex: 1,
+      rationale: 'Completing the entire 10-day course of penicillin or prescribed antibiotics is imperative to eradicate Group A beta-hemolytic streptococcus and prevent delayed non-suppurative complications, primarily Acute Rheumatic Fever (which causes permanent heart valve damage) and Post-Streptococcal Glomerulonephritis. Aspirin is strictly contraindicated in children due to Reye\'s syndrome risk.'
+    }
+  },
+  {
+    id: 'cor-pulmonale-signs-prht',
+    shortCode: 'PRHT',
+    title: 'Signs of Cor Pulmonale (Right-Sided Heart Failure)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The 4 cardinal clinical manifestations of Cor Pulmonale—right ventricular hypertrophy and failure secondary to chronic pulmonary arterial hypertension.',
+    memoryTip: '"Please Read His Text" (PRHT) — Peripheral edema, Raised JVP, Hepatomegaly, Tricuspid incompetence. Chronic lung disease backing up into systemic circulation!',
+    highYield: true,
+    tags: ['Cardiovascular', 'Respiratory', 'Right Heart Failure', 'Pulmonary Hypertension'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Peripheral Edema (Dependent Edema)',
+        description: 'Bilateral pitting edema of the lower extremities, ankles, and presacral region resulting from high right atrial pressure transmitting backward into systemic capillary beds, causing hydrostatic extravasation.',
+        highlight: 'Bilateral dependent pitting edema'
+      },
+      {
+        letter: 'R',
+        term: 'Raised JVP (Jugular Venous Distension)',
+        description: 'Elevated jugular venous pressure (JVD) visualized as distended internal/external jugular veins at 45 degrees, accompanied by positive hepatojugular reflux (sustained elevation upon RUQ pressure).',
+        highlight: 'Jugular venous distension (JVD) at 45°'
+      },
+      {
+        letter: 'H',
+        term: 'Hepatomegaly (with Ascites)',
+        description: 'Passive hepatic venous congestion ("nutmeg liver") causing tender, palpable liver enlargement below the right costal margin, right upper quadrant tenderness, and abdominal ascites.',
+        highlight: 'Tender congestive hepatomegaly & ascites'
+      },
+      {
+        letter: 'T',
+        term: 'Tricuspid Incompetence (Regurgitation)',
+        description: 'Right ventricular dilation stretches the tricuspid valve annulus, producing functional tricuspid regurgitation (holosystolic murmur loudest at the left lower sternal border that intensifies with inspiration — Carvallo\'s sign).',
+        highlight: 'Holosystolic murmur at left lower sternal border'
+      }
+    ],
+    clinicalContext: 'Cor pulmonale results from chronic alveolar hypoxia and destruction of the pulmonary capillary bed (most commonly due to COPD, idiopathic pulmonary arterial hypertension, cystic fibrosis, or pulmonary fibrosis). Hypoxic pulmonary vasoconstriction raises pulmonary vascular resistance, forcing the right ventricle to hypertrophy, dilate, and ultimately fail, producing severe systemic venous congestion.',
+    nclexPearls: [
+      'Root Etiology: Cor pulmonale is right-sided heart failure caused by a PRIMARY PULMONARY disorder (most often COPD), distinguishing it from right heart failure caused by left-sided failure (e.g., mitral stenosis or left ventricular infarction).',
+      'Low-Flow Oxygen Therapy: In clients with COPD-induced cor pulmonale, administer low-flow oxygen (e.g., 1-2 L/min via nasal cannula or Venturi mask 24-28%) to relieve hypoxic vasoconstriction while avoiding suppression of the hypoxic drive.',
+      'Left vs. Right Failure: Left failure equals LUNGS (crackles, dyspnea, orthopnea, cough); Right failure equals REST OF BODY (JVD, hepatomegaly, splenomegaly, peripheral edema, ascites).'
+    ],
+    practiceQuestion: {
+      question: 'A client with long-standing end-stage chronic obstructive pulmonary disease (COPD) is admitted with worsening dyspnea, 3+ pitting edema of the bilateral ankles, jugular venous distension to the angle of the jaw at 45 degrees, and a tender liver edge palpated 4 cm below the right costal margin. Which pathophysiology explains these clinical manifestations?',
+      options: [
+        'Left ventricular failure with reduced systemic cardiac output.',
+        'Cor pulmonale resulting from chronic pulmonary arterial hypertension.',
+        'Acute nephrotic syndrome with massive proteinuria.',
+        'Chronic aortic stenosis leading to concentric left ventricular hypertrophy.'
+      ],
+      correctIndex: 1,
+      rationale: 'The client exhibits classic signs of right-sided heart failure (PRHT: Peripheral edema, Raised JVP, Hepatomegaly, Tricuspid regurgitation). When right ventricular failure occurs secondary to pulmonary disease (such as severe COPD), it is termed Cor Pulmonale. Chronic alveolar hypoxia causes pulmonary vasoconstriction and arterial hypertension, eventually exhausting right ventricular pump function and producing systemic venous congestion.'
+    }
+  },
+  {
+    id: 'essential-amino-acids-pvt-tim-hall',
+    shortCode: 'PVT. TIM HALL',
+    title: 'The 10 Essential Amino Acids',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The classic nutritional biochemistry mnemonic detailing the amino acids that cannot be synthesized de novo by the human body and must be acquired through dietary protein intake.',
+    memoryTip: '"PVT. TIM HALL" — Phenylalanine, Valine, Tryptophan, Threonine, Isoleucine, Methionine, Histidine, Arginine, Leucine, Lysine. Private Tim Hall salutes complete protein nutrition!',
+    highYield: true,
+    tags: ['Nutrition & Metabolism', 'Biochemistry', 'Dietary Management', 'Metabolic Disorders'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Phenylalanine',
+        description: 'Aromatic essential amino acid and precursor to tyrosine, dopamine, norepinephrine, and epinephrine. In Phenylketonuria (PKU), deficiency of phenylalanine hydroxylase requires strict lifelong dietary restriction to prevent severe neurocognitive impairment.',
+        highlight: 'Precursor to tyrosine & tested in PKU screening'
+      },
+      {
+        letter: 'V',
+        term: 'Valine',
+        description: 'Branched-chain amino acid (BCAA) essential for muscle tissue repair, glycogen synthesis, and nitrogen balance. Defective BCAA breakdown causes Maple Syrup Urine Disease (MSUD).',
+        highlight: 'Branched-chain amino acid (BCAA)'
+      },
+      {
+        letter: 'T',
+        term: 'Tryptophan',
+        description: 'Aromatic amino acid and biochemical precursor for serotonin (5-HT), melatonin, and niacin (Vitamin B3). Tryptophan deficiency or carcinoid syndrome alters serotonin metabolism.',
+        highlight: 'Precursor for serotonin, melatonin, & niacin'
+      },
+      {
+        letter: 'T',
+        term: 'Threonine',
+        description: 'Polar essential amino acid vital for collagen, elastin, enamel protein synthesis, and gastrointestinal mucin production supporting intestinal barrier integrity.',
+        highlight: 'Structural collagen & mucin synthesis'
+      },
+      {
+        letter: 'I',
+        term: 'Isoleucine',
+        description: 'Branched-chain amino acid concentrated in muscle tissue, involved in hemoglobin synthesis, regulation of blood sugar, and cellular energy production.',
+        highlight: 'BCAA involved in hemoglobin synthesis'
+      },
+      {
+        letter: 'M',
+        term: 'Methionine',
+        description: 'Sulfur-containing essential amino acid and principal donor of methyl groups (via S-adenosylmethionine - SAMe) for DNA methylation; precursor to cysteine and homocysteine.',
+        highlight: 'Sulfur-containing methyl donor & SAMe precursor'
+      },
+      {
+        letter: 'H',
+        term: 'Histidine (Semi-Essential)',
+        description: 'Precursor to histamine (mediator of allergic response, gastric acid secretion, and inflammation); conditionally essential during infancy, rapid growth, and chronic uremia.',
+        highlight: 'Histamine precursor & conditionally essential in infants'
+      },
+      {
+        letter: 'A',
+        term: 'Arginine (Semi-Essential)',
+        description: 'Conditionally essential amino acid in children and severe catabolic states (burns, sepsis, trauma); essential precursor for nitric oxide (NO) vasodilation and urea cycle ammonia clearance.',
+        highlight: 'Nitric oxide (NO) & urea cycle intermediate'
+      },
+      {
+        letter: 'L',
+        term: 'Leucine',
+        description: 'The primary branched-chain amino acid directly stimulating muscle protein synthesis via mammalian target of rapamycin (mTOR) activation and wound healing.',
+        highlight: 'Potent mTOR activator & muscle synthesis'
+      },
+      {
+        letter: 'L',
+        term: 'Lysine',
+        description: 'Basic essential amino acid critical for carnitine synthesis (fatty acid beta-oxidation), calcium absorption, cross-linking of collagen fibers, and antibody formation.',
+        highlight: 'Carnitine synthesis & collagen cross-linking'
+      }
+    ],
+    clinicalContext: 'In Medical & Surgical nursing, assessing protein adequacy, nitrogen balance, total parenteral nutrition (TPN) formulations, and inborn errors of metabolism (e.g., PKU, Maple Syrup Urine Disease, hepatic encephalopathy) requires recognizing essential vs. non-essential amino acids. Complete proteins (meat, poultry, fish, eggs, milk, soy, quinoa) contain all essential amino acids in appropriate proportions.',
+    nclexPearls: [
+      'Complete vs. Incomplete Proteins: Animal proteins and soy/quinoa are complete; plant proteins (legumes, grains, nuts) lack one or more essential amino acids and must be combined (complementary proteins, like rice and beans) to provide all essential amino acids.',
+      'Phenylketonuria (PKU) Diet: Newborn screening identifies PKU; management requires a low-phenylalanine diet (avoid meats, dairy, eggs, nuts, and aspartame [NutraSweet]).',
+      'Hepatic Encephalopathy Protein Management: In severe cirrhosis with hyperammonemia, protein is not eliminated completely; rather, vegetable-based and branched-chain amino acids (BCAAs: leucine, isoleucine, valine) are preferred over aromatic amino acids to reduce false neurotransmitter generation.'
+    ],
+    practiceQuestion: {
+      question: 'The nurse is providing dietary education to a vegan client recovering from major abdominal surgery who needs to promote optimal wound healing and tissue repair. Which recommendation best ensures the client obtains all essential amino acids (PVT. TIM HALL)?',
+      options: [
+        'Consume single-grain foods such as white rice exclusively throughout the day.',
+        'Combine complementary plant protein sources such as brown rice and black beans or whole-wheat pita with hummus.',
+        'Restrict total caloric intake to force mobilization of endogenous muscle tissue.',
+        'Rely solely on fruit juices and raw vegetables for protein requirements.'
+      ],
+      correctIndex: 1,
+      rationale: 'Plant-based food sources often lack one or more essential amino acids (PVT. TIM HALL). Combining complementary plant proteins (e.g., grains deficient in lysine but high in methionine combined with legumes high in lysine but lower in methionine, such as rice and beans or wheat bread with peanut butter) provides all essential amino acids necessary for collagen synthesis, immune function, and surgical wound healing.'
+    }
+  },
+  {
+    id: 'wbc-differential-nlmeb',
+    shortCode: 'NLMEB',
+    title: 'Order of White Blood Cell Prevalence (NLMEB)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Normal differential prevalence of circulating leukocytes ordered from most to least abundant.',
+    memoryTip: '"Never Let Monkeys Eat Bananas" — Neutrophils (60-70%), Lymphocytes (20-25%), Monocytes (3-8%), Eosinophils (2-4%), Basophils (0.5-1%).',
+    highYield: true,
+    tags: ['Hematology', 'Complete Blood Count', 'Immunology', 'Infection Control', 'Lab Values'],
+    letters: [
+      {
+        letter: 'N',
+        term: 'Neutrophils (60% - 70%)',
+        description: 'First responders to acute bacterial invasion and necrotic tissue destruction; phagocytose microbes and release proteolytic enzymes. Immature unsegmented forms are bands ("shift to the left" signals acute severe infection or sepsis).',
+        highlight: 'Acute bacterial defense & left shift'
+      },
+      {
+        letter: 'L',
+        term: 'Lymphocytes (20% - 25%)',
+        description: 'Primary cellular mediators of adaptive immunity comprising B-lymphocytes (humoral antibody production), T-lymphocytes (cell-mediated cytotoxic and helper immunity), and natural killer (NK) cells. Elevated in acute viral illnesses.',
+        highlight: 'Viral infections & adaptive immunity'
+      },
+      {
+        letter: 'M',
+        term: 'Monocytes (3% - 8%)',
+        description: 'Largest circulating leukocytes that extravasate into tissues to become potent phagocytic macrophages (e.g., alveolar macrophages, Kupffer cells, microglia). Predominate in chronic infections (tuberculosis) and dead tissue cleanup.',
+        highlight: 'Chronic infection & tissue macrophages'
+      },
+      {
+        letter: 'E',
+        term: 'Eosinophils (2% - 4%)',
+        description: 'Granulocytes specialized in neutralizing parasitic helminthic infestations and regulating allergic/atopic hypersensitivity reactions (asthma, eczema, drug allergies). Contain major basic protein and eosinophil cationic protein.',
+        highlight: 'Parasites & allergic hypersensitivity'
+      },
+      {
+        letter: 'B',
+        term: 'Basophils (0.5% - 1%)',
+        description: 'Least prevalent circulating granulocytes with prominent granules containing histamine, serotonin, and heparin. Mediate immediate hypersensitivity, systemic anaphylactic shock, and local cutaneous inflammatory cascades.',
+        highlight: 'Histamine release & anaphylaxis'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical and critical care nursing, interpreting a Complete Blood Count with differential (CBC with diff) is essential for diagnosing occult infections, monitoring bone marrow recovery after myelosuppressive chemotherapy, and evaluating allergic or parasitic diseases. Evaluating the Absolute Neutrophil Count (ANC = WBC × [% segmented neutrophils + % bands]) identifies severe neutropenia (ANC < 500/mm³), dictating emergency protective isolation and prompt empiric broad-spectrum antibiotic initiation.',
+    nclexPearls: [
+      'Left Shift (Bandemia): An elevated proportion of immature neutrophil band forms (>8-10%) indicates the bone marrow is hastily mobilizing reserves to battle severe acute bacterial infection or sepsis.',
+      'Neutropenic Fever Protocol: In clients with an ANC < 500/mm³, a single oral temperature ≥ 100.4°F (38.0°C) is an oncologic emergency requiring blood cultures and immediate empiric IV antibiotic administration within 60 minutes.',
+      'Causes of Eosinophilia ("NAACP"): Neoplasm, Allergy/Asthma, Addison disease, Collagen vascular diseases, Parasites.'
+    ],
+    practiceQuestion: {
+      question: 'A postoperative medical-surgical client has a complete blood count (CBC) with differential reported as: WBC 16,800/mm³, Neutrophils 76%, Bands 15%, Lymphocytes 6%, Monocytes 2%, Eosinophils 0.8%, Basophils 0.2%. How should the nurse interpret these findings?',
+      options: [
+        'Expected, benign hematologic response to elective surgical stress.',
+        'Acute severe bacterial infection with a "shift to the left" requiring prompt medical intervention.',
+        'Primary systemic viral infection reflected by relative lymphopenia.',
+        'Severe parasitic helminthic infestation requiring immediate antihelminthic therapy.'
+      ],
+      correctIndex: 1,
+      rationale: 'Normal leukocyte prevalence follows "Never Let Monkeys Eat Bananas" (Neutrophils 60-70%, Lymphocytes 20-25%, Monocytes 3-8%, Eosinophils 2-4%, Basophils 0.5-1%). The combination of leukocytosis (16,800/mm³) with 76% mature neutrophils and 15% immature band forms (normal <5-8%) defines a "shift to the left," indicating acute, overwhelming bacterial infection or surgical site sepsis demanding immediate provider notification and blood cultures.'
+    }
+  },
+  {
+    id: 'cell-cycle-stages-ipmat',
+    shortCode: 'IPMAT',
+    title: 'Stages of Mitosis & Cell Division (IPMAT)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The sequential phases of the cellular cycle and nuclear division in eukaryotic cells.',
+    memoryTip: '"In Philippines, Men Are Talented" (IPMAT) — Interphase, Prophase, Metaphase, Anaphase, Telophase. Master the cell division cycle to understand antineoplastic chemotherapy mechanisms!',
+    highYield: true,
+    tags: ['Cell Biology', 'Oncology', 'Chemotherapy Mechanisms', 'Pathophysiology', 'Pharmacology'],
+    letters: [
+      {
+        letter: 'I',
+        term: 'Interphase (G1, S, G2 phases)',
+        description: 'The metabolic and synthetic phase preceding mitosis where cell growth, protein synthesis, and organelle replication occur. DNA replication takes place exclusively during the S (synthesis) phase, which is the primary target for antimetabolite chemotherapies (e.g., methotrexate, fluorouracil).',
+        highlight: 'DNA replication & cell growth'
+      },
+      {
+        letter: 'P',
+        term: 'Prophase',
+        description: 'The inaugural stage of mitosis where diffuse chromatin condenses into distinct, microscopic paired chromosomes, the nuclear envelope and nucleoli dissociate, and centrosomes migrate to opposite cellular poles assembling the mitotic spindle.',
+        highlight: 'Chromatin condensation & spindle formation'
+      },
+      {
+        letter: 'M',
+        term: 'Metaphase',
+        description: 'Chromosomes align symmetrically along the equatorial metaphase plate perpendicular to the spindle axis; kinetochores attach each sister chromatid to opposing spindle microtubules. Plant alkaloids (vincristine, paclitaxel) arrest cells in this phase by disrupting microtubule dynamics.',
+        highlight: 'Equatorial plate alignment'
+      },
+      {
+        letter: 'A',
+        term: 'Anaphase',
+        description: 'Centromeres split synchronously and paired sister chromatids are pulled apart into separate daughter chromosomes toward opposing centrosome poles through shortening of kinetochore microtubules.',
+        highlight: 'Sister chromatid poleward separation'
+      },
+      {
+        letter: 'T',
+        term: 'Telophase (& Cytokinesis)',
+        description: 'Nuclear envelopes and nucleoli reconstitute around the two segregated sets of chromosomes at each pole, chromosomes uncoil back into chromatin, and cytokinesis forms a cleavage furrow to partition the cytoplasm into two identical daughter cells.',
+        highlight: 'Nuclear envelope reformation & cytokinesis'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical and Oncology nursing, understanding the cell cycle (IPMAT) is vital for mastering chemotherapy classifications. Cell-cycle-specific (CCS) agents act on designated phases (antimetabolites in S-phase; mitotic spindle poisons like Vincristine/Paclitaxel in M-phase), whereas cell-cycle-nonspecific (CCNS) agents (alkylating agents like cyclophosphamide) kill cells irrespective of cycle phase. Fast-dividing nonmalignant cells (hair follicles, GI mucosa, bone marrow) are also damaged, driving classic toxicities.',
+    nclexPearls: [
+      'M-Phase Chemotherapy Targets: Plant alkaloids (vincristine, vinblastine) and taxanes (paclitaxel) disrupt tubulin polymers during Metaphase, arresting malignant cell division.',
+      'Vincristine Extravasation & Toxicities: Vincristine is a vesicant; if extravasation occurs, warm compresses (NOT cold) and hyaluronidase are used to disperse the drug. Major dose-limiting toxicity is neurotoxicity (numbness, foot drop, constipation/paralytic ileus).',
+      'Mitosis vs. Meiosis: Mitosis produces 2 genetically identical diploid (2n) somatic cells; Meiosis produces 4 genetically unique haploid (n) gametes through two sequential cellular divisions.'
+    ],
+    practiceQuestion: {
+      question: 'An oncology medical-surgical nurse is administering IV vincristine to a client with lymphoma. The nurse recognizes that this plant alkaloid exerts its antineoplastic action primarily during which specific phase of cell division (IPMAT)?',
+      options: [
+        'Interphase (S-phase) by blocking purine and pyrimidine biosynthesis.',
+        'Metaphase (M-phase) by inhibiting tubulin polymerization and arresting mitotic spindle formation.',
+        'Anaphase by inhibiting topoisomerase II enzymes and preventing chromatid cleavage.',
+        'Telophase by blocking cleavage furrow formation during cytokinesis.'
+      ],
+      correctIndex: 1,
+      rationale: 'Vincristine is a cell-cycle-specific mitotic spindle poison (vinca alkaloid) that binds to tubulin and inhibits microtubule assembly, arresting dividing cells during Metaphase (M-phase) of mitosis. Antimetabolites (e.g., methotrexate, 5-fluorouracil) target Interphase (S-phase), while alkylating agents are cell-cycle-nonspecific.'
+    }
+  },
+  {
+    id: 'viral-gastroenteritis-acne-car',
+    shortCode: 'ACNE CAR',
+    title: 'Viruses Causing Diarrhea & Gastroenteritis (ACNE CAR)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The 7 major viral etiologies responsible for acute secretory diarrhea, vomiting, and dehydration.',
+    memoryTip: '"ACNE CAR" — Adenovirus, Coronavirus, Norwalk virus (Norovirus), Enterovirus, Calicivirus, Astrovirus, Rotavirus. Prioritize fluid and electrolyte resuscitation and strict contact precautions!',
+    highYield: true,
+    tags: ['Infectious Disease', 'Gastroenteritis', 'Infection Control', 'Fluid & Electrolytes', 'Pediatrics'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Adenovirus (Enteric serotypes 40 & 41)',
+        description: 'Major cause of persistent infantile diarrhea characterized by watery stools lasting 7 to 12 days, frequently accompanied by low-grade fever, nausea, and mild upper respiratory tract symptoms.',
+        highlight: 'Prolonged watery diarrhea (1-2 weeks)'
+      },
+      {
+        letter: 'C',
+        term: 'Coronavirus (Enteric strains / SARS-CoV-2)',
+        description: 'Infects gastrointestinal enterocytes expressing ACE2 receptors throughout the mucosal brush border, leading to malabsorption, secretory diarrhea, nausea, and abdominal cramps.',
+        highlight: 'ACE2 enterocyte binding & GI upset'
+      },
+      {
+        letter: 'N',
+        term: 'Norwalk Virus (Norovirus)',
+        description: 'Leading cause of epidemic nonbacterial gastroenteritis worldwide in schools, cruise ships, hospitals, and long-term care facilities. Manifests with sudden explosive projectile vomiting and watery diarrhea; highly resistant to alcohol hand rubs.',
+        highlight: 'Epidemic outbreaks & soap/water handwashing'
+      },
+      {
+        letter: 'E',
+        term: 'Enterovirus (Echovirus & Coxsackievirus)',
+        description: 'Transmitted via fecal-oral and respiratory routes; replicates extensively in intestinal lymphoid tissue (Peyer patches) causing acute diarrhea, rash, herpangina, or aseptic meningitis.',
+        highlight: 'Fecal-oral transmission & systemic viremia'
+      },
+      {
+        letter: 'C',
+        term: 'Calicivirus (including Sapovirus)',
+        description: 'Small non-enveloped RNA viruses causing acute-onset gastroenteritis, non-bloody diarrhea, and vomiting in both children and adults in congregate healthcare settings.',
+        highlight: 'Sudden watery diarrhea & nausea'
+      },
+      {
+        letter: 'A',
+        term: 'Astrovirus',
+        description: 'Characterized by a five- or six-pointed star appearance on electron microscopy; produces mild-to-moderate watery diarrhea, malaise, and fever primarily in pediatric and immunocompromised hosts.',
+        highlight: 'Star-shaped capsid & pediatric diarrhea'
+      },
+      {
+        letter: 'R',
+        term: 'Rotavirus',
+        description: 'The classic cause of severe, dehydrating watery diarrhea and vomiting in infants and toddlers globally; produces enterotoxin NSP4. Prevented effectively via oral live-attenuated vaccine series.',
+        highlight: 'Severe infant dehydration & oral vaccine'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical, emergency, and pediatric nursing, viral gastroenteritis leads rapidly to hypovolemia, electrolyte deficits (hypokalemia, hyponatremia), and metabolic acidosis due to intestinal bicarbonate wasting ("Base out the butt"). Nurses must enforce strict Contact Precautions, ensure appropriate hand hygiene agents (soap and water for non-enveloped Norovirus), initiate oral rehydration therapy (ORT) with isotonic electrolyte solutions, and avoid antimotility agents that prolong pathogen retention.',
+    nclexPearls: [
+      'Norovirus Hand Hygiene: Norovirus lacks a lipid envelope, rendering standard alcohol-based hand sanitizers ineffective. Healthcare workers MUST perform hand hygiene with soap and water for at least 20 seconds.',
+      'Acid-Base Imbalance in Diarrhea: Severe diarrhea causes significant loss of alkaline intestinal secretions (rich in HCO3- and K+), resulting in normal anion-gap metabolic acidosis and hypokalemia.',
+      'Oral Rehydration Therapy (ORT): For mild-to-moderate dehydration, oral rehydration solution (ORS with 2:1 glucose-to-sodium ratio utilizing the SGLT1 co-transporter) is superior to plain water, fruit juices, or sodas, which induce osmotic diarrhea.'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical unit is managing an institutional outbreak of acute gastroenteritis characterized by sudden projectile vomiting and watery diarrhea among several clients and healthcare workers. Norwalk virus (Norovirus) is confirmed. Which nursing action is mandatory to prevent nosocomial transmission?',
+      options: [
+        'Utilize alcohol-based hand rub before and after every client encounter.',
+        'Perform mechanical handwashing with antimicrobial soap and water for at least 20 seconds.',
+        'Isolate all affected clients in negative-pressure airborne isolation rooms.',
+        'Administer prophylactic oral fluoroquinolone antibiotics to all exposed staff members.'
+      ],
+      correctIndex: 1,
+      rationale: 'Norwalk virus (Norovirus, "N" in ACNE CAR) is a non-enveloped virus that is exceptionally resistant to alcohol-based hand sanitizers. Strict hand hygiene using antimicrobial soap and water with friction for at least 20 seconds is mandatory to mechanically remove viral particles from the hands. Clients require Contact Precautions (not Airborne), and antibiotics have no efficacy against viral gastroenteritis.'
+    }
+  },
+  {
+    id: 'carpal-bones-anatomy-sltp-ttch',
+    shortCode: 'SLTP TTCH',
+    title: 'Carpal Bones of the Wrist & Hand (Lateral to Medial)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The 8 carpal bones mapped from lateral (radial/thumb side) to medial (ulnar/pinky side) across proximal and distal rows.',
+    memoryTip: '"She Looks Too Proud, Try To Chase Her" — Proximal row (Lateral to Medial): Scaphoid, Lunate, Triquetrum, Pisiform. Distal row (Lateral to Medial): Trapezium, Trapezoid, Capitate, Hamate. Watch out for scaphoid avascular necrosis!',
+    highYield: true,
+    tags: ['Musculoskeletal', 'Orthopedics', 'Anatomy', 'Assessment', 'Trauma'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Scaphoid (Proximal Row - Lateral)',
+        description: 'Boat-shaped bone forming the floor of the anatomical snuffbox. Most commonly fractured carpal bone (FOOSH injury); highly prone to avascular necrosis (AVN) and nonunion due to retrograde distal-to-proximal arterial supply.',
+        highlight: 'Anatomical snuffbox & avascular necrosis'
+      },
+      {
+        letter: 'L',
+        term: 'Lunate (Proximal Row)',
+        description: 'Crescent/moon-shaped bone articulating with the radius. Most frequently dislocated carpal bone; anterior dislocation into the carpal tunnel compresses the median nerve, causing acute carpal tunnel syndrome.',
+        highlight: 'Most commonly dislocated & median nerve'
+      },
+      {
+        letter: 'T',
+        term: 'Triquetrum (Proximal Row)',
+        description: 'Pyramidal, three-cornered bone articulating with the pisiform and triangular fibrocartilage complex (TFCC). Second most commonly fractured carpal bone, typically via dorsal avulsion.',
+        highlight: 'Pyramidal bone & TFCC articulation'
+      },
+      {
+        letter: 'P',
+        term: 'Pisiform (Proximal Row - Medial)',
+        description: 'Small, pea-shaped sesamoid bone embedded within the flexor carpi ulnaris (FCU) tendon; palpated on the palmar-medial margin of the proximal wrist crease.',
+        highlight: 'Sesamoid bone in FCU tendon'
+      },
+      {
+        letter: 'T',
+        term: 'Trapezium (Distal Row - Lateral)',
+        description: 'Four-sided bone with a distinctive saddle-shaped articular facet that articulates directly with the first metacarpal ("Trapezium under the Thumb"); enables thumb opposition and circumduction.',
+        highlight: 'Saddle joint with 1st metacarpal (thumb)'
+      },
+      {
+        letter: 'T',
+        term: 'Trapezoid (Distal Row)',
+        description: 'Small, wedge-shaped bone wedged snugly between the trapezium and capitate; articulates distally with the second metacarpal base (index finger).',
+        highlight: 'Articulates with 2nd metacarpal'
+      },
+      {
+        letter: 'C',
+        term: 'Capitate (Distal Row)',
+        description: 'The largest carpal bone ("head" of the carpus) positioned centrally in the distal row; forms the cornerstone of the transverse carpal arch and articulates distally with the third metacarpal.',
+        highlight: 'Largest carpal bone & central keystone'
+      },
+      {
+        letter: 'H',
+        term: 'Hamate (Distal Row - Medial)',
+        description: 'Wedge-shaped bone featuring a prominent hook-like anterior projection (hamulus). Forms the lateral wall of Guyon canal; hook fractures (golf/baseball impacts) risk ulnar nerve and artery impingement.',
+        highlight: 'Hook of hamate & ulnar nerve/Guyon canal'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical, emergency, and orthopedic nursing, assessing wrist trauma following a Fall Onto an Outstretched Hand (FOOSH) requires anatomical precision. Palpating localized tenderness in the anatomical snuffbox indicates an occult scaphoid fracture requiring prompt thumb spica immobilization to prevent avascular necrosis. Neurovascular checks evaluate radial, median (tested via thumb opposition and sensation at the index fingertip), and ulnar nerves (tested via finger abduction and fifth-digit sensation).',
+    nclexPearls: [
+      'Occult Scaphoid Fracture Management: A client presenting with anatomical snuffbox pain after a FOOSH injury must be immobilized in a thumb spica splint/cast even if initial X-rays are negative, because fracture lines may not appear until bone reabsorption occurs in 10-14 days.',
+      'Retrograde Blood Supply: The scaphoid receives arterial flow from distal branches entering at its waist/tubercle; proximal pole fractures sever this supply, creating high risk for avascular necrosis (AVN) and nonunion.',
+      'Carpal Tunnel Assessments: Phalen maneuver (holding wrists in full flexion for 60 seconds) and Tinel sign (percussing over the volar median nerve) reproduce paresthesias in the median nerve distribution (digits 1, 2, 3, and half of 4).'
+    ],
+    practiceQuestion: {
+      question: 'An adult client presents to the emergency department following a fall onto an outstretched hand (FOOSH). Physical assessment reveals localized tenderness upon palpation of the anatomical snuffbox. Initial wrist radiographs show no definitive fracture line. Which nursing action is the priority?',
+      options: [
+        'Discharge the client with instructions to perform wrist range-of-motion exercises as tolerated.',
+        'Immobilize the wrist in a thumb spica splint and arrange for repeat radiographs in 10 to 14 days.',
+        'Apply an elastic compression bandage and advise ice application for 24 hours.',
+        'Prepare the client for immediate closed reduction and internal screw fixation.'
+      ],
+      correctIndex: 1,
+      rationale: 'Tenderness in the anatomical snuffbox after a FOOSH injury is classic for a scaphoid fracture (the "S" in "She Looks Too Proud"). Scaphoid fractures are frequently radiographically occult initially. Because the scaphoid possesses a retrograde distal-to-proximal blood supply, undiagnosed fractures carry a high risk of nonunion and avascular necrosis (AVN). Standard protocol mandates immobilization in a thumb spica splint or cast and repeat imaging in 10 to 14 days when osteoclastic resorption makes fracture lines visible.'
+    }
+  },
+  {
+    id: 'scalp-layers-scalp',
+    shortCode: 'SCALP',
+    title: 'Layers of the Scalp (SCALP)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'The 5 anatomical strata of the scalp from superficial skin to deep cranial pericranium.',
+    memoryTip: 'SCALP — Skin, Connective tissue (dense), Aponeurosis (galea), Loose areolar tissue (danger zone), Pericranium (periosteum).',
+    highYield: true,
+    tags: ['Neurological', 'Trauma', 'Surgical Nursing', 'Head Injury', 'Anatomy'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Skin',
+        description: 'Thick, hair-bearing cutaneous layer containing abundant sebaceous and sweat glands; firmly bound to underlying epicranial aponeurosis and common site of sebaceous cysts and traumatic scalp lacerations.',
+        highlight: 'Hair-bearing cutaneous layer'
+      },
+      {
+        letter: 'C',
+        term: 'Connective Tissue (Dense Subcutaneous)',
+        description: 'Richly vascularized and innervated fibrous layer where collagenous septa tether blood vessel walls open; severed blood vessels cannot spontaneously retract or constrict, resulting in profuse arterial bleeding from scalp wounds.',
+        highlight: 'Dense vascular layer & profuse bleeding'
+      },
+      {
+        letter: 'A',
+        term: 'Aponeurosis (Galea Aponeurotica)',
+        description: 'Tough, broad fibrous tendon uniting the occipital and frontal bellies of the occipitofrontalis muscle. Deep lacerations penetrating the galea gape widely under tension and require layered two-stage closure.',
+        highlight: 'Epicranial aponeurosis & gaping wounds'
+      },
+      {
+        letter: 'L',
+        term: 'Loose Areolar Tissue ("Danger Zone")',
+        description: 'Spongy, flexible cleavage plane enabling free scalp mobility over the calvarium. Traversed by valveless emissary veins connecting scalp veins to intracranial dural venous sinuses; infections here can spread directly into the meninges (meningitis, cavernous sinus thrombosis).',
+        highlight: 'Danger zone & emissary vein infection spread'
+      },
+      {
+        letter: 'P',
+        term: 'Pericranium (Skull Periosteum)',
+        description: 'Dense fibrous outer periosteal lining of the cranial calvarial bones; firmly attached at cranial sutures. Subperiosteal bleeding (cephalohematoma) is strictly confined by suture margins, unlike subgaleal hemorrhages.',
+        highlight: 'Calvarial periosteum & suture confinement'
+      }
+    ],
+    clinicalContext: 'In Emergency and Medical-Surgical trauma nursing, head and scalp injuries are frequent. The nurse must recognize that dense connective tissue lacerations bleed excessively (risk of hypovolemic shock in pediatric/elderly clients) requiring direct pressure and pressure dressings. Furthermore, understanding the "danger area" (loose areolar layer) and pericranium distinguishes subgaleal hemorrhage (diffuse, crosses sutures, potentially massive blood loss) from cephalohematoma (contained by pericranium, does not cross suture lines), as well as intracranial infection spread via emissary veins.',
+    nclexPearls: [
+      'Profuse Scalp Bleeding: The dense connective tissue binds blood vessel walls open; lacerations bleed copiously and require rapid direct manual pressure or sterile staple/suture closure to prevent hemorrhagic shock.',
+      'The "Danger Area" of the Scalp: The loose areolar connective tissue contains valve-less emissary veins that penetrate the skull to drain into intracranial venous sinuses; scalp infections in this layer can easily seed intracranial abscesses, meningitis, or septic cavernous sinus thrombosis.',
+      'Subgaleal Hemorrhage vs. Cephalohematoma: Subgaleal hemorrhage occurs in the loose areolar layer beneath the aponeurosis and crosses cranial suture lines, potentially holding large blood volumes; a cephalohematoma forms under the pericranium and is strictly confined by suture lines.'
+    ],
+    practiceQuestion: {
+      question: 'An emergency department nurse assesses a trauma client who sustained a deep scalp laceration and blunt head trauma. The nurse notes that the wound edges are widely separated and gaping, with bleeding originating from beneath the fibrous epicranial layer. Blood has accumulated across cranial suture lines. Which scalp layer (SCALP) contains the emissary veins and allows fluid or infection to spread freely across suture boundaries?',
+      options: [
+        'Connective tissue (dense subcutaneous layer)',
+        'Aponeurosis (galea aponeurotica)',
+        'Loose areolar connective tissue ("danger zone")',
+        'Pericranium (skull periosteum)'
+      ],
+      correctIndex: 2,
+      rationale: 'The loose areolar tissue (the "L" in SCALP) is clinically termed the "danger zone of the scalp" because it is a loose, expansive cleavage plane containing valveless emissary veins that connect superficial scalp veins directly to intracranial dural venous sinuses. Hematomas (subgaleal hemorrhages) or infections within this layer can spread unrestricted across cranial sutures from the orbital ridges anteriorly to the nuchal line posteriorly, posing severe risks of massive blood sequestration and intracranial infectious seeding.'
+    }
+  },
+  {
+    id: 'joint-movements-feed-pipe-card-sharp',
+    shortCode: 'FEED PIPE CARD SHARP',
+    title: 'Types of Joint Movements (FEED PIPE CARD SHARP)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Comprehensive classification of all 16 physiological joint motions evaluated during musculoskeletal and range-of-motion (ROM) nursing assessments.',
+    memoryTip: 'FEED PIPE CARD SHARP — FEED PIPE (Flexion, Extension, Eversion, Dorsiflexion, Pronation, Inversion, Plantarflexion, Elevation) + CARD SHARP (Circumduction, Abduction, Rotation, Depression, Supination, Hyperextension, Adduction, Retraction, Protraction).',
+    highYield: true,
+    tags: ['Musculoskeletal', 'Physical Assessment', 'Rehabilitation', 'Mobility', 'Orthopedics'],
+    letters: [
+      {
+        letter: 'F',
+        term: 'Flexion',
+        description: 'Bending movement that decreases the angle between two articulating bones or body parts (e.g., bending elbow or knee).',
+        highlight: 'Decreases joint angle'
+      },
+      {
+        letter: 'E',
+        term: 'Extension',
+        description: 'Straightening movement that increases the angle between two articulating bones back toward anatomical neutral position (e.g., straightening a bent elbow or knee).',
+        highlight: 'Increases joint angle'
+      },
+      {
+        letter: 'E',
+        term: 'Eversion',
+        description: 'Turning the sole of the foot outward (laterally), away from the sagittal midline of the body.',
+        highlight: 'Sole turned outward laterally'
+      },
+      {
+        letter: 'D',
+        term: 'Dorsiflexion',
+        description: 'Elevating the foot and toes superiorly toward the shin/tibia. Inability to dorsiflex indicates foot drop caused by common peroneal (fibular) nerve injury.',
+        highlight: 'Toes pointed toward shin & foot drop indicator'
+      },
+      {
+        letter: 'P',
+        term: 'Pronation',
+        description: 'Rotating the forearm so the palm faces posteriorly or downward ("pouring out soup"), or inward rolling of the foot arch.',
+        highlight: 'Palm facing posteriorly/downward'
+      },
+      {
+        letter: 'I',
+        term: 'Inversion',
+        description: 'Turning the sole of the foot inward (medially), toward the sagittal midline of the body; the primary mechanism of lateral ankle sprains (ATFL injury).',
+        highlight: 'Sole turned inward medially'
+      },
+      {
+        letter: 'P',
+        term: 'Plantarflexion',
+        description: 'Bending the foot and toes downward toward the ground (pointing the toes; mediated by the tibial nerve, gastrocnemius, and Achilles tendon).',
+        highlight: 'Toes pointed downward'
+      },
+      {
+        letter: 'E',
+        term: 'Elevation',
+        description: 'Lifting or raising a body part superiorly along the frontal plane (e.g., shrugging shoulders upward via the trapezius muscle).',
+        highlight: 'Raising body part superiorly'
+      },
+      {
+        letter: 'C',
+        term: 'Circumduction',
+        description: 'Sequential movement of a distal limb segment in a 360-degree cone (combining flexion, abduction, extension, and adduction) around a ball-and-socket joint (shoulder, hip).',
+        highlight: 'Conical 360-degree limb rotation'
+      },
+      {
+        letter: 'A',
+        term: 'Abduction',
+        description: 'Moving a limb or digit laterally away from the midline of the body in the coronal plane.',
+        highlight: 'Moving away from midline'
+      },
+      {
+        letter: 'R',
+        term: 'Rotation',
+        description: 'Pivoting or twisting a bone around its own longitudinal axis (e.g., turning head side to side at the atlantoaxial joint; internal/external rotation of hip).',
+        highlight: 'Pivoting around longitudinal axis'
+      },
+      {
+        letter: 'D',
+        term: 'Depression',
+        description: 'Lowering an elevated body part inferiorly along the frontal plane (e.g., lowering shrugged shoulders back down or opening the jaw/mandible).',
+        highlight: 'Lowering body part inferiorly'
+      },
+      {
+        letter: 'S',
+        term: 'Supination',
+        description: 'Rotating the forearm so the palm faces anteriorly or upward ("holding a bowl of soup"), restoring anatomical position.',
+        highlight: 'Palm facing anteriorly/upward'
+      },
+      {
+        letter: 'H',
+        term: 'Hyperextension',
+        description: 'Extending a joint past its normal anatomical neutral zero plane (e.g., tilting head backward to look at the ceiling).',
+        highlight: 'Extension beyond anatomical neutral'
+      },
+      {
+        letter: 'A',
+        term: 'Adduction',
+        description: 'Moving a limb or digit medially toward the midline of the body in the coronal plane.',
+        highlight: 'Moving toward midline'
+      },
+      {
+        letter: 'R',
+        term: 'Retraction',
+        description: 'Posterior displacement or backward gliding movement of a body part parallel to the horizontal plane (e.g., pulling jaw backward or pinching scapulae together).',
+        highlight: 'Backward gliding movement'
+      },
+      {
+        letter: 'P',
+        term: 'Protraction',
+        description: 'Anterior displacement or forward gliding movement of a body part parallel to the horizontal plane (e.g., jutting the jaw forward or rounding shoulders).',
+        highlight: 'Forward gliding movement'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical, orthopedic, and rehabilitative nursing, documenting active and passive range of motion (ROM) is foundational for preventing contractures, evaluating stroke recovery, assessing joint mobility in arthritis, monitoring traction, and testing specific nerve roots (e.g., common peroneal nerve injury manifesting as loss of dorsiflexion / foot drop).',
+    nclexPearls: [
+      'Foot Drop & Dorsiflexion: Compression of the common peroneal (fibular) nerve at the fibular head leads to loss of foot dorsiflexion and eversion, causing "foot drop." Nurses prevent this with high-top sneakers, footboards, or ankle-foot orthoses (AFO).',
+      'Inversion Ankle Sprains: The anterior talofibular ligament (ATFL) is the most commonly torn ligament in inversion injuries; managed with RICE (Rest, Ice, Compression, Elevation).',
+      'Supination vs. Pronation: "Supination = holding a cup of Soup (palm up); Pronation = Pouring it out (palm down)."',
+      'Total Hip Arthroplasty (Posterior Approach) Precautions: Avoid hip flexion > 90°, avoid adduction past midline (use abduction pillow), and avoid internal rotation to prevent prosthesis dislocation!'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical nurse is developing a postoperative care plan for a client who underwent a right total hip arthroplasty via a posterior surgical approach. To prevent dislocation of the femoral head prosthesis, which joint movements (FEED PIPE CARD SHARP) must the nurse instruct the client and staff to strictly avoid?',
+      options: [
+        'Flexion beyond 90 degrees, adduction past the midline, and internal rotation.',
+        'Extension beyond anatomical neutral, abduction away from the midline, and supination.',
+        'Plantarflexion, eversion, and external rotation of the affected extremity.',
+        'Circumduction, elevation of the shoulder girdle, and hyperextension of the knee.'
+      ],
+      correctIndex: 0,
+      rationale: 'Following a posterior-approach total hip arthroplasty, the hip joint capsule is vulnerable to posterior dislocation. The client must strictly avoid: (1) hip flexion beyond 90° (e.g., bending over to tie shoes, sitting in low chairs), (2) adduction of the operated leg across the midline (an abduction wedge/pillow is placed between the legs), and (3) internal rotation.'
+    }
+  },
+  {
+    id: 'diaphragm-innervation-c3-c4-c5',
+    shortCode: 'CUT C4',
+    title: 'Diaphragm Innervation & Spinal Injury (Cut C4, Breathe No More)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Phrenic nerve roots (C3, C4, C5) innervating the diaphragm and mechanical ventilatory dependence in high cervical spinal cord injury.',
+    memoryTip: 'Cut C4, breathe no more! ("C3, C4, C5 keep the diaphragm alive") — Phrenic nerve motor control of diaphragmatic respiration.',
+    highYield: true,
+    tags: ['Neurological', 'Spinal Cord Injury', 'Respiratory', 'Critical Care', 'Emergency Nursing'],
+    letters: [
+      {
+        letter: 'C3',
+        term: 'Cervical Root 3',
+        description: 'Superior contributing motor branch of the cervical plexus that forms the phrenic nerve; high-cervical trauma involving C3 eliminates cephalic diaphragmatic drive.',
+        highlight: 'Phrenic nerve superior branch'
+      },
+      {
+        letter: 'C4',
+        term: 'Cervical Root 4 ("Cut C4, Breathe No More")',
+        description: 'The major, primary motor root supplying the phrenic nerve. Transection or complete cord transection at or above C4 leads to immediate loss of diaphragmatic excursion, requiring lifelong mechanical ventilatory support.',
+        highlight: 'Primary phrenic root & ventilator dependence'
+      },
+      {
+        letter: 'C5',
+        term: 'Cervical Root 5',
+        description: 'Inferior motor root contributor to the phrenic nerve. Injuries strictly below C4 (e.g. C5-C6) spare primary diaphragmatic motor supply but paralyze intercostal and abdominal respiratory muscles.',
+        highlight: 'Inferior phrenic root branch'
+      }
+    ],
+    clinicalContext: 'In Emergency, Trauma, and ICU Medical-Surgical nursing, assessing respiratory function in Spinal Cord Injury (SCI) is prioritized above all else (ABC priority). Transection or severe edema above or at C4 paralyses the diaphragm, leaving the patient completely ventilator-dependent for life. Injuries from C5 through T6 spare the diaphragm but paralyze intercostal and abdominal expiratory muscles, resulting in diaphragmatic/abdominal breathing, inability to cough effectively, and extreme risk for atelectasis and pneumonia.',
+    nclexPearls: [
+      'Priority Assessment in SCI: Airway, breathing pattern, and vital capacity are top priority in any cervical spine injury. Ascending post-traumatic spinal cord edema during the first 24-48 hours can convert a C5-C6 injury into an emergent respiratory arrest (C3-C4 level impairment).',
+      'Quad-Cough (Assisted Cough): Clients with SCI between C5 and T6 retain diaphragmatic breathing but lose abdominal expiratory muscles; the nurse must provide assisted "quad-cough" (inward and upward pressure on the epigastrium during exhalation) to clear bronchial secretions.',
+      'Spinal Shock vs. Neurogenic Shock: Neurogenic shock occurs with cervical/high thoracic injuries (T6 and above) causing loss of sympathetic tone: classic triad of hypotension, bradycardia, and hypothermia (warm, dry, flushed skin from vasodilation).'
+    ],
+    practiceQuestion: {
+      question: 'A client is admitted to the neuro-trauma intensive care unit following a diving accident resulting in an acute cervical spinal cord injury at the C4 level. During the initial hours post-injury, which clinical assessment finding demands the nurse\'s immediate priority intervention?',
+      options: [
+        'Paralysis and loss of sensation in all four extremities (tetraplegia).',
+        'Weak, shallow respirations with a dropping tidal volume and paradoxical abdominal movement.',
+        'Urinary retention with a palpably distended suprapubic bladder.',
+        'Absence of deep tendon reflexes in the lower extremities (flaccidity).'
+      ],
+      correctIndex: 1,
+      rationale: '"Cut C4, breathe no more" (C3, C4, C5 innervate the diaphragm via the phrenic nerve). An injury at or above C4 directly impairs or eliminates phrenic nerve motor transmission, causing diaphragmatic failure. Weak, shallow breathing, decreasing tidal volume, and paradoxical abdominal movement indicate impending acute respiratory failure, requiring immediate endotracheal intubation and mechanical ventilation. Airway and breathing supersede motor, sensory, and urinary deficits.'
+    }
+  },
+  {
+    id: 'erection-ejaculation-point-and-shoot',
+    shortCode: 'POINT & SHOOT',
+    title: 'Autonomic Control of Sexual Function (Point and Shoot)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Differentiating parasympathetic (erection) versus sympathetic (ejaculation) autonomic innervation in reproductive, neurological, and pharmacological nursing.',
+    memoryTip: 'Point and Shoot! — Parasympathetic = Point (Erection); Sympathetic = Shoot (Ejaculation).',
+    highYield: true,
+    tags: ['Neurological', 'Genitourinary', 'Pharmacology', 'Spinal Cord Injury', 'Autonomic Nervous System'],
+    letters: [
+      {
+        letter: 'P',
+        term: 'Point (Parasympathetic Nervous System)',
+        description: 'Sacral autonomic outflow (pelvic splanchnic nerves S2–S4) releases acetylcholine and nitric oxide (NO), stimulating cGMP production to relax corporal smooth muscle and dilate cavernosal helicine arteries, producing vascular engorgement and Erection.',
+        highlight: 'Parasympathetic (S2-S4) = Erection'
+      },
+      {
+        letter: 'S',
+        term: 'Shoot (Sympathetic Nervous System)',
+        description: 'Thoracolumbar autonomic outflow (T11–L2 via the hypogastric nerve plexus) stimulates rhythmic contractions of the vas deferens, seminal vesicles, and prostate gland, coupled with internal urethral sphincter closure, driving Ejaculation and emission.',
+        highlight: 'Sympathetic (T11-L2) = Ejaculation'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical, neurological, and urological nursing, understanding autonomic sexual physiology is critical when caring for clients with Spinal Cord Injuries (distinguishing upper motor neuron reflexogenic erections via S2-S4 from psychogenic erections via T11-L2), radical prostatectomies (cavernous nerve injury leading to ED), benign prostatic hyperplasia / hypertension (alpha-1 blockers causing retrograde ejaculation), and phosphodiesterase-5 (PDE5) inhibitor therapy (contraindication with nitrates).',
+    nclexPearls: [
+      'PDE5 Inhibitors & Nitrates: Sildenafil, Tadalafil, and Vardenafil amplify parasympathetic-mediated nitric oxide/cGMP signaling. Concurrent administration of nitroglycerin or isosorbide dinitrate causes profound, life-threatening systemic vasodilation and refractory shock; STRICTLY CONTRAINDICATED!',
+      'Autonomic Dysreflexia in SCI: In clients with SCI at T6 or above, sexual stimulation, ejaculation, or bladder/bowel distension can trigger life-threatening autonomic dysreflexia (hypertensive emergency, pounding headache, bradycardia, profuse sweating above lesion).',
+      'Alpha-Blockers & Retrograde Ejaculation: Sympathetic tone normally closes the internal urethral sphincter during ejaculation; alpha-1 adrenergic antagonists (e.g., tamsulosin for BPH) prevent sphincter closure, causing harmless retrograde ejaculation into the bladder ("dry ejaculation").'
+    ],
+    practiceQuestion: {
+      question: 'A male client with erectile dysfunction is being evaluated in the urology clinic. The nurse reviews his home medications and observes that he takes isosorbide mononitrate daily for chronic stable angina. The client asks the nurse for a prescription for sildenafil. What is the nurse\'s priority response?',
+      options: [
+        '"Sildenafil can safely be taken as long as it is scheduled at least 2 hours before your nitrate dose."',
+        '"Taking sildenafil with isosorbide mononitrate can precipitate severe, life-threatening hypotension and is strictly contraindicated."',
+        '"Sildenafil acts through sympathetic nerves, so it will not interact with your cardiovascular nitrate medications."',
+        '"You will require a higher dose of sildenafil to overcome the vascular effects of your nitrate therapy."'
+      ],
+      correctIndex: 1,
+      rationale: 'Erection is mediated by the Parasympathetic nervous system ("Point" in Point and Shoot) via the release of nitric oxide (NO), which stimulates cyclic guanosine monophosphate (cGMP) causing vascular smooth muscle relaxation. Sildenafil inhibits PDE5, preventing cGMP degradation. Nitrates are exogenous nitric oxide donors. Combining nitrates with PDE5 inhibitors causes synergistic, massive vasodilation leading to refractory hypotension, myocardial infarction, and cardiovascular collapse; this combination is absolutely contraindicated.'
+    }
+  },
+  {
+    id: 'heart-valves-location-aptm',
+    shortCode: 'APTM',
+    title: 'Heart Valve Auscultation & Anatomical Order (APTM)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Anatomical order and surface auscultation landmarks of the 4 cardiac valves across the precordium from right to left.',
+    memoryTip: '“A Permanently Temperamental Man” (APTM) — Aortic (2nd ICS R), Pulmonic (2nd ICS L), Tricuspid (4th/5th ICS LSB), Mitral (5th ICS MCL / Apex).',
+    highYield: true,
+    tags: ['Cardiovascular', 'Physical Assessment', 'Heart Murmurs', 'Auscultation', 'Telemetry'],
+    letters: [
+      {
+        letter: 'A',
+        term: 'Aortic Valve (2nd ICS, Right Sternal Border)',
+        description: 'Primary listening post for aortic valve sounds and closure (contributes to S2). Location where aortic stenosis (crescendo-decrescendo harsh systolic ejection murmur radiating to the carotids) and aortic regurgitation (early blowing diastolic decrescendo murmur) are best heard.',
+        highlight: '2nd ICS right sternal border & aortic murmurs'
+      },
+      {
+        letter: 'P',
+        term: 'Pulmonic Valve (2nd ICS, Left Sternal Border)',
+        description: 'Primary landmark for pulmonic valve sounds and closure. Best auscultatory area for physiological splitting of S2 (widening on inspiration), pulmonary hypertension (accentuated P2), and pulmonic stenosis murmurs.',
+        highlight: '2nd ICS left sternal border & S2 splitting'
+      },
+      {
+        letter: 'T',
+        term: 'Tricuspid Valve (4th–5th ICS, Lower Left Sternal Border)',
+        description: 'Atrioventricular valve between the right atrium and right ventricle. Landmark for detecting tricuspid regurgitation (holosystolic murmur accentuated during inspiration, known as Carvallo sign) and right ventricular heave.',
+        highlight: '4th-5th ICS left sternal border & Carvallo sign'
+      },
+      {
+        letter: 'M',
+        term: 'Mitral Valve (5th ICS, Left Midclavicular Line / Apex)',
+        description: 'Bicuspid atrioventricular valve at the cardiac apex and Point of Maximal Impulse (PMI). Loudest area for S1; site to evaluate apical pulse for 60 seconds (digoxin assessment), mitral stenosis (opening snap and low-pitched diastolic rumble), and mitral regurgitation (holosystolic murmur radiating to the left axilla).',
+        highlight: '5th ICS left MCL, apical pulse & PMI'
+      }
+    ],
+    clinicalContext: 'In Cardiovascular and Medical-Surgical nursing, cardiac assessment requires systematic precordial auscultation using both the diaphragm (high-pitched sounds like S1, S2, systolic ejection murmurs) and the bell (low-pitched sounds like S3, S4, and mitral stenosis rumbles). Assessing the apical pulse at the mitral area for a full 60 seconds is mandatory before administering digitalis glycosides (e.g., digoxin, holding if pulse < 60 bpm).',
+    nclexPearls: [
+      'Precordial Auscultation Order: Follow the path of blood flow across the chest wall: Aortic (2nd ICS Right) → Pulmonic (2nd ICS Left) → [Erb\'s Point at 3rd ICS Left] → Tricuspid (4th–5th ICS Lower Left Sternal Border) → Mitral (5th ICS Left Midclavicular Line).',
+      'Apical Pulse & Digoxin: Always auscultate the apical pulse at the Mitral area (5th ICS, left MCL) for 1 full minute prior to administering Digoxin; hold medication and notify the provider if heart rate is < 60 bpm (adults) or < 90–110 bpm (infants).',
+      'Bell vs. Diaphragm: Use the Diaphragm with firm pressure for normal high-pitched heart sounds (S1, S2, pericardial rubs); use the Bell with light pressure for low-pitched sounds (S3 gallop in heart failure, S4 in hypertension, mitral stenosis rumble).'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical nurse is preparing to administer morning oral digoxin to a client with heart failure and atrial fibrillation. Prior to administration, at which anatomical landmark should the nurse auscultate the client\'s apical pulse for 60 seconds (APTM)?',
+      options: [
+        'Second intercostal space at the right sternal border',
+        'Second intercostal space at the left sternal border',
+        'Fourth intercostal space at the lower left sternal border',
+        'Fifth intercostal space at the left midclavicular line'
+      ],
+      correctIndex: 3,
+      rationale: 'The apical pulse (point of maximal impulse, PMI) is auscultated over the Mitral valve area (the "M" in "A Permanently Temperamental Man" / APTM), situated at the fifth intercostal space at the left midclavicular line. For clients receiving digoxin, the apical pulse must be auscultated for a full 60 seconds; digoxin must be withheld and the prescriber notified if the apical heart rate is below 60 beats/min in an adult. Options 1, 2, and 3 correspond to the aortic, pulmonic, and tricuspid auscultatory areas, respectively.'
+    }
+  },
+  {
+    id: 'cancer-patient-care-focus',
+    shortCode: 'CANCER',
+    title: 'Focus of Nursing Care in Clients with Cancer (CANCER)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Core nursing priorities for oncology patients undergoing antineoplastic therapy, palliative care, and recovery.',
+    memoryTip: 'CANCER — Chemotherapy, Assess body image disturbance, Nutritional needs with N/V, Comfort from pain, Effective response evaluation, Rest for patient and family.',
+    highYield: true,
+    tags: ['Oncology', 'Chemotherapy', 'Pain Management', 'Palliative Care', 'Nutrition'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Chemotherapy (Administration & Precautions)',
+        description: 'Strict adherence to cytotoxic precautions (double chemo gloves, non-permeable gown, face shield during administration and handling bodily fluids for 48 hours). Verify central venous catheter patency and blood return before infusing vesicants to prevent extravasation tissue necrosis; monitor for nadir myelosuppression (ANC < 500 = neutropenic precautions).',
+        highlight: 'Cytotoxic precautions & vesicant extravasation prevention'
+      },
+      {
+        letter: 'A',
+        term: 'Assess Body Image Disturbance (Alopecia & Surgeries)',
+        description: 'Evaluate psychological distress and self-concept alteration stemming from treatment-induced hair loss (alopecia), mastectomy, limb amputation, surgical scars, or ostomies. Provide empathetic counseling, explain that hair loss is temporary with regrowth starting 1–2 months post-chemotherapy, and encourage wig selection prior to total hair shedding.',
+        highlight: 'Alopecia coping & body image adaptation'
+      },
+      {
+        letter: 'N',
+        term: 'Nutritional Needs (Nausea, Vomiting & Stomatitis)',
+        description: 'Combat chemotherapy-induced nausea and vomiting (CINV) and cachexia. Administer prophylactic 5-HT3 receptor antagonists (ondansetron) 30–60 minutes prior to chemotherapy. Provide high-calorie, high-protein small frequent meals at room temperature (avoiding nauseating strong odors); manage mucositis with soft toothbrushes and bland salt-soda rinses (avoid alcohol mouthwashes).',
+        highlight: 'Prophylactic antiemetics & high-protein nutrition'
+      },
+      {
+        letter: 'C',
+        term: 'Comfort from Pain (Around-the-Clock Analgesia)',
+        description: 'Provide proactive, scheduled Around-the-Clock (ATC) analgesia with long-acting opioids (extended-release morphine, transdermal fentanyl) plus fast-acting opioids for breakthrough pain. Do not withhold opioids due to unfounded fear of addiction in malignant disease; aggressively manage opioid-induced constipation with daily stool softeners and stimulant laxatives.',
+        highlight: 'Scheduled ATC opioid therapy & breakthrough relief'
+      },
+      {
+        letter: 'E',
+        term: 'Effective Response to Treatment (Evaluate Outcomes)',
+        description: 'Evaluate clinical, radiological, and laboratory response to antineoplastic therapy (shrinking tumor burden, decreasing tumor markers like CEA/PSA/CA-125, resolving paraneoplastic syndromes). Vigilantly monitor for oncologic emergencies: Tumor Lysis Syndrome (hyperkalemia, hyperuricemia, hyperphosphatemia, hypocalcemia), Superior Vena Cava Syndrome, and Spinal Cord Compression.',
+        highlight: 'Monitoring therapeutic response & oncologic emergencies'
+      },
+      {
+        letter: 'R',
+        term: 'Rest (Energy Conservation for Patient & Family)',
+        description: 'Manage profound cancer-related fatigue (CRF). Implement energy conservation strategies: clustering nursing care, pacing activities, scheduling planned daytime rest intervals without disrupting nocturnal sleep, and connecting exhausted family caregivers with respite services and community oncology support networks.',
+        highlight: 'Cancer-related fatigue & caregiver respite'
+      }
+    ],
+    clinicalContext: 'In Medical-Surgical and Oncology nursing, clients with cancer face complex multisystem stressors spanning bone marrow suppression, treatment side effects (CINV, mucositis, neuropathy), debilitating chronic and breakthrough pain, and profound existential fatigue. A structured care plan addressing chemotherapy precautions, nutrition, pain relief, body image, treatment efficacy, and rest delivers holistic, family-centered oncology care.',
+    nclexPearls: [
+      'Anticipatory Antiemetic Administration: Administer prophylactic 5-HT3 receptor antagonists (ondansetron) 30 to 60 minutes before chemotherapy infusion, not after nausea begins.',
+      'Cancer Pain Principle: Severe chronic cancer pain must be managed with around-the-clock (ATC) scheduled dosing of long-acting opioids (e.g., transdermal fentanyl or oral extended-release morphine) with immediate-release opioids available for breakthrough pain. Never withhold opioids due to fear of addiction in advanced cancer.',
+      'Stomatitis / Mucositis Nursing Interventions: Use a soft-bristled toothbrush or sponge swabs, rinse mouth with normal saline or sodium bicarbonate rinses every 2 hours, avoid commercial alcohol-based mouthwashes and spicy/citrus foods, and apply prescribed topical anesthetic rinses (viscous lidocaine / "magic mouthwash") before meals.'
+    ],
+    practiceQuestion: {
+      question: 'A medical-surgical nurse is planning care for a client with metastatic colon cancer who is receiving palliative chemotherapy. The client reports severe unrelenting visceral pain rated 8/10, anorexia with significant weight loss, and nausea. Which nursing intervention reflects the highest-standard evidence-based cancer care (CANCER)?',
+      options: [
+        'Administer prescribed opioid analgesics on an around-the-clock (ATC) scheduled regimen with supplemental immediate-release doses for breakthrough pain.',
+        'Administer opioid analgesics only when the client requests them (PRN) to prevent physical dependence and tolerance.',
+        'Encourage the client to consume large, dense meals three times daily and rinse the mouth with commercial alcohol mouthwash.',
+        'Advise the client that alopecia and body image changes will be permanent following modern chemotherapy regimens.'
+      ],
+      correctIndex: 0,
+      rationale: 'Optimal cancer pain management ("C" in CANCER for Comfort from pain) requires scheduled, around-the-clock (ATC) administration of long-acting analgesics with PRN fast-acting doses for breakthrough pain. Fear of addiction or dependence is never a valid rationale to withhold or delay opioids in cancer pain management. Antiemetics should be given prophylactically, meals should be small and frequent, commercial alcohol mouthwashes should be strictly avoided due to mucosal drying/irritation, and alopecia is typically temporary with hair regrowth following treatment cessation.'
+    }
+  },
+  {
+    id: 'focal-neuro-deficits-ten-ss',
+    shortCode: '10 S\'s',
+    title: 'Etiologies of Focal Neurological Deficits (10 S\'s)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Differential diagnostic causes of acute focal neurological deficits (hemiparesis, aphasia, facial droop, cranial nerve palsies).',
+    memoryTip: '10 S’s — Sugar (glucose derangements), Stroke, Seizure (Todd’s paralysis), Subdural hematoma, Subarachnoid hemorrhage, Space-occupying lesion, Spinal cord syndromes, Somatoform, Sclerosis (MS), Some migraines.',
+    highYield: true,
+    tags: ['Neurological', 'Stroke', 'Emergency Nursing', 'Critical Care', 'Differential Diagnosis'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Sugar (Hypoglycemia & Hyperglycemia)',
+        description: 'Severe hypoglycemia (<50–60 mg/dL) or hyperosmolar hyperglycemic state (HHS) frequently produces acute focal neurological deficits (unilateral hemiparesis, facial asymmetry, dysarthria) that precisely mimic acute ischemic stroke. Bedside capillary glucose measurement is the mandatory first diagnostic action!',
+        highlight: 'Check blood glucose first to rule out stroke mimic'
+      },
+      {
+        letter: 'S',
+        term: 'Stroke (Ischemic or Hemorrhagic CVA)',
+        description: 'Acute vascular occlusion or intracranial bleeding causing sudden focal motor/sensory deficits, aphasia, or hemineglect. Emergent non-contrast head CT is performed immediately to exclude hemorrhage before administering IV thrombolytics (tPA/alteplase within 3 to 4.5 hours of symptom onset).',
+        highlight: 'Acute stroke & emergent non-contrast head CT'
+      },
+      {
+        letter: 'S',
+        term: 'Seizure (Todd\'s Paralysis)',
+        description: 'Transient focal motor weakness or paresis (typically unilateral arm or leg weakness) occurring in the post-ictal phase following focal or generalized epileptic seizures; typically resolves spontaneously within 24 to 48 hours without acute vascular intervention.',
+        highlight: 'Post-ictal transient unilateral weakness'
+      },
+      {
+        letter: 'S',
+        term: 'Subdural Hematoma (SDH)',
+        description: 'Venous bleeding from sheared bridging veins between the dura and arachnoid mater, commonly seen in older adults or alcoholics following minor head trauma. Can present subacutely or chronically with fluctuating confusion, headache, and progressive focal hemiparesis.',
+        highlight: 'Bridging cortical vein rupture & insidious decline'
+      },
+      {
+        letter: 'S',
+        term: 'Subarachnoid Hemorrhage (SAH)',
+        description: 'Arterial bleeding into the subarachnoid space, classically caused by a ruptured berry aneurysm. Hallmarked by sudden, excruciating "thunderclap headache" ("worst headache of my life"), meningismus (nuchal rigidity), photophobia, and cranial nerve III palsy.',
+        highlight: 'Thunderclap headache & ruptured aneurysm'
+      },
+      {
+        letter: 'S',
+        term: 'Space-Occupying Lesion (Tumor, AVM, Aneurysm, Abscess)',
+        description: 'Expanding intracranial masses causing progressive localized neurological deficits, increased intracranial pressure (Cushing triad, morning headache with projectile vomiting, papilledema), and focal seizures.',
+        highlight: 'Intracranial neoplasm, abscess, or vascular malformation'
+      },
+      {
+        letter: 'S',
+        term: 'Spinal Cord Syndromes (Compression / Transection)',
+        description: 'Spinal trauma, epidural abscess, or metastatic cord compression presenting with well-demarcated sensory levels, bilateral or asymmetrical limb weakness, hyperreflexia, and acute urinary retention/bowel incontinence.',
+        highlight: 'Dermatomal sensory level & cord compression'
+      },
+      {
+        letter: 'S',
+        term: 'Somatoform (Conversion Disorder / Functional Deficit)',
+        description: 'Acute neurological deficits (paralysis, blindness, aphonia) without an underlying organic or anatomical lesion; often associated with acute emotional trauma, exhibiting clinical inconsistencies (e.g., positive Hoover sign) and classic la belle indifférence.',
+        highlight: 'Functional neurological disorder & Hoover sign'
+      },
+      {
+        letter: 'S',
+        term: 'Sclerosis (Multiple Sclerosis Exacerbation)',
+        description: 'Autoimmune demyelination of central nervous system white matter producing disseminated focal deficits: optic neuritis (sudden unilateral visual loss/pain), internuclear ophthalmoplegia, ataxia, spastic paresis, and Lhermitte sign.',
+        highlight: 'Demyelinating CNS relapses & optic neuritis'
+      },
+      {
+        letter: 'S',
+        term: 'Some Migraines (Hemiplegic Migraine / Migraine with Aura)',
+        description: 'Uncommon neurovascular migraine variants characterized by reversible unilateral motor weakness, sensory paresthesias, or scotomas preceding or accompanying severe throbbing hemicranial cephalalgia.',
+        highlight: 'Reversible motor aura & throbbing headache'
+      }
+    ],
+    clinicalContext: 'In Emergency and Medical-Surgical nursing, assessing a patient with acute neurological deficits requires rapid, disciplined differentiation between true cerebrovascular accidents and "stroke mimics." Checking point-of-care capillary blood glucose is the paramount first action, because hypoglycemia instantly impairs focal cerebral metabolism and is completely reversible with rapid dextrose administration.',
+    nclexPearls: [
+      'Rule Out Sugar First: Always check bedside blood glucose immediately in ANY client presenting with acute stroke-like symptoms (facial droop, hemiparesis, slurred speech). Severe hypoglycemia can identically mimic an acute stroke!',
+      'Non-Contrast Head CT Priority: The definitive emergency imaging test for acute focal neuro deficits is an emergent non-contrast head CT to distinguish ischemic stroke from acute intracranial hemorrhage before administering thrombolytics (tPA).',
+      'Todd\'s Paralysis: Post-ictal transient focal motor weakness usually resolves within 24–48 hours; obtain collateral history to determine whether seizure activity (tonic-clonic movements, tongue biting, incontinence) preceded the weakness.'
+    ],
+    practiceQuestion: {
+      question: 'A 68-year-old client with type 2 diabetes mellitus is brought to the emergency department by family with sudden-onset right facial droop, right arm weakness, and expressive dysarthria that began 45 minutes ago. According to emergency stroke protocols (10 S\'s), which action should the triage nurse perform first?',
+      options: [
+        'Transport the client immediately for non-contrast brain CT scan.',
+        'Obtain a point-of-care capillary blood glucose measurement.',
+        'Infuse an intravenous bolus of recombinant tissue plasminogen activator (tPA).',
+        'Perform a complete 12-lead electrocardiogram to evaluate for atrial fibrillation.'
+      ],
+      correctIndex: 1,
+      rationale: 'Point-of-care capillary blood glucose check (the first "S" in the 10 S\'s for Sugar) is the paramount first diagnostic step in any client presenting with acute focal neurological deficits. Hypoglycemia (<60 mg/dL) frequently presents with focal neurological deficits that identically mimic acute ischemic stroke and must be rapidly identified and treated with IV dextrose before initiating stroke thrombolytic pathways. Once hypoglycemia is ruled out, emergent non-contrast CT is performed.'
+    }
+  },
+  {
+    id: 'diabetic-ketoacidosis-king-ufc',
+    shortCode: 'KING UFC',
+    title: 'Diabetic Ketoacidosis Management Protocol (KING UFC)',
+    category: 'med-surg',
+    categoryName: 'Medical & Surgical Nursing',
+    summary: 'Systematic emergency protocol for fluid resuscitation, insulin titration, electrolyte correction, and monitoring in Diabetic Ketoacidosis (DKA).',
+    memoryTip: 'KING UFC — K+ (potassium), Insulin (regular IV continuous), Nasogastric tube (if comatose), Glucose (add D5W when BG < 200-250), Urea (monitor BUN), Fluids (isotonic crystalloids first!), Creatinine & Catheterize.',
+    highYield: true,
+    tags: ['Endocrine', 'Diabetes', 'Critical Care', 'Fluid & Electrolytes', 'Emergency Nursing', 'Pharmacology'],
+    letters: [
+      {
+        letter: 'K',
+        term: 'K+ (Potassium Management)',
+        description: 'Verify serum potassium BEFORE initiating intravenous insulin! Insulin drives K+ into cells, which can trigger fatal hypokalemic cardiac arrhythmias. If K+ < 3.3 mEq/L, hold insulin and infuse potassium chloride. If K+ is 3.5–5.0 mEq/L, add 20–30 mEq K+ per liter of IV maintenance fluid to maintain levels between 4.0–5.0 mEq/L.',
+        highlight: 'Check K+ before insulin; hold if < 3.3 mEq/L'
+      },
+      {
+        letter: 'I',
+        term: 'Insulin (Continuous Regular IV Infusion)',
+        description: 'Continuous intravenous regular insulin infusion (typically 0.1 units/kg/hr; e.g., 5–7 units/hr). Discontinue sliding-scale regimens; aim for gradual reduction of blood glucose by 50–75 mg/dL/hr (3–4 mmol/L/hr) to avoid rapid intracranial osmotic shifts and fatal cerebral edema.',
+        highlight: 'Continuous regular IV insulin at 0.1 units/kg/hr'
+      },
+      {
+        letter: 'N',
+        term: 'Nasogastric Tube (if Comatose / Gastric Atony)',
+        description: 'Insert an NG tube connected to low intermittent suction if the client is obtunded, comatose, or actively vomiting. DKA frequently causes severe gastroparesis and gastric dilation, posing a massive aspiration pneumonia risk.',
+        highlight: 'Gastric decompression to prevent aspiration'
+      },
+      {
+        letter: 'G',
+        term: 'Glucose (Add Dextrose when BG drops to 200–250 mg/dL)',
+        description: 'When blood glucose reaches 200–250 mg/dL (11.1–13.9 mmol/L / ~12 mmol/L in UK guidelines), add 5% Dextrose (D5 0.45% NS) while continuing insulin infusion. This prevents hypoglycemia and rapid cerebral edema while allowing insulin to continue suppressing lipolysis and clearing serum ketones.',
+        highlight: 'Add D5W at 200-250 mg/dL to prevent cerebral edema'
+      },
+      {
+        letter: 'U',
+        term: 'Urea (Monitor BUN & Dehydration)',
+        description: 'Track Blood Urea Nitrogen (BUN) and serum urea serially to evaluate resolution of severe prerenal azotemia and hemoconcentration resulting from osmotic diuresis and profound volume depletion (average 5–10 L fluid deficit).',
+        highlight: 'Serial BUN monitoring for prerenal azotemia'
+      },
+      {
+        letter: 'F',
+        term: 'Fluids (Isotonic Crystalloids First!)',
+        description: 'Immediate fluid resuscitation is the absolute first priority in DKA! Infuse 1 to 2 liters of 0.9% Normal Saline (isotonic crystalloid) during the initial 1 to 2 hours to expand intravascular volume, restore renal perfusion, and decrease counter-regulatory stress hormones, transitioning to 0.45% NS based on corrected sodium.',
+        highlight: '0.9% Normal Saline bolus is top initial priority'
+      },
+      {
+        letter: 'C',
+        term: 'Creatinine & Catheterize (Urine Output Monitoring)',
+        description: 'Monitor serum creatinine to track recovery of renal glomerular filtration. Place an indwelling Foley catheter in critically ill or comatose clients for strict hourly urine output measurement. Ensure urine output is at least 30 mL/hr before administering intravenous potassium supplements.',
+        highlight: 'Hourly urine output (≥30 mL/hr) before K+ infusion'
+      }
+    ],
+    clinicalContext: 'In Emergency and ICU Medical-Surgical nursing, DKA is a life-threatening endocrine emergency occurring primarily in Type 1 Diabetes, marked by severe hyperglycemia, osmotic diuresis, profound dehydration (5-10 L fluid deficit), metabolic acidosis with an elevated anion gap, and ketonuria. Nursing care follows a rigid sequence: FLUIDS FIRST, check K+ before insulin, gradual glucose lowering, adding dextrose at 200-250 mg/dL, and tracking the closure of the anion gap.',
+    nclexPearls: [
+      'Sequence of DKA Interventions: #1 Fluids (0.9% NS bolus) → #2 Check Potassium (ensure K+ ≥ 3.3 mEq/L) → #3 Regular Insulin IV infusion. NEVER give insulin before verifying potassium level!',
+      'Preventing Cerebral Edema: Blood glucose must not drop faster than 50–75 mg/dL per hour. When blood glucose drops to 200–250 mg/dL (11–12 mmol/L), the nurse MUST add 5% Dextrose to the IV fluids while maintaining the insulin drip to clear serum ketones without precipitating sudden intracranial osmotic fluid shifts (headache, lethargy, bradycardia).',
+      'Only Regular Insulin is given IV: Regular insulin (Humulin R, Novolin R) is the ONLY insulin formulation that can be administered intravenously.',
+      'No Potassium without Urine Output: Never administer IV potassium supplements to an oliguric or anuric patient; verify urine output is ≥ 30 mL/hr before infusing K+ to prevent fatal hyperkalemic cardiac arrest.'
+    ],
+    practiceQuestion: {
+      question: 'A client with type 1 diabetes is admitted to the intensive care unit with Diabetic Ketoacidosis (DKA). The client is receiving normal saline IV hydration and a continuous regular insulin infusion. Laboratory results show the blood glucose has dropped from 580 mg/dL to 230 mg/dL, potassium is 4.2 mEq/L, and arterial blood gas reveals persistent metabolic acidosis with an anion gap of 18 mEq/L. Which prescription should the nurse implement next (KING UFC)?',
+      options: [
+        'Discontinue the intravenous regular insulin infusion immediately to avoid hypoglycemia.',
+        'Change the IV fluids to 5% Dextrose in 0.45% Normal Saline while continuing the regular insulin infusion.',
+        'Administer an intravenous bolus of sodium bicarbonate 50 mEq to correct the remaining acidosis.',
+        'Withhold all intravenous potassium and increase the insulin infusion rate to 0.2 units/kg/hr.'
+      ],
+      correctIndex: 1,
+      rationale: 'In DKA management (KING UFC), when blood glucose drops to 200–250 mg/dL (or ~12 mmol/L, "G" in KING UFC), dextrose (5% Dextrose in 0.45% NS) must be added to the IV fluids while continuing the insulin infusion. This prevents rapid hypoglycemia and cerebral edema while providing enough circulating glucose so that insulin can continue clearing serum ketones and closing the metabolic acidosis anion gap. Stopping insulin prematurely allows ketoacidosis to rebound, and bicarbonate is reserved only for severe life-threatening acidosis (pH < 6.9).'
     }
   },
 
