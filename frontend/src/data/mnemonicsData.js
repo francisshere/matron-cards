@@ -5,7 +5,7 @@ export const MNEMONICS_CATEGORIES = [
   { id: 'fundamentals', name: 'Fundamentals in Nursing', iconKey: 'fundamentals', count: 14 },
   { id: 'maternal', name: 'Maternal & Child Nursing', iconKey: 'maternal', count: 10 },
   { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 67 },
-  { id: 'psych', name: 'Psychiatric Nursing', iconKey: 'psych', count: 5 },
+  { id: 'psych', name: 'Psychiatric Nursing', iconKey: 'psych', count: 9 },
   { id: 'pharmacology', name: 'Pharmacology Nursing', iconKey: 'pharmacology', count: 6 },
   { id: 'communicable', name: 'Communicable Diseases', iconKey: 'communicable', count: 4 },
 ];
@@ -6001,6 +6001,226 @@ export const mnemonicsList = [
       ],
       correctIndex: 1,
       rationale: 'In chronic alcoholism, glucose metabolism rapidly depletes remaining thiamine reserves. Administering glucose without thiamine precipitates or worsens acute Wernicke encephalopathy. IV Thiamine must always precede or accompany IV glucose.'
+    }
+  },
+  {
+    id: 'tca-antidepressants-vent',
+    shortCode: 'VENT',
+    title: 'Tricyclic Antidepressants (TCAs) — VENT',
+    category: 'psych',
+    categoryName: 'Psychiatric Nursing',
+    summary: 'The primary classic tricyclic antidepressant (TCA) agents: Vivactil, Elavil, Norpramin, and Tofranil.',
+    memoryTip: 'VENT your depression with TCAs — V: Vivactil (protriptyline), E: Elavil (amitriptyline), N: Norpramin (desipramine), T: Tofranil (imipramine). Remember: TCAs have potent anticholinergic effects, cause orthostatic hypotension, and can cause lethal cardiotoxicity (wide QRS) in overdose!',
+    highYield: true,
+    tags: ['Psychopharmacology', 'Antidepressants', 'TCAs', 'Mental Health', 'Depression'],
+    letters: [
+      {
+        letter: 'V',
+        term: 'Vivactil (Protriptyline)',
+        description: 'An activating, stimulating tricyclic antidepressant often chosen for apathetic or lethargic depression; typically taken in the morning to avoid severe nocturnal insomnia.',
+        highlight: 'Activating TCA for psychomotor retardation; morning dosing'
+      },
+      {
+        letter: 'E',
+        term: 'Elavil (Amitriptyline)',
+        description: 'A widely prescribed, highly sedating TCA with potent anticholinergic activity; frequently administered at bedtime for depression with comorbid insomnia, chronic neuropathic pain, or migraine prophylaxis.',
+        highlight: 'Sedating TCA given at bedtime; neuropathic pain & migraine prophylaxis'
+      },
+      {
+        letter: 'N',
+        term: 'Norpramin (Desipramine)',
+        description: 'A secondary amine TCA that selectively inhibits norepinephrine reuptake; characterized by lower sedative and anticholinergic profiles compared to tertiary amines like amitriptyline.',
+        highlight: 'Potent norepinephrine reuptake inhibitor with reduced sedation'
+      },
+      {
+        letter: 'T',
+        term: 'Tofranil (Imipramine)',
+        description: 'The prototypical tricyclic antidepressant used for major depressive disorder and historically indicated for the short-term treatment of nocturnal enuresis (bed-wetting) in pediatric patients.',
+        highlight: 'Classic TCA indicated for depression and pediatric nocturnal enuresis'
+      }
+    ],
+    clinicalContext: 'Tricyclic antidepressants (TCAs) inhibit the presynaptic reuptake of serotonin (5-HT) and norepinephrine (NE), but concurrently block muscarinic acetylcholine receptors, alpha-1 adrenergic receptors, and histamine H1 receptors. As a result, TCAs carry a substantial adverse effect profile including anticholinergic symptoms (dry mouth, blurred vision, urinary retention, severe constipation), orthostatic hypotension (alpha-1 blockade), sedation and weight gain (H1 blockade), and cardiac conduction delays. TCAs carry a narrow therapeutic index; acute overdose precipitates life-threatening cardiotoxicity (QRS widening > 100 ms, prolonged QT, ventricular dysrhythmias) and anticholinergic neurotoxicity (convulsions, coma). The definitive emergency antidote for TCA-induced cardiotoxicity and metabolic acidosis is intravenous Sodium Bicarbonate.',
+    nclexPearls: [
+      'Overdose & Cardiotoxicity: TCAs are fatal in overdose (often prescribed as a 1-week supply to suicidal clients). A widened QRS complex (> 100 ms) on 12-lead ECG is the most predictive indicator of ventricular arrhythmias and seizures. Administer IV Sodium Bicarbonate immediately to alkalinize serum and narrow the QRS complex.',
+      'Anticholinergic "Can\'t See, Can\'t Pee, Can\'t Spit, Can\'t Shit": Warn clients about dry mouth (chew sugarless gum), constipation (increase fiber and water), blurred vision, and urinary hesitancy. Contraindicated in narrow-angle glaucoma and benign prostatic hyperplasia (BPH).',
+      'Orthostatic Hypotension & Fall Precautions: Alpha-1 receptor blockade produces significant postural hypotension. Instruct clients to change positions slowly, dangle legs at the bedside before standing, and stay hydrated.',
+      '14-Day MAOI Washout Period: A minimum 14-day washout period is mandatory when switching between TCAs and Monoamine Oxidase Inhibitors (MAOIs) to prevent fatal serotonin syndrome and malignant hypertensive crisis.'
+    ],
+    practiceQuestion: {
+      question: 'A client with major depressive disorder is brought to the emergency department following an intentional overdose of Elavil (amitriptyline). The client is stuporous with a blood pressure of 82/46 mm Hg, heart rate 128 bpm, and a 12-lead ECG displaying a widened QRS duration of 144 ms. Which emergency intervention should the nurse anticipate as the highest priority?',
+      options: [
+        'Immediate administration of intravenous sodium bicarbonate',
+        'Initiation of a continuous IV infusion of regular insulin and dextrose',
+        'Administration of IV flumazenil over 15 seconds',
+        'Oral administration of activated charcoal with sorbitol via nasogastric tube'
+      ],
+      correctIndex: 0,
+      rationale: 'Tricyclic antidepressant (TCA) toxicity causes blockade of myocardial fast sodium channels, slowing depolarization, prolonging cardiac conduction, and producing QRS widening (> 100 ms), hypotension, ventricular arrhythmias (ventricular tachycardia/fibrillation), and seizures. Intravenous Sodium Bicarbonate is the first-line antidote. It increases extracellular sodium concentration and elevates serum pH, which unbinds the drug from cardiac sodium channels, rapidly narrows the QRS complex, restores perfusion pressure, and prevents fatal ventricular dysrhythmias.'
+    }
+  },
+  {
+    id: 'intellectual-disability-nursing-care-3rs',
+    shortCode: "3R's",
+    title: "Intellectual Disability Care Plan (3R's)",
+    category: 'psych',
+    categoryName: 'Psychiatric Nursing',
+    summary: 'The three core principles for structuring nursing care and behavioral interventions for individuals with intellectual and developmental disabilities: Regularity, Reward, and Redundancy.',
+    memoryTip: 'The 3R\'s of Developmental & Intellectual Care — Regularity (strict daily routine and structure), Reward (immediate positive reinforcement for desired behaviors), Redundancy (frequent repetition and step-by-step task breakdown).',
+    highYield: true,
+    tags: ['Intellectual Disability', 'Pediatric Nursing', 'Behavioral Therapy', 'Mental Health', 'Developmental Disorders'],
+    letters: [
+      {
+        letter: 'R',
+        term: 'Regularity (Routine & Structure)',
+        description: 'Provide a predictable, highly consistent daily schedule and structured physical environment. Predictability minimizes sensory overload, alleviates anxiety, enhances feelings of safety, and promotes automated mastery of activities of daily living (ADLs).',
+        highlight: 'Consistent daily schedule & structured environment to minimize anxiety'
+      },
+      {
+        letter: 'R',
+        term: 'Reward (Positive Reinforcement)',
+        description: 'Deliver prompt, meaningful positive reinforcement (verbal praise, token economies, stickers, favored activities) immediately upon the client\'s successful demonstration of targeted behaviors or self-care steps to reinforce learning and self-esteem.',
+        highlight: 'Immediate positive reinforcement & praise to encourage desired behaviors'
+      },
+      {
+        letter: 'R',
+        term: 'Redundancy (Repetition & Re-demonstration)',
+        description: 'Utilize frequent repetition, consistent step-by-step instructions (task analysis), visual picture schedules, and recurring demonstrations to consolidate motor and cognitive skills into long-term functional memory.',
+        highlight: 'Frequent repetition & step-by-step task breakdown to solidify mastery'
+      }
+    ],
+    clinicalContext: 'In Psychiatric, Pediatric, and Community Health nursing, caring for clients with Intellectual Disability (intellectual developmental disorder; characterized by neurodevelopmental deficits in both intellectual functioning and adaptive behavior across conceptual, social, and practical domains) focuses on optimizing functional independence while safeguarding physical safety. The "3R\'s" framework provides an evidence-based behavioral foundation: Regularity ensures environmental stability, Reward strengthens desired behavioral repertoires, and Redundancy accommodates information-processing delays. Nursing care plans emphasize short, concrete one-step instructions, individualized communication aids (PECS/visual cards), family-centered support, and avoidance of punitive measures that trigger frustration or behavioral regression.',
+    nclexPearls: [
+      'Task Analysis & 1-Step Directions: Break complex self-care activities (e.g., brushing teeth, dressing) into small, discrete, sequential steps. Teach one component at a time and provide clear, concrete, one-step commands rather than multi-step instructions.',
+      'Consistency Across Caregivers: All nursing staff, therapists, and family members must adhere to the exact same behavioral plan, routine, and cues. Inconsistency creates confusion, behavioral agitation, and regression.',
+      'Focus on Adaptive Strengths: Base the plan of care on the individual\'s developmental age and adaptive capabilities rather than chronological age. Promote the maximum level of independent self-care within safe parameters.',
+      'Communication Strategies: Supplement verbal instructions with visual aids, gestures, modeling, and physical demonstration. Allow ample processing time (10–15 seconds) before repeating a prompt.'
+    ],
+    practiceQuestion: {
+      question: 'A pediatric nurse is designing an inpatient plan of care for a hospitalized 10-year-old child with moderate intellectual disability. Which nursing intervention best exemplifies the "3R\'s" behavioral framework to promote cooperation with morning self-care?',
+      options: [
+        'Post a visual picture schedule outlining daily morning steps, demonstrate each task, and offer immediate verbal praise when each step is completed.',
+        'Allow the child to decide when and how to complete bathing without adult intervention to foster self-determination.',
+        'Provide a detailed list of written rules and withhold lunch privileges if morning hygiene tasks are neglected.',
+        'Complete all hygiene activities for the child to minimize hospital-induced frustration and conserve energy.'
+      ],
+      correctIndex: 0,
+      rationale: 'The "3R\'s" framework relies on Regularity (a consistent visual picture schedule establishing routine), Redundancy (demonstrating and repeating each discrete step of self-care), and Reward (immediate verbal praise and positive reinforcement upon completion of each task). This empowers the child, enhances cognitive predictability, reinforces self-esteem, and promotes developmental independence. Punitive threats or doing everything for the child undermine adaptive learning and increase anxiety.'
+    }
+  },
+  {
+    id: 'cognitive-disorders-assessment-jocam',
+    shortCode: 'JOCAM',
+    title: 'Cognitive Assessment in Neurocognitive Disorders (JOCAM)',
+    category: 'psych',
+    categoryName: 'Psychiatric Nursing',
+    summary: 'The systematic 5-component clinical assessment tool for evaluating cognitive impairment in delirium and dementia: Judgment, Orientation, Confabulation, Affect, and Memory.',
+    memoryTip: 'Evaluate cognitive impairment with JOCAM — J: Judgment (safety and problem-solving), O: Orientation (time, place, person), C: Confabulation (unconscious fabrication of stories to fill memory gaps), A: Affect (blunted, labile, or inappropriate emotion), M: Memory (short-term deficits precede remote memory loss).',
+    highYield: true,
+    tags: ['Cognitive Disorders', 'Dementia', 'Delirium', 'Mental Health', 'Neurology', 'Gerontological Nursing'],
+    letters: [
+      {
+        letter: 'J',
+        term: 'Judgment & Decision-Making',
+        description: 'Ability to evaluate everyday situations, recognize danger, and make sound, realistic decisions. Impairments lead to safety risks, such as wandering into cold weather without clothes, leaving hot stoves unattended, or falling victim to financial scams.',
+        highlight: 'Impaired risk assessment & dangerous decisions; client safety is #1 priority'
+      },
+      {
+        letter: 'O',
+        term: 'Orientation (Time, Place, Person)',
+        description: 'Awareness of reality. Orientation is typically lost in reverse chronological order: Time (date, day, year) is lost first, followed by Place (current location, home), and lastly Person (identity of self and close relatives). Fluctuation indicates delirium.',
+        highlight: 'Disorientation lost progressively: Time → Place → Person'
+      },
+      {
+        letter: 'C',
+        term: 'Confabulation',
+        description: 'The unconscious fabrication of plausible events or experiences to compensate for distressing memory gaps. Unlike lying or malingering, the client genuinely believes the fabricated memories, utilizing them as a psychological defense to preserve self-esteem.',
+        highlight: 'Unconscious story fabrication to fill memory gaps & preserve self-esteem'
+      },
+      {
+        letter: 'A',
+        term: 'Affect & Emotional Expression',
+        description: 'Observable emotional state and mood expression. Clients with neurocognitive decline frequently exhibit blunted, flat, labile (rapid mood shifts from weeping to euphoria), irritable, or inappropriate affect, as well as catastrophic emotional reactions when frustrated.',
+        highlight: 'Emotional lability, blunting, or catastrophic reactions to frustration'
+      },
+      {
+        letter: 'M',
+        term: 'Memory (Short-Term vs. Long-Term)',
+        description: 'Cognitive recall capacity. Short-term (recent/working) memory is characteristically compromised early in dementia (e.g., forgetting morning meals or repeating questions), whereas remote (long-term) memory remains preserved until advanced neurodegeneration.',
+        highlight: 'Recent/short-term memory fails first; remote memory preserved until late'
+      }
+    ],
+    clinicalContext: 'Assessment of cognitive difficulties (JOCAM) is essential when evaluating clients with Major/Mild Neurocognitive Disorders (Alzheimer\'s, vascular dementia, Lewy body dementia) and Delirium. On the NCLEX, nurses must critically differentiate between Dementia and Delirium: Delirium has an acute onset, fluctuating course, altered level of consciousness, and is reversible once the primary underlying physiological stressor (UTI, pneumonia, hypoxia, electrolyte derangement, polypharmacy) is treated. Dementia has an insidious, gradual onset, progressive irreversible course, and stable level of consciousness until late stages. Nursing priorities focus on patient safety, gentle reality reorientation (in delirium or early dementia), validation therapy (in moderate-to-severe dementia), and reducing environmental overstimulation.',
+    nclexPearls: [
+      'Confabulation vs. Lying: Confabulation is NEVER deliberate dishonesty. Never confront, argue with, or challenge a confabulating client with dementia; doing so destroys their self-esteem and provokes catastrophic agitation.',
+      'Validation Therapy vs. Reorientation: In delirium or early mild dementia, gently reorient the client with clocks, calendars, and familiar items. In moderate-to-severe dementia, do NOT repeatedly argue reality; use Validation Therapy to acknowledge and validate their underlying feelings and redirect their attention.',
+      'Sundowning Syndrome: Nocturnal worsening of confusion, agitation, and wandering as daylight fades. Manage by maintaining consistent daytime routines, maximizing morning sunlight exposure, minimizing caffeine, and keeping a soft nightlight on in the bedroom.',
+      'Environmental Safety: For clients with impaired judgment and wandering risk, implement bed alarms, place door locks at top/bottom of exit doors out of visual line of sight, disguise doors with murals/curtains, and keep rooms free of clutter.'
+    ],
+    practiceQuestion: {
+      question: 'A nurse assesses an 82-year-old client with moderate Alzheimer\'s disease who states: "I must hurry up and catch the 8:00 AM bus to my law office or my boss will fire me!" Records show the client retired 20 years ago. Using the JOCAM assessment framework, which response by the nurse is most appropriate?',
+      options: [
+        '"You are 82 years old and retired 20 years ago, so you don\'t have a job to go to."',
+        '"You sound dedicated to your work. Tell me about what kind of cases you used to handle at your office."',
+        '"If you try to leave this building, the security alarms will sound and you will be restrained."',
+        '"The bus has already left for the morning, so you will have to wait until tomorrow to go to work."'
+      ],
+      correctIndex: 1,
+      rationale: 'In moderate-to-severe neurocognitive disorders (dementia), the client exhibits significant disorientation to time/role and loss of recent memory (JOCAM components). Confronting the client with stark, harsh reality ("You retired 20 years ago") induces acute anxiety, embarrassment, and catastrophic behavioral agitation. Conversely, playing along with a falsehood ("The bus already left") is dishonest and deceptive. The standard of nursing care is Validation Therapy: validate the client\'s emotional state and dignity ("You sound dedicated to your work") and use reminiscence to redirect their focus to pleasant remote memories.'
+    }
+  },
+  {
+    id: 'alcohol-withdrawal-clinical-features-hits',
+    shortCode: 'HITS',
+    title: 'Alcohol Withdrawal Syndrome Features (HITS)',
+    category: 'psych',
+    categoryName: 'Psychiatric Nursing',
+    summary: 'The cardinal clinical manifestations of alcohol withdrawal syndrome: Hallucinations, Increased vital signs & insomnia, Tremens (delirium tremens), and Shakes/Sweats/Seizures/Stomach pains.',
+    memoryTip: 'Alcohol withdrawal "HITS" hard — H: Hallucinations (visual & tactile formication), I: Increased vital signs (tachycardia, hypertension, fever) & Insomnia, T: Tremens (Delirium Tremens — life-threatening emergency), S: Shakes (tremors), Sweats (diaphoresis), Seizures (tonic-clonic), and Stomach pains (nausea/vomiting).',
+    highYield: true,
+    tags: ['Substance Use Disorders', 'Alcohol Withdrawal', 'Delirium Tremens', 'Addiction', 'Critical Care', 'Psychiatry'],
+    letters: [
+      {
+        letter: 'H',
+        term: 'Hallucinations (Visual & Tactile Formication)',
+        description: 'Perceptual disturbances typically developing 12 to 48 hours after alcohol cessation. Most commonly visual (seeing insects, snakes, shadows) or tactile (formication: crawling sensation beneath the skin); occurs while the client is still oriented (alcoholic hallucinosis).',
+        highlight: 'Visual & tactile hallucinations (formication); occurs with intact orientation'
+      },
+      {
+        letter: 'I',
+        term: 'Increased Vital Signs & Insomnia',
+        description: 'Massive sympathetic nervous system rebound due to loss of chronic GABAergic inhibition. Results in autonomic instability: arterial hypertension, tachycardia (HR > 100–120 bpm), tachypnea, low-grade fever, extreme psychomotor agitation, and severe insomnia.',
+        highlight: 'Autonomic hyperarousal: tachycardia, severe hypertension, fever & insomnia'
+      },
+      {
+        letter: 'T',
+        term: 'Tremens (Delirium Tremens / DTs)',
+        description: 'A life-threatening medical emergency developing 48 to 96 hours after the last drink. Characterized by severe global disorientation, fluctuating level of consciousness, vivid paranoid delusions, severe hyperthermia, malignant hypertension, and vascular collapse (5–15% mortality).',
+        highlight: 'Delirium Tremens (48–96 hrs): acute disorientation, fever & autonomic storm'
+      },
+      {
+        letter: 'S',
+        term: 'Shakes, Sweats, Seizures & Stomach Pains',
+        description: 'Onset within 6 to 24 hours: Coarse intention tremors ("the shakes" of hands, tongue, eyelids), profuse diaphoresis (drenching sweats), generalized tonic-clonic withdrawal seizures ("rum fits" at 12–48 hrs), and gastrointestinal distress (anorexia, nausea, vomiting, abdominal cramps).',
+        highlight: 'Intention tremors, drenching diaphoresis, tonic-clonic seizures, nausea/vomiting'
+      }
+    ],
+    clinicalContext: 'Chronic heavy alcohol consumption stimulates inhibitory GABA receptors and suppresses excitatory NMDA (glutamate) receptors. Abrupt cessation unmasks a profound imbalance: suppressed GABA and unopposed glutamate hyperstimulation produce intense central nervous system and sympathetic storm. The Clinical Institute Withdrawal Assessment for Alcohol (CIWA-Ar) protocol guides objective scoring. The primary pharmacologic treatment is cross-tolerant Benzodiazepines (chlordiazepoxide, diazepam, or lorazepam; lorazepam is preferred in hepatic impairment because it avoids hepatic oxidative metabolism). Intravenous Thiamine (Vitamin B1) MUST be administered prior to any glucose infusion to prevent irreversible Wernicke-Korsakoff encephalopathy.',
+    nclexPearls: [
+      'Delirium Tremens vs. Alcoholic Hallucinosis: Alcoholic hallucinosis occurs within 12–48 hours, characterized by vivid hallucinations with a CLEAR, ORIENTED sensorium. Delirium Tremens (DTs) occurs at 48–96 hours, marked by acute DISORIENTATION, altered consciousness, high fever, and extreme autonomic storm.',
+      'Thiamine Before Dextrose ("T before D"): Always administer IV/IM Thiamine (Vitamin B1) BEFORE or concurrently with IV dextrose infusions. Giving dextrose alone rapidly consumes residual thiamine cofactors, precipitating acute Wernicke encephalopathy (triad: encephalopathy, oculomotor dysfunction, ataxia).',
+      'Benzodiazepines as Gold Standard: Administer scheduled or symptom-triggered benzodiazepines (e.g., lorazepam / Ativan via CIWA-Ar) to prevent seizure progression and DTs. Keep seizure precautions active (suction, padded rails).',
+      'Hepatic Impairment Rule: For clients with advanced cirrhosis or liver failure, use LOT benzodiazepines (Lorazepam, Oxazepam, Temazepam) because they undergo simple glucuronidation without hepatic CYP450 oxidation.'
+    ],
+    practiceQuestion: {
+      question: 'A client hospitalized for acute pancreatitis has a history of heavy daily alcohol consumption. Forty-eight hours after admission, the client becomes severely agitated, tremulous, and drenched in sweat, stating: "There are cockroaches crawling all over my arms!" Vital signs are: BP 178/104 mm Hg, HR 124 bpm, RR 26/min, and Temp 100.8°F (38.2°C). Which medication should the nurse anticipate administering immediately?',
+      options: [
+        'Intravenous lorazepam (Ativan)',
+        'Oral haloperidol (Haldol)',
+        'Intravenous naloxone (Narcan)',
+        'Oral disulfiram (Antabuse)'
+      ],
+      correctIndex: 0,
+      rationale: 'The client is exhibiting classical signs of severe alcohol withdrawal syndrome progressing toward Delirium Tremens (HITS mnemonic: tactile hallucinations/formication, autonomic instability with marked tachycardia and hypertension, diaphoresis, and severe tremors). The immediate drug of choice is a parenteral benzodiazepine, such as intravenous Lorazepam. Benzodiazepines potentiate inhibitory GABA receptors, blunting the dangerous central nervous system hyperarousal, preventing withdrawal seizures, and decreasing the mortality of DTs. Antipsychotics like haloperidol lower the seizure threshold and are contraindicated as monotherapy. Disulfiram is an alcohol aversion agent used in sobriety maintenance, not acute withdrawal.'
     }
   },
 
