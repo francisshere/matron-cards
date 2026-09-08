@@ -6,8 +6,8 @@ export const MNEMONICS_CATEGORIES = [
   { id: 'maternal', name: 'Maternal & Child Nursing', iconKey: 'maternal', count: 10 },
   { id: 'med-surg', name: 'Medical & Surgical Nursing', iconKey: 'surgical', count: 67 },
   { id: 'psych', name: 'Psychiatric Nursing', iconKey: 'psych', count: 9 },
-  { id: 'pharmacology', name: 'Pharmacology Nursing', iconKey: 'pharmacology', count: 6 },
-  { id: 'communicable', name: 'Communicable Diseases', iconKey: 'communicable', count: 4 },
+  { id: 'pharmacology', name: 'Pharmacology Nursing', iconKey: 'pharmacology', count: 15 },
+  { id: 'communicable', name: 'Communicable Diseases', iconKey: 'communicable', count: 6 },
 ];
 
 export const mnemonicsList = [
@@ -6505,6 +6505,590 @@ export const mnemonicsList = [
       rationale: 'The mnemonic NAVEL denotes Naloxone, Atropine, Vasopressin, Epinephrine, and Lidocaine as the specific medications capable of pulmonary capillary absorption when administered down an endotracheal tube.'
     }
   },
+  {
+    id: 'corticosteroid-side-effects-five-ss',
+    shortCode: "5 S's",
+    title: "Corticosteroid Side Effects (5 S's)",
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The 5 primary systemic adverse effects of long-term corticosteroid therapy: Sick (immunosuppression), Sad (mood changes/depression), Sex (libido & endocrine shifts), Salt (sodium retention & edema), and Sugar (hyperglycemia).',
+    memoryTip: 'Remember the 5 S\'s of Steroids: Sick (infection risk / low immunity), Sad (depression & mood swings), Sex (libido changes & hirsutism), Salt (fluid retention & weight gain), and Sugar (hyperglycemia). NEVER stop steroids abruptly — taper to prevent acute adrenal crisis!',
+    highYield: true,
+    tags: ['Pharmacology', 'Endocrine', 'Steroids', 'Immunology', 'Adrenal Glands'],
+    letters: [
+      {
+        letter: 'S',
+        term: 'Sick (Immunosuppression & Infection Risk)',
+        description: 'Glucocorticoids suppress cell-mediated immunity and inhibit cytokine release, blunting the inflammatory response and masking early signs of infection (e.g., low-grade fever, absence of purulence). High susceptibility to opportunistic infections.',
+        highlight: 'Blunted immune response & masked infection signs; report even low-grade fever'
+      },
+      {
+        letter: 'S',
+        term: 'Sad (Psychiatric & Mood Alterations)',
+        description: 'Steroids cross the blood-brain barrier and cause neuropsychiatric disturbances ranging from euphoria, anxiety, and insomnia to severe clinical depression, emotional lability, and "steroid psychosis."',
+        highlight: 'Mood swings, severe depression, insomnia, and steroid-induced psychosis'
+      },
+      {
+        letter: 'S',
+        term: 'Sex (Endocrine & Libido Changes)',
+        description: 'Excess exogenous glucocorticoids suppress the hypothalamic-pituitary-gonadal axis and produce androgenic side effects: alterations in libido, amenorrhea/menstrual irregularities in females, and hirsutism/acne.',
+        highlight: 'Libido changes, menstrual irregularities, acne, and hirsutism'
+      },
+      {
+        letter: 'S',
+        term: 'Salt (Sodium & Water Retention)',
+        description: 'Mineralocorticoid activity causes renal distal tubular reabsorption of sodium and water accompanied by urinary excretion of potassium (hypokalemia). Leads to fluid volume overload, hypertension, peripheral edema, rapid weight gain, and cushingoid features (moon face, buffalo hump, truncal obesity).',
+        highlight: 'Sodium & water retention causing edema, hypertension & hypokalemia'
+      },
+      {
+        letter: 'S',
+        term: 'Sugar (Hyperglycemia & Steroid-Induced Diabetes)',
+        description: 'Glucocorticoids stimulate hepatic gluconeogenesis and induce peripheral insulin resistance, significantly elevating blood glucose levels even in non-diabetic clients.',
+        highlight: 'Gluconeogenesis & insulin resistance; frequent blood glucose monitoring'
+      }
+    ],
+    clinicalContext: 'Corticosteroids (prednisone, methylprednisolone, dexamethasone, hydrocortisone) are potent anti-inflammatory and immunosuppressive medications prescribed for autoimmune exacerbations, asthma/COPD, organ transplantation, and severe allergic reactions. Long-term use suppresses the hypothalamic-pituitary-adrenal (HPA) axis, causing adrenal cortex atrophy. Tapering doses gradually is mandatory when discontinuing therapy; abrupt cessation precipitates life-threatening Acute Adrenal Insufficiency (Addisonian crisis: profound hypotension, circulatory collapse, hypoglycemia, hyperkalemia). Additional chronic risks include osteoporosis, peptic ulcer disease (take with food!), and cataracts/glaucoma.',
+    nclexPearls: [
+      'Never Stop Abruptly: Abrupt cessation leads to Addisonian Crisis (hypotension, shock). The nurse must emphasize gradual tapering under medical guidance.',
+      'Infection Alert: Report even slight temperature elevations (e.g., 100°F / 37.8°C) immediately, as steroids suppress the cardinal inflammatory signs of redness and fever.',
+      'GI Protection: Corticosteroids irritate gastric mucosa and inhibit protective prostaglandins; always administer with meals or a proton pump inhibitor / H2 blocker to prevent peptic ulceration and GI bleeding.',
+      'Dietary Education: Recommend a diet high in calcium, vitamin D, and potassium, but low in sodium and concentrated carbohydrates.'
+    ],
+    practiceQuestion: {
+      question: 'A client with rheumatoid arthritis has been taking oral prednisone 20 mg daily for the past 6 months. The nurse provides comprehensive discharge teaching. Which statement by the client indicates an accurate understanding of the medication?',
+      options: [
+        '"I can safely stop taking the pills once my joint swelling and stiffness disappear."',
+        '"I should weigh myself daily and report sudden weight gain or low-grade fever to my doctor."',
+        '"I should take my daily dose on an empty stomach with a large glass of grapefruit juice."',
+        '"I will notice my blood sugar dropping, so I should carry hard candies with me."'
+      ],
+      correctIndex: 1,
+      rationale: 'Long-term prednisone causes sodium/water retention (Salt) leading to fluid retention and weight gain, as well as immunosuppression (Sick), which impairs infection defense. Clients must monitor daily weight (reporting gains of > 2–3 lbs/day or 5 lbs/week) and report any signs of infection, including low-grade fever. Abrupt cessation causes adrenal crisis, steroids must be taken with meals to prevent ulcers, and steroids raise (not lower) blood sugar (Sugar).'
+    }
+  },
+  {
+    id: 'bronchodilators-sympathomimetics-to-a-sis',
+    shortCode: 'TO A SIS',
+    title: 'Sympathomimetic Bronchodilators (TO A SIS)',
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The essential sympathomimetic bronchodilator medications: Terbutaline, Orciprenaline (Metaproterenol), Adrenaline (Epinephrine), Salbutamol (Albuterol), Isoprenaline (Isoproterenol), and Salmeterol.',
+    memoryTip: 'Say "TO A SIS" for open airways — T: Terbutaline (rescue bronchodilator & tocolytic), O: Orciprenaline (metaproterenol), A: Adrenaline (epinephrine for anaphylaxis), S: Salbutamol (albuterol — #1 SABA rescue), I: Isoprenaline (isoproterenol), S: Salmeterol (LABA maintenance only, NEVER for acute asthma attacks!).',
+    highYield: true,
+    tags: ['Pharmacology', 'Respiratory', 'Bronchodilators', 'Asthma', 'COPD', 'Beta Agonists'],
+    letters: [
+      {
+        letter: 'T',
+        term: 'Terbutaline',
+        description: 'A fast-acting beta-2 adrenergic agonist used to relieve acute bronchospasm in asthma and COPD, and uniquely used in obstetrics as a tocolytic to suppress preterm uterine contractions (hold if maternal HR > 120 bpm).',
+        highlight: 'Beta-2 bronchodilator & obstetric tocolytic (hold if maternal HR > 120 bpm)'
+      },
+      {
+        letter: 'O',
+        term: 'Orciprenaline (Metaproterenol)',
+        description: 'A sympathomimetic beta agonist bronchodilator that relaxes bronchial smooth muscle by stimulating intracellular adenyl cyclase to increase cAMP; available orally and by inhalation.',
+        highlight: 'Relaxes bronchial smooth muscle via beta-adrenergic adenyl cyclase activation'
+      },
+      {
+        letter: 'A',
+        term: 'Adrenaline (Epinephrine)',
+        description: 'A potent non-selective alpha-1, beta-1, and beta-2 adrenergic agonist; the definitive first-line intramuscular treatment for severe anaphylaxis, acute angioedema, and refractory asthma bronchospasm.',
+        highlight: 'First-line drug of choice for anaphylaxis and acute airway obstruction (IM 1:1,000)'
+      },
+      {
+        letter: 'S',
+        term: 'Salbutamol (Albuterol)',
+        description: 'The prototypical short-acting beta-2 agonist (SABA); the gold-standard "rescue inhaler" for acute asthma attacks and exercise-induced bronchospasm. Common side effects: tachycardia, tremors, and palpitations.',
+        highlight: 'Gold-standard fast-acting SABA rescue inhaler; causes tremors and tachycardia'
+      },
+      {
+        letter: 'I',
+        term: 'Isoprenaline (Isoproterenol)',
+        description: 'A potent non-selective beta-1 and beta-2 adrenergic agonist historically utilized for acute bronchospasm and severe bradyarrhythmias or heart block unresponsive to atropine.',
+        highlight: 'Non-selective beta agonist with pronounced chronotropic & inotropic cardiac stimulation'
+      },
+      {
+        letter: 'S',
+        term: 'Salmeterol',
+        description: 'A long-acting beta-2 agonist (LABA) with a slow onset (15–30 min) and prolonged 12-hour duration; strictly indicated for long-term chronic maintenance/prevention of asthma/COPD, NEVER for acute bronchospasm.',
+        highlight: 'Long-acting LABA for daily maintenance; NEVER use as an acute rescue inhaler'
+      }
+    ],
+    clinicalContext: 'Sympathomimetic bronchodilators stimulate beta-2 receptors on bronchial smooth muscle cells, activating adenylyl cyclase to convert ATP to cyclic adenosine monophosphate (cAMP), causing smooth muscle relaxation, bronchodilation, and inhibition of mast cell mediator release. On the NCLEX, differentiating Short-Acting Beta-2 Agonists (SABAs: Albuterol/Salbutamol, Terbutaline) from Long-Acting Beta-2 Agonists (LABAs: Salmeterol, Formoterol) is critical. SABAs are rapid-onset rescue medications used for sudden acute wheezing and dyspnea. LABAs are maintenance medications taken on a fixed schedule (often combined with an inhaled corticosteroid like fluticasone/salmeterol [Advair]) to maintain open airways over 12 hours. Using a LABA during an acute asthma attack is dangerous and potentially fatal because of its delayed onset.',
+    nclexPearls: [
+      'SABA vs. LABA Rule: Salbutamol/Albuterol is for SUDDEN acute attacks ("A for Acute / S for Sudden"). Salmeterol is for SLOW, long-term maintenance ("S for Slow"). Never use Salmeterol as a monotherapy for asthma or during an acute attack!',
+      'Bronchodilator First ("B before C"): When administering both an inhaled bronchodilator (albuterol) and an inhaled corticosteroid (fluticasone), inhale the bronchodilator FIRST, wait 5 minutes, then inhale the steroid. This opens the airways and ensures maximum lung penetration of the anti-inflammatory agent.',
+      'Expected Beta-2 Side Effects: Palpitations, tachycardia, fine hand tremors, nervousness, and transient hypokalemia are expected pharmacological effects of beta-2 stimulation. Reassure the client that mild tremors are common.',
+      'Terbutaline Obstetric Alert: When used off-label as a tocolytic to stop preterm labor, maternal heart rate and blood pressure must be assessed prior to administration; HOLD the dose if maternal heart rate exceeds 120 bpm or if pulmonary edema is suspected.'
+    ],
+    practiceQuestion: {
+      question: 'A client with severe persistent asthma arrives at the urgent care center experiencing acute wheezing, dyspnea, and an oxygen saturation of 88% on room air. The client\'s medication list includes albuterol MDI, salmeterol DPI, and fluticasone MDI. Which medication should the nurse administer immediately?',
+      options: [
+        'Inhaled salmeterol 50 mcg via dry powder inhaler',
+        'Inhaled albuterol 2.5 mg via nebulizer',
+        'Inhaled fluticasone 220 mcg via metered-dose inhaler',
+        'Oral montelukast 10 mg with a sip of water'
+      ],
+      correctIndex: 1,
+      rationale: 'During an acute asthma exacerbation, the immediate drug of choice is a fast-acting, short-acting beta-2 agonist (SABA) such as Albuterol (Salbutamol). It produces rapid bronchodilation within minutes to relieve life-threatening airway constriction and hypoxemia. Salmeterol is a long-acting beta-2 agonist (LABA) with a slow onset of 15 to 30 minutes and must NEVER be used for acute rescue. Inhaled corticosteroids (fluticasone) and leukotriene receptor antagonists (montelukast) are anti-inflammatory controller drugs that take hours to days to exert therapeutic effects.'
+    }
+  },
+  {
+    id: 'vfib-vtach-acls-drugs-elbmp',
+    shortCode: 'ELBMP',
+    title: 'ACLS Antiarrhythmic & Resuscitation Drugs (Every Little Boy Must Pray)',
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The core advanced cardiac life support (ACLS) pharmacological agents utilized for pulseless ventricular fibrillation (VF) and pulseless ventricular tachycardia (pVT): Epinephrine, Lidocaine, Bretylium, Magnesium Sulfate, and Procainamide.',
+    memoryTip: 'When dealing with lethal ventricular arrhythmias (VFib / VTach), remember: "Every Little Boy Must Pray" — E: Epinephrine (vasopressor given every 3-5 min), L: Lidocaine (Class 1B antiarrhythmic alternative to amiodarone), B: Bretylium (class III antiarrhythmic), M: Magsulfate (drug of choice for Torsades de Pointes), P: Procainamide (Class 1A antiarrhythmic for stable wide-complex tachycardias).',
+    highYield: true,
+    tags: ['Pharmacology', 'Cardiovascular', 'ACLS', 'Cardiac Arrest', 'Antiarrhythmics', 'Critical Care'],
+    letters: [
+      {
+        letter: 'E',
+        term: 'Epinephrine',
+        description: 'The primary potent alpha-1 and beta-1/2 vasopressor administered during cardiac arrest resuscitation (1 mg IV/IO push every 3 to 5 minutes). Induces peripheral vasoconstriction to augment aortic diastolic pressure, driving coronary and cerebral perfusion.',
+        highlight: '1 mg IV/IO push every 3–5 min; maximizes coronary & cerebral perfusion pressure'
+      },
+      {
+        letter: 'L',
+        term: 'Lidocaine',
+        description: 'A Class 1B fast sodium channel blocker; an evidence-based ACLS antiarrhythmic alternative to amiodarone for shock-refractory VF/pVT (initial dose: 1.0 to 1.5 mg/kg IV/IO push, followed by 0.5 to 0.75 mg/kg every 5–10 min, max 3 mg/kg).',
+        highlight: 'Class 1B antiarrhythmic; alternative to amiodarone for shock-refractory VF/VT'
+      },
+      {
+        letter: 'B',
+        term: 'Bretylium',
+        description: 'A quaternary ammonium compound with Class III potassium channel blocking and adrenergic neuronal blocking properties; historically utilized in ACLS as a second-line antifibrillatory agent for refractory ventricular fibrillation.',
+        highlight: 'Class III antifibrillatory agent historically used for refractory ventricular fibrillation'
+      },
+      {
+        letter: 'M',
+        term: 'Magsulfate (Magnesium Sulfate)',
+        description: 'A cellular electrolyte and cofactor that stabilizes myocardial excitability; the absolute drug of choice for polymorphic ventricular tachycardia with prolonged QT (Torsades de Pointes) and hypomagnesemic VF (dose: 1 to 2 g IV/IO diluted in 10 mL D5W/NS over 1–2 minutes).',
+        highlight: 'First-line drug of choice for Torsades de Pointes & hypomagnesemic VF (1–2 g IV)'
+      },
+      {
+        letter: 'P',
+        term: 'Procainamide',
+        description: 'A Class 1A fast sodium channel blocker that prolongs refractory periods and slows ventricular conduction velocity; indicated for stable monomorphic wide-complex ventricular tachycardia (infusion rate: 20 to 50 mg/min until arrhythmia is suppressed, hypotension ensues, or QRS widens by > 50%).',
+        highlight: 'Class 1A antiarrhythmic for stable wide-complex VT; monitor for QRS widening'
+      }
+    ],
+    clinicalContext: 'Pulseless Ventricular Fibrillation (VF) and pulseless Ventricular Tachycardia (pVT) are shockable cardiac arrest rhythms requiring immediate high-quality cardiopulmonary resuscitation (CPR) and rapid defibrillation. According to ACLS guidelines: 1. Deliver shock (120–200 J biphasic); 2. Immediately resume CPR for 2 minutes; 3. Establish IV/IO access; 4. Administer Epinephrine 1 mg IV/IO after the 2nd shock and repeat every 3–5 minutes; 5. Administer antiarrhythmic therapy (Amiodarone 300 mg bolus, or Lidocaine 1–1.5 mg/kg) after the 3rd shock for shock-refractory VF/pVT. If polymorphic VT (Torsades de Pointes) is present, Magnesium Sulfate 1 to 2 g IV/IO push is the mandatory treatment. Always search for and treat reversible underlying causes (the H\'s and T\'s: Hypovolemia, Hypoxia, Hydrogen ion/acidosis, Hypo/Hyperkalemia, Hypothermia, Tension pneumothorax, Tamponade, Toxins, Thrombosis pulmonary/coronary).',
+    nclexPearls: [
+      'Immediate CPR After Shock: NEVER stop to check a pulse or rhythm immediately after delivering a defibrillation shock! Always resume chest compressions immediately for 2 continuous minutes before re-checking rhythm.',
+      'Lidocaine Toxicity Signs (SAMS): Watch for Slurred speech, Altered mental status/paresthesias, Muscle twitching, and Seizures. Narrow therapeutic range (1.5 to 5 mcg/mL).',
+      'Torsades de Pointes Treatment: Polymorphic ventricular tachycardia with twisting of points is triggered by hypomagnesemia and prolonged QT intervals. Defibrillation and IV Magnesium Sulfate (1–2 g IV push) are lifesaving.',
+      'Push-Dose Epinephrine: During cardiac arrest, Epinephrine 1 mg (1:10,000 solution) is given IV/IO followed by a 20 mL normal saline flush and limb elevation to rapidly circulate the drug.'
+    ],
+    practiceQuestion: {
+      question: 'A client in the intensive care unit suddenly collapses. The cardiac telemetry monitor displays chaotic, irregular deflections with no discernible P waves, QRS complexes, or T waves. Palpation confirms the absence of a carotid pulse. After calling for the code team, delivering an unsynchronized defibrillation shock, and performing high-quality CPR for 2 minutes, the rhythm remains coarse ventricular fibrillation. Which pharmacological agent should the nurse prepare to administer next?',
+      options: [
+        'Atropine 1 mg rapid IV push',
+        'Epinephrine 1 mg (1:10,000) IV push',
+        'Adenosine 6 mg rapid IV push with immediate saline flush',
+        'Dopamine 5 mcg/kg/min continuous IV infusion'
+      ],
+      correctIndex: 1,
+      rationale: 'In pulseless ventricular fibrillation (VF) or pulseless ventricular tachycardia (pVT), the standard ACLS protocol dictates immediate defibrillation followed by CPR. If the lethal rhythm persists after the second shock, Epinephrine 1 mg (1:10,000 solution) IV/IO push is administered and repeated every 3 to 5 minutes to promote peripheral vasoconstriction and restore critical coronary and cerebral perfusion. Atropine is no longer used in cardiac arrest; Adenosine is indicated for narrow-complex supraventricular tachycardia (SVT); and Dopamine is an inotropic infusion for cardiogenic shock/bradycardia, not pulseless arrest.'
+    }
+  },
+  {
+    id: 'immunoglobulins-classes-gamed',
+    shortCode: 'GAMED',
+    title: 'The 5 Immunoglobulin Classes (GAMED)',
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The 5 structural classes of antibodies (immunoglobulins) essential for adaptive humoral immunity, passive immunization, and targeted biologic pharmacotherapy: IgG, IgA, IgM, IgE, and IgD.',
+    memoryTip: 'You\'ve got the immune system "GAMED" — G: IgG (Greatest quantity, Gestation — crosses placenta), A: IgA (Aquatic / secretions — tears, saliva, breast milk), M: IgM (Macro / Massive pentamer — first to respond in acute infection), E: IgE (Emergency / Environment — allergies, anaphylaxis, and parasites), D: IgD (Differentiation of B cells).',
+    highYield: true,
+    tags: ['Pharmacology', 'Immunology', 'Immunoglobulins', 'Infection Control', 'Pediatrics', 'Biologics'],
+    letters: [
+      {
+        letter: 'G',
+        term: 'IgG (Immunoglobulin G)',
+        description: 'The most abundant circulating antibody (approx. 75–80% of total plasma immunoglobulins). The ONLY antibody capable of crossing the placenta to confer passive maternal immunity to the developing fetus; provides secondary long-term protection following vaccination or recovery from infection. Utilized pharmacologically as Intravenous Immunoglobulin (IVIG).',
+        highlight: 'Most abundant (80%); only antibody that crosses placenta; secondary immune response'
+      },
+      {
+        letter: 'A',
+        term: 'IgA (Immunoglobulin A)',
+        description: 'The secretory antibody found in body secretions (saliva, tears, sweat, respiratory mucus, gastrointestinal fluids, and colostrum/breast milk). Forms a protective barrier on mucosal surfaces against microbial colonization and pathogen entry.',
+        highlight: 'Mucosal immunity in secretions & breast milk/colostrum; protects infant gut'
+      },
+      {
+        letter: 'M',
+        term: 'IgM (Immunoglobulin M)',
+        description: 'The largest immunoglobulin molecule (a high-molecular-weight pentamer with 10 antigen-binding sites). The FIRST antibody synthesized during the primary immune response to acute infection; elevated IgM titers indicate active, current, or recent infection.',
+        highlight: 'Largest antibody (pentamer); first to appear during acute primary infection'
+      },
+      {
+        letter: 'E',
+        term: 'IgE (Immunoglobulin E)',
+        description: 'Binds with high affinity to Fc receptors on tissue mast cells and circulating basophils. Cross-linking by allergens triggers mast cell degranulation, releasing histamine and leukotrienes in Type I hypersensitivity (allergic rhinitis, asthma, systemic anaphylaxis); also defends against helminthic parasitic worm infestations. Targeted by monoclonal antibodies (e.g., Omalizumab).',
+        highlight: 'Mediates Type I allergic hypersensitivity, anaphylaxis & parasitic worm defense'
+      },
+      {
+        letter: 'D',
+        term: 'IgD (Immunoglobulin D)',
+        description: 'Present in minute quantities in serum (< 1%); predominantly expressed on the cell surface of naive, mature B lymphocytes alongside IgM, functioning as an antigen receptor essential for B-cell differentiation, activation, and maturation.',
+        highlight: 'B-cell surface antigen receptor directing lymphocyte differentiation & activation'
+      }
+    ],
+    clinicalContext: 'Immunoglobulins are specialized glycoprotein molecules synthesized by differentiated B-lymphocytes (plasma cells) that recognize and neutralize specific foreign antigens, bacteria, viruses, and toxins. In Pharmacology and Clinical Nursing, antibodies are integral to passive immunotherapy and pharmacotherapy: 1. Intravenous Immunoglobulin (IVIG - purified human IgG) is administered for idiopathic thrombocytopenic purpura (ITP), Kawasaki disease, Guillain-Barré syndrome, and primary immunodeficiencies; 2. Specific hyperimmune globulins (RhoGAM / Rho(D) immune globulin, Hepatitis B immune globulin [HBIG], Rabies immune globulin [RIG], Tetanus immune globulin [TIG]) provide immediate post-exposure passive immunity; 3. Monoclonal antibody therapeutics (biologics like Omalizumab [anti-IgE], Infliximab, Rituximab) selectively neutralize targeted immunoglobulins and inflammatory cytokines. Nurses must monitor for anaphylactic reactions, aseptic meningitis, and fluid overload during IVIG infusions.',
+    nclexPearls: [
+      'Placental Transfer: IgG is the ONLY antibody that crosses the placenta, providing passive immunity to the newborn for the first 3 to 6 months of life. Maternal IgG levels gradually decline, prompting infant vaccine schedules at 2 months.',
+      'Colostrum & Breastfeeding Protection: Colostrum and mature breast milk are exceptionally rich in secretory IgA, coating the newborn\'s immature gastrointestinal tract to protect against enteric pathogens.',
+      'Active vs. Recent Infection Serology: High IgM titers indicate acute, primary, recent infection; high IgG titers indicate past exposure, established chronic recovery, or successful vaccination.',
+      'IVIG Infusion Precautions: Infuse slowly at baseline (0.5 to 1 mg/kg/min) and gradually titrate upwards; pre-medicate with acetaminophen and diphenhydramine to prevent infusion reactions (flushing, chills, back pain, headache). Have emergency epinephrine at bedside!'
+    ],
+    practiceQuestion: {
+      question: 'A postpartum nurse provides lactation counseling to a primiparous mother who is hesitant to breastfeed. The nurse explains the immunologic advantages of colostrum. Which immunoglobulin class is predominantly delivered through colostrum and breast milk to provide mucosal immunity to the newborn\'s gastrointestinal tract?',
+      options: [
+        'Immunoglobulin G (IgG)',
+        'Immunoglobulin A (IgA)',
+        'Immunoglobulin M (IgM)',
+        'Immunoglobulin E (IgE)'
+      ],
+      correctIndex: 1,
+      rationale: 'Secretory Immunoglobulin A (IgA) is present in high concentrations in colostrum and mature human breast milk. It passes into the infant\'s digestive tract, coating mucosal linings to physically prevent the adherence, invasion, and colonization of ingested viral and bacterial pathogens. IgG crosses the placenta during pregnancy but is not the primary secretory antibody in breast milk. IgM is the first responder to acute systemic infections, and IgE mediates allergic and parasitic responses.'
+    }
+  },
+  {
+    id: 'chloroquine-non-malarial-uses-red-lip',
+    shortCode: 'RED LIP',
+    title: 'Uses of Chloroquine Other Than Malaria (RED LIP)',
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The primary non-malarial rheumatologic, infectious, and dermatologic indications for chloroquine: Rheumatoid arthritis, Extra-intestinal amoebiasis, Discoid lupus erythematosus, Lepra reactions, Infectious mononucleosis, and Photogenic reactions.',
+    memoryTip: 'Remember Chloroquine\'s diverse uses with "RED LIP" — R: Rheumatoid arthritis, E: Extra-intestinal amoebiasis (amoebic liver abscess), D: Discoid lupus erythematosus (SLE skin lesions), L: Lepra reactions (type 2 erythema nodosum leprosum), I: Infectious mononucleosis, P: Photogenic reactions (solar urticaria, porphyria). Critical NCLEX alert: Regular eye exams are mandatory to screen for irreversible retinal toxicity (Bull\'s eye maculopathy)!',
+    highYield: true,
+    tags: ['Pharmacology', 'Immunology', 'Rheumatology', 'Antiprotozoal', 'Dermatology'],
+    letters: [
+      {
+        letter: 'R',
+        term: 'Rheumatoid Arthritis (RA)',
+        description: 'Functions as a disease-modifying antirheumatic drug (DMARD) by impairing antigen presentation, inhibiting lysosomal enzymes, and blunting pro-inflammatory cytokine release (TNF-alpha, IL-1) to retard joint erosion and cartilage degradation.',
+        highlight: 'DMARD action blunts lysosomal enzymes and joint destruction'
+      },
+      {
+        letter: 'E',
+        term: 'Extra-Intestinal Amoebiasis (Amoebic Liver Abscess)',
+        description: 'Because chloroquine achieves exceptionally high tissue concentrations in the hepatic parenchyma (several hundred-fold higher than in plasma), it is highly effective against Entamoeba histolytica trophozoites causing amoebic liver abscesses (combined with a luminal amoebicide).',
+        highlight: 'Concentrates 200–500x in liver tissue; treats Entamoeba histolytica liver abscess'
+      },
+      {
+        letter: 'D',
+        term: 'Discoid Lupus Erythematosus (DLE & SLE)',
+        description: 'First-line immunomodulatory therapy for cutaneous discoid lupus and systemic lupus erythematosus (SLE). Suppresses toll-like receptor signaling, reduces skin lesions, prevents systemic flares, and decreases vascular thrombotic complications.',
+        highlight: 'First-line therapy for cutaneous lupus lesions and preventing SLE flares'
+      },
+      {
+        letter: 'L',
+        term: 'Lepra Reaction (Erythema Nodosum Leprosum)',
+        description: 'Provides potent anti-inflammatory and immunosuppressive action to suppress painful inflammatory subcutaneous nodules, neuritis, and immune-complex deposition characteristic of Type 2 lepra reactions in lepromatous leprosy.',
+        highlight: 'Suppresses painful inflammatory subcutaneous nodules in Type 2 lepra reactions'
+      },
+      {
+        letter: 'I',
+        term: 'Infectious Mononucleosis',
+        description: 'Historically and off-label utilized as an immunomodulatory agent to alleviate prolonged, debilitating constitutional symptoms, chronic fatigue, and persistent lymphadenopathy associated with severe Epstein-Barr virus (EBV) infection.',
+        highlight: 'Immunomodulatory adjuvant used for chronic constitutional post-viral fatigue'
+      },
+      {
+        letter: 'P',
+        term: 'Photogenic Reactions (Photosensitivity Disorders)',
+        description: 'Effectively shields cutaneous tissues against ultraviolet (UV) light-induced skin eruptions in polymorphous light eruption (PMLE), solar urticaria, and porphyria cutanea tarda (PCT) by stabilizing lysosomal membranes in dermal keratinocytes.',
+        highlight: 'Protects against UV-induced dermatitis, polymorphous light eruption & porphyria'
+      }
+    ],
+    clinicalContext: 'Chloroquine and its closely related derivative Hydroxychloroquine (Plaquenil) are 4-aminoquinoline compounds with diverse antiprotozoal, anti-inflammatory, and immunomodulatory mechanisms. Beyond malaria chemoprophylaxis and treatment, their greatest clinical utility is in autoimmune connective tissue disorders (rheumatoid arthritis, systemic and discoid lupus) and hepatic amoebiasis. On the NCLEX, the hallmark nursing priority is Ocular Toxicity. Chloroquine concentrates in the retinal pigment epithelium, causing dose-dependent, irreversible retinopathy ("Bull\'s eye" maculopathy) characterized by paracentral scotomas, blurred vision, and permanent visual field defects. Baseline and regular annual ophthalmologic examinations are mandatory. Additional risks include QT prolongation (risk of Torsades de Pointes), cardiomyopathy, hypoglycemia, and hemolytic anemia in G6PD-deficient clients.',
+    nclexPearls: [
+      'Retinal Toxicity ("Bull\'s Eye" Maculopathy): The most serious adverse effect of long-term chloroquine/hydroxychloroquine therapy is irreversible retinal damage. Instruct clients to undergo a baseline ophthalmologic exam within the first year of therapy, followed by annual comprehensive visual field testing and fundoscopy. Clients must immediately report any blurred vision, difficulty reading, or halos around lights.',
+      'GI Administration: To minimize gastrointestinal distress (nausea, vomiting, abdominal cramps), instruct the client to take the medication with food or a full glass of milk.',
+      'Cardiac & QT Prolongation: Chloroquine blocks myocardial potassium channels, prolonging the QT interval. Concurrent use with other QT-prolonging drugs (e.g., macrolides, fluoroquinolones, antipsychotics) is hazardous and increases the risk of polymorphic ventricular tachycardia.',
+      'Pregnancy & Lupus: Unlike many cytotoxic immunosuppressants (such as methotrexate), hydroxychloroquine is generally CONTINUED during pregnancy in clients with SLE, as stopping it dramatically increases the risk of life-threatening disease flares.'
+    ],
+    practiceQuestion: {
+      question: 'A 34-year-old female client with systemic lupus erythematosus is prescribed daily oral hydroxychloroquine to manage joint pain and cutaneous discoid lesions. Which instruction is most critical for the nurse to include in the discharge education plan?',
+      options: [
+        '"Avoid taking the medication with meals to maximize gastrointestinal absorption."',
+        '"Schedule a comprehensive ophthalmologic examination at baseline and at least annually."',
+        '"Discontinue the medication immediately if you develop mild dark yellow urine discoloration."',
+        '"Take an extra dose immediately if you plan to spend time outdoors in the direct sunlight."'
+      ],
+      correctIndex: 1,
+      rationale: 'Hydroxychloroquine (Plaquenil) and chloroquine can cause irreversible retinal toxicity and maculopathy ("Bull\'s eye" lesion), potentially leading to permanent blindness. The American Academy of Ophthalmology and clinical practice guidelines mandate a baseline retinal exam followed by annual comprehensive ophthalmologic evaluations (including automated visual field testing and spectral-domain OCT) for early detection. The drug should be taken WITH food to decrease GI upset, and sun protection (sunscreen, protective clothing) is required rather than taking extra doses.'
+    }
+  },
+  {
+    id: 'krebs-cycle-intermediates-ciassfmo',
+    shortCode: 'Krebs (CIASSFMO)',
+    title: 'The Krebs Cycle Intermediates (Citric Acid Cycle)',
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The sequential 8 intermediate metabolites of the Krebs citric acid cycle: Citrate, Isocitrate, Alpha-Ketoglutarate, Succinyl-CoA, Succinate, Fumarate, Malate, and Oxaloacetate.',
+    memoryTip: '"Can I Actually See Some Filipina Mothers" — C: Citrate, I: Isocitrate, A: Alpha-Ketoglutarate, S: Succinyl-CoA, S: Succinate, F: Fumarate, M: Malate, O: Oxaloacetate. Critical NCLEX pharmacology link: Thiamine (Vitamin B1) is a vital coenzyme for Alpha-Ketoglutarate Dehydrogenase; thiamine deficiency stalls the Krebs cycle, causing lactic acidosis and Wernicke-Korsakoff encephalopathy!',
+    highYield: true,
+    tags: ['Pharmacology', 'Biochemistry', 'Cellular Respiration', 'Metabolism', 'Toxicology', 'Critical Care'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Citrate (Citric Acid)',
+        description: 'The initial 6-carbon tricarboxylic acid formed when oxaloacetate (4 carbons) condenses with acetyl-CoA (2 carbons) catalyzed by citrate synthase. High citrate levels allosterically inhibit phosphofructokinase-1 (PFK-1), slowing glycolysis.',
+        highlight: 'Condensation product of oxaloacetate & acetyl-CoA; inhibits PFK-1 to regulate glycolysis'
+      },
+      {
+        letter: 'I',
+        term: 'Isocitrate',
+        description: 'Formed via isomerization of citrate by the iron-sulfur enzyme aconitase. Isocitrate dehydrogenase then catalyzes the rate-limiting, irreversible oxidative decarboxylation of isocitrate to alpha-ketoglutarate, yielding the cycle\'s first NADH and CO2.',
+        highlight: 'Substrate for rate-limiting isocitrate dehydrogenase; generates first NADH and CO2'
+      },
+      {
+        letter: 'A',
+        term: 'Alpha-Ketoglutarate',
+        description: 'A crucial 5-carbon keto-acid converted into succinyl-CoA by the alpha-ketoglutarate dehydrogenase multi-enzyme complex. Requires 5 essential cofactors: Thiamine pyrophosphate (TPP / Vitamin B1), Lipoic acid, CoA, FAD, and NAD+.',
+        highlight: 'Requires Thiamine (B1); thiamine deficiency halts the cycle and causes lactic acidosis'
+      },
+      {
+        letter: 'S',
+        term: 'Succinyl-CoA',
+        description: 'A high-energy thioester intermediate. Converted to succinate by succinyl-CoA synthetase via substrate-level phosphorylation, directly generating one molecule of GTP (convertible to ATP). Also utilized in heme synthesis.',
+        highlight: 'High-energy thioester driving substrate-level phosphorylation to generate GTP/ATP'
+      },
+      {
+        letter: 'S',
+        term: 'Succinate',
+        description: 'A 4-carbon dicarboxylic acid oxidized to fumarate by succinate dehydrogenase (Complex II of the mitochondrial electron transport chain), directly reducing FAD to FADH2.',
+        highlight: 'Direct link to electron transport chain (Complex II); reduces FAD to FADH2'
+      },
+      {
+        letter: 'F',
+        term: 'Fumarate',
+        description: 'An unsaturated trans-dicarboxylic acid formed from succinate. Fumarate is subsequently hydrated by the stereospecific enzyme fumarase to produce L-malate. Also generated as a byproduct of the urea cycle.',
+        highlight: 'Hydrated by fumarase to form malate; bridges Krebs cycle with the urea cycle'
+      },
+      {
+        letter: 'M',
+        term: 'Malate',
+        description: 'The 4-carbon hydroxy dicarboxylic acid intermediate in the cycle. Malate can also cross the inner mitochondrial membrane via the malate-aspartate shuttle to transport reducing equivalents (electrons from cytosolic NADH) into mitochondria.',
+        highlight: 'Participates in malate-aspartate shuttle to transfer cytosolic NADH into mitochondria'
+      },
+      {
+        letter: 'O',
+        term: 'Oxaloacetate',
+        description: 'The final 4-carbon keto-acid regenerated by malate dehydrogenase, producing the third NADH of the cycle. Oxaloacetate condenses with a new acetyl-CoA molecule to restart the cycle, or exits to gluconeogenesis.',
+        highlight: 'Regenerated to restart the cycle with Acetyl-CoA; substrate for gluconeogenesis'
+      }
+    ],
+    clinicalContext: 'The Krebs cycle (Citric Acid Cycle / Tricarboxylic Acid Cycle) operates within the mitochondrial matrix and represents the final common oxidative pathway for carbohydrates, amino acids, and fatty acids. Each turn of the cycle utilizing one acetyl-CoA generates 3 NADH, 1 FADH2, 1 GTP (ATP), and 2 CO2. In Pharmacology and Critical Care Nursing, multiple medications, metabolic poisons, and nutritional deficiencies intersect directly with the Krebs cycle: 1. Thiamine (Vitamin B1) Deficiency: Alpha-ketoglutarate dehydrogenase requires thiamine pyrophosphate (TPP). Without thiamine, pyruvate and alpha-ketoglutarate accumulate, driving anaerobic conversion to lactic acid (lactic acidosis, beriberi, and Wernicke-Korsakoff syndrome). 2. Cyanide, Carbon Monoxide, and Metformin: Cyanide and CO inhibit electron transport chain complexes, preventing re-oxidation of NADH/FADH2 and stalling the Krebs cycle. Metformin inhibits Complex I; in renal dysfunction or tissue hypoperfusion, severe lactic acidosis occurs.',
+    nclexPearls: [
+      'Thiamine Before Glucose Rule: In malnourished clients or chronic alcohol use disorder, ALWAYS infuse intravenous Thiamine (Vitamin B1) BEFORE or concurrently with IV dextrose. Providing glucose without thiamine triggers massive pyruvate influx, consumes residual thiamine cofactors for alpha-ketoglutarate dehydrogenase, and precipitates acute, irreversible Wernicke encephalopathy.',
+      'Metformin & Lactic Acidosis: Metformin reduces hepatic gluconeogenesis and inhibits mitochondrial oxidative respiration. If renal clearance fails (e.g., contrast dye-induced nephropathy or dehydration), lactate accumulates. Always HOLD metformin for 48 hours following IV iodinated contrast procedures.',
+      'Cyanide Poisoning Antidotes: Cyanide halts mitochondrial oxidative phosphorylation by binding ferric iron (Fe3+) in cytochrome c oxidase. Treatment: Hydroxocobalamin (Cyanokit - binds cyanide to form non-toxic cyanocobalamin excreted in urine) or Sodium Thiosulfate + Sodium Nitrite.'
+    ],
+    practiceQuestion: {
+      question: 'A malnourished client with a history of alcohol use disorder is admitted to the emergency department in a state of delirium. Blood glucose is 42 mg/dL. The physician orders 50 mL of 50% Dextrose (D50W) and 100 mg of Thiamine IV push. What is the nurse\'s primary action regarding the administration sequence?',
+      options: [
+        'Administer D50W immediately, wait 30 minutes, then infuse the thiamine.',
+        'Administer the IV Thiamine first or concurrently with the D50W.',
+        'Withhold both medications until a complete metabolic panel confirms serum thiamine levels.',
+        'Infuse normal saline only, as thiamine is contraindicated during acute hypoglycemia.'
+      ],
+      correctIndex: 1,
+      rationale: 'In chronic alcoholism and severe malnutrition, intracellular thiamine stores are profoundly depleted. Thiamine (Vitamin B1) is an indispensable cofactor for pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase in the Krebs cycle. Administering an intravenous glucose bolus without thiamine rapidly exhausts the remaining trace amounts of thiamine, paralyzing mitochondrial aerobic metabolism and precipitating acute, fatal Wernicke encephalopathy (triad: encephalopathy, oculomotor dysfunction, ataxia). Thiamine must always precede or accompany glucose infusion.'
+    }
+  },
+  {
+    id: 'syrup-of-ipecac-contraindications-four-cs',
+    shortCode: "4 C's (Ipecac)",
+    title: "Syrup of Ipecac Contraindications (4 C's)",
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The 4 absolute clinical contraindications to inducing emesis with Syrup of Ipecac: Comatose, Convulsing, Corrosives, and hydroCarbons.',
+    memoryTip: 'Never induce vomiting if you see the "4 C\'s" — C: Comatose (unconscious or decreased LOC — massive aspiration risk), C: Convulsing (actively seizing — airway obstruction), C: Corrosive (acids and alkalis — burns the esophagus twice!), and hydroCarbon (gasoline, kerosene, lighter fluid — severe necrotizing chemical pneumonitis). Priority NCLEX rule: Syrup of Ipecac is NO LONGER recommended for home poisoning management; always call Poison Control (1-800-222-1222) first!',
+    highYield: true,
+    tags: ['Pharmacology', 'Toxicology', 'Pediatrics', 'Emergency Care', 'Poisoning', 'Patient Safety'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Comatose (Decreased Level of Consciousness)',
+        description: 'Clients who are stuporous, obtunded, comatose, or lacking intact protective airway reflexes (depressed gag and cough reflexes) must NEVER receive an emetic. Inducing vomiting inevitably results in catastrophic pulmonary aspiration of gastric acid, leading to asphyxiation and fatal chemical pneumonitis.',
+        highlight: 'Loss of airway protective reflexes leads to massive pulmonary aspiration & asphyxia'
+      },
+      {
+        letter: 'C',
+        term: 'Convulsing (Active Seizures / Seizure-Inducing Ingestion)',
+        description: 'Inducing emesis in an actively convulsing or seizing client creates immediate airway obstruction, laryngospasm, and violent aspiration. Furthermore, emetics are contraindicated following ingestions that precipitate rapid-onset seizures (e.g., tricyclic antidepressants, strychnine, camphor).',
+        highlight: 'Risk of immediate intractable aspiration, laryngospasm, and vocal cord trauma'
+      },
+      {
+        letter: 'C',
+        term: 'Corrosives (Strong Acids & Alkalis / Caustics)',
+        description: 'Ingestion of strong acidic or alkaline agents (drain cleaners, oven cleaners, lye, battery acid, toilet bowl cleaners). Caustics inflict severe liquefactive or coagulative necrosis. Vomiting forces the caustic agent back up through the esophagus and hypopharynx, burning tissues a second time and causing perforation and mediastinitis.',
+        highlight: 'Burns the esophagus and pharynx twice; induces perforation, stricture & mediastinitis'
+      },
+      {
+        letter: 'C',
+        term: 'hydroCarbons (Petroleum Distillates & Volatile Solvents)',
+        description: 'Volatile petroleum distillates (gasoline, kerosene, lighter fluid, mineral spirits, turpentine, furniture polish, paint thinners) possess extremely low viscosity and surface tension. Vomiting causes immediate vaporization and micro-aspiration into bronchial tree, triggering severe necrotizing chemical pneumonitis and ARDS.',
+        highlight: 'Low surface tension causes pulmonary aspiration, necrotizing pneumonitis & ARDS'
+      }
+    ],
+    clinicalContext: 'Syrup of Ipecac was historically utilized as an over-the-counter emetic to induce gastric decontamination following toxic ingestions. It acts through local gastric mucosal irritation and central stimulation of the chemoreceptor trigger zone (CTZ) in the area postrema of the medulla. However, extensive clinical trials demonstrated that Ipecac does not improve patient outcomes, delays the administration of activated charcoal and specific antidotes, causes persistent intractable vomiting, and carries extreme risks of aspiration. Consequently, the American Academy of Pediatrics (AAP) and the American Association of Poison Control Centers (AAPCC) strongly advise that Syrup of Ipecac should NOT be kept in homes and is NO LONGER used in routine toxicology management. The nurse\'s primary action in suspected poisoning is to assess the airway, identify the substance, and immediately call Poison Control (1-800-222-1222).',
+    nclexPearls: [
+      'Call Poison Control First: In any pediatric or adult poisoning emergency, the priority nursing instruction to parents is to call the national Poison Control Center (1-800-222-1222) immediately. Do NOT induce vomiting, do NOT give milk or raw eggs, and do NOT give Syrup of Ipecac!',
+      'Corrosives Management: If a child swallows a caustic agent (such as liquid drain cleaner), never give an acid to neutralize a base (exothermic reaction causes thermal tissue destruction). Never induce vomiting. Maintain strict NPO, prepare for immediate emergency upper endoscopy, and secure the airway.',
+      'Hydrocarbon Ingestion: If gasoline or kerosene is ingested, the priority assessment is respiratory status (coughing, tachypnea, wheezing, intercostal retractions, cyanosis). Even tiny aspirated droplets cause necrotizing chemical pneumonitis and lipoid pneumonia.',
+      'Discard Old Ipecac: Instruct families to safely discard Syrup of Ipecac from home medicine cabinets.'
+    ],
+    practiceQuestion: {
+      question: 'A frantic mother calls the pediatric telephone triage clinic stating that her 3-year-old child just drank approximately 60 mL of liquid drain cleaner containing concentrated sodium hydroxide (lye). The mother found an expired bottle of Syrup of Ipecac in the medicine cabinet and asks if she should give it to make the child vomit. What is the nurse\'s most critical instruction?',
+      options: [
+        '"Administer 15 mL of the Syrup of Ipecac immediately with a large glass of warm tap water."',
+        '"Do not administer the ipecac or induce vomiting; call 911 immediately and keep the child sitting upright."',
+        '"Give the child 8 ounces of orange juice or vinegar to neutralize the alkaline chemical."',
+        '"Encourage the child to drink raw egg whites and whole milk to coat the stomach lining."'
+      ],
+      correctIndex: 1,
+      rationale: 'Liquid drain cleaner is a potent corrosive alkaline caustic (4 C\'s mnemonic). Inducing vomiting with Syrup of Ipecac is strictly contraindicated because vomiting forces the caustic chemical back through the esophagus, larynx, and hypopharynx, burning and melting the mucosal tissues a second time ("double-burn" injury) and exponentially increasing the risk of esophageal rupture, tracheal perforation, and mediastinitis. Furthermore, attempting chemical neutralization (e.g., vinegar or acidic juices) creates an exothermic chemical reaction that releases intense heat, causing severe internal thermal burns. The nurse must instruct the parent to call 911 immediately, maintain NPO, keep the child upright, and seek emergency airway assessment.'
+    }
+  },
+  {
+    id: 'activated-charcoal-contraindications-chemical-camp',
+    shortCode: 'CHEMICAL CamP',
+    title: 'Activated Charcoal Contraindications & Limitations (CHEMICAL CamP)',
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The toxic substances and clinical scenarios where activated charcoal is either completely ineffective or strictly contraindicated: Cyanide, Hydrocarbons, Ethanol, Metals, Iron, Caustics, Airway unprotected, Lithium, Camphor, and Potassium.',
+    memoryTip: 'Activated Charcoal does NOT bind to "CHEMICAL CamP" — C: Cyanide (needs hydroxocobalamin), H: Hydrocarbons (aspiration pneumonitis risk), E: Ethanol / alcohols (methanol, ethylene glycol), M: Metals (lead, mercury, arsenic), I: Iron (needs deferoxamine), C: Caustics / corrosives (acids & alkalis — endoscopy obstruction), A: Airway unprotected (intubate first to prevent fatal pulmonary aspiration!), L: Lithium (needs hemodialysis / WBI), CamP: Camphor, P: Potassium. Remember: Small, polar, inorganic ions do not adsorb to charcoal!',
+    highYield: true,
+    tags: ['Pharmacology', 'Toxicology', 'Emergency Nursing', 'Critical Care', 'Poisoning', 'Antidotes'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Cyanide',
+        description: 'Cyanide is a small, rapidly absorbed, highly lethal cellular asphyxiant that does not bind to activated charcoal. Administering charcoal delays definitive antidote therapy: Hydroxocobalamin (Cyanokit) or Sodium Nitrite / Sodium Thiosulfate.',
+        highlight: 'Does not bind charcoal; requires immediate Hydroxocobalamin (Cyanokit)'
+      },
+      {
+        letter: 'H',
+        term: 'Hydrocarbons (Petroleum Distillates)',
+        description: 'Volatile hydrocarbons (kerosene, gasoline, lighter fluid, paint thinners) are poorly adsorbed by charcoal. More importantly, charcoal induces vomiting, drastically elevating the risk of pulmonary aspiration and fatal chemical pneumonitis.',
+        highlight: 'Poor adsorption; high risk of charcoal-induced vomiting & fatal chemical pneumonitis'
+      },
+      {
+        letter: 'E',
+        term: 'Ethanol & Alcohols (Methanol, Ethylene Glycol, Isopropanol)',
+        description: 'Alcohols are small, highly polar, low-molecular-weight molecules with rapid gastric and intestinal absorption. They lack the hydrophobic and van der Waals properties necessary to adsorb onto the carbon lattice of activated charcoal.',
+        highlight: 'Small, polar molecules that do not adsorb; require Fomepizole or hemodialysis'
+      },
+      {
+        letter: 'M',
+        term: 'Metals (Heavy Metals: Lead, Mercury, Arsenic)',
+        description: 'Heavy metals exist in ionic, highly charged elemental or salt states that fail to bind effectively to the porous carbon surface of activated charcoal. Treatment relies on systemic chelating agents (e.g., Dimercaprol, Succimer/DMSA, Calcium EDTA).',
+        highlight: 'Charged inorganic ions fail to bind; manage with specific chelating agents'
+      },
+      {
+        letter: 'I',
+        term: 'Iron Salts (Ferrous Sulfate / Gluconate)',
+        description: 'Elemental iron does not adsorb to activated charcoal. Iron overdose produces severe hemorrhagic gastroenteritis, metabolic acidosis, and hepatic necrosis. Definitively treated with the specific intravenous iron chelator Deferoxamine (Desferal).',
+        highlight: 'Zero binding to charcoal; treat with the specific IV chelator Deferoxamine'
+      },
+      {
+        letter: 'C',
+        term: 'Caustics / Corrosives (Strong Acids & Alkalis)',
+        description: 'Caustic agents cause immediate tissue burns and mucosal ulceration. Charcoal does not bind caustics, increases vomiting risk (re-burning esophageal tissue), and blackens the mucosal surface, severely obscuring emergency diagnostic endoscopy.',
+        highlight: 'Ineffective; induces vomiting and blackens mucosa, blinding diagnostic endoscopy'
+      },
+      {
+        letter: 'A',
+        term: 'Airway Unprotected (Depressed Mental Status)',
+        description: 'Clients with depressed consciousness, somnolence, coma, or absent gag reflexes must NEVER receive oral activated charcoal without prior endotracheal intubation. Charcoal aspiration induces bronchiolitis obliterans, severe hypoxia, and asphyxiation.',
+        highlight: 'Absolute contraindication unless patient is intubated with a cuffed ET tube'
+      },
+      {
+        letter: 'L',
+        term: 'Lithium',
+        description: 'Lithium is a monovalent alkali metal cation (Li+) that does not bind to activated charcoal. Acute or chronic toxicity (tremors, ataxia, seizures) is managed with aggressive IV 0.9% normal saline hydration, whole bowel irrigation, or emergent hemodialysis.',
+        highlight: 'Monovalent cation with zero charcoal binding; treated with hemodialysis'
+      },
+      {
+        letter: 'C',
+        term: 'Camphor',
+        description: 'Rapidly absorbed natural terpene found in vapor rubs and topical liniments. Produces sudden seizures and central nervous system depression within minutes. Charcoal has minimal binding affinity and delayed action.',
+        highlight: 'Rapidly absorbed neurotoxin triggering sudden seizures; poor charcoal affinity'
+      },
+      {
+        letter: 'P',
+        term: 'Potassium (Potassium Chloride / Supplements)',
+        description: 'Potassium is a simple, highly soluble monovalent inorganic cation (K+) that does not bind to activated charcoal. Hyperkalemia is managed with calcium gluconate, regular insulin with dextrose, loop diuretics, and sodium polystyrene sulfonate (Kayexalate).',
+        highlight: 'Simple elemental electrolyte; requires insulin/glucose and Kayexalate'
+      }
+    ],
+    clinicalContext: 'Activated charcoal is a finely powdered, highly porous steam-treated carbon product possessing an immense surface area (1,000 to 2,000 square meters per gram). It functions as a non-specific gastrointestinal adsorbent, binding organic xenobiotics via hydrogen bonding, van der Waals forces, and hydrophobic interactions, thereby preventing systemic gastrointestinal absorption. It is most effective when administered within 1 to 2 hours of a toxic ingestion. However, activated charcoal is completely ineffective against small, highly polar, charged, or inorganic substances (mnemonic CHEMICAL CamP). Furthermore, administering charcoal in patients with unprotected airways or caustic ingestions is hazardous and potentially fatal. Standard adult dose is 50 to 100 g orally or via nasogastric tube (pediatric: 1 g/kg). Stools will turn black, which is a benign, expected finding.',
+    nclexPearls: [
+      'The "1-Hour Golden Window": Activated charcoal is most effective when administered within 60 minutes of toxic ingestion. Beyond 1 to 2 hours, most toxins have passed through the pylorus into the small intestine, significantly reducing charcoal efficacy.',
+      'Black Stools are Expected: Reassure the client and family that activated charcoal causes harmless black, tarry-appearing stools; educate them that this is the drug passing through the GI tract and does not indicate melena or gastrointestinal bleeding.',
+      'Never Give with Corrosives: Administering charcoal in a patient who swallowed lye or battery acid is a critical medical error. It obscures the endoscopist\'s ability to grade esophageal burn depth and increases vomiting/perforation risk.',
+      'Airway Protection Mandatory: If a poisoned client is drowsy, lethargic, or losing consciousness, DO NOT give activated charcoal orally! The nurse must advocate for endotracheal intubation with a cuffed tube before placing a nasogastric tube for charcoal administration.'
+    ],
+    practiceQuestion: {
+      question: 'An emergency department nurse cares for an alert 19-year-old client who ingested 25 tablets of an unknown medication 45 minutes ago. Laboratory and toxicological testing identifies the ingested substance as a toxic quantity of ferrous sulfate (elemental iron). The resident physician writes an order to administer 50 g of activated charcoal orally. What is the nurse\'s most appropriate action?',
+      options: [
+        'Administer the activated charcoal immediately with 200 mL of cold water.',
+        'Contact the physician to question the order, as activated charcoal does not adsorb iron.',
+        'Mix the activated charcoal with milk to disguise the gritty black texture.',
+        'Intubate the client immediately prior to administering the activated charcoal.'
+      ],
+      correctIndex: 1,
+      rationale: 'Elemental iron (Fe2+/Fe3+) is a small, highly charged inorganic mineral that DOES NOT bind to the porous carbon matrix of activated charcoal (CHEMICAL CamP mnemonic). Administering activated charcoal to an iron-poisoned patient is completely ineffective, causes gastric distension, delays the administration of whole bowel irrigation, and increases the risk of vomiting and aspiration. The nurse must question the order. The definitive antidote for severe systemic iron toxicity is intravenous Deferoxamine (Desferal). Charcoal should never be mixed with milk (milk reduces adsorption capacity).'
+    }
+  },
+  {
+    id: 'eye-medications-mydriatic-vs-miotic',
+    shortCode: 'Mydriatic vs Miotic',
+    title: 'Ophthalmic Medications: Mydriatic vs. Miotic',
+    category: 'pharmacology',
+    categoryName: 'Pharmacology Nursing',
+    summary: 'The essential clinical distinction in ophthalmic pharmacology: Mydriatics dilate pupils (big word = big pupil, strictly contraindicated in closed-angle glaucoma), whereas Miotics constrict pupils (little word = little pupil, treats glaucoma).',
+    memoryTip: 'Mydriatic has a "D" for DILATE (big word = big pupil!); Miotic has a "T" for TINY / consTrict (little word = little pupil!). Critical NCLEX safety rule: Mydriatics (e.g., atropine) are CONTRAINDICATED in closed-angle glaucoma because pupil dilation blocks the trabecular meshwork and spikes intraocular pressure!',
+    highYield: true,
+    tags: ['Pharmacology', 'Ophthalmology', 'Eye Medications', 'Glaucoma', 'Autonomic Nervous System'],
+    letters: [
+      {
+        letter: 'D',
+        term: 'Mydriatic (Dilates the Pupil)',
+        description: 'Anticholinergic (parasympatholytic) or adrenergic agonist agents (e.g., Atropine, Tropicamide, Cyclopentolate, Phenylephrine) that paralyze the pupillary sphincter muscle and ciliary body (cycloplegia), producing sustained pupil dilation for diagnostic ophthalmic fundoscopy and surgical visualization.',
+        highlight: 'Mydriatic has a "D" = DILATES pupil; contraindicated in closed-angle glaucoma'
+      },
+      {
+        letter: 'T',
+        term: 'Miotic (Tiny / Constricts the Pupil)',
+        description: 'Cholinergic (parasympathomimetic) agents (e.g., Pilocarpine, Carbachol, Echothiophate) that stimulate muscarinic receptors to contract the pupillary sphincter and ciliary muscle, pulling the iris root away from the trabecular meshwork, opening the filtration angle, and enhancing aqueous humor outflow to lower intraocular pressure.',
+        highlight: 'Miotic has a "T" = TINY / constricts pupil; first-line therapy to lower IOP in glaucoma'
+      }
+    ],
+    clinicalContext: 'In Ophthalmic Pharmacology and Medical-Surgical Nursing, understanding the physiological actions and contraindications of mydriatics vs. miotics is one of the highest-yield NCLEX testing areas. 1. Closed-Angle Glaucoma Warning: Mydriatics (such as atropine and scopolamine) dilate the pupil, causing peripheral bunching of the iris that physically seals off the iridocorneal filtration angle and Canal of Schlemm, halting aqueous humor drainage and triggering acute closed-angle glaucoma (a medical emergency presenting with severe peri-orbital pain, halos around lights, nausea, and dangerously elevated IOP > 50 mm Hg). 2. Glaucoma Therapy: Miotics (such as pilocarpine) induce pupillary miosis and ciliary spasm, which tautens the scleral spur, opens the trabecular meshwork, and dramatically accelerates aqueous drainage, effectively lowering IOP in open-angle and emergency acute angle-closure glaucoma. 3. Proper Eye Drop Administration: Drop medication into the lower conjunctival sac (never directly onto the cornea), hold gentle pressure on the inner canthus (nasolacrimal occlusion / punctal occlusion) for 1 to 2 minutes to prevent systemic vascular absorption and avoid systemic anticholinergic/cholinergic toxicity, and wait at least 5 minutes between instilling different ophthalmic solutions.',
+    nclexPearls: [
+      'Glaucoma Contraindication: Mydriatics and anticholinergics (atropine, scopolamine, benztropine, oxybutynin) are STRICTLY CONTRAINDICATED in clients with narrow-angle / closed-angle glaucoma. Always check client history before administering any dilating drop!',
+      'Punctal Occlusion Technique: Immediately following eye drop instillation, instruct the client to close their eyes gently and apply finger pressure to the inner corner of the eye (lacrimal punctum) for 1 to 2 minutes. This minimizes systemic circulation absorption via the nasal mucosa, preventing systemic cardiac and respiratory side effects.',
+      'Cycloplegia Warning: Mydriatics also cause cycloplegia (paralysis of the ciliary accommodation muscle), resulting in photophobia and severe blurred near vision. Warn clients to wear sunglasses outdoors, avoid driving or operating machinery, and protect eyes from bright lights.',
+      'Administration Mechanics: Pull down the lower lid to expose the conjunctival sac, look upward, instill drop from 1/2 to 3/4 inch above the eye without touching the dropper to the eye, close eye gently (do not squeeze shut or rub), and wait 5 minutes between different ophthalmic medications.'
+    ],
+    practiceQuestion: {
+      question: 'A nurse prepares to administer prescribed morning ophthalmic drops to an 82-year-old client with a primary diagnosis of closed-angle glaucoma. Which prescription should the nurse immediately hold and clarify with the ophthalmologist?',
+      options: [
+        'Pilocarpine 1% ophthalmic solution, 1 drop in both eyes twice daily',
+        'Timolol maleate 0.5% ophthalmic solution, 1 drop in both eyes every morning',
+        'Atropine sulfate 1% ophthalmic solution, 1 drop in both eyes as needed',
+        'Brimonidine tartrate 0.2% ophthalmic solution, 1 drop in both eyes three times daily'
+      ],
+      correctIndex: 2,
+      rationale: 'Atropine is a potent anticholinergic mydriatic agent that dilates the pupil (Mydriatic = Dilate). In clients with closed-angle (narrow-angle) glaucoma, pupillary dilation causes the iris to bunch up and block the already compromised iridocorneal filtration angle and trabecular meshwork. This obstructs the outflow of aqueous humor through the Canal of Schlemm, precipitating an acute, blinding spike in intraocular pressure (acute angle-closure glaucoma). Therefore, mydriatics are strictly contraindicated. Pilocarpine is a miotic (Miotic = Tiny) that contracts the pupil and treats glaucoma by opening the drainage angle; Timolol (beta-blocker) reduces aqueous humor production; and Brimonidine (alpha-2 agonist) decreases aqueous production and increases uveoscleral outflow.'
+    }
+  },
 
   // ==========================================
   // COMMUNICABLE DISEASES
@@ -6607,6 +7191,146 @@ export const mnemonicsList = [
       ],
       correctIndex: 2,
       rationale: 'C. difficile forms resilient dormant spores that are resistant to alcohol-based hand sanitizers. Physical friction and washing with soap and water is mandatory to mechanically rinse spores from the hands.'
+    }
+  },
+  {
+    id: 'infectious-rash-timeline-spmtde',
+    shortCode: 'SPMTDE (Rash Timeline)',
+    title: 'Days of Rash Appearance in Fevers (Sick Patients Must Take Double Exercise)',
+    category: 'communicable',
+    categoryName: 'Communicable Diseases',
+    summary: 'The classic clinical timeline for when diagnostic rashes emerge after fever onset in communicable exanthematous illnesses: Day 1: Scarlet fever (and Chickenpox), Day 2: Pox (Smallpox), Day 3: Mumps, Day 4: Typhus, Day 5: Dengue, Day 6: Enteric fever (Typhoid).',
+    memoryTip: '"Sick Patients Must Take Double Exercise" — Day 1: Scarlet fever (also Varicella/chickenpox), Day 2: Pox (smallpox), Day 3: Mumps, Day 4: Typhus, Day 5: Dengue, Day 6: Enteric fever (typhoid rose spots). Count the days of fever to pinpoint the diagnosis!',
+    highYield: true,
+    tags: ['Communicable Diseases', 'Infectious Disease', 'Pediatrics', 'Exanthems', 'Fever Assessment', 'Isolation'],
+    letters: [
+      {
+        letter: '1',
+        term: '1st Day: Scarlet Fever (also Varicella / Chickenpox)',
+        description: 'Rash erupts within the first 24 hours of fever onset. Scarlet fever (Group A Streptococcus) presents with diffuse, finely papular "sandpaper" erythema in skin folds (Pastia lines) and a white/red strawberry tongue. Varicella (chickenpox) also manifests on Day 1 as pruritic teardrop vesicles.',
+        highlight: 'Day 1: Scarlet fever sandpaper rash & Pastia lines; Chickenpox teardrop vesicles'
+      },
+      {
+        letter: '2',
+        term: '2nd Day: Pox (Smallpox / Variola Virus)',
+        description: 'Smallpox rash erupts on the 2nd day of high fever. Unlike chickenpox, smallpox lesions are synchronous (all at the exact same developmental stage: all papules, then all vesicles, then all pustules), deep-seated, umbilicated, and centrifugally concentrated on the face and extremities (including palms and soles).',
+        highlight: 'Day 2: Smallpox synchronous, umbilicated pustules on face, palms & soles'
+      },
+      {
+        letter: '3',
+        term: '3rd Day: Mumps (Paramyxovirus)',
+        description: 'Tender parotid gland swelling peaks prominently around the 3rd day of fever. Also correlates with the prodromal enanthem of Measles (Rubeola), where pathognomonic Koplik spots (tiny white lesions on red buccal mucosa) appear 24–48 hours before the external body rash.',
+        highlight: 'Day 3: Mumps tender parotitis; Measles Koplik spots appear on buccal mucosa'
+      },
+      {
+        letter: '4',
+        term: '4th Day: Typhus (Rickettsial Diseases)',
+        description: 'Epidemic typhus (Rickettsia prowazekii transmitted by body lice) and endemic flea-borne typhus present with an abrupt high fever; on Day 4, a non-pruritic maculopapular and petechial rash begins on the trunk and axillae, spreading centrifugally outward to extremities while sparing face, palms, and soles.',
+        highlight: 'Day 4: Typhus maculopapular/petechial rash on trunk spreading centrifugally'
+      },
+      {
+        letter: '5',
+        term: '5th Day: Dengue Fever (Breakbone Fever Arbovirus)',
+        description: 'Transmitted by Aedes aegypti mosquitoes. As the initial high fever begins to defervesce around Day 5 (saddleback / biphasic fever pattern), a characteristic widespread, blanching maculopapular rash appears with patches of normal skin ("islands of white in a sea of red").',
+        highlight: 'Day 5: Dengue blanching rash with "islands of white in a sea of red"'
+      },
+      {
+        letter: '6',
+        term: '6th Day: Enteric Fever (Typhoid / Salmonella Typhi)',
+        description: 'Toward the end of the first week (Day 6–7) of persistent step-ladder fever, faint salmon-pink, blanching macules ("rose spots") appear on the periumbilical abdomen and lower chest. Typically accompanied by relative bradycardia (Faget sign) and constipation or pea-soup diarrhea.',
+        highlight: 'Day 6: Typhoid "rose spots" (salmon-pink macules) on abdomen with Faget sign'
+      }
+    ],
+    clinicalContext: 'In Communicable Diseases and Pediatric Nursing, exanthematous fevers are among the most frequently tested clinical presentations. Evaluating the chronological timeline of rash onset relative to the fever\'s start is a powerful diagnostic tool that allows nurses to rapidly triage, isolate, and initiate disease-specific droplet, airborne, or contact precautions. Recognizing early features prevents institutional outbreaks (e.g., immediate airborne isolation for varicella/smallpox vs. droplet for mumps vs. vector control for dengue).',
+    nclexPearls: [
+      'Smallpox vs. Chickenpox Differentiation: Chickenpox (Varicella) is centripetal (concentrated on trunk), pleomorphic (crops of macules, papules, vesicles, and crusts present simultaneously in the same area), and superficial. Smallpox is centrifugal (concentrated on face/extremities/palms/soles), monomorphic (all lesions are in the exact same stage of development), and deep-seated.',
+      'Scarlet Fever Pastia Lines & Tongue: Look for Pastia lines (deep pink or red lines in the skin creases of the antecubital fossa and axillae that do not blanch) and strawberry tongue (initially white coat with red papillae, transitioning to beefy red by day 4–5).',
+      'Faget Sign in Typhoid: High fever accompanied by a paradoxically normal or slow heart rate (sphygmothermic dissociation) is characteristic of Salmonella Typhi (Enteric fever) and Yellow fever.',
+      'Dengue Warning Signs (Days 3–7): The critical phase of dengue occurs when the fever drops (around day 5); monitor closely for plasma leakage, severe abdominal pain, persistent vomiting, mucosal bleeding, and sudden hematocrit rise (Dengue Shock Syndrome).'
+    ],
+    practiceQuestion: {
+      question: 'A 28-year-old traveler returns from Southeast Asia with a 6-day history of prolonged, step-ladder fever, headache, abdominal pain, and constipation. Physical examination reveals a temperature of 103.4°F (39.7°C), a heart rate of only 64 bpm (relative bradycardia), and several faint, blanchable, salmon-pink macules scattered across the epigastrium and lower chest. Using clinical timelines of infectious exanthems, which disease does the nurse suspect?',
+      options: [
+        'Scarlet fever',
+        'Enteric fever (Typhoid)',
+        'Dengue hemorrhagic fever',
+        'Epidemic typhus'
+      ],
+      correctIndex: 1,
+      rationale: 'The presence of faint salmon-colored, blanching maculopapular lesions ("rose spots") appearing around the 6th day of step-ladder fever, accompanied by Faget\'s sign (sphygmothermic dissociation / relative bradycardia: high fever with inappropriate pulse rate), is the classic clinical hallmark of Enteric Fever (Typhoid fever caused by Salmonella enterica serotype Typhi). Using the "Sick Patients Must Take Double Exercise" timeline (Day 1: Scarlet fever, Day 2: Pox, Day 3: Mumps, Day 4: Typhus, Day 5: Dengue, Day 6: Enteric fever), the nurse correctly identifies enteric fever. Treatment involves IV ceftriaxone or ciprofloxacin and enteric contact precautions.'
+    }
+  },
+  {
+    id: 'falciparum-malaria-complications-chaplin',
+    shortCode: 'CHAPLIN (Malaria)',
+    title: 'Severe Falciparum Malaria Complications (CHAPLIN)',
+    category: 'communicable',
+    categoryName: 'Communicable Diseases',
+    summary: 'The 7 life-threatening systemic complications of severe Plasmodium falciparum malaria: Cerebral malaria/Coma, Hypoglycemia, Anemia, Pulmonary edema, Lactic acidosis, Infections, and Necrosis of renal tubules.',
+    memoryTip: 'Remember the deadly complications of Plasmodium falciparum with "CHAPLIN" — C: Cerebral malaria / Coma, H: Hypoglycemia (frequent blood sugar checks!), A: Anemia (severe hemolytic), P: Pulmonary edema (ARDS), L: Lactic acidosis (deep Kussmaul breathing), I: Infections (secondary bacterial sepsis), N: Necrosis of renal tubules (ATN & Blackwater fever). First-line treatment: IV Artesunate!',
+    highYield: true,
+    tags: ['Communicable Diseases', 'Infectious Disease', 'Malaria', 'Global Health', 'Parasitology', 'Critical Care'],
+    letters: [
+      {
+        letter: 'C',
+        term: 'Cerebral Malaria & Coma',
+        description: 'Cytoadherence and sequestration of knob-positive parasitized red blood cells in cerebral microvessels produce microvascular occlusion, focal hypoxia, and blood-brain barrier disruption. Manifests as unarousable coma, encephalopathy, generalized seizures, and decerebrate rigidity.',
+        highlight: 'Microvascular sequestration in brain causes unarousable coma, seizures & herniation'
+      },
+      {
+        letter: 'H',
+        term: 'Hypoglycemia',
+        description: 'Blood glucose drops below 40 mg/dL (2.2 mmol/L) due to massive parasite glucose utilization, hepatic gluconeogenesis suppression by pro-inflammatory cytokines, and quinine/quinidine-induced pancreatic beta-cell insulin hypersecretion. Frequent bedside glucose checks are mandatory.',
+        highlight: 'Parasite glucose consumption & quinine-induced insulin surge; check glucose q2-4h'
+      },
+      {
+        letter: 'A',
+        term: 'Anemia (Severe Normocytic Hemolytic Anemia)',
+        description: 'Profound hemolysis of both infected and non-infected erythrocytes combined with splenic clearance and dyserythropoiesis (hematocrit < 15%, hemoglobin < 5 g/dL). Leads to acute pallor, tissue hypoxia, high-output heart failure, and requirement for urgent blood transfusion.',
+        highlight: 'Massive erythrocyte hemolysis drops Hb < 5 g/dL; urgent blood transfusion needed'
+      },
+      {
+        letter: 'P',
+        term: 'Pulmonary Edema & ARDS',
+        description: 'Non-cardiogenic pulmonary capillary leak and severe inflammatory alveolar damage (ARDS) develop rapidly, even after parasitemia drops. Precipitates severe dyspnea, tachypnea, frothy sputum, and intractable hypoxemia (mortality exceeds 70%).',
+        highlight: 'Non-cardiogenic capillary leak and ARDS; carries > 70% mortality risk'
+      },
+      {
+        letter: 'L',
+        term: 'Lactic Acidosis (Metabolic Acidemia)',
+        description: 'Systemic microvascular capillary blockage creates widespread tissue hypoperfusion, forcing anaerobic metabolism and accumulation of lactic acid (plasma lactate > 5 mmol/L). Clinically recognized by deep, rapid, unlabored hyperventilation (Kussmaul / acidotic breathing).',
+        highlight: 'Tissue hypoperfusion drives plasma lactate > 5 mmol/L; Kussmaul acidotic breathing'
+      },
+      {
+        letter: 'I',
+        term: 'Infections (Secondary Bacterial Sepsis)',
+        description: 'Reticuloendothelial system and splenic macrophage exhaustion predispose clients to life-threatening secondary bacterial bloodstream infections, particularly non-typhoidal Salmonella bacteremia, gram-negative sepsis, and aspiration pneumonia.',
+        highlight: 'Splenic exhaustion leads to secondary Salmonella bacteremia & septic shock'
+      },
+      {
+        letter: 'N',
+        term: 'Necrosis of Renal Tubules (ATN & Blackwater Fever)',
+        description: 'Massive intravascular hemolysis spills free hemoglobin into plasma, producing hemoglobinuria with dark mahogany/black urine ("Blackwater Fever"). Hemoglobin casts, microvascular occlusion, and renal ischemia cause acute tubular necrosis (ATN) and oliguric renal failure.',
+        highlight: 'Hemoglobinuria ("Blackwater fever") with dark urine, ATN & acute renal failure'
+      }
+    ],
+    clinicalContext: 'Plasmodium falciparum is the deadliest malaria parasite species, responsible for over 90% of global malaria mortality. Transmitted by the bite of infected female Anopheles mosquitoes. Unlike other Plasmodium species (P. vivax, P. ovale, P. malariae), P. falciparum infects erythrocytes of all ages (yielding extreme parasitemia > 5–10%) and expresses PfEMP1 surface proteins that cause parasitized RBCs to adhere to vascular endothelial cells (cytoadherence and rosetting), obstructing capillary microcirculation in vital organs (brain, kidneys, lungs). Severe falciparum malaria is a medical emergency requiring admission to an intensive care unit. The World Health Organization (WHO) and CDC recommend intravenous Artesunate as the first-line medication of choice, which clears parasitemia significantly faster and has lower mortality than intravenous quinine.',
+    nclexPearls: [
+      'First-Line Drug of Choice: Intravenous Artesunate is the gold-standard therapy for severe malaria worldwide. If artesunate is unavailable, IV quinidine gluconate is used with continuous telemetry monitoring (watch for QT prolongation and hypoglycemia).',
+      'Routine Hypoglycemia Monitoring: Always monitor capillary blood glucose every 2 to 4 hours in clients with severe malaria, especially those receiving IV quinine/quinidine or pregnant women (hypoglycemia can mimic cerebral malaria coma).',
+      'Blackwater Fever Alert: Dark, tea-colored or blackish urine indicates massive intravascular hemolysis and hemoglobinuria. Monitor intake and output hourly (target urine output ≥ 0.5–1 mL/kg/hr) to protect kidneys from acute tubular necrosis.',
+      'Chemoprophylaxis Education: Instruct travelers to malaria-endemic regions to start chemoprophylaxis (atovaquone-proguanil / Malarone, doxycycline, or mefloquine) before departure, take doses consistently with meals, sleep under insecticide-treated bed nets, and use DEET insect repellent.'
+    ],
+    practiceQuestion: {
+      question: 'A client returned from West Africa 10 days ago and is admitted to the intensive care unit with severe Plasmodium falciparum malaria. The client is stuporous, breathing deeply and rapidly at 32 breaths/min (Kussmaul respirations), with a capillary blood glucose of 38 mg/dL (2.1 mmol/L) and dark, mahogany-colored urine. Which immediate interventions should the nurse prioritize?',
+      options: [
+        'Administer IV Dextrose 50% immediately, obtain ABGs for lactic acidosis, and initiate IV Artesunate.',
+        'Administer oral chloroquine with orange juice and withhold all intravenous fluids.',
+        'Administer oral quinine sulfate and place the client on fluid restriction to prevent ascites.',
+        'Administer subcutaneous insulin glargine and prepare for immediate lumbar puncture.'
+      ],
+      correctIndex: 0,
+      rationale: 'Severe falciparum malaria presents with life-threatening complications summarized by the CHAPLIN mnemonic: Hypoglycemia (< 40 mg/dL), Lactic acidosis (evidenced by deep Kussmaul breathing compensating for severe metabolic acidemia), Acute Tubular Necrosis / Blackwater fever (mahogany/black urine from massive intravascular hemolysis), and Cerebral malaria (stupor/coma). The nurse\'s immediate priority is administering IV 50% Dextrose (D50) to reverse neuroglycopenia, assessing arterial blood gases for metabolic lactic acidosis, and administering intravenous Artesunate, the worldwide first-line antiparasitic therapy for severe malaria. Oral antimalarials are contraindicated in unconscious clients.'
     }
   }
 ];
