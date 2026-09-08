@@ -68,11 +68,11 @@ export default function Home({ onStartQuiz, onViewChange }) {
           </div>
         </div>
 
-        {/* Feature Spotlight: Review of the Day (3D Flip Card) */}
+        {/* Feature Spotlight: Review of the Day (3D Flip Card - Side by side on all screen sizes) */}
         <div className="mb-8">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 relative">
+          <div className="flex flex-row items-center sm:items-start gap-2.5 sm:gap-6 relative">
             {/* Mascot Avatar */}
-            <div className="w-24 h-24 sm:w-36 sm:h-36 md:w-44 md:h-44 shrink-0 relative z-10 flex items-center justify-center">
+            <div className="w-28 h-28 min-[380px]:w-32 min-[380px]:h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 shrink-0 relative z-10 flex items-center justify-center self-center">
               <img
                 key={showRationale ? 'explain' : 'mascot'}
                 src={showRationale ? explainIcon : mascot}
@@ -83,55 +83,55 @@ export default function Home({ onStartQuiz, onViewChange }) {
 
             {/* Interactive Flip Card Container */}
             <div
-              className="flex-1 w-full perspective-1000 cursor-pointer min-h-[220px] group select-none"
+              className="flex-1 min-w-0 w-full perspective-1000 cursor-pointer min-h-[190px] sm:min-h-[220px] group select-none"
               onClick={() => setShowRationale(!showRationale)}
             >
               <div className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${showRationale ? 'rotate-x-180' : ''}`}>
 
                 {/* Front: Question */}
-                <div className="relative z-20 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl sm:rounded-3xl shadow-[0px_4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 min-h-[220px] group-hover:shadow-[0px_6px_0px_0px_#4A1529] group-hover:-translate-y-0.5">
-                  <div className="border-b-[3px] border-[#4A1529] py-2.5 px-4 bg-[#FDF5F7] flex items-center justify-between">
-                    <span className="text-sm sm:text-base font-heading font-black text-[#4A1529] uppercase tracking-wide">
+                <div className="relative z-20 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl sm:rounded-3xl shadow-[0px_4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 min-h-[190px] sm:min-h-[220px] group-hover:shadow-[0px_6px_0px_0px_#4A1529] group-hover:-translate-y-0.5">
+                  <div className="border-b-[3px] border-[#4A1529] py-2 px-3 sm:py-2.5 sm:px-4 bg-[#FDF5F7] flex items-center justify-between">
+                    <span className="text-xs sm:text-base font-heading font-black text-[#4A1529] uppercase tracking-wide truncate mr-1">
                       Review of the Day
                     </span>
-                    <span className="flex items-center gap-1.5 text-xs font-heading font-bold text-primary">
+                    <span className="flex items-center gap-1 text-[11px] sm:text-xs font-heading font-bold text-primary shrink-0">
                       <RotateCw className="w-3.5 h-3.5" />
                       Flip
                     </span>
                   </div>
-                  <div className="p-4 sm:p-6 flex-1 flex flex-col justify-center">
-                    <p className="text-[#4A1529] font-body font-bold text-sm sm:text-base md:text-lg leading-relaxed text-center">
+                  <div className="p-3 sm:p-6 flex-1 flex flex-col justify-center">
+                    <p className="text-[#4A1529] font-body font-bold text-xs sm:text-base md:text-lg leading-relaxed text-center">
                       {dailyQuestion.question_stem}
                     </p>
                   </div>
-                  <div className="py-2.5 px-4 bg-[#F7C4D5]/30 border-t-2 border-[#4A1529]/10 text-center">
-                    <span className="text-xs font-heading font-black text-primary uppercase tracking-wider flex items-center justify-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5" /> Tap card to reveal answer & rationale
+                  <div className="py-1.5 sm:py-2.5 px-2 sm:px-4 bg-[#F7C4D5]/30 border-t-2 border-[#4A1529]/10 text-center">
+                    <span className="text-[10px] sm:text-xs font-heading font-black text-primary uppercase tracking-wider flex items-center justify-center gap-1">
+                      <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" /> Tap card to reveal answer
                     </span>
                   </div>
                 </div>
 
                 {/* Back: Answer & Rationale */}
-                <div className="absolute z-10 inset-0 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl sm:rounded-3xl shadow-[0px_-4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden rotate-x-180 transition-all duration-300 min-h-[220px] group-hover:shadow-[0px_-6px_0px_0px_#4A1529]">
-                  <div className="border-b-[3px] border-[#4A1529] py-2.5 px-4 bg-[#F7C4D5] flex items-center justify-between shrink-0">
-                    <span className="text-sm sm:text-base font-heading font-black text-[#4A1529] uppercase tracking-wide">
+                <div className="absolute z-10 inset-0 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl sm:rounded-3xl shadow-[0px_-4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden rotate-x-180 transition-all duration-300 min-h-[190px] sm:min-h-[220px] group-hover:shadow-[0px_-6px_0px_0px_#4A1529]">
+                  <div className="border-b-[3px] border-[#4A1529] py-2 px-3 sm:py-2.5 sm:px-4 bg-[#FDF5F7] flex items-center justify-between shrink-0">
+                    <span className="text-xs sm:text-base font-heading font-black text-[#4A1529] uppercase tracking-wide truncate mr-1">
                       Answer & Rationale
                     </span>
-                    <span className="flex items-center gap-1.5 text-xs font-heading font-bold text-[#4A1529]">
+                    <span className="flex items-center gap-1 text-[11px] sm:text-xs font-heading font-bold text-[#4A1529] shrink-0">
                       <RotateCw className="w-3.5 h-3.5" />
                       Flip Back
                     </span>
                   </div>
-                  <div className="p-4 sm:p-6 flex-1 flex flex-col items-center justify-start overflow-y-auto space-y-3 scrollbar-thin">
-                    <div className="bg-[#4A1529] text-white px-4 py-2 rounded-xl font-heading font-black text-xs sm:text-sm text-center shadow-sm w-full shrink-0">
+                  <div className="p-3 sm:p-6 flex-1 flex flex-col items-center justify-start overflow-y-auto space-y-2.5 sm:space-y-3 scrollbar-thin">
+                    <div className="bg-[#4A1529] text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl font-heading font-black text-xs sm:text-sm text-center shadow-sm w-full shrink-0">
                       {answerText}
                     </div>
-                    <p className="text-[#4A1529] font-body font-semibold text-xs sm:text-sm leading-relaxed text-center">
+                    <p className="text-[#4A1529] font-body font-semibold text-[11px] sm:text-sm leading-relaxed text-center">
                       {dailyQuestion.rationale || "No extended explanation published for this item."}
                     </p>
                   </div>
-                  <div className="py-2 px-4 bg-[#FDF5F7] border-t-2 border-[#4A1529]/10 text-center shrink-0">
-                    <span className="text-xs font-heading font-bold text-[#855264] uppercase tracking-wider">
+                  <div className="py-1.5 sm:py-2 px-2 sm:px-4 bg-[#FDF5F7] border-t-2 border-[#4A1529]/10 text-center shrink-0">
+                    <span className="text-[10px] sm:text-xs font-heading font-bold text-[#855264] uppercase tracking-wider">
                       Tap card to return to question
                     </span>
                   </div>
