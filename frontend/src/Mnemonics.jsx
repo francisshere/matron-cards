@@ -19,14 +19,21 @@ import {
   ArrowRight, 
   BookOpen, 
   LayoutGrid, 
-  FolderHeart 
+  FolderHeart,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
+import BackToTop from './components/BackToTop';
+
+const INITIAL_BATCH_SIZE = 12;
+const BATCH_INCREMENT = 12;
 
 export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState('cards'); // 'cards' | 'domains'
   const [bookmarkedIds, setBookmarkedIds] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_BATCH_SIZE);
 
   // Category Icon Mapping
   const categoryIcons = useMemo(() => ({
@@ -93,6 +100,32 @@ export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
 
     return list;
   }, [activeCategory, searchQuery, bookmarkedIds]);
+
+  // Reset visibleCount whenever category or search query changes
+  useEffect(() => {
+    setVisibleCount(INITIAL_BATCH_SIZE);
+  }, [activeCategory, searchQuery]);
+
+  // Sliced mnemonics for progressive disclosure
+  const displayedMnemonics = useMemo(() => {
+    return filteredMnemonics.slice(0, visibleCount);
+  }, [filteredMnemonics, visibleCount]);
+
+  const handleLoadMore = () => {
+    setVisibleCount(prev => Math.min(prev + BATCH_INCREMENT, filteredMnemonics.length));
+  };
+
+  const handleShowAll = () => {
+    setVisibleCount(filteredMnemonics.length);
+  };
+
+  const handleCollapse = () => {
+    setVisibleCount(INITIAL_BATCH_SIZE);
+    const gridEl = document.getElementById('mnemonics-card-grid');
+    if (gridEl) {
+      gridEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   const handleDomainCardClick = (catId) => {
     setActiveCategory(catId);
@@ -314,96 +347,148 @@ export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
         {(viewMode === 'cards' || searchQuery.trim() !== '') && (
           <>
             {filteredMnemonics.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mb-12">
-                {filteredMnemonics.map(m => {
-                  const isSaved = bookmarkedIds.includes(m.id);
+              <div id="mnemonics-card-grid" className="w-full mb-12 scroll-mt-24">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                  {displayedMnemonics.map(m => {
+                    const isSaved = bookmarkedIds.includes(m.id);
 
-                  return (
-                    <div
-                      key={m.id}
-                      onClick={() => onSelectMnemonic && onSelectMnemonic(m.id)}
-                      className="group bg-white hover:bg-[#FDF5F7] border-[3px] border-[#4A1529] rounded-2xl p-6 shadow-[0px_6px_0px_0px_#4A1529] hover:shadow-[0px_8px_0px_0px_#4A1529] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer flex flex-col justify-between relative"
-                    >
-                      {/* Top Header */}
-                      <div>
-                        <div className="flex items-start justify-between gap-2 mb-3">
-                          <span className="px-2.5 py-0.5 bg-[#F7C4D5]/70 text-[#4A1529] text-[11px] font-black rounded-full border border-[#4A1529] uppercase tracking-wider">
-                            {m.categoryName.split(' ')[0]}
-                          </span>
-
-                          <button
-                            onClick={(e) => toggleBookmark(e, m.id)}
-                            title={isSaved ? "Remove Bookmark" : "Save Mnemonic"}
-                            className="p-1 text-muted hover:text-primary transition-colors cursor-pointer"
-                          >
-                            {isSaved ? (
-                              <BookmarkCheck className="w-5 h-5 text-primary fill-primary" />
-                            ) : (
-                              <Bookmark className="w-5 h-5" />
-                            )}
-                          </button>
-                        </div>
-
-                        {/* Acronym Badge */}
-                        <div className="my-2">
-                          <span className={`inline-block px-3.5 py-1.5 bg-primary text-white font-heading font-black rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] group-hover:scale-105 transition-transform max-w-full break-words ${
-                            m.shortCode.length > 15 
-                              ? 'text-sm sm:text-base' 
-                              : m.shortCode.length > 8 
-                                ? 'text-base sm:text-lg' 
-                                : 'text-xl'
-                          }`}>
-                            {m.shortCode}
-                          </span>
-                        </div>
-
-                        {/* Title */}
-                        <h2 className="font-heading font-black text-lg text-text mt-3 mb-1.5 group-hover:text-primary transition-colors line-clamp-2">
-                          {m.title}
-                        </h2>
-
-                        {/* Summary */}
-                        <p className="font-body text-xs sm:text-sm text-muted font-medium line-clamp-2 leading-relaxed mb-4">
-                          {m.summary}
-                        </p>
-
-                        {/* Letter Previews */}
-                        <div className="flex flex-wrap gap-1.5 mb-4">
-                          {m.letters.slice(0, 4).map((l, i) => (
-                            <span 
-                              key={i}
-                              className="px-2 py-0.5 bg-white border border-[#4A1529] rounded text-[10px] font-bold text-text truncate max-w-[140px]"
-                            >
-                              <strong>{l.letter}:</strong> {l.term}
+                    return (
+                      <div
+                        key={m.id}
+                        onClick={() => onSelectMnemonic && onSelectMnemonic(m.id)}
+                        className="group bg-white hover:bg-[#FDF5F7] border-[3px] border-[#4A1529] rounded-2xl p-6 shadow-[0px_6px_0px_0px_#4A1529] hover:shadow-[0px_8px_0px_0px_#4A1529] hover:-translate-y-1.5 transition-all duration-300 cursor-pointer flex flex-col justify-between relative"
+                      >
+                        {/* Top Header */}
+                        <div>
+                          <div className="flex items-start justify-between gap-2 mb-3">
+                            <span className="px-2.5 py-0.5 bg-[#F7C4D5]/70 text-[#4A1529] text-[11px] font-black rounded-full border border-[#4A1529] uppercase tracking-wider">
+                              {m.categoryName.split(' ')[0]}
                             </span>
-                          ))}
-                          {m.letters.length > 4 && (
-                            <span className="px-1.5 py-0.5 text-[10px] font-bold text-muted self-center">
-                              +{m.letters.length - 4} more
+
+                            <button
+                              onClick={(e) => toggleBookmark(e, m.id)}
+                              title={isSaved ? "Remove Bookmark" : "Save Mnemonic"}
+                              className="p-1 text-muted hover:text-primary transition-colors cursor-pointer"
+                            >
+                              {isSaved ? (
+                                <BookmarkCheck className="w-5 h-5 text-primary fill-primary" />
+                              ) : (
+                                <Bookmark className="w-5 h-5" />
+                              )}
+                            </button>
+                          </div>
+
+                          {/* Acronym Badge */}
+                          <div className="my-2">
+                            <span className={`inline-block px-3.5 py-1.5 bg-primary text-white font-heading font-black rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] group-hover:scale-105 transition-transform max-w-full break-words ${
+                              m.shortCode.length > 15 
+                                ? 'text-sm sm:text-base' 
+                                : m.shortCode.length > 8 
+                                  ? 'text-base sm:text-lg' 
+                                  : 'text-xl'
+                            }`}>
+                              {m.shortCode}
+                            </span>
+                          </div>
+
+                          {/* Title */}
+                          <h2 className="font-heading font-black text-lg text-text mt-3 mb-1.5 group-hover:text-primary transition-colors line-clamp-2">
+                            {m.title}
+                          </h2>
+
+                          {/* Summary */}
+                          <p className="font-body text-xs sm:text-sm text-muted font-medium line-clamp-2 leading-relaxed mb-4">
+                            {m.summary}
+                          </p>
+
+                          {/* Letter Previews */}
+                          <div className="flex flex-wrap gap-1.5 mb-4">
+                            {m.letters.slice(0, 4).map((l, i) => (
+                              <span 
+                                key={i}
+                                className="px-2 py-0.5 bg-white border border-[#4A1529] rounded text-[10px] font-bold text-text truncate max-w-[140px]"
+                              >
+                                <strong>{l.letter}:</strong> {l.term}
+                              </span>
+                            ))}
+                            {m.letters.length > 4 && (
+                              <span className="px-1.5 py-0.5 text-[10px] font-bold text-muted self-center">
+                                +{m.letters.length - 4} more
+                              </span>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Bottom CTA */}
+                        <div className="pt-3 border-t border-[#855264]/20 flex items-center justify-between text-xs font-black">
+                          {m.highYield ? (
+                            <span className="text-primary font-bold flex items-center gap-1">
+                              <Sparkles className="w-3.5 h-3.5" /> High-Yield
+                            </span>
+                          ) : (
+                            <span className="text-muted font-bold">
+                              {m.letters.length} Steps
                             </span>
                           )}
+
+                          <span className="flex items-center gap-1 text-primary group-hover:translate-x-1 transition-transform">
+                            Study Mnemonic <ArrowRight className="w-3.5 h-3.5" />
+                          </span>
                         </div>
                       </div>
+                    );
+                  })}
+                </div>
 
-                      {/* Bottom CTA */}
-                      <div className="pt-3 border-t border-[#855264]/20 flex items-center justify-between text-xs font-black">
-                        {m.highYield ? (
-                          <span className="text-primary font-bold flex items-center gap-1">
-                            <Sparkles className="w-3.5 h-3.5" /> High-Yield
-                          </span>
-                        ) : (
-                          <span className="text-muted font-bold">
-                            {m.letters.length} Steps
-                          </span>
-                        )}
-
-                        <span className="flex items-center gap-1 text-primary group-hover:translate-x-1 transition-transform">
-                          Study Mnemonic <ArrowRight className="w-3.5 h-3.5" />
-                        </span>
+                {/* Collapsible / Progressive Disclosure Controls */}
+                {filteredMnemonics.length > INITIAL_BATCH_SIZE && (
+                  <div className="mt-10 pt-6 border-t-[2.5px] border-[#855264]/20 flex flex-col items-center gap-4 w-full">
+                    {/* Progress Indicator */}
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="font-heading font-black text-xs sm:text-sm text-text tracking-wide">
+                        Showing {displayedMnemonics.length} of {filteredMnemonics.length} Mnemonics
+                      </span>
+                      <div className="w-48 sm:w-64 bg-[#FDF5F7] border-[2px] border-[#4A1529] rounded-full h-3 overflow-hidden shadow-[0px_2px_0px_0px_#4A1529]">
+                        <div 
+                          className="bg-primary h-full transition-all duration-300 rounded-full"
+                          style={{ width: `${Math.round((displayedMnemonics.length / filteredMnemonics.length) * 100)}%` }}
+                        />
                       </div>
                     </div>
-                  );
-                })}
+
+                    {/* Action Buttons */}
+                    <div className="flex flex-wrap items-center justify-center gap-3 mt-1">
+                      {visibleCount < filteredMnemonics.length && (
+                        <>
+                          <button
+                            onClick={handleLoadMore}
+                            className="flex items-center gap-2 px-5 py-2.5 bg-[#F7C4D5] hover:bg-primary text-[#4A1529] hover:text-white font-heading font-black text-xs sm:text-sm rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] hover:shadow-[0px_5px_0px_0px_#4A1529] hover:-translate-y-0.5 active:translate-y-0 active:shadow-none transition-all cursor-pointer select-none"
+                          >
+                            <span>See More (+{Math.min(BATCH_INCREMENT, filteredMnemonics.length - visibleCount)})</span>
+                            <ChevronDown className="w-4 h-4" />
+                          </button>
+
+                          <button
+                            onClick={handleShowAll}
+                            className="flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-[#FDF5F7] text-[#4A1529] font-heading font-black text-xs sm:text-sm rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] hover:shadow-[0px_5px_0px_0px_#4A1529] hover:-translate-y-0.5 active:translate-y-0 active:shadow-none transition-all cursor-pointer select-none"
+                          >
+                            <span>Show All ({filteredMnemonics.length})</span>
+                          </button>
+                        </>
+                      )}
+
+                      {visibleCount > INITIAL_BATCH_SIZE && (
+                        <button
+                          onClick={handleCollapse}
+                          className="flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-[#FDF5F7] text-[#4A1529] font-heading font-black text-xs sm:text-sm rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] hover:shadow-[0px_5px_0px_0px_#4A1529] hover:-translate-y-0.5 active:translate-y-0 active:shadow-none transition-all cursor-pointer select-none"
+                        >
+                          <ChevronUp className="w-4 h-4" />
+                          <span>See Less (Collapse to {INITIAL_BATCH_SIZE})</span>
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             ) : (
               /* Empty Search / Filter State */
@@ -429,6 +514,7 @@ export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
         )}
 
       </div>
+      <BackToTop />
     </Layout>
   );
 }

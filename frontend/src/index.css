@@ -75,4 +75,13 @@
 .scrollbar-thin {
   scrollbar-width: thin;
   scrollbar-color: #E97CA1 #FDF5F7;
+}
+
+/* Hide scrollbar for clean horizontal chip navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

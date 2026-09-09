@@ -209,12 +209,15 @@ export default function Quiz({ onBack, topicFilter }) {
 
   if (gameOver) {
     return (
-      <div className="h-screen h-[100dvh] bg-transparent flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
-          <img src={tiredIcon} alt="Game Over" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
-          <h2 className="text-3xl font-heading font-bold text-text mb-4">Game Over!</h2>
-          <p className="font-body text-text/80 mb-8 font-semibold">You ran out of lives (5 mistakes).</p>
-          <button onClick={() => startNewGame()} className="w-full py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none">Try Again</button>
+      <div className="min-h-screen h-[100dvh] bg-transparent flex items-center justify-center p-4 sm:p-6">
+        <div className="bg-card p-6 sm:p-8 rounded-3xl text-center shadow-[0px_6px_0px_0px_#4A1529] border-[3px] border-[#4A1529] max-w-sm w-full animate-bounce-pop">
+          <img src={tiredIcon} alt="Game Over" className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 drop-shadow-md" />
+          <h2 className="text-2xl sm:text-3xl font-heading font-black text-text mb-2">Game Over!</h2>
+          <p className="font-body text-text/80 mb-6 font-semibold text-sm sm:text-base">You ran out of lives (5 mistakes).</p>
+          <div className="flex flex-col gap-3">
+            <button onClick={() => startNewGame()} className="w-full py-3.5 rounded-xl bg-primary text-white font-heading font-black border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none cursor-pointer">Try Again</button>
+            <button onClick={onBack} className="w-full py-3 rounded-xl bg-white text-[#4A1529] font-heading font-bold border-[2px] border-[#4A1529] hover:bg-[#F7C4D5]/30 transition-all cursor-pointer">Exit to Topics</button>
+          </div>
         </div>
       </div>
     );
@@ -222,174 +225,191 @@ export default function Quiz({ onBack, topicFilter }) {
 
   if (quizFinished) {
     return (
-      <div className="h-screen h-[100dvh] bg-transparent flex items-center justify-center p-6">
-        <div className="bg-card p-8 rounded-3xl text-center shadow-2xl max-w-sm w-full animate-bounce-pop">
-          <img src={avatarNurse} alt="Success" className="w-32 h-32 mx-auto mb-4 drop-shadow-md" />
-          <h2 className="text-3xl font-heading font-bold text-text mb-4">Review Complete!</h2>
-          <p className="font-body text-text/80 mb-2 font-semibold">Great job finishing the quiz.</p>
-          <p className="font-body text-text mb-8 font-bold text-2xl tracking-wide">Accuracy: {Math.round((correctAnswers / questions.length) * 100) || 0}%</p>
-          <button onClick={() => startNewGame()} className="w-full py-4 rounded-full bg-primary text-white font-heading font-bold shadow-[0px_6px_4px_0px_#E97CA1] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none">Review Again</button>
+      <div className="min-h-screen h-[100dvh] bg-transparent flex items-center justify-center p-4 sm:p-6">
+        <div className="bg-card p-6 sm:p-8 rounded-3xl text-center shadow-[0px_6px_0px_0px_#4A1529] border-[3px] border-[#4A1529] max-w-sm w-full animate-bounce-pop">
+          <img src={avatarNurse} alt="Success" className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 drop-shadow-md" />
+          <h2 className="text-2xl sm:text-3xl font-heading font-black text-text mb-2">Review Complete!</h2>
+          <p className="font-body text-text/80 mb-2 font-semibold text-sm sm:text-base">Great job finishing the quiz.</p>
+          <p className="font-body text-text mb-6 font-black text-xl sm:text-2xl tracking-wide">Accuracy: {Math.round((correctAnswers / questions.length) * 100) || 0}%</p>
+          <div className="flex flex-col gap-3">
+            <button onClick={() => startNewGame()} className="w-full py-3.5 rounded-xl bg-primary text-white font-heading font-black border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529] hover:bg-primary/90 transition-all active:translate-y-1 active:shadow-none cursor-pointer">Review Again</button>
+            <button onClick={onBack} className="w-full py-3 rounded-xl bg-white text-[#4A1529] font-heading font-bold border-[2px] border-[#4A1529] hover:bg-[#F7C4D5]/30 transition-all cursor-pointer">Back to Topics</button>
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="h-screen h-[100dvh] max-h-screen bg-transparent flex flex-col justify-between overflow-y-auto sm:overflow-hidden">
-      {/* Content wrapper */}
-      <div className="w-full lg:w-[65%] xl:w-[60%] mx-auto flex-1 min-h-0 flex flex-col justify-center px-6 sm:px-10 py-3 sm:py-5">
-        {/* Header */}
-        <header className="flex items-center justify-between mb-4 sm:mb-6">
-          <div className="flex items-center space-x-2">
-            <button onClick={() => setExitConfirmOpen(true)} className="text-text hover:text-primary transition-colors p-2 rounded-full hover:bg-text/5">
-              <X className="w-8 h-8 sm:w-9 sm:h-9" strokeWidth={2.5} />
-            </button>
-            <button onClick={openSettings} className="text-text hover:text-primary transition-colors p-2 rounded-full hover:bg-text/5">
-              <Settings className="w-7 h-7 sm:w-8 sm:h-8" strokeWidth={2.5} />
-            </button>
-          </div>
-          
-          <div className="flex-1 mx-4 sm:mx-8 relative h-7 sm:h-8 bg-card border-2 border-text/10 rounded-full overflow-hidden shadow-sm">
-            <div 
-              className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-mid rounded-full transition-all duration-500" 
-              style={{ width: `${((currentIndex) / questions.length) * 100}%` }} 
-            />
-            <div className="absolute inset-0 flex items-center justify-center text-sm sm:text-base font-body font-bold text-text z-10">
-              {currentIndex + 1} of {questions.length}
-            </div>
-          </div>
-          
-          <div className="flex items-center space-x-3 sm:space-x-4 drop-shadow-sm ml-2">
-            {timeRemaining !== null && (
-              <div className={`font-heading font-black text-xl sm:text-2xl transition-colors ${timeRemaining < 60 ? 'text-red-500 animate-pulse' : 'text-text'}`}>
-                {formatTime(timeRemaining)}
-              </div>
-            )}
-            <div className={`flex items-center space-x-2 transition-opacity ${gamemode ? 'opacity-100' : 'opacity-0'}`}>
-              <img src={lampIcon} alt="Lamp" className="w-9 h-9 sm:w-11 sm:h-11 object-contain" />
-              <span className="font-body font-bold text-mid text-2xl sm:text-3xl">{lives}</span>
-            </div>
-          </div>
-        </header>
-
-        {/* Title */}
-        <div className="mb-3 sm:mb-4 text-left">
-          <h2 className="text-muted font-bold tracking-wider text-xs sm:text-sm mb-1 uppercase">{currentQuestion.course}</h2>
-          <h1 className="text-2xl sm:text-3xl font-heading text-text font-black leading-snug">{currentQuestion.topic}</h1>
-        </div>
-
-        {/* Question Area */}
-        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-7 mb-3 sm:mb-4 relative">
-          <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 shrink-0 relative z-10 flex items-center justify-center">
-            <img 
-              src={showRationale ? explainIcon : avatarNurse} 
-              alt="Mascot Avatar" 
-              className={`w-full h-full object-contain drop-shadow-lg transition-all duration-300 ${showRationale && selectedOption === currentQuestion.correct_option ? 'animate-bounce-pop' : ''}`}
-            />
-          </div>
-          
-          <div className={`border-4 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50 animate-shake') : 'border-text/60 bg-card'} rounded-3xl p-5 sm:p-6 shadow-sm relative flex-1 min-w-0 transition-colors duration-300`}>
-            {/* Speech bubble tail */}
-            <div className={`hidden sm:block absolute top-9 -left-[14px] w-6 h-6 border-l-4 border-b-4 transform rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
-            <div className={`sm:hidden absolute -top-[14px] left-1/2 transform -translate-x-1/2 w-6 h-6 border-t-4 border-l-4 rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'bg-card border-text/60'}`}></div>
-            
-            {showRationale ? (
-              <div>
-                <div className="flex items-center gap-3 mb-3 pb-2 border-b-2 border-text/10">
-                  <span className={`inline-block px-4 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm animate-bounce-pop ${
-                    selectedOption === currentQuestion.correct_option ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
-                  }`}>
-                    {selectedOption === currentQuestion.correct_option ? '🎉 CORRECT!' : '❌ INCORRECT'}
-                  </span>
-                  <span className="font-heading font-black text-sm sm:text-base text-text uppercase tracking-wide">Rationale</span>
-                </div>
-                <div className="text-text font-body font-semibold text-base sm:text-lg leading-relaxed max-h-40 overflow-y-auto pr-1 whitespace-pre-line">
-                  {currentQuestion.rationale || `The correct answer is (${currentQuestion.correct_option}) ${currentQuestion.options.find(o => o.id === currentQuestion.correct_option)?.text || ''}. (Note: No extended explanation was published for this item in the reference exam.)`}
-                </div>
-              </div>
-            ) : (
-              <div>
-                <span className="font-heading font-black text-sm sm:text-base text-text/70 block mb-2 uppercase tracking-wide border-b-2 border-text/10 pb-1.5">
-                  Question
-                </span>
-                <div className="max-h-36 sm:max-h-44 overflow-y-auto pr-1">
-                  <p className="text-text font-body font-semibold text-base sm:text-lg md:text-xl leading-relaxed whitespace-pre-line">
-                    {currentQuestion.question_stem}
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Answer Slot Container */}
-        <div className="w-full my-3 sm:my-4">
-          {selectedOption ? (
-            <button
-              onClick={() => !showRationale && setSelectedOption(null)}
-              className={`w-full min-h-[62px] sm:min-h-[68px] p-4 sm:p-5 rounded-2xl text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] text-white flex items-center justify-center ${
-                showRationale 
-                  ? (selectedOption === currentQuestion.correct_option ? 'bg-green-600' : 'bg-red-500') 
-                  : 'bg-primary hover:bg-primary/95 cursor-pointer active:scale-[0.99]'
-              }`}
-            >
-              <span>{currentQuestion.options.find(o => o.id === selectedOption)?.text}</span>
-            </button>
-          ) : (
-            <div className="w-full min-h-[62px] sm:min-h-[68px] border-2 border-dashed border-mid/40 rounded-2xl flex items-center justify-center bg-card/50 p-4 shadow-sm">
-              <span className="text-text/50 font-body text-base sm:text-lg font-medium tracking-wide">
-                Select an answer below
-              </span>
-            </div>
-          )}
-        </div>
-
-        {/* Options */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 my-1">
-          {currentQuestion.options.map((opt) => {
-            const isSelected = selectedOption === opt.id;
-            
-            if (isSelected) {
-              return (
-                <div 
-                  key={opt.id}
-                  className="w-full min-h-[62px] sm:min-h-[68px] rounded-2xl bg-mid/15 border-2 border-dashed border-mid/30 flex items-center justify-center p-4 opacity-50"
-                >
-                  <span className="font-body font-semibold text-base sm:text-lg text-text/30 line-clamp-2 text-center select-none">{opt.text}</span>
-                </div>
-              );
-            }
-
-            let btnClass = "w-full min-h-[62px] sm:min-h-[68px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-card border-[#F7C4D5] text-text/85 hover:border-mid hover:bg-light/10 hover:-translate-y-0.5 active:translate-y-0";
-            
-            if (showRationale && opt.id === currentQuestion.correct_option) {
-               btnClass = "w-full min-h-[62px] sm:min-h-[68px] flex items-center justify-center p-4 sm:p-5 rounded-2xl border-[3px] text-center font-body font-semibold text-base sm:text-lg transition-all duration-200 shadow-[0px_6px_4px_0px_#E97CA1] bg-[#D1FAE5] border-[#34D399] text-[#065F46] font-bold";
-            }
-
-            return (
-              <button
-                key={opt.id}
-                onClick={() => !showRationale && setSelectedOption(opt.id)}
-                className={btnClass}
-                disabled={showRationale}
-              >
-                <span>{opt.text}</span>
+    <div className="min-h-screen h-[100dvh] bg-transparent flex flex-col justify-between overflow-hidden relative font-body text-text">
+      {/* Scrollable Content Container */}
+      <div className="flex-1 w-full overflow-y-auto scrollbar-thin px-3.5 sm:px-8 py-3 sm:py-5 pb-32 sm:pb-36">
+        <div className="w-full lg:w-[65%] xl:w-[60%] mx-auto flex flex-col">
+          {/* Header */}
+          <header className="flex items-center justify-between mb-3 sm:mb-5">
+            <div className="flex items-center space-x-1 sm:space-x-2">
+              <button onClick={() => setExitConfirmOpen(true)} className="text-text hover:text-primary transition-colors p-1.5 sm:p-2 rounded-full hover:bg-text/5 cursor-pointer" title="Exit Quiz">
+                <X className="w-7 h-7 sm:w-8 sm:h-8" strokeWidth={2.5} />
               </button>
-            )
-          })}
+              <button onClick={openSettings} className="text-text hover:text-primary transition-colors p-1.5 sm:p-2 rounded-full hover:bg-text/5 cursor-pointer" title="Settings">
+                <Settings className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={2.5} />
+              </button>
+            </div>
+            
+            <div className="flex-1 mx-3 sm:mx-8 relative h-6 sm:h-7 bg-card border-2 border-[#4A1529]/20 rounded-full overflow-hidden shadow-sm">
+              <div 
+                className="absolute top-0 left-0 h-full bg-gradient-to-r from-light to-primary rounded-full transition-all duration-500" 
+                style={{ width: `${((currentIndex) / questions.length) * 100}%` }} 
+              />
+              <div className="absolute inset-0 flex items-center justify-center text-xs sm:text-sm font-heading font-bold text-text z-10">
+                {currentIndex + 1} of {questions.length}
+              </div>
+            </div>
+            
+            <div className="flex items-center space-x-2 sm:space-x-4 drop-shadow-sm ml-1 sm:ml-2">
+              {timeRemaining !== null && (
+                <div className={`font-heading font-black text-base sm:text-xl transition-colors ${timeRemaining < 60 ? 'text-red-500 animate-pulse' : 'text-text'}`}>
+                  {formatTime(timeRemaining)}
+                </div>
+              )}
+              <div className={`flex items-center space-x-1 sm:space-x-1.5 transition-opacity ${gamemode ? 'opacity-100' : 'opacity-0'}`}>
+                <img src={lampIcon} alt="Lamp" className="w-7 h-7 sm:w-10 sm:h-10 object-contain" />
+                <span className="font-body font-black text-mid text-xl sm:text-2xl">{lives}</span>
+              </div>
+            </div>
+          </header>
+
+          {/* Title */}
+          <div className="mb-2 sm:mb-3 text-left">
+            <h2 className="text-[#855264] font-black tracking-wider text-[11px] sm:text-xs uppercase mb-0.5">{currentQuestion.course}</h2>
+            <h1 className="text-lg sm:text-2xl md:text-3xl font-heading text-text font-black leading-snug">{currentQuestion.topic}</h1>
+          </div>
+
+          {/* Question Area */}
+          <div className="flex flex-row items-center sm:items-start gap-3 sm:gap-6 mb-3 sm:mb-4 relative">
+            <div className="w-16 h-16 sm:w-28 sm:h-28 md:w-36 md:h-36 shrink-0 relative z-10 flex items-center justify-center">
+              <img 
+                src={showRationale ? explainIcon : avatarNurse} 
+                alt="Mascot Avatar" 
+                className={`w-full h-full object-contain drop-shadow-md transition-all duration-300 ${showRationale && selectedOption === currentQuestion.correct_option ? 'animate-bounce-pop' : ''}`}
+              />
+            </div>
+            
+            <div className={`border-[3px] sm:border-4 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-500 bg-green-50/90' : 'border-red-500 bg-red-50/90 animate-shake') : 'border-[#4A1529] bg-card'} rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 shadow-[0px_4px_0px_0px_#4A1529] relative flex-1 min-w-0 transition-colors duration-300`}>
+              {/* Speech bubble tail */}
+              <div className={`absolute top-5 sm:top-8 -left-[9px] sm:-left-[13px] w-4 h-4 sm:w-6 sm:h-6 border-l-[3px] sm:border-l-4 border-b-[3px] sm:border-b-4 transform rotate-45 transition-colors duration-300 ${showRationale ? (selectedOption === currentQuestion.correct_option ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50') : 'bg-card border-[#4A1529]'}`}></div>
+              
+              {showRationale ? (
+                <div>
+                  <div className="flex items-center gap-2 mb-2 pb-1.5 border-b-2 border-[#4A1529]/10">
+                    <span className={`inline-block px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-sm animate-bounce-pop ${
+                      selectedOption === currentQuestion.correct_option ? 'bg-green-600 text-white' : 'bg-red-600 text-white'
+                    }`}>
+                      {selectedOption === currentQuestion.correct_option ? '🎉 CORRECT!' : '❌ INCORRECT'}
+                    </span>
+                    <span className="font-heading font-black text-xs sm:text-sm text-text uppercase tracking-wide">Rationale</span>
+                  </div>
+                  <div className="text-text font-body font-semibold text-xs sm:text-base leading-relaxed max-h-36 sm:max-h-48 overflow-y-auto pr-1 whitespace-pre-line scrollbar-thin">
+                    {currentQuestion.rationale || `The correct answer is (${currentQuestion.correct_option}) ${currentQuestion.options.find(o => o.id === currentQuestion.correct_option)?.text || ''}. (Note: No extended explanation was published for this item in the reference exam.)`}
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <span className="font-heading font-black text-xs text-text/70 block mb-1 uppercase tracking-wide border-b-2 border-[#4A1529]/10 pb-0.5">
+                    Question
+                  </span>
+                  <div className="max-h-32 sm:max-h-48 overflow-y-auto pr-1 scrollbar-thin">
+                    <p className="text-text font-body font-semibold text-sm sm:text-base md:text-lg leading-relaxed whitespace-pre-line">
+                      {currentQuestion.question_stem}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Answer Slot Container */}
+          <div className="w-full my-2 sm:my-3">
+            {selectedOption ? (
+              <button
+                onClick={() => !showRationale && setSelectedOption(null)}
+                className={`w-full min-h-[50px] sm:min-h-[60px] p-3 sm:p-4 rounded-2xl text-left font-body font-semibold text-sm sm:text-base transition-all duration-200 shadow-[0px_4px_0px_0px_#4A1529] border-[3px] border-[#4A1529] text-white flex items-center justify-start ${
+                  showRationale 
+                    ? (selectedOption === currentQuestion.correct_option ? 'bg-[#22c55e]' : 'bg-[#ef4444]') 
+                    : 'bg-primary hover:bg-primary/95 cursor-pointer active:scale-[0.99]'
+                }`}
+              >
+                <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-white/20 text-white font-heading font-black text-xs sm:text-sm flex items-center justify-center shrink-0 mr-3">
+                  {selectedOption}
+                </span>
+                <span className="flex-1 leading-snug">{currentQuestion.options.find(o => o.id === selectedOption)?.text}</span>
+              </button>
+            ) : (
+              <div className="w-full min-h-[50px] sm:min-h-[60px] border-2 border-dashed border-[#855264]/40 rounded-2xl flex items-center justify-center bg-card/60 p-3 sm:p-4 shadow-sm">
+                <span className="text-text/50 font-body text-xs sm:text-base font-medium tracking-wide">
+                  Select an answer below
+                </span>
+              </div>
+            )}
+          </div>
+
+          {/* Options Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3.5 my-1 sm:my-2">
+            {currentQuestion.options.map((opt) => {
+              const isSelected = selectedOption === opt.id;
+              
+              if (isSelected) {
+                return (
+                  <div 
+                    key={opt.id}
+                    className="w-full min-h-[50px] sm:min-h-[60px] rounded-2xl bg-[#E97CA1]/15 border-2 border-dashed border-[#855264]/30 flex items-center p-3 sm:p-4 opacity-50"
+                  >
+                    <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#4A1529]/10 text-[#4A1529]/40 font-heading font-black text-xs sm:text-sm flex items-center justify-center shrink-0 mr-3">
+                      {opt.id}
+                    </span>
+                    <span className="font-body font-semibold text-xs sm:text-base text-text/30 line-clamp-2 select-none">{opt.text}</span>
+                  </div>
+                );
+              }
+
+              let btnClass = "w-full min-h-[50px] sm:min-h-[60px] flex items-center justify-start p-3 sm:p-4 rounded-2xl border-[3px] text-left font-body font-semibold text-xs sm:text-base transition-all duration-200 shadow-[0px_4px_0px_0px_#4A1529] bg-card border-[#4A1529] text-[#4A1529] hover:bg-[#F7C4D5]/30 hover:-translate-y-0.5 active:translate-y-0 active:shadow-none cursor-pointer";
+              
+              if (showRationale && opt.id === currentQuestion.correct_option) {
+                 btnClass = "w-full min-h-[50px] sm:min-h-[60px] flex items-center justify-start p-3 sm:p-4 rounded-2xl border-[3px] text-left font-body font-bold text-xs sm:text-base transition-all duration-200 shadow-[0px_4px_0px_0px_#16a34a] bg-[#D1FAE5] border-[#16a34a] text-[#065F46]";
+              }
+
+              return (
+                <button
+                  key={opt.id}
+                  onClick={() => !showRationale && setSelectedOption(opt.id)}
+                  className={btnClass}
+                  disabled={showRationale}
+                >
+                  <span className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg font-heading font-black text-xs sm:text-sm flex items-center justify-center shrink-0 mr-3 ${
+                    showRationale && opt.id === currentQuestion.correct_option
+                      ? 'bg-[#16a34a] text-white'
+                      : 'bg-[#4A1529]/10 text-[#4A1529]'
+                  }`}>
+                    {opt.id}
+                  </span>
+                  <span className="flex-1 leading-snug">{opt.text}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 
-      {/* Bottom Action Bar */}
-      <footer className="shrink-0 w-full bg-bg/95 border-t-2 border-text/20 py-4 sm:py-5 px-6 sm:px-12 flex justify-center backdrop-blur-sm z-30">
-        <div className="w-full lg:w-[65%] xl:w-[60%] flex justify-between items-center px-2 sm:px-4">
+      {/* Bottom Action Bar (Pinned stickily to the very edge of the screen) */}
+      <footer className="sticky bottom-0 inset-x-0 w-full bg-bg/95 backdrop-blur-md border-t-[3px] border-[#4A1529] py-3 sm:py-4 px-4 sm:px-10 flex justify-center z-30 shadow-[0_-4px_16px_rgba(74,21,41,0.08)] pb-[env(safe-area-inset-bottom,0.75rem)]">
+        <div className="w-full lg:w-[65%] xl:w-[60%] flex justify-between items-center gap-3">
           <button 
             onClick={handleSkip}
             disabled={showRationale}
-            className={`px-8 sm:px-14 py-3.5 sm:py-4 rounded-full border-4 border-text/30 bg-card text-text/70 font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] ${
+            className={`px-6 sm:px-12 py-2.5 sm:py-3.5 rounded-xl border-[3px] border-[#4A1529] bg-card text-[#4A1529] font-heading font-black text-base sm:text-xl transition-all shadow-[0px_4px_0px_0px_#4A1529] ${
               showRationale 
-                ? 'opacity-50 cursor-not-allowed shadow-none translate-y-1 border-text/10' 
-                : 'hover:bg-text/5 hover:border-text/40 active:translate-y-1 active:shadow-none'
+                ? 'opacity-40 cursor-not-allowed shadow-none translate-y-0.5 border-[#4A1529]/40 text-[#4A1529]/40' 
+                : 'hover:bg-[#F7C4D5]/40 hover:-translate-y-0.5 active:translate-y-1 active:shadow-none cursor-pointer'
             }`}
           >
             SKIP
@@ -398,10 +418,10 @@ export default function Quiz({ onBack, topicFilter }) {
           <button 
             onClick={showRationale ? handleNext : handleCheck}
             disabled={!selectedOption && !showRationale}
-            className={`px-8 sm:px-14 py-3.5 sm:py-4 rounded-full font-heading font-bold text-xl sm:text-2xl transition-all shadow-[0px_6px_4px_0px_#E97CA1] active:translate-y-1 active:shadow-none
+            className={`px-6 sm:px-12 py-2.5 sm:py-3.5 rounded-xl font-heading font-black text-base sm:text-xl border-[3px] border-[#4A1529] transition-all active:translate-y-1 active:shadow-none
               ${(selectedOption || showRationale) 
-                ? 'bg-primary text-white hover:bg-primary/90' 
-                : 'bg-light text-white/90 cursor-not-allowed shadow-none opacity-80'
+                ? 'bg-[#D42F6B] text-white hover:bg-[#b02456] shadow-[0px_4px_0px_0px_#4A1529] hover:-translate-y-0.5 cursor-pointer' 
+                : 'bg-[#F7C4D5]/70 text-[#855264]/60 border-[#855264]/30 cursor-not-allowed shadow-none opacity-80'
               }
             `}
           >

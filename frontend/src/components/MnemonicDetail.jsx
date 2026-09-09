@@ -14,14 +14,20 @@ import {
   XCircle, 
   RotateCcw,
   Sparkles,
-  BookOpen
+  BookOpen,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
+import BackToTop from './BackToTop';
+
+const LETTERS_COLLAPSE_THRESHOLD = 5;
 
 export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, onViewChange }) {
   const [mnemonic, setMnemonic] = useState(null);
   const [isTestMode, setIsTestMode] = useState(false);
   const [revealedLetters, setRevealedLetters] = useState({});
   const [isBookmarked, setIsBookmarked] = useState(false);
+  const [isLettersExpanded, setIsLettersExpanded] = useState(false);
   
   // Practice Question State
   const [selectedOption, setSelectedOption] = useState(null);
@@ -34,6 +40,7 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
     setRevealedLetters({});
     setSelectedOption(null);
     setHasAnswered(false);
+    setIsLettersExpanded(false);
 
     // Check bookmarks in localStorage
     try {
@@ -104,6 +111,13 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
   const relatedMnemonics = mnemonicsList
     .filter(m => m.category === mnemonic.category && m.id !== mnemonic.id)
     .slice(0, 3);
+
+  // Progressive breakdown display for long acronyms
+  const isLettersLong = (mnemonic.letters?.length || 0) > LETTERS_COLLAPSE_THRESHOLD;
+  const shouldCollapseLetters = isLettersLong && !isTestMode && !isLettersExpanded;
+  const displayedLetters = shouldCollapseLetters
+    ? mnemonic.letters.slice(0, LETTERS_COLLAPSE_THRESHOLD)
+    : (mnemonic.letters || []);
 
   const handleOptionSelect = (index) => {
     if (hasAnswered) return;
@@ -293,7 +307,7 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
           </div>
 
           <div className="grid grid-cols-1 gap-3.5">
-            {mnemonic.letters.map((item, idx) => {
+            {displayedLetters.map((item, idx) => {
               const isHidden = isTestMode && !revealedLetters[idx];
 
               return (
@@ -349,6 +363,28 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
               );
             })}
           </div>
+
+          {/* Expand/Collapse Toggle for Long Acronyms */}
+          {isLettersLong && !isTestMode && (
+            <div className="flex justify-center mt-2">
+              <button
+                onClick={() => setIsLettersExpanded(!isLettersExpanded)}
+                className="flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-[#FDF5F7] text-[#4A1529] font-heading font-black text-xs sm:text-sm rounded-xl border-[2.5px] border-[#4A1529] shadow-[0px_3px_0px_0px_#4A1529] hover:shadow-[0px_5px_0px_0px_#4A1529] hover:-translate-y-0.5 active:translate-y-0 active:shadow-none transition-all cursor-pointer select-none"
+              >
+                {isLettersExpanded ? (
+                  <>
+                    <ChevronUp className="w-4 h-4" />
+                    <span>Show First {LETTERS_COLLAPSE_THRESHOLD} Steps (Collapse)</span>
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown className="w-4 h-4" />
+                    <span>Show All {mnemonic.letters.length} Steps (+{mnemonic.letters.length - LETTERS_COLLAPSE_THRESHOLD} more)</span>
+                  </>
+                )}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Clinical Deep Dive & NCLEX Pearls */}
@@ -513,6 +549,7 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
         )}
 
       </div>
+      <BackToTop />
     </Layout>
   );
 }
