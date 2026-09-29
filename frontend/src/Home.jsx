@@ -92,7 +92,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                 <div className="relative z-20 w-full h-full border-[3px] border-[#4A1529] bg-white rounded-2xl sm:rounded-3xl shadow-[0px_4px_0px_0px_#4A1529] flex flex-col overflow-hidden backface-hidden transition-all duration-300 min-h-[190px] sm:min-h-[220px] group-hover:shadow-[0px_6px_0px_0px_#4A1529] group-hover:-translate-y-0.5">
                   <div className="border-b-[3px] border-[#4A1529] py-2 px-3 sm:py-2.5 sm:px-4 bg-[#FDF5F7] flex items-center justify-between">
                     <span className="text-xs sm:text-base font-heading font-black text-[#4A1529] uppercase tracking-wide truncate mr-1">
-                      Review of the Day
+                     Topic Review of the Day
                     </span>
                     <span className="flex items-center gap-1 text-[11px] sm:text-xs font-heading font-bold text-primary shrink-0">
                       <RotateCw className="w-3.5 h-3.5" />
