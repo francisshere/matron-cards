@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Home from './Home';
 import Quiz from './Quiz';
 import Topics from './Topics';
 import Mnemonics from './Mnemonics';
 import Tips from './Tips';
 import MnemonicDetail from './components/MnemonicDetail';
+import Layout from './components/Layout';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -27,38 +28,49 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const handleStartQuiz = (topic) => {
-    setPreviousView(currentView);
+  const handleStartQuiz = useCallback((topic) => {
     setQuizTopic(topic);
-    setCurrentView('quiz');
-    window.history.pushState({ view: 'quiz', topic }, '');
-  };
+    setCurrentView((prev) => {
+      setPreviousView(prev);
+      window.history.pushState({ view: 'quiz', topic }, '');
+      return 'quiz';
+    });
+  }, []);
 
-  const handleViewChange = (newView) => {
-    setPreviousView(currentView);
-    setCurrentView(newView);
-    window.history.pushState({ view: newView, topic: null, mnemonicId: null }, '');
-  };
+  const handleViewChange = useCallback((newView) => {
+    setCurrentView((prev) => {
+      setPreviousView(prev);
+      window.history.pushState({ view: newView, topic: null, mnemonicId: null }, '');
+      return newView;
+    });
+  }, []);
 
-  const handleSelectMnemonic = (mnemonicId) => {
-    setPreviousView(currentView);
+  const handleSelectMnemonic = useCallback((mnemonicId) => {
     setSelectedMnemonicId(mnemonicId);
-    setCurrentView('mnemonic-detail');
-    window.history.pushState({ view: 'mnemonic-detail', mnemonicId, topic: null }, '');
-  };
+    setCurrentView((prev) => {
+      setPreviousView(prev);
+      window.history.pushState({ view: 'mnemonic-detail', mnemonicId, topic: null }, '');
+      return 'mnemonic-detail';
+    });
+  }, []);
 
-  const handleBack = () => {
+  const handleBack = useCallback(() => {
     if (window.history.state) {
       window.history.back();
     } else {
-      setCurrentView(previousView);
+      setCurrentView((prev) => previousView || 'home');
     }
-  };
+  }, [previousView]);
+
+  if (currentView === 'quiz') {
+    return <Quiz onBack={handleBack} topicFilter={quizTopic} />;
+  }
+
+  const layoutActiveView = currentView === 'mnemonic-detail' ? 'mnemonics' : currentView;
 
   return (
-    <>
+    <Layout activeView={layoutActiveView} onViewChange={handleViewChange}>
       {currentView === 'home' && <Home onStartQuiz={handleStartQuiz} onViewChange={handleViewChange} />}
-      {currentView === 'quiz' && <Quiz onBack={handleBack} topicFilter={quizTopic} />}
       {currentView === 'topics' && <Topics onViewChange={handleViewChange} onStartQuiz={handleStartQuiz} />}
       {currentView === 'mnemonics' && <Mnemonics onViewChange={handleViewChange} onSelectMnemonic={handleSelectMnemonic} />}
       {currentView === 'mnemonic-detail' && (
@@ -70,7 +82,7 @@ export default function App() {
         />
       )}
       {currentView === 'tips' && <Tips onViewChange={handleViewChange} />}
-    </>
+    </Layout>
   );
 }
 

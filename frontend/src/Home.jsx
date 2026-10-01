@@ -4,7 +4,6 @@ import mascot from './assets/love.svg';
 import explainIcon from './assets/explain.svg';
 import avatarNurse from './assets/avatar-main-no-bg.svg';
 import { useDailyContent } from './hooks/useDailyContent';
-import Layout from './components/Layout';
 import BackToTop from './components/BackToTop';
 
 export default function Home({ onStartQuiz, onViewChange }) {
@@ -49,8 +48,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
   };
 
   return (
-    <Layout activeView="home" onViewChange={onViewChange}>
-      <div className="w-full max-w-3xl flex flex-col font-body text-text">
+    <div className="w-full max-w-3xl flex flex-col font-body text-text">
 
         {/* Motivational Daily Banner */}
         <div className="bg-[#D42F6B] rounded-2xl sm:rounded-3xl p-5 sm:p-7 mb-6 sm:mb-8 text-center border-[3px] border-[#4A1529] shadow-[0px_4px_0px_0px_#4A1529] relative overflow-hidden">
@@ -270,6 +268,7 @@ export default function Home({ onStartQuiz, onViewChange }) {
                       return (
                         <button
                           key={opt.id}
+                          type="button"
                           onClick={() => handleTryChoice(opt.id)}
                           disabled={showTryFeedback}
                           className={`w-full text-left p-3.5 sm:p-4 rounded-xl border-[2px] transition-all flex items-center justify-start gap-3 ${btnStyle}`}
@@ -364,6 +363,5 @@ export default function Home({ onStartQuiz, onViewChange }) {
         {/* Back To Top Floating Button */}
         <BackToTop threshold={350} />
       </div>
-    </Layout>
   );
 }
