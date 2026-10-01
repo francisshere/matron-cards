@@ -1,5 +1,4 @@
 import { useState, useMemo, useEffect } from 'react';
-import Layout from './components/Layout';
 import { mnemonicsList, MNEMONICS_CATEGORIES } from './data/mnemonicsData';
 
 import fundamentalsIcon from './assets/fundamentals.svg';
@@ -134,7 +133,7 @@ export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
   };
 
   return (
-    <Layout activeView="mnemonics" onViewChange={onViewChange}>
+    <>
       <div className="w-full max-w-5xl flex flex-col items-center">
 
         {/* Hero Card */}
@@ -515,6 +514,6 @@ export default function Mnemonics({ onViewChange, onSelectMnemonic }) {
 
       </div>
       <BackToTop />
-    </Layout>
+    </>
   );
 }

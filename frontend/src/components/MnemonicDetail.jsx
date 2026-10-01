@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Layout from './Layout';
 import { getMnemonicById, mnemonicsList } from '../data/mnemonicsData';
 import { 
   ArrowLeft, 
@@ -56,17 +55,15 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
 
   if (!mnemonic) {
     return (
-      <Layout activeView="mnemonics" onViewChange={onViewChange}>
-        <div className="text-center py-20">
-          <p className="text-lg font-bold text-text">Mnemonic not found.</p>
-          <button 
-            onClick={onBack}
-            className="mt-4 px-6 py-2 bg-primary text-white rounded-xl border-[3px] border-[#4A1529] font-black"
-          >
-            Back to Mnemonics
-          </button>
-        </div>
-      </Layout>
+      <div className="text-center py-20">
+        <p className="text-lg font-bold text-text">Mnemonic not found.</p>
+        <button 
+          onClick={onBack}
+          className="mt-4 px-6 py-2 bg-primary text-white rounded-xl border-[3px] border-[#4A1529] font-black"
+        >
+          Back to Mnemonics
+        </button>
+      </div>
     );
   }
 
@@ -131,7 +128,7 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
   };
 
   return (
-    <Layout activeView="mnemonics" onViewChange={onViewChange}>
+    <>
       <div className="w-full max-w-4xl flex flex-col gap-6 pb-16">
         
         {/* Navigation Bar */}
@@ -550,6 +547,6 @@ export default function MnemonicDetail({ mnemonicId, onBack, onSelectMnemonic, o
 
       </div>
       <BackToTop />
-    </Layout>
+    </>
   );
 }

@@ -2,7 +2,6 @@ import { useState, useMemo } from 'react';
 import { Search, X, ChevronDown, ChevronUp, BookOpen, Layers, ArrowRight, Sparkles } from 'lucide-react';
 import allQuestions from './data/questions.json';
 import { topicsSets } from './data/topics';
-import Layout from './components/Layout';
 import BackToTop from './components/BackToTop';
 
 const HighlightText = ({ text, highlight }) => {
@@ -142,8 +141,7 @@ export default function Topics({ onViewChange, onStartQuiz }) {
   };
 
   return (
-    <Layout activeView="topics" onViewChange={onViewChange}>
-      <div className="w-full max-w-4xl flex flex-col font-body text-text">
+    <div className="w-full max-w-4xl flex flex-col font-body text-text">
         
         {/* Header & Stats Banner */}
         <div className="mb-6 sm:mb-8 bg-gradient-to-r from-[#D42F6B] to-[#b02456] rounded-2xl sm:rounded-3xl p-5 sm:p-7 border-[3px] border-[#4A1529] shadow-[0px_5px_0px_0px_#4A1529] text-white">
@@ -449,6 +447,5 @@ export default function Topics({ onViewChange, onStartQuiz }) {
         {/* Back To Top Floating Button */}
         <BackToTop threshold={300} />
       </div>
-    </Layout>
   );
 }

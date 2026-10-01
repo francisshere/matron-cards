@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import logo from '../assets/matron-logo.svg';
 import Sidebar from '../Sidebar';
 
-export default function Layout({ children, activeView, onViewChange, contentClassName = "" }) {
+function Layout({ children, activeView, onViewChange, contentClassName = "" }) {
   return (
     <div className="min-h-screen bg-transparent flex flex-col lg:flex-row text-text font-body">
       {/* Mobile Header (Hidden on tablet and desktop where left sidebar is shown) */}
@@ -18,3 +19,5 @@ export default function Layout({ children, activeView, onViewChange, contentClas
     </div>
   );
 }
+
+export default memo(Layout);
