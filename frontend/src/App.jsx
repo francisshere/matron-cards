@@ -58,7 +58,7 @@ export default function App() {
     if (window.history.state) {
       window.history.back();
     } else {
-      setCurrentView((prev) => previousView || 'home');
+      setCurrentView(previousView || 'home');
     }
   }, [previousView]);
 
